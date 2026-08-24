@@ -40,7 +40,7 @@ f.onload = () => {
       d.querySelectorAll('#lgToggle button')[1].click();
       const dbg2 = w.__dbg();
       log('league switched to 1', dbg2.ui.league === 1);
-      log('scoring label PPR', d.querySelector('#scoringLabel').textContent.includes('PPR'));
+      log('scoring label HALF (lg2)', d.querySelector('#scoringLabel').textContent.includes('HALF'));
       log('league 2 draft state separate', Object.keys(dbg2.L.drafted).length === 0);
       // 4. search
       const sb = d.querySelector('#searchBox');

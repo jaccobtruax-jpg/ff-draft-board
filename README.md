@@ -19,8 +19,8 @@ Draft-day companion board for Jaccob's two leagues, built on the Fantasy Footbal
 
 ## League defaults
 
-- League 1: half PPR, 6pt pass TD, 12 teams, pick 5, roster 1/2/2/1/1/1/1/6
-- League 2: PPR, 6pt pass TD (roster TBD)
+- Dolphin Fans (League 1): PPR, 6pt pass TD, 12 teams, pick 5, roster 1/2/2/1/1/1/1/6
+- League 2: half PPR, 6pt pass TD (roster TBD)
 
 ## Use
 
