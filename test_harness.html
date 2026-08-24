@@ -5,9 +5,14 @@
 const f = document.getElementById('app');
 const out = [];
 function log(k, ok){ out.push((ok?'PASS':'FAIL') + '  ' + k); }
+function finish(){
+  const pre = document.createElement('pre');
+  pre.textContent = out.join('\n');
+  document.body.appendChild(pre);
+}
 f.onload = () => {
   const w = f.contentWindow, d = w.document;
-  setTimeout(() => {
+  const run = () => {
     try {
       // stub dialogs FIRST (headless blocks on confirm/prompt)
       w.confirm = () => true;
@@ -138,9 +143,16 @@ f.onload = () => {
       d.querySelector('#ddClose').click();
       lg0.order = []; lg0.drafted = {}; lg0.log = []; di.render();
     } catch(e) { log('EXCEPTION: ' + e.message + '\n' + (e.stack||'').split('\n').slice(0,3).join(' | '), false); }
-    const pre = document.createElement('pre');
-    pre.textContent = out.join('\n');
-    document.body.appendChild(pre);
-  }, 800);
+    finish();
+  };
+  // poll until the app has rendered (live CDN fetch of board.json can be slow)
+  const t0 = Date.now();
+  const iv = setInterval(() => {
+    if(d.querySelector('#gearBtn') && d.querySelector('tr.player')){
+      clearInterval(iv); setTimeout(run, 300);
+    } else if(Date.now() - t0 > 20000){
+      clearInterval(iv); log('app failed to render in 20s', false); finish();
+    }
+  }, 150);
 };
 </script></body></html>
