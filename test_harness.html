@@ -9,6 +9,21 @@ f.onload = () => {
   const w = f.contentWindow, d = w.document;
   setTimeout(() => {
     try {
+      // stub dialogs FIRST (headless blocks on confirm/prompt)
+      w.confirm = () => true;
+      w.prompt = () => null;
+      w.alert = () => {};
+      // deterministic start: reset BOTH leagues regardless of localStorage residue.
+      // NOTE: stReset REPLACES the league object, so re-capture dbg after this block.
+      d.querySelector('#gearBtn').click();
+      d.querySelectorAll('#settingsLgToggle button')[0].click();
+      d.querySelector('#stReset').click();
+      d.querySelectorAll('#settingsLgToggle button')[1].click();
+      d.querySelector('#stReset').click();
+      d.querySelectorAll('#settingsLgToggle button')[0].click();
+      d.querySelector('#settingsClose').click();
+      // settings toggle does not re-render the main view — force league 0 render
+      d.querySelectorAll('#lgToggle button')[0].click();
       const dbg = w.__dbg();
       log('board rows rendered', d.querySelectorAll('tr.player').length > 100);
       log('top200 first player is Allen (sf TE prem)', d.querySelector('tr.player .pname').textContent.includes('Allen'));
@@ -16,20 +31,18 @@ f.onload = () => {
       log('scarcity 4 positions', d.querySelectorAll('#scarcityBox .sc-item').length === 4);
       log('expert lists populated', dbg.data.players[Object.keys(dbg.data.players).find(k=>dbg.data.players[k].tags.sleeper)].tags.sleeper.length > 10);
       log('rookie watch populated', dbg.data.rookies.length >= 20);
-      // 1. draft a player via ✓ (uncheck hide-drafted first so the row stays visible)
-      const hd = d.querySelector('#hideDrafted');
-      hd.checked = false; hd.dispatchEvent(new w.Event('change', {bubbles:true}));
+      // 1. draft a player via ✓ while hide-drafted is ON (default) -> row disappears
       const chk = d.querySelector('tr.player .mk.chk');
       const pid = chk.closest('tr').dataset.id;
       chk.click();
       log('drafted count 1', Object.keys(dbg.L.drafted).length === 1);
-      // hideDrafted is ON by default -> drafted row disappears; class shows when visible
       log('drafted row hidden by default', !d.querySelector(`tr.player[data-id="${pid}"]`));
-      const hd0 = d.querySelector('#hideDrafted');
-      hd0.checked = false; hd0.dispatchEvent(new w.Event('change', {bubbles:true}));
+      // un-hide to verify the drafted class
+      const hd = d.querySelector('#hideDrafted');
+      hd.checked = false; hd.dispatchEvent(new w.Event('change', {bubbles:true}));
       const prow = d.querySelector(`tr.player[data-id="${pid}"]`);
       log('row shows drafted class when visible', !!prow && prow.classList.contains('drafted'));
-      hd0.checked = true; hd0.dispatchEvent(new w.Event('change', {bubbles:true}));
+      hd.checked = true; hd.dispatchEvent(new w.Event('change', {bubbles:true}));
       log('draft log has 1 row', d.querySelectorAll('#draftLog .log-row').length === 1);
       log('next pick advanced', dbg.L.drafted[pid].pickNum > 0);
       // 2. star a player
@@ -65,21 +78,65 @@ f.onload = () => {
       d.querySelector('#sortSel').value = 'value';
       d.querySelector('#sortSel').dispatchEvent(new w.Event('change', {bubbles:true}));
       log('value sort runs', d.querySelectorAll('tr.player').length > 10);
-      // 8. settings modal
+      // 8. settings modal (switch to league 0 to assert its SF roster prefill)
       d.querySelector('#gearBtn').click();
       log('settings opens', d.querySelector('#settingsBg').classList.contains('open'));
-      log('settings roster prefilled', d.querySelector('#stRoster').value === '1,2,2,1,2,1,1,1,1,10,3');
-      // stub dialogs BEFORE any click that could trigger them (headless blocks on confirm)
-      w.confirm = () => true;
-      w.prompt = () => null;
-      w.alert = () => {};
-      // restore league 0 + clear drafted
       d.querySelectorAll('#settingsLgToggle button')[0].click();
+      log('settings roster prefilled', d.querySelector('#stRoster').value === '1,2,2,1,2,1,1,1,1,10,3');
+      // restore league 0 + clear drafted (replaces league object -> re-capture below)
       d.querySelector('#stReset').click();
       log('state reset works', Object.keys(w.__dbg().L.drafted).length === 0);
-      // re-draft for visual check
       d.querySelector('#settingsClose').click();
       d.querySelectorAll('#lgToggle button')[0].click();
+      // ============ INTEL BAR (draft-day intel) ============
+      const di = w.__dbg();
+      const lg0 = di.leagues[0];
+      log('intel bar has chips', d.querySelectorAll('#intelBar .pickchip').length >= 3);
+      log('on the clock starts at pick 1', /On the clock · Pick 1/.test(d.querySelector('#intelBar .ib-status').textContent));
+      // mark 2 more picks -> sequential numbering 1,2,3 and clock advances
+      const hd2 = d.querySelector('#hideDrafted');
+      hd2.checked = false; hd2.dispatchEvent(new w.Event('change', {bubbles:true}));
+      d.querySelector('tr.player .mk.chk').click();
+      d.querySelector('tr.player:not(.drafted) .mk.chk').click();
+      d.querySelector('tr.player:not(.drafted) .mk.chk').click();
+      log('sequential pick numbers 1..3', di.L.log.length === 3 && di.L.log.map(e=>e.pickNum).join(',') === '1,2,3');
+      log('on the clock advances to pick 4', /Pick 4/.test(d.querySelector('#intelBar .ib-status').textContent));
+      log('at-risk target chips render', d.querySelectorAll('#intelBar .rchip').length >= 3);
+      // run detection: seed 3 TE picks via state + re-render
+      const teIds = Object.keys(di.data.players).filter(k=>di.data.players[k].p==='TE').slice(0,3);
+      lg0.drafted = {}; lg0.log = [];
+      teIds.forEach((id,i)=>{ lg0.drafted[id]={pickNum:i+1, team:'', pick:'', amount:null}; lg0.log.push({pickNum:i+1, team:'', pid:id, amount:null}); });
+      di.render();
+      log('run banner shows TE run', /TE run — 3 of last 3/.test(d.querySelector('#intelBar .ib-status').textContent));
+      // bye clusters: 2 starters sharing a bye week (seed with real player KEYS)
+      const rbEnt = Object.entries(di.data.players).filter(([id,p])=>p.p==='RB' && p.b);
+      const grp = {};
+      rbEnt.forEach(([id,p])=> (grp[p.b]=grp[p.b]||[]).push([id,p]));
+      const pair = Object.values(grp).find(g=>g.length>=2).slice(0,2);
+      lg0.drafted = {}; lg0.log = [];
+      pair.forEach(([id,p],i)=>{ lg0.drafted[id]={pickNum:i+1, team:'', pick:'', amount:null}; lg0.log.push({pickNum:i+1, team:'', pid:id, amount:null}); });
+      di.render();
+      log('bye cluster warns', /starters.*bye week/.test(d.querySelector('#byeWarn').textContent));
+      log('roster rows show bye chips', d.querySelectorAll('#rosterBox .bye').length >= 2);
+      // draft order: team names follow pick 1..N in round 1
+      lg0.order = ['Alpha','Bravo','Charlie','Delta','Echo','Foxtrot','Golf','Hotel','India','Juliet'];
+      lg0.drafted = {}; lg0.log = [];
+      di.render();
+      d.querySelector('tr.player .mk.chk').click();
+      d.querySelector('tr.player:not(.drafted) .mk.chk').click();
+      d.querySelector('tr.player:not(.drafted) .mk.chk').click();
+      log('log teams follow draft order', ['Alpha','Bravo','Charlie'].every((t,i)=> di.L.log[i].team===t));
+      // modal: at-a-glance strip + collapsed notes
+      lg0.drafted = {}; lg0.log = []; di.render();
+      d.querySelector('tr.player:not(.drafted) .pname').click();
+      log('quick strip has tier + bye', /Tier \d/.test(d.querySelector('#ddQuick').textContent) && /bye \d+/.test(d.querySelector('#ddQuick').textContent));
+      log('notes collapsed by default', d.querySelector('#ddBlurb').style.display === 'none');
+      const bbtn = d.querySelector('#ddBlurbBtn');
+      log('notes toggle present', bbtn.style.display !== 'none');
+      bbtn.click();
+      log('notes expand on toggle', d.querySelector('#ddBlurb').style.display === 'block');
+      d.querySelector('#ddClose').click();
+      lg0.order = []; lg0.drafted = {}; lg0.log = []; di.render();
     } catch(e) { log('EXCEPTION: ' + e.message + '\n' + (e.stack||'').split('\n').slice(0,3).join(' | '), false); }
     const pre = document.createElement('pre');
     pre.textContent = out.join('\n');

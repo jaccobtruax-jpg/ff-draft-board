@@ -192,6 +192,48 @@ td.marks{text-align:right;white-space:nowrap}
 .expander .arr{transition:transform .15s;font-size:10px}
 .expander.open .arr{transform:rotate(90deg)}
 
+/* ============ INTEL BAR (on the clock / next picks) ============ */
+#intelBar{border-bottom:1px solid var(--line);padding:8px 12px 9px;display:flex;flex-direction:column;gap:6px;background:linear-gradient(180deg,rgba(77,163,255,.05),transparent)}
+#intelBar .ib-status{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;color:var(--txt);flex-wrap:wrap}
+#intelBar .ib-status .clock{color:var(--acc);text-transform:uppercase;letter-spacing:.5px;font-size:11px;font-weight:800}
+#intelBar .ib-status .toyou{color:var(--gold);font-weight:800}
+#intelBar .ib-status .run{background:rgba(255,95,86,.12);border:1px solid rgba(255,95,86,.4);color:#ff8a84;border-radius:6px;padding:1px 7px;font-size:11px;font-weight:800;letter-spacing:.3px}
+#intelBar .ib-status .run.cool{background:rgba(77,163,255,.1);border-color:rgba(77,163,255,.35);color:var(--acc)}
+#intelBar .ib-chips{display:flex;gap:5px;flex-wrap:wrap}
+.pickchip{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line2);background:var(--bg3);border-radius:7px;padding:3px 7px;font-size:12px;cursor:pointer;transition:border-color .12s}
+.pickchip:hover{border-color:var(--acc)}
+.pickchip .n{color:var(--dim);font-weight:700;font-size:10.5px}
+.pickchip .pn{font-weight:700}
+.pickchip .meta{color:var(--dim);font-size:10.5px}
+.pickchip .tier{font-size:9.5px;font-weight:800;padding:0 4px;border-radius:4px;background:var(--bg2);color:var(--mut);border:1px solid var(--line2)}
+.pickchip.gone{border-color:rgba(255,95,86,.45);background:rgba(255,95,86,.08)}
+.pickchip.gone .pn{color:#ff8a84}
+.pickchip.border{border-color:rgba(245,166,35,.5);background:rgba(245,166,35,.08)}
+.pickchip.border .pn{color:var(--warn)}
+.pickchip.me{border-color:var(--gold);background:rgba(245,197,66,.12);box-shadow:0 0 0 1px rgba(245,197,66,.35) inset}
+.pickchip.me .pn{color:var(--gold)}
+.pickchip.falls .pn{color:var(--good)}
+#intelBar .ib-risk{display:flex;align-items:center;gap:5px;flex-wrap:wrap;font-size:11.5px}
+#intelBar .ib-risk .rl{color:var(--dim);font-weight:800;text-transform:uppercase;letter-spacing:.4px;font-size:10px}
+.rchip{display:inline-flex;align-items:center;gap:4px;border-radius:5px;padding:1px 6px;font-size:11.5px;font-weight:600;cursor:pointer;border:1px solid transparent}
+.rchip .s{font-size:10px;color:var(--dim)}
+.rchip.gone{color:#ff8a84;background:rgba(255,95,86,.1);border-color:rgba(255,95,86,.35)}
+.rchip.border{color:var(--warn);background:rgba(245,166,35,.1);border-color:rgba(245,166,35,.4)}
+.rchip.falls{color:var(--good);background:rgba(79,206,122,.08);border-color:rgba(79,206,122,.3)}
+.rchip.me{color:var(--gold);background:rgba(245,197,66,.1);border-color:rgba(245,197,66,.4)}
+/* bye chips */
+.bye{font-size:10px;font-weight:800;color:var(--warn);background:rgba(245,166,35,.12);border-radius:4px;padding:0 4px;margin-left:4px}
+.bye-warn{display:flex;flex-wrap:wrap;gap:6px;font-size:12px;color:var(--warn);background:rgba(245,166,35,.08);border:1px solid rgba(245,166,35,.35);border-radius:8px;padding:7px 10px}
+.bye-warn.hot{color:#ff8a84;background:rgba(255,95,86,.08);border-color:rgba(255,95,86,.4)}
+.bye-warn b{font-weight:800}
+/* modal quick strip + collapsible notes */
+.quick{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12.5px;font-weight:700;background:var(--bg3);border:1px solid var(--line);border-radius:8px;padding:7px 10px;margin:8px 0 0}
+.quick .qk{color:var(--mut);font-weight:600}
+.quick .big{font-size:14px;font-weight:800}
+.collap{display:flex;align-items:center;justify-content:space-between;width:100%;background:var(--bg3);border:1px solid var(--line);border-radius:8px;padding:7px 10px;margin-top:8px;font-size:12px;font-weight:800;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;cursor:pointer}
+.collap:hover{border-color:var(--line2);color:var(--txt)}
+.collap .arr{transition:transform .15s;font-size:10px}
+.collap.open .arr{transform:rotate(90deg)}
 /* ============ MODALS ============ */
 .modal-bg{position:fixed;inset:0;background:rgba(5,8,12,.72);z-index:200;display:none;align-items:center;justify-content:center;padding:16px}
 .modal-bg.open{display:flex}
@@ -239,7 +281,7 @@ footer .btn{margin:0 4px;padding:5px 12px;font-size:11.5px}
   <div id="pickBox">
     <div class="lab" id="pickLab">Your next pick</div>
     <div class="val" id="pickVal">—</div>
-    <button id="timerBtn" title="Start a 2-minute timer for your pick">⏱ 2:00</button>
+    <button id="timerBtn" title="Start a 3-minute timer for your pick">⏱ 3:00</button>
   </div>
   <button id="gearBtn" title="Settings">⚙</button>
 </header>
@@ -270,6 +312,7 @@ footer .btn{margin:0 4px;padding:5px 12px;font-size:11.5px}
       <label><input type="checkbox" id="showRookies"> Rookies</label>
       <label id="keeperToggleWrap" style="display:none"><input type="checkbox" id="showKeepers"> Keepers</label>
     </div>
+    <div id="intelBar"></div>
     <div id="boardBody">
       <table>
         <thead>
@@ -289,7 +332,7 @@ footer .btn{margin:0 4px;padding:5px 12px;font-size:11.5px}
     <div class="panel-head">My Team <span id="teamName" style="text-transform:none;color:var(--mut)"></span></div>
     <div id="teamBody">
       <div id="nextCall"></div>
-      <div class="block-title">Roster</div>
+      <div id="byeWarn" class="bye-warn" style="display:none"></div>
       <div id="rosterBox"></div>
       <div class="block-title">Position scarcity <span style="text-transform:none;font-weight:500">— top players gone</span></div>
       <div id="scarcityBox" class="scarcity"></div>
@@ -330,10 +373,12 @@ footer .btn{margin:0 4px;padding:5px 12px;font-size:11.5px}
   <div class="modal-head"><h3 id="ddName"></h3><button class="x" id="ddClose">✕</button></div>
   <div class="modal-body">
     <div id="ddTags"></div>
+    <div class="quick" id="ddQuick"></div>
+    <div class="proj-line" id="ddProj"></div>
+    <button class="collap" id="ddBlurbBtn" type="button"><span>FFB outlook &amp; notes</span><span class="arr">▶</span></button>
+    <div class="blurb" id="ddBlurb" style="display:none"></div>
+    <div class="dyn" id="ddDyn" style="display:none"></div>
     <div class="dd-grid" id="ddGrid"></div>
-    <div class="blurb" id="ddBlurb"></div>
-    <div class="proj-line" id="ddProj" style="margin-top:10px"></div>
-    <div class="dyn" id="ddDyn"></div>
     <div class="dd-actions" id="ddActions"></div>
   </div>
 </div></div>
@@ -356,6 +401,7 @@ footer .btn{margin:0 4px;padding:5px 12px;font-size:11.5px}
       <div class="frm-row"><label>Roster (Q,R,W,T,F,X,S,D,K,B,I)</label><input type="text" id="stRoster" placeholder="1,2,2,1,2,1,1,1,1,10,3"></div>
       <div class="hint">Roster: QB,RB,WR,TE,FLEX,RBW,SFLEX,DST,K,BN,IR — e.g. 1,2,2,1,2,1,1,1,1,10,3 (8 numbers = old Q,R,W,T,F,D,K,B format)</div>
       <div class="frm-row"><label>My team name</label><input type="text" id="stTeamName" placeholder="optional — shows in draft log"></div>
+      <div class="frm-row"><label>Draft order (pick 1 → N)</label><input type="text" id="stOrder" placeholder="Team A, Team B, … — powers next-pick predictions"></div>
     </div>
   </div>
   <div class="modal-foot">
@@ -394,11 +440,12 @@ function defaultLeague(i){
     stars: [], watch: [], avoid: [],
     log: [],           // {pickNum, team, pid, amount}
     notes: '',
+    order: [],         // draft order team names, pick 1 → N (optional)
     timer: null        // {endAt}
   };
 }
 const LEAGUES = [defaultLeague(0), defaultLeague(1)];
-window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA});
+window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, render});
 function saveState(){ localStorage.setItem(LS_KEY, JSON.stringify({leagues: LEAGUES, ui: UI})); }
 function loadState(){
   try{
@@ -452,6 +499,24 @@ function nextOwnPick(){
   for(const n of nums){ if(!taken.includes(n)) return n; }
   return nums[nums.length-1]+1;
 }
+/* sequential pick tracking — every marked player consumes the next real pick number */
+function onTheClockPick(){
+  const lg=L();
+  let m=0;
+  for(const e of lg.log) if(e.pickNum>m) m=e.pickNum;
+  return m+1;
+}
+function teamAtPick(n){
+  const lg=L();
+  const ord = lg.order||[];
+  if(!ord.length) return '';
+  if(lg.auction) return ord[(n-1)%ord.length]||'';
+  const teams = Math.max(1, lg.teams);
+  const rnd = Math.floor((n-1)/teams);
+  const idx = (rnd%2===0) ? (n-1)%teams : teams-1-((n-1)%teams);
+  return ord[idx]||'';
+}
+function pickIsMine(n){ const lg=L(); if(lg.auction) return false; return myPickNums().includes(n); }
 
 /* ---------------- data / rankings ---------------- */
 function rankingRows(){
@@ -550,6 +615,94 @@ function rosterNeed(pos, fills){
 }
 function draftedAtPos(pos){ const lg=L(); return Object.keys(lg.drafted).map(pid=>playerByID(pid)).filter(p=>p&&p.p===pos); }
 
+/* ---------------- NEXT-PICK INTEL ---------------- */
+function recentLog(){ const lg=L(); return lg.log.slice().sort((a,b)=>a.pickNum-b.pickNum); }
+function positionRun(){
+  const recent = recentLog().slice(-5);
+  const cnt = {QB:0,RB:0,WR:0,TE:0};
+  for(const e of recent){ const p=playerByID(e.pid); if(p && cnt[p.p]!=null) cnt[p.p]++; }
+  const top = Object.entries(cnt).sort((a,b)=>b[1]-a[1])[0];
+  if(top && top[1]>=3) return {pos:top[0], n:top[1], total:recent.length};
+  return null;
+}
+function predictNext(){
+  const lg=L();
+  const top = (DATA.rankings[lg.scoring]||{}).top200 || [];
+  const avail = top.filter(r=>!isDrafted(r[0]) && !lg.avoid.includes(r[0]) && playerByID(r[0]));
+  const run = positionRun();
+  const myNext = nextOwnPick();
+  const start = onTheClockPick();
+  const windowN = myNext ? Math.max(7, myNext-start+1) : 7;
+  const pool = avail.slice();
+  const picks = [];
+  for(let n=start; n<start+windowN; n++){
+    let idx = 0;
+    if(run){
+      const ri = pool.findIndex(r=>playerByID(r[0]).p===run.pos);
+      if(ri>=0 && ri<6) idx = ri;   // run momentum: keep the run going if its best is nearby
+    }
+    const r = pool.splice(idx,1)[0];
+    if(!r) break;
+    const p = playerByID(r[0]);
+    picks.push({n, r, p, team: teamAtPick(n), me: myNext!==null && n===myNext});
+  }
+  const predMap = {};
+  picks.forEach(x=>predMap[x.r[0]] = x.n);
+  return {start, myNext, run, picks, predMap};
+}
+function targetStatuses(pred){
+  const lg=L();
+  const top = (DATA.rankings[lg.scoring]||{}).top200 || [];
+  const avail = top.filter(r=>!isDrafted(r[0]) && !lg.avoid.includes(r[0]) && playerByID(r[0]));
+  const starRows = lg.stars.map(pid=>avail.find(r=>r[0]===pid)).filter(Boolean);
+  const rest = avail.filter(r=>!lg.stars.includes(r[0])).slice(0,12);
+  const list = [...starRows, ...rest].filter((r,i,a)=>a.findIndex(x=>x[0]===r[0])===i).slice(0,12);
+  const myNext = pred.myNext;
+  const out = [];
+  for(const r of list){
+    const n = pred.predMap[r[0]];
+    let cls = 'falls';
+    if(myNext){
+      if(n!=null && n<myNext) cls = 'gone';
+      else if(n!=null && n===myNext) cls = 'me';
+      else if(n!=null && n<=myNext+2) cls = 'border';
+    } else if(n!=null && n<=pred.start+2) cls = 'border';
+    out.push({pid:r[0], p:playerByID(r[0]), n, cls, star: lg.stars.includes(r[0])});
+  }
+  return out;
+}
+function renderIntel(){
+  const bar = $('intelBar'); if(!bar || !DATA) return;
+  const lg=L();
+  const pred = predictNext();
+  const run = pred.run;
+  const status = [];
+  const clockTeam = teamAtPick(pred.start);
+  status.push(`<span class="clock">On the clock · Pick ${pred.start}${clockTeam?' · '+esc(clockTeam):''}</span>`);
+  if(pred.myNext){
+    const toYou = pred.myNext - pred.start;
+    status.push(`<span class="toyou">${toYou===0?'★ YOUR PICK NOW':toYou+' pick'+(toYou===1?'':'s')+' until you'}</span>`);
+  }
+  status.push(run
+    ? `<span class="run">🔥 ${run.pos} run — ${run.n} of last ${run.total} picks</span>`
+    : `<span class="run cool">No run — balanced board</span>`);
+  const chips = pred.picks.slice(0,7).map(x=>{
+    const cls = x.me?'me' : (pred.myNext && x.n<pred.myNext ? 'gone' : (pred.myNext && x.n<=pred.myNext+2 ? 'border' : 'falls'));
+    const p = x.p;
+    return `<button class="pickchip ${cls}" data-op="${x.r[0]}" title="${esc(p.n)} — FFB #${x.r[1]} · ${x.r[2]} pts · ${fmtADP(adpFor(p, scoringCat()))} ADP">
+      <span class="n">${x.n}${x.me?' ★':''}</span><span class="pn">${esc(p.n)}</span>
+      <span class="meta">${esc(p.t)} · b${p.b||'—'} · ${fmtADP(adpFor(p, scoringCat()))}</span><span class="tier">T${x.r[3]}</span>
+    </button>`;
+  }).join('');
+  const tgt = targetStatuses(pred);
+  const tgtHTML = tgt.length ? `<div class="ib-risk"><span class="rl">Targets:</span>` +
+    tgt.map(t=>`<button class="rchip ${t.cls}" data-op="${t.pid}" title="${esc(t.p.n)} · FFB #${findRank(t.pid)||'—'}">
+      <span class="s">${t.star?'★ ':''}</span>${esc(t.p.n)}<span class="s">${t.n!=null?('p'+t.n):'falls'}</span></button>`).join('') +
+    `</div>` : '';
+  bar.innerHTML = `<div class="ib-status">${status.join('')}</div><div class="ib-chips">${chips}</div>${tgtHTML}`;
+  bar.querySelectorAll('[data-op]').forEach(b=> b.onclick=()=>openDetail(b.dataset.op));
+}
+
 /* ---------------- THE BOARD ---------------- */
 let boardState = {pos:'ALL', sort:'ffb', q:''};
 function renderBoard(){
@@ -566,6 +719,7 @@ function renderBoard(){
 
   const cat = scoringCat();
   const adpRanks = adpRankMap(rows);
+  renderIntel();
 
   let view = rows.slice();
   // search
@@ -676,6 +830,14 @@ function renderTeam(){
     $('nextCall').innerHTML = `<div class="callbox"><div class="t">${lg.auction?'Budget tracker':'Next pick call'}</div>
       <div style="font-size:12.5px;color:var(--mut)">${lg.auction ? 'Mark players drafted with their $ amount to track budget.' : 'Mark players drafted as the board goes to get live recommendations.'}</div></div>`;
   }
+  // bye-week cluster warning (starters sharing a bye)
+  const bcl = byeClusters();
+  const bw = $('byeWarn');
+  if(bcl.length){
+    bw.innerHTML = bcl.map(([b,names])=>`<span>⚠️ <b>${names.length} starters</b> bye week ${b}: ${esc(names.join(', '))}</span>`).join('');
+    bw.classList.toggle('hot', bcl.some(([b,names])=>names.length>=3));
+    bw.style.display = 'flex';
+  } else { bw.innerHTML = ''; bw.style.display = 'none'; }
   // roster
   const order = ['QB','RB','WR','TE','FLEX','RBW','SFLEX','DST','K','BN'];
   let rosterHTML = '';
@@ -688,7 +850,7 @@ function renderTeam(){
       const p = players[i];
       if(p){
         rosterHTML += `<div class="slot-row"><span class="sl pos-${POS_COLORS[pos]||'dst'}" style="color:#08131f;border-radius:5px;text-align:center;padding:2px 0">${pos}</span>
-          <span class="pl">${esc(p.n)}</span>
+          <span class="pl">${esc(p.n)}<span class="bye">b${p.b||'—'}</span></span>
           <span class="adp">${fmtADP(adpFor(p, scoringCat()))}</span>
           <button class="rm" data-rm="${p.id}" title="Remove">✕</button></div>`;
       } else if(pos==='RBW' || pos==='SFLEX'){
@@ -719,6 +881,21 @@ function renderTeam(){
 }
 
 function posRows(pos){ return rankingRows()?.[pos] || []; }
+function byeClusters(){
+  const lg=L(); const r = lg.roster;
+  const byPos = {QB:[],RB:[],WR:[],TE:[]};
+  for(const pid in lg.drafted){ const p=playerByID(pid); if(p && byPos[p.p]) byPos[p.p].push(p); }
+  const byScore = (a,b)=>(playerScore(b.id,b.p)||0)-(playerScore(a.id,a.p)||0);
+  for(const pos of Object.keys(byPos)) byPos[pos].sort(byScore);
+  const starters = [];
+  for(const pos of ['QB','RB','WR','TE']) starters.push(...byPos[pos].slice(0, r[pos]||0));
+  const flexPool = [...byPos.RB.slice(r.RB||0), ...byPos.WR.slice(r.WR||0), ...byPos.TE.slice(r.TE||0)].sort(byScore);
+  starters.push(...flexPool.slice(0, (r.FLEX||0)+(r.RBW||0)+(r.SFLEX||0)));
+  starters.push(...byPos.QB.slice(r.QB||0).slice(0, r.SFLEX||0));
+  const by = {};
+  for(const p of starters){ const b=p.b||'?'; (by[b]=by[b]||[]).push(p); }
+  return Object.entries(by).filter(([b,arr])=>arr.length>=2).map(([b,arr])=>[b, arr.map(p=>p.n)]);
+}
 function replacementBaseline(pos){
   const rows = posRows(pos);
   const flexTotal = rosterSlots('FLEX') + rosterSlots('RBW') + rosterSlots('SFLEX');
@@ -837,14 +1014,18 @@ function findRank(pid){
 /* ---------------- draft actions ---------------- */
 function markDrafted(pid, amount, remove){
   const lg = L();
-  if(remove){ delete lg.drafted[pid]; saveState(); render(); return; }
-  if(lg.drafted[pid]){ delete lg.drafted[pid]; saveState(); render(); return; }
-  const pickNum = lg.auction ? (lg.log.length+1) : nextOwnPick();
-  const team = lg.auction ? lg.teamName : lg.teamName || '';
-  lg.drafted[pid] = { pick: pickNum ? pickLabel(pickNum) : '', pickNum: pickNum||0, team, amount: amount||null };
-  if(pickNum) lg.log.push({pickNum, team, pid, amount: amount||null});
+  if(remove || lg.drafted[pid]){
+    const entry = lg.drafted[pid];
+    delete lg.drafted[pid];
+    if(entry && entry.pickNum) lg.log = lg.log.filter(e=>!(e.pid===pid && e.pickNum===entry.pickNum));
+    saveState(); render(); return;
+  }
+  const pickNum = onTheClockPick();
+  const team = teamAtPick(pickNum) || (lg.auction ? lg.teamName : (pickIsMine(pickNum) ? lg.teamName : ''));
+  lg.drafted[pid] = { pick: pickLabel(pickNum), pickNum, team, amount: amount||null };
+  lg.log.push({pickNum, team, pid, amount: amount||null});
   saveState(); render();
-  toast(`Drafted: ${playerByID(pid).n}`);
+  toast(`Pick #${pickNum} — ${playerByID(pid).n}`);
 }
 $('rosterBox').addEventListener('click', e=>{ const b=e.target.closest('.rm'); if(b) markDrafted(b.dataset.rm, null, true); });
 
@@ -861,14 +1042,38 @@ function openDetail(pid){
   const rr = r ? r : (flexRows().find(x=>x[0]===pid));
   const score = rr ? rr[2] : null;
   const tier = rr ? rr[3] : null;
+  const rank = rr ? rr[1] : null;
+  const adp = adpFor(p,cat);
+  const adpRank = adpRankMap(allRows())[pid] || null;
+  const val = (adpRank && rank) ? adpRank - rank : 0;
+  const valCls = val>0?'valplus':val<0?'valminus':'';
+  const valTxt = val===0?'±0 vs ADP':(val>0?'+'+val+' vs ADP':val+' vs ADP');
+  $('ddQuick').innerHTML =
+    `<span class="big">#${rank||'—'} ${p.p}</span>`+
+    `<span class="qk">Tier ${tier||'—'}</span>`+
+    (score!=null?`<span class="qk">${score} pts</span>`:'')+
+    `<span class="${valCls}">${valTxt}</span>`+
+    `<span class="qk">ADP ${fmtADP(adp)}</span>`+
+    `<span class="qk">bye ${p.b||'—'}</span>`+
+    (p.risk!=null?`<span class="qk">Risk ${p.risk}/10</span>`:'')+
+    (p.up!=null?`<span class="qk">Up ${p.up}/10</span>`:'');
   $('ddGrid').innerHTML = [
-    ['FFB rank', rr?('#'+rr[1]+' · '+p.p):'—'], ['FFB pts', score!=null?score:'—'], ['Tier', tier||'—'],
-    ['ADP', fmtADP(adpFor(p,cat))], ['ADP (PPR)', fmtADP(p.adp_p)], ['ADP (Half)', fmtADP(p.adp_h)],
-    ['Risk', p.risk!=null?p.risk+'/10':'—'], ['Upside', p.up!=null?p.up+'/10':'—'],
-    ['Rookie blurb', p.rb?'✓':'—']
+    ['ADP (this league)', fmtADP(adp)], ['ADP (PPR)', fmtADP(p.adp_p)], ['ADP (Half)', fmtADP(p.adp_h)],
+    ['ADP (2QB/SF)', fmtADP(p.adp_q)], ['Rookie blurb', p.rb?'✓':'—']
   ].map(([k,v])=>`<div class="cell"><div class="k">${k}</div><div class="v">${v}</div></div>`).join('');
-  $('ddBlurb').innerHTML = p.blurb ? `<div class="tagline">FFB outlook</div>${esc(p.blurb)}` : '';
+  const hasNotes = !!(p.blurb||p.dyn);
+  $('ddBlurb').innerHTML = p.blurb ? `<div class="tagline">FFB outlook</div>${esc(p.blurb)}` : (p.dyn?'': '<div class="empty">No notes for this player.</div>');
   $('ddDyn').innerHTML = p.dyn ? `<div class="tagline">Dynasty note</div>${esc(p.dyn)}` : '';
+  const bbtn = $('ddBlurbBtn');
+  bbtn.style.display = hasNotes ? '' : 'none';
+  bbtn.classList.remove('open');
+  $('ddBlurb').style.display = 'none'; $('ddDyn').style.display = 'none';
+  bbtn.onclick = ()=>{
+    const open = $('ddBlurb').style.display!=='none';
+    $('ddBlurb').style.display = open?'none':'block';
+    $('ddDyn').style.display = open?'none':'block';
+    bbtn.classList.toggle('open', !open);
+  };
   // projections
   const pr = p.proj||{};
   const fmt = v => v==null?'—':(+v).toFixed(0);
@@ -914,7 +1119,7 @@ document.querySelectorAll('.expander').forEach(b=> b.onclick=()=>{
 $('notesArea').addEventListener('input', e=>{ L().notes = e.target.value; saveState(); });
 
 /* ---------------- timer ---------------- */
-const TIMER_SECONDS = 120;
+const TIMER_SECONDS = 180;
 let timerInt = null;
 function renderTimer(){
   const lg = L();
@@ -923,9 +1128,9 @@ function renderTimer(){
     const left = Math.max(0, Math.round((lg.timer.endAt - Date.now())/1000));
     b.textContent = '⏱ ' + Math.floor(left/60) + ':' + String(left%60).padStart(2,'0');
     b.classList.add('running');
-    if(left<=0){ clearInterval(timerInt); lg.timer=null; saveState(); b.classList.remove('running'); b.textContent='⏱ 2:00'; toast('Time’s up — pick!'); }
+    if(left<=0){ clearInterval(timerInt); lg.timer=null; saveState(); b.classList.remove('running'); b.textContent='⏱ 3:00'; toast('Time’s up — pick!'); }
   } else {
-    b.textContent = '⏱ 2:00';
+    b.textContent = '⏱ 3:00';
     b.classList.remove('running');
   }
 }
@@ -950,6 +1155,7 @@ function openSettings(){
   $('stBudgetRow').style.display = lg.auction?'flex':'none';
   $('stRoster').value = ['QB','RB','WR','TE','FLEX','RBW','SFLEX','DST','K','BN','IR'].map(p=>lg.roster[p]||0).join(',');
   $('stTeamName').value = lg.teamName;
+  $('stOrder').value = (lg.order||[]).join(', ');
   $('settingsBg').classList.add('open');
 }
 $('gearBtn').onclick = openSettings;
@@ -970,6 +1176,7 @@ $('stSave').onclick = ()=>{
   ['QB','RB','WR','TE','FLEX','RBW','SFLEX','DST','K','BN','IR'].forEach(p=>{ lg.roster[p] = 0; });
   order.forEach((p,i)=>{ lg.roster[p] = parts[i]||0; });
   lg.teamName = $('stTeamName').value.trim();
+  lg.order = $('stOrder').value.split(',').map(s=>s.trim()).filter(Boolean);
   saveState(); render(); $('settingsBg').classList.remove('open'); toast('Saved');
 };
 $('stReset').onclick = ()=>{
