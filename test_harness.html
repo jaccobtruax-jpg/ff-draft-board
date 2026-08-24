@@ -1,0 +1,89 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>harness</title></head>
+<body style="background:#111;color:#eee;font-family:monospace">
+<iframe id="app" src="/index.html" style="width:100%;height:70vh;border:1px solid #333"></iframe>
+<script>
+const f = document.getElementById('app');
+const out = [];
+function log(k, ok){ out.push((ok?'PASS':'FAIL') + '  ' + k); }
+f.onload = () => {
+  const w = f.contentWindow, d = w.document;
+  setTimeout(() => {
+    try {
+      const dbg = w.__dbg();
+      log('board rows rendered', d.querySelectorAll('tr.player').length > 100);
+      log('top200 first player is Gibbs', d.querySelector('tr.player .pname').textContent.includes('Gibbs'));
+      log('next pick call rendered', !!d.querySelector('#nextCall .call-main'));
+      log('scarcity 4 positions', d.querySelectorAll('#scarcityBox .sc-item').length === 4);
+      log('expert lists populated', dbg.data.players[Object.keys(dbg.data.players).find(k=>dbg.data.players[k].tags.sleeper)].tags.sleeper.length > 10);
+      log('rookie watch populated', dbg.data.rookies.length >= 20);
+      // 1. draft a player via ✓ (uncheck hide-drafted first so the row stays visible)
+      const hd = d.querySelector('#hideDrafted');
+      hd.checked = false; hd.dispatchEvent(new w.Event('change', {bubbles:true}));
+      const chk = d.querySelector('tr.player .mk.chk');
+      const pid = chk.closest('tr').dataset.id;
+      chk.click();
+      log('drafted count 1', Object.keys(dbg.L.drafted).length === 1);
+      // hideDrafted is ON by default -> drafted row disappears; class shows when visible
+      log('drafted row hidden by default', !d.querySelector(`tr.player[data-id="${pid}"]`));
+      const hd = d.querySelector('#hideDrafted');
+      hd.checked = false; hd.dispatchEvent(new w.Event('change', {bubbles:true}));
+      const prow = d.querySelector(`tr.player[data-id="${pid}"]`);
+      log('row shows drafted class when visible', !!prow && prow.classList.contains('drafted'));
+      hd.checked = true; hd.dispatchEvent(new w.Event('change', {bubbles:true}));
+      log('draft log has 1 row', d.querySelectorAll('#draftLog .log-row').length === 1);
+      log('next pick advanced', dbg.L.drafted[pid].pickNum > 0);
+      // 2. star a player
+      d.querySelector('tr.player .mk.star').click();
+      log('my guys star added', dbg.L.stars.length === 1);
+      log('guys box shows player', d.querySelectorAll('#guysBox .ctx-item').length >= 1);
+      // 3. switch league
+      d.querySelectorAll('#lgToggle button')[1].click();
+      const dbg2 = w.__dbg();
+      log('league switched to 1', dbg2.ui.league === 1);
+      log('scoring label PPR', d.querySelector('#scoringLabel').textContent.includes('PPR'));
+      log('league 2 draft state separate', Object.keys(dbg2.L.drafted).length === 0);
+      // 4. search
+      const sb = d.querySelector('#searchBox');
+      sb.value = 'Bowers'; sb.dispatchEvent(new w.Event('input', {bubbles:true}));
+      const rows = d.querySelectorAll('tr.player');
+      log('search narrows to Bowers', rows.length === 1 && rows[0].querySelector('.pname').textContent.includes('Bowers'));
+      // 5. TE tab
+      sb.value = ''; sb.dispatchEvent(new w.Event('input', {bubbles:true}));
+      d.querySelector('#posTabs button[data-pos="TE"]').click();
+      const teRows = d.querySelectorAll('tr.player');
+      log('TE tab rows', teRows.length > 10);
+      log('TE tab has tier bands', d.querySelectorAll('tr.tierband').length >= 3);
+      log('TE tab top is Bowers', teRows[0].querySelector('.pname').textContent.includes('Bowers'));
+      // 6. detail modal
+      teRows[0].click();
+      log('detail modal opens', d.querySelector('#detailBg').classList.contains('open'));
+      log('detail has blurb', d.querySelector('#ddBlurb').textContent.length > 50);
+      log('detail has projections', d.querySelector('#ddProj').textContent.includes('Rec'));
+      log('detail has actions', d.querySelectorAll('#ddActions button').length >= 2);
+      // 7. sort by value
+      d.querySelector('#ddClose').click();
+      d.querySelector('#sortSel').value = 'value';
+      d.querySelector('#sortSel').dispatchEvent(new w.Event('change', {bubbles:true}));
+      log('value sort runs', d.querySelectorAll('tr.player').length > 10);
+      // 8. settings modal
+      d.querySelector('#gearBtn').click();
+      log('settings opens', d.querySelector('#settingsBg').classList.contains('open'));
+      log('settings roster prefilled', d.querySelector('#stRoster').value === '1,2,2,1,1,1,1,6');
+      // stub dialogs BEFORE any click that could trigger them (headless blocks on confirm)
+      w.confirm = () => true;
+      w.prompt = () => null;
+      w.alert = () => {};
+      // restore league 0 + clear drafted
+      d.querySelectorAll('#settingsLgToggle button')[0].click();
+      d.querySelector('#stReset').click();
+      log('state reset works', Object.keys(w.__dbg().L.drafted).length === 0);
+      // re-draft for visual check
+      d.querySelector('#settingsClose').click();
+      d.querySelectorAll('#lgToggle button')[0].click();
+    } catch(e) { log('EXCEPTION: ' + e.message + '\n' + (e.stack||'').split('\n').slice(0,3).join(' | '), false); }
+    const pre = document.createElement('pre');
+    pre.textContent = out.join('\n');
+    document.body.appendChild(pre);
+  }, 800);
+};
+</script></body></html>
