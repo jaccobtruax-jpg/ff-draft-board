@@ -353,8 +353,8 @@ footer .btn{margin:0 4px;padding:5px 12px;font-size:11.5px}
       <div class="frm-row"><label>Snake</label><input type="checkbox" id="stSnake" style="width:auto"></div>
       <div class="frm-row"><label>Auction</label><input type="checkbox" id="stAuction" style="width:auto"></div>
       <div class="frm-row" id="stBudgetRow" style="display:none"><label>Auction budget $</label><input type="number" id="stBudget" value="200" style="max-width:90px"></div>
-      <div class="frm-row"><label>Roster (Q,R,W,T,F,D,K,B)</label><input type="text" id="stRoster" placeholder="1,2,2,1,1,1,1,6"></div>
-      <div class="hint">Roster format: QB,RB,WR,TE,FLEX,DST,K,Bench — e.g. 1,2,2,1,1,1,1,6</div>
+      <div class="frm-row"><label>Roster (Q,R,W,T,F,X,S,D,K,B,I)</label><input type="text" id="stRoster" placeholder="1,2,2,1,2,1,1,1,1,10,3"></div>
+      <div class="hint">Roster: QB,RB,WR,TE,FLEX,RBW,SFLEX,DST,K,BN,IR — e.g. 1,2,2,1,2,1,1,1,1,10,3 (8 numbers = old Q,R,W,T,F,D,K,B format)</div>
       <div class="frm-row"><label>My team name</label><input type="text" id="stTeamName" placeholder="optional — shows in draft log"></div>
     </div>
   </div>
@@ -377,17 +377,18 @@ const LS_KEY = 'ffb-draft-v2';
 let DATA = null;
 let UI = { league: 0 };
 
-const POS_COLORS = {QB:'qb',RB:'rb',WR:'wr',TE:'te',FLEX:'flex',DST:'dst',K:'k'};
-const SCORING_ALIAS = {'HALF (6pt QB)':'half','HALF (4pt QB)':'half','PPR (6pt QB)':'ppr','PPR (4pt QB)':'ppr','STD (6pt QB)':'std','STD (4pt QB)':'std'};
+const POS_COLORS = {QB:'qb',RB:'rb',WR:'wr',TE:'te',FLEX:'flex',RBW:'wr',SFLEX:'qb',DST:'dst',K:'k'};
+const SCORING_ALIAS = {'HALF (6pt QB)':'half','HALF (4pt QB)':'half','PPR (6pt QB)':'ppr','PPR (4pt QB)':'ppr','STD (6pt QB)':'std','STD (4pt QB)':'std','TE PREM (4pt QB)':'teprem','TE PREM (6pt QB)':'teprem'};
 
 /* ---------------- league config ---------------- */
 function defaultLeague(i){
   return {
     name: i===0 ? 'Dolphin Fans' : 'League 2',
-    scoring: i===0 ? 'PPR (6pt QB)' : 'HALF (6pt QB)',
-    teams: 12, slot: 5, snake: true, auction: false, budget: 200,
-    roster: {QB:1, RB:2, WR:2, TE:1, FLEX:1, DST:1, K:1, BN:6},
-    teamName: '',
+    scoring: i===0 ? 'TE PREM (4pt QB)' : 'HALF (6pt QB)',
+    teams: i===0 ? 10 : 12, slot: 5, snake: true, auction: false, budget: 200,
+    roster: i===0 ? {QB:1, RB:2, WR:2, TE:1, FLEX:2, RBW:1, SFLEX:1, DST:1, K:1, BN:10, IR:3}
+                  : {QB:1, RB:2, WR:2, TE:1, FLEX:1, DST:1, K:1, BN:6},
+    teamName: i===0 ? 'Dolphin fans are gay' : '',
     drafted: {},       // pid -> {pick, pickNum, team, amount}
     keepers: {},       // pid -> round label
     stars: [], watch: [], avoid: [],
@@ -427,12 +428,17 @@ function pickLabel(pickNum){
 }
 function playerByID(id){ return DATA.players[id]; }
 function scoringCat(){ const s=L().scoring; const a=SCORING_ALIAS[s]||'half'; return a; }
-function adpFor(p, cat){ return cat==='ppr'?p.adp_p : cat==='std'?p.adp : (p.adp_h!=null?p.adp_h:p.adp); }
+function adpFor(p, cat){
+  const r = L().roster;
+  if((r.SFLEX||0) > 0 || (r.QB||0) > 1) return p.adp_q != null ? p.adp_q : (p.adp_h != null ? p.adp_h : p.adp);
+  return cat==='ppr'?p.adp_p : cat==='std'?p.adp : (p.adp_h!=null?p.adp_h:p.adp);
+}
 function isDrafted(id){ return !!L().drafted[id]; }
 function myPickNums(){
   const lg=L(); if(lg.auction) return [];
   const nums=[];
-  const rounds=Math.ceil((lg.teams*Object.values(lg.roster).reduce((a,b)=>a+b,0))/lg.teams);
+  const draftSlots=Object.values(lg.roster).reduce((a,b)=>a+b,0)-(lg.roster.IR||0);
+  const rounds=Math.ceil((lg.teams*draftSlots)/lg.teams);
   for(let r=1;r<=rounds;r++){
     const n = (r-1)*lg.teams + (r%2===1 ? lg.slot : lg.teams+1-lg.slot);
     nums.push(n);
@@ -486,7 +492,7 @@ function renderHeader(){
 
   // need chips
   const fills = rosterFill();
-  const order = ['QB','RB','WR','TE','FLEX','DST','K'];
+  const order = ['QB','RB','WR','TE','FLEX','RBW','SFLEX','DST','K'].filter(pos=>rosterSlots(pos)>0);
   $('needChips').innerHTML = order.map(pos=>{
     const need = rosterNeed(pos, fills);
     let cls = 'ok', txt = pos+' '+fills[pos]+'/'+rosterSlots(pos);
@@ -521,15 +527,18 @@ function rosterSlots(pos){
   return base;
 }
 function rosterFill(){
-  const lg=L(); const f={QB:0,RB:0,WR:0,TE:0,FLEX:0,DST:0,K:0,BN:0};
+  const lg=L(); const f={QB:0,RB:0,WR:0,TE:0,FLEX:0,RBW:0,SFLEX:0,DST:0,K:0,BN:0};
   const byPos={QB:0,RB:0,WR:0,TE:0,DST:0,K:0};
   for(const pid in lg.drafted){ const p=playerByID(pid); if(!p) continue; if(byPos[p.p]!=null) byPos[p.p]++; }
   f.QB=byPos.QB; f.RB=byPos.RB; f.WR=byPos.WR; f.TE=byPos.TE; f.DST=byPos.DST; f.K=byPos.K;
-  const used = (byPos.RB||0)+(byPos.WR||0)+(byPos.TE||0) - (lg.roster.RB+lg.roster.WR+lg.roster.TE);
-  f.FLEX = Math.max(0, used);
-  const totalSlots = Object.values(lg.roster).reduce((a,b)=>a+b,0);
+  let over = (byPos.RB||0)+(byPos.WR||0)+(byPos.TE||0) - ((lg.roster.RB||0)+(lg.roster.WR||0)+(lg.roster.TE||0));
+  f.FLEX = Math.max(0, Math.min(lg.roster.FLEX||0, over)); over -= f.FLEX;
+  f.RBW = Math.max(0, Math.min(lg.roster.RBW||0, over)); over -= f.RBW;
+  const qOver = Math.max(0, (byPos.QB||0) - (lg.roster.QB||0));
+  f.SFLEX = Math.max(0, Math.min(lg.roster.SFLEX||0, over + qOver));
+  const draftSlots = Object.values(lg.roster).reduce((a,b)=>a+b,0) - (lg.roster.IR||0);
   const totalDrafted = Object.keys(lg.drafted).length;
-  f.BN = Math.max(0, totalDrafted - (totalSlots - lg.roster.BN));
+  f.BN = Math.max(0, totalDrafted - (draftSlots - (lg.roster.BN||0)));
   return f;
 }
 function rosterNeed(pos, fills){
@@ -668,11 +677,13 @@ function renderTeam(){
       <div style="font-size:12.5px;color:var(--mut)">${lg.auction ? 'Mark players drafted with their $ amount to track budget.' : 'Mark players drafted as the board goes to get live recommendations.'}</div></div>`;
   }
   // roster
-  const order = ['QB','RB','WR','TE','FLEX','DST','K','BN'];
+  const order = ['QB','RB','WR','TE','FLEX','RBW','SFLEX','DST','K','BN'];
   let rosterHTML = '';
+  const benchP = Object.keys(lg.drafted).map(pid=>playerByID(pid)).filter(p=>p && !['QB','RB','WR','TE','FLEX','RBW','SFLEX','DST','K'].includes(p.p));
+  benchP.sort((a,b)=> (playerScore(b.id, b.p)||0)-(playerScore(a.id, a.p)||0));
   for(const pos of order){
     const slots = rosterSlots(pos); if(!slots && pos!=='BN') continue;
-    const players = draftedAtPos(pos);
+    const players = pos==='BN' ? benchP : draftedAtPos(pos);
     for(let i=0;i<slots;i++){
       const p = players[i];
       if(p){
@@ -680,22 +691,20 @@ function renderTeam(){
           <span class="pl">${esc(p.n)}</span>
           <span class="adp">${fmtADP(adpFor(p, scoringCat()))}</span>
           <button class="rm" data-rm="${p.id}" title="Remove">✕</button></div>`;
+      } else if(pos==='RBW' || pos==='SFLEX'){
+        const cnt = fills[pos]||0;
+        rosterHTML += `<div class="slot-row ${cnt?'':'open'}"><span class="sl">${pos}</span><span class="pl"><em>${cnt?cnt+' filled':'open'}</em></span></div>`;
       } else {
         const need = fills[pos] < slots;
         rosterHTML += `<div class="slot-row open ${need?'needs':''}"><span class="sl">${pos}</span><span class="pl"><em>open</em></span></div>`;
       }
     }
   }
-  // bench
-  const benchP = Object.keys(lg.drafted).map(pid=>playerByID(pid)).filter(p=>p && !['QB','RB','WR','TE','FLEX','DST','K'].includes(p.p));
-  benchP.forEach(p=>{
-    rosterHTML += `<div class="slot-row"><span class="sl">BN</span><span class="pl">${esc(p.n)}</span><button class="rm" data-rm="${p.id}">✕</button></div>`;
-  });
   $('rosterBox').innerHTML = rosterHTML;
   $('rosterBox').querySelectorAll('.rm').forEach(b=> b.onclick=()=>{ markDrafted(b.dataset.rm, null, true); });
 
   // scarcity
-  const tops = {QB:12, RB:24, WR:36, TE:12};
+  const tops = {QB: (L().roster.SFLEX||0)>0 ? 18 : 12, RB: 24, WR: 36, TE: 12};
   let scHTML = '';
   for(const pos of ['QB','RB','WR','TE']){
     const rows = rankingRows()?.[pos] || [];
@@ -712,7 +721,8 @@ function renderTeam(){
 function posRows(pos){ return rankingRows()?.[pos] || []; }
 function replacementBaseline(pos){
   const rows = posRows(pos);
-  const idx = Math.min(rows.length-1, (L().teams * rosterSlots(pos)) + Math.round(L().teams*rosterSlots('FLEX')/3));
+  const flexTotal = rosterSlots('FLEX') + rosterSlots('RBW') + rosterSlots('SFLEX');
+  const idx = Math.min(rows.length-1, (L().teams * rosterSlots(pos)) + Math.round(L().teams*flexTotal/3));
   return rows[idx] ? rows[idx][2] : 0;
 }
 function playerScore(pid, pos){
@@ -938,7 +948,7 @@ function openSettings(){
   $('stSnake').checked = lg.snake; $('stAuction').checked = lg.auction;
   $('stBudget').value = lg.budget;
   $('stBudgetRow').style.display = lg.auction?'flex':'none';
-  $('stRoster').value = ['QB','RB','WR','TE','FLEX','DST','K','BN'].map(p=>lg.roster[p]||0).join(',');
+  $('stRoster').value = ['QB','RB','WR','TE','FLEX','RBW','SFLEX','DST','K','BN','IR'].map(p=>lg.roster[p]||0).join(',');
   $('stTeamName').value = lg.teamName;
   $('settingsBg').classList.add('open');
 }
@@ -955,7 +965,10 @@ $('stSave').onclick = ()=>{
   lg.auction = $('stAuction').checked;
   lg.budget = Math.max(1, +$('stBudget').value||200);
   const parts = $('stRoster').value.split(',').map(s=>Math.max(0,+s.trim()||0));
-  ['QB','RB','WR','TE','FLEX','DST','K','BN'].forEach((p,i)=>{ lg.roster[p] = parts[i]||0; });
+  const order = parts.length >= 9 ? ['QB','RB','WR','TE','FLEX','RBW','SFLEX','DST','K','BN','IR']
+                                  : ['QB','RB','WR','TE','FLEX','DST','K','BN'];
+  ['QB','RB','WR','TE','FLEX','RBW','SFLEX','DST','K','BN','IR'].forEach(p=>{ lg.roster[p] = 0; });
+  order.forEach((p,i)=>{ lg.roster[p] = parts[i]||0; });
   lg.teamName = $('stTeamName').value.trim();
   saveState(); render(); $('settingsBg').classList.remove('open'); toast('Saved');
 };

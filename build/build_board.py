@@ -95,14 +95,34 @@ def auction_values(sc_name, sc, pos_rankings, team_comp, league_size=12, budget=
 
 DEFAULT_COMP = [['QB', 1], ['RB', 2], ['WR', 2], ['TE', 1], ['FLEX', 1], ['D', 1], ['K', 1], ['BN', 6]]
 
+# ---- per-scoring-system team composition + league size (from the league's own rosterSlots)
+SCORING = json.load(open('/tmp/scoring_systems.json'))
+
+def comp_from_slots(slots):
+    counts = {}
+    for slot, n in (slots or []):
+        s = str(slot).upper()
+        if s in ('RB/WR',):
+            s = 'FLEX'
+        elif s in ('SFLEX', 'SUPERFLEX'):
+            s = 'QB'
+        elif s in ('TX', 'IR', 'BENCH'):
+            continue
+        counts[s] = counts.get(s, 0) + n
+    order = ['QB', 'RB', 'WR', 'TE', 'FLEX', 'D', 'K', 'BN']
+    return [[p, counts.get(p, 0)] for p in order if counts.get(p, 0)]
+
 # ---- compact rankings
 R = {}
 for sc_name, r in rankings.items():
+    sc_cfg = SCORING.get(sc_name, {})
+    comp = comp_from_slots(sc_cfg.get('rosterSlots')) or DEFAULT_COMP
+    lsize = sc_cfg.get('leagueSize', 12)
     entry = {'positions': {}, 'top200': [], 'auction': {}}
     for pos in ('QB', 'RB', 'WR', 'TE'):
         entry['positions'][pos] = [[x['id'], x['rank'], round(x['score'], 1), x['tier'], x['tier_band'], x['adp_fmt']] for x in r['positions'][pos]]
     entry['top200'] = [[x['id'], x['rank'], round(x['score'], 1), x['tier']] for x in r['top200']]
-    entry['auction'] = {pos: [[x['id'], x['v']] for x in auction_values(sc_name, {}, r['positions'], DEFAULT_COMP)[pos]] for pos in ('QB', 'RB', 'WR', 'TE')}
+    entry['auction'] = {pos: [[x['id'], x['v']] for x in auction_values(sc_name, sc_cfg, r['positions'], comp, league_size=lsize)[pos]] for pos in ('QB', 'RB', 'WR', 'TE')}
     R[sc_name] = entry
 
 board = {

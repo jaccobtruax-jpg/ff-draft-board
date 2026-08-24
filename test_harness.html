@@ -11,7 +11,7 @@ f.onload = () => {
     try {
       const dbg = w.__dbg();
       log('board rows rendered', d.querySelectorAll('tr.player').length > 100);
-      log('top200 first player is Gibbs', d.querySelector('tr.player .pname').textContent.includes('Gibbs'));
+      log('top200 first player is Allen (sf TE prem)', d.querySelector('tr.player .pname').textContent.includes('Allen'));
       log('next pick call rendered', !!d.querySelector('#nextCall .call-main'));
       log('scarcity 4 positions', d.querySelectorAll('#scarcityBox .sc-item').length === 4);
       log('expert lists populated', dbg.data.players[Object.keys(dbg.data.players).find(k=>dbg.data.players[k].tags.sleeper)].tags.sleeper.length > 10);
@@ -25,11 +25,11 @@ f.onload = () => {
       log('drafted count 1', Object.keys(dbg.L.drafted).length === 1);
       // hideDrafted is ON by default -> drafted row disappears; class shows when visible
       log('drafted row hidden by default', !d.querySelector(`tr.player[data-id="${pid}"]`));
-      const hd = d.querySelector('#hideDrafted');
-      hd.checked = false; hd.dispatchEvent(new w.Event('change', {bubbles:true}));
+      const hd0 = d.querySelector('#hideDrafted');
+      hd0.checked = false; hd0.dispatchEvent(new w.Event('change', {bubbles:true}));
       const prow = d.querySelector(`tr.player[data-id="${pid}"]`);
       log('row shows drafted class when visible', !!prow && prow.classList.contains('drafted'));
-      hd.checked = true; hd.dispatchEvent(new w.Event('change', {bubbles:true}));
+      hd0.checked = true; hd0.dispatchEvent(new w.Event('change', {bubbles:true}));
       log('draft log has 1 row', d.querySelectorAll('#draftLog .log-row').length === 1);
       log('next pick advanced', dbg.L.drafted[pid].pickNum > 0);
       // 2. star a player
@@ -68,7 +68,7 @@ f.onload = () => {
       // 8. settings modal
       d.querySelector('#gearBtn').click();
       log('settings opens', d.querySelector('#settingsBg').classList.contains('open'));
-      log('settings roster prefilled', d.querySelector('#stRoster').value === '1,2,2,1,1,1,1,6');
+      log('settings roster prefilled', d.querySelector('#stRoster').value === '1,2,2,1,2,1,1,1,1,10,3');
       // stub dialogs BEFORE any click that could trigger them (headless blocks on confirm)
       w.confirm = () => true;
       w.prompt = () => null;
