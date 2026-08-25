@@ -22,6 +22,12 @@ Canonical input JSON (what the importer in the browser also accepts):
 
 CSV input: header row with (round|r), (slot|pick), (team), (player|name), (pos),
 optional (adp), (pts). team column may be the team NAME or the slot number.
+
+Partial mocks are supported: a mock may contain ONLY the user's own picks
+(their draft slot's selections, e.g. after the fact or from a mock where the
+other managers were simulated). Omit the other slots' picks entirely and set
+"partial": true. The pre-draft analysis treats missing managers as unknown
+instead of inventing picks for them.
 """
 import json, re, sys, csv, random
 from pathlib import Path

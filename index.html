@@ -675,7 +675,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 </main>
 
 <footer>
-  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b25c, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b25c</span><br>
+  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b26a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b26a</span><br>
   <span style="opacity:.75">Data: Fantasy Footballers 2026 Ultimate Draft Kit (rankings computed with the UDK engine for your league scoring). Your draft state lives only in this browser.</span>
   <button class="btn ghost" id="exportBtn">Export state</button>
   <button class="btn ghost" id="importBtn">Import state</button>
@@ -857,9 +857,9 @@ const L1_HANDLES = {
 };
 function defaultLeague(i){
   return {
-    name: i===0 ? 'League of Champs' : 'League 2',
-    scoring: i===0 ? 'TE PREM (4pt QB)' : 'HALF (6pt QB)',
-    teams: i===0 ? 10 : 12, slot: i===0 ? 3 : 5, snake: true, auction: false, budget: 200,
+    name: i===0 ? 'League of Champs' : 'Leg of bastards',
+    scoring: 'TE PREM (4pt QB)',
+    teams: 10, slot: i===0 ? 3 : 5, snake: true, auction: false, budget: 200,
     roster: i===0 ? {QB:1, RB:2, WR:2, TE:1, FLEX:2, RBW:1, SFLEX:1, DST:1, K:1, BN:10, IR:3}
                   : {QB:1, RB:2, WR:2, TE:1, FLEX:1, DST:1, K:1, BN:6},
     teamName: i===0 ? 'Dolphin fans are gay' : '',
