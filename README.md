@@ -19,7 +19,9 @@ Draft-day companion board for Jaccob's two leagues, built on the Fantasy Footbal
 ## Files
 
 - `index.html` — the app (single page, vanilla JS, no build step)
-- `test_harness.html` — in-browser smoke test, **68 checks** (open it, PASS/FAIL list renders)
+- **Keeper league support** — declared keepers are seeded from the real Sleeper locks (League of Champs: Flowers/Pitts, Pickens/Loveland, Javonte/Achane, Bowers/Cook, Rice/JSN with their round.pick and team). Kept players count as taken (hidden, excluded from recommendations, fill needs/roster), the Managers panel shows each team's keeps, and you can mark/remove keepers from any player's modal (round.pick + team). Reset keeps declared keepers.
+- **My Team is *your* team** — roster/needs now count only picks attributed to you (plus your keepers), so live-mode tracking of the whole board can't pollute your roster view.
+- `test_harness.html` — in-browser smoke test, **78 checks** (open it, PASS/FAIL list renders)
 - `data/board.json` — all player/ranking data (~660KB)
 - `data/mocks.json` — mock-draft corpus for the Pre-Draft page (bundled SAMPLE mocks; override via in-app import)
 - `build/` — the scripts that scraped the UDK site and built board.json, plus `build_mocks.py` (converts mock exports → mocks.json, name-matches players, joins ADP)

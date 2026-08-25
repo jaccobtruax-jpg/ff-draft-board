@@ -38,7 +38,7 @@ f.onload = () => {
       log('expert lists populated', dbg.data.players[Object.keys(dbg.data.players).find(k=>dbg.data.players[k].tags.sleeper)].tags.sleeper.length > 10);
       log('rookie watch populated', dbg.data.rookies.length >= 20);
       // 1. draft a player via ✓ while hide-drafted is ON (default) -> row disappears
-      const chk = d.querySelector('tr.player .mk.chk');
+      const chk = d.querySelector('tr.player:not(.drafted) .mk.chk');
       const pid = chk.closest('tr').dataset.id;
       chk.click();
       log('drafted count 1', Object.keys(dbg.L.drafted).length === 1);
@@ -63,16 +63,16 @@ f.onload = () => {
       log('league 2 draft state separate', Object.keys(dbg2.L.drafted).length === 0);
       // 4. search
       const sb = d.querySelector('#searchBox');
-      sb.value = 'Bowers'; sb.dispatchEvent(new w.Event('input', {bubbles:true}));
+      sb.value = 'Bijan'; sb.dispatchEvent(new w.Event('input', {bubbles:true}));
       const rows = d.querySelectorAll('tr.player');
-      log('search narrows to Bowers', rows.length === 1 && rows[0].querySelector('.pname').textContent.includes('Bowers'));
+      log('search narrows to Bijan (kept Bowers stays hidden)', rows.length === 1 && rows[0].querySelector('.pname').textContent.includes('Bijan'));
       // 5. TE tab
       sb.value = ''; sb.dispatchEvent(new w.Event('input', {bubbles:true}));
       d.querySelector('#posTabs button[data-pos="TE"]').click();
       const teRows = d.querySelectorAll('tr.player');
       log('TE tab rows', teRows.length > 10);
       log('TE tab has tier bands', d.querySelectorAll('tr.tierband').length >= 3);
-      log('TE tab top is Bowers', teRows[0].querySelector('.pname').textContent.includes('Bowers'));
+      log('TE tab hides kept Bowers', !d.querySelector('tr.player[data-id="'+Object.keys(dbg.data.players).find(k=>dbg.data.players[k].n.includes('Bowers'))+'"]'));
       // 6. detail modal
       teRows[0].click();
       log('detail modal opens', d.querySelector('#detailBg').classList.contains('open'));
@@ -102,7 +102,7 @@ f.onload = () => {
       // mark 2 more picks -> sequential numbering 1,2,3 and clock advances
       const hd2 = d.querySelector('#hideDrafted');
       hd2.checked = false; hd2.dispatchEvent(new w.Event('change', {bubbles:true}));
-      d.querySelector('tr.player .mk.chk').click();
+      d.querySelector('tr.player:not(.drafted) .mk.chk').click();
       d.querySelector('tr.player:not(.drafted) .mk.chk').click();
       d.querySelector('tr.player:not(.drafted) .mk.chk').click();
       log('sequential pick numbers 1..3', di.L.log.length === 3 && di.L.log.map(e=>e.pickNum).join(',') === '1,2,3');
@@ -128,7 +128,7 @@ f.onload = () => {
       lg0.order = ['Alpha','Bravo','Charlie','Delta','Echo','Foxtrot','Golf','Hotel','India','Juliet'];
       lg0.drafted = {}; lg0.log = [];
       di.render();
-      d.querySelector('tr.player .mk.chk').click();
+      d.querySelector('tr.player:not(.drafted) .mk.chk').click();
       d.querySelector('tr.player:not(.drafted) .mk.chk').click();
       d.querySelector('tr.player:not(.drafted) .mk.chk').click();
       log('log teams follow draft order', ['Alpha','Bravo','Charlie'].every((t,i)=> di.L.log[i].team===t));
@@ -170,7 +170,7 @@ f.onload = () => {
       lgA.drafted = {}; lgA.log = []; dp.render();
       const hdA = d.querySelector('#hideDrafted');
       hdA.checked = false; hdA.dispatchEvent(new w.Event('change', {bubbles:true}));
-      d.querySelector('tr.player .mk.chk').click();
+      d.querySelector('tr.player:not(.drafted) .mk.chk').click();
       d.querySelector('tr.player:not(.drafted) .mk.chk').click();
       d.querySelector('tr.player:not(.drafted) .mk.chk').click();
       log('who-drafted teams follow order', ['Mothership','Gare-e Bears','Dolphin fans are gay'].every((t,i)=> dp.L.log[i].team===t));
@@ -225,7 +225,39 @@ f.onload = () => {
       d.querySelector('tr.player:not(.drafted) .pname').click();
       log('modal who enabled when off', d.querySelector('#ddWho').disabled === false);
       d.querySelector('#ddClose').click();
-      log('managers panel handles', /@aws1990/.test(d.querySelector('#mgrBox').textContent));
+      log('managers panel shows handles', /@aws1990/.test(d.querySelector('#mgrBox').textContent));
+      // ============ KEEPERS (League of Champs) ============
+      const lgK = dq.leagues[0];
+      lgK.log = []; lgK.drafted = {}; dq.render();
+      const hd0 = d.querySelector('#hideDrafted');
+      hd0.checked = true; hd0.dispatchEvent(new w.Event('change', {bubbles:true}));
+      const allTab0 = d.querySelector('#posTabs button[data-pos="ALL"]');
+      if(allTab0) allTab0.click();
+      log('10 keepers seeded', Object.keys(lgK.keepers).length === 10);
+      const myK = Object.entries(lgK.keepers).filter(([pid,k])=> (k.team||'') === 'Dolphin fans are gay');
+      log('my keepers = Javonte 9.3 + Achane 11.3', myK.length === 2 &&
+        myK.some(([pid,k])=> /Javonte/.test(dq.data.players[pid].n) && k.rnd===9 && k.pk===3) &&
+        myK.some(([pid,k])=> /Achane/.test(dq.data.players[pid].n) && k.rnd===11 && k.pk===3));
+      log('kept players hidden by default', Object.keys(lgK.keepers).every(pid => !d.querySelector('tr.player[data-id="'+pid+'"]')));
+      log('roster counts my keepers as RBs', dq.rosterFill().RB === 2);
+      log('teamNeed counts keepers (Mothership: RB,WR)', /needs RB,WR/.test(dq.teamNeed('Mothership')));
+      log('managers panel shows kept players', /Flowers 7.1/.test(d.querySelector('#mgrBox').textContent) && /Pitts 10.10/.test(d.querySelector('#mgrBox').textContent) && /Bowers 6.3/.test(d.querySelector('#mgrBox').textContent));
+      const hdK = d.querySelector('#hideDrafted');
+      hdK.checked = false; hdK.dispatchEvent(new w.Event('change', {bubbles:true}));
+      const keptPid = myK[0][0];
+      d.querySelector('tr.player[data-id="'+keptPid+'"] .pname').click();
+      log('modal keeper tag with team + pick', /Keeper 9.3/.test(d.querySelector('#ddTags').textContent) && /Dolphin fans are gay/.test(d.querySelector('#ddTags').textContent));
+      d.querySelector('#ddClose').click();
+      w.prompt = ()=>"5.3";
+      const tgt = d.querySelector('tr.player:not(.drafted)');
+      const tgtPid = tgt.dataset.id;
+      tgt.querySelector('.pname').click();
+      d.querySelector('#ddKeeper').click();
+      log('keeper added via modal (5.3, auto team)', !!lgK.keepers[tgtPid] && lgK.keepers[tgtPid].rnd===5 && lgK.keepers[tgtPid].pk===3 && lgK.keepers[tgtPid].team==='Mothership');
+      d.querySelector('#ddKeeper').click();
+      log('keeper removed via modal', !lgK.keepers[tgtPid]);
+      d.querySelector('#ddClose').click();
+      hdK.checked = true; hdK.dispatchEvent(new w.Event('change', {bubbles:true}));
     } catch(e){ log('PD EXCEPTION: ' + e.message + '\n' + (e.stack||'').split('\n').slice(0,3).join(' | '), false); }
     finish();
   };

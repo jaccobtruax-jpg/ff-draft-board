@@ -102,6 +102,8 @@ tr.player:hover{background:var(--bg3)}
 tr.player.drafted td{opacity:.38}
 tr.player.drafted .pname{text-decoration:line-through}
 tr.player.keeper td{opacity:.75}
+.tag-keeper{background:rgba(245,166,35,.14);color:var(--warn)}
+.kbadge{display:inline-block;margin:0 4px;padding:0 5px;border-radius:4px;background:rgba(245,166,35,.18);color:var(--warn);font-size:10px;font-weight:900;border:1px solid rgba(245,166,35,.45)}
 tr.player.mine td{background:rgba(79,206,122,.08)}
 tr.tierband td{background:var(--bg2);padding:4px 8px;font-size:10.5px;font-weight:800;color:var(--dim);text-transform:uppercase;letter-spacing:.8px;border-bottom:1px solid var(--line2)}
 td.tier{width:26px;text-align:center}
@@ -596,7 +598,7 @@ function defaultLeague(i){
   };
 }
 const LEAGUES = [defaultLeague(0), defaultLeague(1)];
-window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, managers, render, renderPredraft, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles});
+window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, managers, render, renderPredraft, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers});
 function saveState(){ localStorage.setItem(LS_KEY, JSON.stringify({leagues: LEAGUES, ui: UI})); }
 function loadState(){
   try{
@@ -631,7 +633,48 @@ function adpFor(p, cat){
   if((r.SFLEX||0) > 0 || (r.QB||0) > 1) return p.adp_q != null ? p.adp_q : (p.adp_h != null ? p.adp_h : p.adp);
   return cat==='ppr'?p.adp_p : cat==='std'?p.adp : (p.adp_h!=null?p.adp_h:p.adp);
 }
-function isDrafted(id){ return !!L().drafted[id]; }
+function isDrafted(id){ return !!L().drafted[id] || !!L().keepers[id]; }
+/* keepers: {pid: {rnd, pk, team}} (legacy: pid -> round-string) */
+function normK(k){ return (k && typeof k === 'object') ? {rnd:+k.rnd||0, pk:+k.pk||0, team:k.team||''} : {rnd:+k||0, pk:0, team:''}; }
+function keeperInfo(pid){ const k = L().keepers[pid]; return k ? normK(k) : null; }
+function keeperLabel(k){ k = normK(k); return k.pk ? k.rnd+'.'+k.pk : 'r'+k.rnd; }
+function myDraftedEntries(){
+  const lg=L(); const out=[];
+  for(const pid in lg.drafted){ const e=lg.drafted[pid]; if(!e) continue; if(e.team && lg.teamName && e.team!==lg.teamName) continue; out.push(pid); }
+  return out;
+}
+function myKeptEntries(){
+  const lg=L(); const out=[];
+  for(const pid in lg.keepers){ const k=normK(lg.keepers[pid]); if(k.team && lg.teamName && k.team!==lg.teamName) continue; out.push(pid); }
+  return out;
+}
+/* declared League of Champs keepers (locked in on Sleeper, 2026): [name, rnd, pk, team] */
+const L1_KEEPERS = [
+  ['Zay Flowers', 7, 1, 'Mothership'],
+  ['Kyle Pitts', 10, 10, 'Mothership'],
+  ['George Pickens', 6, 9, 'Gare-e Bears'],
+  ['Colston Loveland', 7, 2, 'Gare-e Bears'],
+  ['Javonte Williams', 9, 3, 'Dolphin fans are gay'],
+  ["De'Von Achane", 11, 3, 'Dolphin fans are gay'],
+  ['Brock Bowers', 6, 3, 'Team Name TBD'],
+  ['James Cook', 7, 8, 'Team Name TBD'],
+  ['Rashee Rice', 7, 9, "Sandusky's Home of TEs"],
+  ['Jaxon Smith-Njigba', 8, 2, "Sandusky's Home of TEs"],
+];
+function normName(s){ return (s||'').toLowerCase().replace(/\s+(sr|jr|ii|iii|iv|v)\.?$/, ''); }
+function seedKeepers(){
+  const lg = LEAGUES[0];
+  if(lg.keepersSeeded || Object.keys(lg.keepers).length) return;
+  if(!DATA.players) return;
+  const pl = Object.entries(DATA.players);
+  let n = 0;
+  for(const [name, rnd, pk, team] of L1_KEEPERS){
+    const hit = pl.find(([pid, x]) => normName(x.n) === normName(name));
+    if(hit){ lg.keepers[hit[0]] = {rnd, pk, team}; n++; }
+  }
+  lg.keepersSeeded = true;
+  saveState();
+}
 function myPickNums(){
   const lg=L(); if(lg.auction) return [];
   const nums=[];
@@ -771,8 +814,9 @@ function rosterSlots(pos){
 }
 function rosterFill(){
   const lg=L(); const f={QB:0,RB:0,WR:0,TE:0,FLEX:0,RBW:0,SFLEX:0,DST:0,K:0,BN:0};
+  const my = [...myDraftedEntries(), ...myKeptEntries()];
   const byPos={QB:0,RB:0,WR:0,TE:0,DST:0,K:0};
-  for(const pid in lg.drafted){ const p=playerByID(pid); if(!p) continue; if(byPos[p.p]!=null) byPos[p.p]++; }
+  for(const pid of my){ const p=playerByID(pid); if(!p) continue; if(byPos[p.p]!=null) byPos[p.p]++; }
   f.QB=byPos.QB; f.RB=byPos.RB; f.WR=byPos.WR; f.TE=byPos.TE; f.DST=byPos.DST; f.K=byPos.K;
   let over = (byPos.RB||0)+(byPos.WR||0)+(byPos.TE||0) - ((lg.roster.RB||0)+(lg.roster.WR||0)+(lg.roster.TE||0));
   f.FLEX = Math.max(0, Math.min(lg.roster.FLEX||0, over)); over -= f.FLEX;
@@ -780,8 +824,7 @@ function rosterFill(){
   const qOver = Math.max(0, (byPos.QB||0) - (lg.roster.QB||0));
   f.SFLEX = Math.max(0, Math.min(lg.roster.SFLEX||0, over + qOver));
   const draftSlots = Object.values(lg.roster).reduce((a,b)=>a+b,0) - (lg.roster.IR||0);
-  const totalDrafted = Object.keys(lg.drafted).length;
-  f.BN = Math.max(0, totalDrafted - (draftSlots - (lg.roster.BN||0)));
+  f.BN = Math.max(0, my.length - (draftSlots - (lg.roster.BN||0)));
   return f;
 }
 function rosterNeed(pos, fills){
@@ -791,7 +834,7 @@ function rosterNeed(pos, fills){
   if(filled < slots) return 'missing';
   return 'ok';
 }
-function draftedAtPos(pos){ const lg=L(); return Object.keys(lg.drafted).map(pid=>playerByID(pid)).filter(p=>p&&p.p===pos); }
+function draftedAtPos(pos){ const lg=L(); return [...myDraftedEntries(), ...myKeptEntries()].map(pid=>playerByID(pid)).filter(p=>p&&p.p===pos); }
 
 /* ---------------- NEXT-PICK INTEL ---------------- */
 function recentLog(){ const lg=L(); return lg.log.slice().sort((a,b)=>a.pickNum-b.pickNum); }
@@ -947,12 +990,12 @@ function rowHTML(r, idx, val){
   const adpF = fmtADP(adp);
   const risk = r[3] != null ? r[3] : p.risk;
   const riskCls = risk==null ? '' : risk<4 ? 'risk-low' : risk<6.5 ? 'risk-mid' : 'risk-hi';
-  const drafted = !!lg.drafted[r[0]];
+  const drafted = !!lg.drafted[r[0]] || !!lg.keepers[r[0]];
   const keeper = lg.keepers[r[0]];
   const mine = lg.stars.includes(r[0]);
   const tags = Object.keys(p.tags||{});
   const posCls = POS_COLORS[p.p] || 'dst';
-  const tagHtml = tags.map(t=>`<span class="tag tag-${t}">${t}</span>`).join('') + (p.rb?`<span class="tag tag-rookie">R</span>`:'');
+  const tagHtml = tags.map(t=>`<span class="tag tag-${t}">${t}</span>`).join('') + (p.rb?`<span class="tag tag-rookie">R</span>`:'') + (keeper?`<span class="tag tag-keeper" title="Keeper · ${esc(normK(keeper).team||'')}">K ${keeperLabel(keeper)}</span>`:'');
   const valHtml = val===0?'±0':val>0?`<span class="valplus">+${val}</span>`:`<span class="valminus">${val}</span>`;
   const marks =
     (UI.live && !drafted ? `<button class="qk-take" data-take="${r[0]}" title="Live: marks drafted — auto-assigned to the team on the clock">TAKEN</button>` : '') +
@@ -983,7 +1026,8 @@ $('boardRows').addEventListener('click', e=>{
   const pid = tr.dataset.id; const lg = L();
   if(mk){
     const a = mk.dataset.a;
-    if(a==='draft'){ markDrafted(pid, null, !!lg.drafted[pid]); return; }
+    if(a==='draft'){ if(lg.keepers[pid]){ toast('Already kept — remove the keeper first'); }
+      else markDrafted(pid, null, !!lg.drafted[pid]); return; }
     if(a==='star'){ lg.stars = lg.stars.includes(pid) ? lg.stars.filter(x=>x!==pid) : [...lg.stars, pid]; }
     if(a==='watch'){ lg.watch = lg.watch.includes(pid) ? lg.watch.filter(x=>x!==pid) : [...lg.watch, pid]; }
     if(a==='avoid'){ lg.avoid = lg.avoid.includes(pid) ? lg.avoid.filter(x=>x!==pid) : [...lg.avoid, pid]; }
@@ -1024,7 +1068,7 @@ function renderTeam(){
   // roster
   const order = ['QB','RB','WR','TE','FLEX','RBW','SFLEX','DST','K','BN'];
   let rosterHTML = '';
-  const benchP = Object.keys(lg.drafted).map(pid=>playerByID(pid)).filter(p=>p && !['QB','RB','WR','TE','FLEX','RBW','SFLEX','DST','K'].includes(p.p));
+  const benchP = myDraftedEntries().map(pid=>playerByID(pid)).filter(p=>p && !['QB','RB','WR','TE','FLEX','RBW','SFLEX','DST','K'].includes(p.p));
   benchP.sort((a,b)=> (playerScore(b.id, b.p)||0)-(playerScore(a.id, a.p)||0));
   for(const pos of order){
     const slots = rosterSlots(pos); if(!slots && pos!=='BN') continue;
@@ -1032,10 +1076,11 @@ function renderTeam(){
     for(let i=0;i<slots;i++){
       const p = players[i];
       if(p){
+        const isK = !!keeperInfo(p.id);
         rosterHTML += `<div class="slot-row"><span class="sl pos-${POS_COLORS[pos]||'dst'}" style="color:#08131f;border-radius:5px;text-align:center;padding:2px 0">${pos}</span>
-          <span class="pl">${esc(p.n)}<span class="bye">b${p.b||'—'}</span></span>
+          <span class="pl">${esc(p.n)}${isK?`<span class="kbadge" title="Keeper ${keeperLabel(keeperInfo(p.id))}${keeperInfo(p.id).team?' · '+esc(keeperInfo(p.id).team):''}">K</span>`:''}<span class="bye">b${p.b||'—'}</span></span>
           <span class="adp">${fmtADP(adpFor(p, scoringCat()))}</span>
-          <button class="rm" data-rm="${p.id}" title="Remove">✕</button></div>`;
+          <button class="rm" data-rm="${p.id}" data-k="${isK?1:0}" title="${isK?'Remove keeper':'Remove'}">✕</button></div>`;
       } else if(pos==='RBW' || pos==='SFLEX'){
         const cnt = fills[pos]||0;
         rosterHTML += `<div class="slot-row ${cnt?'':'open'}"><span class="sl">${pos}</span><span class="pl"><em>${cnt?cnt+' filled':'open'}</em></span></div>`;
@@ -1046,7 +1091,10 @@ function renderTeam(){
     }
   }
   $('rosterBox').innerHTML = rosterHTML;
-  $('rosterBox').querySelectorAll('.rm').forEach(b=> b.onclick=()=>{ markDrafted(b.dataset.rm, null, true); });
+  $('rosterBox').querySelectorAll('.rm').forEach(b=> b.onclick=()=>{
+    if(+b.dataset.k){ delete L().keepers[b.dataset.rm]; saveState(); render(); toast('Keeper removed'); }
+    else markDrafted(b.dataset.rm, null, true);
+  });
 
   // scarcity
   const tops = {QB: (L().roster.SFLEX||0)>0 ? 18 : 12, RB: 24, WR: 36, TE: 12};
@@ -1214,7 +1262,11 @@ function markDrafted(pid, amount, remove, who){
   saveState(); render();
   toast(`Pick #${pickNum} — ${playerByID(pid).n} · ${team}`);
 }
-$('rosterBox').addEventListener('click', e=>{ const b=e.target.closest('.rm'); if(b) markDrafted(b.dataset.rm, null, true); });
+$('rosterBox').addEventListener('click', e=>{
+  const b=e.target.closest('.rm');
+  if(b){ if(+b.dataset.k){ delete L().keepers[b.dataset.rm]; saveState(); render(); toast('Keeper removed'); }
+    else markDrafted(b.dataset.rm, null, true); }
+});
 
 /* ---------------- player detail ---------------- */
 let detailPid = null;
@@ -1224,7 +1276,7 @@ function openDetail(pid){
   const lg = L(); const cat = scoringCat();
   const tags = Object.keys(p.tags||{});
   $('ddName').innerHTML = `${esc(p.n)} <span style="color:var(--mut);font-weight:600;font-size:13px">${esc(p.t)} · ${p.p} · bye ${p.b||'—'}</span>`;
-  $('ddTags').innerHTML = tags.map(t=>`<span class="tag tag-${t}">${t}</span>`).join('') + (p.rb?`<span class="tag tag-rookie">Rookie</span>`:'') + (lg.keepers[pid]?`<span class="tag" style="background:rgba(245,166,35,.15);color:var(--warn)">Keeper r${lg.keepers[pid]}</span>`:'');
+  $('ddTags').innerHTML = tags.map(t=>`<span class="tag tag-${t}">${t}</span>`).join('') + (p.rb?`<span class="tag tag-rookie">Rookie</span>`:'') + (keeperInfo(pid)?`<span class="tag tag-keeper">Keeper ${keeperLabel(keeperInfo(pid))}${normK(keeperInfo(pid)).team?' · '+esc(normK(keeperInfo(pid)).team):''}</span>`:'');
   const rows = allRows(); const r = rows.find(x=>x[0]===pid);
   const rr = r ? r : (flexRows().find(x=>x[0]===pid));
   const score = rr ? rr[2] : null;
@@ -1285,7 +1337,7 @@ function openDetail(pid){
   hint.style.display = UI.live ? '' : 'none';
   hint.textContent = 'auto — Draft is live (off-clock picks: toggle live off or fix in the log)';
   whoSel.disabled = !!UI.live;
-  $('ddDraft').onclick = ()=> markDrafted(pid, null, !!lg.drafted[pid], whoSel.value||null);
+  $('ddDraft').onclick = ()=>{ if(keeperInfo(pid)){ toast('Already kept — remove the keeper first'); return; } markDrafted(pid, null, !!lg.drafted[pid], whoSel.value||null); };
   $('ddStar').onclick = ()=>{ lg.stars = lg.stars.includes(pid)? lg.stars.filter(x=>x!==pid):[...lg.stars,pid]; saveState(); openDetail(pid); renderContext(); };
   const ak = $('ddAuction');
   if(ak) ak.onclick = ()=>{
@@ -1296,8 +1348,13 @@ function openDetail(pid){
   if(dk) dk.onclick = ()=>{
     if(lg.keepers[pid]){ delete lg.keepers[pid]; }
     else {
-      const rnd = prompt('Keeper — which round did you keep '+p.n+' in? (e.g. 5)', '5');
-      if(rnd){ lg.keepers[pid] = rnd; }
+      const rp = prompt('Keeper — which round.pick is '+p.n+' kept at? (e.g. 6.9)', '');
+      if(rp!==null && rp.trim()){
+        const m = rp.trim().match(/^(\d+)(?:[.\s](\d+))?$/);
+        if(m){ const team = whoSel.value || teamAtPick(onTheClockPick());
+          lg.keepers[pid] = { rnd:+m[1], pk: m[2]?+m[2]:0, team }; }
+        else toast('Keeper round must look like 6.9 (round.pick)');
+      }
     }
     saveState(); render(); openDetail(pid);
   };
@@ -1379,10 +1436,14 @@ $('stSave').onclick = ()=>{
   saveState(); render(); $('settingsBg').classList.remove('open'); toast('Saved');
 };
 $('stReset').onclick = ()=>{
-  if(!confirm('Reset all draft state for '+L().name+'? This clears drafted players, keepers, stars, and the log.')) return;
+  if(!confirm('Reset draft state for '+L().name+'? This clears drafted players, stars, and the log (declared keepers are kept).')) return;
   const i = UI.league;
+  const kept = LEAGUES[i].keepers;          // declared keepers are league ground truth — survive reset
+  const seeded = LEAGUES[i].keepersSeeded;
   LEAGUES[i] = defaultLeague(i);
-  saveState(); render(); $('settingsBg').classList.remove('open'); toast('League state reset');
+  LEAGUES[i].keepers = kept;
+  LEAGUES[i].keepersSeeded = seeded || Object.keys(kept).length > 0;
+  saveState(); render(); $('settingsBg').classList.remove('open'); toast('Draft state reset (keepers kept)');
 };
 $('stAuction').addEventListener('change', e=>{ $('stBudgetRow').style.display = e.target.checked?'flex':'none'; });
 $('stOrderFill').onclick = ()=>{
@@ -1428,6 +1489,7 @@ function teamNeed(team){
   const lg=L(); if(!team) return '';
   const cnt={QB:0,RB:0,WR:0,TE:0};
   for(const e of lg.log){ if(e.team!==team) continue; const p=playerByID(e.pid); if(p&&cnt[p.p]!=null) cnt[p.p]++; }
+  for(const pid in lg.keepers){ const k=normK(lg.keepers[pid]); if(k.team!==team) continue; const p=playerByID(pid); if(p&&cnt[p.p]!=null) cnt[p.p]++; }
   const gaps=[];
   for(const pos of ['QB','RB','WR','TE']){
     let slots=(lg.roster[pos]||0);
@@ -1457,6 +1519,7 @@ function renderManagers(){
     const slot=i+1;
     const me = slot===lg.slot || (lg.teamName && name===lg.teamName);
     const ents=byTeam[name]||[];
+    const kept = Object.entries(lg.keepers).filter(([pid,k])=>normK(k).team===name).map(([pid,k])=>{ const p=playerByID(pid); const ln = p ? p.n.split(' ').filter(t=>!/^(sr|jr|ii|iii|iv|v)\.?$/i.test(t)).pop() : pid; return `${ln} ${keeperLabel(normK(k))}`; });
     const cnt={QB:0,RB:0,WR:0,TE:0};
     for(const e of ents){ const p=playerByID(e.pid); if(p&&cnt[p.p]!=null) cnt[p.p]++; }
     const chips=['QB','RB','WR','TE'].map(pos=>cnt[pos]?`<span class="pchip ${pos.toLowerCase()}">${pos} ${cnt[pos]}</span>`:'').join('');
@@ -1466,7 +1529,7 @@ function renderManagers(){
     const mocks=profs[name]&&profs[name].sig?profs[name].sig.mocks:0;
     const handle = (lg.handles&&lg.handles[name]) ? ` <span class="mgr-hnd">${esc(lg.handles[name])}</span>` : '';
     return `<div class="mgr-row ${me?'me':''}"><div class="mgr-h"><span class="mgr-n">${me?'★ ':''}${esc(name)}${handle}</span><span class="mgr-pos">${chips}</span></div>
-      <div class="mgr-meta">${need?`<span class="need">${esc(need)}</span>`:''}${np?`<span>next p${np}</span>`:''}${sig}${mocks?`<span class="sig">${mocks} mock${mocks>1?'s':''}</span>`:''}</div></div>`;
+      <div class="mgr-meta">${kept.length?`<span class="need" style="color:var(--warn)">kept: ${esc(kept.join(', '))}</span>`:''}${need?`<span class="need">${esc(need)}</span>`:''}${np?`<span>next p${np}</span>`:''}${sig}${mocks?`<span class="sig">${mocks} mock${mocks>1?'s':''}</span>`:''}</div></div>`;
   }).join('') + '</div>';
 }
 $('draftLog').addEventListener('click', e=>{
@@ -1755,6 +1818,7 @@ loadState();
 loadMocks();
 fetch(DATA_URL).then(r=>r.json()).then(d=>{
   DATA = d;
+  seedKeepers();
   renderTimer();
   if(L().timer && L().timer.endAt > Date.now()){ clearInterval(timerInt); timerInt=setInterval(renderTimer,1000); }
   render();
