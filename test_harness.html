@@ -1,5 +1,6 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><title>harness</title></head>
 <body style="background:#111;color:#eee;font-family:monospace">
+<script>try{ localStorage.removeItem('ffb-draft-v3'); localStorage.removeItem('ffb-mocks-v1'); }catch(e){}</script>
 <iframe id="app" src="index.html" style="width:100%;height:70vh;border:1px solid #333"></iframe>
 <script>
 const f = document.getElementById('app');
@@ -143,6 +144,60 @@ f.onload = () => {
       d.querySelector('#ddClose').click();
       lg0.order = []; lg0.drafted = {}; lg0.log = []; di.render();
     } catch(e) { log('EXCEPTION: ' + e.message + '\n' + (e.stack||'').split('\n').slice(0,3).join(' | '), false); }
+    setTimeout(runPD, 50);
+  };
+  // ============ PRE-DRAFT + WHO-DRAFTED-WHO ============
+  const runPD = () => {
+    try{
+      if(!w.__dbg().MOCKS || !w.__dbg().MOCKS.mocks.length){
+        return setTimeout(runPD, 200);
+      }
+      // pre-draft mode
+      d.querySelector('#modeToggle button[data-mode="pre"]').click();
+      log('predraft view visible', d.querySelector('#predraft').style.display !== 'none');
+      log('predraft sample banner', /SAMPLE/.test(d.querySelector('#pdBanner').textContent));
+      log('predraft heatmap rows', d.querySelectorAll('table.heat tr').length >= 5);
+      log('predraft locked-in guys', d.querySelectorAll('#pdMyBody .lock-row').length >= 3);
+      log('predraft manager map rows', d.querySelectorAll('#pdMapBody .mgr-map-row').length === 10);
+      log('predraft around-my-picks', d.querySelectorAll('#pdIntelBody .amp-row').length >= 5);
+      log('predraft run-risk rows', d.querySelectorAll('#pdIntelBody .runrow').length >= 5);
+      d.querySelector('#modeToggle button[data-mode="day"]').click();
+      log('draft day restored', d.querySelector('#main').style.display !== 'none');
+      // who-drafted-who with real manager names (matches sample corpus for mock sigs)
+      const dp = w.__dbg();
+      const lgA = dp.leagues[0];
+      lgA.order = ['Taco Tuesday','Gurley Men','The Bluffs',"Saquon's Kids",'Dolphin fans are gay','GridIron Goblins','Puny Humans','League Winner','Waddle Waddle',"Barkley's Barking"];
+      lgA.drafted = {}; lgA.log = []; dp.render();
+      const hdA = d.querySelector('#hideDrafted');
+      hdA.checked = false; hdA.dispatchEvent(new w.Event('change', {bubbles:true}));
+      d.querySelector('tr.player .mk.chk').click();
+      d.querySelector('tr.player:not(.drafted) .mk.chk').click();
+      d.querySelector('tr.player:not(.drafted) .mk.chk').click();
+      log('who-drafted teams follow order', ['Taco Tuesday','Gurley Men','The Bluffs'].every((t,i)=> dp.L.log[i].team===t));
+      log('log team editable', d.querySelectorAll('#draftLog .team-edit').length === 3);
+      d.querySelectorAll('#draftLog .team-edit')[1].click();
+      const sel = d.querySelector('#draftLog .inline-sel');
+      log('team select opens', !!sel);
+      if(sel){
+        sel.value = 'League Winner';
+        sel.dispatchEvent(new w.Event('change', {bubbles:true}));
+      }
+      log('team reassigned', dp.L.log[1].team === 'League Winner');
+      log('managers panel rows', d.querySelectorAll('#mgrBox .mgr-row').length === 10);
+      log('managers show needs', d.querySelectorAll('#mgrBox .mgr-row .need').length >= 1);
+      log('mock sigs in managers panel', /mock/.test(d.querySelector('#mgrBox').textContent));
+      log('intel chips show team + need', /Saquon's Kids/.test(d.querySelector('#intelBar').textContent) && /needs RB/.test(d.querySelector('#intelBar').textContent));
+      // modal who-select
+      d.querySelector('tr.player:not(.drafted) .pname').click();
+      log('modal who-select has managers', d.querySelectorAll('#ddWho option').length === 11);
+      log('modal who defaults to on-clock', d.querySelector('#ddWho').value === "Saquon's Kids");
+      d.querySelector('#ddClose').click();
+      // settings draft-order prefill
+      d.querySelector('#gearBtn').click();
+      d.querySelector('#stOrderFill').click();
+      log('draft order prefill', d.querySelector('#stOrder').value.split(',').length === 10);
+      d.querySelector('#settingsClose').click();
+    } catch(e){ log('PD EXCEPTION: ' + e.message + '\n' + (e.stack||'').split('\n').slice(0,3).join(' | '), false); }
     finish();
   };
   // poll until the app has rendered (live CDN fetch of board.json can be slow)

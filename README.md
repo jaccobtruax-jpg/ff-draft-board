@@ -12,13 +12,16 @@ Draft-day companion board for Jaccob's two leagues, built on the Fantasy Footbal
 - **Two leagues** — toggle in the header; each has its own scoring, roster, draft order, and draft state (saved to localStorage)
 - **Scoring** — rankings computed with the FFB UDK engine for 8 systems: STD/HALF/PPR × 4pt/6pt passing TD, plus TE PREM (0.5 PPR WR/RB + 1.0 TE) × 4pt/6pt QB; superflex-aware rankings auto-enable when the league has a SFLEX slot
 - **3-minute pick timer** — one tap starts the clock for your turn
+- **Pre-Draft page** (📊 toggle in header) — mock-draft analysis: your position-by-round heatmap, locked-in guys (taken in ≥2 mocks), first-QB/RB/WR/TE timing, ADP discipline (reach/steal), a per-manager mock map (position mix, TE-early/RB-heavy/waits-on-QB signatures, Δ vs ADP), around-your-picks intel with neighbor tendencies, and position-run risk by round. Data: `data/mocks.json` (bundled) or import your own via the banner button (stored in localStorage). Bundled sample mocks are labeled SAMPLE — send real mock exports to the agent and they get converted.
+- **Who-drafted-who** — marking a pick auto-attributes the team on the clock (from your draft order in settings); tap any team name in the draft log to reassign. Managers & needs panel shows each manager's live position counts, roster needs, next pick, and mock-draft signatures; predicted-pick chips in the intel bar carry the on-clock team + biggest need so you can read upcoming picks at a glance.
 
 ## Files
 
 - `index.html` — the app (single page, vanilla JS, no build step)
-- `test_harness.html` — in-browser smoke test, **41 checks** (open it, PASS/FAIL list renders)
+- `test_harness.html` — in-browser smoke test, **53 checks** (open it, PASS/FAIL list renders)
 - `data/board.json` — all player/ranking data (~660KB)
-- `build/` — the scripts that scraped the UDK site and built board.json
+- `data/mocks.json` — mock-draft corpus for the Pre-Draft page (bundled SAMPLE mocks; override via in-app import)
+- `build/` — the scripts that scraped the UDK site and built board.json, plus `build_mocks.py` (converts mock exports → mocks.json, name-matches players, joins ADP)
 
 ## League defaults
 

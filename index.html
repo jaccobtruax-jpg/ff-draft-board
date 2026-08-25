@@ -270,12 +270,104 @@ footer .btn{margin:0 4px;padding:5px 12px;font-size:11.5px}
 /* toast */
 #toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--bg3);border:1px solid var(--line2);color:var(--txt);padding:9px 18px;border-radius:10px;font-weight:600;font-size:13px;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .2s;z-index:300}
 #toast.show{opacity:1}
+
+/* ============ MODE TOGGLE (draft day / pre-draft) ============ */
+.mode-toggle{display:flex;background:var(--bg2);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.mode-toggle button{padding:6px 11px;font-weight:800;font-size:12px;color:var(--mut);border-right:1px solid var(--line);white-space:nowrap}
+.mode-toggle button:last-child{border-right:none}
+.mode-toggle button.on{background:var(--acc2);color:#f2eeff}
+
+/* ============ PRE-DRAFT VIEW ============ */
+#predraft{display:flex;flex-direction:column;gap:12px;padding:12px}
+.pd-banner{display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:rgba(245,166,35,.1);border:1px solid rgba(245,166,35,.45);border-radius:10px;padding:9px 13px;font-size:12.5px;color:var(--warn)}
+.pd-banner b{font-weight:800}
+.pd-banner .sp{flex:1}
+.pd-banner .btn{padding:5px 12px;font-size:12px}
+.pd-banner.sample{border-color:rgba(245,166,35,.55)}
+.pd-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1.1fr) minmax(280px,.85fr);gap:12px;align-items:start}
+@media (max-width:1280px){ .pd-grid{grid-template-columns:1fr 1fr} #pdIntel{grid-column:1/-1} }
+@media (max-width:860px){ .pd-grid{grid-template-columns:1fr} #pdIntel{grid-column:auto} }
+.pd-body{padding:10px 12px 14px;display:flex;flex-direction:column;gap:10px;max-height:calc(100vh - var(--header-h) - 96px);overflow-y:auto}
+@media (max-width:860px){ .pd-body{max-height:none} }
+.pd-block-title{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--dim);display:flex;align-items:center;gap:6px;margin-top:6px}
+.pd-block-title .cnt{background:var(--bg3);padding:1px 7px;border-radius:10px;font-size:10px;color:var(--mut)}
+/* heatmap */
+table.heat{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+table.heat th{background:var(--bg3);color:var(--dim);font-size:10px;text-transform:uppercase;letter-spacing:.5px;padding:4px 6px;text-align:center;border-bottom:1px solid var(--line2)}
+table.heat th:first-child{text-align:left}
+table.heat td{padding:3px 6px;text-align:center;font-size:12px;font-weight:700;border-bottom:1px solid var(--line)}
+table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:left}
+.h0{color:var(--dim);background:transparent}
+.h1{background:rgba(77,163,255,.16);color:#cfe6ff}
+.h2{background:rgba(77,163,255,.34);color:#eaf3ff}
+.h3{background:rgba(124,92,255,.5);color:#fff}
+.h4{background:rgba(245,197,66,.45);color:#241c05}
+/* stat cells */
+.statgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.statcell{background:var(--bg3);border:1px solid var(--line);border-radius:8px;padding:7px 9px}
+.statcell .k{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--dim)}
+.statcell .v{font-weight:800;font-size:13.5px}
+.statcell .v small{color:var(--mut);font-weight:600}
+/* locked-in list */
+.lock-row{display:flex;align-items:center;gap:7px;font-size:12.5px;padding:4px 0;border-bottom:1px dashed var(--line)}
+.lock-row:last-child{border-bottom:none}
+.lock-row .nm{flex:1;min-width:0;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lock-row .pct{font-weight:800;font-size:11px;color:var(--gold)}
+.lock-row .st{font-size:10.5px;color:var(--dim);white-space:nowrap}
+.lock-row .delta.up{color:var(--good)} .lock-row .delta.down{color:var(--bad)}
+/* manager map */
+.mgr-map-row{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px dashed var(--line);font-size:12px}
+.mgr-map-row:last-child{border-bottom:none}
+.mgr-map-row.me{background:rgba(245,197,66,.07);border-radius:8px;padding:6px 8px;margin:0 -8px;border-color:rgba(245,197,66,.3)}
+.mgr-map-row .sl{width:22px;color:var(--dim);font-weight:800;font-size:10.5px;flex-shrink:0}
+.mgr-map-row .nm{width:118px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex-shrink:0}
+.mgr-map-row .nm small{display:block;font-weight:600;color:var(--dim);font-size:10px}
+.posmix{display:flex;gap:2px;width:74px;height:10px;border-radius:3px;overflow:hidden;flex-shrink:0}
+.posmix i{display:block;height:100%}
+.posmix i.qb{background:var(--qb)} .posmix i.rb{background:var(--rb)} .posmix i.wr{background:var(--wr)} .posmix i.te{background:var(--te)}
+.mgr-map-row .sig{flex:1;min-width:0;font-size:10.5px;color:var(--mut);display:flex;gap:4px;flex-wrap:wrap}
+.sig-tag{background:var(--bg3);border:1px solid var(--line2);border-radius:5px;padding:1px 6px;font-weight:700;white-space:nowrap}
+.sig-tag.warm{border-color:rgba(245,166,35,.45);color:var(--warn)}
+.sig-tag.hot{border-color:rgba(255,95,86,.5);color:#ff8a84}
+.mgr-map-row .rd{width:64px;text-align:right;color:var(--dim);font-size:10.5px;flex-shrink:0}
+/* around-my-picks */
+.amp-row{padding:6px 0;border-bottom:1px dashed var(--line);font-size:12px;line-height:1.5}
+.amp-row:last-child{border-bottom:none}
+.amp-row .h{font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--acc);margin-bottom:2px}
+.amp-row .nb{color:var(--mut);font-size:11.5px}
+.amp-row .nb b{color:var(--txt)}
+.amp-row .nb .threat{color:var(--warn);font-weight:700}
+/* run risk */
+.runrow{display:flex;align-items:center;gap:8px;font-size:12px;padding:3px 0}
+.runrow .r{width:26px;font-weight:800;color:var(--dim);font-size:10.5px}
+.runrow .bar{flex:1;height:8px;background:var(--bg3);border-radius:4px;overflow:hidden;display:flex}
+.runrow .bar i{display:block;height:100%}
+.runrow .lab{font-size:10.5px;color:var(--mut);white-space:nowrap}
+/* managers & needs (draft day) */
+.mgr-row{display:flex;flex-direction:column;gap:2px;padding:5px 0;border-bottom:1px dashed var(--line);font-size:12px}
+.mgr-row:last-child{border-bottom:none}
+.mgr-row.me{background:rgba(245,197,66,.07);border-radius:8px;padding:5px 8px;margin:0 -8px;border-color:rgba(245,197,66,.3)}
+.mgr-row .mgr-h{display:flex;align-items:center;gap:6px}
+.mgr-row .mgr-n{font-weight:800;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mgr-row .mgr-pos{display:flex;gap:4px}
+.pchip{font-size:9.5px;font-weight:800;padding:1px 5px;border-radius:4px;background:var(--bg3);border:1px solid var(--line2);color:var(--mut)}
+.pchip.qb{color:var(--qb)} .pchip.rb{color:var(--rb)} .pchip.wr{color:var(--wr)} .pchip.te{color:var(--te)}
+.mgr-row .mgr-meta{font-size:10.5px;color:var(--mut);display:flex;gap:5px;flex-wrap:wrap}
+.mgr-row .mgr-meta .need{color:#ff8a84;font-weight:700}
+.mgr-row .mgr-meta .sig{color:var(--dim);border:1px solid var(--line);border-radius:4px;padding:0 5px;background:var(--bg3)}
+.inline-sel{background:var(--bg3);border:1px solid var(--acc);border-radius:6px;padding:2px 6px;font-size:11.5px;font-weight:700;max-width:140px}
+.team-edit{font-size:11px;color:var(--dim);border-bottom:1px dotted var(--line2);cursor:pointer}
+.team-edit:hover{color:var(--acc)}
 </style>
 </head>
 <body>
 
 <header id="topbar">
   <div class="logo">2026 <b>Draft&nbsp;Board</b> <span>· FFB UDK</span></div>
+  <div class="mode-toggle" id="modeToggle">
+    <button data-mode="day">⚡ Draft&nbsp;Day</button>
+    <button data-mode="pre">📊 Pre-Draft</button>
+  </div>
   <div class="lg-toggle" id="lgToggle"></div>
   <div id="needChips"></div>
   <div id="pickBox">
@@ -345,6 +437,8 @@ footer .btn{margin:0 4px;padding:5px 12px;font-size:11.5px}
     <div id="contextBody">
       <div class="block-title">Draft log</div>
       <div id="draftLog" class="ctxbox"></div>
+      <button class="expander" data-x="mgrBox"><span>Managers &amp; needs <span class="cnt" id="mgrCnt"></span></span><span class="arr">▶</span></button>
+      <div id="mgrBox" style="display:none"></div>
       <div class="block-title">My guys ★ <span class="cnt" id="guysCnt"></span></div>
       <div id="guysBox" class="ctxbox"></div>
       <button class="expander" data-x="expBox"><span>Expert lists <span class="cnt" id="expCnt"></span></span><span class="arr">▶</span></button>
@@ -359,6 +453,25 @@ footer .btn{margin:0 4px;padding:5px 12px;font-size:11.5px}
       </div>
     </div>
   </section>
+</main>
+
+<!-- ============ PRE-DRAFT VIEW (mock-draft analysis) ============ -->
+<main id="predraft" style="display:none">
+  <div class="pd-banner" id="pdBanner"></div>
+  <div class="pd-grid">
+    <section class="panel" id="pdMy">
+      <div class="panel-head">My mock trends <span class="sp"></span><span id="pdMyCount" style="font-weight:600;font-size:11px;color:var(--dim);text-transform:none;letter-spacing:0"></span></div>
+      <div id="pdMyBody" class="pd-body"></div>
+    </section>
+    <section class="panel" id="pdMap">
+      <div class="panel-head">League mock map <span class="sp"></span><span id="pdMapCount" style="font-weight:600;font-size:11px;color:var(--dim);text-transform:none;letter-spacing:0"></span></div>
+      <div id="pdMapBody" class="pd-body"></div>
+    </section>
+    <section class="panel" id="pdIntel">
+      <div class="panel-head">Draft-day intel from mocks</div>
+      <div id="pdIntelBody" class="pd-body"></div>
+    </section>
+  </div>
 </main>
 
 <footer>
@@ -380,6 +493,7 @@ footer .btn{margin:0 4px;padding:5px 12px;font-size:11.5px}
     <div class="dyn" id="ddDyn" style="display:none"></div>
     <div class="dd-grid" id="ddGrid"></div>
     <div class="dd-actions" id="ddActions"></div>
+    <div class="frm-row" id="ddWhoRow" style="margin-top:12px"><label>Drafted by</label><select id="ddWho"></select></div>
   </div>
 </div></div>
 
@@ -401,7 +515,7 @@ footer .btn{margin:0 4px;padding:5px 12px;font-size:11.5px}
       <div class="frm-row"><label>Roster (Q,R,W,T,F,X,S,D,K,B,I)</label><input type="text" id="stRoster" placeholder="1,2,2,1,2,1,1,1,1,10,3"></div>
       <div class="hint">Roster: QB,RB,WR,TE,FLEX,RBW,SFLEX,DST,K,BN,IR — e.g. 1,2,2,1,2,1,1,1,1,10,3 (8 numbers = old Q,R,W,T,F,D,K,B format)</div>
       <div class="frm-row"><label>My team name</label><input type="text" id="stTeamName" placeholder="optional — shows in draft log"></div>
-      <div class="frm-row"><label>Draft order (pick 1 → N)</label><input type="text" id="stOrder" placeholder="Team A, Team B, … — powers next-pick predictions"></div>
+      <div class="frm-row"><label>Draft order (pick 1 → N)</label><div style="flex:1;display:flex;gap:6px"><input type="text" id="stOrder" placeholder="Manager 1, Manager 2, … — powers next-pick predictions &amp; who-drafted-who"><button class="btn ghost" id="stOrderFill" type="button" style="padding:5px 10px;font-size:11.5px" title="Fill Manager 1..N for your team count">1..N</button></div></div>
     </div>
   </div>
   <div class="modal-foot">
@@ -419,9 +533,12 @@ footer .btn{margin:0 4px;padding:5px 12px;font-size:11.5px}
    Data: data/board.json  ·  State: localStorage (per league)
 ================================================================ */
 const DATA_URL = 'data/board.json';
+const MOCK_URL = 'data/mocks.json';
 const LS_KEY = 'ffb-draft-v3';
+const MOCK_LS_KEY = 'ffb-mocks-v1';
 let DATA = null;
-let UI = { league: 0 };
+let MOCKS = null;          // {generated, sample, mocks:[...]}
+let UI = { league: 0, mode: 'day' };   // mode: 'day' (draft board) | 'pre' (pre-draft)
 
 const POS_COLORS = {QB:'qb',RB:'rb',WR:'wr',TE:'te',FLEX:'flex',RBW:'wr',SFLEX:'qb',DST:'dst',K:'k'};
 const SCORING_ALIAS = {'HALF (6pt QB)':'half','HALF (4pt QB)':'half','PPR (6pt QB)':'ppr','PPR (4pt QB)':'ppr','STD (6pt QB)':'std','STD (4pt QB)':'std','TE PREM (4pt QB)':'teprem','TE PREM (6pt QB)':'teprem'};
@@ -445,7 +562,7 @@ function defaultLeague(i){
   };
 }
 const LEAGUES = [defaultLeague(0), defaultLeague(1)];
-window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, render});
+window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, managers, render, renderPredraft, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles});
 function saveState(){ localStorage.setItem(LS_KEY, JSON.stringify({leagues: LEAGUES, ui: UI})); }
 function loadState(){
   try{
@@ -509,12 +626,19 @@ function onTheClockPick(){
 function teamAtPick(n){
   const lg=L();
   const ord = lg.order||[];
-  if(!ord.length) return '';
+  if(!ord.length) return 'Manager ' + (((n-1)%Math.max(1,lg.teams))+1);
   if(lg.auction) return ord[(n-1)%ord.length]||'';
   const teams = Math.max(1, lg.teams);
   const rnd = Math.floor((n-1)/teams);
   const idx = (rnd%2===0) ? (n-1)%teams : teams-1-((n-1)%teams);
   return ord[idx]||'';
+}
+function managers(){
+  const lg=L();
+  const ord=(lg.order||[]).filter(Boolean);
+  const names=[];
+  for(let i=1;i<=lg.teams;i++) names.push(ord[i-1]||('Manager '+i));
+  return names;
 }
 function pickIsMine(n){ const lg=L(); if(lg.auction) return false; return myPickNums().includes(n); }
 
@@ -547,7 +671,13 @@ function adpRankMap(rows){
 function render(){
   if(!DATA) return;
   applyFilters();
-  renderHeader(); renderBoard(); renderTeam(); renderContext();
+  const pre = UI.mode === 'pre';
+  $('main').style.display = pre ? 'none' : '';
+  $('predraft').style.display = pre ? '' : 'none';
+  $('modeToggle').querySelectorAll('button').forEach(b=> b.classList.toggle('on', b.dataset.mode === UI.mode));
+  renderHeader();
+  if(pre) renderPredraft();
+  else { renderBoard(); renderTeam(); renderContext(); }
 }
 function renderHeader(){
   const lg = L();
@@ -691,7 +821,7 @@ function renderIntel(){
     const p = x.p;
     return `<button class="pickchip ${cls}" data-op="${x.r[0]}" title="${esc(p.n)} — FFB #${x.r[1]} · ${x.r[2]} pts · ${fmtADP(adpFor(p, scoringCat()))} ADP">
       <span class="n">${x.n}${x.me?' ★':''}</span><span class="pn">${esc(p.n)}</span>
-      <span class="meta">${esc(p.t)} · b${p.b||'—'} · ${fmtADP(adpFor(p, scoringCat()))}</span><span class="tier">T${x.r[3]}</span>
+      <span class="meta">${esc(p.t)} · b${p.b||'—'} · ${fmtADP(adpFor(p, scoringCat()))}${x.team?' · '+esc(x.team):''}${x.team&&teamNeed(x.team)?' · '+esc(teamNeed(x.team)):''}</span><span class="tier">T${x.r[3]}</span>
     </button>`;
   }).join('');
   const tgt = targetStatuses(pred);
@@ -949,8 +1079,8 @@ function renderContext(){
     const mine = myNums.includes(e.pickNum);
     return `<div class="log-row ${mine?'me':''}"><span class="pn">${pickLabel(e.pickNum)}</span>
       <span class="who">${esc(p.n)}${e.amount?` <b style="color:var(--warn)">$${e.amount}</b>`:''}</span>
-      <span class="team">${esc(e.team||'')}</span></div>`;
-  }).join('') : '<div class="empty" style="padding:10px">Nothing drafted yet — click players on the board to mark them.</div>';
+      <span class="team">${e.team?`<button class="team-edit" data-tfix="${e.pickNum}" title="Change who drafted this">${esc(e.team)}</button>`:'<span style="color:var(--dim)">—</span>'}</span></div>`;
+  }).join('') : '<div class="empty" style="padding:10px">Nothing drafted yet — click players on the board to mark them. The team on the clock is auto-attributed (⚙ settings → draft order).</div>';
   // my guys
   const guys = lg.stars.map(pid=>({pid, p:playerByID(pid)})).filter(x=>x.p);
   guys.sort((a,b)=> (a.p.adp_h||999)-(b.p.adp_h||999));
@@ -1000,6 +1130,7 @@ function renderContext(){
   $('injuryBox').innerHTML = DATA.injury_text ? `<div class="ctxbox" style="max-height:260px;overflow-y:auto;font-size:12px;color:var(--mut);line-height:1.5">${esc(DATA.injury_text.slice(0,4000))}</div>` : '<div class="empty">No injury data.</div>';
   // notes
   $('notesArea').value = lg.notes;
+  renderManagers();
 }
 
 function findRank(pid){
@@ -1012,7 +1143,7 @@ function findRank(pid){
 }
 
 /* ---------------- draft actions ---------------- */
-function markDrafted(pid, amount, remove){
+function markDrafted(pid, amount, remove, who){
   const lg = L();
   if(remove || lg.drafted[pid]){
     const entry = lg.drafted[pid];
@@ -1021,11 +1152,14 @@ function markDrafted(pid, amount, remove){
     saveState(); render(); return;
   }
   const pickNum = onTheClockPick();
-  const team = teamAtPick(pickNum) || (lg.auction ? lg.teamName : (pickIsMine(pickNum) ? lg.teamName : ''));
+  let team = who;
+  if(team == null){
+    team = (pickIsMine(pickNum) && lg.teamName) ? lg.teamName : teamAtPick(pickNum);
+  }
   lg.drafted[pid] = { pick: pickLabel(pickNum), pickNum, team, amount: amount||null };
   lg.log.push({pickNum, team, pid, amount: amount||null});
   saveState(); render();
-  toast(`Pick #${pickNum} — ${playerByID(pid).n}`);
+  toast(`Pick #${pickNum} — ${playerByID(pid).n} · ${team}`);
 }
 $('rosterBox').addEventListener('click', e=>{ const b=e.target.closest('.rm'); if(b) markDrafted(b.dataset.rm, null, true); });
 
@@ -1086,12 +1220,18 @@ function openDetail(pid){
     `<button class="btn ghost" id="ddStar">${lg.stars.includes(pid)?'Unstar ★':'Star ★'}</button>`+
     (lg.auction?`<button class="btn ghost" id="ddAuction">Set $ amount</button>`:'')+
     `<button class="btn ghost" id="ddKeeper">${lg.keepers[pid]?'Remove keeper':'Mark keeper'}</button>`;
-  $('ddDraft').onclick = ()=> markDrafted(pid, null, !!lg.drafted[pid]);
+  // who-drafted attribution
+  const whoSel = $('ddWho');
+  whoSel.innerHTML = `<option value="">— on the clock —</option>` + managers().map(m=>`<option>${esc(m)}</option>`).join('');
+  const curTeam = lg.drafted[pid] ? lg.drafted[pid].team : null;
+  if(curTeam) whoSel.value = curTeam;
+  else whoSel.value = teamAtPick(onTheClockPick());
+  $('ddDraft').onclick = ()=> markDrafted(pid, null, !!lg.drafted[pid], whoSel.value||null);
   $('ddStar').onclick = ()=>{ lg.stars = lg.stars.includes(pid)? lg.stars.filter(x=>x!==pid):[...lg.stars,pid]; saveState(); openDetail(pid); renderContext(); };
   const ak = $('ddAuction');
   if(ak) ak.onclick = ()=>{
     const amt = prompt('Auction amount $ for '+p.n+'?', '15');
-    if(amt!==null && !isNaN(+amt)){ markDrafted(pid, +amt); }
+    if(amt!==null && !isNaN(+amt)){ markDrafted(pid, +amt, false, whoSel.value||null); }
   };
   const dk = $('ddKeeper');
   if(dk) dk.onclick = ()=>{
@@ -1186,6 +1326,10 @@ $('stReset').onclick = ()=>{
   saveState(); render(); $('settingsBg').classList.remove('open'); toast('League state reset');
 };
 $('stAuction').addEventListener('change', e=>{ $('stBudgetRow').style.display = e.target.checked?'flex':'none'; });
+$('stOrderFill').onclick = ()=>{
+  const n = Math.max(4, Math.min(16, +$('stTeams').value||12));
+  $('stOrder').value = Array.from({length:n}, (_,i)=>'Manager '+(i+1)).join(', ');
+};
 
 /* ---------------- export / import ---------------- */
 $('exportBtn').onclick = ()=>{
@@ -1195,13 +1339,21 @@ $('exportBtn').onclick = ()=>{
   toast('State exported');
 };
 $('importBtn').onclick = ()=>{
-  const inp = document.createElement('input'); inp.type='file'; inp.accept='.json';
+  const inp = document.createElement('input'); inp.type='file'; inp.accept='.json,.csv';
   inp.onchange = ()=>{
     const f = inp.files[0]; if(!f) return;
     const rd = new FileReader();
     rd.onload = ()=>{
       try{
         const s = JSON.parse(rd.result);
+        if(s.mocks){                       // mock-draft corpus → pre-draft page
+          s.sample=false; s.generated=s.generated||new Date().toISOString().slice(0,10);
+          localStorage.setItem(MOCK_LS_KEY, JSON.stringify(s));
+          MOCKS=s; _profCache={};
+          toast((s.mocks.length)+' mock drafts imported');
+          if(UI.mode==='pre') renderPredraft();
+          return;
+        }
         if(s.leagues){ for(let i=0;i<2;i++) if(s.leagues[i]) LEAGUES[i]=Object.assign(defaultLeague(i), s.leagues[i]); if(s.ui) UI=Object.assign(UI,s.ui); saveState(); render(); toast('State imported'); }
         else toast('Not a valid draft-state file');
       }catch(e){ toast('Import failed — bad file'); }
@@ -1210,6 +1362,314 @@ $('importBtn').onclick = ()=>{
   };
   inp.click();
 };
+
+/* ================================================================ WHO-DRAFTED-WHO ======= */
+function teamNeed(team){
+  const lg=L(); if(!team) return '';
+  const cnt={QB:0,RB:0,WR:0,TE:0};
+  for(const e of lg.log){ if(e.team!==team) continue; const p=playerByID(e.pid); if(p&&cnt[p.p]!=null) cnt[p.p]++; }
+  const gaps=[];
+  for(const pos of ['QB','RB','WR','TE']){
+    let slots=(lg.roster[pos]||0);
+    if(pos==='RB'||pos==='WR'||pos==='TE') slots+=(lg.roster.FLEX||0);
+    if(pos==='RB'||pos==='WR') slots+=(lg.roster.RBW||0);
+    if(pos==='QB'||pos==='RB'||pos==='WR'||pos==='TE') slots+=(lg.roster.SFLEX||0);
+    const need=Math.max(0, slots-cnt[pos]);
+    if(need>0) gaps.push([pos, need]);
+  }
+  gaps.sort((a,b)=>b[1]-a[1]);
+  if(!gaps.length) return 'roster set';
+  return 'needs '+gaps.slice(0,2).map(g=>g[0]).join(',');
+}
+function nextPickFor(team){
+  const lg=L(); const start=onTheClockPick();
+  for(let n=start; n<start+lg.teams*2+3; n++){ if(teamAtPick(n)===team) return n; }
+  return null;
+}
+function renderManagers(){
+  const lg=L();
+  const names=managers();
+  const profs=mockProfiles();
+  const byTeam={};
+  for(const e of lg.log) (byTeam[e.team]=byTeam[e.team]||[]).push(e);
+  $('mgrCnt').textContent=names.length;
+  $('mgrBox').innerHTML = '<div class="ctxbox">' + names.map((name,i)=>{
+    const slot=i+1;
+    const me = slot===lg.slot || (lg.teamName && name===lg.teamName);
+    const ents=byTeam[name]||[];
+    const cnt={QB:0,RB:0,WR:0,TE:0};
+    for(const e of ents){ const p=playerByID(e.pid); if(p&&cnt[p.p]!=null) cnt[p.p]++; }
+    const chips=['QB','RB','WR','TE'].map(pos=>cnt[pos]?`<span class="pchip ${pos.toLowerCase()}">${pos} ${cnt[pos]}</span>`:'').join('');
+    const need=teamNeed(name);
+    const np=nextPickFor(name);
+    const sig=profs[name]&&profs[name].sig?profs[name].sig.sigs.map(s=>`<span class="sig">${esc(s.txt)}</span>`).join(''):'';
+    const mocks=profs[name]&&profs[name].sig?profs[name].sig.mocks:0;
+    return `<div class="mgr-row ${me?'me':''}"><div class="mgr-h"><span class="mgr-n">${me?'★ ':''}${esc(name)}</span><span class="mgr-pos">${chips}</span></div>
+      <div class="mgr-meta">${need?`<span class="need">${esc(need)}</span>`:''}${np?`<span>next p${np}</span>`:''}${sig}${mocks?`<span class="sig">${mocks} mock${mocks>1?'s':''}</span>`:''}</div></div>`;
+  }).join('') + '</div>';
+}
+$('draftLog').addEventListener('click', e=>{
+  const b=e.target.closest('.team-edit'); if(!b) return;
+  const lg=L(); const pickNum=+b.dataset.tfix;
+  const entry=lg.log.find(x=>x.pickNum===pickNum); if(!entry) return;
+  const sel=document.createElement('select'); sel.className='inline-sel';
+  sel.innerHTML=managers().map(m=>`<option ${m===entry.team?'selected':''}>${esc(m)}</option>`).join('');
+  sel.onchange=()=>{ entry.team=sel.value; const dp=lg.drafted[entry.pid]; if(dp) dp.team=sel.value; saveState(); renderContext(); };
+  sel.onblur=()=>{ if(sel.isConnected) renderContext(); };
+  b.replaceWith(sel); sel.focus();
+});
+
+/* ================================================================ MOCKS (pre-draft) ======= */
+function leagueMocks(){ return ((MOCKS&&MOCKS.mocks)||[]).filter(m=>m.league===UI.league); }
+function myPicksOf(m){ return m.picks.filter(p=>p.slot===m.mySlot); }
+function firstRndOf(picks, pos){
+  let m=99;
+  for(const p of picks) if(p.pos===pos && p.round<m) m=p.round;
+  return m===99?null:m;
+}
+function countByRnd(picks, pos, rnd){ return picks.filter(p=>p.pos===pos && p.round<=rnd).length; }
+function posMix(all){
+  const cnt={QB:0,RB:0,WR:0,TE:0};
+  for(const ps of all) for(const p of ps) if(cnt[p.pos]!=null) cnt[p.pos]++;
+  const tot=Math.max(1,Object.values(cnt).reduce((a,b)=>a+b,0));
+  const pct={}; for(const k of Object.keys(cnt)) pct[k]=Math.round(cnt[k]/tot*100);
+  return {cnt, pct};
+}
+function managerSignals(all){
+  const n=all.length; if(!n) return null;
+  const pct=fn=>all.filter(fn).length/n*100;
+  const avg=fn=>all.map(fn).reduce((a,b)=>a+(b||0),0)/n;
+  const teE=pct(ps=>(firstRndOf(ps,'TE')||9)<=4);
+  const rbE=pct(ps=>(firstRndOf(ps,'RB')||9)<=2);
+  const qbE=pct(ps=>(firstRndOf(ps,'QB')||9)<=2);
+  const twoQ=pct(ps=>countByRnd(ps,'QB',8)>=2);
+  const twoT=pct(ps=>countByRnd(ps,'TE',8)>=2);
+  const qbR=avg(ps=>firstRndOf(ps,'QB')||9);
+  const wrs5=avg(ps=>ps.filter(p=>p.round<=5&&p.pos==='WR').length);
+  const cands=[];
+  if(teE>=50) cands.push({txt:`TE by r4 ${Math.round(teE)}%`, score:teE, cls:teE>=80?'hot':'warm'});
+  if(rbE>=70) cands.push({txt:`RB r1-2 ${Math.round(rbE)}%`, score:rbE, cls:rbE>=85?'hot':'warm'});
+  if(qbE>=60) cands.push({txt:`QB r1-2 ${Math.round(qbE)}%`, score:qbE, cls:qbE>=85?'hot':'warm'});
+  if(twoQ>=50) cands.push({txt:`2QB by r8 ${Math.round(twoQ)}%`, score:twoQ, cls:twoQ>=75?'hot':'warm'});
+  if(twoT>=40) cands.push({txt:`2TE by r8 ${Math.round(twoT)}%`, score:twoT, cls:'warm'});
+  if(qbR>=7.5) cands.push({txt:`waits QB r${qbR.toFixed(1)}`, score:qbR*8, cls:'warm'});
+  if(wrs5>=2.5) cands.push({txt:`WR×${wrs5.toFixed(1)} top-5`, score:wrs5*25, cls:'warm'});
+  cands.sort((a,b)=>b.score-a.score);
+  const diffs=all.flat().filter(p=>p.adp).map(p=>p.overall-p.adp);
+  const reach=diffs.length?diffs.reduce((a,b)=>a+b,0)/diffs.length:0;
+  return {mocks:n, sigs:cands.slice(0,2), reach, mix:posMix(all)};
+}
+let _profCache={};
+function mockProfiles(){
+  const key=UI.league;
+  if(_profCache[key]) return _profCache[key];
+  const profs={};
+  for(const m of leagueMocks()){
+    for(let s=0;s<m.teams.length;s++){
+      const name=m.teams[s]||('Slot '+(s+1));
+      const picks=m.picks.filter(p=>p.team===s);
+      (profs[name]=profs[name]||{slot:s+1, all:[]}).all.push(picks);
+    }
+  }
+  const out={};
+  for(const [name,p] of Object.entries(profs)) out[name]={slot:p.slot, sig:managerSignals(p.all)};
+  _profCache[key]=out; return out;
+}
+function loadMocks(cb){
+  _profCache={};
+  try{ const raw=localStorage.getItem(MOCK_LS_KEY); if(raw){ MOCKS=JSON.parse(raw); if(cb) cb(); return; } }catch(e){}
+  if(MOCKS){ if(cb) cb(); return; }
+  fetch(MOCK_URL).then(r=>r.json()).then(d=>{ MOCKS=d; if(cb) cb(); }).catch(()=>{ MOCKS={mocks:[],sample:false}; if(cb) cb(); });
+}
+function importMocks(){
+  const inp=document.createElement('input'); inp.type='file'; inp.accept='.json';
+  inp.onchange=()=>{
+    const f=inp.files[0]; if(!f) return;
+    const rd=new FileReader();
+    rd.onload=()=>{
+      try{
+        const s=JSON.parse(rd.result);
+        if(!s.mocks || !s.mocks.length) throw 0;
+        s.sample=false; s.generated=s.generated||new Date().toISOString().slice(0,10);
+        localStorage.setItem(MOCK_LS_KEY, JSON.stringify(s));
+        MOCKS=s; _profCache={}; renderPredraft();
+        toast((s.mocks.length)+' mock drafts imported');
+      }catch(e){ toast('Not a valid mocks file — needs {"mocks":[...]}'); }
+    };
+    rd.readAsText(f);
+  };
+  inp.click();
+}
+function clearMocks(){
+  localStorage.removeItem(MOCK_LS_KEY);
+  MOCKS=null; _profCache={};
+  loadMocks(()=>{ renderPredraft(); toast('Mocks cleared — back to bundled data'); });
+}
+
+/* ================================================================ PRE-DRAFT RENDER ======= */
+function pdHeatmap(myMocks){
+  const n=myMocks.length;
+  const maxRnd=Math.max(1,...myMocks.flatMap(x=>x.mine).map(p=>p.round));
+  const grid={};
+  for(const {mine} of myMocks) for(const p of mine){ (grid[p.round]=grid[p.round]||{})[p.pos]=(grid[p.round][p.pos]||0)+1; }
+  const cls=c=>c===0?'h0':c===1?'h1':c===2?'h2':'h3';
+  let rows='';
+  for(let r=1;r<=Math.min(16,maxRnd);r++){
+    const g=grid[r]||{};
+    const tot=['QB','RB','WR','TE'].reduce((a,pos)=>a+(g[pos]||0),0);
+    rows+=`<tr><td class="rnd">R${r}</td>`+['QB','RB','WR','TE'].map(pos=>{
+      const c=g[pos]||0;
+      return `<td class="${cls(c)}" title="${pos} in ${c} of ${n} mocks">${c?c:''}</td>`;
+    }).join('')+`<td class="rnd" style="text-align:right;color:var(--txt);font-weight:800">${tot||''}</td></tr>`;
+  }
+  return `<div class="pd-block-title">Position by round <span class="cnt">my picks · ${n} mock${n>1?'s':''}</span></div>
+    <table class="heat"><thead><tr><th>Round</th><th>QB</th><th>RB</th><th>WR</th><th>TE</th><th>Σ</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+function pdLocked(myMocks){
+  const n=myMocks.length;
+  const avg=a=>a.reduce((x,y)=>x+y,0)/a.length;
+  const agg={};
+  for(const {mine} of myMocks) for(const p of mine){
+    const x=(agg[p.pid]=agg[p.pid]||{pid:p.pid, name:p.name, pos:p.pos, rnds:[], ovs:[], adps:[]});
+    x.rnds.push(p.round); x.ovs.push(p.overall); if(p.adp) x.adps.push(p.adp);
+  }
+  const list=Object.values(agg).filter(x=>x.rnds.length>=2)
+    .sort((a,b)=>b.rnds.length-a.rnds.length || avg(a.rnds)-avg(b.rnds)).slice(0,10);
+  if(!list.length) return '';
+  return `<div class="pd-block-title">Locked-in guys <span class="cnt">taken in ≥2 mocks</span></div><div class="ctxbox">`+list.map(x=>{
+    const pct=Math.round(x.rnds.length/n*100);
+    const rnd=avg(x.rnds);
+    const adp=x.adps.length?avg(x.adps):null;
+    const d=x.adps.length?avg(x.ovs)-avg(x.adps):0;
+    const dCls=d>1.5?'up':d<-1.5?'down':'';
+    const dTxt=adp?`Δ ${d>0?'+':''}${d.toFixed(1)}`:'' ;
+    return `<div class="lock-row"><span class="posdot pos-${POS_COLORS[x.pos]||'dst'}">${x.pos}</span>
+      <span class="nm">${esc(x.name)}</span><span class="pct">${pct}%</span>
+      <span class="st">r${rnd.toFixed(1)} · ADP ${fmtADP(adp)}</span><span class="st delta ${dCls}">${dTxt}</span></div>`;
+  }).join('')+'</div>';
+}
+function pdTiming(myMocks){
+  const n=myMocks.length;
+  const stat=pos=>{
+    const vals=myMocks.map(({mine})=>firstRndOf(mine,pos)).filter(v=>v!=null);
+    if(!vals.length) return null;
+    const a=vals.reduce((x,y)=>x+y,0)/vals.length;
+    return {avg:a, lo:Math.min(...vals), hi:Math.max(...vals), all:vals.length===n};
+  };
+  const cells=[['QB',stat('QB')],['RB',stat('RB')],['WR',stat('WR')],['TE',stat('TE')]].map(([pos,s])=>{
+    if(!s) return `<div class="statcell"><div class="k">First ${pos}</div><div class="v">—</div></div>`;
+    return `<div class="statcell"><div class="k">First ${pos}</div><div class="v">r${s.avg.toFixed(1)} <small>r${s.lo}–${s.hi}</small></div></div>`;
+  }).join('');
+  return `<div class="pd-block-title">Position timing <span class="cnt">when I take my first</span></div><div class="statgrid">${cells}</div>`;
+}
+function pdAdp(myMocks){
+  const diffs=[];
+  for(const {mine} of myMocks) for(const p of mine) if(p.adp) diffs.push(p.overall-p.adp);
+  if(!diffs.length) return '';
+  const d=diffs.reduce((a,b)=>a+b,0)/diffs.length;
+  const cls=d>1.5?'up':d<-1.5?'down':'';
+  const lab=d>1.5?'stealing value':d<-1.5?'reaching':'on ADP';
+  return `<div class="pd-block-title">ADP discipline</div><div class="statgrid">
+    <div class="statcell"><div class="k">Avg pick vs ADP</div><div class="v ${cls}">${d>0?'+':''}${d.toFixed(1)} <small>${lab}</small></div></div>
+    <div class="statcell"><div class="k">Picks w/ ADP</div><div class="v">${diffs.length}</div></div></div>`;
+}
+function pdMap(mocks){
+  const profs={};
+  for(const m of mocks){
+    for(let s=0;s<m.teams.length;s++){
+      const name=m.teams[s]||('Slot '+(s+1));
+      const picks=m.picks.filter(p=>p.team===s);
+      (profs[name]=profs[name]||{slot:s+1, all:[]}).all.push(picks);
+    }
+  }
+  const lg=L();
+  const rows=Object.entries(profs).sort((a,b)=>a[1].slot-b[1].slot);
+  const mocked=rows.filter(([,p])=>p.all.length).length;
+  const unmocked=[];
+  for(let i=1;i<=lg.teams;i++){
+    if(!rows.find(([,p])=>p.slot===i)) unmocked.push(managers()[i-1]);
+  }
+  let html=`<div class="pd-block-title">Manager map <span class="cnt">${mocked}/${lg.teams} managers mocked</span></div><div class="ctxbox">`;
+  html+=rows.map(([name,p])=>{
+    const sig=managerSignals(p.all); if(!sig) return '';
+    const me = name===lg.teamName || p.slot===lg.slot;
+    const tags=sig.sigs.map(s=>`<span class="sig-tag ${s.cls}">${esc(s.txt)}</span>`).join('')||'<span class="sig-tag">balanced</span>';
+    return `<div class="mgr-map-row ${me?'me':''}"><span class="sl">${p.slot}</span>
+      <span class="nm">${esc(name)}<small>${me?'★ you':p.all.length+' mock'+(p.all.length>1?'s':'')}</small></span>
+      <span class="posmix">${['RB','WR','TE','QB'].map(pos=>`<i class="${pos.toLowerCase()}" style="width:${sig.mix.pct[pos]||0}%"></i>`).join('')}</span>
+      <span class="sig">${tags}</span><span class="rd">${sig.reach?`Δ${sig.reach>0?'+':''}${sig.reach.toFixed(1)}`:'—'}</span></div>`;
+  }).join('');
+  if(unmocked.length){
+    html+=`<div class="pd-block-title" style="color:var(--warn)">No mock data <span class="cnt">bluff risk</span></div>
+      <div class="ctxbox" style="font-size:11.5px;color:var(--mut)">${esc(unmocked.join(', '))} never mocked. Board talk doesn't count — the data speaks loudest.</div>`;
+  }
+  return html+'</div>';
+}
+function pdAround(mocks){
+  const m0=mocks[0];
+  const teams=m0.teams.length;
+  const mySlot=m0.mySlot||L().slot;
+  const profs=mockProfiles();
+  const sigOf=name=>{ const pr=profs[name]; return pr&&pr.sig&&pr.sig.sigs.length?pr.sig.sigs[0].txt:''; };
+  let html=`<div class="pd-block-title">Around my picks <span class="cnt">based on ${esc(m0.label)}</span></div><div class="ctxbox">`;
+  for(let r=1;r<=Math.min(10,16);r++){
+    const overall=(r-1)*teams+(r%2===1?mySlot:teams+1-mySlot);
+    const nbrs=[];
+    for(const off of [-2,-1,1,2]){
+      const s=mySlot+off; if(s<1||s>teams) continue;
+      const name=m0.teams[s-1]||('Slot '+s);
+      const sg=sigOf(name);
+      nbrs.push(`${off<0?'before':'after'} <b>${esc(name)}</b>${sg?` <span class="threat">(${esc(sg)})</span>`:''}`);
+    }
+    html+=`<div class="amp-row"><div class="h">${pickNumToFmt(overall, teams)}</div><div class="nb">${nbrs.join(' · ')}</div></div>`;
+  }
+  return html+'</div>';
+}
+function pdRuns(mocks){
+  const byRnd={};
+  for(const m of mocks) for(const p of m.picks){
+    (byRnd[p.round]=byRnd[p.round]||{QB:0,RB:0,WR:0,TE:0})[p.pos]=(byRnd[p.round][p.pos]||0)+1;
+  }
+  const colors={QB:'var(--qb)',RB:'var(--rb)',WR:'var(--wr)',TE:'var(--te)'};
+  let html=`<div class="pd-block-title">Position runs by round <span class="cnt">across all mocks</span></div><div class="ctxbox">`;
+  for(let r=1;r<=10;r++){
+    const g=byRnd[r]; if(!g) continue;
+    const tot=Math.max(1,Object.values(g).reduce((a,b)=>a+b,0));
+    const dom=Object.entries(g).sort((a,b)=>b[1]-a[1])[0];
+    html+=`<div class="runrow"><span class="r">R${r}</span><span class="bar">${['RB','WR','TE','QB'].map(pos=>g[pos]?`<i style="width:${g[pos]/tot*100}%;background:${colors[pos]}"></i>`:'').join('')}</span><span class="lab">${dom[0]} ${Math.round(dom[1]/tot*100)}%</span></div>`;
+  }
+  return html+'</div>';
+}
+function renderPredraft(){
+  if(!MOCKS){ $('pdBanner').innerHTML='<span>Loading mock data…</span>'; return; }
+  const mocks=leagueMocks();
+  const sample=!!MOCKS.sample;
+  const pdB=$('pdBanner');
+  pdB.className='pd-banner'+(sample?' sample':'');
+  const btns=`<span class="sp"></span><button class="btn ghost" id="pdImport">${mocks.length?'Import more':'Import mocks'}</button>${mocks.length?'<button class="btn ghost" id="pdClear">Clear</button>':''}`;
+  pdB.innerHTML = sample
+    ? `<span>⚠️ <b>SAMPLE MOCK DATA</b> — these ${mocks.length} mocks are generated placeholders so you can see the layout. Import your real mock drafts (or send them to your agent) and they replace this.</span>${btns}`
+    : mocks.length
+      ? `<span>📊 ${mocks.length} mock draft${mocks.length>1?'s':''} loaded for <b>${esc(L().name)}</b> — mock-only trends, bluffs don't count.</span>${btns}`
+      : `<span>No mock drafts yet for ${esc(L().name)}. Import a mocks JSON or drop your mock exports in chat and the agent will convert them.</span>${btns}`;
+  const imp=$('pdImport'); if(imp) imp.onclick=importMocks;
+  const clr=$('pdClear'); if(clr) clr.onclick=clearMocks;
+  if(!mocks.length){
+    $('pdMyCount').textContent=''; $('pdMapCount').textContent='';
+    const empty='<div class="empty">No mock data yet for this league.</div>';
+    $('pdMyBody').innerHTML=empty; $('pdMapBody').innerHTML=empty; $('pdIntelBody').innerHTML=empty;
+    return;
+  }
+  const myMocks=mocks.map(m=>({m, mine:myPicksOf(m)}));
+  $('pdMyCount').textContent=mocks.length+' mock'+(mocks.length>1?'s':'')+' · my slot '+(mocks[0].mySlot||'?');
+  $('pdMapCount').textContent=mocks.length+' mock'+(mocks.length>1?'s':'');
+  $('pdMyBody').innerHTML = pdHeatmap(myMocks) + pdLocked(myMocks) + pdTiming(myMocks) + pdAdp(myMocks);
+  $('pdMapBody').innerHTML = pdMap(mocks);
+  $('pdIntelBody').innerHTML = pdAround(mocks) + pdRuns(mocks);
+}
+
+/* ---------------- mode toggle ---------------- */
+$('modeToggle').querySelectorAll('button').forEach(b=> b.onclick=()=>{ UI.mode=b.dataset.mode; saveState(); render(); });
 
 /* ---------------- keyboard ---------------- */
 document.addEventListener('keydown', e=>{
@@ -1223,6 +1683,7 @@ function applyFilters(){
   $('keeperToggleWrap').style.display = Object.keys(L().keepers).length ? 'flex' : 'none';
 }
 loadState();
+loadMocks();
 fetch(DATA_URL).then(r=>r.json()).then(d=>{
   DATA = d;
   renderTimer();
