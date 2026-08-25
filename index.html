@@ -738,7 +738,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 </main>
 
 <footer>
-  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b28a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b28a</span><br>
+  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b28b, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b28b</span><br>
   <span style="opacity:.75">Data: Fantasy Footballers 2026 Ultimate Draft Kit (rankings computed with the UDK engine for your league scoring). Your draft state lives only in this browser.</span>
   <button class="btn ghost" id="exportBtn">Export state</button>
   <button class="btn ghost" id="importBtn">Import state</button>
@@ -2048,24 +2048,26 @@ function roastAnalysis(team){
   const reach=[], steals=[], risk=[], rookies=[], busts=[], byes={}, first={};
   for(const pk of picks){
     const p=pk.p; if(!p) continue;
-    const eff = effAdp(p);
-    if(eff!=null){ const gap = pk.pickNum - eff; if(gap>=12) reach.push({name:p.n, gap}); else if(gap<=-14) steals.push({name:p.n, gap}); }
+    if(!pk.keeper){
+      const eff = effAdp(p);
+      if(eff!=null){ const gap = pk.pickNum - eff; if(gap>=12) reach.push({name:p.n, gap:Math.round(gap)}); else if(gap<=-14) steals.push({name:p.n, gap:Math.round(-gap)}); }
+    }
     if((p.risk||0)>=6.5) risk.push(p.n);
     if(p.rb) rookies.push(p.n);
     if(p.tags&&p.tags.bust) busts.push(p.n);
     if(p.b) (byes[p.b]=byes[p.b]||[]).push(p.n);
-    if(first[p.p]==null) first[p.p]=pk.pickNum;
+    if(first[p.p]==null) first[p.p]=pk.pickNum||1;
   }
   const clusters = Object.entries(byes).filter(([b,names])=>names.length>=3).sort((a,b)=>b[1].length-a[1].length);
-  const avgGap = picks.length ? Math.round(picks.reduce((a,pk)=>{ const eff=pk.p?effAdp(pk.p):null; return a+(eff!=null?pk.pickNum-eff:0); },0)/picks.length) : 0;
-  return {picks, reach, steals, risk, rookies, busts, clusters, first, avgGap};
+  const avgGap = picks.length ? Math.round(picks.reduce((a,pk)=>{ const eff=pk.p&&!pk.keeper?effAdp(pk.p):null; return a+(eff!=null?pk.pickNum-eff:0); },0)/picks.length) : 0;
+  return {picks, reach, steals, risk, rookies, busts, clusters, first, avgGap, drafted: picks.filter(x=>!x.keeper).length, kept: picks.filter(x=>x.keeper).length};
 }
 function roastSins(a){
   const s = [];
   if(a.reach.length) s.push(`Reached ${a.reach[0].gap} picks early for ${a.reach[0].name}${a.reach.length>1?' — and '+(a.reach.length-1)+' more just like it':''}. The board was visible to everyone.`);
   if(a.clusters.length) s.push(`${a.clusters[0][1].length} starters off on bye week ${a.clusters[0][0]} — one bad week and the whole squad is a skeleton crew.`);
   if(a.risk.length>=2) s.push(`${a.risk.length} starters built from glass and hope (${a.risk.join(', ')}).`);
-  if(a.steals.length) s.push(`Even a stopped clock is right twice a day — the ${a.steals[0].name} steal proves it.`);
+  if(a.steals.length) s.push(`Even a stopped clock is right twice a day — the ${a.steals[0].name} steal (${a.steals[0].gap} picks of value) proves it.`);
   if(a.rookies.length>=3) s.push(`${a.rookies.length} rookies. Hope you love the waiver wire by October.`);
   if(a.busts.length) s.push(`Took a guy the analysts are already apologizing for (${a.busts[0]}).`);
   if(a.first.QB==null || a.first.QB>=60) s.push(`Didn't touch a QB until pick ${a.first.QB||'the very end'}. Bold. Wrong, but bold.`);
@@ -2114,7 +2116,7 @@ function renderRoast(){
     const sins = roastSins(a);
     const chirp = roastChirp(a, t);
     ROAST_TEXTS[t] = chirp;
-    const rec = `${a.picks.length} picks · avg gap ${a.avgGap>=0?'+':''}${a.avgGap} vs ADP · ${a.clusters.length} bye clusters · ${a.risk.length} risky · ${a.rookies.length} rookies`;
+    const rec = `${a.drafted} ${a.drafted===1?'pick':'picks'}${a.kept?` + ${a.kept} ${a.kept===1?'keeper':'keepers'}`:''} · avg gap ${a.avgGap>=0?'+':''}${a.avgGap} vs ADP · ${a.clusters.length} bye ${a.clusters.length===1?'cluster':'clusters'} · ${a.risk.length} risky · ${a.rookies.length} ${a.rookies.length===1?'rookie':'rookies'}`;
     return `<div class="roast-card">
       <div class="roast-head"><b>${esc(t)}</b>${h?` <span class="pmeta">${esc(h)}</span>`:''}<button class="cpy" onclick="copyTextById('${esc(t)}', this)">Copy</button></div>
       <div class="roast-sins">${sins.map(esc).join(' ')}</div>
@@ -2273,7 +2275,7 @@ function markDrafted(pid, amount, remove, who){
     UI.pulse = {events:[ev, ...(UI.pulse&&UI.pulse.events||[])].slice(0,3)};
     saveState(); render(); return;
   }
-  const pickNum = onTheClockPick();
+  const pickNum = onTheClockPick() || (lg.log.length + 1);   // fallback when the clock isn't live yet
   let team = who;
   if(team == null){
     team = (pickIsMine(pickNum) && lg.teamName) ? lg.teamName : teamAtPick(pickNum);
