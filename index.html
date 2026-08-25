@@ -276,6 +276,23 @@ footer .btn{margin:0 4px;padding:5px 12px;font-size:11.5px}
 .mode-toggle button{padding:6px 11px;font-weight:800;font-size:12px;color:var(--mut);border-right:1px solid var(--line);white-space:nowrap}
 .mode-toggle button:last-child{border-right:none}
 .mode-toggle button.on{background:var(--acc2);color:#f2eeff}
+/* ---- live draft mode ---- */
+#liveBtn{display:flex;align-items:center;gap:6px;padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:var(--bg2);color:var(--mut);font-weight:800;font-size:12px;cursor:pointer;white-space:nowrap;flex:0 0 auto}
+#liveBtn:hover{color:#ffb4ad}
+#liveBtn.on{background:rgba(255,95,86,.14);border-color:rgba(255,95,86,.55);color:#ff8a80}
+#liveBtn .dot{width:8px;height:8px;border-radius:50%;background:currentColor;flex:0 0 auto}
+body.live #liveBtn.on .dot{animation:livePulse 1.2s ease-in-out infinite}
+@keyframes livePulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(255,95,86,.5)}50%{opacity:.5;box-shadow:0 0 0 6px rgba(255,95,86,0)}}
+body.live #topbar{border-bottom-color:rgba(255,95,86,.5)}
+#liveBar{display:none;align-items:center;gap:10px;flex-wrap:wrap;background:rgba(255,95,86,.12);border-bottom:1px solid rgba(255,95,86,.4);padding:7px 14px;font-size:12.5px;color:#ffd9d4}
+body.live #liveBar{display:flex}
+#liveBar .lb-clock{font-weight:900;color:#ff8a80;white-space:nowrap}
+#liveBar .lb-team{font-weight:700;white-space:nowrap}
+#liveBar .lb-next{color:var(--mut);white-space:nowrap}
+.qk-take{flex:0 0 auto;margin-left:4px;padding:3px 8px;font-size:10.5px;font-weight:800;border-radius:6px;background:rgba(255,95,86,.14);color:#ff8a80;border:1px solid rgba(255,95,86,.45);cursor:pointer;white-space:nowrap}
+.qk-take:hover{background:rgba(255,95,86,.3)}
+tr.drafted .qk-take{opacity:.35;pointer-events:none}
+.live-note{font-size:11px;font-weight:700;color:var(--warn)}
 
 /* ============ PRE-DRAFT VIEW ============ */
 #predraft{display:flex;flex-direction:column;gap:12px;padding:12px}
@@ -353,6 +370,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 .pchip{font-size:9.5px;font-weight:800;padding:1px 5px;border-radius:4px;background:var(--bg3);border:1px solid var(--line2);color:var(--mut)}
 .pchip.qb{color:var(--qb)} .pchip.rb{color:var(--rb)} .pchip.wr{color:var(--wr)} .pchip.te{color:var(--te)}
 .mgr-row .mgr-meta{font-size:10.5px;color:var(--mut);display:flex;gap:5px;flex-wrap:wrap}
+.mgr-row .mgr-hnd{font-size:10px;font-weight:600;color:var(--dim)}
 .mgr-row .mgr-meta .need{color:#ff8a84;font-weight:700}
 .mgr-row .mgr-meta .sig{color:var(--dim);border:1px solid var(--line);border-radius:4px;padding:0 5px;background:var(--bg3)}
 .inline-sel{background:var(--bg3);border:1px solid var(--acc);border-radius:6px;padding:2px 6px;font-size:11.5px;font-weight:700;max-width:140px}
@@ -368,6 +386,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
     <button data-mode="day">⚡ Draft&nbsp;Day</button>
     <button data-mode="pre">📊 Pre-Draft</button>
   </div>
+  <button id="liveBtn" title="Draft is live — marking a pick auto-assigns it to the team on the clock and advances"><span class="dot"></span>Draft&nbsp;is&nbsp;live</button>
   <div class="lg-toggle" id="lgToggle"></div>
   <div id="needChips"></div>
   <div id="pickBox">
@@ -377,6 +396,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
   </div>
   <button id="gearBtn" title="Settings">⚙</button>
 </header>
+<div id="liveBar"><span class="lb-clock">🔴 Pick&nbsp;<span id="lbPickN">1</span></span><span class="lb-team" id="lbTeam">—</span><span class="lb-next" id="lbNext"></span></div>
 
 <main id="main">
   <!-- ============ BOARD ============ -->
@@ -534,21 +554,34 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 ================================================================ */
 const DATA_URL = 'data/board.json';
 const MOCK_URL = 'data/mocks.json';
-const LS_KEY = 'ffb-draft-v3';
+const LS_KEY = 'ffb-draft-v4';
 const MOCK_LS_KEY = 'ffb-mocks-v1';
 let DATA = null;
 let MOCKS = null;          // {generated, sample, mocks:[...]}
-let UI = { league: 0, mode: 'day' };   // mode: 'day' (draft board) | 'pre' (pre-draft)
+let UI = { league: 0, mode: 'day', live: false };   // mode: 'day' (draft board) | 'pre' (pre-draft); live: draft-is-live mode
 
 const POS_COLORS = {QB:'qb',RB:'rb',WR:'wr',TE:'te',FLEX:'flex',RBW:'wr',SFLEX:'qb',DST:'dst',K:'k'};
 const SCORING_ALIAS = {'HALF (6pt QB)':'half','HALF (4pt QB)':'half','PPR (6pt QB)':'ppr','PPR (4pt QB)':'ppr','STD (6pt QB)':'std','STD (4pt QB)':'std','TE PREM (4pt QB)':'teprem','TE PREM (6pt QB)':'teprem'};
 
 /* ---------------- league config ---------------- */
+// League of Champs (real, from Sleeper import): 10 teams, TE premium superflex, snake.
+// Draft order (pick 1 → 10) from the league; handles from the Sleeper standings.
+const L1_ORDER = [
+  'Mothership', 'Gare-e Bears', 'Dolphin fans are gay', 'I Chase Brown Kids',
+  'Kirk-umsized Penix', 'Commander in Children', 'OJ did it?', 'Team Name TBD',
+  "Sandusky's Home of TEs", 'Ankle Breakers Anonymous'
+];
+const L1_HANDLES = {
+  'Mothership':'@aws1990', 'Gare-e Bears':'@eriksske', 'Dolphin fans are gay':'@truax571',
+  'I Chase Brown Kids':'@nmilli29', 'Kirk-umsized Penix':'@jgank10',
+  'Commander in Children':'@jmarko1991', 'OJ did it?':'@combes101', 'Team Name TBD':'@jkeeney2010',
+  "Sandusky's Home of TEs":'@aalte12', 'Ankle Breakers Anonymous':'@Dillonpatric'
+};
 function defaultLeague(i){
   return {
-    name: i===0 ? 'Dolphin Fans' : 'League 2',
+    name: i===0 ? 'League of Champs' : 'League 2',
     scoring: i===0 ? 'TE PREM (4pt QB)' : 'HALF (6pt QB)',
-    teams: i===0 ? 10 : 12, slot: 5, snake: true, auction: false, budget: 200,
+    teams: i===0 ? 10 : 12, slot: i===0 ? 3 : 5, snake: true, auction: false, budget: 200,
     roster: i===0 ? {QB:1, RB:2, WR:2, TE:1, FLEX:2, RBW:1, SFLEX:1, DST:1, K:1, BN:10, IR:3}
                   : {QB:1, RB:2, WR:2, TE:1, FLEX:1, DST:1, K:1, BN:6},
     teamName: i===0 ? 'Dolphin fans are gay' : '',
@@ -557,7 +590,8 @@ function defaultLeague(i){
     stars: [], watch: [], avoid: [],
     log: [],           // {pickNum, team, pid, amount}
     notes: '',
-    order: [],         // draft order team names, pick 1 → N (optional)
+    order: i===0 ? L1_ORDER.slice() : [],   // draft order team names, pick 1 → N (optional)
+    handles: i===0 ? Object.assign({}, L1_HANDLES) : {},  // team name -> @handle
     timer: null        // {endAt}
   };
 }
@@ -712,6 +746,20 @@ function renderHeader(){
   }
   $('scoringLabel').textContent = lg.scoring + ' · ' + lg.teams + ' teams · ' + (lg.auction ? 'auction $'+lg.budget : 'slot '+lg.slot);
   $('teamName').textContent = lg.teamName ? '— '+esc(lg.teamName) : '';
+
+  // draft-is-live state + on-clock bar
+  $('liveBtn').classList.toggle('on', !!UI.live);
+  document.body.classList.toggle('live', !!UI.live);
+  if(UI.live){
+    const n = onTheClockPick();
+    const team = teamAtPick(n);
+    const need = teamNeed(team);
+    const nexts = [];
+    for(let i=1;i<=3;i++){ const t = teamAtPick(n+i); if(t) nexts.push(t); }
+    $('lbPickN').textContent = n;
+    $('lbTeam').textContent = team ? (team + (need ? ' · '+need : '')) : '—';
+    $('lbNext').textContent = nexts.length ? 'next: '+nexts.join(' → ') : '';
+  }
 }
 
 function rosterSlots(pos){
@@ -907,6 +955,7 @@ function rowHTML(r, idx, val){
   const tagHtml = tags.map(t=>`<span class="tag tag-${t}">${t}</span>`).join('') + (p.rb?`<span class="tag tag-rookie">R</span>`:'');
   const valHtml = val===0?'±0':val>0?`<span class="valplus">+${val}</span>`:`<span class="valminus">${val}</span>`;
   const marks =
+    (UI.live && !drafted ? `<button class="qk-take" data-take="${r[0]}" title="Live: marks drafted — auto-assigned to the team on the clock">TAKEN</button>` : '') +
     `<button class="mk chk ${drafted?'on':''}" data-a="draft" title="Toggle drafted">✓</button>`+
     `<button class="mk star ${mine?'on':''}" data-a="star" title="My guy">★</button>`+
     `<button class="mk eye ${lg.watch.includes(r[0])?'on':''}" data-a="watch" title="Watchlist">👁</button>`+
@@ -924,6 +973,10 @@ function rowHTML(r, idx, val){
   </tr>`;
 }
 $('boardRows').addEventListener('click', e=>{
+  const qk = e.target.closest('.qk-take');
+  if(qk){ const pid = qk.dataset.take; const lg = L();
+    if(!lg.drafted[pid]) markDrafted(pid, null, false);   // live: auto team = on clock, advances
+    return; }
   const mk = e.target.closest('.mk');
   const tr = e.target.closest('tr.player');
   if(!tr) return;
@@ -1226,6 +1279,12 @@ function openDetail(pid){
   const curTeam = lg.drafted[pid] ? lg.drafted[pid].team : null;
   if(curTeam) whoSel.value = curTeam;
   else whoSel.value = teamAtPick(onTheClockPick());
+  // live mode: attribution is automatic — lock the select to the on-clock team
+  let hint = $('ddWhoHint');
+  if(!hint){ hint = document.createElement('span'); hint.id = 'ddWhoHint'; hint.className = 'live-note'; $('ddWhoRow').appendChild(hint); }
+  hint.style.display = UI.live ? '' : 'none';
+  hint.textContent = 'auto — Draft is live (off-clock picks: toggle live off or fix in the log)';
+  whoSel.disabled = !!UI.live;
   $('ddDraft').onclick = ()=> markDrafted(pid, null, !!lg.drafted[pid], whoSel.value||null);
   $('ddStar').onclick = ()=>{ lg.stars = lg.stars.includes(pid)? lg.stars.filter(x=>x!==pid):[...lg.stars,pid]; saveState(); openDetail(pid); renderContext(); };
   const ak = $('ddAuction');
@@ -1328,7 +1387,8 @@ $('stReset').onclick = ()=>{
 $('stAuction').addEventListener('change', e=>{ $('stBudgetRow').style.display = e.target.checked?'flex':'none'; });
 $('stOrderFill').onclick = ()=>{
   const n = Math.max(4, Math.min(16, +$('stTeams').value||12));
-  $('stOrder').value = Array.from({length:n}, (_,i)=>'Manager '+(i+1)).join(', ');
+  const existing = L().order.filter(Boolean);
+  $('stOrder').value = (existing.length === n ? existing : Array.from({length:n}, (_,i)=>'Manager '+(i+1))).join(', ');
 };
 
 /* ---------------- export / import ---------------- */
@@ -1404,7 +1464,8 @@ function renderManagers(){
     const np=nextPickFor(name);
     const sig=profs[name]&&profs[name].sig?profs[name].sig.sigs.map(s=>`<span class="sig">${esc(s.txt)}</span>`).join(''):'';
     const mocks=profs[name]&&profs[name].sig?profs[name].sig.mocks:0;
-    return `<div class="mgr-row ${me?'me':''}"><div class="mgr-h"><span class="mgr-n">${me?'★ ':''}${esc(name)}</span><span class="mgr-pos">${chips}</span></div>
+    const handle = (lg.handles&&lg.handles[name]) ? ` <span class="mgr-hnd">${esc(lg.handles[name])}</span>` : '';
+    return `<div class="mgr-row ${me?'me':''}"><div class="mgr-h"><span class="mgr-n">${me?'★ ':''}${esc(name)}${handle}</span><span class="mgr-pos">${chips}</span></div>
       <div class="mgr-meta">${need?`<span class="need">${esc(need)}</span>`:''}${np?`<span>next p${np}</span>`:''}${sig}${mocks?`<span class="sig">${mocks} mock${mocks>1?'s':''}</span>`:''}</div></div>`;
   }).join('') + '</div>';
 }
@@ -1670,11 +1731,19 @@ function renderPredraft(){
 
 /* ---------------- mode toggle ---------------- */
 $('modeToggle').querySelectorAll('button').forEach(b=> b.onclick=()=>{ UI.mode=b.dataset.mode; saveState(); render(); });
+$('liveBtn').onclick = ()=>{
+  UI.live = !UI.live;
+  saveState(); render();
+  toast(UI.live ? 'Draft is LIVE — picks auto-assign to the team on the clock' : 'Live mode off — attribution is manual again');
+};
 
 /* ---------------- keyboard ---------------- */
 document.addEventListener('keydown', e=>{
-  if(e.key==='/' && document.activeElement!==$('searchBox')){ e.preventDefault(); $('searchBox').focus(); }
+  const tag = (document.activeElement||{}).tagName;
+  const typing = tag==='INPUT' || tag==='TEXTAREA' || tag==='SELECT';
+  if(e.key==='/' && !typing && document.activeElement!==$('searchBox')){ e.preventDefault(); $('searchBox').focus(); }
   if(e.key==='Escape'){ $('detailBg').classList.remove('open'); $('settingsBg').classList.remove('open'); }
+  if((e.key==='l' || e.key==='L') && !typing){ $('liveBtn').click(); }
 });
 
 /* ================================================================ BOOT ======= */

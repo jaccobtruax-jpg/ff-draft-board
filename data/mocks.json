@@ -7,18 +7,18 @@
    "league": 0,
    "label": "Sample mock 1",
    "format": "snake",
-   "mySlot": 5,
+   "mySlot": 3,
    "teams": [
-    "Taco Tuesday",
-    "Gurley Men",
-    "The Bluffs",
-    "Saquon's Kids",
+    "Mothership",
+    "Gare-e Bears",
     "Dolphin fans are gay",
-    "GridIron Goblins",
-    "Puny Humans",
-    "League Winner",
-    "Waddle Waddle",
-    "Barkley's Barking"
+    "I Chase Brown Kids",
+    "Kirk-umsized Penix",
+    "Commander in Children",
+    "OJ did it?",
+    "Team Name TBD",
+    "Sandusky's Home of TEs",
+    "Ankle Breakers Anonymous"
    ],
    "picks": [
     {
@@ -48,17 +48,6 @@
      "team": 2,
      "round": 1,
      "overall": 3,
-     "pid": "19801",
-     "name": "Josh Allen",
-     "pos": "QB",
-     "adp": 3.0,
-     "pts": 425.5
-    },
-    {
-     "slot": 4,
-     "team": 3,
-     "round": 1,
-     "overall": 4,
      "pid": "18877",
      "name": "Christian McCaffrey",
      "pos": "RB",
@@ -66,15 +55,26 @@
      "pts": 316.2
     },
     {
-     "slot": 5,
-     "team": 4,
+     "slot": 4,
+     "team": 3,
      "round": 1,
-     "overall": 5,
+     "overall": 4,
      "pid": "23247",
      "name": "James Cook III",
      "pos": "RB",
      "adp": 11.3,
      "pts": 268.8
+    },
+    {
+     "slot": 5,
+     "team": 4,
+     "round": 1,
+     "overall": 5,
+     "pid": "19801",
+     "name": "Josh Allen",
+     "pos": "QB",
+     "adp": 3.0,
+     "pts": 425.5
     },
     {
      "slot": 6,
@@ -411,11 +411,11 @@
      "team": 4,
      "round": 4,
      "overall": 36,
-     "pid": "22598",
-     "name": "Jaylen Waddle",
-     "pos": "WR",
-     "adp": 59.7,
-     "pts": 195.7
+     "pid": "25887",
+     "name": "Cam Skattebo",
+     "pos": "RB",
+     "adp": 56.6,
+     "pts": 191.0
     },
     {
      "slot": 4,
@@ -433,11 +433,11 @@
      "team": 2,
      "round": 4,
      "overall": 38,
-     "pid": "22526",
-     "name": "Breece Hall",
-     "pos": "RB",
-     "adp": 44.6,
-     "pts": 199.7
+     "pid": "22598",
+     "name": "Jaylen Waddle",
+     "pos": "WR",
+     "adp": 59.7,
+     "pts": 195.7
     },
     {
      "slot": 2,
@@ -488,44 +488,44 @@
      "team": 2,
      "round": 5,
      "overall": 43,
-     "pid": "21690",
-     "name": "Tee Higgins",
-     "pos": "WR",
-     "adp": 47.3,
-     "pts": 192.3
+     "pid": "23235",
+     "name": "Jayden Daniels",
+     "pos": "QB",
+     "adp": 17.7,
+     "pts": 260.8
     },
     {
      "slot": 4,
      "team": 3,
      "round": 5,
      "overall": 44,
-     "pid": "25887",
-     "name": "Cam Skattebo",
+     "pid": "22526",
+     "name": "Breece Hall",
      "pos": "RB",
-     "adp": 56.6,
-     "pts": 191.0
+     "adp": 44.6,
+     "pts": 199.7
     },
     {
      "slot": 5,
      "team": 4,
      "round": 5,
      "overall": 45,
-     "pid": "21831",
-     "name": "Jalen Hurts",
-     "pos": "QB",
-     "adp": 28.9,
-     "pts": 257.8
+     "pid": "25097",
+     "name": "Ladd McConkey",
+     "pos": "WR",
+     "adp": 53.4,
+     "pts": 185.9
     },
     {
      "slot": 6,
      "team": 5,
      "round": 5,
      "overall": 46,
-     "pid": "25097",
-     "name": "Ladd McConkey",
+     "pid": "21690",
+     "name": "Tee Higgins",
      "pos": "WR",
-     "adp": 53.4,
-     "pts": 185.9
+     "adp": 47.3,
+     "pts": 192.3
     },
     {
      "slot": 7,
@@ -576,11 +576,11 @@
      "team": 9,
      "round": 6,
      "overall": 51,
-     "pid": "23235",
-     "name": "Jayden Daniels",
+     "pid": "21831",
+     "name": "Jalen Hurts",
      "pos": "QB",
-     "adp": 17.7,
-     "pts": 260.8
+     "adp": 28.9,
+     "pts": 257.8
     },
     {
      "slot": 9,
@@ -631,11 +631,11 @@
      "team": 4,
      "round": 6,
      "overall": 56,
-     "pid": "23395",
-     "name": "Christian Watson",
-     "pos": "WR",
-     "adp": 81.9,
-     "pts": 183.8
+     "pid": "23141",
+     "name": "Sam LaPorta",
+     "pos": "TE",
+     "adp": 70.2,
+     "pts": 165.3
     },
     {
      "slot": 4,
@@ -653,11 +653,11 @@
      "team": 2,
      "round": 6,
      "overall": 58,
-     "pid": "23141",
-     "name": "Sam LaPorta",
-     "pos": "TE",
-     "adp": 70.2,
-     "pts": 165.3
+     "pid": "23395",
+     "name": "Christian Watson",
+     "pos": "WR",
+     "adp": 81.9,
+     "pts": 183.8
     },
     {
      "slot": 2,
@@ -708,11 +708,11 @@
      "team": 2,
      "round": 7,
      "overall": 63,
-     "pid": "24927",
-     "name": "Caleb Williams",
-     "pos": "QB",
-     "adp": 23.7,
-     "pts": 232.0
+     "pid": "21738",
+     "name": "Juwan Johnson",
+     "pos": "TE",
+     "adp": 148.1,
+     "pts": 148.0
     },
     {
      "slot": 4,
@@ -730,11 +730,11 @@
      "team": 4,
      "round": 7,
      "overall": 65,
-     "pid": "21738",
-     "name": "Juwan Johnson",
-     "pos": "TE",
-     "adp": 148.1,
-     "pts": 148.0
+     "pid": "22490",
+     "name": "Trevor Lawrence",
+     "pos": "QB",
+     "adp": 41.7,
+     "pts": 233.2
     },
     {
      "slot": 6,
@@ -807,11 +807,11 @@
      "team": 8,
      "round": 8,
      "overall": 72,
-     "pid": "22490",
-     "name": "Trevor Lawrence",
+     "pid": "24927",
+     "name": "Caleb Williams",
      "pos": "QB",
-     "adp": 41.7,
-     "pts": 233.2
+     "adp": 23.7,
+     "pts": 232.0
     },
     {
      "slot": 8,
@@ -851,17 +851,6 @@
      "team": 4,
      "round": 8,
      "overall": 76,
-     "pid": "19920",
-     "name": "Dalton Schultz",
-     "pos": "TE",
-     "adp": 150.0,
-     "pts": 146.6
-    },
-    {
-     "slot": 4,
-     "team": 3,
-     "round": 8,
-     "overall": 77,
      "pid": "16470",
      "name": "Davante Adams",
      "pos": "WR",
@@ -869,15 +858,26 @@
      "pts": 176.6
     },
     {
-     "slot": 3,
-     "team": 2,
+     "slot": 4,
+     "team": 3,
      "round": 8,
-     "overall": 78,
+     "overall": 77,
      "pid": "24977",
      "name": "Rome Odunze",
      "pos": "WR",
      "adp": 80.6,
      "pts": 173.9
+    },
+    {
+     "slot": 3,
+     "team": 2,
+     "round": 8,
+     "overall": 78,
+     "pid": "19920",
+     "name": "Dalton Schultz",
+     "pos": "TE",
+     "adp": 150.0,
+     "pts": 146.6
     },
     {
      "slot": 2,
@@ -928,6 +928,17 @@
      "team": 2,
      "round": 9,
      "overall": 83,
+     "pid": "25069",
+     "name": "Bo Nix",
+     "pos": "QB",
+     "adp": 46.6,
+     "pts": 221.5
+    },
+    {
+     "slot": 4,
+     "team": 3,
+     "round": 9,
+     "overall": 84,
      "pid": "21952",
      "name": "Rico Dowdle",
      "pos": "RB",
@@ -935,26 +946,15 @@
      "pts": 161.0
     },
     {
-     "slot": 4,
-     "team": 3,
+     "slot": 5,
+     "team": 4,
      "round": 9,
-     "overall": 84,
+     "overall": 85,
      "pid": "22546",
      "name": "Rhamondre Stevenson",
      "pos": "RB",
      "adp": 92.5,
      "pts": 159.1
-    },
-    {
-     "slot": 5,
-     "team": 4,
-     "round": 9,
-     "overall": 85,
-     "pid": "25069",
-     "name": "Bo Nix",
-     "pos": "QB",
-     "adp": 46.6,
-     "pts": 221.5
     },
     {
      "slot": 6,
@@ -1148,6 +1148,17 @@
      "team": 2,
      "round": 11,
      "overall": 103,
+     "pid": "23170",
+     "name": "Wan'Dale Robinson",
+     "pos": "WR",
+     "adp": 127.6,
+     "pts": 142.8
+    },
+    {
+     "slot": 4,
+     "team": 3,
+     "round": 11,
+     "overall": 104,
      "pid": "22562",
      "name": "Kenny Gainwell",
      "pos": "RB",
@@ -1155,26 +1166,15 @@
      "pts": 144.7
     },
     {
-     "slot": 4,
-     "team": 3,
+     "slot": 5,
+     "team": 4,
      "round": 11,
-     "overall": 104,
+     "overall": 105,
      "pid": "20912",
      "name": "Tony Pollard",
      "pos": "RB",
      "adp": 98.9,
      "pts": 144.9
-    },
-    {
-     "slot": 5,
-     "team": 4,
-     "round": 11,
-     "overall": 105,
-     "pid": "23170",
-     "name": "Wan'Dale Robinson",
-     "pos": "WR",
-     "adp": 127.6,
-     "pts": 142.8
     },
     {
      "slot": 6,
@@ -1291,11 +1291,11 @@
      "team": 4,
      "round": 12,
      "overall": 116,
-     "pid": "24116",
-     "name": "Blake Corum",
-     "pos": "RB",
-     "adp": 112.5,
-     "pts": 130.4
+     "pid": "19863",
+     "name": "Dallas Goedert",
+     "pos": "TE",
+     "adp": 118.6,
+     "pts": 138.4
     },
     {
      "slot": 4,
@@ -1313,11 +1313,11 @@
      "team": 2,
      "round": 12,
      "overall": 118,
-     "pid": "19863",
-     "name": "Dallas Goedert",
-     "pos": "TE",
-     "adp": 118.6,
-     "pts": 138.4
+     "pid": "24116",
+     "name": "Blake Corum",
+     "pos": "RB",
+     "adp": 112.5,
+     "pts": 130.4
     },
     {
      "slot": 2,
@@ -1368,6 +1368,17 @@
      "team": 2,
      "round": 13,
      "overall": 123,
+     "pid": "24223",
+     "name": "Brenton Strange",
+     "pos": "TE",
+     "adp": 134.3,
+     "pts": 137.4
+    },
+    {
+     "slot": 4,
+     "team": 3,
+     "round": 13,
+     "overall": 124,
      "pid": "26748",
      "name": "Makai Lemon",
      "pos": "WR",
@@ -1375,26 +1386,15 @@
      "pts": 128.2
     },
     {
-     "slot": 4,
-     "team": 3,
+     "slot": 5,
+     "team": 4,
      "round": 13,
-     "overall": 124,
+     "overall": 125,
      "pid": "23227",
      "name": "Khalil Shakir",
      "pos": "WR",
      "adp": 140.6,
      "pts": 125.9
-    },
-    {
-     "slot": 5,
-     "team": 4,
-     "round": 13,
-     "overall": 125,
-     "pid": "24223",
-     "name": "Brenton Strange",
-     "pos": "TE",
-     "adp": 134.3,
-     "pts": 137.4
     },
     {
      "slot": 6,
@@ -1511,11 +1511,11 @@
      "team": 4,
      "round": 14,
      "overall": 136,
-     "pid": "25103",
-     "name": "Malik Washington",
-     "pos": "WR",
-     "adp": 206.8,
-     "pts": 122.7
+     "pid": "9038",
+     "name": "Matthew Stafford",
+     "pos": "QB",
+     "adp": 62.7,
+     "pts": 214.1
     },
     {
      "slot": 4,
@@ -1533,11 +1533,11 @@
      "team": 2,
      "round": 14,
      "overall": 138,
-     "pid": "9038",
-     "name": "Matthew Stafford",
-     "pos": "QB",
-     "adp": 62.7,
-     "pts": 214.1
+     "pid": "25103",
+     "name": "Malik Washington",
+     "pos": "WR",
+     "adp": 206.8,
+     "pts": 122.7
     },
     {
      "slot": 2,
@@ -1731,11 +1731,11 @@
      "team": 4,
      "round": 16,
      "overall": 156,
-     "pid": "25323",
-     "name": "Cam Ward",
-     "pos": "QB",
-     "adp": 101.5,
-     "pts": 188.7
+     "pid": "21717",
+     "name": "Jauan Jennings",
+     "pos": "WR",
+     "adp": 184.7,
+     "pts": 104.2
     },
     {
      "slot": 4,
@@ -1753,11 +1753,11 @@
      "team": 2,
      "round": 16,
      "overall": 158,
-     "pid": "21717",
-     "name": "Jauan Jennings",
-     "pos": "WR",
-     "adp": 184.7,
-     "pts": 104.2
+     "pid": "25323",
+     "name": "Cam Ward",
+     "pos": "QB",
+     "adp": 101.5,
+     "pts": 188.7
     },
     {
      "slot": 2,
@@ -1788,18 +1788,18 @@
    "league": 0,
    "label": "Sample mock 2",
    "format": "snake",
-   "mySlot": 5,
+   "mySlot": 3,
    "teams": [
-    "Taco Tuesday",
-    "Gurley Men",
-    "The Bluffs",
-    "Saquon's Kids",
+    "Mothership",
+    "Gare-e Bears",
     "Dolphin fans are gay",
-    "GridIron Goblins",
-    "Puny Humans",
-    "League Winner",
-    "Waddle Waddle",
-    "Barkley's Barking"
+    "I Chase Brown Kids",
+    "Kirk-umsized Penix",
+    "Commander in Children",
+    "OJ did it?",
+    "Team Name TBD",
+    "Sandusky's Home of TEs",
+    "Ankle Breakers Anonymous"
    ],
    "picks": [
     {
@@ -1829,17 +1829,6 @@
      "team": 2,
      "round": 1,
      "overall": 3,
-     "pid": "19801",
-     "name": "Josh Allen",
-     "pos": "QB",
-     "adp": 3.0,
-     "pts": 425.5
-    },
-    {
-     "slot": 4,
-     "team": 3,
-     "round": 1,
-     "overall": 4,
      "pid": "18877",
      "name": "Christian McCaffrey",
      "pos": "RB",
@@ -1847,15 +1836,26 @@
      "pts": 316.2
     },
     {
-     "slot": 5,
-     "team": 4,
+     "slot": 4,
+     "team": 3,
      "round": 1,
-     "overall": 5,
+     "overall": 4,
      "pid": "23247",
      "name": "James Cook III",
      "pos": "RB",
      "adp": 11.3,
      "pts": 268.8
+    },
+    {
+     "slot": 5,
+     "team": 4,
+     "round": 1,
+     "overall": 5,
+     "pid": "19801",
+     "name": "Josh Allen",
+     "pos": "QB",
+     "adp": 3.0,
+     "pts": 425.5
     },
     {
      "slot": 6,
@@ -2049,11 +2049,11 @@
      "team": 2,
      "round": 3,
      "overall": 23,
-     "pid": "23153",
-     "name": "George Pickens",
-     "pos": "WR",
-     "adp": 31.5,
-     "pts": 210.9
+     "pid": "25874",
+     "name": "Tyler Warren",
+     "pos": "TE",
+     "adp": 49.8,
+     "pts": 211.5
     },
     {
      "slot": 4,
@@ -2071,11 +2071,11 @@
      "team": 4,
      "round": 3,
      "overall": 25,
-     "pid": "25874",
-     "name": "Tyler Warren",
-     "pos": "TE",
-     "adp": 49.8,
-     "pts": 211.5
+     "pid": "23153",
+     "name": "George Pickens",
+     "pos": "WR",
+     "adp": 31.5,
+     "pts": 210.9
     },
     {
      "slot": 6,
@@ -2192,6 +2192,17 @@
      "team": 4,
      "round": 4,
      "overall": 36,
+     "pid": "25887",
+     "name": "Cam Skattebo",
+     "pos": "RB",
+     "adp": 56.6,
+     "pts": 191.0
+    },
+    {
+     "slot": 4,
+     "team": 3,
+     "round": 4,
+     "overall": 37,
      "pid": "23120",
      "name": "Zay Flowers",
      "pos": "WR",
@@ -2199,37 +2210,26 @@
      "pts": 202.6
     },
     {
-     "slot": 4,
-     "team": 3,
-     "round": 4,
-     "overall": 37,
-     "pid": "22598",
-     "name": "Jaylen Waddle",
-     "pos": "WR",
-     "adp": 59.7,
-     "pts": 195.7
-    },
-    {
      "slot": 3,
      "team": 2,
      "round": 4,
      "overall": 38,
-     "pid": "22558",
-     "name": "Javonte Williams",
-     "pos": "RB",
-     "adp": 47.9,
-     "pts": 197.0
+     "pid": "23122",
+     "name": "Garrett Wilson",
+     "pos": "WR",
+     "adp": 55.5,
+     "pts": 204.4
     },
     {
      "slot": 2,
      "team": 1,
      "round": 4,
      "overall": 39,
-     "pid": "23122",
-     "name": "Garrett Wilson",
+     "pid": "22598",
+     "name": "Jaylen Waddle",
      "pos": "WR",
-     "adp": 55.5,
-     "pts": 204.4
+     "adp": 59.7,
+     "pts": 195.7
     },
     {
      "slot": 1,
@@ -2269,33 +2269,33 @@
      "team": 2,
      "round": 5,
      "overall": 43,
-     "pid": "26092",
-     "name": "Emeka Egbuka",
-     "pos": "WR",
-     "adp": 57.8,
-     "pts": 193.1
+     "pid": "23235",
+     "name": "Jayden Daniels",
+     "pos": "QB",
+     "adp": 17.7,
+     "pts": 260.8
     },
     {
      "slot": 4,
      "team": 3,
      "round": 5,
      "overall": 44,
-     "pid": "25887",
-     "name": "Cam Skattebo",
+     "pid": "22558",
+     "name": "Javonte Williams",
      "pos": "RB",
-     "adp": 56.6,
-     "pts": 191.0
+     "adp": 47.9,
+     "pts": 197.0
     },
     {
      "slot": 5,
      "team": 4,
      "round": 5,
      "overall": 45,
-     "pid": "23235",
-     "name": "Jayden Daniels",
-     "pos": "QB",
-     "adp": 17.7,
-     "pts": 260.8
+     "pid": "26092",
+     "name": "Emeka Egbuka",
+     "pos": "WR",
+     "adp": 57.8,
+     "pts": 193.1
     },
     {
      "slot": 6,
@@ -2412,11 +2412,11 @@
      "team": 4,
      "round": 6,
      "overall": 56,
-     "pid": "23395",
-     "name": "Christian Watson",
-     "pos": "WR",
-     "adp": 81.9,
-     "pts": 183.8
+     "pid": "21738",
+     "name": "Juwan Johnson",
+     "pos": "TE",
+     "adp": 148.1,
+     "pts": 148.0
     },
     {
      "slot": 4,
@@ -2434,11 +2434,11 @@
      "team": 2,
      "round": 6,
      "overall": 58,
-     "pid": "19063",
-     "name": "George Kittle",
-     "pos": "TE",
-     "adp": 103.8,
-     "pts": 168.6
+     "pid": "26752",
+     "name": "Carnell Tate",
+     "pos": "WR",
+     "adp": 79.2,
+     "pts": 185.2
     },
     {
      "slot": 2,
@@ -2456,11 +2456,11 @@
      "team": 0,
      "round": 6,
      "overall": 60,
-     "pid": "26752",
-     "name": "Carnell Tate",
+     "pid": "23395",
+     "name": "Christian Watson",
      "pos": "WR",
-     "adp": 79.2,
-     "pts": 185.2
+     "adp": 81.9,
+     "pts": 183.8
     },
     {
      "slot": 1,
@@ -2489,11 +2489,11 @@
      "team": 2,
      "round": 7,
      "overall": 63,
-     "pid": "24927",
-     "name": "Caleb Williams",
-     "pos": "QB",
-     "adp": 23.7,
-     "pts": 232.0
+     "pid": "25946",
+     "name": "Quinshon Judkins",
+     "pos": "RB",
+     "adp": 66.0,
+     "pts": 178.1
     },
     {
      "slot": 4,
@@ -2511,11 +2511,11 @@
      "team": 4,
      "round": 7,
      "overall": 65,
-     "pid": "25898",
-     "name": "Bhayshul Tuten",
-     "pos": "RB",
-     "adp": 74.5,
-     "pts": 185.4
+     "pid": "26082",
+     "name": "Jaxson Dart",
+     "pos": "QB",
+     "adp": 40.7,
+     "pts": 233.2
     },
     {
      "slot": 6,
@@ -2555,11 +2555,11 @@
      "team": 8,
      "round": 7,
      "overall": 69,
-     "pid": "25946",
-     "name": "Quinshon Judkins",
+     "pid": "25898",
+     "name": "Bhayshul Tuten",
      "pos": "RB",
-     "adp": 66.0,
-     "pts": 178.1
+     "adp": 74.5,
+     "pts": 185.4
     },
     {
      "slot": 10,
@@ -2588,11 +2588,11 @@
      "team": 8,
      "round": 8,
      "overall": 72,
-     "pid": "26082",
-     "name": "Jaxson Dart",
+     "pid": "24927",
+     "name": "Caleb Williams",
      "pos": "QB",
-     "adp": 40.7,
-     "pts": 233.2
+     "adp": 23.7,
+     "pts": 232.0
     },
     {
      "slot": 8,
@@ -2632,11 +2632,11 @@
      "team": 4,
      "round": 8,
      "overall": 76,
-     "pid": "15048",
-     "name": "Travis Kelce",
-     "pos": "TE",
-     "adp": 99.0,
-     "pts": 146.3
+     "pid": "16470",
+     "name": "Davante Adams",
+     "pos": "WR",
+     "adp": 63.7,
+     "pts": 176.6
     },
     {
      "slot": 4,
@@ -2654,22 +2654,22 @@
      "team": 2,
      "round": 8,
      "overall": 78,
-     "pid": "24977",
-     "name": "Rome Odunze",
-     "pos": "WR",
-     "adp": 80.6,
-     "pts": 173.9
+     "pid": "15048",
+     "name": "Travis Kelce",
+     "pos": "TE",
+     "adp": 99.0,
+     "pts": 146.3
     },
     {
      "slot": 2,
      "team": 1,
      "round": 8,
      "overall": 79,
-     "pid": "21738",
-     "name": "Juwan Johnson",
+     "pid": "19063",
+     "name": "George Kittle",
      "pos": "TE",
-     "adp": 148.1,
-     "pts": 148.0
+     "adp": 103.8,
+     "pts": 168.6
     },
     {
      "slot": 1,
@@ -2709,11 +2709,11 @@
      "team": 2,
      "round": 9,
      "overall": 83,
-     "pid": "21691",
-     "name": "Chuba Hubbard",
-     "pos": "RB",
-     "adp": 101.5,
-     "pts": 149.9
+     "pid": "23241",
+     "name": "Brock Purdy",
+     "pos": "QB",
+     "adp": 53.3,
+     "pts": 221.0
     },
     {
      "slot": 4,
@@ -2731,11 +2731,11 @@
      "team": 4,
      "round": 9,
      "overall": 85,
-     "pid": "21681",
-     "name": "Justin Herbert",
-     "pos": "QB",
-     "adp": 32.7,
-     "pts": 221.3
+     "pid": "21691",
+     "name": "Chuba Hubbard",
+     "pos": "RB",
+     "adp": 101.5,
+     "pts": 149.9
     },
     {
      "slot": 6,
@@ -2753,11 +2753,11 @@
      "team": 6,
      "round": 9,
      "overall": 87,
-     "pid": "16470",
-     "name": "Davante Adams",
+     "pid": "24977",
+     "name": "Rome Odunze",
      "pos": "WR",
-     "adp": 63.7,
-     "pts": 176.6
+     "adp": 80.6,
+     "pts": 173.9
     },
     {
      "slot": 8,
@@ -2918,44 +2918,44 @@
      "team": 1,
      "round": 11,
      "overall": 102,
-     "pid": "23241",
-     "name": "Brock Purdy",
+     "pid": "21681",
+     "name": "Justin Herbert",
      "pos": "QB",
-     "adp": 53.3,
-     "pts": 221.0
+     "adp": 32.7,
+     "pts": 221.3
     },
     {
      "slot": 3,
      "team": 2,
      "round": 11,
      "overall": 103,
-     "pid": "20912",
-     "name": "Tony Pollard",
-     "pos": "RB",
-     "adp": 98.9,
-     "pts": 144.9
+     "pid": "24173",
+     "name": "Michael Wilson",
+     "pos": "WR",
+     "adp": 97.1,
+     "pts": 143.8
     },
     {
      "slot": 4,
      "team": 3,
      "round": 11,
      "overall": 104,
-     "pid": "25952",
-     "name": "Kyle Monangai",
+     "pid": "23364",
+     "name": "Jordan Mason",
      "pos": "RB",
-     "adp": 109.1,
-     "pts": 139.8
+     "adp": 128.9,
+     "pts": 140.0
     },
     {
      "slot": 5,
      "team": 4,
      "round": 11,
      "overall": 105,
-     "pid": "24173",
-     "name": "Michael Wilson",
-     "pos": "WR",
-     "adp": 97.1,
-     "pts": 143.8
+     "pid": "20912",
+     "name": "Tony Pollard",
+     "pos": "RB",
+     "adp": 98.9,
+     "pts": 144.9
     },
     {
      "slot": 6,
@@ -2984,11 +2984,11 @@
      "team": 7,
      "round": 11,
      "overall": 108,
-     "pid": "23364",
-     "name": "Jordan Mason",
+     "pid": "25952",
+     "name": "Kyle Monangai",
      "pos": "RB",
-     "adp": 128.9,
-     "pts": 140.0
+     "adp": 109.1,
+     "pts": 139.8
     },
     {
      "slot": 9,
@@ -3072,11 +3072,11 @@
      "team": 4,
      "round": 12,
      "overall": 116,
-     "pid": "19045",
-     "name": "Aaron Jones Sr.",
-     "pos": "RB",
-     "adp": 131.2,
-     "pts": 119.9
+     "pid": "19863",
+     "name": "Dallas Goedert",
+     "pos": "TE",
+     "adp": 118.6,
+     "pts": 138.4
     },
     {
      "slot": 4,
@@ -3094,11 +3094,11 @@
      "team": 2,
      "round": 12,
      "overall": 118,
-     "pid": "19863",
-     "name": "Dallas Goedert",
-     "pos": "TE",
-     "adp": 118.6,
-     "pts": 138.4
+     "pid": "19045",
+     "name": "Aaron Jones Sr.",
+     "pos": "RB",
+     "adp": 131.2,
+     "pts": 119.9
     },
     {
      "slot": 2,
@@ -3149,6 +3149,17 @@
      "team": 2,
      "round": 13,
      "overall": 123,
+     "pid": "24223",
+     "name": "Brenton Strange",
+     "pos": "TE",
+     "adp": 134.3,
+     "pts": 137.4
+    },
+    {
+     "slot": 4,
+     "team": 3,
+     "round": 13,
+     "overall": 124,
      "pid": "20876",
      "name": "Jakobi Meyers",
      "pos": "WR",
@@ -3156,37 +3167,26 @@
      "pts": 127.8
     },
     {
-     "slot": 4,
-     "team": 3,
-     "round": 13,
-     "overall": 124,
-     "pid": "26748",
-     "name": "Makai Lemon",
-     "pos": "WR",
-     "adp": 104.0,
-     "pts": 128.2
-    },
-    {
      "slot": 5,
      "team": 4,
      "round": 13,
      "overall": 125,
-     "pid": "17975",
-     "name": "Hunter Henry",
-     "pos": "TE",
-     "adp": 131.6,
-     "pts": 129.0
+     "pid": "23227",
+     "name": "Khalil Shakir",
+     "pos": "WR",
+     "adp": 140.6,
+     "pts": 125.9
     },
     {
      "slot": 6,
      "team": 5,
      "round": 13,
      "overall": 126,
-     "pid": "24223",
-     "name": "Brenton Strange",
+     "pid": "17975",
+     "name": "Hunter Henry",
      "pos": "TE",
-     "adp": 134.3,
-     "pts": 137.4
+     "adp": 131.6,
+     "pts": 129.0
     },
     {
      "slot": 7,
@@ -3248,11 +3248,11 @@
      "team": 8,
      "round": 14,
      "overall": 132,
-     "pid": "23227",
-     "name": "Khalil Shakir",
+     "pid": "26748",
+     "name": "Makai Lemon",
      "pos": "WR",
-     "adp": 140.6,
-     "pts": 125.9
+     "adp": 104.0,
+     "pts": 128.2
     },
     {
      "slot": 8,
@@ -3292,11 +3292,11 @@
      "team": 4,
      "round": 14,
      "overall": 136,
-     "pid": "25103",
-     "name": "Malik Washington",
-     "pos": "WR",
-     "adp": 206.8,
-     "pts": 122.7
+     "pid": "18890",
+     "name": "Patrick Mahomes",
+     "pos": "QB",
+     "adp": 43.0,
+     "pts": 212.4
     },
     {
      "slot": 4,
@@ -3314,11 +3314,11 @@
      "team": 2,
      "round": 14,
      "overall": 138,
-     "pid": "23187",
-     "name": "Tyler Shough",
-     "pos": "QB",
-     "adp": 85.8,
-     "pts": 215.4
+     "pid": "25122",
+     "name": "Jalen Coker",
+     "pos": "WR",
+     "adp": 147.9,
+     "pts": 124.8
     },
     {
      "slot": 2,
@@ -3358,11 +3358,11 @@
      "team": 1,
      "round": 15,
      "overall": 142,
-     "pid": "25122",
-     "name": "Jalen Coker",
+     "pid": "25103",
+     "name": "Malik Washington",
      "pos": "WR",
-     "adp": 147.9,
-     "pts": 124.8
+     "adp": 206.8,
+     "pts": 122.7
     },
     {
      "slot": 3,
@@ -3435,11 +3435,11 @@
      "team": 8,
      "round": 15,
      "overall": 149,
-     "pid": "18890",
-     "name": "Patrick Mahomes",
+     "pid": "23187",
+     "name": "Tyler Shough",
      "pos": "QB",
-     "adp": 43.0,
-     "pts": 212.4
+     "adp": 85.8,
+     "pts": 215.4
     },
     {
      "slot": 10,
@@ -3512,11 +3512,11 @@
      "team": 4,
      "round": 16,
      "overall": 156,
-     "pid": "19812",
-     "name": "Sam Darnold",
-     "pos": "QB",
-     "adp": 86.4,
-     "pts": 188.7
+     "pid": "21717",
+     "name": "Jauan Jennings",
+     "pos": "WR",
+     "adp": 184.7,
+     "pts": 104.2
     },
     {
      "slot": 4,
@@ -3534,11 +3534,11 @@
      "team": 2,
      "round": 16,
      "overall": 158,
-     "pid": "24177",
-     "name": "Tre Tucker",
-     "pos": "WR",
-     "adp": 213.3,
-     "pts": 116.3
+     "pid": "25323",
+     "name": "Cam Ward",
+     "pos": "QB",
+     "adp": 101.5,
+     "pts": 188.7
     },
     {
      "slot": 2,
@@ -3556,10 +3556,10 @@
      "team": 0,
      "round": 16,
      "overall": 160,
-     "pid": "25323",
-     "name": "Cam Ward",
+     "pid": "19812",
+     "name": "Sam Darnold",
      "pos": "QB",
-     "adp": 101.5,
+     "adp": 86.4,
      "pts": 188.7
     }
    ]
@@ -3569,18 +3569,18 @@
    "league": 0,
    "label": "Sample mock 3",
    "format": "snake",
-   "mySlot": 5,
+   "mySlot": 3,
    "teams": [
-    "Taco Tuesday",
-    "Gurley Men",
-    "The Bluffs",
-    "Saquon's Kids",
+    "Mothership",
+    "Gare-e Bears",
     "Dolphin fans are gay",
-    "GridIron Goblins",
-    "Puny Humans",
-    "League Winner",
-    "Waddle Waddle",
-    "Barkley's Barking"
+    "I Chase Brown Kids",
+    "Kirk-umsized Penix",
+    "Commander in Children",
+    "OJ did it?",
+    "Team Name TBD",
+    "Sandusky's Home of TEs",
+    "Ankle Breakers Anonymous"
    ],
    "picks": [
     {
@@ -3610,6 +3610,28 @@
      "team": 2,
      "round": 1,
      "overall": 3,
+     "pid": "23237",
+     "name": "Chris Rodriguez Jr.",
+     "pos": "RB",
+     "adp": 151.4,
+     "pts": 105.5
+    },
+    {
+     "slot": 4,
+     "team": 3,
+     "round": 1,
+     "overall": 4,
+     "pid": "23371",
+     "name": "Isiah Pacheco",
+     "pos": "RB",
+     "adp": 186.0,
+     "pts": 98.4
+    },
+    {
+     "slot": 5,
+     "team": 4,
+     "round": 1,
+     "overall": 5,
      "pid": "19781",
      "name": "Lamar Jackson",
      "pos": "QB",
@@ -3617,153 +3639,10 @@
      "pts": 358.4
     },
     {
-     "slot": 4,
-     "team": 3,
-     "round": 1,
-     "overall": 4,
-     "pid": "26765",
-     "name": "Jadarian Price",
-     "pos": "RB",
-     "adp": 83.5,
-     "pts": 172.7
-    },
-    {
-     "slot": 5,
-     "team": 4,
-     "round": 1,
-     "overall": 5,
-     "pid": "21696",
-     "name": "Travis Etienne Jr.",
-     "pos": "RB",
-     "adp": 58.9,
-     "pts": 188.2
-    },
-    {
      "slot": 6,
      "team": 5,
      "round": 1,
      "overall": 6,
-     "pid": "24143",
-     "name": "Parker Washington",
-     "pos": "WR",
-     "adp": 87.3,
-     "pts": 176.2
-    },
-    {
-     "slot": 7,
-     "team": 6,
-     "round": 1,
-     "overall": 7,
-     "pid": "21717",
-     "name": "Jauan Jennings",
-     "pos": "WR",
-     "adp": 184.7,
-     "pts": 104.2
-    },
-    {
-     "slot": 8,
-     "team": 7,
-     "round": 1,
-     "overall": 8,
-     "pid": "21674",
-     "name": "J.K. Dobbins",
-     "pos": "RB",
-     "adp": 110.2,
-     "pts": 148.9
-    },
-    {
-     "slot": 9,
-     "team": 8,
-     "round": 1,
-     "overall": 9,
-     "pid": "22598",
-     "name": "Jaylen Waddle",
-     "pos": "WR",
-     "adp": 59.7,
-     "pts": 195.7
-    },
-    {
-     "slot": 10,
-     "team": 9,
-     "round": 1,
-     "overall": 10,
-     "pid": "20882",
-     "name": "David Montgomery",
-     "pos": "RB",
-     "adp": 67.1,
-     "pts": 176.2
-    },
-    {
-     "slot": 10,
-     "team": 9,
-     "round": 2,
-     "overall": 11,
-     "pid": "24933",
-     "name": "Brian Thomas Jr.",
-     "pos": "WR",
-     "adp": 89.2,
-     "pts": 168.6
-    },
-    {
-     "slot": 9,
-     "team": 8,
-     "round": 2,
-     "overall": 12,
-     "pid": "23138",
-     "name": "Jake Ferguson",
-     "pos": "TE",
-     "adp": 107.5,
-     "pts": 143.1
-    },
-    {
-     "slot": 8,
-     "team": 7,
-     "round": 2,
-     "overall": 13,
-     "pid": "21690",
-     "name": "Tee Higgins",
-     "pos": "WR",
-     "adp": 47.3,
-     "pts": 192.3
-    },
-    {
-     "slot": 7,
-     "team": 6,
-     "round": 2,
-     "overall": 14,
-     "pid": "24176",
-     "name": "Tank Dell",
-     "pos": "WR",
-     "adp": 190.2,
-     "pts": 98.2
-    },
-    {
-     "slot": 6,
-     "team": 5,
-     "round": 2,
-     "overall": 15,
-     "pid": "25946",
-     "name": "Quinshon Judkins",
-     "pos": "RB",
-     "adp": 66.0,
-     "pts": 178.1
-    },
-    {
-     "slot": 5,
-     "team": 4,
-     "round": 2,
-     "overall": 16,
-     "pid": "23247",
-     "name": "James Cook III",
-     "pos": "RB",
-     "adp": 11.3,
-     "pts": 268.8
-    },
-    {
-     "slot": 4,
-     "team": 3,
-     "round": 2,
-     "overall": 17,
      "pid": "23729",
      "name": "Rashid Shaheed",
      "pos": "WR",
@@ -3771,87 +3650,164 @@
      "pts": 126.2
     },
     {
+     "slot": 7,
+     "team": 6,
+     "round": 1,
+     "overall": 7,
+     "pid": "24173",
+     "name": "Michael Wilson",
+     "pos": "WR",
+     "adp": 97.1,
+     "pts": 143.8
+    },
+    {
+     "slot": 8,
+     "team": 7,
+     "round": 1,
+     "overall": 8,
+     "pid": "19045",
+     "name": "Aaron Jones Sr.",
+     "pos": "RB",
+     "adp": 131.2,
+     "pts": 119.9
+    },
+    {
+     "slot": 9,
+     "team": 8,
+     "round": 1,
+     "overall": 9,
+     "pid": "24143",
+     "name": "Parker Washington",
+     "pos": "WR",
+     "adp": 87.3,
+     "pts": 176.2
+    },
+    {
+     "slot": 10,
+     "team": 9,
+     "round": 1,
+     "overall": 10,
+     "pid": "24123",
+     "name": "Tyjae Spears",
+     "pos": "RB",
+     "adp": 161.5,
+     "pts": 116.3
+    },
+    {
+     "slot": 10,
+     "team": 9,
+     "round": 2,
+     "overall": 11,
+     "pid": "26760",
+     "name": "Omar Cooper Jr.",
+     "pos": "WR",
+     "adp": 182.4,
+     "pts": 105.4
+    },
+    {
+     "slot": 9,
+     "team": 8,
+     "round": 2,
+     "overall": 12,
+     "pid": "24102",
+     "name": "Dalton Kincaid",
+     "pos": "TE",
+     "adp": 93.5,
+     "pts": 139.5
+    },
+    {
+     "slot": 8,
+     "team": 7,
+     "round": 2,
+     "overall": 13,
+     "pid": "26056",
+     "name": "Travis Hunter",
+     "pos": "WR",
+     "adp": 183.7,
+     "pts": 93.7
+    },
+    {
+     "slot": 7,
+     "team": 6,
+     "round": 2,
+     "overall": 14,
+     "pid": "24924",
+     "name": "Xavier Worthy",
+     "pos": "WR",
+     "adp": 136.9,
+     "pts": 131.2
+    },
+    {
+     "slot": 6,
+     "team": 5,
+     "round": 2,
+     "overall": 15,
+     "pid": "17959",
+     "name": "Derrick Henry",
+     "pos": "RB",
+     "adp": 29.2,
+     "pts": 228.8
+    },
+    {
+     "slot": 5,
+     "team": 4,
+     "round": 2,
+     "overall": 16,
+     "pid": "20882",
+     "name": "David Montgomery",
+     "pos": "RB",
+     "adp": 67.1,
+     "pts": 176.2
+    },
+    {
+     "slot": 4,
+     "team": 3,
+     "round": 2,
+     "overall": 17,
+     "pid": "20932",
+     "name": "Deebo Samuel Sr.",
+     "pos": "WR",
+     "adp": 139.0,
+     "pts": 109.6
+    },
+    {
      "slot": 3,
      "team": 2,
      "round": 2,
      "overall": 18,
-     "pid": "23364",
-     "name": "Jordan Mason",
+     "pid": "25952",
+     "name": "Kyle Monangai",
      "pos": "RB",
-     "adp": 128.9,
-     "pts": 140.0
+     "adp": 109.1,
+     "pts": 139.8
     },
     {
      "slot": 2,
      "team": 1,
      "round": 2,
      "overall": 19,
-     "pid": "23189",
-     "name": "Bijan Robinson",
+     "pid": "22558",
+     "name": "Javonte Williams",
      "pos": "RB",
-     "adp": 1.1,
-     "pts": 352.6
+     "adp": 47.9,
+     "pts": 197.0
     },
     {
      "slot": 1,
      "team": 0,
      "round": 2,
      "overall": 20,
-     "pid": "25898",
-     "name": "Bhayshul Tuten",
+     "pid": "21952",
+     "name": "Rico Dowdle",
      "pos": "RB",
-     "adp": 74.5,
-     "pts": 185.4
+     "adp": 100.2,
+     "pts": 161.0
     },
     {
      "slot": 1,
      "team": 0,
      "round": 3,
      "overall": 21,
-     "pid": "26755",
-     "name": "Kenyon Sadiq",
-     "pos": "TE",
-     "adp": 146.1,
-     "pts": 111.7
-    },
-    {
-     "slot": 2,
-     "team": 1,
-     "round": 3,
-     "overall": 22,
-     "pid": "22546",
-     "name": "Rhamondre Stevenson",
-     "pos": "RB",
-     "adp": 92.5,
-     "pts": 159.1
-    },
-    {
-     "slot": 3,
-     "team": 2,
-     "round": 3,
-     "overall": 23,
-     "pid": "25097",
-     "name": "Ladd McConkey",
-     "pos": "WR",
-     "adp": 53.4,
-     "pts": 185.9
-    },
-    {
-     "slot": 4,
-     "team": 3,
-     "round": 3,
-     "overall": 24,
-     "pid": "25956",
-     "name": "Omarion Hampton",
-     "pos": "RB",
-     "adp": 23.2,
-     "pts": 220.8
-    },
-    {
-     "slot": 5,
-     "team": 4,
-     "round": 3,
-     "overall": 25,
      "pid": "21738",
      "name": "Juwan Johnson",
      "pos": "TE",
@@ -3859,32 +3815,87 @@
      "pts": 148.0
     },
     {
+     "slot": 2,
+     "team": 1,
+     "round": 3,
+     "overall": 22,
+     "pid": "26765",
+     "name": "Jadarian Price",
+     "pos": "RB",
+     "adp": 83.5,
+     "pts": 172.7
+    },
+    {
+     "slot": 3,
+     "team": 2,
+     "round": 3,
+     "overall": 23,
+     "pid": "23251",
+     "name": "Trey McBride",
+     "pos": "TE",
+     "adp": 20.2,
+     "pts": 276.7
+    },
+    {
+     "slot": 4,
+     "team": 3,
+     "round": 3,
+     "overall": 24,
+     "pid": "20912",
+     "name": "Tony Pollard",
+     "pos": "RB",
+     "adp": 98.9,
+     "pts": 144.9
+    },
+    {
+     "slot": 5,
+     "team": 4,
+     "round": 3,
+     "overall": 25,
+     "pid": "26747",
+     "name": "Denzel Boston",
+     "pos": "WR",
+     "adp": 158.8,
+     "pts": 104.4
+    },
+    {
      "slot": 6,
      "team": 5,
      "round": 3,
      "overall": 26,
-     "pid": "25922",
-     "name": "Matthew Golden",
+     "pid": "24172",
+     "name": "Puka Nacua",
      "pos": "WR",
-     "adp": 135.3,
-     "pts": 121.9
+     "adp": 5.3,
+     "pts": 279.5
     },
     {
      "slot": 7,
      "team": 6,
      "round": 3,
      "overall": 27,
-     "pid": "24977",
-     "name": "Rome Odunze",
+     "pid": "21690",
+     "name": "Tee Higgins",
      "pos": "WR",
-     "adp": 80.6,
-     "pts": 173.9
+     "adp": 47.3,
+     "pts": 192.3
     },
     {
      "slot": 8,
      "team": 7,
      "round": 3,
      "overall": 28,
+     "pid": "26748",
+     "name": "Makai Lemon",
+     "pos": "WR",
+     "adp": 104.0,
+     "pts": 128.2
+    },
+    {
+     "slot": 9,
+     "team": 8,
+     "round": 3,
+     "overall": 29,
      "pid": "23234",
      "name": "Jameson Williams",
      "pos": "WR",
@@ -3892,48 +3903,37 @@
      "pts": 182.1
     },
     {
-     "slot": 9,
-     "team": 8,
-     "round": 3,
-     "overall": 29,
-     "pid": "28053",
-     "name": "De'Zhaun Stribling",
-     "pos": "WR",
-     "adp": 143.9,
-     "pts": 132.7
-    },
-    {
      "slot": 10,
      "team": 9,
      "round": 3,
      "overall": 30,
-     "pid": "24943",
-     "name": "Brock Bowers",
+     "pid": "15048",
+     "name": "Travis Kelce",
      "pos": "TE",
-     "adp": 21.2,
-     "pts": 278.5
+     "adp": 99.0,
+     "pts": 146.3
     },
     {
      "slot": 10,
      "team": 9,
      "round": 4,
      "overall": 31,
-     "pid": "23170",
-     "name": "Wan'Dale Robinson",
+     "pid": "25103",
+     "name": "Malik Washington",
      "pos": "WR",
-     "adp": 127.6,
-     "pts": 142.8
+     "adp": 206.8,
+     "pts": 122.7
     },
     {
      "slot": 9,
      "team": 8,
      "round": 4,
      "overall": 32,
-     "pid": "21684",
-     "name": "D'Andre Swift",
+     "pid": "23189",
+     "name": "Bijan Robinson",
      "pos": "RB",
-     "adp": 65.8,
-     "pts": 201.7
+     "adp": 1.1,
+     "pts": 352.6
     },
     {
      "slot": 8,
@@ -3951,6 +3951,17 @@
      "team": 6,
      "round": 4,
      "overall": 34,
+     "pid": "23247",
+     "name": "James Cook III",
+     "pos": "RB",
+     "adp": 11.3,
+     "pts": 268.8
+    },
+    {
+     "slot": 6,
+     "team": 5,
+     "round": 4,
+     "overall": 35,
      "pid": "21682",
      "name": "Jonathan Taylor",
      "pos": "RB",
@@ -3958,87 +3969,21 @@
      "pts": 266.3
     },
     {
-     "slot": 6,
-     "team": 5,
-     "round": 4,
-     "overall": 35,
-     "pid": "20824",
-     "name": "Josh Jacobs",
-     "pos": "RB",
-     "adp": 39.0,
-     "pts": 207.2
-    },
-    {
      "slot": 5,
      "team": 4,
      "round": 4,
      "overall": 36,
-     "pid": "24145",
-     "name": "Josh Downs",
-     "pos": "WR",
-     "adp": 123.1,
-     "pts": 129.2
+     "pid": "24374",
+     "name": "Chase Brown",
+     "pos": "RB",
+     "adp": 27.0,
+     "pts": 225.6
     },
     {
      "slot": 4,
      "team": 3,
      "round": 4,
      "overall": 37,
-     "pid": "24172",
-     "name": "Puka Nacua",
-     "pos": "WR",
-     "adp": 5.3,
-     "pts": 279.5
-    },
-    {
-     "slot": 3,
-     "team": 2,
-     "round": 4,
-     "overall": 38,
-     "pid": "23371",
-     "name": "Isiah Pacheco",
-     "pos": "RB",
-     "adp": 186.0,
-     "pts": 98.4
-    },
-    {
-     "slot": 2,
-     "team": 1,
-     "round": 4,
-     "overall": 39,
-     "pid": "16597",
-     "name": "Mike Evans",
-     "pos": "WR",
-     "adp": 76.1,
-     "pts": 176.9
-    },
-    {
-     "slot": 1,
-     "team": 0,
-     "round": 4,
-     "overall": 40,
-     "pid": "25874",
-     "name": "Tyler Warren",
-     "pos": "TE",
-     "adp": 49.8,
-     "pts": 211.5
-    },
-    {
-     "slot": 1,
-     "team": 0,
-     "round": 5,
-     "overall": 41,
-     "pid": "19790",
-     "name": "Baker Mayfield",
-     "pos": "QB",
-     "adp": 71.2,
-     "pts": 216.3
-    },
-    {
-     "slot": 2,
-     "team": 1,
-     "round": 5,
-     "overall": 42,
      "pid": "23157",
      "name": "Jaxon Smith-Njigba",
      "pos": "WR",
@@ -4048,8 +3993,8 @@
     {
      "slot": 3,
      "team": 2,
-     "round": 5,
-     "overall": 43,
+     "round": 4,
+     "overall": 38,
      "pid": "22587",
      "name": "Amon-Ra St. Brown",
      "pos": "WR",
@@ -4057,32 +4002,43 @@
      "pts": 255.5
     },
     {
-     "slot": 4,
-     "team": 3,
-     "round": 5,
-     "overall": 44,
-     "pid": "25889",
-     "name": "Dylan Sampson",
-     "pos": "RB",
-     "adp": 189.9,
-     "pts": 87.0
+     "slot": 2,
+     "team": 1,
+     "round": 4,
+     "overall": 39,
+     "pid": "24953",
+     "name": "Malik Nabers",
+     "pos": "WR",
+     "adp": 34.7,
+     "pts": 205.9
     },
     {
-     "slot": 5,
-     "team": 4,
+     "slot": 1,
+     "team": 0,
+     "round": 4,
+     "overall": 40,
+     "pid": "26755",
+     "name": "Kenyon Sadiq",
+     "pos": "TE",
+     "adp": 146.1,
+     "pts": 111.7
+    },
+    {
+     "slot": 1,
+     "team": 0,
      "round": 5,
-     "overall": 45,
-     "pid": "17922",
-     "name": "Jared Goff",
+     "overall": 41,
+     "pid": "23235",
+     "name": "Jayden Daniels",
      "pos": "QB",
-     "adp": 61.7,
-     "pts": 217.2
+     "adp": 17.7,
+     "pts": 260.8
     },
     {
-     "slot": 6,
-     "team": 5,
+     "slot": 2,
+     "team": 1,
      "round": 5,
-     "overall": 46,
+     "overall": 42,
      "pid": "21679",
      "name": "CeeDee Lamb",
      "pos": "WR",
@@ -4090,15 +4046,59 @@
      "pts": 239.7
     },
     {
+     "slot": 3,
+     "team": 2,
+     "round": 5,
+     "overall": 43,
+     "pid": "20889",
+     "name": "Kyler Murray",
+     "pos": "QB",
+     "adp": 82.8,
+     "pts": 215.5
+    },
+    {
+     "slot": 4,
+     "team": 3,
+     "round": 5,
+     "overall": 44,
+     "pid": "23245",
+     "name": "TreVeyon Henderson",
+     "pos": "RB",
+     "adp": 64.5,
+     "pts": 180.8
+    },
+    {
+     "slot": 5,
+     "team": 4,
+     "round": 5,
+     "overall": 45,
+     "pid": "21756",
+     "name": "Nico Collins",
+     "pos": "WR",
+     "adp": 29.8,
+     "pts": 213.2
+    },
+    {
+     "slot": 6,
+     "team": 5,
+     "round": 5,
+     "overall": 46,
+     "pid": "21685",
+     "name": "Justin Jefferson",
+     "pos": "WR",
+     "adp": 15.4,
+     "pts": 212.2
+    },
+    {
      "slot": 7,
      "team": 6,
      "round": 5,
      "overall": 47,
-     "pid": "25869",
-     "name": "Colston Loveland",
+     "pid": "24943",
+     "name": "Brock Bowers",
      "pos": "TE",
-     "adp": 38.6,
-     "pts": 210.3
+     "adp": 21.2,
+     "pts": 278.5
     },
     {
      "slot": 8,
@@ -4116,22 +4116,22 @@
      "team": 8,
      "round": 5,
      "overall": 49,
-     "pid": "26044",
-     "name": "Luther Burden III",
+     "pid": "24226",
+     "name": "Quentin Johnston",
      "pos": "WR",
-     "adp": 59.5,
-     "pts": 182.0
+     "adp": 125.0,
+     "pts": 158.1
     },
     {
      "slot": 10,
      "team": 9,
      "round": 5,
      "overall": 50,
-     "pid": "26768",
-     "name": "Jeremiyah Love",
+     "pid": "24179",
+     "name": "De'Von Achane",
      "pos": "RB",
-     "adp": 33.3,
-     "pts": 202.3
+     "adp": 17.1,
+     "pts": 242.4
     },
     {
      "slot": 10,
@@ -4149,83 +4149,17 @@
      "team": 8,
      "round": 6,
      "overall": 52,
-     "pid": "25870",
-     "name": "Harold Fannin Jr.",
+     "pid": "23310",
+     "name": "Greg Dulcich",
      "pos": "TE",
-     "adp": 75.2,
-     "pts": 196.6
+     "adp": 217.6,
+     "pts": 114.7
     },
     {
      "slot": 8,
      "team": 7,
      "round": 6,
      "overall": 53,
-     "pid": "23235",
-     "name": "Jayden Daniels",
-     "pos": "QB",
-     "adp": 17.7,
-     "pts": 260.8
-    },
-    {
-     "slot": 7,
-     "team": 6,
-     "round": 6,
-     "overall": 54,
-     "pid": "23190",
-     "name": "Brian Robinson",
-     "pos": "RB",
-     "adp": 149.2,
-     "pts": 82.2
-    },
-    {
-     "slot": 6,
-     "team": 5,
-     "round": 6,
-     "overall": 55,
-     "pid": "24118",
-     "name": "Tucker Kraft",
-     "pos": "TE",
-     "adp": 77.8,
-     "pts": 169.9
-    },
-    {
-     "slot": 5,
-     "team": 4,
-     "round": 6,
-     "overall": 56,
-     "pid": "21756",
-     "name": "Nico Collins",
-     "pos": "WR",
-     "adp": 29.8,
-     "pts": 213.2
-    },
-    {
-     "slot": 4,
-     "team": 3,
-     "round": 6,
-     "overall": 57,
-     "pid": "26082",
-     "name": "Jaxson Dart",
-     "pos": "QB",
-     "adp": 40.7,
-     "pts": 233.2
-    },
-    {
-     "slot": 3,
-     "team": 2,
-     "round": 6,
-     "overall": 58,
-     "pid": "23256",
-     "name": "Isaiah Likely",
-     "pos": "TE",
-     "adp": 113.8,
-     "pts": 138.9
-    },
-    {
-     "slot": 2,
-     "team": 1,
-     "round": 6,
-     "overall": 59,
      "pid": "21693",
      "name": "Joe Burrow",
      "pos": "QB",
@@ -4233,10 +4167,54 @@
      "pts": 236.3
     },
     {
-     "slot": 1,
-     "team": 0,
+     "slot": 7,
+     "team": 6,
      "round": 6,
-     "overall": 60,
+     "overall": 54,
+     "pid": "23212",
+     "name": "Kyren Williams",
+     "pos": "RB",
+     "adp": 41.2,
+     "pts": 207.8
+    },
+    {
+     "slot": 6,
+     "team": 5,
+     "round": 6,
+     "overall": 55,
+     "pid": "25869",
+     "name": "Colston Loveland",
+     "pos": "TE",
+     "adp": 38.6,
+     "pts": 210.3
+    },
+    {
+     "slot": 5,
+     "team": 4,
+     "round": 6,
+     "overall": 56,
+     "pid": "25106",
+     "name": "AJ Barner",
+     "pos": "TE",
+     "adp": 176.1,
+     "pts": 99.7
+    },
+    {
+     "slot": 4,
+     "team": 3,
+     "round": 6,
+     "overall": 57,
+     "pid": "18055",
+     "name": "Dak Prescott",
+     "pos": "QB",
+     "adp": 37.3,
+     "pts": 224.1
+    },
+    {
+     "slot": 3,
+     "team": 2,
+     "round": 6,
+     "overall": 58,
      "pid": "25975",
      "name": "Pat Bryant",
      "pos": "WR",
@@ -4244,285 +4222,10 @@
      "pts": 91.1
     },
     {
-     "slot": 1,
-     "team": 0,
-     "round": 7,
-     "overall": 61,
-     "pid": "25942",
-     "name": "Woody Marks",
-     "pos": "RB",
-     "adp": 157.0,
-     "pts": 102.4
-    },
-    {
      "slot": 2,
      "team": 1,
-     "round": 7,
-     "overall": 62,
-     "pid": "21744",
-     "name": "Michael Pittman Jr.",
-     "pos": "WR",
-     "adp": 121.9,
-     "pts": 148.2
-    },
-    {
-     "slot": 3,
-     "team": 2,
-     "round": 7,
-     "overall": 63,
-     "pid": "24927",
-     "name": "Caleb Williams",
-     "pos": "QB",
-     "adp": 23.7,
-     "pts": 232.0
-    },
-    {
-     "slot": 4,
-     "team": 3,
-     "round": 7,
-     "overall": 64,
-     "pid": "19063",
-     "name": "George Kittle",
-     "pos": "TE",
-     "adp": 103.8,
-     "pts": 168.6
-    },
-    {
-     "slot": 5,
-     "team": 4,
-     "round": 7,
-     "overall": 65,
-     "pid": "23245",
-     "name": "TreVeyon Henderson",
-     "pos": "RB",
-     "adp": 64.5,
-     "pts": 180.8
-    },
-    {
-     "slot": 6,
-     "team": 5,
-     "round": 7,
-     "overall": 66,
-     "pid": "23167",
-     "name": "Romeo Doubs",
-     "pos": "WR",
-     "adp": 137.5,
-     "pts": 131.0
-    },
-    {
-     "slot": 7,
-     "team": 6,
-     "round": 7,
-     "overall": 67,
-     "pid": "26751",
-     "name": "Jordyn Tyson",
-     "pos": "WR",
-     "adp": 95.2,
-     "pts": 117.6
-    },
-    {
-     "slot": 8,
-     "team": 7,
-     "round": 7,
-     "overall": 68,
-     "pid": "19802",
-     "name": "Calvin Ridley",
-     "pos": "WR",
-     "adp": 263.7,
-     "pts": 87.2
-    },
-    {
-     "slot": 9,
-     "team": 8,
-     "round": 7,
-     "overall": 69,
-     "pid": "24179",
-     "name": "De'Von Achane",
-     "pos": "RB",
-     "adp": 17.1,
-     "pts": 242.4
-    },
-    {
-     "slot": 10,
-     "team": 9,
-     "round": 7,
-     "overall": 70,
-     "pid": "23253",
-     "name": "Dontayvion Wicks",
-     "pos": "WR",
-     "adp": 224.4,
-     "pts": 100.7
-    },
-    {
-     "slot": 10,
-     "team": 9,
-     "round": 8,
-     "overall": 71,
-     "pid": "25903",
-     "name": "Jordan James",
-     "pos": "RB",
-     "adp": 266.2,
-     "pts": 73.2
-    },
-    {
-     "slot": 9,
-     "team": 8,
-     "round": 8,
-     "overall": 72,
-     "pid": "21681",
-     "name": "Justin Herbert",
-     "pos": "QB",
-     "adp": 32.7,
-     "pts": 221.3
-    },
-    {
-     "slot": 8,
-     "team": 7,
-     "round": 8,
-     "overall": 73,
-     "pid": "25092",
-     "name": "Tyrone Tracy Jr.",
-     "pos": "RB",
-     "adp": 155.7,
-     "pts": 89.1
-    },
-    {
-     "slot": 7,
-     "team": 6,
-     "round": 8,
-     "overall": 74,
-     "pid": "24958",
-     "name": "Drake Maye",
-     "pos": "QB",
-     "adp": 9.6,
-     "pts": 236.0
-    },
-    {
-     "slot": 6,
-     "team": 5,
-     "round": 8,
-     "overall": 75,
-     "pid": "23217",
-     "name": "Rachaad White",
-     "pos": "RB",
-     "adp": 137.4,
-     "pts": 123.5
-    },
-    {
-     "slot": 5,
-     "team": 4,
-     "round": 8,
-     "overall": 76,
-     "pid": "23141",
-     "name": "Sam LaPorta",
-     "pos": "TE",
-     "adp": 70.2,
-     "pts": 165.3
-    },
-    {
-     "slot": 4,
-     "team": 3,
-     "round": 8,
-     "overall": 77,
-     "pid": "21685",
-     "name": "Justin Jefferson",
-     "pos": "WR",
-     "adp": 15.4,
-     "pts": 212.2
-    },
-    {
-     "slot": 3,
-     "team": 2,
-     "round": 8,
-     "overall": 78,
-     "pid": "23153",
-     "name": "George Pickens",
-     "pos": "WR",
-     "adp": 31.5,
-     "pts": 210.9
-    },
-    {
-     "slot": 2,
-     "team": 1,
-     "round": 8,
-     "overall": 79,
-     "pid": "22508",
-     "name": "Kyle Pitts Sr.",
-     "pos": "TE",
-     "adp": 77.2,
-     "pts": 158.1
-    },
-    {
-     "slot": 1,
-     "team": 0,
-     "round": 8,
-     "overall": 80,
-     "pid": "19920",
-     "name": "Dalton Schultz",
-     "pos": "TE",
-     "adp": 150.0,
-     "pts": 146.6
-    },
-    {
-     "slot": 1,
-     "team": 0,
-     "round": 9,
-     "overall": 81,
-     "pid": "23187",
-     "name": "Tyler Shough",
-     "pos": "QB",
-     "adp": 85.8,
-     "pts": 215.4
-    },
-    {
-     "slot": 2,
-     "team": 1,
-     "round": 9,
-     "overall": 82,
-     "pid": "24967",
-     "name": "Bucky Irving",
-     "pos": "RB",
-     "adp": 51.4,
-     "pts": 190.6
-    },
-    {
-     "slot": 3,
-     "team": 2,
-     "round": 9,
-     "overall": 83,
-     "pid": "23214",
-     "name": "Kenneth Walker",
-     "pos": "RB",
-     "adp": 22.1,
-     "pts": 234.2
-    },
-    {
-     "slot": 4,
-     "team": 3,
-     "round": 9,
-     "overall": 84,
-     "pid": "25886",
-     "name": "Jonah Coleman",
-     "pos": "RB",
-     "adp": 159.3,
-     "pts": 89.2
-    },
-    {
-     "slot": 5,
-     "team": 4,
-     "round": 9,
-     "overall": 85,
-     "pid": "22490",
-     "name": "Trevor Lawrence",
-     "pos": "QB",
-     "adp": 41.7,
-     "pts": 233.2
-    },
-    {
-     "slot": 6,
-     "team": 5,
-     "round": 9,
-     "overall": 86,
+     "round": 6,
+     "overall": 59,
      "pid": "19801",
      "name": "Josh Allen",
      "pos": "QB",
@@ -4530,43 +4233,87 @@
      "pts": 425.5
     },
     {
+     "slot": 1,
+     "team": 0,
+     "round": 6,
+     "overall": 60,
+     "pid": "22564",
+     "name": "Ja'Marr Chase",
+     "pos": "WR",
+     "adp": 4.3,
+     "pts": 287.7
+    },
+    {
+     "slot": 1,
+     "team": 0,
+     "round": 7,
+     "overall": 61,
+     "pid": "22546",
+     "name": "Rhamondre Stevenson",
+     "pos": "RB",
+     "adp": 92.5,
+     "pts": 159.1
+    },
+    {
+     "slot": 2,
+     "team": 1,
+     "round": 7,
+     "overall": 62,
+     "pid": "26044",
+     "name": "Luther Burden III",
+     "pos": "WR",
+     "adp": 59.5,
+     "pts": 182.0
+    },
+    {
+     "slot": 3,
+     "team": 2,
+     "round": 7,
+     "overall": 63,
+     "pid": "25887",
+     "name": "Cam Skattebo",
+     "pos": "RB",
+     "adp": 56.6,
+     "pts": 191.0
+    },
+    {
+     "slot": 4,
+     "team": 3,
+     "round": 7,
+     "overall": 64,
+     "pid": "17975",
+     "name": "Hunter Henry",
+     "pos": "TE",
+     "adp": 131.6,
+     "pts": 129.0
+    },
+    {
+     "slot": 5,
+     "team": 4,
+     "round": 7,
+     "overall": 65,
+     "pid": "21681",
+     "name": "Justin Herbert",
+     "pos": "QB",
+     "adp": 32.7,
+     "pts": 221.3
+    },
+    {
+     "slot": 6,
+     "team": 5,
+     "round": 7,
+     "overall": 66,
+     "pid": "19844",
+     "name": "DJ Moore",
+     "pos": "WR",
+     "adp": 73.2,
+     "pts": 177.5
+    },
+    {
      "slot": 7,
      "team": 6,
-     "round": 9,
-     "overall": 87,
-     "pid": "26746",
-     "name": "Ja'Kobi Lane",
-     "pos": "WR",
-     "adp": 178.8,
-     "pts": 90.0
-    },
-    {
-     "slot": 8,
-     "team": 7,
-     "round": 9,
-     "overall": 88,
-     "pid": "26054",
-     "name": "Tetairoa McMillan",
-     "pos": "WR",
-     "adp": 45.6,
-     "pts": 192.6
-    },
-    {
-     "slot": 9,
-     "team": 8,
-     "round": 9,
-     "overall": 89,
-     "pid": "24226",
-     "name": "Quentin Johnston",
-     "pos": "WR",
-     "adp": 125.0,
-     "pts": 158.1
-    },
-    {
-     "slot": 10,
-     "team": 9,
-     "round": 9,
-     "overall": 90,
+     "round": 7,
+     "overall": 67,
      "pid": "21042",
      "name": "A.J. Brown",
      "pos": "WR",
@@ -4574,98 +4321,10 @@
      "pts": 209.9
     },
     {
-     "slot": 10,
-     "team": 9,
-     "round": 10,
-     "overall": 91,
-     "pid": "15048",
-     "name": "Travis Kelce",
-     "pos": "TE",
-     "adp": 99.0,
-     "pts": 146.3
-    },
-    {
-     "slot": 9,
-     "team": 8,
-     "round": 10,
-     "overall": 92,
-     "pid": "23193",
-     "name": "Tank Bigsby",
-     "pos": "RB",
-     "adp": 187.7,
-     "pts": 87.6
-    },
-    {
      "slot": 8,
      "team": 7,
-     "round": 10,
-     "overall": 93,
-     "pid": "19853",
-     "name": "Mike Gesicki",
-     "pos": "TE",
-     "adp": 253.8,
-     "pts": 90.8
-    },
-    {
-     "slot": 7,
-     "team": 6,
-     "round": 10,
-     "overall": 94,
-     "pid": "23479",
-     "name": "Jaylen Warren",
-     "pos": "RB",
-     "adp": 83.9,
-     "pts": 146.9
-    },
-    {
-     "slot": 6,
-     "team": 5,
-     "round": 10,
-     "overall": 95,
-     "pid": "23151",
-     "name": "Drake London",
-     "pos": "WR",
-     "adp": 25.1,
-     "pts": 208.4
-    },
-    {
-     "slot": 5,
-     "team": 4,
-     "round": 10,
-     "overall": 96,
-     "pid": "22565",
-     "name": "Chris Olave",
-     "pos": "WR",
-     "adp": 35.5,
-     "pts": 207.9
-    },
-    {
-     "slot": 4,
-     "team": 3,
-     "round": 10,
-     "overall": 97,
-     "pid": "23233",
-     "name": "Jayden Reed",
-     "pos": "WR",
-     "adp": 119.7,
-     "pts": 140.0
-    },
-    {
-     "slot": 3,
-     "team": 2,
-     "round": 10,
-     "overall": 98,
-     "pid": "24953",
-     "name": "Malik Nabers",
-     "pos": "WR",
-     "adp": 34.7,
-     "pts": 205.9
-    },
-    {
-     "slot": 2,
-     "team": 1,
-     "round": 10,
-     "overall": 99,
+     "round": 7,
+     "overall": 68,
      "pid": "23395",
      "name": "Christian Watson",
      "pos": "WR",
@@ -4673,65 +4332,329 @@
      "pts": 183.8
     },
     {
-     "slot": 1,
-     "team": 0,
-     "round": 10,
-     "overall": 100,
-     "pid": "20943",
-     "name": "Darius Slayton",
+     "slot": 9,
+     "team": 8,
+     "round": 7,
+     "overall": 69,
+     "pid": "25889",
+     "name": "Dylan Sampson",
+     "pos": "RB",
+     "adp": 189.9,
+     "pts": 87.0
+    },
+    {
+     "slot": 10,
+     "team": 9,
+     "round": 7,
+     "overall": 70,
+     "pid": "26751",
+     "name": "Jordyn Tyson",
      "pos": "WR",
-     "adp": 310.8,
-     "pts": 77.2
+     "adp": 95.2,
+     "pts": 117.6
     },
     {
-     "slot": 1,
-     "team": 0,
-     "round": 11,
-     "overall": 101,
-     "pid": "23200",
-     "name": "Jahmyr Gibbs",
+     "slot": 10,
+     "team": 9,
+     "round": 8,
+     "overall": 71,
+     "pid": "23214",
+     "name": "Kenneth Walker",
      "pos": "RB",
-     "adp": 2.1,
-     "pts": 363.5
+     "adp": 22.1,
+     "pts": 234.2
     },
     {
-     "slot": 2,
-     "team": 1,
-     "round": 11,
-     "overall": 102,
-     "pid": "25069",
-     "name": "Bo Nix",
+     "slot": 9,
+     "team": 8,
+     "round": 8,
+     "overall": 72,
+     "pid": "18890",
+     "name": "Patrick Mahomes",
      "pos": "QB",
-     "adp": 46.6,
-     "pts": 221.5
+     "adp": 43.0,
+     "pts": 212.4
     },
     {
-     "slot": 3,
-     "team": 2,
-     "round": 11,
-     "overall": 103,
-     "pid": "22558",
-     "name": "Javonte Williams",
+     "slot": 8,
+     "team": 7,
+     "round": 8,
+     "overall": 73,
+     "pid": "23211",
+     "name": "MarShawn Lloyd",
      "pos": "RB",
-     "adp": 47.9,
-     "pts": 197.0
+     "adp": 207.9,
+     "pts": 72.1
     },
     {
-     "slot": 4,
-     "team": 3,
-     "round": 11,
-     "overall": 104,
-     "pid": "24214",
-     "name": "Keaton Mitchell",
+     "slot": 7,
+     "team": 6,
+     "round": 8,
+     "overall": 74,
+     "pid": "23241",
+     "name": "Brock Purdy",
+     "pos": "QB",
+     "adp": 53.3,
+     "pts": 221.0
+    },
+    {
+     "slot": 6,
+     "team": 5,
+     "round": 8,
+     "overall": 75,
+     "pid": "23193",
+     "name": "Tank Bigsby",
      "pos": "RB",
-     "adp": 179.7,
-     "pts": 92.7
+     "adp": 187.7,
+     "pts": 87.6
     },
     {
      "slot": 5,
      "team": 4,
-     "round": 11,
-     "overall": 105,
+     "round": 8,
+     "overall": 76,
+     "pid": "23151",
+     "name": "Drake London",
+     "pos": "WR",
+     "adp": 25.1,
+     "pts": 208.4
+    },
+    {
+     "slot": 4,
+     "team": 3,
+     "round": 8,
+     "overall": 77,
+     "pid": "18880",
+     "name": "Chris Godwin Jr.",
+     "pos": "WR",
+     "adp": 107.7,
+     "pts": 154.2
+    },
+    {
+     "slot": 3,
+     "team": 2,
+     "round": 8,
+     "overall": 78,
+     "pid": "25870",
+     "name": "Harold Fannin Jr.",
+     "pos": "TE",
+     "adp": 75.2,
+     "pts": 196.6
+    },
+    {
+     "slot": 2,
+     "team": 1,
+     "round": 8,
+     "overall": 79,
+     "pid": "23141",
+     "name": "Sam LaPorta",
+     "pos": "TE",
+     "adp": 70.2,
+     "pts": 165.3
+    },
+    {
+     "slot": 1,
+     "team": 0,
+     "round": 8,
+     "overall": 80,
+     "pid": "25874",
+     "name": "Tyler Warren",
+     "pos": "TE",
+     "adp": 49.8,
+     "pts": 211.5
+    },
+    {
+     "slot": 1,
+     "team": 0,
+     "round": 9,
+     "overall": 81,
+     "pid": "25323",
+     "name": "Cam Ward",
+     "pos": "QB",
+     "adp": 101.5,
+     "pts": 188.7
+    },
+    {
+     "slot": 2,
+     "team": 1,
+     "round": 9,
+     "overall": 82,
+     "pid": "19766",
+     "name": "Saquon Barkley",
+     "pos": "RB",
+     "adp": 19.8,
+     "pts": 217.6
+    },
+    {
+     "slot": 3,
+     "team": 2,
+     "round": 9,
+     "overall": 83,
+     "pid": "19790",
+     "name": "Baker Mayfield",
+     "pos": "QB",
+     "adp": 71.2,
+     "pts": 216.3
+    },
+    {
+     "slot": 4,
+     "team": 3,
+     "round": 9,
+     "overall": 84,
+     "pid": "24944",
+     "name": "Jonathon Brooks",
+     "pos": "RB",
+     "adp": 119.3,
+     "pts": 138.3
+    },
+    {
+     "slot": 5,
+     "team": 4,
+     "round": 9,
+     "overall": 85,
+     "pid": "25956",
+     "name": "Omarion Hampton",
+     "pos": "RB",
+     "adp": 23.2,
+     "pts": 220.8
+    },
+    {
+     "slot": 6,
+     "team": 5,
+     "round": 9,
+     "overall": 86,
+     "pid": "26082",
+     "name": "Jaxson Dart",
+     "pos": "QB",
+     "adp": 40.7,
+     "pts": 233.2
+    },
+    {
+     "slot": 7,
+     "team": 6,
+     "round": 9,
+     "overall": 87,
+     "pid": "25097",
+     "name": "Ladd McConkey",
+     "pos": "WR",
+     "adp": 53.4,
+     "pts": 185.9
+    },
+    {
+     "slot": 8,
+     "team": 7,
+     "round": 9,
+     "overall": 88,
+     "pid": "23170",
+     "name": "Wan'Dale Robinson",
+     "pos": "WR",
+     "adp": 127.6,
+     "pts": 142.8
+    },
+    {
+     "slot": 9,
+     "team": 8,
+     "round": 9,
+     "overall": 89,
+     "pid": "22565",
+     "name": "Chris Olave",
+     "pos": "WR",
+     "adp": 35.5,
+     "pts": 207.9
+    },
+    {
+     "slot": 10,
+     "team": 9,
+     "round": 9,
+     "overall": 90,
+     "pid": "18882",
+     "name": "Cooper Kupp",
+     "pos": "WR",
+     "adp": 237.2,
+     "pts": 91.3
+    },
+    {
+     "slot": 10,
+     "team": 9,
+     "round": 10,
+     "overall": 91,
+     "pid": "19063",
+     "name": "George Kittle",
+     "pos": "TE",
+     "adp": 103.8,
+     "pts": 168.6
+    },
+    {
+     "slot": 9,
+     "team": 8,
+     "round": 10,
+     "overall": 92,
+     "pid": "25868",
+     "name": "Ashton Jeanty",
+     "pos": "RB",
+     "adp": 16.7,
+     "pts": 216.8
+    },
+    {
+     "slot": 8,
+     "team": 7,
+     "round": 10,
+     "overall": 93,
+     "pid": "20805",
+     "name": "T.J. Hockenson",
+     "pos": "TE",
+     "adp": 154.4,
+     "pts": 113.2
+    },
+    {
+     "slot": 7,
+     "team": 6,
+     "round": 10,
+     "overall": 94,
+     "pid": "20824",
+     "name": "Josh Jacobs",
+     "pos": "RB",
+     "adp": 39.0,
+     "pts": 207.2
+    },
+    {
+     "slot": 6,
+     "team": 5,
+     "round": 10,
+     "overall": 95,
+     "pid": "26909",
+     "name": "Zachariah Branch",
+     "pos": "WR",
+     "adp": 215.3,
+     "pts": 81.7
+    },
+    {
+     "slot": 5,
+     "team": 4,
+     "round": 10,
+     "overall": 96,
+     "pid": "24954",
+     "name": "Adonai Mitchell",
+     "pos": "WR",
+     "adp": 223.5,
+     "pts": 89.1
+    },
+    {
+     "slot": 4,
+     "team": 3,
+     "round": 10,
+     "overall": 97,
+     "pid": "25122",
+     "name": "Jalen Coker",
+     "pos": "WR",
+     "adp": 147.9,
+     "pts": 124.8
+    },
+    {
+     "slot": 3,
+     "team": 2,
+     "round": 10,
+     "overall": 98,
      "pid": "24120",
      "name": "Rashee Rice",
      "pos": "WR",
@@ -4739,43 +4662,10 @@
      "pts": 204.9
     },
     {
-     "slot": 6,
-     "team": 5,
-     "round": 11,
-     "overall": 106,
-     "pid": "20912",
-     "name": "Tony Pollard",
-     "pos": "RB",
-     "adp": 98.9,
-     "pts": 144.9
-    },
-    {
-     "slot": 7,
-     "team": 6,
-     "round": 11,
-     "overall": 107,
-     "pid": "26092",
-     "name": "Emeka Egbuka",
-     "pos": "WR",
-     "adp": 57.8,
-     "pts": 193.1
-    },
-    {
-     "slot": 8,
-     "team": 7,
-     "round": 11,
-     "overall": 108,
-     "pid": "24374",
-     "name": "Chase Brown",
-     "pos": "RB",
-     "adp": 27.0,
-     "pts": 225.6
-    },
-    {
-     "slot": 9,
-     "team": 8,
-     "round": 11,
-     "overall": 109,
+     "slot": 2,
+     "team": 1,
+     "round": 10,
+     "overall": 99,
      "pid": "23122",
      "name": "Garrett Wilson",
      "pos": "WR",
@@ -4783,15 +4673,125 @@
      "pts": 204.4
     },
     {
+     "slot": 1,
+     "team": 0,
+     "round": 10,
+     "overall": 100,
+     "pid": "28053",
+     "name": "De'Zhaun Stribling",
+     "pos": "WR",
+     "adp": 143.9,
+     "pts": 132.7
+    },
+    {
+     "slot": 1,
+     "team": 0,
+     "round": 11,
+     "overall": 101,
+     "pid": "26768",
+     "name": "Jeremiyah Love",
+     "pos": "RB",
+     "adp": 33.3,
+     "pts": 202.3
+    },
+    {
+     "slot": 2,
+     "team": 1,
+     "round": 11,
+     "overall": 102,
+     "pid": "22490",
+     "name": "Trevor Lawrence",
+     "pos": "QB",
+     "adp": 41.7,
+     "pts": 233.2
+    },
+    {
+     "slot": 3,
+     "team": 2,
+     "round": 11,
+     "overall": 103,
+     "pid": "26101",
+     "name": "Isaac TeSlaa",
+     "pos": "WR",
+     "adp": 228.0,
+     "pts": 73.4
+    },
+    {
+     "slot": 4,
+     "team": 3,
+     "round": 11,
+     "overall": 104,
+     "pid": "23200",
+     "name": "Jahmyr Gibbs",
+     "pos": "RB",
+     "adp": 2.1,
+     "pts": 363.5
+    },
+    {
+     "slot": 5,
+     "team": 4,
+     "round": 11,
+     "overall": 105,
+     "pid": "24967",
+     "name": "Bucky Irving",
+     "pos": "RB",
+     "adp": 51.4,
+     "pts": 190.6
+    },
+    {
+     "slot": 6,
+     "team": 5,
+     "round": 11,
+     "overall": 106,
+     "pid": "21674",
+     "name": "J.K. Dobbins",
+     "pos": "RB",
+     "adp": 110.2,
+     "pts": 148.9
+    },
+    {
+     "slot": 7,
+     "team": 6,
+     "round": 11,
+     "overall": 107,
+     "pid": "24964",
+     "name": "Keon Coleman",
+     "pos": "WR",
+     "adp": 267.5,
+     "pts": 85.6
+    },
+    {
+     "slot": 8,
+     "team": 7,
+     "round": 11,
+     "overall": 108,
+     "pid": "22526",
+     "name": "Breece Hall",
+     "pos": "RB",
+     "adp": 44.6,
+     "pts": 199.7
+    },
+    {
+     "slot": 9,
+     "team": 8,
+     "round": 11,
+     "overall": 109,
+     "pid": "23167",
+     "name": "Romeo Doubs",
+     "pos": "WR",
+     "adp": 137.5,
+     "pts": 131.0
+    },
+    {
      "slot": 10,
      "team": 9,
      "round": 11,
      "overall": 110,
-     "pid": "19766",
-     "name": "Saquon Barkley",
+     "pid": "24934",
+     "name": "Braelon Allen",
      "pos": "RB",
-     "adp": 19.8,
-     "pts": 217.6
+     "adp": 218.3,
+     "pts": 57.3
     },
     {
      "slot": 10,
@@ -4809,176 +4809,176 @@
      "team": 8,
      "round": 12,
      "overall": 112,
-     "pid": "19045",
-     "name": "Aaron Jones Sr.",
+     "pid": "23217",
+     "name": "Rachaad White",
      "pos": "RB",
-     "adp": 131.2,
-     "pts": 119.9
+     "adp": 137.4,
+     "pts": 123.5
     },
     {
      "slot": 8,
      "team": 7,
      "round": 12,
      "overall": 113,
-     "pid": "18882",
-     "name": "Cooper Kupp",
+     "pid": "26762",
+     "name": "KC Concepcion",
      "pos": "WR",
-     "adp": 237.2,
-     "pts": 91.3
+     "adp": 133.7,
+     "pts": 123.0
     },
     {
      "slot": 7,
      "team": 6,
      "round": 12,
      "overall": 114,
-     "pid": "25868",
-     "name": "Ashton Jeanty",
+     "pid": "21696",
+     "name": "Travis Etienne Jr.",
      "pos": "RB",
-     "adp": 16.7,
-     "pts": 216.8
+     "adp": 58.9,
+     "pts": 188.2
     },
     {
      "slot": 6,
      "team": 5,
      "round": 12,
      "overall": 115,
-     "pid": "16470",
-     "name": "Davante Adams",
+     "pid": "22598",
+     "name": "Jaylen Waddle",
      "pos": "WR",
-     "adp": 63.7,
-     "pts": 176.6
+     "adp": 59.7,
+     "pts": 195.7
     },
     {
      "slot": 5,
      "team": 4,
      "round": 12,
      "overall": 116,
-     "pid": "23212",
-     "name": "Kyren Williams",
-     "pos": "RB",
-     "adp": 41.2,
-     "pts": 207.8
+     "pid": "21807",
+     "name": "Colby Parkinson",
+     "pos": "TE",
+     "adp": 233.9,
+     "pts": 94.8
     },
     {
      "slot": 4,
      "team": 3,
      "round": 12,
      "overall": 117,
-     "pid": "23241",
-     "name": "Brock Purdy",
+     "pid": "21841",
+     "name": "Jordan Love",
      "pos": "QB",
-     "adp": 53.3,
-     "pts": 221.0
+     "adp": 69.7,
+     "pts": 197.3
     },
     {
      "slot": 3,
      "team": 2,
      "round": 12,
      "overall": 118,
-     "pid": "25106",
-     "name": "AJ Barner",
-     "pos": "TE",
-     "adp": 176.1,
-     "pts": 99.7
+     "pid": "25898",
+     "name": "Bhayshul Tuten",
+     "pos": "RB",
+     "adp": 74.5,
+     "pts": 185.4
     },
     {
      "slot": 2,
      "team": 1,
      "round": 12,
      "overall": 119,
-     "pid": "22526",
-     "name": "Breece Hall",
+     "pid": "18983",
+     "name": "James Conner",
      "pos": "RB",
-     "adp": 44.6,
-     "pts": 199.7
+     "adp": 191.7,
+     "pts": 57.6
     },
     {
      "slot": 1,
      "team": 0,
      "round": 12,
      "overall": 120,
-     "pid": "22623",
-     "name": "Rashod Bateman",
+     "pid": "26979",
+     "name": "Cyrus Allen",
      "pos": "WR",
-     "adp": 271.8,
-     "pts": 71.5
+     "adp": 203.5,
+     "pts": 88.8
     },
     {
      "slot": 1,
      "team": 0,
      "round": 13,
      "overall": 121,
-     "pid": "24102",
-     "name": "Dalton Kincaid",
+     "pid": "23489",
+     "name": "Chig Okonkwo",
      "pos": "TE",
-     "adp": 93.5,
-     "pts": 139.5
+     "adp": 152.9,
+     "pts": 126.0
     },
     {
      "slot": 2,
      "team": 1,
      "round": 13,
      "overall": 122,
-     "pid": "16906",
-     "name": "Stefon Diggs",
+     "pid": "21687",
+     "name": "DeVonta Smith",
      "pos": "WR",
-     "adp": 125.9,
-     "pts": 141.9
+     "adp": 52.8,
+     "pts": 194.3
     },
     {
      "slot": 3,
      "team": 2,
      "round": 13,
      "overall": 123,
-     "pid": "26748",
-     "name": "Makai Lemon",
-     "pos": "WR",
-     "adp": 104.0,
-     "pts": 128.2
+     "pid": "21772",
+     "name": "Cole Kmet",
+     "pos": "TE",
+     "adp": 296.1,
+     "pts": 87.9
     },
     {
      "slot": 4,
      "team": 3,
      "round": 13,
      "overall": 124,
-     "pid": "26760",
-     "name": "Omar Cooper Jr.",
+     "pid": "26092",
+     "name": "Emeka Egbuka",
      "pos": "WR",
-     "adp": 182.4,
-     "pts": 105.4
+     "adp": 57.8,
+     "pts": 193.1
     },
     {
      "slot": 5,
      "team": 4,
      "round": 13,
      "overall": 125,
-     "pid": "18876",
-     "name": "David Njoku",
-     "pos": "TE",
-     "adp": 211.1,
-     "pts": 93.0
+     "pid": "25925",
+     "name": "Tre' Harris",
+     "pos": "WR",
+     "adp": 226.2,
+     "pts": 82.9
     },
     {
      "slot": 6,
      "team": 5,
      "round": 13,
      "overall": 126,
-     "pid": "19863",
-     "name": "Dallas Goedert",
+     "pid": "22508",
+     "name": "Kyle Pitts Sr.",
      "pos": "TE",
-     "adp": 118.6,
-     "pts": 138.4
+     "adp": 77.2,
+     "pts": 158.1
     },
     {
      "slot": 7,
      "team": 6,
      "round": 13,
      "overall": 127,
-     "pid": "25970",
-     "name": "Terrance Ferguson",
+     "pid": "19920",
+     "name": "Dalton Schultz",
      "pos": "TE",
-     "adp": 212.0,
-     "pts": 76.1
+     "adp": 150.0,
+     "pts": 146.6
     },
     {
      "slot": 8,
@@ -4996,105 +4996,17 @@
      "team": 8,
      "round": 13,
      "overall": 129,
-     "pid": "16964",
-     "name": "Darren Waller",
+     "pid": "25962",
+     "name": "Gunnar Helm",
      "pos": "TE",
-     "adp": 250.5,
-     "pts": 91.8
+     "adp": 208.8,
+     "pts": 84.9
     },
     {
      "slot": 10,
      "team": 9,
      "round": 13,
      "overall": 130,
-     "pid": "20889",
-     "name": "Kyler Murray",
-     "pos": "QB",
-     "adp": 82.8,
-     "pts": 215.5
-    },
-    {
-     "slot": 10,
-     "team": 9,
-     "round": 14,
-     "overall": 131,
-     "pid": "21687",
-     "name": "DeVonta Smith",
-     "pos": "WR",
-     "adp": 52.8,
-     "pts": 194.3
-    },
-    {
-     "slot": 9,
-     "team": 8,
-     "round": 14,
-     "overall": 132,
-     "pid": "24347",
-     "name": "Xavier Hutchinson",
-     "pos": "WR",
-     "adp": 637.0,
-     "pts": 77.0
-    },
-    {
-     "slot": 8,
-     "team": 7,
-     "round": 14,
-     "overall": 133,
-     "pid": "25887",
-     "name": "Cam Skattebo",
-     "pos": "RB",
-     "adp": 56.6,
-     "pts": 191.0
-    },
-    {
-     "slot": 7,
-     "team": 6,
-     "round": 14,
-     "overall": 134,
-     "pid": "19800",
-     "name": "Courtland Sutton",
-     "pos": "WR",
-     "adp": 94.1,
-     "pts": 145.4
-    },
-    {
-     "slot": 6,
-     "team": 5,
-     "round": 14,
-     "overall": 135,
-     "pid": "26259",
-     "name": "Jacory Croskey-Merritt",
-     "pos": "RB",
-     "adp": 129.4,
-     "pts": 164.1
-    },
-    {
-     "slot": 5,
-     "team": 4,
-     "round": 14,
-     "overall": 136,
-     "pid": "25198",
-     "name": "Devaughn Vele",
-     "pos": "WR",
-     "adp": 260.9,
-     "pts": 72.0
-    },
-    {
-     "slot": 4,
-     "team": 3,
-     "round": 14,
-     "overall": 137,
-     "pid": "18912",
-     "name": "Evan Engram",
-     "pos": "TE",
-     "adp": 255.8,
-     "pts": 83.1
-    },
-    {
-     "slot": 3,
-     "team": 2,
-     "round": 14,
-     "overall": 138,
      "pid": "23132",
      "name": "Bryce Young",
      "pos": "QB",
@@ -5102,21 +5014,10 @@
      "pts": 173.4
     },
     {
-     "slot": 2,
-     "team": 1,
+     "slot": 10,
+     "team": 9,
      "round": 14,
-     "overall": 139,
-     "pid": "21772",
-     "name": "Cole Kmet",
-     "pos": "TE",
-     "adp": 296.1,
-     "pts": 87.9
-    },
-    {
-     "slot": 1,
-     "team": 0,
-     "round": 14,
-     "overall": 140,
+     "overall": 131,
      "pid": "24974",
      "name": "Marvin Harrison Jr.",
      "pos": "WR",
@@ -5124,21 +5025,10 @@
      "pts": 168.8
     },
     {
-     "slot": 1,
-     "team": 0,
-     "round": 15,
-     "overall": 141,
-     "pid": "18993",
-     "name": "Samaje Perine",
-     "pos": "RB",
-     "adp": 292.9,
-     "pts": 65.7
-    },
-    {
-     "slot": 2,
-     "team": 1,
-     "round": 15,
-     "overall": 142,
+     "slot": 9,
+     "team": 8,
+     "round": 14,
+     "overall": 132,
      "pid": "25098",
      "name": "Jalen McMillan",
      "pos": "WR",
@@ -5146,21 +5036,252 @@
      "pts": 71.7
     },
     {
+     "slot": 8,
+     "team": 7,
+     "round": 14,
+     "overall": 133,
+     "pid": "22562",
+     "name": "Kenny Gainwell",
+     "pos": "RB",
+     "adp": 124.4,
+     "pts": 144.7
+    },
+    {
+     "slot": 7,
+     "team": 6,
+     "round": 14,
+     "overall": 134,
+     "pid": "21717",
+     "name": "Jauan Jennings",
+     "pos": "WR",
+     "adp": 184.7,
+     "pts": 104.2
+    },
+    {
+     "slot": 6,
+     "team": 5,
+     "round": 14,
+     "overall": 135,
+     "pid": "25946",
+     "name": "Quinshon Judkins",
+     "pos": "RB",
+     "adp": 66.0,
+     "pts": 178.1
+    },
+    {
+     "slot": 5,
+     "team": 4,
+     "round": 14,
+     "overall": 136,
+     "pid": "24927",
+     "name": "Caleb Williams",
+     "pos": "QB",
+     "adp": 23.7,
+     "pts": 232.0
+    },
+    {
+     "slot": 4,
+     "team": 3,
+     "round": 14,
+     "overall": 137,
+     "pid": "23138",
+     "name": "Jake Ferguson",
+     "pos": "TE",
+     "adp": 107.5,
+     "pts": 143.1
+    },
+    {
+     "slot": 3,
+     "team": 2,
+     "round": 14,
+     "overall": 138,
+     "pid": "24933",
+     "name": "Brian Thomas Jr.",
+     "pos": "WR",
+     "adp": 89.2,
+     "pts": 168.6
+    },
+    {
+     "slot": 2,
+     "team": 1,
+     "round": 14,
+     "overall": 139,
+     "pid": "23256",
+     "name": "Isaiah Likely",
+     "pos": "TE",
+     "adp": 113.8,
+     "pts": 138.9
+    },
+    {
+     "slot": 1,
+     "team": 0,
+     "round": 14,
+     "overall": 140,
+     "pid": "24989",
+     "name": "Tory Horton",
+     "pos": "WR",
+     "adp": 275.6,
+     "pts": 70.5
+    },
+    {
+     "slot": 1,
+     "team": 0,
+     "round": 15,
+     "overall": 141,
+     "pid": "23190",
+     "name": "Brian Robinson",
+     "pos": "RB",
+     "adp": 149.2,
+     "pts": 82.2
+    },
+    {
+     "slot": 2,
+     "team": 1,
+     "round": 15,
+     "overall": 142,
+     "pid": "25198",
+     "name": "Devaughn Vele",
+     "pos": "WR",
+     "adp": 260.9,
+     "pts": 72.0
+    },
+    {
      "slot": 3,
      "team": 2,
      "round": 15,
      "overall": 143,
-     "pid": "25079",
-     "name": "Kimani Vidal",
+     "pid": "23196",
+     "name": "George Holani",
      "pos": "RB",
-     "adp": 239.9,
-     "pts": 71.4
+     "adp": 293.2,
+     "pts": 55.6
     },
     {
      "slot": 4,
      "team": 3,
      "round": 15,
      "overall": 144,
+     "pid": "24977",
+     "name": "Rome Odunze",
+     "pos": "WR",
+     "adp": 80.6,
+     "pts": 173.9
+    },
+    {
+     "slot": 5,
+     "team": 4,
+     "round": 15,
+     "overall": 145,
+     "pid": "26835",
+     "name": "Emmett Johnson",
+     "pos": "RB",
+     "adp": 188.7,
+     "pts": 69.6
+    },
+    {
+     "slot": 6,
+     "team": 5,
+     "round": 15,
+     "overall": 146,
+     "pid": "2593",
+     "name": "Aaron Rodgers",
+     "pos": "QB",
+     "adp": 142.7,
+     "pts": 169.7
+    },
+    {
+     "slot": 7,
+     "team": 6,
+     "round": 15,
+     "overall": 147,
+     "pid": "23239",
+     "name": "C.J. Stroud",
+     "pos": "QB",
+     "adp": 95.6,
+     "pts": 187.5
+    },
+    {
+     "slot": 8,
+     "team": 7,
+     "round": 15,
+     "overall": 148,
+     "pid": "26054",
+     "name": "Tetairoa McMillan",
+     "pos": "WR",
+     "adp": 45.6,
+     "pts": 192.6
+    },
+    {
+     "slot": 9,
+     "team": 8,
+     "round": 15,
+     "overall": 149,
+     "pid": "20841",
+     "name": "Daniel Jones",
+     "pos": "QB",
+     "adp": 111.3,
+     "pts": 181.5
+    },
+    {
+     "slot": 10,
+     "team": 9,
+     "round": 15,
+     "overall": 150,
+     "pid": "26259",
+     "name": "Jacory Croskey-Merritt",
+     "pos": "RB",
+     "adp": 129.4,
+     "pts": 164.1
+    },
+    {
+     "slot": 10,
+     "team": 9,
+     "round": 16,
+     "overall": 151,
+     "pid": "19863",
+     "name": "Dallas Goedert",
+     "pos": "TE",
+     "adp": 118.6,
+     "pts": 138.4
+    },
+    {
+     "slot": 9,
+     "team": 8,
+     "round": 16,
+     "overall": 152,
+     "pid": "26932",
+     "name": "Mike Washington Jr.",
+     "pos": "RB",
+     "adp": 181.1,
+     "pts": 88.9
+    },
+    {
+     "slot": 8,
+     "team": 7,
+     "round": 16,
+     "overall": 153,
+     "pid": "25970",
+     "name": "Terrance Ferguson",
+     "pos": "TE",
+     "adp": 212.0,
+     "pts": 76.1
+    },
+    {
+     "slot": 7,
+     "team": 6,
+     "round": 16,
+     "overall": 154,
+     "pid": "27045",
+     "name": "Nicholas Singleton",
+     "pos": "RB",
+     "adp": 220.1,
+     "pts": 66.2
+    },
+    {
+     "slot": 6,
+     "team": 5,
+     "round": 16,
+     "overall": 155,
      "pid": "26752",
      "name": "Carnell Tate",
      "pos": "WR",
@@ -5170,178 +5291,57 @@
     {
      "slot": 5,
      "team": 4,
-     "round": 15,
-     "overall": 145,
-     "pid": "23211",
-     "name": "MarShawn Lloyd",
-     "pos": "RB",
-     "adp": 207.9,
-     "pts": 72.1
-    },
-    {
-     "slot": 6,
-     "team": 5,
-     "round": 15,
-     "overall": 146,
-     "pid": "18890",
-     "name": "Patrick Mahomes",
-     "pos": "QB",
-     "adp": 43.0,
-     "pts": 212.4
-    },
-    {
-     "slot": 7,
-     "team": 6,
-     "round": 15,
-     "overall": 147,
-     "pid": "23118",
-     "name": "Malik Willis",
-     "pos": "QB",
-     "adp": 105.5,
-     "pts": 203.0
-    },
-    {
-     "slot": 8,
-     "team": 7,
-     "round": 15,
-     "overall": 148,
-     "pid": "25925",
-     "name": "Tre' Harris",
-     "pos": "WR",
-     "adp": 226.2,
-     "pts": 82.9
-    },
-    {
-     "slot": 9,
-     "team": 8,
-     "round": 15,
-     "overall": 149,
-     "pid": "14895",
-     "name": "Geno Smith",
-     "pos": "QB",
-     "adp": 145.8,
-     "pts": 167.9
-    },
-    {
-     "slot": 10,
-     "team": 9,
-     "round": 15,
-     "overall": 150,
-     "pid": "21952",
-     "name": "Rico Dowdle",
-     "pos": "RB",
-     "adp": 100.2,
-     "pts": 161.0
-    },
-    {
-     "slot": 10,
-     "team": 9,
-     "round": 16,
-     "overall": 151,
-     "pid": "23251",
-     "name": "Trey McBride",
-     "pos": "TE",
-     "adp": 20.2,
-     "pts": 276.7
-    },
-    {
-     "slot": 9,
-     "team": 8,
-     "round": 16,
-     "overall": 152,
-     "pid": "22562",
-     "name": "Kenny Gainwell",
-     "pos": "RB",
-     "adp": 124.4,
-     "pts": 144.7
-    },
-    {
-     "slot": 8,
-     "team": 7,
-     "round": 16,
-     "overall": 153,
-     "pid": "20850",
-     "name": "Dawson Knox",
-     "pos": "TE",
-     "adp": 298.2,
-     "pts": 69.9
-    },
-    {
-     "slot": 7,
-     "team": 6,
-     "round": 16,
-     "overall": 154,
-     "pid": "25952",
-     "name": "Kyle Monangai",
-     "pos": "RB",
-     "adp": 109.1,
-     "pts": 139.8
-    },
-    {
-     "slot": 6,
-     "team": 5,
-     "round": 16,
-     "overall": 155,
-     "pid": "25103",
-     "name": "Malik Washington",
-     "pos": "WR",
-     "adp": 206.8,
-     "pts": 122.7
-    },
-    {
-     "slot": 5,
-     "team": 4,
      "round": 16,
      "overall": 156,
-     "pid": "21841",
-     "name": "Jordan Love",
-     "pos": "QB",
-     "adp": 69.7,
-     "pts": 197.3
+     "pid": "16597",
+     "name": "Mike Evans",
+     "pos": "WR",
+     "adp": 76.1,
+     "pts": 176.9
     },
     {
      "slot": 4,
      "team": 3,
      "round": 16,
      "overall": 157,
-     "pid": "24944",
-     "name": "Jonathon Brooks",
+     "pid": "24116",
+     "name": "Blake Corum",
      "pos": "RB",
-     "adp": 119.3,
-     "pts": 138.3
+     "adp": 112.5,
+     "pts": 130.4
     },
     {
      "slot": 3,
      "team": 2,
      "round": 16,
      "overall": 158,
-     "pid": "26762",
-     "name": "KC Concepcion",
-     "pos": "WR",
-     "adp": 133.7,
-     "pts": 123.0
+     "pid": "25069",
+     "name": "Bo Nix",
+     "pos": "QB",
+     "adp": 46.6,
+     "pts": 221.5
     },
     {
      "slot": 2,
      "team": 1,
      "round": 16,
      "overall": 159,
-     "pid": "17959",
-     "name": "Derrick Henry",
+     "pid": "24214",
+     "name": "Keaton Mitchell",
      "pos": "RB",
-     "adp": 29.2,
-     "pts": 228.8
+     "adp": 179.7,
+     "pts": 92.7
     },
     {
      "slot": 1,
      "team": 0,
      "round": 16,
      "overall": 160,
-     "pid": "25323",
-     "name": "Cam Ward",
+     "pid": "17922",
+     "name": "Jared Goff",
      "pos": "QB",
-     "adp": 101.5,
-     "pts": 188.7
+     "adp": 61.7,
+     "pts": 217.2
     }
    ]
   }

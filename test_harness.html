@@ -1,6 +1,6 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><title>harness</title></head>
 <body style="background:#111;color:#eee;font-family:monospace">
-<script>try{ localStorage.removeItem('ffb-draft-v3'); localStorage.removeItem('ffb-mocks-v1'); }catch(e){}</script>
+<script>try{ localStorage.removeItem('ffb-draft-v4'); localStorage.removeItem('ffb-mocks-v1'); }catch(e){}</script>
 <iframe id="app" src="index.html" style="width:100%;height:70vh;border:1px solid #333"></iframe>
 <script>
 const f = document.getElementById('app');
@@ -166,37 +166,66 @@ f.onload = () => {
       // who-drafted-who with real manager names (matches sample corpus for mock sigs)
       const dp = w.__dbg();
       const lgA = dp.leagues[0];
-      lgA.order = ['Taco Tuesday','Gurley Men','The Bluffs',"Saquon's Kids",'Dolphin fans are gay','GridIron Goblins','Puny Humans','League Winner','Waddle Waddle',"Barkley's Barking"];
+      lgA.order = ['Mothership','Gare-e Bears','Dolphin fans are gay','I Chase Brown Kids','Kirk-umsized Penix','Commander in Children','OJ did it?','Team Name TBD',"Sandusky's Home of TEs",'Ankle Breakers Anonymous'];
       lgA.drafted = {}; lgA.log = []; dp.render();
       const hdA = d.querySelector('#hideDrafted');
       hdA.checked = false; hdA.dispatchEvent(new w.Event('change', {bubbles:true}));
       d.querySelector('tr.player .mk.chk').click();
       d.querySelector('tr.player:not(.drafted) .mk.chk').click();
       d.querySelector('tr.player:not(.drafted) .mk.chk').click();
-      log('who-drafted teams follow order', ['Taco Tuesday','Gurley Men','The Bluffs'].every((t,i)=> dp.L.log[i].team===t));
+      log('who-drafted teams follow order', ['Mothership','Gare-e Bears','Dolphin fans are gay'].every((t,i)=> dp.L.log[i].team===t));
       log('log team editable', d.querySelectorAll('#draftLog .team-edit').length === 3);
       d.querySelectorAll('#draftLog .team-edit')[1].click();
       const sel = d.querySelector('#draftLog .inline-sel');
       log('team select opens', !!sel);
       if(sel){
-        sel.value = 'League Winner';
+        sel.value = 'OJ did it?';
         sel.dispatchEvent(new w.Event('change', {bubbles:true}));
       }
-      log('team reassigned', dp.L.log[1].team === 'League Winner');
+      log('team reassigned', dp.L.log[1].team === 'OJ did it?');
       log('managers panel rows', d.querySelectorAll('#mgrBox .mgr-row').length === 10);
       log('managers show needs', d.querySelectorAll('#mgrBox .mgr-row .need').length >= 1);
       log('mock sigs in managers panel', /mock/.test(d.querySelector('#mgrBox').textContent));
-      log('intel chips show team + need', /Saquon's Kids/.test(d.querySelector('#intelBar').textContent) && /needs RB/.test(d.querySelector('#intelBar').textContent));
+      log('intel chips show team + need', /I Chase Brown Kids/.test(d.querySelector('#intelBar').textContent) && /needs RB/.test(d.querySelector('#intelBar').textContent));
       // modal who-select
       d.querySelector('tr.player:not(.drafted) .pname').click();
       log('modal who-select has managers', d.querySelectorAll('#ddWho option').length === 11);
-      log('modal who defaults to on-clock', d.querySelector('#ddWho').value === "Saquon's Kids");
+      log('modal who defaults to on-clock', d.querySelector('#ddWho').value === 'I Chase Brown Kids');
       d.querySelector('#ddClose').click();
       // settings draft-order prefill
       d.querySelector('#gearBtn').click();
       d.querySelector('#stOrderFill').click();
       log('draft order prefill', d.querySelector('#stOrder').value.split(',').length === 10);
       d.querySelector('#settingsClose').click();
+      // ============ LIVE MODE + REAL LEAGUE 1 ============
+      const dq = w.__dbg();
+      log('L1 real: League of Champs 10 teams slot 3', dq.leagues[0].name === 'League of Champs' && dq.leagues[0].teams === 10 && dq.leagues[0].slot === 3);
+      log('L1 real draft order', dq.leagues[0].order.length === 10 && dq.leagues[0].order[0] === 'Mothership' && dq.leagues[0].order[2] === 'Dolphin fans are gay');
+      log('L1 handles all 10', Object.keys(dq.leagues[0].handles||{}).length === 10 && dq.leagues[0].handles['Mothership'] === '@aws1990');
+      const lgL = dq.leagues[0];
+      lgL.drafted = {}; lgL.log = []; dq.render();
+      const liveBtn = d.querySelector('#liveBtn');
+      log('live button in header', !!liveBtn);
+      liveBtn.click();
+      log('live mode on: body.live + UI.live', d.body.classList.contains('live') && dq.ui.live === true);
+      log('live bar pick 1 = Mothership', d.querySelector('#lbPickN').textContent === '1' && /Mothership/.test(d.querySelector('#lbTeam').textContent));
+      log('live bar next 3 picks', /Gare-e Bears/.test(d.querySelector('#lbNext').textContent) && /I Chase Brown Kids/.test(d.querySelector('#lbNext').textContent));
+      const hdL = d.querySelector('#hideDrafted');
+      hdL.checked = false; hdL.dispatchEvent(new w.Event('change', {bubbles:true}));
+      const qk = d.querySelector('tr.player:not(.drafted) .qk-take');
+      log('quick TAKEN in live mode', !!qk);
+      if(qk) qk.click();
+      log('live mark → Mothership + advance', dq.L.log[0] && dq.L.log[0].team === 'Mothership' && d.querySelector('#lbPickN').textContent === '2' && /Gare-e Bears/.test(d.querySelector('#lbTeam').textContent));
+      d.querySelector('tr.player:not(.drafted) .pname').click();
+      log('modal who locked in live', d.querySelector('#ddWho').disabled === true && d.querySelector('#ddWho').value === 'Gare-e Bears');
+      log('live hint in modal', /Draft is live/.test(d.querySelector('#ddWhoRow').textContent));
+      d.querySelector('#ddClose').click();
+      liveBtn.click();
+      log('live off restores manual', d.body.classList.contains('live') === false && dq.ui.live === false);
+      d.querySelector('tr.player:not(.drafted) .pname').click();
+      log('modal who enabled when off', d.querySelector('#ddWho').disabled === false);
+      d.querySelector('#ddClose').click();
+      log('managers panel handles', /@aws1990/.test(d.querySelector('#mgrBox').textContent));
     } catch(e){ log('PD EXCEPTION: ' + e.message + '\n' + (e.stack||'').split('\n').slice(0,3).join(' | '), false); }
     finish();
   };

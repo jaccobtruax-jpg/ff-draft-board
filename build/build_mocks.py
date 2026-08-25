@@ -165,30 +165,31 @@ def parse_csv(path):
     return {"label": path.stem, "mySlot": 1, "teams": teams, "picks": picks}
 
 # ---------------------------------------------------------------- sample gen
+# League of Champs real teams, slot 1..10 (from Sleeper standings); user = slot 3.
 SAMPLE_TEAMS = [
-    "Taco Tuesday", "Gurley Men", "The Bluffs", "Saquon's Kids",
-    "Dolphin fans are gay", "GridIron Goblins", "Puny Humans", "League Winner",
-    "Waddle Waddle", "Barkley's Barking",
+    "Mothership", "Gare-e Bears", "Dolphin fans are gay", "I Chase Brown Kids",
+    "Kirk-umsized Penix", "Commander in Children", "OJ did it?", "Team Name TBD",
+    "Sandusky's Home of TEs", "Ankle Breakers Anonymous",
 ]
-MY_SLOT = 5
+MY_SLOT = 3
 # persona: position pick-order template per round 1..16 (M=my slot; others by index)
 PERSONAS = {
-    0: ["RB","RB","TE","WR","QB","WR","RB","TE","QB","WR","RB","WR","TE","WR","RB","QB"],  # Taco Tuesday (TE early)
-    1: ["RB","RB","RB","WR","WR","QB","WR","TE","RB","WR","QB","RB","WR","TE","WR","RB"],  # Gurley Men
-    2: ["QB","RB","WR","RB","WR","TE","QB","WR","RB","WR","RB","TE","WR","QB","RB","WR"],  # The Bluffs (QB r1, 2QB early)
-    3: ["RB","WR","RB","WR","RB","QB","TE","WR","RB","WR","RB","QB","WR","TE","WR","RB"],  # Saquon's Kids
-    4: ["RB","RB","TE","WR","QB","WR","RB","TE","QB","WR","WR","RB","TE","WR","RB","QB"],  # ME — Dolphin fans
-    5: ["WR","RB","WR","RB","WR","TE","WR","RB","QB","WR","RB","WR","TE","RB","QB","WR"],  # GridIron Goblins (waits QB)
-    6: ["WR","WR","WR","RB","TE","RB","WR","QB","WR","RB","WR","RB","TE","WR","QB","RB"],  # Puny Humans
-    7: ["RB","WR","WR","RB","TE","QB","WR","RB","WR","TE","RB","WR","QB","RB","WR","TE"],  # League Winner (balanced)
-    8: ["WR","TE","WR","RB","WR","TE","RB","QB","WR","RB","WR","RB","TE","WR","QB","RB"],  # Waddle Waddle (2TE early)
-    9: ["RB","WR","TE","WR","RB","QB","WR","RB","WR","TE","RB","WR","QB","WR","RB","TE"],  # Barkley's Barking
+    0: ["RB","RB","TE","WR","QB","WR","RB","TE","QB","WR","RB","WR","TE","WR","RB","QB"],  # Mothership (TE early)
+    1: ["RB","RB","RB","WR","WR","QB","WR","TE","RB","WR","QB","RB","WR","TE","WR","RB"],  # Gare-e Bears
+    2: ["RB","RB","TE","WR","QB","WR","RB","TE","QB","WR","WR","RB","TE","WR","RB","QB"],  # ME — Dolphin fans
+    3: ["RB","WR","RB","WR","RB","QB","TE","WR","RB","WR","RB","QB","WR","TE","WR","RB"],  # I Chase Brown Kids
+    4: ["QB","RB","WR","RB","WR","TE","QB","WR","RB","WR","RB","TE","WR","QB","RB","WR"],  # Kirk-umsized Penix (QB r1, 2QB early)
+    5: ["WR","RB","WR","RB","WR","TE","WR","RB","QB","WR","RB","WR","TE","RB","QB","WR"],  # Commander in Children (waits QB)
+    6: ["WR","WR","WR","RB","TE","RB","WR","QB","WR","RB","WR","RB","TE","WR","QB","RB"],  # OJ did it?
+    7: ["RB","WR","WR","RB","TE","QB","WR","RB","WR","TE","RB","WR","QB","RB","WR","TE"],  # Team Name TBD (balanced)
+    8: ["WR","TE","WR","RB","WR","TE","RB","QB","WR","RB","WR","RB","TE","WR","QB","RB"],  # Sandusky's Home of TEs (2TE early)
+    9: ["RB","WR","TE","WR","RB","QB","WR","RB","WR","TE","RB","WR","QB","WR","RB","TE"],  # Ankle Breakers Anonymous
 }
 # per-mock variation: shift some rounds for a couple of personas so trends show spread
 MOCK_TWEAKS = [
-    {4: {3: "WR", 5: "QB", 7: "TE"}},   # mock 1: I take WR r3, QB r5, TE r7
-    {},                                  # mock 2: base (TE r3)
-    {2: {1: "QB"}, 0: {4: "TE"}},        # mock 3: Bluffs again QB r1, Taco TE r4
+    {2: {3: "WR", 5: "QB", 7: "TE"}},   # mock 1: I take WR r3, QB r5, TE r7
+    {},                                  # mock 2: base (RB×2 open, TE r3, QB r5)
+    {4: {1: "QB"}, 0: {4: "TE"}},        # mock 3: Penix again QB r1, Mothership TE r4
 ]
 
 def gen_sample(scoring="TE PREM (4pt QB)"):

@@ -14,18 +14,19 @@ Draft-day companion board for Jaccob's two leagues, built on the Fantasy Footbal
 - **3-minute pick timer** — one tap starts the clock for your turn
 - **Pre-Draft page** (📊 toggle in header) — mock-draft analysis: your position-by-round heatmap, locked-in guys (taken in ≥2 mocks), first-QB/RB/WR/TE timing, ADP discipline (reach/steal), a per-manager mock map (position mix, TE-early/RB-heavy/waits-on-QB signatures, Δ vs ADP), around-your-picks intel with neighbor tendencies, and position-run risk by round. Data: `data/mocks.json` (bundled) or import your own via the banner button (stored in localStorage). Bundled sample mocks are labeled SAMPLE — send real mock exports to the agent and they get converted.
 - **Who-drafted-who** — marking a pick auto-attributes the team on the clock (from your draft order in settings); tap any team name in the draft log to reassign. Managers & needs panel shows each manager's live position counts, roster needs, next pick, and mock-draft signatures; predicted-pick chips in the intel bar carry the on-clock team + biggest need so you can read upcoming picks at a glance.
+- **Draft is live mode** (red **● Draft is live** button in the header, or press `L`) — the draft-day mode: a live bar under the header shows the on-clock pick, manager, their needs, and the next 3 picks; every board row gets a one-tap **TAKEN** button that marks the player, auto-assigns them to the team on the clock, and advances the pick; the "Drafted by" select in the player modal locks to the on-clock team. Toggle off to go back to manual attribution (fixes happen in the log either way).
 
 ## Files
 
 - `index.html` — the app (single page, vanilla JS, no build step)
-- `test_harness.html` — in-browser smoke test, **53 checks** (open it, PASS/FAIL list renders)
+- `test_harness.html` — in-browser smoke test, **68 checks** (open it, PASS/FAIL list renders)
 - `data/board.json` — all player/ranking data (~660KB)
 - `data/mocks.json` — mock-draft corpus for the Pre-Draft page (bundled SAMPLE mocks; override via in-app import)
 - `build/` — the scripts that scraped the UDK site and built board.json, plus `build_mocks.py` (converts mock exports → mocks.json, name-matches players, joins ADP)
 
 ## League defaults
 
-- Dolphin Fans (League 1) — imported from Sleeper "League of Champs": TE PREM (4pt QB: 0.5 PPR WR/RB + 1.0 TE, 4pt pass TD, INT −1), 10 teams, pick 5, superflex, roster QB1/RB2/WR2/TE1/FLEX2/RBW1/SFLEX1/DST1/K1/BN10/IR3, team "Dolphin fans are gay"
+- League of Champs (League 1) — real config from the Sleeper import: TE PREM (4pt QB: 0.5 PPR WR/RB + 1.0 TE, 4pt pass TD, INT −1), 10 teams, slot 3, superflex, roster QB1/RB2/WR2/TE1/FLEX2/RBW1/SFLEX1/DST1/K1/BN10/IR3, team "Dolphin fans are gay". Draft order (pick 1 → 10): Mothership, Gare-e Bears, Dolphin fans are gay, I Chase Brown Kids, Kirk-umsized Penix, Commander in Children, OJ did it?, Team Name TBD, Sandusky's Home of TEs, Ankle Breakers Anonymous (handles map to @aws1990, @eriksske, @truax571, @nmilli29, @jgank10, @jmarko1991, @combes101, @jkeeney2010, @aalte12, @Dillonpatric).
 - League 2: TBD — candidate from FFB account: "O.G." (6pt QB, TE premium, QB1/RB2/WR3) or "Leg of bastards" (4pt QB, TE premium, 10 teams)
 
 ## Use
