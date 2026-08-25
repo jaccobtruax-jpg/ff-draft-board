@@ -163,7 +163,19 @@ td.marks{text-align:right;white-space:nowrap}
 .slot-row.open.needs{background:rgba(255,95,86,.07);border-color:rgba(255,95,86,.35)}
 .block-title{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--dim);margin:6px 2px 0}
 .callbox{background:linear-gradient(135deg,rgba(77,163,255,.12),rgba(124,92,255,.1));border:1px solid rgba(77,163,255,.4);border-radius:10px;padding:10px 12px}
-.callbox .t{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--acc);margin-bottom:6px}
+.callbox .t{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--acc);margin-bottom:6px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.rv-h{display:flex;width:100%;justify-content:space-between;align-items:center;background:var(--bg3);border:1px solid var(--line2);border-radius:6px;padding:7px 10px;font-size:12px;font-weight:800;color:var(--txt);cursor:pointer;letter-spacing:.3px}
+.rv-h:hover{border-color:var(--acc)}
+.rv-h .arr{transition:transform .15s;font-size:10px;color:var(--mut)}
+.rv-h.on{border-color:rgba(77,163,255,.45)}
+.rv-h.on .arr{transform:rotate(90deg)}
+.bl-wrap{margin-left:auto;font-size:10px;font-weight:600;color:var(--mut);display:inline-flex;align-items:center;gap:4px;text-transform:none;letter-spacing:0}
+#blSel{background:var(--bg3);border:1px solid var(--line2);border-radius:4px;color:var(--txt);font-size:10.5px;padding:1px 4px;font-weight:700}
+.act-btns{display:inline-flex;gap:3px;vertical-align:middle}
+.act-btns .mk{padding:0 5px;font-size:11px;background:var(--bg3);border:1px solid var(--line2);border-radius:4px;cursor:pointer;color:var(--mut)}
+.act-btns .mk:hover{border-color:var(--acc);color:var(--txt)}
+.act-btns .mk.on{background:rgba(233,177,76,.15);border-color:var(--gold)}
+.read-meta{font-size:10.5px;color:var(--dim);margin-top:1px}
 .call-main{display:flex;align-items:center;gap:10px}
 .call-main .who{font-weight:800;font-size:15px}
 .call-main .why{font-size:12px;color:var(--mut);line-height:1.35}
@@ -576,42 +588,34 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 
   <!-- ============ MY TEAM ============ -->
   <section class="panel" id="right">
-    <div class="panel-head">Draft Command <span id="teamName" style="text-transform:none;color:var(--mut)"></span>
-      <span class="sp"></span>
-      <select id="rightView" title="What the right panel shows">
-        <option value="call">🎯 Next Pick Call</option>
-        <option value="roster">👥 My Roster</option>
-        <option value="scarcity">📉 Scarcity &amp; Runs</option>
-        <option value="log">📜 Draft Log</option>
-        <option value="guys">⭐ My Guys</option>
-        <option value="context">📚 Reference</option>
-        <option value="value">📊 Value &amp; Tiers</option>
-        <option value="waivers">💵 Waivers &amp; FAAB</option>
-        <option value="injury">🚑 Injury Room</option>
-        <option value="rookie">🌱 Rookies</option>
-      </select>
-    </div>
+    <div class="panel-head">Draft Command <span id="teamName" style="text-transform:none;color:var(--mut)"></span></div>
     <div id="rightBody">
-      <div id="rvCall"><div id="nextCall"></div></div>
-      <div id="rvRoster" style="display:none"><div id="byeWarn" class="bye-warn" style="display:none"></div><div id="rosterBox"></div></div>
-      <div id="rvScarcity" style="display:none">
+      <button class="rv-h" data-rv="call"><span>🎯 Next Pick Call</span><span class="arr">▸</span></button>
+      <div class="rv-body" id="rvCall"><div id="nextCall"></div></div>
+      <button class="rv-h" data-rv="roster"><span>👥 My Roster</span><span class="arr">▸</span></button>
+      <div class="rv-body" id="rvRoster"><div id="byeWarn" class="bye-warn" style="display:none"></div><div id="rosterBox"></div></div>
+      <button class="rv-h" data-rv="scarcity"><span>📉 Scarcity &amp; Runs</span><span class="arr">▸</span></button>
+      <div class="rv-body" id="rvScarcity">
         <div class="block-title">Position scarcity — top players gone</div>
         <div id="scarcityBox" class="scarcity"></div>
         <div class="block-title">Runs &amp; snipers — live league pressure</div>
         <div id="runBox"></div>
       </div>
-      <div id="rvLog" style="display:none">
+      <button class="rv-h" data-rv="log"><span>📜 Draft Log</span><span class="arr">▸</span></button>
+      <div class="rv-body" id="rvLog">
         <div class="block-title">Draft log</div>
         <div id="draftLog" class="ctxbox"></div>
         <button class="expander" data-x="mgrBox"><span>Managers &amp; needs <span class="cnt" id="mgrCnt"></span></span><span class="arr">▶</span></button>
         <div id="mgrBox" style="display:none"></div>
       </div>
-      <div id="rvGuys" style="display:none">
+      <button class="rv-h" data-rv="guys"><span>⭐ My Guys</span><span class="arr">▸</span></button>
+      <div class="rv-body" id="rvGuys">
         <div class="block-title">My guys ★ <span class="cnt" id="guysCnt"></span></div>
         <div id="guysBox" class="ctxbox"></div>
         <div class="hint">Stars feed the read's ★ factor — load a preset or hit ★ on the board.</div>
       </div>
-      <div id="rvContext" style="display:none">
+      <button class="rv-h" data-rv="context"><span>📚 Reference</span><span class="arr">▸</span></button>
+      <div class="rv-body" id="rvContext">
         <button class="expander" data-x="expBox"><span>Expert lists <span class="cnt" id="expCnt"></span></span><span class="arr">▶</span></button>
         <div id="expBox" style="display:none"></div>
         <button class="expander" data-x="rookieBox"><span>Rookie watch <span class="cnt" id="rookieCnt"></span></span><span class="arr">▶</span></button>
@@ -625,21 +629,25 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
           <textarea id="notesArea" placeholder="Pre-draft thoughts, reach targets, league quirks…"></textarea>
         </div>
       </div>
-      <div id="rvValue" style="display:none">
+      <button class="rv-h" data-rv="value"><span>📊 Value &amp; Tiers</span><span class="arr">▸</span></button>
+      <div class="rv-body" id="rvValue">
         <div class="block-title">Value &amp; tiers — where the board is wrong</div>
         <div id="valueBox" class="ctxbox"></div>
       </div>
-      <div id="rvWaivers" style="display:none">
+      <button class="rv-h" data-rv="waivers"><span>💵 Waivers &amp; FAAB</span><span class="arr">▸</span></button>
+      <div class="rv-body" id="rvWaivers">
         <div class="block-title">Waivers &amp; FAAB — $200 post-draft budget</div>
         <div id="waiverBox" class="ctxbox"></div>
       </div>
-      <div id="rvInjury" style="display:none">
+      <button class="rv-h" data-rv="injury"><span>🚑 Injury Room</span><span class="arr">▸</span></button>
+      <div class="rv-body" id="rvInjury">
         <div class="block-title">Injury room — severity watch</div>
         <div id="injChips" class="hint" style="margin-bottom:6px"></div>
         <input class="injury-filter" id="injFilter2" placeholder="Filter injury notes… (Achilles, knee, holdout)">
         <div id="injuryList2" class="ctxbox" style="max-height:300px;overflow-y:auto;font-size:12px;line-height:1.5"></div>
       </div>
-      <div id="rvRookie" style="display:none">
+      <button class="rv-h" data-rv="rookie"><span>🌱 Rookies</span><span class="arr">▸</span></button>
+      <div class="rv-body" id="rvRookie">
         <div class="block-title">Rookie board — debut-year targets</div>
         <div id="rookieBox2" class="ctxbox"></div>
       </div>
@@ -706,7 +714,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 </main>
 
 <footer>
-  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b26c, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b26c</span><br>
+  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b27a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b27a</span><br>
   <span style="opacity:.75">Data: Fantasy Footballers 2026 Ultimate Draft Kit (rankings computed with the UDK engine for your league scoring). Your draft state lives only in this browser.</span>
   <button class="btn ghost" id="exportBtn">Export state</button>
   <button class="btn ghost" id="importBtn">Import state</button>
@@ -867,7 +875,7 @@ function applyMyGuys(key){
 }
 let DATA = null;
 let MOCKS = null;          // {generated, sample, mocks:[...]}
-let UI = { league: 0, mode: 'day', live: false };   // mode: 'day' (draft board) | 'pre' (pre-draft); live: draft-is-live mode
+let UI = { league: 0, mode: 'day', live: false, rightOpen: {call:1, roster:1, scarcity:1, log:1}, baselineMode: 'worst' };   // mode: 'day' (draft board) | 'pre' (pre-draft); live: draft-is-live mode; rightOpen: which Draft Command sections are expanded; baselineMode: gain baseline (worst/avg starter or replacement)
 
 const POS_COLORS = {QB:'qb',RB:'rb',WR:'wr',TE:'te',FLEX:'flex',RBW:'wr',SFLEX:'qb',DST:'dst',K:'k'};
 const SCORING_ALIAS = {'HALF (6pt QB)':'half','HALF (4pt QB)':'half','PPR (6pt QB)':'ppr','PPR (4pt QB)':'ppr','STD (6pt QB)':'std','STD (4pt QB)':'std','TE PREM (4pt QB)':'teprem','TE PREM (6pt QB)':'teprem'};
@@ -1194,10 +1202,15 @@ function render(){
   renderRight();
 }
 function renderRight(){
-  const v = UI.rightView || 'call';
-  const sel = $('rightView'); if(sel) sel.value = v;
   const map = {call:'rvCall', roster:'rvRoster', scarcity:'rvScarcity', log:'rvLog', guys:'rvGuys', context:'rvContext', value:'rvValue', waivers:'rvWaivers', injury:'rvInjury', rookie:'rvRookie'};
-  for(const k in map){ const el = $(map[k]); if(el) el.style.display = k===v ? '' : 'none'; }
+  const o = UI.rightOpen || {};
+  for(const k in map){
+    const el = $(map[k]); if(!el) continue;
+    const open = o[k] === 1;
+    el.style.display = open ? '' : 'none';
+    const h = el.previousElementSibling;
+    if(h && h.classList && h.classList.contains('rv-h')) h.classList.toggle('on', open);
+  }
 }
 function renderHeader(){
   const lg = L();
@@ -1499,7 +1512,11 @@ $('myGuysPreset').addEventListener('change', e=>{
     saveState(); render();
   }
 });
-$('rightView').addEventListener('change', e=>{ UI.rightView = e.target.value; saveState(); renderRight(); });
+$('rightBody').addEventListener('click', e=>{
+  const h = e.target.closest('.rv-h'); if(!h) return;
+  const k = h.dataset.rv; if(!k) return;
+  UI.rightOpen[k] = UI.rightOpen[k] ? 0 : 1; saveState(); renderRight();
+});
 $('injFilter2').addEventListener('input', ()=>{ renderInjury(); });
 $('newsFilter').addEventListener('change', renderNews);
 $('newsInjectAll').addEventListener('click', ()=>{
@@ -1529,8 +1546,14 @@ function renderTeam(){
     const survPct = b.survival!=null ? Math.round(b.survival*100) : null;
     const survCls = p => p>=70 ? 'surv-hi' : p>=40 ? 'surv-mid' : 'surv-lo';
     $('nextCall').innerHTML = `<div class="callbox">
-      <div class="t">${lg.auction?'Budget tracker':'Sharingan read — next pick'}${call.myNext?` <span class="read-window">p${call.start} → p${call.myNext}</span>`:''}</div>
-      <div class="call-main"><div class="who">${esc(b.p.n)} <span class="pmeta">${esc(b.p.t)} · ${b.pos}</span> <span class="mode-badge ${b.need?'need':'upgrade'}">${b.need?'NEED':'UPGRADE'}</span></div></div>
+      <div class="t">${lg.auction?'Budget tracker':'Sharingan read — next pick'}${call.myNext?` <span class="read-window">p${call.start} → p${call.myNext}</span>`:''}${!lg.auction?`<span class="bl-wrap">baseline <select id="blSel" title="What the gain is measured against">
+        <option value="worst" ${(UI.baselineMode||'worst')==='worst'?'selected':''}>worst starter</option>
+        <option value="avg" ${UI.baselineMode==='avg'?'selected':''}>avg starter</option>
+        <option value="replacement" ${UI.baselineMode==='replacement'?'selected':''}>replacement</option></select></span>`:''}</div>
+      <div class="call-main"><div class="who">${esc(b.p.n)} <span class="pmeta">${esc(b.p.t)} · ${b.pos}</span> <span class="mode-badge ${b.need?'need':'upgrade'}">${b.need?'NEED':'UPGRADE'}</span></div><span class="act-btns">
+        <button class="mk ${lg.stars.includes(String(b.pid))?'on':''}" onclick="starToggle('${b.pid}')" title="Star / unstar">⭐</button>
+        <button class="mk ${lg.avoid.includes(String(b.pid))?'on':''}" onclick="avoidToggle('${b.pid}')" title="Avoid / un-avoid">🚫</button>
+        <button class="mk" onclick="openDetail('${b.pid}')" title="Player card">👁</button></span></div>
       <div class="read-row">
         <div class="read-stat"><span class="rs-lbl">Gain</span><span class="rs-val">+${b.gain}pts</span></div>
         ${survPct!=null?`<div class="read-stat"><span class="rs-lbl">Survival at p${call.myNext}</span><span class="surv-bar"><span class="surv-fill ${survCls(survPct)}" style="width:${survPct}%"></span></span><span class="rs-val">${survPct}%</span></div>`:''}
@@ -1538,12 +1561,20 @@ function renderTeam(){
       </div>
       <div class="why">${esc(b.reason)}</div>
       <div class="call-chips">${(b.chips||[]).map(ch=>`<span class="cchip ${chipCls(ch)}">${esc(ch)}</span>`).join('')}</div>
-      ${call.trials?`<div class="read-detail">${call.trials} simulated boards · window p${call.start}${call.myNext?` → p${call.myNext}`:''} · baseline: ${b.blMode} @ ${b.blPts} pts</div>`:''}
+      ${call.trials?`<div class="read-detail">${call.trials} simulated boards · window p${call.start}${call.myNext?` → p${call.myNext}`:''} · baseline: ${b.blMode} @ ${b.blPts} pts · score = ${(b.break||[]).map(x=>x.k+' '+x.v).join(' · ')}</div>`:''}
+      <div class="read-meta">ADP ${fmtADP(b.adp)} · b${b.bye||'—'} · ${b.pts}pts · VBD ${b.vbd!=null?b.vbd:'—'} · up ${b.up!=null?b.up:'—'} · risk ${b.risk!=null?b.risk:'—'}</div>
       <div class="call-alt">${call.alts.map(a=>{
         const ap = a.survival!=null ? Math.round(a.survival*100) : null;
-        return `<div class="alt-line"><b>${esc(a.p.n)}</b> <span class="pmeta">${esc(a.p.t)} · ${a.pos}</span> <span class="alt-gain">+${a.gain}pts</span>${ap!=null?` <span class="surv-mini"><span class="surv-fill ${survCls(ap)}" style="width:${ap}%"></span></span> ${ap}%`:''} <span class="alt-chips">${(a.chips||[]).map(ch=>esc(ch)).join(' · ')}</span></div>`;
+        return `<div class="alt-wrap"><div class="alt-line"><b>${esc(a.p.n)}</b> <span class="pmeta">${esc(a.p.t)} · ${a.pos}</span> <span class="alt-gain">+${a.gain}pts</span>${ap!=null?` <span class="surv-mini"><span class="surv-fill ${survCls(ap)}" style="width:${ap}%"></span></span> ${ap}%`:''}<span class="act-btns">
+          <button class="mk ${lg.stars.includes(String(a.pid))?'on':''}" onclick="starToggle('${a.pid}')" title="Star / unstar">⭐</button>
+          <button class="mk ${lg.avoid.includes(String(a.pid))?'on':''}" onclick="avoidToggle('${a.pid}')" title="Avoid / un-avoid">🚫</button>
+          <button class="mk" onclick="openDetail('${a.pid}')" title="Player card">👁</button></span></div>
+          <div class="alt-chips">${(a.chips||[]).map(ch=>esc(ch)).join(' · ')}</div>
+          <div class="read-meta">ADP ${fmtADP(a.adp)} · b${a.bye||'—'} · ${a.pts}pts · VBD ${a.vbd!=null?a.vbd:'—'} · up ${a.up!=null?a.up:'—'} · risk ${a.risk!=null?a.risk:'—'}</div></div>`;
       }).join('')}</div>
     </div>`;
+    const bls = $('blSel');
+    if(bls) bls.onchange = e=>{ UI.baselineMode = e.target.value; saveState(); render(); };
   } else {
     $('nextCall').innerHTML = `<div class="callbox"><div class="t">${lg.auction?'Budget tracker':'Sharingan read'}</div>
       <div style="font-size:12.5px;color:var(--mut)">${lg.auction ? 'Mark players drafted with their $ amount to track budget.' : 'Mark picks as they go — the read blends your roster, keepers, ADP, runs, and who still needs what, in real time.'}</div></div>`;
@@ -1739,16 +1770,20 @@ function sharinganRead(){
     const best = rows.filter(r=>available(r[0])).slice(0,2);
     for(const row of best){
       const p = playerByID(row[0]);
-      const filled = draftedAtPos(pos);
-      let baseline;
+      const myRosterPids = [...myDraftedEntries(), ...myKeptEntries()];
+      const filled = myRosterPids.map(pid=>playerByID(pid)).filter(p=>p&&p.p===pos);
       const need = filled.length < rosterSlots(pos);
-      if(need){ baseline = replacementBaseline(pos); }
+      let baseline, blLabel;
+      if(need){ baseline = replacementBaseline(pos); blLabel = 'replacement level'; }
       else {
-        const scores = filled.map(x=>playerScore(x.id, pos)).filter(v=>v!=null);
-        baseline = scores.length ? Math.min(...scores) : replacementBaseline(pos);
+        const scores = myRosterPids.filter(pid=>{ const pl=playerByID(pid); return !!(pl && pl.p===pos); }).map(pid=>playerScore(pid, pos)).filter(v=>Number.isFinite(v));
+        const mode = UI.baselineMode || 'worst';
+        if(mode === 'replacement' || !scores.length){ baseline = replacementBaseline(pos); blLabel = 'replacement level'; }
+        else if(mode === 'avg'){ baseline = scores.reduce((a,b)=>a+b,0)/scores.length; blLabel = 'avg starter'; }
+        else { baseline = Math.min(...scores); blLabel = 'worst starter'; }
       }
       const gain = (row[2] - injDelta(row[0])) - baseline;
-      candidates.push({pos, gain, row, p, need});
+      candidates.push({pos, gain, row, p, need, baseline, blLabel});
     }
   }
   if(!candidates.length) return null;
@@ -1765,7 +1800,7 @@ function sharinganRead(){
   const cliffs = {QB:tierCliff('QB'), RB:tierCliff('RB'), WR:tierCliff('WR'), TE:tierCliff('TE')};
 
   const scored = candidates.map(c => {
-    const {pos, gain, row, p, need} = c;
+    const {pos, gain, row, p, need, baseline, blLabel} = c;
     const chips = [need ? 'need' : 'upgrade'];
     // survival: probabilistic availability at my pick (Monte Carlo)
     let survival = 0.5, urgency = 30;
@@ -1830,7 +1865,7 @@ function sharinganRead(){
     if(byeB) chips.push(`bye clash b${p.b}`);
     const rookB = p.rb ? -15 : 0;
     if(rookB) chips.push('rookie');
-    return {pos, gain, row, p, need, urgency, survival, value, runBonus, snipe, tagB, fmtB, cliffB, mockB, star, upB, riskB, byeB, rookB, chips};
+    return {pos, gain, row, p, need, baseline, blLabel, urgency, survival, value, runBonus, snipe, tagB, fmtB, cliffB, mockB, star, upB, riskB, byeB, rookB, chips};
   });
 
   const maxGain = Math.max(...scored.map(c=>c.gain), 1);
@@ -1846,8 +1881,16 @@ function sharinganRead(){
   }
   scored.sort((a,b)=>b.score-a.score);
   const top = scored.slice(0,4);
-  const reason = c => `+${Math.round(c.gain)} pts over ${c.need?'replacement':'your worst starter'} ${c.pos} (${Math.round(c.baseline)} pts)`;
-  const mk = (c, n) => ({p:c.p, pid:c.row[0], reason:reason(c), chips:c.chips.slice(0,n), survival:c.survival, score:c.score, gain:Math.round(c.gain), pos:c.pos, need:c.need, blMode:c.need?'replacement level':'worst starter', blPts:Math.round(c.baseline)});
+  for(const c of top){
+    c.break = [
+      ['gain', c.gainN*.35], ['survival', c.urgency*.18], ['cliff', c.cliffB*.09], ['value', c.value*.08],
+      ['run', c.runBonus*.08], ['snipers', c.snipe*.06], ['tags', c.tagB*.05], ['format', c.fmtB*.04],
+      ['mocks', c.mockB*.03], ['star', c.star*.03], ['upside', c.upB*.02], ['bye', c.byeB*.02],
+      ['risk', c.riskB*.02], ['rookie', c.rookB*.01]
+    ].map(([k,v])=>({k, v:Math.round(v)})).filter(x=>x.v!==0).sort((a,b)=>b.v-a.v).slice(0,5);
+  }
+  const reason = c => `+${Math.round(c.gain)} pts over ${c.blLabel} ${c.pos} (${Math.round(c.baseline)} pts)`;
+  const mk = (c, n) => ({p:c.p, pid:c.row[0], reason:reason(c), chips:c.chips.slice(0,n), survival:c.survival, score:c.score, gain:Math.round(c.gain), pos:c.pos, need:c.need, blMode:c.blLabel, blPts:Math.round(c.baseline), break:c.break, adp:effAdp(c.p), bye:c.p.b, pts:Math.round(c.row[2]), vbd:vbdFor(c.p), up:c.p.up, risk:c.p.risk, tags:c.p.tags||{}});
   return {
     primary: mk(top[0], 7),
     alts: top.slice(1).map(c=>mk(c, 5)),
@@ -1855,6 +1898,9 @@ function sharinganRead(){
   };
 }
 function nextPickCall(){ return sharinganRead(); }
+/* quick star/avoid toggles for the read candidates (same state the board buttons use) */
+function starToggle(pid){ const lg=L(); pid=String(pid); lg.stars = lg.stars.includes(pid) ? lg.stars.filter(x=>x!==pid) : [...lg.stars, pid]; saveState(); render(); }
+function avoidToggle(pid){ const lg=L(); pid=String(pid); lg.avoid = lg.avoid.includes(pid) ? lg.avoid.filter(x=>x!==pid) : [...lg.avoid, pid]; saveState(); render(); }
 
 /* ---------------- DRAFT CONTEXT ---------------- */
 /* ---------------- DRAFT COMMAND EXTRA VIEWS (value, waivers, injury, rookies) ---------------- */
