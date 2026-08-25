@@ -176,6 +176,22 @@ td.marks{text-align:right;white-space:nowrap}
 .act-btns .mk:hover{border-color:var(--acc);color:var(--txt)}
 .act-btns .mk.on{background:rgba(233,177,76,.15);border-color:var(--gold)}
 .read-meta{font-size:10.5px;color:var(--dim);margin-top:1px}
+#pulseBar{display:none;flex-direction:column;gap:4px;background:rgba(77,163,255,.08);border:1px solid rgba(77,163,255,.35);border-radius:8px;padding:7px 10px;font-size:11px;line-height:1.45}
+#pulseBar .pulse-ev{display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+#pulseBar .pulse-t{color:var(--mut);font-size:10px}
+#pulseBar .pulse-d{color:var(--acc);font-size:10.5px}
+#pulseBar .pulse-clear{margin-left:auto;font-size:10px;color:var(--mut);cursor:pointer;border:1px solid var(--line2);border-radius:4px;padding:0 6px;background:var(--bg3)}
+.callbox.my-clock{animation:clockpulse 1.2s ease-in-out infinite}
+@keyframes clockpulse{0%,100%{border-color:rgba(77,163,255,.4);box-shadow:none}50%{border-color:rgba(245,166,35,.9);box-shadow:0 0 14px rgba(245,166,35,.35)}}
+.roast-card{border:1px solid var(--line2);border-radius:8px;padding:8px 10px;margin-bottom:8px;background:var(--bg3)}
+.roast-head{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.roast-head b{font-size:13px}
+.roast-sins{font-size:11px;color:var(--warn);margin:4px 0;line-height:1.5}
+.roast-body{font-size:12px;line-height:1.5;color:var(--txt);margin:4px 0}
+.roast-chirp{font-size:11.5px;color:var(--acc);font-style:italic}
+.roast-rec{font-size:10px;color:var(--dim);margin-top:4px}
+.cpy{border:1px solid var(--line2);border-radius:4px;padding:1px 7px;font-size:10.5px;cursor:pointer;color:var(--mut);background:var(--bg3);margin-left:auto}
+.cpy:hover{color:var(--txt);border-color:var(--acc)}
 .call-main{display:flex;align-items:center;gap:10px}
 .call-main .who{font-weight:800;font-size:15px}
 .call-main .why{font-size:12px;color:var(--mut);line-height:1.35}
@@ -590,6 +606,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
   <section class="panel" id="right">
     <div class="panel-head">Draft Command <span id="teamName" style="text-transform:none;color:var(--mut)"></span></div>
     <div id="rightBody">
+      <div id="pulseBar"></div>
       <button class="rv-h" data-rv="call"><span>🎯 Next Pick Call</span><span class="arr">▸</span></button>
       <div class="rv-body" id="rvCall"><div id="nextCall"></div></div>
       <button class="rv-h" data-rv="roster"><span>👥 My Roster</span><span class="arr">▸</span></button>
@@ -650,6 +667,13 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
       <div class="rv-body" id="rvRookie">
         <div class="block-title">Rookie board — debut-year targets</div>
         <div id="rookieBox2" class="ctxbox"></div>
+      </div>
+      <button class="rv-h" data-rv="roast"><span>💩 Trash Talk</span><span class="arr">▸</span></button>
+      <div class="rv-body" id="rvRoast">
+        <div class="block-title">League kickoff message</div>
+        <div id="kickoffBox" class="ctxbox"></div>
+        <div class="block-title">Draft autopsies — per manager</div>
+        <div id="roastBox" class="ctxbox"></div>
       </div>
     </div>
   </section>
@@ -714,7 +738,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 </main>
 
 <footer>
-  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b27a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b27a</span><br>
+  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b28a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b28a</span><br>
   <span style="opacity:.75">Data: Fantasy Footballers 2026 Ultimate Draft Kit (rankings computed with the UDK engine for your league scoring). Your draft state lives only in this browser.</span>
   <button class="btn ghost" id="exportBtn">Export state</button>
   <button class="btn ghost" id="importBtn">Import state</button>
@@ -1198,11 +1222,11 @@ function render(){
   if(mode === 'pre') renderPredraft();
   else if(mode === 'grid') renderSkeleton();
   else if(mode === 'news') renderNews();
-  else { renderBoard(); renderTeam(); renderContext(); renderDraftTools(); }
+  else { renderBoard(); renderTeam(); renderContext(); renderDraftTools(); renderPulse(); }
   renderRight();
 }
 function renderRight(){
-  const map = {call:'rvCall', roster:'rvRoster', scarcity:'rvScarcity', log:'rvLog', guys:'rvGuys', context:'rvContext', value:'rvValue', waivers:'rvWaivers', injury:'rvInjury', rookie:'rvRookie'};
+  const map = {call:'rvCall', roster:'rvRoster', scarcity:'rvScarcity', log:'rvLog', guys:'rvGuys', context:'rvContext', value:'rvValue', waivers:'rvWaivers', injury:'rvInjury', rookie:'rvRookie', roast:'rvRoast'};
   const o = UI.rightOpen || {};
   for(const k in map){
     const el = $(map[k]); if(!el) continue;
@@ -1575,6 +1599,9 @@ function renderTeam(){
     </div>`;
     const bls = $('blSel');
     if(bls) bls.onchange = e=>{ UI.baselineMode = e.target.value; saveState(); render(); };
+    // pulse when the clock lands on my pick — the callbox breathes
+    const cc = document.querySelector('#nextCall .callbox');
+    if(cc && !lg.auction){ const oc = onTheClockPick(); cc.classList.toggle('my-clock', !!oc && pickIsMine(oc)); }
   } else {
     $('nextCall').innerHTML = `<div class="callbox"><div class="t">${lg.auction?'Budget tracker':'Sharingan read'}</div>
       <div style="font-size:12.5px;color:var(--mut)">${lg.auction ? 'Mark players drafted with their $ amount to track budget.' : 'Mark picks as they go — the read blends your roster, keepers, ADP, runs, and who still needs what, in real time.'}</div></div>`;
@@ -1904,7 +1931,7 @@ function avoidToggle(pid){ const lg=L(); pid=String(pid); lg.avoid = lg.avoid.in
 
 /* ---------------- DRAFT CONTEXT ---------------- */
 /* ---------------- DRAFT COMMAND EXTRA VIEWS (value, waivers, injury, rookies) ---------------- */
-function renderDraftTools(){ renderValue(); renderWaivers(); renderInjury(); renderRookie(); }
+function renderDraftTools(){ renderValue(); renderWaivers(); renderInjury(); renderRookie(); renderRoast(); }
 
 function renderValue(){
   const steals = [], vbdList = [];
@@ -2004,6 +2031,104 @@ function renderRookie(){
   }).join('') || '<div class="hint">No rookies on the board.</div>';
 }
 
+/* ---------------- TRASH TALK ENGINE ---------------- */
+const ROAST_TEXTS = {};   // key -> text for the copy buttons
+function hashStr(s){ let h=7; for(let i=0;i<s.length;i++) h=(h*31 + s.charCodeAt(i))>>>0; return h; }
+const pickBy = (arr, seed, off) => arr[(hashStr(seed)+off) % arr.length];
+function teamPicks(team){
+  const lg = L();
+  const out = [];
+  for(const e of lg.log){ if(e.team === team){ const p = playerByID(e.pid); if(p) out.push({pid:e.pid, pickNum:e.pickNum, p}); } }
+  for(const pid in lg.keepers){ const k = normK(lg.keepers[pid]); if(k.team && k.team===team){ const p=playerByID(pid); if(p) out.push({pid, pickNum:(k.rnd-1)*lg.teams+(k.pk||1), p, keeper:true}); } }
+  out.sort((a,b)=>a.pickNum-b.pickNum);
+  return out;
+}
+function roastAnalysis(team){
+  const picks = teamPicks(team);
+  const reach=[], steals=[], risk=[], rookies=[], busts=[], byes={}, first={};
+  for(const pk of picks){
+    const p=pk.p; if(!p) continue;
+    const eff = effAdp(p);
+    if(eff!=null){ const gap = pk.pickNum - eff; if(gap>=12) reach.push({name:p.n, gap}); else if(gap<=-14) steals.push({name:p.n, gap}); }
+    if((p.risk||0)>=6.5) risk.push(p.n);
+    if(p.rb) rookies.push(p.n);
+    if(p.tags&&p.tags.bust) busts.push(p.n);
+    if(p.b) (byes[p.b]=byes[p.b]||[]).push(p.n);
+    if(first[p.p]==null) first[p.p]=pk.pickNum;
+  }
+  const clusters = Object.entries(byes).filter(([b,names])=>names.length>=3).sort((a,b)=>b[1].length-a[1].length);
+  const avgGap = picks.length ? Math.round(picks.reduce((a,pk)=>{ const eff=pk.p?effAdp(pk.p):null; return a+(eff!=null?pk.pickNum-eff:0); },0)/picks.length) : 0;
+  return {picks, reach, steals, risk, rookies, busts, clusters, first, avgGap};
+}
+function roastSins(a){
+  const s = [];
+  if(a.reach.length) s.push(`Reached ${a.reach[0].gap} picks early for ${a.reach[0].name}${a.reach.length>1?' — and '+(a.reach.length-1)+' more just like it':''}. The board was visible to everyone.`);
+  if(a.clusters.length) s.push(`${a.clusters[0][1].length} starters off on bye week ${a.clusters[0][0]} — one bad week and the whole squad is a skeleton crew.`);
+  if(a.risk.length>=2) s.push(`${a.risk.length} starters built from glass and hope (${a.risk.join(', ')}).`);
+  if(a.steals.length) s.push(`Even a stopped clock is right twice a day — the ${a.steals[0].name} steal proves it.`);
+  if(a.rookies.length>=3) s.push(`${a.rookies.length} rookies. Hope you love the waiver wire by October.`);
+  if(a.busts.length) s.push(`Took a guy the analysts are already apologizing for (${a.busts[0]}).`);
+  if(a.first.QB==null || a.first.QB>=60) s.push(`Didn't touch a QB until pick ${a.first.QB||'the very end'}. Bold. Wrong, but bold.`);
+  if(a.first.TE==null && a.avgGap>=6) s.push(`Zero TEs and an average ${a.avgGap}-spot reach per pick. A masterclass in losing with style.`);
+  if(!s.length) s.push('A clean draft. Suspicious. Nobody in this league drafts clean.');
+  return s;
+}
+function roastChirp(a, team){
+  const ch = [];
+  if(a.reach.length) ch.push(`Enjoy ${a.reach[0].name} at the cost of 12 of your friends' respect.`);
+  if(a.clusters.length) ch.push(`Week ${a.clusters[0][0]} is going to hit like a truck. Hope the bench is deep.`);
+  if(a.risk.length>=2) ch.push('Stock up on ice packs and prayers.');
+  if(a.avgGap>=8) ch.push('The board was not the problem. You were.');
+  if(a.rookies.length>=3) ch.push('The waiver wire sends its regards.');
+  if(a.first.QB==null) ch.push('No quarterback, no problem. That is a lie.');
+  if(!ch.length) ch.push('See you Week 1. Bring the whole team.');
+  return pickBy(ch, team, 0);
+}
+function kickoffMessage(){
+  const lg = L();
+  const teams = managers().filter(t=>teamPicks(t).length);
+  const chirps = teams.map(t=>{
+    const a = roastAnalysis(t);
+    const h = (lg.handles||{})[t];
+    return `• ${t}${h?' ('+h+')':''}: ${roastChirp(a, t)}`;
+  });
+  const body = chirps.length ? chirps.join('\n') : '• Nobody has made a pick yet. The silence is deafening — and frankly, the best draft any of you have had.';
+  return `⚔️ ${lg.name} — Week 1 kickoff\n\nTo every manager who thought this draft was a good idea:\n\n${body}\n\nGood luck. You're going to need it.\n\n— the Sharingan sees everything`;
+}
+function renderRoast(){
+  const lg = L();
+  const teams = managers().filter(t=>teamPicks(t).length);
+  const kb = $('kickoffBox');
+  if(kb){
+    const msg = kickoffMessage();
+    ROAST_TEXTS.kickoff = msg;
+    kb.innerHTML = `<div style="white-space:pre-wrap;font-size:12px;line-height:1.55">${esc(msg)}</div>
+      <div style="display:flex;justify-content:flex-end;margin-top:4px"><button class="cpy" onclick="copyTextById('kickoff', this)">Copy</button></div>`;
+  }
+  const rb = $('roastBox');
+  if(!rb) return;
+  if(!teams.length){ rb.innerHTML = '<div class="hint">Mark picks as the draft happens and I\'ll autopsy every reach, bye-week minefield, and rookie you\'ll cut by October.</div>'; return; }
+  rb.innerHTML = teams.map(t=>{
+    const a = roastAnalysis(t);
+    const h = (lg.handles||{})[t];
+    const sins = roastSins(a);
+    const chirp = roastChirp(a, t);
+    ROAST_TEXTS[t] = chirp;
+    const rec = `${a.picks.length} picks · avg gap ${a.avgGap>=0?'+':''}${a.avgGap} vs ADP · ${a.clusters.length} bye clusters · ${a.risk.length} risky · ${a.rookies.length} rookies`;
+    return `<div class="roast-card">
+      <div class="roast-head"><b>${esc(t)}</b>${h?` <span class="pmeta">${esc(h)}</span>`:''}<button class="cpy" onclick="copyTextById('${esc(t)}', this)">Copy</button></div>
+      <div class="roast-sins">${sins.map(esc).join(' ')}</div>
+      <div class="roast-chirp">"${esc(chirp)}"</div>
+      <div class="roast-rec">${rec}</div>
+    </div>`;
+  }).join('');
+}
+function copyTextById(key, btn){
+  const t = ROAST_TEXTS[key] || '';
+  const done = ()=>{ if(btn){ btn.textContent='✓ Copied'; setTimeout(()=>{ btn.textContent='Copy'; }, 1200); } };
+  const fb = ()=>{ try{ const ta=document.createElement('textarea'); ta.value=t; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }catch(e){} done(); };
+  if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(t).then(done).catch(fb); } else fb();
+}
 function renderContext(){
   const lg = L();
   // log
@@ -2095,12 +2220,57 @@ function findRank(pid){
 }
 
 /* ---------------- draft actions ---------------- */
+/* ---------------- LIVING READ PULSE ---------------- */
+/* snapshot of the read's key numbers before/after a pick, so every selection
+   reports what it actually changed (survival swings, cliffs, scarcity) */
+function readSnapshot(){
+  const snap = {cands:{}, cliffs:{}, gone:{}};
+  const call = sharinganRead();
+  if(!call) return snap;
+  for(const c of [call.primary, ...call.alts]) if(c && c.pid) snap.cands[c.pid] = c.survival;
+  for(const pos of ['QB','RB','WR','TE']){
+    snap.cliffs[pos] = tierCliff(pos);
+    const tops = pos==='QB' ? ((L().roster.SFLEX||0)>0?18:12) : pos==='RB'?24 : pos==='WR'?36 : 12;
+    snap.gone[pos] = posRows(pos).slice(0, tops).filter(r=>isDrafted(r[0])).length;
+  }
+  return snap;
+}
+function pickEvent(prev, pid, team, pickNum, remove){
+  const next = readSnapshot();
+  const deltas = [];
+  for(const cpid in prev.cands){
+    const a = prev.cands[cpid], b = next.cands[cpid];
+    if(a==null || b==null) continue;
+    const d = Math.round((b-a)*100);
+    if(Math.abs(d) >= 15){ const p = playerByID(cpid); deltas.push(`${p?p.n:cpid} ${Math.round(a*100)}→${Math.round(b*100)}%`); }
+  }
+  for(const pos of ['QB','RB','WR','TE']){
+    const dc = (next.cliffs[pos]||0) - (prev.cliffs[pos]||0);
+    if(Math.abs(dc) >= 8) deltas.push(`${pos} cliff ${prev.cliffs[pos]||0}→${next.cliffs[pos]||0}pts`);
+    const dg = (next.gone[pos]||0) - (prev.gone[pos]||0);
+    if(dg >= 2) deltas.push(`${pos} ${next.gone[pos]}/${pos==='RB'?24:pos==='WR'?36:pos==='TE'?12:((L().roster.SFLEX||0)>0?18:12)} gone`);
+  }
+  const name = playerByID(pid)?.n || pid;
+  return {head: `${remove?'↩':'⚡'} ${name} ${remove?'unpicked':pickLabel(pickNum)} · ${team}`, deltas: deltas.slice(0,4), ts: Date.now()};
+}
+function renderPulse(){
+  const bar = $('pulseBar'); if(!bar) return;
+  const evs = (UI.pulse && UI.pulse.events) || [];
+  if(!evs.length){ bar.style.display = 'none'; return; }
+  bar.style.display = 'flex';
+  const ago = ts => { const m = Math.round((Date.now()-ts)/60000); return m<1 ? 'just now' : m+'m ago'; };
+  bar.innerHTML = evs.map(ev=>`<div class="pulse-ev"><span class="pulse-t">${esc(ev.head)}</span>${ev.deltas.length?`<span class="pulse-d">${esc(ev.deltas.join(' · '))}</span>`:''}<span class="pulse-t">${ago(ev.ts)}</span></div>`).join('') + '<button class="pulse-clear" title="Clear pulse">✕</button>';
+  bar.querySelector('.pulse-clear').onclick = ()=>{ UI.pulse = {events:[]}; saveState(); render(); };
+}
 function markDrafted(pid, amount, remove, who){
   const lg = L();
+  const prev = readSnapshot();
   if(remove || lg.drafted[pid]){
     const entry = lg.drafted[pid];
     delete lg.drafted[pid];
     if(entry && entry.pickNum) lg.log = lg.log.filter(e=>!(e.pid===pid && e.pickNum===entry.pickNum));
+    const ev = pickEvent(prev, pid, entry?entry.team:'?', entry?entry.pickNum:null, true);
+    UI.pulse = {events:[ev, ...(UI.pulse&&UI.pulse.events||[])].slice(0,3)};
     saveState(); render(); return;
   }
   const pickNum = onTheClockPick();
@@ -2110,6 +2280,8 @@ function markDrafted(pid, amount, remove, who){
   }
   lg.drafted[pid] = { pick: pickLabel(pickNum), pickNum, team, amount: amount||null };
   lg.log.push({pickNum, team, pid, amount: amount||null});
+  const ev = pickEvent(prev, pid, team, pickNum, false);
+  UI.pulse = {events:[ev, ...(UI.pulse&&UI.pulse.events||[])].slice(0,3)};
   saveState(); render();
   toast(`Pick #${pickNum} — ${playerByID(pid).n} · ${team}`);
 }

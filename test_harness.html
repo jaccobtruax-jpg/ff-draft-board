@@ -385,7 +385,7 @@ f.onload = () => {
       d.querySelector('#modeToggle button[data-mode="day"]').click();
       log('skeleton: back to draft day', d.querySelector('#main').style.display !== 'none');
       // ============ DRAFT COMMAND (accordion panel) ============
-      log('right: accordion has 10 sections', d.querySelectorAll('.rv-h').length === 10);
+      log('right: accordion has 11 sections', d.querySelectorAll('.rv-h').length === 11);
       log('right: call/roster/scarcity/log open by default', d.querySelector('#rvCall').style.display !== 'none' && d.querySelector('#rvRoster').style.display !== 'none' && d.querySelector('#rvScarcity').style.display !== 'none' && d.querySelector('#rvLog').style.display !== 'none' && d.querySelector('#rvContext').style.display === 'none');
       log('right: call shows read detail (sims + baseline)', /simulated boards/.test(d.querySelector('.read-detail').textContent) && /baseline/.test(d.querySelector('.read-detail').textContent));
       log('right: call has no NaN baseline', !/NaN/.test(d.querySelector('#nextCall').textContent));
@@ -425,6 +425,22 @@ f.onload = () => {
       rbC = d16.sharinganRead().scored.filter(x=>x.pos==='RB' && !x.need)[0];
       log('right: replacement baseline uses replacement level', !!rbC && rbC.blLabel === 'replacement level' && Number.isFinite(rbC.baseline));
       d16.ui.baselineMode = 'worst'; lg16.drafted = {}; d16.render();
+      // living pulse: every pick reports what it changed
+      const topRows = d16.data.rankings['TE PREM (4pt QB)'].top200;
+      const pA = topRows[0][0], pB = topRows[1][0];
+      d16.markDrafted(pA, null, false, 'Gare-e Bears');
+      log('pulse: pick fires a research pulse', d.querySelector('#pulseBar').style.display !== 'none' && /Gare-e Bears/.test(d.querySelector('#pulseBar').textContent) && /⚡/.test(d.querySelector('#pulseBar').textContent));
+      d16.markDrafted(pA, null, true);
+      log('pulse: undo reports the reversal', /unpicked/.test(d.querySelector('#pulseBar').textContent));
+      // trash talk engine
+      d16.markDrafted(pA, null, false, 'Gare-e Bears');
+      d16.markDrafted(pB, null, false, 'Mothership');
+      d16.render();
+      log('trash talk: manager cards render for teams with picks', d.querySelectorAll('#roastBox .roast-card').length >= 2);
+      log('trash talk: kickoff message names the league', /League of Champs/.test(d.querySelector('#kickoffBox').textContent) && /kickoff/i.test(d.querySelector('#kickoffBox').textContent) && /Good luck/.test(d.querySelector('#kickoffBox').textContent));
+      log('trash talk: cards carry a chirp + record line', /".+"/.test(d.querySelector('#roastBox').textContent) && /avg gap/.test(d.querySelector('#roastBox').textContent));
+      log('trash talk: copy buttons present', d.querySelectorAll('#roastBox .cpy').length >= 2 && !!d.querySelector('#kickoffBox .cpy'));
+      lg16.drafted = {}; lg16.log = []; d16.render();
       // ============ NEWS & INJECTION ============
       lgR.drafted = {}; lgR.log = []; dq.render();
       d.querySelector('#modeToggle button[data-mode="news"]').click();
