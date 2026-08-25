@@ -21,7 +21,10 @@ Draft-day companion board for Jaccob's two leagues, built on the Fantasy Footbal
 - `index.html` — the app (single page, vanilla JS, no build step)
 - **Keeper league support** — declared keepers are seeded from the real Sleeper locks (League of Champs: Flowers/Pitts, Pickens/Loveland, Javonte/Achane, Bowers/Cook, Rice/JSN with their round.pick and team). Kept players count as taken (hidden, excluded from recommendations, fill needs/roster), the Managers panel shows each team's keeps, and you can mark/remove keepers from any player's modal (round.pick + team). Reset keeps declared keepers.
 - **My Team is *your* team** — roster/needs now count only picks attributed to you (plus your keepers), so live-mode tracking of the whole board can't pollute your roster view.
-- `test_harness.html` — in-browser smoke test, **78 checks** (open it, PASS/FAIL list renders)
+- **Itachi / Sharingan theme** — black-crimson palette, CSS-drawn Sharingan logo (spins when Draft is live → Mangekyō), "i see everything" branding.
+- **Data fully used** — keeper-adjusted ADP ("eff" under ADP: real availability with 10 players already off the board), upside ▲ on every row + Upside sort, VBD (value-over-replacement) sort + modal stat, UDK auction $ values in the modal + Auction $ sort, searchable full injury report, and the UDK analysis notes (free agency, etc.) now surfaced.
+- **Offline draft-day mode** — service worker (`sw.js`) caches the app + data after first visit; no wifi, no problem at the draft venue. Mobile polish: header wraps, Δ/Risk columns hide on narrow screens.
+- `test_harness.html` — in-browser smoke test, **89 checks** (open it, PASS/FAIL list renders)
 - `data/board.json` — all player/ranking data (~660KB)
 - `data/mocks.json` — mock-draft corpus for the Pre-Draft page (bundled SAMPLE mocks; override via in-app import)
 - `build/` — the scripts that scraped the UDK site and built board.json, plus `build_mocks.py` (converts mock exports → mocks.json, name-matches players, joins ADP)

@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2026 Draft Board — Fantasy Footballers UDK</title>
+<title>Sharingan Draft Board — 2026 FFB UDK</title>
 <style>
 :root{
-  --bg:#0e1116; --bg2:#151a22; --bg3:#1c232e; --line:#2a3340; --line2:#364150;
-  --txt:#e8edf3; --mut:#9aa7b5; --dim:#6b7684;
-  --acc:#4da3ff; --acc2:#7c5cff;
-  --gold:#f5c542; --silv:#aab6c5; --bron:#c98a4b;
-  --rb:#4da3ff; --wr:#4fce7a; --qb:#f5a623; --te:#ff6b8a; --flex:#7c5cff; --dst:#8a9bb0; --k:#b8c4d4;
-  --good:#4fce7a; --bad:#ff5f56; --warn:#f5a623;
-  --shadow:0 4px 24px rgba(0,0,0,.45);
+  --bg:#0b0608; --bg2:#170b11; --bg3:#230f18; --line:#3c1622; --line2:#571f30;
+  --txt:#f4e7ec; --mut:#b58a97; --dim:#7e5564;
+  --acc:#ff3b5c; --acc2:#c1121f;
+  --gold:#e9b14c; --silv:#aab6c5; --bron:#c98a4b;
+  --rb:#4da3ff; --wr:#4fce7a; --qb:#f5a623; --te:#ff6b8a; --flex:#c1121f; --dst:#8a9bb0; --k:#b8c4d4;
+  --good:#4fce7a; --bad:#ff6a5e; --warn:#f5a623;
+  --shadow:0 4px 24px rgba(120,10,30,.4);
   --rad:10px;
   --header-h:56px;
 }
@@ -40,7 +40,7 @@ a{color:var(--acc);text-decoration:none}
 .lg-toggle{display:flex;background:var(--bg2);border:1px solid var(--line);border-radius:8px;overflow:hidden}
 .lg-toggle button{padding:6px 12px;font-weight:700;font-size:13px;color:var(--mut);border-right:1px solid var(--line)}
 .lg-toggle button:last-child{border-right:none}
-.lg-toggle button.on{background:var(--acc);color:#08131f}
+.lg-toggle button.on{background:var(--acc);color:#1a0408}
 #needChips{display:flex;gap:6px;flex-wrap:wrap;flex:1;min-width:0;overflow:hidden}
 .need-chip{font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:20px;background:var(--bg3);border:1px solid var(--line);color:var(--mut);white-space:nowrap}
 .need-chip.missing{background:rgba(255,95,86,.14);border-color:rgba(255,95,86,.45);color:var(--bad)}
@@ -78,7 +78,7 @@ section.panel{
 #board .tools{display:flex;gap:8px;align-items:center;padding:8px 12px;border-bottom:1px solid var(--line);flex-wrap:wrap}
 .tabs{display:flex;gap:4px}
 .tabs button{padding:4px 11px;border-radius:6px;font-weight:700;font-size:12.5px;color:var(--mut);background:var(--bg3);border:1px solid var(--line)}
-.tabs button.on{background:var(--acc);color:#08131f;border-color:var(--acc)}
+.tabs button.on{background:var(--acc);color:#1a0408;border-color:var(--acc)}
 .tabs button .cnt{opacity:.7;font-size:10.5px;margin-left:3px}
 .sort-wrap{display:flex;align-items:center;gap:6px;margin-left:auto}
 .sort-wrap .lab{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px}
@@ -244,7 +244,7 @@ td.marks{text-align:right;white-space:nowrap}
 .modal-head .x{margin-left:auto;font-size:20px;color:var(--mut)}
 .modal-body{padding:14px 16px}
 .modal-foot{padding:12px 16px;border-top:1px solid var(--line);display:flex;gap:8px;justify-content:flex-end}
-.btn{background:var(--acc);color:#08131f;font-weight:800;padding:8px 16px;border-radius:8px;font-size:13px}
+.btn{background:var(--acc);color:#1a0408;font-weight:800;padding:8px 16px;border-radius:8px;font-size:13px}
 .btn.ghost{background:var(--bg3);color:var(--txt);border:1px solid var(--line2)}
 .btn.danger{background:rgba(255,95,86,.15);color:var(--bad);border:1px solid rgba(255,95,86,.4)}
 .frm{display:flex;flex-direction:column;gap:8px}
@@ -295,6 +295,45 @@ body.live #liveBar{display:flex}
 .qk-take:hover{background:rgba(255,95,86,.3)}
 tr.drafted .qk-take{opacity:.35;pointer-events:none}
 .live-note{font-size:11px;font-weight:700;color:var(--warn)}
+
+/* ============ ITACHI / SHARINGAN THEME ============ */
+body{background:radial-gradient(1100px 460px at 50% -140px, rgba(193,18,31,.17), transparent 62%), var(--bg)}
+#topbar{background:rgba(11,6,8,.92);border-bottom:1px solid var(--line)}
+#topbar .logo{display:flex;align-items:center;gap:8px}
+.sharingan{flex:0 0 auto;filter:drop-shadow(0 0 6px rgba(255,59,92,.55))}
+body.live .sharingan{animation:tomoeSpin 3.2s linear infinite}
+@keyframes tomoeSpin{to{transform:rotate(360deg)}}
+.callbox{background:linear-gradient(135deg,rgba(255,59,92,.14),rgba(193,18,31,.1));border:1px solid rgba(255,59,92,.45)}
+.callbox .t{color:var(--acc)}
+.sc-fill{background:linear-gradient(90deg,#ff3b5c,#c1121f)}
+#intelBar{background:linear-gradient(180deg,rgba(255,59,92,.07),transparent)}
+#intelBar .ib-status .clock{color:var(--acc)}
+#liveBar{background:rgba(193,18,31,.16);border-bottom:1px solid rgba(255,59,92,.5);box-shadow:0 2px 18px rgba(193,18,31,.28)}
+#liveBar .lb-mode{font-weight:900;color:#ff8a80;letter-spacing:1.2px;font-size:10.5px;text-transform:uppercase;white-space:nowrap}
+.modal{box-shadow:0 6px 34px rgba(120,10,30,.5)}
+.tier-4,.tier-5,.tier-6{background:rgba(255,59,92,.1);color:var(--acc);border:1px solid rgba(255,59,92,.35)}
+.tag-value{background:rgba(255,59,92,.14);color:var(--acc)}
+table.heat td.h1{background:rgba(255,59,92,.16);color:#ffd9e0}
+table.heat td.h2{background:rgba(255,59,92,.34);color:#ffeef2}
+table.heat td.h3{background:rgba(193,18,31,.55);color:#fff}
+table.heat td.h4{background:rgba(233,177,76,.45);color:#241c05}
+/* keeper-adjusted ADP + upside + injury/UDK notes */
+.adp-adj{display:block;font-size:9.5px;color:var(--dim);font-weight:700;letter-spacing:.2px}
+.ups{display:inline-block;font-size:10px;font-weight:800;margin-left:5px;padding:0 4px;border-radius:4px}
+.ups.up-hi{color:var(--good);background:rgba(79,206,122,.12)}
+.ups.up-mid{color:var(--warn);background:rgba(245,166,35,.12)}
+.ups.up-lo{color:var(--dim);background:var(--bg3)}
+.injury-filter{width:100%;background:var(--bg3);border:1px solid var(--line2);border-radius:6px;padding:5px 9px;font-size:12px;margin-bottom:6px}
+.udk-note{margin-bottom:8px}
+.udk-note h4{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--acc);margin-bottom:3px}
+/* mobile draft-day polish */
+@media (max-width:700px){
+  #topbar{gap:8px;padding:6px 8px;flex-wrap:wrap;height:auto}
+  #topbar .logo{font-size:13px}
+  #pickBox .lab{display:none}
+  .panel-head{top:0}
+  #boardBody th:nth-child(7),#boardBody td:nth-child(7),#boardBody th:nth-child(8),#boardBody td:nth-child(8){display:none}
+}
 
 /* ============ PRE-DRAFT VIEW ============ */
 #predraft{display:flex;flex-direction:column;gap:12px;padding:12px}
@@ -383,7 +422,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 <body>
 
 <header id="topbar">
-  <div class="logo">2026 <b>Draft&nbsp;Board</b> <span>· FFB UDK</span></div>
+  <div class="logo"><svg class="sharingan" viewBox="0 0 32 32" width="24" height="24" aria-hidden="true"><defs><radialGradient id="sg" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff5c77"/><stop offset="55%" stop-color="#c1121f"/><stop offset="100%" stop-color="#7a0d16"/></radialGradient></defs><circle cx="16" cy="16" r="13" fill="url(#sg)"/><circle cx="16" cy="16" r="13" fill="none" stroke="#120608" stroke-width="1.6" opacity=".85"/><circle cx="16" cy="16" r="3.4" fill="#120608"/><g fill="#120608"><circle cx="16" cy="7.2" r="1.7"/><circle cx="23.4" cy="13.8" r="1.7"/><circle cx="8.6" cy="13.8" r="1.7"/></g></svg><span>Sharingan <b>Draft&nbsp;Board</b></span> <span>· i see everything</span></div>
   <div class="mode-toggle" id="modeToggle">
     <button data-mode="day">⚡ Draft&nbsp;Day</button>
     <button data-mode="pre">📊 Pre-Draft</button>
@@ -398,7 +437,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
   </div>
   <button id="gearBtn" title="Settings">⚙</button>
 </header>
-<div id="liveBar"><span class="lb-clock">🔴 Pick&nbsp;<span id="lbPickN">1</span></span><span class="lb-team" id="lbTeam">—</span><span class="lb-next" id="lbNext"></span></div>
+<div id="liveBar"><span class="lb-mode">Mangekyō</span><span class="lb-clock">Pick&nbsp;<span id="lbPickN">1</span></span><span class="lb-team" id="lbTeam">—</span><span class="lb-next" id="lbNext"></span></div>
 
 <main id="main">
   <!-- ============ BOARD ============ -->
@@ -416,6 +455,9 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
           <option value="adp">ADP</option>
           <option value="value">Value Δ</option>
           <option value="pts">FFB points</option>
+          <option value="vbd">VBD</option>
+          <option value="upside">Upside</option>
+          <option value="auction">Auction $</option>
         </select>
       </div>
       <input id="searchBox" type="text" placeholder="Search player…  ( / )">
@@ -469,6 +511,8 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
       <div id="rookieBox" style="display:none"></div>
       <button class="expander" data-x="injuryBox"><span>Injury report</span><span class="arr">▶</span></button>
       <div id="injuryBox" style="display:none"></div>
+      <button class="expander" data-x="udkBox"><span>UDK analysis notes</span><span class="arr">▶</span></button>
+      <div id="udkBox" style="display:none"></div>
       <button class="expander" data-x="notesBox"><span>League notes</span><span class="arr">▶</span></button>
       <div id="notesBox" style="display:none">
         <textarea id="notesArea" placeholder="Pre-draft thoughts, reach targets, league quirks…"></textarea>
@@ -497,8 +541,8 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 </main>
 
 <footer>
-  Data: Fantasy Footballers 2026 Ultimate Draft Kit (rankings computed with the UDK engine for your league scoring).
-  Your draft state lives only in this browser. 
+  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything.<br>
+  <span style="opacity:.75">Data: Fantasy Footballers 2026 Ultimate Draft Kit (rankings computed with the UDK engine for your league scoring). Your draft state lives only in this browser.</span>
   <button class="btn ghost" id="exportBtn">Export state</button>
   <button class="btn ghost" id="importBtn">Import state</button>
 </footer>
@@ -598,7 +642,7 @@ function defaultLeague(i){
   };
 }
 const LEAGUES = [defaultLeague(0), defaultLeague(1)];
-window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, managers, render, renderPredraft, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers});
+window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, managers, render, renderPredraft, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap});
 function saveState(){ localStorage.setItem(LS_KEY, JSON.stringify({leagues: LEAGUES, ui: UI})); }
 function loadState(){
   try{
@@ -632,6 +676,43 @@ function adpFor(p, cat){
   const r = L().roster;
   if((r.SFLEX||0) > 0 || (r.QB||0) > 1) return p.adp_q != null ? p.adp_q : (p.adp_h != null ? p.adp_h : p.adp);
   return cat==='ppr'?p.adp_p : cat==='std'?p.adp : (p.adp_h!=null?p.adp_h:p.adp);
+}
+/* ---------------- data utilization helpers ---------------- */
+function cleanHtml(s){
+  return String(s||'').replace(/<[^>]*>/g,' ').replace(/&nbsp;/g,' ').replace(/&#8211;|&ndash;/g,'–')
+    .replace(/&#8217;|&rsquo;/g,"'").replace(/&#8220;|&ldquo;/g,'"').replace(/&#8221;|&rdquo;/g,'"')
+    .replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/\s+/g,' ').trim();
+}
+/* keeper-adjusted ADP: with N keepers whose ADP is earlier, a player effectively comes off the board earlier */
+function effAdp(p){
+  const adp = adpFor(p, scoringCat()); if(adp==null) return null;
+  const lg = L(); const n = Object.keys(lg.keepers).length; if(!n) return adp;
+  let before = 0;
+  for(const pid in lg.keepers){ const kp = playerByID(pid); if(!kp) continue;
+    const ka = adpFor(kp, scoringCat()); if(ka!=null && ka < adp) before++; }
+  return Math.max(1, Math.round((adp - before)*10)/10);
+}
+/* value over replacement: projected pts minus the baseline player at each position (SF: QB18/RB24/WR36/TE12) */
+function vbdBaselines(){
+  const rows = (DATA.rankings[L().scoring]||{}).top200 || [];
+  const posTop = {QB:[],RB:[],WR:[],TE:[]};
+  for(const r of rows){ const p = playerByID(r[0]); if(!p || !posTop[p.p]) continue; posTop[p.p].push(r[2]); }
+  const base = {QB:(L().roster.SFLEX||0)>0 ? 18 : 12, RB:24, WR:36, TE:12};
+  const out = {};
+  for(const pos of ['QB','RB','WR','TE']){ const a = posTop[pos]; out[pos] = a.length > base[pos] ? a[base[pos]] : (a[a.length-1]||0); }
+  return out;
+}
+function vbdFor(p){
+  const b = vbdBaselines(); if(b[p.p]==null) return null;
+  const rows = (DATA.rankings[L().scoring]||{}).top200 || [];
+  const r = rows.find(x=>x[0]===p.id);
+  return r ? Math.round(r[2] - b[p.p]) : null;
+}
+function auctionMap(){
+  const r = (DATA.rankings[L().scoring]||{}).auction || {};
+  const m = {};
+  for(const pos of Object.keys(r)) for(const row of r[pos]) m[row[0]] = row[1];
+  return m;
 }
 function isDrafted(id){ return !!L().drafted[id] || !!L().keepers[id]; }
 /* keepers: {pid: {rnd, pk, team}} (legacy: pid -> round-string) */
@@ -959,6 +1040,9 @@ function renderBoard(){
   if(srt==='adp') view.sort((a,b)=> (adpFor(playerByID(a[0]),cat)||999)-(adpFor(playerByID(b[0]),cat)||999));
   else if(srt==='value') view.sort((a,b)=> valOf(b)-valOf(a));
   else if(srt==='pts') view.sort((a,b)=> b[2]-a[2]);
+  else if(srt==='vbd') view.sort((a,b)=> (vbdFor(playerByID(b[0]))??-999)-(vbdFor(playerByID(a[0]))??-999));
+  else if(srt==='upside') view.sort((a,b)=> (playerByID(b[0]).up||0)-(playerByID(a[0]).up||0));
+  else if(srt==='auction'){ const am=auctionMap(); view.sort((a,b)=> (am[b[0]]||0)-(am[a[0]]||0)); }
   else view.sort((a,b)=> a[1]-b[1]);
 
   // render with tier bands (only for ffb sort + position views)
@@ -988,8 +1072,12 @@ function rowHTML(r, idx, val){
   const cat = scoringCat();
   const adp = adpFor(p, cat);
   const adpF = fmtADP(adp);
+  const eff = effAdp(p);
+  const adjHtml = (eff!=null && Object.keys(lg.keepers).length && Math.abs(eff-adp) > 0.009)
+    ? `<span class="adp-adj" title="ADP ${fmtADP(adp)} — ${Object.keys(lg.keepers).length} keepers come off the board before this pick">eff ${fmtADP(eff)}</span>` : '';
   const risk = r[3] != null ? r[3] : p.risk;
   const riskCls = risk==null ? '' : risk<4 ? 'risk-low' : risk<6.5 ? 'risk-mid' : 'risk-hi';
+  const upCls = p.up==null ? '' : p.up>=7 ? 'up-hi' : p.up>=5 ? 'up-mid' : 'up-lo';
   const drafted = !!lg.drafted[r[0]] || !!lg.keepers[r[0]];
   const keeper = lg.keepers[r[0]];
   const mine = lg.stars.includes(r[0]);
@@ -1006,10 +1094,10 @@ function rowHTML(r, idx, val){
   return `<tr class="player ${drafted?'drafted':''} ${keeper?'keeper':''} ${mine?'mine':''}" data-id="${r[0]}">
     <td class="tier"><span class="tierbadge tier-${r[3]}">${r[3]}</span></td>
     <td class="rank">${r[1]}</td>
-    <td><span class="pname">${esc(p.n)}</span> <span class="pmeta">${esc(p.t)} · bye ${p.b||'—'}</span><br>${tagHtml}</td>
+    <td><span class="pname">${esc(p.n)}</span> <span class="pmeta">${esc(p.t)} · bye ${p.b||'—'}${p.up!=null?`<span class="ups ${upCls}" title="Upside ${p.up}/10">▲${p.up}</span>`:''}</span><br>${tagHtml}</td>
     <td><span class="posdot pos-${posCls}">${p.p}</span></td>
     <td class="num score">${r[2]}</td>
-    <td class="num adp">${adpF}</td>
+    <td class="num adp">${adpF}${adjHtml}</td>
     <td class="num">${valHtml}</td>
     <td class="num"><span class="riskdot ${riskCls}"></span></td>
     <td class="marks">${marks}</td>
@@ -1228,7 +1316,24 @@ function renderContext(){
   }).join('') + '</div>';
   $('rookieBox').querySelectorAll('[data-rk]').forEach(b=> b.onclick=()=>openDetail(b.dataset.rk));
   // injury
-  $('injuryBox').innerHTML = DATA.injury_text ? `<div class="ctxbox" style="max-height:260px;overflow-y:auto;font-size:12px;color:var(--mut);line-height:1.5">${esc(DATA.injury_text.slice(0,4000))}</div>` : '<div class="empty">No injury data.</div>';
+  // injury (searchable — full report, not the first 4KB)
+  $('injuryBox').innerHTML = DATA.injury_text ? `<input class="injury-filter" id="injuryFilter" placeholder="Filter injury notes… (e.g. Achilles, knee, holdout)">
+    <div class="ctxbox" style="max-height:280px;overflow-y:auto;font-size:12px;color:var(--mut);line-height:1.5" id="injuryList"></div>` : '<div class="empty">No injury data.</div>';
+  const injList = $('injuryList');
+  const renderInjury = q => {
+    const lines = (DATA.injury_text||'').split(/\n+/).map(cleanHtml).filter(Boolean);
+    const ql = (q||'').trim().toLowerCase();
+    const hits = ql ? lines.filter(l=>l.toLowerCase().includes(ql)) : lines;
+    injList.innerHTML = hits.slice(0,250).map(l=>`<div style="margin-bottom:5px">${esc(l)}</div>`).join('') + (hits.length>250?`<div style="color:var(--dim)">… ${hits.length-250} more matches</div>`:'');
+  };
+  renderInjury('');
+  const injF = $('injuryFilter');
+  if(injF) injF.addEventListener('input', e=>renderInjury(e.target.value));
+  // UDK analysis notes (free agency review, etc. from the UDK site)
+  const udkN = DATA.notes||{};
+  $('udkBox').innerHTML = Object.keys(udkN).length
+    ? Object.entries(udkN).map(([k,v])=>`<div class="udk-note"><h4>${esc(k.replace(/_/g,' '))}</h4><div class="ctxbox" style="max-height:180px;overflow-y:auto;font-size:11.5px;color:var(--mut);line-height:1.45">${esc(cleanHtml(String(v)).slice(0,2600))}</div></div>`).join('')
+    : '<div class="empty">No UDK notes.</div>';
   // notes
   $('notesArea').value = lg.notes;
   renderManagers();
@@ -1287,12 +1392,15 @@ function openDetail(pid){
   const val = (adpRank && rank) ? adpRank - rank : 0;
   const valCls = val>0?'valplus':val<0?'valminus':'';
   const valTxt = val===0?'±0 vs ADP':(val>0?'+'+val+' vs ADP':val+' vs ADP');
+  const vbd = vbdFor(p); const am = auctionMap();
   $('ddQuick').innerHTML =
     `<span class="big">#${rank||'—'} ${p.p}</span>`+
     `<span class="qk">Tier ${tier||'—'}</span>`+
     (score!=null?`<span class="qk">${score} pts</span>`:'')+
+    (vbd!=null?`<span class="qk">VBD ${vbd>0?'+':''}${vbd}</span>`:'')+
     `<span class="${valCls}">${valTxt}</span>`+
     `<span class="qk">ADP ${fmtADP(adp)}</span>`+
+    (am[pid]!=null?`<span class="qk">Auc $${am[pid]}</span>`:'')+
     `<span class="qk">bye ${p.b||'—'}</span>`+
     (p.risk!=null?`<span class="qk">Risk ${p.risk}/10</span>`:'')+
     (p.up!=null?`<span class="qk">Up ${p.up}/10</span>`:'');
@@ -1816,6 +1924,7 @@ function applyFilters(){
 }
 loadState();
 loadMocks();
+if('serviceWorker' in navigator && /^https?:$/.test(location.protocol)){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
 fetch(DATA_URL).then(r=>r.json()).then(d=>{
   DATA = d;
   seedKeepers();

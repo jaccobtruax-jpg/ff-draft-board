@@ -258,6 +258,51 @@ f.onload = () => {
       log('keeper removed via modal', !lgK.keepers[tgtPid]);
       d.querySelector('#ddClose').click();
       hdK.checked = true; hdK.dispatchEvent(new w.Event('change', {bubbles:true}));
+      // ============ SHARINGAN THEME + DATA UTILIZATION ============
+      const dbgT = dq;
+      log('sharingan logo in header', !!d.querySelector('#topbar .sharingan'));
+      log('live bar has Mangekyō label', /Mangekyō/.test(d.querySelector('#liveBar').textContent));
+      const adjSpans = [...d.querySelectorAll('tr.player .adp-adj')];
+      log('keeper-adjusted ADP shown', adjSpans.length > 0);
+      log('effective ADP < raw ADP', (()=>{
+        const s = adjSpans[0]; if(!s) return false;
+        const raw = parseFloat(s.closest('tr').querySelector('.adp').childNodes[0].textContent);
+        const eff = parseFloat(s.textContent.replace(/eff /,''));
+        return eff > 0 && eff < raw;
+      })());
+      log('upside indicator on rows', !!d.querySelector('tr.player:not(.drafted) .ups'));
+      const ss = d.querySelector('#sortSel');
+      ss.value = 'upside'; ss.dispatchEvent(new w.Event('change', {bubbles:true}));
+      const upsRows = [...d.querySelectorAll('tr.player:not(.drafted)')].slice(0,3);
+      log('upside sort: first >= second', (()=>{
+        const g = r => parseFloat(r.querySelector('.ups').textContent.replace('▲',''));
+        return g(upsRows[0]) >= g(upsRows[1]);
+      })());
+      ss.value = 'vbd'; ss.dispatchEvent(new w.Event('change', {bubbles:true}));
+      const vbdRows = [...d.querySelectorAll('tr.player:not(.drafted)')].slice(0,3);
+      log('vbd sort: first >= second', (()=>{
+        const g = r => dbgT.vbdFor(dbgT.data.players[r.dataset.id]) ?? -999;
+        return g(vbdRows[0]) >= g(vbdRows[1]);
+      })());
+      ss.value = 'ffb'; ss.dispatchEvent(new w.Event('change', {bubbles:true}));
+      const am2 = dbgT.auctionMap();
+      const aucPid = Object.keys(am2).find(pid => am2[pid] > 0 && !dbgT.isDrafted(pid) && d.querySelector('tr.player[data-id="'+pid+'"]'));
+      if(aucPid){ d.querySelector('tr.player[data-id="'+aucPid+'"] .pname').click();
+        log('auction $ in modal', new RegExp('Auc \\$' + am2[aucPid]).test(d.querySelector('#ddQuick').textContent));
+        d.querySelector('#ddClose').click();
+      } else log('auction $ in modal', false);
+      d.querySelector('.expander[data-x="injuryBox"]').click();
+      const injF2 = d.querySelector('#injuryFilter');
+      log('injury report searchable', !!injF2);
+      if(injF2){
+        const before = d.querySelectorAll('#injuryList div').length;
+        injF2.value = 'knee'; injF2.dispatchEvent(new w.Event('input', {bubbles:true}));
+        const hits = [...d.querySelectorAll('#injuryList div')].map(x=>x.textContent.toLowerCase());
+        log('injury filter narrows to matches', before > 0 && hits.length <= before && hits.length > 0 && hits.every(t=>t.includes('knee')));
+      } else log('injury filter narrows to matches', false);
+      d.querySelector('.expander[data-x="injuryBox"]').click();
+      d.querySelector('.expander[data-x="udkBox"]').click();
+      log('UDK analysis notes populated', d.querySelector('#udkBox').textContent.length > 100);
     } catch(e){ log('PD EXCEPTION: ' + e.message + '\n' + (e.stack||'').split('\n').slice(0,3).join(' | '), false); }
     finish();
   };
