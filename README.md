@@ -24,7 +24,8 @@ Draft-day companion board for Jaccob's two leagues, built on the Fantasy Footbal
 - **Itachi / Sharingan theme** — black-crimson palette, CSS-drawn Sharingan logo (spins when Draft is live → Mangekyō), "i see everything" branding.
 - **Data fully used** — keeper-adjusted ADP ("eff" under ADP: real availability with 10 players already off the board), upside ▲ on every row + Upside sort, VBD (value-over-replacement) sort + modal stat, UDK auction $ values in the modal + Auction $ sort, searchable full injury report, and the UDK analysis notes (free agency, etc.) now surfaced.
 - **Offline draft-day mode** — service worker (`sw.js`) caches the app + data after first visit; no wifi, no problem at the draft venue. Mobile polish: header wraps, Δ/Risk columns hide on narrow screens.
-- `test_harness.html` — in-browser smoke test, **89 checks** (open it, PASS/FAIL list renders)
+- **Sharingan read (next-pick call)** — a real-time composite of every signal: gain over your need/upgrade baseline (50%), survival threat — simulated board predicts whether the pick survives to your slot (18%), keeper-adjusted-ADP value (10%), position-run momentum (10%), snipers ahead who live-need or mock-heavy the position (7%), ★ my guy (5%). Every candidate shows why via factor chips (need · gone by p18 ⚠ · run RB ×2 · 3 ahead need RB · value +4 · ★). Recomputed on every mark.
+- `test_harness.html` — in-browser smoke test, **95 checks** (open it, PASS/FAIL list renders)
 - `data/board.json` — all player/ranking data (~660KB)
 - `data/mocks.json` — mock-draft corpus for the Pre-Draft page (bundled SAMPLE mocks; override via in-app import)
 - `build/` — the scripts that scraped the UDK site and built board.json, plus `build_mocks.py` (converts mock exports → mocks.json, name-matches players, joins ADP)

@@ -303,6 +303,39 @@ f.onload = () => {
       d.querySelector('.expander[data-x="injuryBox"]').click();
       d.querySelector('.expander[data-x="udkBox"]').click();
       log('UDK analysis notes populated', d.querySelector('#udkBox').textContent.length > 100);
+      // ============ SHARINGAN READ ============
+      const lgR = dq.leagues[0];
+      lgR.drafted = {}; lgR.log = []; lgR.stars = [];
+      dq.render();
+      const hdR = d.querySelector('#hideDrafted');
+      hdR.checked = false; hdR.dispatchEvent(new w.Event('change', {bubbles:true}));
+      d.querySelector('#posTabs button[data-pos="WR"]').click();
+      for(let i=0;i<3;i++){ const b = d.querySelector('tr.player:not(.drafted) .mk.chk'); if(b) b.click(); }
+      const readRun = dq.sharinganRead();
+      log('read: WR run detected in call data', readRun.scored.some(c=>c.pos==='WR' && c.chips.includes('run WR ×3')));
+      log('read: need/upgrade chips shown', /need/.test(d.querySelector('#nextCall').textContent) && /upgrade/.test(d.querySelector('#nextCall').textContent));
+      log('read: league context (ahead teams + needs)', readRun.ahead.length >= 5 && (readRun.needCount.WR||0) >= 1 && readRun.scored.length >= 3);
+      const top200b = dq.data.rankings['TE PREM (4pt QB)'].top200;
+      const used = new Set([...Object.keys(lgR.drafted), ...Object.keys(lgR.keepers)]);
+      let added = 0;
+      for(const r of top200b){
+        if(used.has(r[0])) continue;
+        const n = 4 + added;
+        lgR.drafted[r[0]] = { pick: '', pickNum: n, team: dq.teamAtPick(n) };
+        lgR.log.push({ pickNum: n, team: dq.teamAtPick(n), pid: r[0], amount: null });
+        if(++added === 14) break;
+      }
+      dq.render();
+      log('read: survival horizon (my pick p18 in call)', /p18/.test(d.querySelector('#nextCall').textContent) || /gone by/.test(d.querySelector('#nextCall').textContent));
+      const starPid = dq.sharinganRead().primary.pid;
+      lgR.stars = [starPid];
+      dq.render();
+      log('read: ★ my guy chip', /★ my guy/.test(d.querySelector('#nextCall').textContent));
+      lgR.stars = [];
+      const read2 = dq.sharinganRead();
+      log('read: pool + picks intact after fill', read2.scored.length >= 3 && read2.myNext === 18);
+      d.querySelector('#posTabs button[data-pos="ALL"]').click();
+      hdR.checked = true; hdR.dispatchEvent(new w.Event('change', {bubbles:true}));
     } catch(e){ log('PD EXCEPTION: ' + e.message + '\n' + (e.stack||'').split('\n').slice(0,3).join(' | '), false); }
     finish();
   };

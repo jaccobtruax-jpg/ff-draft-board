@@ -161,6 +161,12 @@ td.marks{text-align:right;white-space:nowrap}
 .call-main .why{font-size:12px;color:var(--mut);line-height:1.35}
 .call-alt{margin-top:8px;padding-top:7px;border-top:1px dashed var(--line);font-size:12px;color:var(--mut);display:flex;flex-direction:column;gap:3px}
 .call-alt b{color:var(--txt)}
+.call-chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
+.cchip{font-size:10px;font-weight:800;letter-spacing:.3px;padding:1px 6px;border-radius:4px;background:var(--bg3);border:1px solid var(--line2);color:var(--mut)}
+.cchip.warn{color:var(--warn);border-color:rgba(245,166,35,.4);background:rgba(245,166,35,.1)}
+.cchip.danger{color:#ff8a84;border-color:rgba(255,95,86,.45);background:rgba(255,95,86,.1)}
+.cchip.star{color:var(--gold);border-color:rgba(233,177,76,.4);background:rgba(233,177,76,.1)}
+.cchip.mode{color:var(--acc);border-color:rgba(255,59,92,.4);background:rgba(255,59,92,.1)}
 .scarcity{margin-top:2px}
 .sc-item{display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px}
 .sc-item .lbl{width:34px;font-weight:700;text-align:right;color:var(--mut)}
@@ -642,7 +648,7 @@ function defaultLeague(i){
   };
 }
 const LEAGUES = [defaultLeague(0), defaultLeague(1)];
-window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, managers, render, renderPredraft, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap});
+window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, managers, render, renderPredraft, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap, sharinganRead});
 function saveState(){ localStorage.setItem(LS_KEY, JSON.stringify({leagues: LEAGUES, ui: UI})); }
 function loadState(){
   try{
@@ -1135,15 +1141,17 @@ function renderTeam(){
   const call = nextPickCall();
   if(call){
     const b = call.primary;
+    const chipCls = ch => ch.includes('⚠')||ch.includes('gone') ? 'danger' : ch.startsWith('run') ? 'warn' : ch.includes('★') ? 'star' : (ch==='need'||ch==='upgrade') ? 'mode' : '';
     $('nextCall').innerHTML = `<div class="callbox">
-      <div class="t">${lg.auction?'Next target':'Next pick call'}</div>
+      <div class="t">${lg.auction?'Budget tracker':'Sharingan read — next pick'}</div>
       <div class="call-main"><div class="who">${esc(b.p.n)} <span class="pmeta">${esc(b.p.t)} · ${b.p.p}</span></div></div>
       <div class="why">${esc(b.reason)}</div>
-      <div class="call-alt">${call.alts.map(a=>`<div><b>${esc(a.p.n)}</b> ${esc(a.p.t)} — ${esc(a.reason)}</div>`).join('')}</div>
+      <div class="call-chips">${(b.chips||[]).map(ch=>`<span class="cchip ${chipCls(ch)}">${esc(ch)}</span>`).join('')}</div>
+      <div class="call-alt">${call.alts.map(a=>`<div><b>${esc(a.p.n)}</b> ${esc(a.p.t)} — ${esc(a.reason)} <span style="opacity:.7">${(a.chips||[]).slice(0,3).join(' · ')}</span></div>`).join('')}</div>
     </div>`;
   } else {
-    $('nextCall').innerHTML = `<div class="callbox"><div class="t">${lg.auction?'Budget tracker':'Next pick call'}</div>
-      <div style="font-size:12.5px;color:var(--mut)">${lg.auction ? 'Mark players drafted with their $ amount to track budget.' : 'Mark players drafted as the board goes to get live recommendations.'}</div></div>`;
+    $('nextCall').innerHTML = `<div class="callbox"><div class="t">${lg.auction?'Budget tracker':'Sharingan read'}</div>
+      <div style="font-size:12.5px;color:var(--mut)">${lg.auction ? 'Mark players drafted with their $ amount to track budget.' : 'Mark picks as they go — the read blends your roster, keepers, ADP, runs, and who still needs what, in real time.'}</div></div>`;
   }
   // bye-week cluster warning (starters sharing a bye)
   const bcl = byeClusters();
@@ -1226,36 +1234,94 @@ function playerScore(pid, pos){
   const r = rows.find(x=>x[0]===pid);
   return r ? r[2] : null;
 }
-function nextPickCall(){
+/* ---------------- SHARINGAN READ (next-pick call, all signals) ---------------- */
+function sharinganRead(){
   const lg = L();
   const available = id => !isDrafted(id) && !lg.avoid.includes(id);
-  const picks = [];
-  const order = ['QB','RB','WR','TE'];
-  for(const pos of order){
+  const myNext = nextOwnPick();                      // null in auction
+  const start = onTheClockPick();
+  if(myNext && myNext > lg.teams*22) return null;    // draft's over for us
+  const pred = predictNext();                        // simulated board: predMap pid -> pick#
+  const profs = mockProfiles();
+
+  // candidates: top 2 available per position (gain vs need/upgrade baseline)
+  const candidates = [];
+  for(const pos of ['QB','RB','WR','TE']){
     const rows = posRows(pos);
-    const best = rows.find(r=>available(r[0]));
-    if(!best) continue;
-    const p = playerByID(best[0]);
-    const filled = draftedAtPos(pos);
-    let baseline;
-    if(filled.length < rosterSlots(pos)){
-      baseline = replacementBaseline(pos);
-    } else {
-      const scores = filled.map(x=>playerScore(x.id, pos)).filter(v=>v!=null);
-      baseline = scores.length ? Math.min(...scores) : replacementBaseline(pos);
+    const best = rows.filter(r=>available(r[0])).slice(0,2);
+    for(const row of best){
+      const p = playerByID(row[0]);
+      const filled = draftedAtPos(pos);
+      const need = filled.length < rosterSlots(pos);
+      let baseline;
+      if(need) baseline = replacementBaseline(pos);
+      else {
+        const scores = filled.map(x=>playerScore(x.id, pos)).filter(v=>v!=null);
+        baseline = scores.length ? Math.min(...scores) : replacementBaseline(pos);
+      }
+      candidates.push({pos, gain: row[2]-baseline, row, p, need});
     }
-    const gain = best[2] - baseline;
-    picks.push({pos, gain, row: best, p});
   }
-  if(!picks.length) return null;
-  picks.sort((a,b)=>b.gain-a.gain);
-  const top3 = picks.slice(0,3);
-  const reason = r => {
-    const need = draftedAtPos(r.pos).length < rosterSlots(r.pos);
-    return (need ? 'Position need' : 'Upgrade') + ` — gains ${Math.round(r.gain)} pts over your baseline ${r.pos} (ADP ${fmtADP(adpFor(r.p, scoringCat()))})`;
+  if(!candidates.length) return null;
+
+  // league context: who picks ahead of me, what they live-need + mock-heavy in
+  const ahead = [];
+  if(myNext){ for(let n=start; n<myNext; n++){ const t=teamAtPick(n); if(t && !ahead.includes(t)) ahead.push(t); } }
+  const needCount = {}; const mockSnip = {};
+  for(const pos of ['QB','RB','WR','TE']){
+    needCount[pos] = ahead.filter(t=>teamNeed(t).includes(pos)).length;
+    mockSnip[pos] = ahead.filter(t=>{ const pr=profs[t]; return !!(pr && pr.sig && pr.sig.mix && pr.sig.mix.pct && pr.sig.mix.pct[pos] >= 30); }).length;
+  }
+  const run = pred.run;
+
+  const scored = candidates.map(c => {
+    const {pos, gain, row, p, need} = c;
+    const chips = [need ? 'need' : 'upgrade'];
+    // survival: will he be here when I pick?
+    let urgency = 30;                                 // neutral (auction or unknown)
+    if(myNext){
+      const at = pred.predMap[row[0]];
+      if(at != null && at < myNext){ urgency = 100; chips.push(`gone by p${at} ⚠`); }
+      else if(at === myNext){ urgency = 60; chips.push(`your pick p${myNext}`); }
+      else if(at != null){ urgency = 25; chips.push(`falls to p${at}`); }
+      else { urgency = 15; chips.push('survives window'); }
+    }
+    // value vs keeper-adjusted ADP
+    const eff = effAdp(p);
+    let value = 50;
+    if(eff != null && myNext){
+      value = Math.max(0, Math.min(100, 50 + (eff - myNext)*5));
+      const d = eff - myNext;
+      if(d >= 2) chips.push(`value +${Math.round(d)}`);
+      else if(d <= -2) chips.push(`reach −${Math.round(-d)}`);
+    }
+    // run momentum at this position
+    const runBonus = (run && run.pos === pos) ? 100 : 0;
+    if(runBonus) chips.push(`run ${pos} ×${run.n}`);
+    // snipers ahead
+    const snipe = Math.min(100, needCount[pos]*14 + mockSnip[pos]*10);
+    if(needCount[pos] > 0) chips.push(`${needCount[pos]} ahead need ${pos}`);
+    else if(mockSnip[pos] > 0) chips.push(`${mockSnip[pos]} mock-heavy ${pos}`);
+    // my guy
+    const star = lg.stars.includes(row[0]) ? 100 : 0;
+    if(star) chips.push('★ my guy');
+    return {pos, gain, row, p, need, urgency, value, runBonus, snipe, star, chips};
+  });
+
+  const maxGain = Math.max(...scored.map(c=>c.gain), 1);
+  for(const c of scored) c.gainN = Math.round(c.gain/maxGain*100);
+  // composite: gain 50 · survival 18 · value 10 · run 10 · snipe 7 · star 5
+  for(const c of scored) c.score = Math.round(c.gainN*.50 + c.urgency*.18 + c.value*.10 + c.runBonus*.10 + c.snipe*.07 + c.star*.05);
+  scored.sort((a,b)=>b.score-a.score);
+  const top = scored.slice(0,4);
+  const reason = c => `+${Math.round(c.gain)} pts over baseline ${c.pos}`;
+  return {
+    primary: {p: top[0].p, pid: top[0].row[0], reason: reason(top[0]), chips: top[0].chips},
+    alts: top.slice(1).map(c=>({p:c.p, pid: c.row[0], reason: reason(c), chips: c.chips})),
+    scored, myNext, start, ahead, run, needCount, mockSnip
   };
-  return { primary: {p: top3[0].p, reason: reason(top3[0])}, alts: top3.slice(1).map(r=>({p:r.p, reason: reason(r)})) };
 }
+function nextPickCall(){ return sharinganRead(); }
 
 /* ---------------- DRAFT CONTEXT ---------------- */
 function renderContext(){
