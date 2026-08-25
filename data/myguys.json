@@ -1,57 +1,50 @@
 {
  "updated": "2026-08-25",
+ "note": "2026-ONLY. Host 'My Guys' lists populate when the 2026 My Guys episode airs (watcher cron).",
  "presets": {
-  "mike": {
-   "label": "Mike's My Guys",
-   "source": "The 2025 My Guys Episode (Ep. 1783) \u2014 2026 episode not aired yet",
+  "udk2026": {
+   "label": "UDK 2026 Expert Breakouts",
+   "source": "thefantasyfootballers.com UDK 2026 \u2014 Our Expert Breakout Picks (shared expert list, not per-host)",
    "players": [
     {
-     "name": "Chase Brown",
-     "id": "24374"
+     "name": "Jaxson Dart",
+     "id": "26082"
     },
     {
-     "name": "TreVeyon Henderson",
-     "id": "23245"
-    },
-    {
-     "name": "Tetairoa McMillan",
-     "id": "26054"
-    }
-   ]
-  },
-  "jason": {
-   "label": "Jason's My Guys",
-   "source": "The 2025 My Guys Episode (Ep. 1783) \u2014 2026 episode not aired yet",
-   "players": [
-    {
-     "name": "George Kittle",
-     "id": "19063"
-    },
-    {
-     "name": "George Pickens",
-     "id": "23153"
-    },
-    {
-     "name": "Emeka Egbuka",
-     "id": "26092"
-    }
-   ]
-  },
-  "andy": {
-   "label": "Andy's My Guys",
-   "source": "The 2025 My Guys Episode (Ep. 1783) \u2014 2026 episode not aired yet",
-   "players": [
-    {
-     "name": "Jameson Williams",
-     "id": "23234"
+     "name": "Trevor Lawrence",
+     "id": "22490"
     },
     {
      "name": "Omarion Hampton",
      "id": "25956"
     },
     {
-     "name": "Tyler Warren",
-     "id": "25874"
+     "name": "Kenneth Walker",
+     "id": "23214"
+    },
+    {
+     "name": "Bhayshul Tuten",
+     "id": "25898"
+    },
+    {
+     "name": "Christian Watson",
+     "id": "23395"
+    },
+    {
+     "name": "Carnell Tate",
+     "id": "26752"
+    },
+    {
+     "name": "Tetairoa McMillan",
+     "id": "26054"
+    },
+    {
+     "name": "Colston Loveland",
+     "id": "25869"
+    },
+    {
+     "name": "Harold Fannin Jr.",
+     "id": "25870"
     }
    ]
   }

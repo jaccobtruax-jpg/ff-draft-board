@@ -349,20 +349,22 @@ f.onload = () => {
       tf.value = ''; tf.dispatchEvent(new w.Event('change', {bubbles:true}));
       d.querySelector('#posTabs button[data-pos="ALL"]').click();
       hdR.checked = true; hdR.dispatchEvent(new w.Event('change', {bubbles:true}));
-      // ============ MY GUYS PRESET ============
+      // ============ MY GUYS PRESET (2026-ONLY) ============
       await new Promise(r=>setTimeout(r, 120));
       lgR.drafted = {}; lgR.log = []; dq.render();
       const mg = d.querySelector('#myGuysPreset');
-      log('myguys: preset select + host options', !!mg && mg.querySelectorAll('option').length === 4);
-      log('myguys: data loaded with resolved ids', (()=>{ const p = dq.MYGUYS.presets.mike; return !!p && p.players.length === 3 && p.players.every(x=>x.id); })());
-      mg.value = 'mike'; mg.dispatchEvent(new w.Event('change', {bubbles:true}));
-      log('myguys: applying mike sets stars', (()=>{ const st = dq.L.stars; const ids = dq.MYGUYS.presets.mike.players.map(x=>String(x.id)); return st.length === ids.length && ids.every(i=>st.includes(i)); })());
+      log('myguys: preset select + host options', !!mg && mg.querySelectorAll('option').length === 5);
+      log('myguys: 2026-only guard (no 2025 data anywhere)', (()=>{ const pr = dq.MYGUYS.presets; const all = Object.values(pr).map(p=>p.source).join(' '); return Object.keys(pr).every(k=>k==='udk2026') && !/2025/.test(all) && /2026/.test(all); })());
+      log('myguys: data loaded with resolved ids', (()=>{ const p = dq.MYGUYS.presets.udk2026; return !!p && p.players.length === 10 && p.players.every(x=>x.id); })());
+      log('myguys: host options disabled until 2026 data exists', mg.querySelector('option[value="mike"]').disabled && mg.querySelector('option[value="jason"]').disabled && mg.querySelector('option[value="andy"]').disabled);
+      mg.value = 'udk2026'; mg.dispatchEvent(new w.Event('change', {bubbles:true}));
+      log('myguys: applying udk2026 sets stars', (()=>{ const st = dq.L.stars; const ids = dq.MYGUYS.presets.udk2026.players.map(x=>String(x.id)); return st.length === ids.length && ids.every(i=>st.includes(i)); })());
       const og = d.querySelector('#onlyGuys');
       og.checked = true; og.dispatchEvent(new w.Event('change', {bubbles:true}));
       const starRows = [...d.querySelectorAll('tr.player:not(.drafted)')];
-      log('myguys: only-guys board shows preset players', starRows.length === 3 && starRows.every(r=> dq.L.stars.includes(String(r.dataset.id))));
+      log('myguys: only-guys board shows preset players', starRows.length >= 3 && starRows.every(r=> dq.L.stars.includes(String(r.dataset.id))));
       og.checked = false; og.dispatchEvent(new w.Event('change', {bubbles:true}));
-      log('myguys: preset choice persists', dq.ui.myGuysPreset === 'mike');
+      log('myguys: preset choice persists', dq.ui.myGuysPreset === 'udk2026');
       mg.value = ''; mg.dispatchEvent(new w.Event('change', {bubbles:true}));
       log('myguys: clearing preset resets stars', dq.L.stars.length === 0 && dq.ui.myGuysPreset === null);
     } catch(e){ log('PD EXCEPTION: ' + e.message + '\n' + (e.stack||'').split('\n').slice(0,3).join(' | '), false); }

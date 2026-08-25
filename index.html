@@ -491,7 +491,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
     <div class="toggles">
       <label><input type="checkbox" id="hideDrafted" checked> Hide drafted</label>
       <label><input type="checkbox" id="onlyGuys"> Only my guys ★</label>
-      <label class="preset-wrap">★ Preset <select id="myGuysPreset" title="Load a host's My Guys from the show as your ★ list"><option value="">— none —</option><option value="mike">Mike's My Guys</option><option value="jason">Jason's My Guys</option><option value="andy">Andy's My Guys</option></select></label>
+      <label class="preset-wrap">★ Preset <select id="myGuysPreset" title="Load a host's My Guys (or the UDK expert list) as your ★ list"><option value="">— none —</option><option value="udk2026">UDK 2026 Expert Breakouts</option><option value="mike" disabled title="2026 My Guys episode hasn't aired yet">Mike's My Guys 2026 (pending)</option><option value="jason" disabled title="2026 My Guys episode hasn't aired yet">Jason's My Guys 2026 (pending)</option><option value="andy" disabled title="2026 My Guys episode hasn't aired yet">Andy's My Guys 2026 (pending)</option></select></label>
       <label><input type="checkbox" id="showRookies"> Rookies</label>
       <label id="keeperToggleWrap" style="display:none"><input type="checkbox" id="showKeepers"> Keepers</label>
       <label style="margin-left:auto">Tags <select id="tagFilter" style="background:var(--bg3);border:1px solid var(--line2);border-radius:6px;padding:2px 6px;font-size:11.5px">
@@ -2176,6 +2176,8 @@ loadMocks(()=>{
   if(psEl){
     fetch('data/myguys.json').then(r=>r.json()).then(d=>{
       MYGUYS = d;
+      // enable each preset option only if 2026 data actually exists for it (no stale/empty lists)
+      Object.keys(MYGUYS.presets||{}).forEach(k=>{ const o = psEl.querySelector('option[value="'+k+'"]'); if(o) o.disabled = false; });
       if(UI.myGuysPreset && d.presets[UI.myGuysPreset]){ psEl.value = UI.myGuysPreset; applyMyGuys(UI.myGuysPreset); }
     }).catch(()=>{});
   }
