@@ -46,6 +46,15 @@ a{color:var(--acc);text-decoration:none}
 .need-chip.missing{background:rgba(255,95,86,.14);border-color:rgba(255,95,86,.45);color:var(--bad)}
 .need-chip.ok{color:var(--good);border-color:rgba(79,206,122,.35)}
 .need-chip.warn{color:var(--warn);border-color:rgba(245,166,35,.4)}
+.lg-wait{opacity:.55;font-weight:400;font-size:10px;letter-spacing:.3px}
+.inj-tag{display:inline-block;padding:0 5px;margin-right:4px;border-radius:4px;font-size:9.5px;font-weight:700;letter-spacing:.4px}
+.inj-out{background:rgba(193,18,31,.18);color:#ff8a80}
+.inj-doubt{background:rgba(201,127,30,.18);color:#ffd28a}
+.inj-quest{background:rgba(201,180,30,.14);color:#ffe27a}
+.inj-ir{background:rgba(94,106,210,.18);color:#b3baff}
+.inj-rec{background:rgba(47,158,79,.16);color:#7ce2a0}
+.inj-mon{background:rgba(255,255,255,.06);color:var(--mut)}
+.inj-row{padding:5px 0;border-bottom:1px solid var(--line2)}
 #pickBox{text-align:right;white-space:nowrap}
 #pickBox .lab{font-size:10.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.6px}
 #pickBox .val{font-weight:800;font-size:15px}
@@ -576,6 +585,10 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
         <option value="log">📜 Draft Log</option>
         <option value="guys">⭐ My Guys</option>
         <option value="context">📚 Reference</option>
+        <option value="value">📊 Value &amp; Tiers</option>
+        <option value="auction">💰 Auction</option>
+        <option value="injury">🚑 Injury Room</option>
+        <option value="rookie">🌱 Rookies</option>
       </select>
     </div>
     <div id="rightBody">
@@ -611,6 +624,24 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
         <div id="notesBox" style="display:none">
           <textarea id="notesArea" placeholder="Pre-draft thoughts, reach targets, league quirks…"></textarea>
         </div>
+      </div>
+      <div id="rvValue" style="display:none">
+        <div class="block-title">Value &amp; tiers — where the board is wrong</div>
+        <div id="valueBox" class="ctxbox"></div>
+      </div>
+      <div id="rvAuction" style="display:none">
+        <div class="block-title">Auction reference — $200 budget math</div>
+        <div id="auctionBox" class="ctxbox"></div>
+      </div>
+      <div id="rvInjury" style="display:none">
+        <div class="block-title">Injury room — severity watch</div>
+        <div id="injChips" class="hint" style="margin-bottom:6px"></div>
+        <input class="injury-filter" id="injFilter2" placeholder="Filter injury notes… (Achilles, knee, holdout)">
+        <div id="injuryList2" class="ctxbox" style="max-height:300px;overflow-y:auto;font-size:12px;line-height:1.5"></div>
+      </div>
+      <div id="rvRookie" style="display:none">
+        <div class="block-title">Rookie board — debut-year targets</div>
+        <div id="rookieBox2" class="ctxbox"></div>
       </div>
     </div>
   </section>
@@ -675,7 +706,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 </main>
 
 <footer>
-  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b26a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b26a</span><br>
+  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b26b, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b26b</span><br>
   <span style="opacity:.75">Data: Fantasy Footballers 2026 Ultimate Draft Kit (rankings computed with the UDK engine for your league scoring). Your draft state lives only in this browser.</span>
   <button class="btn ghost" id="exportBtn">Export state</button>
   <button class="btn ghost" id="importBtn">Import state</button>
@@ -1159,19 +1190,19 @@ function render(){
   if(mode === 'pre') renderPredraft();
   else if(mode === 'grid') renderSkeleton();
   else if(mode === 'news') renderNews();
-  else { renderBoard(); renderTeam(); renderContext(); }
+  else { renderBoard(); renderTeam(); renderContext(); renderDraftTools(); }
   renderRight();
 }
 function renderRight(){
   const v = UI.rightView || 'call';
   const sel = $('rightView'); if(sel) sel.value = v;
-  const map = {call:'rvCall', roster:'rvRoster', scarcity:'rvScarcity', log:'rvLog', guys:'rvGuys', context:'rvContext'};
+  const map = {call:'rvCall', roster:'rvRoster', scarcity:'rvScarcity', log:'rvLog', guys:'rvGuys', context:'rvContext', value:'rvValue', auction:'rvAuction', injury:'rvInjury', rookie:'rvRookie'};
   for(const k in map){ const el = $(map[k]); if(el) el.style.display = k===v ? '' : 'none'; }
 }
 function renderHeader(){
   const lg = L();
   $('lgToggle').innerHTML = [0,1].map(i =>
-    `<button class="${UI.league===i?'on':''}" data-lg="${i}">${esc(LEAGUES[i].name)}</button>`).join('');
+    `<button class="${UI.league===i?'on':''}" data-lg="${i}">${esc(LEAGUES[i].name)}${i===1?'<span class="lg-wait"> · waiting</span>':''}</button>`).join('');
   $('lgToggle').querySelectorAll('button').forEach(b=> b.onclick=()=>{ UI.league=+b.dataset.lg; saveState(); render(); });
 
   // need chips
@@ -1199,7 +1230,7 @@ function renderHeader(){
     $('pickVal').textContent = n ? pickLabel(n) : '—';
     $('pickVal').classList.toggle('onpick', !!n);
   }
-  $('scoringLabel').textContent = lg.scoring + ' · ' + lg.teams + ' teams · ' + (lg.auction ? 'auction $'+lg.budget : 'slot '+lg.slot);
+  $('scoringLabel').textContent = lg.scoring + ' · ' + lg.teams + ' teams · ' + (lg.auction ? 'auction $'+lg.budget : 'slot '+lg.slot) + (UI.league===1 ? ' · waiting for players to join' : '');
   $('teamName').textContent = lg.teamName ? '— '+esc(lg.teamName) : '';
 
   // draft-is-live state + on-clock bar
@@ -1469,6 +1500,7 @@ $('myGuysPreset').addEventListener('change', e=>{
   }
 });
 $('rightView').addEventListener('change', e=>{ UI.rightView = e.target.value; saveState(); renderRight(); });
+$('injFilter2').addEventListener('input', ()=>{ renderInjury(); });
 $('newsFilter').addEventListener('change', renderNews);
 $('newsInjectAll').addEventListener('click', ()=>{
   for(const it of NEWS.items||[]){
@@ -1825,6 +1857,117 @@ function sharinganRead(){
 function nextPickCall(){ return sharinganRead(); }
 
 /* ---------------- DRAFT CONTEXT ---------------- */
+/* ---------------- DRAFT COMMAND EXTRA VIEWS (value, auction, injury, rookies) ---------------- */
+function renderDraftTools(){ renderValue(); renderAuction(); renderInjury(); renderRookie(); }
+
+function renderValue(){
+  const steals = [], vbdList = [];
+  for(const pos of ['QB','RB','WR','TE']){
+    const avail = posRows(pos).filter(r=>!isDrafted(r[0]) && !L().avoid.includes(r[0]));
+    const byPts = avail.slice().sort((a,b)=>b[2]-a[2]);
+    const byAdp = avail.slice().sort((a,b)=>(effAdp(playerByID(a[0]))??999)-(effAdp(playerByID(b[0]))??999));
+    const adpRank = {}; byAdp.forEach((r,i)=>{ if(r[0]!=null) adpRank[r[0]]=i+1; });
+    byPts.forEach((r,i)=>{
+      const p = playerByID(r[0]); if(!p) return;
+      const ar = adpRank[r[0]]; if(!ar) return;
+      const delta = (i+1) - ar;                 // negative = drafted later than the value math says
+      if(delta <= -3) steals.push({p, pts:r[2], adp:effAdp(p), delta});
+      if(i < 20) vbdList.push({p, vbd:vbdFor(p), pts:r[2]});
+    });
+  }
+  steals.sort((a,b)=>a.delta-b.delta);
+  const tagLine = p => { const t=p.tags||{}; return (t.sleeper?'<span class="sk-tag">sleeper</span>':'')+(t.breakout?'<span class="sk-tag">breakout</span>':'')+(t.value?'<span class="sk-tag">value</span>':'')+(t.bust?'<span class="sk-tag">bust</span>':''); };
+  let h = `<div class="t" style="font-size:11.5px">Top steals — drafted later than the math says</div>`;
+  h += (steals.slice(0,10).map(s=>`<div class="alt-line"><b>${esc(s.p.n)}</b> <span class="pmeta">${esc(s.p.t)} · ${s.p.p}</span> <span class="alt-gain">Δ${s.delta}</span> <span class="pmeta">ADP ${fmtADP(s.adp)} · ${s.pts}pts</span> ${tagLine(s.p)}</div>`).join('') || '<div class="hint">No clear steals right now.</div>');
+  h += `<div class="t" style="font-size:11.5px;margin-top:8px">VBD leaders — value over replacement</div>`;
+  h += vbdList.filter(v=>v.vbd!=null).sort((a,b)=>b.vbd-a.vbd).slice(0,8).map(v=>`<div class="alt-line"><b>${esc(v.p.n)}</b> <span class="pmeta">${esc(v.p.t)} · ${v.p.p}</span> <span class="alt-gain">+${v.vbd} VBD</span> <span class="pmeta">${v.pts}pts</span></div>`).join('');
+  $('valueBox').innerHTML = h;
+}
+
+function renderAuction(){
+  const lg = L();
+  const spent = Object.values(lg.drafted).reduce((a,d)=>a+(d.amount||0),0);
+  const left = Math.max(0, lg.budget - spent);
+  const fills = rosterFill();
+  const playPos = ['QB','RB','WR','TE','FLEX','RBW','SFLEX','DST','K'];
+  const openSlots = playPos.reduce((a,pos)=> a + Math.max(0, (lg.roster[pos]||0) - (fills[pos]||0)), 0);
+  const maxBid = openSlots ? Math.floor(left/openSlots) : 0;
+  const amap = auctionMap();
+  const rows = [];
+  for(const pos of ['QB','RB','WR','TE']){
+    const posSet = new Set(posRows(pos).map(r=>r[0]));
+    for(const pid of Object.keys(amap)){
+      if(!posSet.has(pid) || isDrafted(pid)) continue;
+      const p = playerByID(pid); if(!p) continue;
+      rows.push({p, cost: amap[pid], pts: playerScore(pid, pos), adp: effAdp(p)});
+    }
+  }
+  rows.sort((a,b)=>b.cost-a.cost);
+  const pct = lg.budget ? Math.round(spent/lg.budget*100) : 0;
+  let h = `<div class="sc-item"><span class="lbl">Spent</span>
+      <div class="sc-track"><div class="sc-fill ${pct>80?'hot':''}" style="width:${Math.min(100,pct)}%"></div></div>
+      <span class="sc-num">$${spent}/${lg.budget}</span></div>
+    <div class="hint">Left $${left} · ${openSlots} open slots · suggested max bid $${maxBid}${lg.auction?'':' · snake draft — $ shown as a value reference'}</div>`;
+  h += `<div class="t" style="font-size:11.5px;margin-top:8px">Top undrafted by auction value</div>`;
+  h += rows.slice(0,12).map(r=>`<div class="alt-line"><b>${esc(r.p.n)}</b> <span class="pmeta">${esc(r.p.t)} · ${r.p.p}</span> <span class="alt-gain">$${r.cost}</span> <span class="pmeta">${r.pts!=null?Math.round(r.pts)+'pts':'—'} · ADP ${fmtADP(r.adp)}</span></div>`).join('') || '<div class="hint">No auction data yet.</div>';
+  $('auctionBox').innerHTML = h;
+}
+
+const INJ_SEV = [
+  {k:/out|done for the season|season-ending|torn/i, label:'OUT', cls:'inj-out'},
+  {k:/doubtful/i, label:'DOUBTFUL', cls:'inj-doubt'},
+  {k:/questionable|limited/i, label:'QUESTIONABLE', cls:'inj-quest'},
+  {k:/\bir\b|injured reserve/i, label:'IR', cls:'inj-ir'},
+  {k:/surgery|acl|recovery|rehab|fracture/i, label:'RECOVERY', cls:'inj-rec'}
+];
+const INJ_SPLIT = /(?=[A-Z][a-z]+(?:['’][A-Z][a-z]+)* [A-Z][a-z]+ [A-Z]{2,3} \|)/;
+const INJ_NAME = /^([A-Z][a-z]+(?:['’][A-Z][a-z]+)* [A-Z][a-z]+) ([A-Z]{2,3}) \|/;
+function parseInjuryItems(){
+  const text = DATA.injury_text || '';
+  const chunks = text.split(INJ_SPLIT).filter(c=>c.includes(' | '));
+  return chunks.map(ch=>{
+    const m = ch.match(INJ_NAME);
+    const name = m ? m[1] : ch.split('|')[0].trim();
+    const team = m ? m[2] : '';
+    let body = m ? ch.slice(m[0].length) : ch;
+    body = body.replace(INJ_NAME, '').trim();
+    const sev = INJ_SEV.find(s=>s.k.test(body)) || {label:'MONITOR', cls:'inj-mon'};
+    return {name, team, body, sev};
+  });
+}
+function renderInjury(){
+  const items = parseInjuryItems();
+  const q = ($('injFilter2').value || '').toLowerCase();
+  const sevSel = UI.injSev || 'ALL';
+  const filtered = items.filter(it=>{
+    if(sevSel !== 'ALL' && it.sev.label !== sevSel) return false;
+    if(q && !(it.name + ' ' + it.body).toLowerCase().includes(q)) return false;
+    return true;
+  });
+  const counts = {ALL: items.length};
+  for(const s of INJ_SEV) counts[s.label] = items.filter(it=>it.sev.label===s.label).length;
+  $('injChips').innerHTML = ['ALL', ...INJ_SEV.map(s=>s.label)].map(l=>`<button class="need-chip ${sevSel===l?'ok':''}" data-sev="${l}">${l} ${counts[l]||0}</button>`).join(' ');
+  $('injChips').querySelectorAll('[data-sev]').forEach(b=> b.onclick=()=>{ UI.injSev = b.dataset.sev; saveState(); renderInjury(); });
+  $('injuryList2').innerHTML = filtered.slice(0,40).map(it=>{
+    const pid = findPlayerId(it.name);
+    const p = pid ? playerByID(pid) : null;
+    const pts = p ? playerScore(pid, p.p) : null;
+    const row = `<div class="inj-row"><span class="inj-tag ${it.sev.cls}">${it.sev.label}</span><b>${esc(it.name)}</b>${it.team?` <span class="pmeta">${esc(it.team)}</span>`:''}${p?` <span class="pmeta">${p.p}${pts!=null?' · '+Math.round(pts)+'pts':''}</span>`:''}<div class="pmeta">${esc(it.body.slice(0,170))}</div></div>`;
+    return pid ? row.replace('<b>', `<b data-pid="${pid}" style="cursor:pointer" onclick="openDetail('${pid}')" title="Open player">`) : row;
+  }).join('') || '<div class="hint">No matches — try clearing the filter.</div>';
+}
+
+function renderRookie(){
+  const list = DATA.rookies.map(x=>({pid:x.id, p:playerByID(x.id)})).filter(x=>x.p);
+  list.sort((a,b)=>(playerScore(b.pid,b.p.p)??-999)-(playerScore(a.pid,a.p.p)??-999));
+  const tagLine = p => { const t=p.tags||{}; return (t.sleeper?'<span class="sk-tag">sleeper</span>':'')+(t.breakout?'<span class="sk-tag">breakout</span>':'')+(t.value?'<span class="sk-tag">value</span>':'')+(t.bust?'<span class="sk-tag">bust</span>':''); };
+  $('rookieBox2').innerHTML = list.slice(0,30).map(x=>{
+    const pts = playerScore(x.pid, x.p.p);
+    const up = x.p.up != null ? x.p.up : '—';
+    return `<div class="alt-line" style="cursor:pointer" onclick="openDetail('${x.pid}')" title="Open player"><b>${esc(x.p.n)}</b> <span class="pmeta">${esc(x.p.t)} · ${x.p.p} · b${x.p.b||'—'}</span> <span class="alt-gain">${pts!=null?Math.round(pts)+'pts':'—'}</span> <span class="pmeta">ADP ${fmtADP(effAdp(x.p))} · up ${up}</span> ${tagLine(x.p)}</div>`;
+  }).join('') || '<div class="hint">No rookies on the board.</div>';
+}
+
 function renderContext(){
   const lg = L();
   // log

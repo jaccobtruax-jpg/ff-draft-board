@@ -386,7 +386,7 @@ f.onload = () => {
       log('skeleton: back to draft day', d.querySelector('#main').style.display !== 'none');
       // ============ DRAFT COMMAND (right panel views) ============
       const rv = d.querySelector('#rightView');
-      log('right: view dropdown with 6 options', !!rv && rv.querySelectorAll('option').length === 6);
+      log('right: view dropdown with 10 options', !!rv && rv.querySelectorAll('option').length === 10);
       log('right: default view is the call', d.querySelector('#rvCall').style.display !== 'none' && d.querySelector('#rvRoster').style.display === 'none');
       log('right: call shows read detail (sims + baseline)', /simulated boards/.test(d.querySelector('.read-detail').textContent) && /baseline/.test(d.querySelector('.read-detail').textContent));
       log('right: runs & snipers box populated', /ahead need/.test(d.querySelector('#runBox').textContent));
@@ -399,6 +399,20 @@ f.onload = () => {
       rv.value = 'context'; rv.dispatchEvent(new w.Event('change', {bubbles:true}));
       log('right: reference view has expanders', d.querySelector('#rvContext').style.display !== 'none' && !!d.querySelector('.expander[data-x="injuryBox"]'));
       log('right: choice persists in state', dq.ui.rightView === 'context');
+      log('league2 toggle shows waiting badge', /waiting/.test(d.querySelector('[data-lg="1"]').textContent));
+      rv.value = 'value'; rv.dispatchEvent(new w.Event('change', { bubbles: true }));
+      log('right: value view lists steals + VBD', d.querySelector('#rvValue').style.display !== 'none' && /steals/i.test(d.querySelector('#valueBox').textContent) && /VBD/.test(d.querySelector('#valueBox').textContent));
+      rv.value = 'auction'; rv.dispatchEvent(new w.Event('change', { bubbles: true }));
+      log('right: auction view shows budget math', d.querySelector('#rvAuction').style.display !== 'none' && /Spent/.test(d.querySelector('#auctionBox').textContent) && /max bid/.test(d.querySelector('#auctionBox').textContent));
+      rv.value = 'injury'; rv.dispatchEvent(new w.Event('change', { bubbles: true }));
+      log('right: injury room lists entries with severity', d.querySelector('#rvInjury').style.display !== 'none' && d.querySelectorAll('#injuryList2 .inj-row').length >= 5 && d.querySelectorAll('#injChips .need-chip').length >= 3);
+      const injF2 = d.querySelector('#injFilter2');
+      injF2.value = 'achilles'; injF2.dispatchEvent(new w.Event('input', { bubbles: true }));
+      const injN2 = d.querySelectorAll('#injuryList2 .inj-row').length;
+      log('right: injury filter narrows the list', injN2 >= 1 && injN2 < 31);
+      injF2.value = ''; injF2.dispatchEvent(new w.Event('input', { bubbles: true }));
+      rv.value = 'rookie'; rv.dispatchEvent(new w.Event('change', { bubbles: true }));
+      log('right: rookies view lists rookies', d.querySelector('#rvRookie').style.display !== 'none' && d.querySelectorAll('#rookieBox2 .alt-line').length >= 5);
       rv.value = 'call'; rv.dispatchEvent(new w.Event('change', {bubbles:true}));
       // ============ NEWS & INJECTION ============
       lgR.drafted = {}; lgR.log = []; dq.render();
