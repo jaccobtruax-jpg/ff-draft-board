@@ -1,0 +1,61 @@
+{
+  "updated": "2026-08-25",
+  "sample": true,
+  "note": "SAMPLE items so the page works pre-collector. Real articles arrive via the ffb-news-collector cron into this file.",
+  "items": [
+    {
+      "id": "sample-inj-kenneth-walker",
+      "title": "Kenneth Walker (RB KC) sprains ankle in practice — Week 1 status doubtful",
+      "url": "https://www.thefantasyfootballers.com/",
+      "source": "FFB Sample",
+      "published": "2026-08-24T15:30:00Z",
+      "summary": "The Chiefs back left practice early with an ankle sprain. Coaching staff calling it week-to-week; team beat writers expect him to miss at least the opener.",
+      "sample": true,
+      "impact": {
+        "players": [
+          {
+            "name": "Kenneth Walker",
+            "action": "injured",
+            "games": 1,
+            "deltaPts": -16.4,
+            "suggestedEdit": "Tag injured · −16 pts (1 game) · drops ~2 rounds of value"
+          }
+        ],
+        "note": "Injection: inj tag on his row, −16 pts off his projection, pts sort + the read drop him accordingly."
+      }
+    },
+    {
+      "id": "sample-boost-hampton",
+      "title": "Chargers commit to Omarion Hampton as the workhorse — 'feature back' per OC",
+      "url": "https://www.thefantasyfootballers.com/",
+      "source": "FFB Sample",
+      "published": "2026-08-23T11:00:00Z",
+      "summary": "Offensive coordinator confirmed Hampton is the lead back in all situations, including goal line and two-minute. Expect a full workload from Week 1.",
+      "sample": true,
+      "impact": {
+        "players": [
+          {
+            "name": "Omarion Hampton",
+            "action": "boost",
+            "deltaPts": 12.1,
+            "suggestedEdit": "Role boost · +12 pts · move up ~1 round"
+          }
+        ],
+        "note": "Injection: ⚡ boost tag, +12 pts, rises in pts sort and the read."
+      }
+    },
+    {
+      "id": "sample-news-only",
+      "title": "Week 1 kickoff times released for all 32 teams",
+      "url": "https://www.thefantasyfootballers.com/",
+      "source": "FFB Sample",
+      "published": "2026-08-22T09:00:00Z",
+      "summary": "The NFL announced the full Week 1 schedule with two primetime games. No fantasy-relevant roster moves.",
+      "sample": true,
+      "impact": {
+        "players": [],
+        "note": "No player impact — inject if you want it kept on record, otherwise ignore."
+      }
+    }
+  ]
+}

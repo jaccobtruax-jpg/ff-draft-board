@@ -211,6 +211,20 @@ td.marks{text-align:right;white-space:nowrap}
 .sk-roster-h{font-weight:800;font-size:12px;margin-bottom:5px;color:var(--txt)}
 .sk-rrow{font-size:11.5px;padding:1.5px 0;display:flex;align-items:center;gap:5px}
 .sk-tag{font-size:9px;font-weight:800;color:var(--gold);border:1px solid rgba(233,177,76,.4);border-radius:3px;padding:0 3px}
+.tag-inj{color:#ff8a84;border-color:rgba(255,95,86,.5);background:rgba(255,95,86,.12)}
+/* news page */
+.news-card{border:1px solid var(--line2);border-radius:10px;background:var(--bg2);padding:10px 12px;margin-bottom:10px}
+.news-card.inj{border-color:var(--acc);background:rgba(255,59,92,.08)}
+.news-card.dim{opacity:.55}
+.news-head{font-weight:800;font-size:13.5px;display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
+.news-head a{color:var(--txt);text-decoration:none}
+.news-head a:hover{color:var(--acc)}
+.news-src{font-size:10.5px;color:var(--dim);font-weight:600}
+.news-sum{font-size:12px;color:var(--mut);margin-top:5px;line-height:1.45}
+.news-impact{font-size:12px;color:var(--txt);margin-top:6px;background:rgba(245,166,35,.08);border:1px solid rgba(245,166,35,.3);border-radius:7px;padding:6px 9px}
+.news-impact b{color:var(--gold)}
+.news-note{font-size:11px;color:var(--dim);margin-top:5px;font-style:italic}
+.news-actions{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
 .scarcity{margin-top:2px}
 .sc-item{display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px}
 .sc-item .lbl{width:34px;font-weight:700;text-align:right;color:var(--mut)}
@@ -488,6 +502,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
     <button data-mode="day">⚡ Draft&nbsp;Day</button>
     <button data-mode="pre">📊 Pre-Draft</button>
     <button data-mode="grid">🧭 Draft&nbsp;Board</button>
+    <button data-mode="news">📰 News</button>
   </div>
   <button id="liveBtn" title="Draft is live — marking a pick auto-assigns it to the team on the clock and advances"><span class="dot"></span>Draft&nbsp;is&nbsp;live</button>
   <div class="lg-toggle" id="lgToggle"></div>
@@ -622,6 +637,24 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
   </div>
 </main>
 
+<!-- ============ NEWS VIEW (monitored articles + injectable impact) ============ -->
+<main id="news" style="display:none">
+  <section class="panel">
+    <div class="panel-head">📰 News &amp; Impact <span class="read-window" id="newsMeta"></span></div>
+    <div class="tools">
+      <select id="newsFilter">
+        <option value="all">All</option>
+        <option value="open">Not reviewed</option>
+        <option value="injected">Injected</option>
+        <option value="ignored">Ignored</option>
+      </select>
+      <button id="newsInjectAll" class="btn ghost" title="Apply every suggested edit that isn't ignored">Inject all suggested</button>
+      <span id="newsSample" class="hint" style="display:none">SAMPLE items — real articles arrive via the collector cron.</span>
+    </div>
+    <div id="newsList" class="ctxbox" style="border:none;background:none;padding:0"></div>
+  </section>
+</main>
+
 <!-- ============ PRE-DRAFT VIEW (mock-draft analysis) ============ -->
 <main id="predraft" style="display:none">
   <div class="pd-banner" id="pdBanner"></div>
@@ -703,6 +736,94 @@ const DATA_URL = 'data/board.json';
 const MOCK_URL = 'data/mocks.json';
 const LS_KEY = 'ffb-draft-v4';
 const MOCK_LS_KEY = 'ffb-mocks-v1';
+const NEWS_URL = 'data/news.json';
+const NEWS_LS = 'ffb-news-v1';
+let NEWS = {items:[], sample:false};
+let NEWS_STATE = {injected:{}, dismissed:[]};   // injected: {articleId:true} · dismissed: [articleId]
+function loadNewsState(){ try{ const r = localStorage.getItem(NEWS_LS); if(r) NEWS_STATE = JSON.parse(r); }catch(e){} }
+function saveNewsState(){ localStorage.setItem(NEWS_LS, JSON.stringify(NEWS_STATE)); }
+function normName(s){ return (s||'').toLowerCase().replace(/\./g,' ').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim(); }
+function findPlayerId(name){
+  if(!name) return null;
+  const n = normName(name);
+  const parts = n.split(' ');
+  const key = parts.length >= 2 ? parts[0] + ' ' + parts[parts.length-1] : n;
+  for(const [pid, p] of Object.entries(DATA.players||{})){
+    const pn = normName(p.n);
+    if(pn === n || pn === key) return pid;
+  }
+  return null;
+}
+function injDelta(pid){
+  let d = 0;
+  for(const aid of Object.keys(NEWS_STATE.injected||{})){
+    const it = (NEWS.items||[]).find(x=>x.id===aid);
+    if(!it || !it.impact) continue;
+    for(const pl of it.impact.players||[]){
+      if(pl.pid != null && String(pl.pid)===String(pid) && pl.deltaPts) d += pl.deltaPts;
+    }
+  }
+  return d;
+}
+function resolveNewsPids(){
+  for(const it of NEWS.items||[]){
+    if(!it.impact || !it.impact.players) continue;
+    for(const pl of it.impact.players) if(pl.pid == null) pl.pid = findPlayerId(pl.name);
+  }
+}
+function newsTimeAgo(ts){
+  if(!ts) return '';
+  const s = (Date.now() - new Date(ts).getTime())/1000;
+  if(s < 3600) return Math.max(1,Math.round(s/60)) + 'm ago';
+  if(s < 86400) return Math.round(s/3600) + 'h ago';
+  return Math.round(s/86400) + 'd ago';
+}
+function renderNews(){
+  const f = $('newsFilter') ? $('newsFilter').value : 'all';
+  let items = (NEWS.items||[]).slice().sort((a,b)=> (b.published||'').localeCompare(a.published||''));
+  if(f==='open') items = items.filter(it=> !NEWS_STATE.injected[it.id] && !NEWS_STATE.dismissed.includes(it.id));
+  if(f==='injected') items = items.filter(it=> NEWS_STATE.injected[it.id]);
+  if(f==='ignored') items = items.filter(it=> NEWS_STATE.dismissed.includes(it.id));
+  $('newsList').innerHTML = items.length ? items.map(it=>{
+    const inj = !!NEWS_STATE.injected[it.id];
+    const dim = !inj && NEWS_STATE.dismissed.includes(it.id);
+    const imp = it.impact;
+    let impHTML = '';
+    if(imp && imp.players && imp.players.length){
+      impHTML = `<div class="news-impact">If injected: ${imp.players.map(pl=>{
+        const nm = esc(pl.name);
+        if(pl.action==='injured' || pl.action==='suspension') return `<b>${nm}</b> ${pl.games?'out ~'+pl.games+' game(s)':'injured'} ${pl.deltaPts?`· <b>${pl.deltaPts<0?'−':''}${Math.abs(pl.deltaPts).toFixed(0)} pts</b>`:''}`;
+        if(pl.action==='boost') return `<b>${nm}</b> role boost ${pl.deltaPts?`· <b>+${pl.deltaPts.toFixed(0)} pts</b>`:''}`;
+        return `<b>${nm}</b> ${esc(pl.suggestedEdit||'')}`;
+      }).join(' · ')}</div>`;
+    }
+    if(imp && imp.note) impHTML += `<div class="news-note">${esc(imp.note)}</div>`;
+    return `<div class="news-card ${inj?'inj':''} ${dim?'dim':''}" data-aid="${esc(it.id)}">
+      <div class="news-head"><a href="${esc(it.url||'#')}" target="_blank" rel="noopener">${esc(it.title)}</a>
+        <span class="news-src">${esc(it.source||'')}${it.published?` · ${newsTimeAgo(it.published)}`:''}${it.sample?' · <span class="sk-tag">SAMPLE</span>':''}</span></div>
+      ${it.summary?`<div class="news-sum">${esc(it.summary)}</div>`:''}
+      ${impHTML}
+      <div class="news-actions">
+        ${!inj?`<button class="btn" data-na="inject">Inject</button>`:`<button class="btn ghost" data-na="revert">Revert</button>`}
+        ${!dim?`<button class="btn ghost" data-na="ignore">Ignore</button>`:`<button class="btn ghost" data-na="restore">Restore</button>`}
+      </div>
+    </div>`;
+  }).join('') : '<div class="empty">No news items here yet.</div>';
+  const nInj = Object.keys(NEWS_STATE.injected||{}).length;
+  $('newsMeta').textContent = (NEWS.items||[]).length + ' articles · ' + nInj + ' injected';
+  $('newsSample').style.display = NEWS.sample ? '' : 'none';
+}
+function newsAction(aid, act){
+  const st = NEWS_STATE;
+  if(act==='inject'){ st.injected[aid] = true; st.dismissed = st.dismissed.filter(x=>x!==aid); }
+  else if(act==='revert'){ delete st.injected[aid]; }
+  else if(act==='ignore'){ st.dismissed.push(aid); }
+  else if(act==='restore'){ st.dismissed = st.dismissed.filter(x=>x!==aid); }
+  saveNewsState();
+  renderNews();
+  if(UI.mode==='day') render();
+  else if(UI.mode==='grid') renderSkeleton();
+}
 let MYGUYS = {presets:{}};
 function applyMyGuys(key){
   const pr = MYGUYS.presets[key];
@@ -753,7 +874,7 @@ function defaultLeague(i){
   };
 }
 const LEAGUES = [defaultLeague(0), defaultLeague(1)];
-window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, MYGUYS, managers, render, renderPredraft, renderSkeleton, renderRight, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap, sharinganRead, survivalProb, tierCliff, posPressure, mockRoundPos, applyMyGuys});
+window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, MYGUYS, NEWS, NEWS_STATE, managers, render, renderPredraft, renderSkeleton, renderRight, renderNews, newsAction, injDelta, findPlayerId, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap, sharinganRead, survivalProb, tierCliff, posPressure, mockRoundPos, applyMyGuys});
 function saveState(){ localStorage.setItem(LS_KEY, JSON.stringify({leagues: LEAGUES, ui: UI})); }
 function loadState(){
   try{
@@ -1032,10 +1153,12 @@ function render(){
   $('main').style.display = mode === 'day' ? '' : 'none';
   $('predraft').style.display = mode === 'pre' ? '' : 'none';
   $('skeleton').style.display = mode === 'grid' ? '' : 'none';
+  $('news').style.display = mode === 'news' ? '' : 'none';
   $('modeToggle').querySelectorAll('button').forEach(b=> b.classList.toggle('on', b.dataset.mode === mode));
   renderHeader();
   if(mode === 'pre') renderPredraft();
   else if(mode === 'grid') renderSkeleton();
+  else if(mode === 'news') renderNews();
   else { renderBoard(); renderTeam(); renderContext(); }
   renderRight();
 }
@@ -1249,7 +1372,7 @@ function renderBoard(){
   const srt = boardState.sort;
   if(srt==='adp') view.sort((a,b)=> (adpFor(playerByID(a[0]),cat)||999)-(adpFor(playerByID(b[0]),cat)||999));
   else if(srt==='value') view.sort((a,b)=> valOf(b)-valOf(a));
-  else if(srt==='pts') view.sort((a,b)=> b[2]-a[2]);
+  else if(srt==='pts') view.sort((a,b)=> (b[2]-injDelta(b[0])) - (a[2]-injDelta(a[0])));
   else if(srt==='vbd') view.sort((a,b)=> (vbdFor(playerByID(b[0]))??-999)-(vbdFor(playerByID(a[0]))??-999));
   else if(srt==='upside') view.sort((a,b)=> (playerByID(b[0]).up||0)-(playerByID(a[0]).up||0));
   else if(srt==='auction'){ const am=auctionMap(); view.sort((a,b)=> (am[b[0]]||0)-(am[a[0]]||0)); }
@@ -1292,8 +1415,9 @@ function rowHTML(r, idx, val){
   const keeper = lg.keepers[r[0]];
   const mine = lg.stars.includes(String(r[0]));
   const tags = Object.keys(p.tags||{});
+  const dinj = injDelta(r[0]);
   const posCls = POS_COLORS[p.p] || 'dst';
-  const tagHtml = tags.map(t=>`<span class="tag tag-${t}">${t}</span>`).join('') + (p.rb?`<span class="tag tag-rookie">R</span>`:'') + (keeper?`<span class="tag tag-keeper" title="Keeper · ${esc(normK(keeper).team||'')}">K ${keeperLabel(keeper)}</span>`:'');
+  const tagHtml = tags.map(t=>`<span class="tag tag-${t}">${t}</span>`).join('') + (p.rb?`<span class="tag tag-rookie">R</span>`:'') + (keeper?`<span class="tag tag-keeper" title="Keeper · ${esc(normK(keeper).team||'')}">K ${keeperLabel(keeper)}</span>`:'') + (dinj?`<span class="tag tag-inj" title="News injection">${dinj<0?'inj −':'⚡ +'}${Math.abs(dinj).toFixed(0)}</span>`:'');
   const valHtml = val===0?'±0':val>0?`<span class="valplus">+${val}</span>`:`<span class="valminus">${val}</span>`;
   const marks =
     (UI.live && !drafted ? `<button class="qk-take" data-take="${r[0]}" title="Live: marks drafted — auto-assigned to the team on the clock">TAKEN</button>` : '') +
@@ -1345,6 +1469,20 @@ $('myGuysPreset').addEventListener('change', e=>{
   }
 });
 $('rightView').addEventListener('change', e=>{ UI.rightView = e.target.value; saveState(); renderRight(); });
+$('newsFilter').addEventListener('change', renderNews);
+$('newsInjectAll').addEventListener('click', ()=>{
+  for(const it of NEWS.items||[]){
+    if(it.impact && !NEWS_STATE.injected[it.id] && !NEWS_STATE.dismissed.includes(it.id)) NEWS_STATE.injected[it.id] = true;
+  }
+  saveNewsState(); renderNews(); if(UI.mode==='day') render();
+});
+$('newsList').addEventListener('click', e=>{
+  const b = e.target.closest('[data-na]');
+  if(!b) return;
+  const card = e.target.closest('.news-card');
+  if(!card) return;
+  newsAction(card.dataset.aid, b.dataset.na);
+});
 $('tagFilter').addEventListener('change', e=>{ boardState.tag = e.target.value; renderBoard(); });
 
 /* ---------------- MY TEAM ---------------- */
@@ -1570,14 +1708,15 @@ function sharinganRead(){
     for(const row of best){
       const p = playerByID(row[0]);
       const filled = draftedAtPos(pos);
-      const need = filled.length < rosterSlots(pos);
       let baseline;
-      if(need) baseline = replacementBaseline(pos);
+      const need = filled.length < rosterSlots(pos);
+      if(need){ baseline = replacementBaseline(pos); }
       else {
         const scores = filled.map(x=>playerScore(x.id, pos)).filter(v=>v!=null);
         baseline = scores.length ? Math.min(...scores) : replacementBaseline(pos);
       }
-      candidates.push({pos, gain: row[2]-baseline, row, p, need});
+      const gain = (row[2] - injDelta(row[0])) - baseline;
+      candidates.push({pos, gain, row, p, need});
     }
   }
   if(!candidates.length) return null;
@@ -2351,6 +2490,8 @@ function applyFilters(){
   $('keeperToggleWrap').style.display = Object.keys(L().keepers).length ? 'flex' : 'none';
 }
 loadState();
+loadNewsState();
+fetch(NEWS_URL).then(r=>r.json()).then(d=>{ NEWS = d || {items:[],sample:false}; resolveNewsPids(); if(UI.mode==='news') renderNews(); }).catch(()=>{});
 loadMocks(()=>{
   const psEl = $('myGuysPreset');
   if(psEl){
@@ -2365,6 +2506,7 @@ loadMocks(()=>{
 if('serviceWorker' in navigator && /^https?:$/.test(location.protocol)){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
 fetch(DATA_URL).then(r=>r.json()).then(d=>{
   DATA = d;
+  resolveNewsPids();   // news pids need DATA — re-resolve (idempotent) after the data race is settled
   seedKeepers();
   renderTimer();
   if(L().timer && L().timer.endAt > Date.now()){ clearInterval(timerInt); timerInt=setInterval(renderTimer,1000); }
