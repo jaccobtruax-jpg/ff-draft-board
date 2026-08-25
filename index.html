@@ -187,6 +187,31 @@ td.marks{text-align:right;white-space:nowrap}
 .alt-gain{font-weight:800;color:var(--gold);font-size:11.5px}
 .surv-mini{width:34px;height:5px;background:var(--bg3);border:1px solid var(--line2);border-radius:4px;overflow:hidden;display:inline-block}
 .alt-chips{font-size:10.5px;color:var(--dim)}
+/* draft board (skeleton key format) */
+.sk-scroll{overflow-x:auto}
+.sk-grid{border-collapse:collapse;font-size:12px;min-width:max-content}
+.sk-grid th.sk-team{position:sticky;top:0;background:var(--bg2);z-index:2;padding:5px 8px;border:1px solid var(--line2);font-size:10.5px;max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sk-grid th.sk-team.mine{background:rgba(255,59,92,.18);color:var(--acc)}
+.sk-grid td{border:1px solid var(--line);padding:4px 7px;vertical-align:top}
+.sk-grid td.sk-rnd{font-weight:800;color:var(--mut);text-align:center;font-size:10.5px;background:var(--bg2)}
+.sk-grid td.sk-cell.mine{background:rgba(255,59,92,.08)}
+.sk-grid tr.sk-keeprow td{background:rgba(233,177,76,.07)}
+.sk-k{font-size:10.5px;color:var(--gold);font-weight:700}
+.sk-k i{font-style:normal;opacity:.8}
+.sk-pnum{font-size:9.5px;color:var(--dim);font-weight:700}
+.sk-cell.sk-open .sk-pnum{opacity:.45}
+.sk-empty{color:var(--dim);font-size:10.5px}
+.sk-list{width:100%;border-collapse:collapse;font-size:12px}
+.sk-list th{text-align:left;color:var(--mut);font-size:10px;text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--line2);padding:3px 8px}
+.sk-list td{padding:2.5px 8px;border-bottom:1px solid var(--line)}
+.sk-list tr.sk-emptyrow td{color:var(--dim);opacity:.55}
+.sk-list td.sk-pnum{color:var(--dim);font-weight:700;width:48px}
+.sk-rosters{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.sk-roster{border:1px solid var(--line2);border-radius:8px;padding:8px;background:var(--bg2)}
+.sk-roster.mine{border-color:var(--acc);background:rgba(255,59,92,.07)}
+.sk-roster-h{font-weight:800;font-size:12px;margin-bottom:5px;color:var(--txt)}
+.sk-rrow{font-size:11.5px;padding:1.5px 0;display:flex;align-items:center;gap:5px}
+.sk-tag{font-size:9px;font-weight:800;color:var(--gold);border:1px solid rgba(233,177,76,.4);border-radius:3px;padding:0 3px}
 .scarcity{margin-top:2px}
 .sc-item{display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px}
 .sc-item .lbl{width:34px;font-weight:700;text-align:right;color:var(--mut)}
@@ -452,6 +477,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
   <div class="mode-toggle" id="modeToggle">
     <button data-mode="day">⚡ Draft&nbsp;Day</button>
     <button data-mode="pre">📊 Pre-Draft</button>
+    <button data-mode="grid">🧭 Draft&nbsp;Board</button>
   </div>
   <button id="liveBtn" title="Draft is live — marking a pick auto-assigns it to the team on the clock and advances"><span class="dot"></span>Draft&nbsp;is&nbsp;live</button>
   <div class="lg-toggle" id="lgToggle"></div>
@@ -550,6 +576,23 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
       </div>
     </div>
   </section>
+</main>
+
+<!-- ============ DRAFT BOARD VIEW (Skeleton Key format — snake grid) ============ -->
+<main id="skeleton" style="display:none">
+  <div class="panel">
+    <div class="t">🧭 Draft Board — Skeleton Key format <span class="read-window" id="skLeagueName"></span></div>
+    <div class="live-note" id="skNote">Snake grid · live from the draft log · keepers marked K</div>
+    <div class="sk-section sk-scroll" id="skGridWrap"></div>
+  </div>
+  <div class="panel">
+    <div class="t">Master list — every pick</div>
+    <div class="sk-section sk-scroll" id="skListWrap"></div>
+  </div>
+  <div class="panel">
+    <div class="t">League Rosters — who took who</div>
+    <div class="sk-section" id="skRostersWrap"></div>
+  </div>
 </main>
 
 <!-- ============ PRE-DRAFT VIEW (mock-draft analysis) ============ -->
@@ -683,7 +726,7 @@ function defaultLeague(i){
   };
 }
 const LEAGUES = [defaultLeague(0), defaultLeague(1)];
-window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, MYGUYS, managers, render, renderPredraft, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap, sharinganRead, survivalProb, tierCliff, posPressure, mockRoundPos, applyMyGuys});
+window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, MYGUYS, managers, render, renderPredraft, renderSkeleton, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap, sharinganRead, survivalProb, tierCliff, posPressure, mockRoundPos, applyMyGuys});
 function saveState(){ localStorage.setItem(LS_KEY, JSON.stringify({leagues: LEAGUES, ui: UI})); }
 function loadState(){
   try{
@@ -867,15 +910,80 @@ function adpRankMap(rows){
 }
 
 /* ================================================================ RENDER ======= */
+/* ---------------- DRAFT BOARD (Skeleton Key format) ---------------- */
+function renderSkeleton(){
+  const lg = L();
+  const teams = managers();
+  const tn = lg.teams || teams.length;
+  const rounds = lg.rounds || lg.draftSlots || 22;
+  const byPick = {};
+  for(const [pid, d] of Object.entries(lg.drafted||{})) byPick[d.pickNum] = {pid, ...d};
+  const kByTeam = {};
+  for(const [pid, k] of Object.entries(lg.keepers||{})) (kByTeam[k.team] = kByTeam[k.team]||[]).push({pid, ...k});
+  const nm = pid => { const p = playerByID(pid); return p ? esc(p.n) : '?'; };
+  const pp = pid => { const p = playerByID(pid); return p ? p.p : ''; };
+  const pcl = p => POS_COLORS[p] || 'dst';
+  const mineCls = t => t === lg.teamName ? ' mine' : '';
+  // GRID — rows = rounds, columns = teams (snake)
+  let grid = '<table class="sk-grid"><thead><tr><th class="sk-rnd">Rnd</th>';
+  for(const t of teams) grid += `<th class="sk-team${mineCls(t)}" title="${esc(t)}">${esc(t)}</th>`;
+  grid += '</tr></thead><tbody>';
+  grid += '<tr class="sk-keeprow"><td class="sk-rnd">K</td>';
+  for(const t of teams){
+    const ks = kByTeam[t] || [];
+    grid += `<td class="sk-cell${mineCls(t)}">${ks.length ? ks.map(k=>`<span class="sk-k">K ${nm(k.pid)} <i>${esc(pp(k.pid))||'?'}</i></span>`).join('<br>') : '<span class="sk-empty">—</span>'}</td>`;
+  }
+  grid += '</tr>';
+  for(let r=1; r<=rounds; r++){
+    grid += '<tr><td class="sk-rnd">'+r+'</td>';
+    for(let c=0; c<tn; c++){
+      const p = (r%2===1) ? (r-1)*tn + c + 1 : r*tn - c;
+      const e = byPick[p];
+      if(e){
+        grid += `<td class="sk-cell${mineCls(teams[c])}"><span class="sk-pnum">${p}</span> <span class="pchip ${pcl(pp(e.pid))}">${esc(pp(e.pid))||'?'}</span> ${nm(e.pid)}</td>`;
+      } else {
+        grid += `<td class="sk-cell sk-open${mineCls(teams[c])}"><span class="sk-pnum">${p}</span></td>`;
+      }
+    }
+    grid += '</tr>';
+  }
+  grid += '</tbody></table>';
+  // MASTER LIST — vertical (pick, team, player, pos)
+  let list = '<table class="sk-list"><thead><tr><th>Pick</th><th>Team</th><th>Player</th><th>Pos</th></tr></thead><tbody>';
+  for(let p=1; p<=rounds*tn; p++){
+    const e = byPick[p];
+    list += `<tr class="${e?'':'sk-emptyrow'}"><td class="sk-pnum">${p}</td><td>${esc(teamAtPick(p)||'')}</td><td>${e?nm(e.pid):''}</td><td>${e?esc(pp(e.pid)):''}</td></tr>`;
+  }
+  list += '</tbody></table>';
+  // ROSTERS — per-team panels
+  let ro = '<div class="sk-rosters">';
+  for(const t of teams){
+    const picks = Object.values(lg.drafted||{}).filter(d=>d.team===t).sort((a,b)=>a.pickNum-b.pickNum);
+    const ks = kByTeam[t] || [];
+    ro += `<div class="sk-roster${mineCls(t)}"><div class="sk-roster-h">${esc(t)}${t===lg.teamName?' ★':''}</div>`;
+    if(ks.length) ro += ks.map(k=>`<div class="sk-rrow"><span class="pchip ${pcl(pp(k.pid))}">${esc(pp(k.pid))||'?'}</span> ${nm(k.pid)} <span class="sk-tag">K</span></div>`).join('');
+    ro += picks.map(e=>`<div class="sk-rrow"><span class="pchip ${pcl(pp(e.pid))}">${esc(pp(e.pid))||'?'}</span> ${nm(e.pid)} <span class="sk-pnum">p${e.pickNum}</span></div>`).join('');
+    if(!ks.length && !picks.length) ro += '<div class="sk-empty">—</div>';
+    ro += '</div>';
+  }
+  ro += '</div>';
+  $('skGridWrap').innerHTML = grid;
+  $('skListWrap').innerHTML = list;
+  $('skRostersWrap').innerHTML = ro;
+  $('skLeagueName').textContent = lg.name + ' · ' + tn + ' teams · ' + rounds + ' rounds';
+}
+
 function render(){
   if(!DATA) return;
   applyFilters();
-  const pre = UI.mode === 'pre';
-  $('main').style.display = pre ? 'none' : '';
-  $('predraft').style.display = pre ? '' : 'none';
-  $('modeToggle').querySelectorAll('button').forEach(b=> b.classList.toggle('on', b.dataset.mode === UI.mode));
+  const mode = UI.mode;
+  $('main').style.display = mode === 'day' ? '' : 'none';
+  $('predraft').style.display = mode === 'pre' ? '' : 'none';
+  $('skeleton').style.display = mode === 'grid' ? '' : 'none';
+  $('modeToggle').querySelectorAll('button').forEach(b=> b.classList.toggle('on', b.dataset.mode === mode));
   renderHeader();
-  if(pre) renderPredraft();
+  if(mode === 'pre') renderPredraft();
+  else if(mode === 'grid') renderSkeleton();
   else { renderBoard(); renderTeam(); renderContext(); }
 }
 function renderHeader(){
