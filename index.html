@@ -473,6 +473,10 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
       <label><input type="checkbox" id="onlyGuys"> Only my guys ★</label>
       <label><input type="checkbox" id="showRookies"> Rookies</label>
       <label id="keeperToggleWrap" style="display:none"><input type="checkbox" id="showKeepers"> Keepers</label>
+      <label style="margin-left:auto">Tags <select id="tagFilter" style="background:var(--bg3);border:1px solid var(--line2);border-radius:6px;padding:2px 6px;font-size:11.5px">
+        <option value="">all</option><option value="sleeper">🔥 sleeper</option><option value="breakout">breakout</option>
+        <option value="value">value</option><option value="bust">bust</option>
+      </select></label>
     </div>
     <div id="intelBar"></div>
     <div id="boardBody">
@@ -648,7 +652,7 @@ function defaultLeague(i){
   };
 }
 const LEAGUES = [defaultLeague(0), defaultLeague(1)];
-window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, managers, render, renderPredraft, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap, sharinganRead});
+window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, managers, render, renderPredraft, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap, sharinganRead, survivalProb, tierCliff, posPressure, mockRoundPos});
 function saveState(){ localStorage.setItem(LS_KEY, JSON.stringify({leagues: LEAGUES, ui: UI})); }
 function loadState(){
   try{
@@ -1012,7 +1016,7 @@ function renderIntel(){
 }
 
 /* ---------------- THE BOARD ---------------- */
-let boardState = {pos:'ALL', sort:'ffb', q:''};
+let boardState = {pos:'ALL', sort:'ffb', q:'', tag:''};
 function renderBoard(){
   // tabs
   const top200 = DATA.rankings[L().scoring]?.top200 || [];
@@ -1039,6 +1043,8 @@ function renderBoard(){
   if($('onlyGuys').checked) view = view.filter(r=>lg.stars.includes(r[0]));
   if($('showRookies').checked) view = view.filter(r=>playerByID(r[0]).rb || playerByID(r[0]).tags.rookie);
   if($('showKeepers').checked) view = view.filter(r=>lg.keepers[r[0]]);
+  const tg = boardState.tag;
+  if(tg) view = view.filter(r=>(playerByID(r[0]).tags||{})[tg]);
 
   // sort
   const valOf = r => (adpRanks[r[0]]||999) - r[1];
@@ -1132,6 +1138,7 @@ $('boardRows').addEventListener('click', e=>{
 $('searchBox').addEventListener('input', e=>{ boardState.q = e.target.value; renderBoard(); });
 $('sortSel').addEventListener('change', e=>{ boardState.sort = e.target.value; renderBoard(); });
 ['hideDrafted','onlyGuys','showRookies','showKeepers'].forEach(id=> $(id).addEventListener('change', renderBoard));
+$('tagFilter').addEventListener('change', e=>{ boardState.tag = e.target.value; renderBoard(); });
 
 /* ---------------- MY TEAM ---------------- */
 function renderTeam(){
@@ -1141,7 +1148,7 @@ function renderTeam(){
   const call = nextPickCall();
   if(call){
     const b = call.primary;
-    const chipCls = ch => ch.includes('⚠')||ch.includes('gone') ? 'danger' : ch.startsWith('run') ? 'warn' : ch.includes('★') ? 'star' : (ch==='need'||ch==='upgrade') ? 'mode' : '';
+    const chipCls = ch => (ch.includes('⚠')||ch.includes('gone')||ch.startsWith('cliff')||ch.startsWith('bust')||ch.startsWith('risk')) ? 'danger' : (ch.startsWith('run')||ch.startsWith('coin')||ch.startsWith('mocks')) ? 'warn' : ch.includes('★') ? 'star' : (ch==='need'||ch==='upgrade'||ch.includes('prem')||ch.includes('SF ')||ch.startsWith('safe')) ? 'mode' : '';
     $('nextCall').innerHTML = `<div class="callbox">
       <div class="t">${lg.auction?'Budget tracker':'Sharingan read — next pick'}</div>
       <div class="call-main"><div class="who">${esc(b.p.n)} <span class="pmeta">${esc(b.p.t)} · ${b.p.p}</span></div></div>
@@ -1200,9 +1207,10 @@ function renderTeam(){
     const top = rows.slice(0, tops[pos]);
     const gone = top.filter(r=>isDrafted(r[0])).length;
     const pct = gone/top.length;
+    const cliff = tierCliff(pos);
     scHTML += `<div class="sc-item"><span class="lbl">${pos}</span>
       <div class="sc-track"><div class="sc-fill ${pct>0.6?'hot':''}" style="width:${Math.round(pct*100)}%"></div></div>
-      <span class="sc-num">${gone}/${top.length}</span></div>`;
+      <span class="sc-num">${gone}/${top.length}${cliff>=12?` <span title="Tier cliff — best available is ${cliff} pts above the next tier" style="color:var(--warn)">cliff ${cliff}pts</span>`:''}</span></div>`;
   }
   $('scarcityBox').innerHTML = scHTML;
 }
@@ -1234,15 +1242,96 @@ function playerScore(pid, pos){
   const r = rows.find(x=>x[0]===pid);
   return r ? r[2] : null;
 }
-/* ---------------- SHARINGAN READ (next-pick call, all signals) ---------------- */
+/* ---------------- SHARINGAN READ v2 (multi-signal, probabilistic) ---------------- */
+/* tier cliff: pts gap between the best available player at a position and the best
+   player in the NEXT tier down — big gap = the position is about to collapse */
+function tierCliff(pos){
+  const rows = posRows(pos).filter(r=>!isDrafted(r[0]) && !L().avoid.includes(r[0]));
+  if(rows.length < 2) return 0;
+  const best = rows[0];
+  const nextTier = rows.find(r=>r[3] > best[3]);
+  return nextTier ? Math.round(best[2] - nextTier[2]) : 0;
+}
+/* positional pressure across the league: how many teams still need a position
+   (live needs + keeper-aware) plus the league's mock share of it */
+function posPressure(){
+  const lg = L();
+  const cnt = {QB:0,RB:0,WR:0,TE:0};
+  for(const name of managers()) if(teamNeed(name).includes('QB')||teamNeed(name)==='') cnt.QB++;
+  for(const name of managers()) if(teamNeed(name).includes('RB')||teamNeed(name)==='') cnt.RB++;
+  for(const name of managers()) if(teamNeed(name).includes('WR')||teamNeed(name)==='') cnt.WR++;
+  for(const name of managers()) if(teamNeed(name).includes('TE')||teamNeed(name)==='') cnt.TE++;
+  return cnt;
+}
+/* probabilistic survival: simulate the draft window N times; each on-clock team
+   picks by position pressure (live needs + league mock mix), best available at that
+   position. Returns P(candidate is still there at my next pick). */
+function survivalProb(pid, trials = 40){
+  const lg = L();
+  const myNext = nextOwnPick(); if(!myNext) return null;
+  const start = onTheClockPick();
+  const win = Math.min(myNext - start, 15);
+  const pressure = posPressure();
+  const mocks = leagueMocks();
+  const mockShare = {QB:0,RB:0,WR:0,TE:0};
+  if(mocks.length){
+    const cnt = {QB:0,RB:0,WR:0,TE:0}; let tot = 0;
+    for(const m of mocks) for(const p of m.picks){ if(cnt[p.pos]!=null){ cnt[p.pos]++; tot++; } }
+    for(const pos of Object.keys(cnt)) mockShare[pos] = tot ? cnt[pos]/tot : 0.25;
+  } else for(const pos of Object.keys(mockShare)) mockShare[pos] = 0.25;
+  const ranks = {QB:[],RB:[],WR:[],TE:[]};
+  for(const pos of Object.keys(ranks)) ranks[pos] = posRows(pos).filter(r=>!isDrafted(r[0])).map(r=>r[0]);
+  let alive = 0;
+  for(let t = 0; t < trials; t++){
+    const taken = new Set(Object.keys(lg.drafted));
+    for(let n = start; n < myNext; n++){
+      // position weight for this pick: global pressure + mock share, small noise
+      const w = {};
+      let tot = 0;
+      for(const pos of ['QB','RB','WR','TE']){
+        w[pos] = 0.15 + (pressure[pos]||0)*0.5 + mockShare[pos]*2;
+        tot += w[pos];
+      }
+      let r = Math.random()*tot, pos = 'QB';
+      for(const p of ['QB','RB','WR','TE']){ r -= w[p]; if(r <= 0){ pos = p; break; } }
+      const list = ranks[pos].filter(x=>!taken.has(x));
+      if(list.length){ taken.add(list[0]); if(list[0]===pid) break; }
+    }
+    if(!taken.has(pid)) alive++;
+  }
+  return alive/trials;
+}
+/* does this player share a bye with 2+ of my current starters? */
+function byeClash(pid){
+  const lg = L(); const p = playerByID(pid); if(!p || !p.b) return 0;
+  const myByes = {};
+  for(const e of lg.log){ const q = playerByID(e.pid); if(!q || !q.b) continue;
+    const mine = e.team ? (e.team === lg.teamName) : myPickNums().includes(e.pickNum);
+    if(mine) myByes[q.b] = (myByes[q.b]||0)+1; }
+  return (myByes[p.b]||0) >= 2 ? myByes[p.b] : 0;
+}
+/* league mock cluster in the round my next pick falls into */
+function mockRoundPos(){
+  const lg = L(); const myNext = nextOwnPick(); if(!myNext) return null;
+  const rnd = Math.ceil(myNext / Math.max(1, lg.teams));
+  const mocks = leagueMocks(); const cnt = {QB:0,RB:0,WR:0,TE:0};
+  for(const m of mocks) for(const p of m.picks){ if(p.round===rnd && cnt[p.pos]!=null) cnt[p.pos]++; }
+  const top = Object.entries(cnt).sort((a,b)=>b[1]-a[1])[0];
+  return top && top[1] > 0 ? {pos: top[0], n: top[1], rnd} : null;
+}
 function sharinganRead(){
   const lg = L();
   const available = id => !isDrafted(id) && !lg.avoid.includes(id);
   const myNext = nextOwnPick();                      // null in auction
   const start = onTheClockPick();
   if(myNext && myNext > lg.teams*22) return null;    // draft's over for us
-  const pred = predictNext();                        // simulated board: predMap pid -> pick#
+  const pred = predictNext();                        // deterministic sim (intel bar)
   const profs = mockProfiles();
+  const pressure = posPressure();
+  const mrp = mockRoundPos();
+  const fmtQB = (lg.roster.SFLEX||0) > 0;
+  const fmtTE = /TE PREM/i.test(lg.scoring||'');
+  const fmt2QB = (lg.roster.QB||0) >= 2;
 
   // candidates: top 2 available per position (gain vs need/upgrade baseline)
   const candidates = [];
@@ -1273,13 +1362,21 @@ function sharinganRead(){
     mockSnip[pos] = ahead.filter(t=>{ const pr=profs[t]; return !!(pr && pr.sig && pr.sig.mix && pr.sig.mix.pct && pr.sig.mix.pct[pos] >= 30); }).length;
   }
   const run = pred.run;
+  const cliffs = {QB:tierCliff('QB'), RB:tierCliff('RB'), WR:tierCliff('WR'), TE:tierCliff('TE')};
 
   const scored = candidates.map(c => {
     const {pos, gain, row, p, need} = c;
     const chips = [need ? 'need' : 'upgrade'];
-    // survival: will he be here when I pick?
-    let urgency = 30;                                 // neutral (auction or unknown)
-    if(myNext){
+    // survival: probabilistic availability at my pick (Monte Carlo)
+    let survival = 0.5, urgency = 30;
+    const prob = survivalProb(row[0]);
+    if(prob != null){
+      survival = prob;
+      urgency = Math.round((1-prob)*100);
+      if(prob < 0.3) chips.push(`⚠ ${Math.round((1-prob)*100)}% gone`);
+      else if(prob < 0.7) chips.push(`coin flip ${Math.round(prob*100)}%`);
+      else chips.push(`safe ${Math.round(prob*100)}%`);
+    } else if(myNext){
       const at = pred.predMap[row[0]];
       if(at != null && at < myNext){ urgency = 100; chips.push(`gone by p${at} ⚠`); }
       else if(at === myNext){ urgency = 60; chips.push(`your pick p${myNext}`); }
@@ -1295,6 +1392,10 @@ function sharinganRead(){
       if(d >= 2) chips.push(`value +${Math.round(d)}`);
       else if(d <= -2) chips.push(`reach −${Math.round(-d)}`);
     }
+    // tier cliff: position about to collapse?
+    const cliff = cliffs[pos];
+    let cliffB = 0;
+    if(cliff >= 12){ cliffB = Math.min(100, cliff*3); chips.push(`cliff ${pos} ${cliff}pts`); }
     // run momentum at this position
     const runBonus = (run && run.pos === pos) ? 100 : 0;
     if(runBonus) chips.push(`run ${pos} ×${run.n}`);
@@ -1302,23 +1403,54 @@ function sharinganRead(){
     const snipe = Math.min(100, needCount[pos]*14 + mockSnip[pos]*10);
     if(needCount[pos] > 0) chips.push(`${needCount[pos]} ahead need ${pos}`);
     else if(mockSnip[pos] > 0) chips.push(`${mockSnip[pos]} mock-heavy ${pos}`);
+    // analyst tags (FFB UDK)
+    const tags = p.tags||{};
+    let tagB = 0;
+    if(tags.sleeper){ tagB += 60; chips.push('sleeper 🔥'); }
+    if(tags.breakout){ tagB += 50; chips.push('breakout'); }
+    if(tags.value){ tagB += 40; chips.push('value pick'); }
+    if(tags.bust){ tagB -= 80; chips.push('bust ⚠'); }
+    // league format
+    let fmtB = 0;
+    if(fmtTE && pos==='TE'){ fmtB += 40; chips.push('TE-prem'); }
+    if(fmtQB && pos==='QB'){ fmtB += 35; chips.push('SF QB'); }
+    if(fmt2QB && pos==='QB'){ fmtB += 30; }
+    // mock round cluster
+    let mockB = 0;
+    if(mrp && mrp.pos===pos){ mockB = 35; chips.push(`mocks ${pos} r${mrp.rnd}`); }
     // my guy
     const star = lg.stars.includes(row[0]) ? 100 : 0;
     if(star) chips.push('★ my guy');
-    return {pos, gain, row, p, need, urgency, value, runBonus, snipe, star, chips};
+    // upside / risk / bye / rookie
+    const upB = (p.up||0) >= 7 ? 40 : 0;
+    if(upB) chips.push(`upside ▲${p.up}`);
+    const riskB = (p.risk||0) >= 6.5 ? -40 : 0;
+    if(riskB) chips.push(`risk ${p.risk}🔻`);
+    const byeB = byeClash(row[0]) ? -30 : 0;
+    if(byeB) chips.push(`bye clash b${p.b}`);
+    const rookB = p.rb ? -15 : 0;
+    if(rookB) chips.push('rookie');
+    return {pos, gain, row, p, need, urgency, survival, value, runBonus, snipe, tagB, fmtB, cliffB, mockB, star, upB, riskB, byeB, rookB, chips};
   });
 
   const maxGain = Math.max(...scored.map(c=>c.gain), 1);
   for(const c of scored) c.gainN = Math.round(c.gain/maxGain*100);
-  // composite: gain 50 · survival 18 · value 10 · run 10 · snipe 7 · star 5
-  for(const c of scored) c.score = Math.round(c.gainN*.50 + c.urgency*.18 + c.value*.10 + c.runBonus*.10 + c.snipe*.07 + c.star*.05);
+  // composite: gain 35 · survival 18 · cliff 9 · value 8 · run 8 · snipers 6 · tags 5
+  //           · format 4 · mock round 3 · star 3 · upside 2 · bye 2 · risk −2 · rookie −1
+  for(const c of scored){
+    c.score = Math.round(
+      c.gainN*.35 + c.urgency*.18 + c.cliffB*.09 + c.value*.08 + c.runBonus*.08 + c.snipe*.06
+      + c.tagB*.05 + c.fmtB*.04 + c.mockB*.03 + c.star*.03 + c.upB*.02 + c.byeB*.02
+      + c.riskB*.02 + c.rookB*.01
+    );
+  }
   scored.sort((a,b)=>b.score-a.score);
   const top = scored.slice(0,4);
   const reason = c => `+${Math.round(c.gain)} pts over baseline ${c.pos}`;
   return {
-    primary: {p: top[0].p, pid: top[0].row[0], reason: reason(top[0]), chips: top[0].chips},
-    alts: top.slice(1).map(c=>({p:c.p, pid: c.row[0], reason: reason(c), chips: c.chips})),
-    scored, myNext, start, ahead, run, needCount, mockSnip
+    primary: {p: top[0].p, pid: top[0].row[0], reason: reason(top[0]), chips: top[0].chips.slice(0,7)},
+    alts: top.slice(1).map(c=>({p:c.p, pid: c.row[0], reason: reason(c), chips: c.chips.slice(0,5)})),
+    scored, myNext, start, ahead, run, needCount, mockSnip, pressure, cliffs
   };
 }
 function nextPickCall(){ return sharinganRead(); }
