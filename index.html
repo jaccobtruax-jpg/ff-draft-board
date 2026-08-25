@@ -491,6 +491,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
     <div class="toggles">
       <label><input type="checkbox" id="hideDrafted" checked> Hide drafted</label>
       <label><input type="checkbox" id="onlyGuys"> Only my guys ★</label>
+      <label class="preset-wrap">★ Preset <select id="myGuysPreset" title="Load a host's My Guys from the show as your ★ list"><option value="">— none —</option><option value="mike">Mike's My Guys</option><option value="jason">Jason's My Guys</option><option value="andy">Andy's My Guys</option></select></label>
       <label><input type="checkbox" id="showRookies"> Rookies</label>
       <label id="keeperToggleWrap" style="display:none"><input type="checkbox" id="showKeepers"> Keepers</label>
       <label style="margin-left:auto">Tags <select id="tagFilter" style="background:var(--bg3);border:1px solid var(--line2);border-radius:6px;padding:2px 6px;font-size:11.5px">
@@ -632,6 +633,16 @@ const DATA_URL = 'data/board.json';
 const MOCK_URL = 'data/mocks.json';
 const LS_KEY = 'ffb-draft-v4';
 const MOCK_LS_KEY = 'ffb-mocks-v1';
+let MYGUYS = {presets:{}};
+function applyMyGuys(key){
+  const pr = MYGUYS.presets[key];
+  if(!pr) return false;
+  const lg = L();
+  lg.stars = pr.players.filter(p=>p.id).map(p=>String(p.id));
+  UI.myGuysPreset = key;
+  saveState(); render();
+  return true;
+}
 let DATA = null;
 let MOCKS = null;          // {generated, sample, mocks:[...]}
 let UI = { league: 0, mode: 'day', live: false };   // mode: 'day' (draft board) | 'pre' (pre-draft); live: draft-is-live mode
@@ -672,7 +683,7 @@ function defaultLeague(i){
   };
 }
 const LEAGUES = [defaultLeague(0), defaultLeague(1)];
-window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, managers, render, renderPredraft, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap, sharinganRead, survivalProb, tierCliff, posPressure, mockRoundPos});
+window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, MYGUYS, managers, render, renderPredraft, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap, sharinganRead, survivalProb, tierCliff, posPressure, mockRoundPos, applyMyGuys});
 function saveState(){ localStorage.setItem(LS_KEY, JSON.stringify({leagues: LEAGUES, ui: UI})); }
 function loadState(){
   try{
@@ -986,8 +997,8 @@ function targetStatuses(pred){
   const lg=L();
   const top = (DATA.rankings[lg.scoring]||{}).top200 || [];
   const avail = top.filter(r=>!isDrafted(r[0]) && !lg.avoid.includes(r[0]) && playerByID(r[0]));
-  const starRows = lg.stars.map(pid=>avail.find(r=>r[0]===pid)).filter(Boolean);
-  const rest = avail.filter(r=>!lg.stars.includes(r[0])).slice(0,12);
+  const starRows = lg.stars.map(pid=>avail.find(r=>String(r[0])===String(pid))).filter(Boolean);
+  const rest = avail.filter(r=>!lg.stars.includes(String(r[0]))).slice(0,12);
   const list = [...starRows, ...rest].filter((r,i,a)=>a.findIndex(x=>x[0]===r[0])===i).slice(0,12);
   const myNext = pred.myNext;
   const out = [];
@@ -999,7 +1010,7 @@ function targetStatuses(pred){
       else if(n!=null && n===myNext) cls = 'me';
       else if(n!=null && n<=myNext+2) cls = 'border';
     } else if(n!=null && n<=pred.start+2) cls = 'border';
-    out.push({pid:r[0], p:playerByID(r[0]), n, cls, star: lg.stars.includes(r[0])});
+    out.push({pid:r[0], p:playerByID(r[0]), n, cls, star: lg.stars.includes(String(r[0]))});
   }
   return out;
 }
@@ -1060,7 +1071,7 @@ function renderBoard(){
   // filters
   const lg = L();
   if($('hideDrafted').checked) view = view.filter(r=>!isDrafted(r[0]));
-  if($('onlyGuys').checked) view = view.filter(r=>lg.stars.includes(r[0]));
+  if($('onlyGuys').checked) view = view.filter(r=>lg.stars.includes(String(r[0])));
   if($('showRookies').checked) view = view.filter(r=>playerByID(r[0]).rb || playerByID(r[0]).tags.rookie);
   if($('showKeepers').checked) view = view.filter(r=>lg.keepers[r[0]]);
   const tg = boardState.tag;
@@ -1112,7 +1123,7 @@ function rowHTML(r, idx, val){
   const upCls = p.up==null ? '' : p.up>=7 ? 'up-hi' : p.up>=5 ? 'up-mid' : 'up-lo';
   const drafted = !!lg.drafted[r[0]] || !!lg.keepers[r[0]];
   const keeper = lg.keepers[r[0]];
-  const mine = lg.stars.includes(r[0]);
+  const mine = lg.stars.includes(String(r[0]));
   const tags = Object.keys(p.tags||{});
   const posCls = POS_COLORS[p.p] || 'dst';
   const tagHtml = tags.map(t=>`<span class="tag tag-${t}">${t}</span>`).join('') + (p.rb?`<span class="tag tag-rookie">R</span>`:'') + (keeper?`<span class="tag tag-keeper" title="Keeper · ${esc(normK(keeper).team||'')}">K ${keeperLabel(keeper)}</span>`:'');
@@ -1158,6 +1169,14 @@ $('boardRows').addEventListener('click', e=>{
 $('searchBox').addEventListener('input', e=>{ boardState.q = e.target.value; renderBoard(); });
 $('sortSel').addEventListener('change', e=>{ boardState.sort = e.target.value; renderBoard(); });
 ['hideDrafted','onlyGuys','showRookies','showKeepers'].forEach(id=> $(id).addEventListener('change', renderBoard));
+$('myGuysPreset').addEventListener('change', e=>{
+  const key = e.target.value;
+  if(key){ applyMyGuys(key); }
+  else {
+    const lg = L(); lg.stars = []; UI.myGuysPreset = null;
+    saveState(); render();
+  }
+});
 $('tagFilter').addEventListener('change', e=>{ boardState.tag = e.target.value; renderBoard(); });
 
 /* ---------------- MY TEAM ---------------- */
@@ -1449,7 +1468,7 @@ function sharinganRead(){
     let mockB = 0;
     if(mrp && mrp.pos===pos){ mockB = 35; chips.push(`mocks ${pos} r${mrp.rnd}`); }
     // my guy
-    const star = lg.stars.includes(row[0]) ? 100 : 0;
+    const star = (lg.stars.includes(String(row[0])) || lg.stars.includes(row[0])) ? 100 : 0;
     if(star) chips.push('★ my guy');
     // upside / risk / bye / rookie
     const upB = (p.up||0) >= 7 ? 40 : 0;
@@ -2152,7 +2171,15 @@ function applyFilters(){
   $('keeperToggleWrap').style.display = Object.keys(L().keepers).length ? 'flex' : 'none';
 }
 loadState();
-loadMocks();
+loadMocks(()=>{
+  const psEl = $('myGuysPreset');
+  if(psEl){
+    fetch('data/myguys.json').then(r=>r.json()).then(d=>{
+      MYGUYS = d;
+      if(UI.myGuysPreset && d.presets[UI.myGuysPreset]){ psEl.value = UI.myGuysPreset; applyMyGuys(UI.myGuysPreset); }
+    }).catch(()=>{});
+  }
+});
 if('serviceWorker' in navigator && /^https?:$/.test(location.protocol)){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
 fetch(DATA_URL).then(r=>r.json()).then(d=>{
   DATA = d;

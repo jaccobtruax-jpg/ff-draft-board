@@ -336,7 +336,7 @@ f.onload = () => {
       log('read display: mode badge', /NEED|UPGRADE/.test(d.querySelector('#nextCall .mode-badge').textContent));
       log('read display: alt survival mini-bars', d.querySelectorAll('#nextCall .alt-line .surv-mini').length >= 1);
       const starPid = dq.sharinganRead().primary.pid;
-      lgR.stars = [starPid];
+      lgR.stars = [String(starPid)];
       dq.render();
       log('read: ★ my guy chip', /★ my guy/.test(d.querySelector('#nextCall').textContent));
       lgR.stars = [];
@@ -349,6 +349,22 @@ f.onload = () => {
       tf.value = ''; tf.dispatchEvent(new w.Event('change', {bubbles:true}));
       d.querySelector('#posTabs button[data-pos="ALL"]').click();
       hdR.checked = true; hdR.dispatchEvent(new w.Event('change', {bubbles:true}));
+      // ============ MY GUYS PRESET ============
+      await new Promise(r=>setTimeout(r, 120));
+      lgR.drafted = {}; lgR.log = []; dq.render();
+      const mg = d.querySelector('#myGuysPreset');
+      log('myguys: preset select + host options', !!mg && mg.querySelectorAll('option').length === 4);
+      log('myguys: data loaded with resolved ids', (()=>{ const p = dq.MYGUYS.presets.mike; return !!p && p.players.length === 3 && p.players.every(x=>x.id); })());
+      mg.value = 'mike'; mg.dispatchEvent(new w.Event('change', {bubbles:true}));
+      log('myguys: applying mike sets stars', (()=>{ const st = dq.L.stars; const ids = dq.MYGUYS.presets.mike.players.map(x=>String(x.id)); return st.length === ids.length && ids.every(i=>st.includes(i)); })());
+      const og = d.querySelector('#onlyGuys');
+      og.checked = true; og.dispatchEvent(new w.Event('change', {bubbles:true}));
+      const starRows = [...d.querySelectorAll('tr.player:not(.drafted)')];
+      log('myguys: only-guys board shows preset players', starRows.length === 3 && starRows.every(r=> dq.L.stars.includes(String(r.dataset.id))));
+      og.checked = false; og.dispatchEvent(new w.Event('change', {bubbles:true}));
+      log('myguys: preset choice persists', dq.ui.myGuysPreset === 'mike');
+      mg.value = ''; mg.dispatchEvent(new w.Event('change', {bubbles:true}));
+      log('myguys: clearing preset resets stars', dq.L.stars.length === 0 && dq.ui.myGuysPreset === null);
     } catch(e){ log('PD EXCEPTION: ' + e.message + '\n' + (e.stack||'').split('\n').slice(0,3).join(' | '), false); }
     finish();
   };

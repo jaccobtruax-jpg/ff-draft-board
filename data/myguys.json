@@ -1,0 +1,59 @@
+{
+ "updated": "2026-08-25",
+ "presets": {
+  "mike": {
+   "label": "Mike's My Guys",
+   "source": "The 2025 My Guys Episode (Ep. 1783) \u2014 2026 episode not aired yet",
+   "players": [
+    {
+     "name": "Chase Brown",
+     "id": "24374"
+    },
+    {
+     "name": "TreVeyon Henderson",
+     "id": "23245"
+    },
+    {
+     "name": "Tetairoa McMillan",
+     "id": "26054"
+    }
+   ]
+  },
+  "jason": {
+   "label": "Jason's My Guys",
+   "source": "The 2025 My Guys Episode (Ep. 1783) \u2014 2026 episode not aired yet",
+   "players": [
+    {
+     "name": "George Kittle",
+     "id": "19063"
+    },
+    {
+     "name": "George Pickens",
+     "id": "23153"
+    },
+    {
+     "name": "Emeka Egbuka",
+     "id": "26092"
+    }
+   ]
+  },
+  "andy": {
+   "label": "Andy's My Guys",
+   "source": "The 2025 My Guys Episode (Ep. 1783) \u2014 2026 episode not aired yet",
+   "players": [
+    {
+     "name": "Jameson Williams",
+     "id": "23234"
+    },
+    {
+     "name": "Omarion Hampton",
+     "id": "25956"
+    },
+    {
+     "name": "Tyler Warren",
+     "id": "25874"
+    }
+   ]
+  }
+ }
+}
