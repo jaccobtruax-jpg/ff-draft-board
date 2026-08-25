@@ -167,6 +167,26 @@ td.marks{text-align:right;white-space:nowrap}
 .cchip.danger{color:#ff8a84;border-color:rgba(255,95,86,.45);background:rgba(255,95,86,.1)}
 .cchip.star{color:var(--gold);border-color:rgba(233,177,76,.4);background:rgba(233,177,76,.1)}
 .cchip.mode{color:var(--acc);border-color:rgba(255,59,92,.4);background:rgba(255,59,92,.1)}
+/* read display v2 */
+.read-window{font-size:10px;font-weight:700;color:var(--mut);letter-spacing:.3px}
+.mode-badge{font-size:9.5px;font-weight:800;padding:2px 7px;border-radius:4px;vertical-align:1px;letter-spacing:.5px}
+.mode-badge.need{background:rgba(255,59,92,.16);color:var(--acc)}
+.mode-badge.upgrade{background:rgba(79,206,122,.13);color:var(--good)}
+.read-row{display:flex;gap:16px;margin-top:8px;flex-wrap:wrap;align-items:center}
+.read-stat{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--mut)}
+.rs-lbl{font-weight:700;text-transform:uppercase;font-size:9px;letter-spacing:.5px}
+.rs-val{font-weight:800;color:var(--txt);font-size:12.5px}
+.surv-bar{width:92px;height:8px;background:var(--bg3);border:1px solid var(--line2);border-radius:6px;overflow:hidden}
+.surv-fill{display:block;height:100%;border-radius:6px}
+.surv-hi{background:linear-gradient(90deg,#2f9e4f,#4fce7a)}
+.surv-mid{background:linear-gradient(90deg,#c97f1e,#f5a623)}
+.surv-lo{background:linear-gradient(90deg,#c1121f,#ff5f56)}
+.score-bar{width:56px;height:6px;background:var(--bg3);border:1px solid var(--line2);border-radius:5px;overflow:hidden}
+.score-fill{display:block;height:100%;background:linear-gradient(90deg,#c1121f,#ff3b5c);border-radius:5px}
+.alt-line{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.alt-gain{font-weight:800;color:var(--gold);font-size:11.5px}
+.surv-mini{width:34px;height:5px;background:var(--bg3);border:1px solid var(--line2);border-radius:4px;overflow:hidden;display:inline-block}
+.alt-chips{font-size:10.5px;color:var(--dim)}
 .scarcity{margin-top:2px}
 .sc-item{display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px}
 .sc-item .lbl{width:34px;font-weight:700;text-align:right;color:var(--mut)}
@@ -1149,12 +1169,22 @@ function renderTeam(){
   if(call){
     const b = call.primary;
     const chipCls = ch => (ch.includes('⚠')||ch.includes('gone')||ch.startsWith('cliff')||ch.startsWith('bust')||ch.startsWith('risk')) ? 'danger' : (ch.startsWith('run')||ch.startsWith('coin')||ch.startsWith('mocks')) ? 'warn' : ch.includes('★') ? 'star' : (ch==='need'||ch==='upgrade'||ch.includes('prem')||ch.includes('SF ')||ch.startsWith('safe')) ? 'mode' : '';
+    const survPct = b.survival!=null ? Math.round(b.survival*100) : null;
+    const survCls = p => p>=70 ? 'surv-hi' : p>=40 ? 'surv-mid' : 'surv-lo';
     $('nextCall').innerHTML = `<div class="callbox">
-      <div class="t">${lg.auction?'Budget tracker':'Sharingan read — next pick'}</div>
-      <div class="call-main"><div class="who">${esc(b.p.n)} <span class="pmeta">${esc(b.p.t)} · ${b.p.p}</span></div></div>
+      <div class="t">${lg.auction?'Budget tracker':'Sharingan read — next pick'}${call.myNext?` <span class="read-window">p${call.start} → p${call.myNext}</span>`:''}</div>
+      <div class="call-main"><div class="who">${esc(b.p.n)} <span class="pmeta">${esc(b.p.t)} · ${b.pos}</span> <span class="mode-badge ${b.need?'need':'upgrade'}">${b.need?'NEED':'UPGRADE'}</span></div></div>
+      <div class="read-row">
+        <div class="read-stat"><span class="rs-lbl">Gain</span><span class="rs-val">+${b.gain}pts</span></div>
+        ${survPct!=null?`<div class="read-stat"><span class="rs-lbl">Survival at p${call.myNext}</span><span class="surv-bar"><span class="surv-fill ${survCls(survPct)}" style="width:${survPct}%"></span></span><span class="rs-val">${survPct}%</span></div>`:''}
+        <div class="read-stat"><span class="rs-lbl">Score</span><span class="rs-val">${b.score}/100</span><span class="score-bar"><span class="score-fill" style="width:${Math.min(100,b.score)}%"></span></span></div>
+      </div>
       <div class="why">${esc(b.reason)}</div>
       <div class="call-chips">${(b.chips||[]).map(ch=>`<span class="cchip ${chipCls(ch)}">${esc(ch)}</span>`).join('')}</div>
-      <div class="call-alt">${call.alts.map(a=>`<div><b>${esc(a.p.n)}</b> ${esc(a.p.t)} — ${esc(a.reason)} <span style="opacity:.7">${(a.chips||[]).slice(0,3).join(' · ')}</span></div>`).join('')}</div>
+      <div class="call-alt">${call.alts.map(a=>{
+        const ap = a.survival!=null ? Math.round(a.survival*100) : null;
+        return `<div class="alt-line"><b>${esc(a.p.n)}</b> <span class="pmeta">${esc(a.p.t)} · ${a.pos}</span> <span class="alt-gain">+${a.gain}pts</span>${ap!=null?` <span class="surv-mini"><span class="surv-fill ${survCls(ap)}" style="width:${ap}%"></span></span> ${ap}%`:''} <span class="alt-chips">${(a.chips||[]).map(ch=>esc(ch)).join(' · ')}</span></div>`;
+      }).join('')}</div>
     </div>`;
   } else {
     $('nextCall').innerHTML = `<div class="callbox"><div class="t">${lg.auction?'Budget tracker':'Sharingan read'}</div>
@@ -1447,9 +1477,10 @@ function sharinganRead(){
   scored.sort((a,b)=>b.score-a.score);
   const top = scored.slice(0,4);
   const reason = c => `+${Math.round(c.gain)} pts over baseline ${c.pos}`;
+  const mk = (c, n) => ({p:c.p, pid:c.row[0], reason:reason(c), chips:c.chips.slice(0,n), survival:c.survival, score:c.score, gain:Math.round(c.gain), pos:c.pos, need:c.need});
   return {
-    primary: {p: top[0].p, pid: top[0].row[0], reason: reason(top[0]), chips: top[0].chips.slice(0,7)},
-    alts: top.slice(1).map(c=>({p:c.p, pid: c.row[0], reason: reason(c), chips: c.chips.slice(0,5)})),
+    primary: mk(top[0], 7),
+    alts: top.slice(1).map(c=>mk(c, 5)),
     scored, myNext, start, ahead, run, needCount, mockSnip, pressure, cliffs
   };
 }

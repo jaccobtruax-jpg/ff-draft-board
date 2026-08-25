@@ -331,6 +331,10 @@ f.onload = () => {
       }
       dq.render();
       log('read: survival horizon shown in call', /% gone|coin flip|gone by|\d+%/.test(d.querySelector('#nextCall').textContent));
+      log('read display: survival bar rendered', (()=>{ const f = d.querySelector('#nextCall .surv-bar .surv-fill'); const w = f && parseFloat(f.style.width); return !!f && w>=0 && w<=100; })());
+      log('read display: gain + score stats', /\+(\d+)pts/.test(d.querySelector('#nextCall .read-row').textContent) && /\/100/.test(d.querySelector('#nextCall').textContent));
+      log('read display: mode badge', /NEED|UPGRADE/.test(d.querySelector('#nextCall .mode-badge').textContent));
+      log('read display: alt survival mini-bars', d.querySelectorAll('#nextCall .alt-line .surv-mini').length >= 1);
       const starPid = dq.sharinganRead().primary.pid;
       lgR.stars = [starPid];
       dq.render();
