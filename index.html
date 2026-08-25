@@ -58,11 +58,10 @@ a{color:var(--acc);text-decoration:none}
 
 /* ============ MAIN GRID ============ */
 #main{
-  display:grid;grid-template-columns:minmax(0,1.55fr) minmax(300px,0.85fr) minmax(280px,0.8fr);
-  gap:12px;padding:12px;align-items:start;
+  display:grid;grid-template-columns:minmax(0,1.55fr) minmax(320px,0.9fr);gap:12px;align-items:start;padding:12px;max-width:1700px;margin:0 auto;width:100%;box-sizing:border-box;
 }
-@media (max-width:1280px){ #main{grid-template-columns:minmax(0,1.4fr) minmax(280px,0.9fr)} #context{grid-column:1/-1} }
-@media (max-width:860px){ #main{grid-template-columns:1fr} #context{grid-column:auto} }
+@media (max-width:1280px){ #main{grid-template-columns:minmax(0,1.4fr) minmax(300px,0.95fr)} }
+@media (max-width:860px){ #main{grid-template-columns:1fr} }
 section.panel{
   background:var(--bg2);border:1px solid var(--line);border-radius:var(--rad);
   display:flex;flex-direction:column;min-width:0;
@@ -142,8 +141,8 @@ td.marks{text-align:right;white-space:nowrap}
 .empty{padding:26px;text-align:center;color:var(--dim);font-size:13px}
 
 /* ============ MY TEAM ============ */
-#teamBody{padding:10px 12px 14px;display:flex;flex-direction:column;gap:12px;overflow-y:auto;max-height:calc(100vh - var(--header-h) - 56px)}
-@media (max-width:860px){ #teamBody{max-height:none} }
+#teamBody,#rightBody{padding:10px 12px 14px;display:flex;flex-direction:column;gap:12px;overflow-y:auto;max-height:calc(100vh - var(--header-h) - 56px)}
+@media (max-width:860px){ #teamBody,#rightBody{max-height:none} }
 .slot-row{display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:8px;background:var(--bg3);border:1px solid var(--line)}
 .slot-row .sl{width:44px;font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--dim);flex-shrink:0}
 .slot-row .pl{flex:1;font-weight:600;font-size:13px}
@@ -223,6 +222,17 @@ td.marks{text-align:right;white-space:nowrap}
 /* ============ DRAFT CONTEXT ============ */
 #contextBody{padding:10px 12px 14px;display:flex;flex-direction:column;gap:10px;overflow-y:auto;max-height:calc(100vh - var(--header-h) - 56px)}
 @media (max-width:1280px){ #contextBody{max-height:none} }
+.hint{font-size:10.5px;color:var(--dim);line-height:1.4;padding:4px 2px}
+.read-detail{font-size:10.5px;color:var(--dim);margin-top:6px;line-height:1.45;border-top:1px dashed var(--line);padding-top:5px}
+#rightView{background:var(--bg3);border:1px solid var(--line2);border-radius:6px;padding:2px 6px;font-size:11.5px;font-weight:700;color:var(--txt);max-width:170px}
+.sk-insights{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.sk-insight{border:1px solid var(--line2);border-radius:8px;padding:8px;background:var(--bg2)}
+.sk-insight.mine{border-color:var(--acc);background:rgba(255,59,92,.07)}
+.sk-il{font-size:11.5px;padding:1.5px 0;color:var(--mut)}
+.sk-il b{color:var(--txt)}
+.sk-il b.ok{color:var(--good)}
+.sk-mock{color:var(--gold)}
+.sk-runline{grid-column:1/-1;font-size:12px;font-weight:700;color:var(--warn);border:1px solid rgba(245,166,35,.35);background:rgba(245,166,35,.08);border-radius:8px;padding:6px 10px}
 .mini-head{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--dim);display:flex;align-items:center;gap:6px;margin-top:6px}
 .mini-head .cnt{background:var(--bg3);padding:1px 7px;border-radius:10px;font-size:10px;color:var(--mut)}
 .ctxbox{background:var(--bg3);border:1px solid var(--line);border-radius:8px;padding:7px 9px}
@@ -541,38 +551,51 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
   </section>
 
   <!-- ============ MY TEAM ============ -->
-  <section class="panel" id="team">
-    <div class="panel-head">My Team <span id="teamName" style="text-transform:none;color:var(--mut)"></span></div>
-    <div id="teamBody">
-      <div id="nextCall"></div>
-      <div id="byeWarn" class="bye-warn" style="display:none"></div>
-      <div id="rosterBox"></div>
-      <div class="block-title">Position scarcity <span style="text-transform:none;font-weight:500">— top players gone</span></div>
-      <div id="scarcityBox" class="scarcity"></div>
+  <section class="panel" id="right">
+    <div class="panel-head">Draft Command <span id="teamName" style="text-transform:none;color:var(--mut)"></span>
+      <span class="sp"></span>
+      <select id="rightView" title="What the right panel shows">
+        <option value="call">🎯 Next Pick Call</option>
+        <option value="roster">👥 My Roster</option>
+        <option value="scarcity">📉 Scarcity &amp; Runs</option>
+        <option value="log">📜 Draft Log</option>
+        <option value="guys">⭐ My Guys</option>
+        <option value="context">📚 Reference</option>
+      </select>
     </div>
-  </section>
-
-  <!-- ============ DRAFT CONTEXT ============ -->
-  <section class="panel" id="context">
-    <div class="panel-head">Draft Intel</div>
-    <div id="contextBody">
-      <div class="block-title">Draft log</div>
-      <div id="draftLog" class="ctxbox"></div>
-      <button class="expander" data-x="mgrBox"><span>Managers &amp; needs <span class="cnt" id="mgrCnt"></span></span><span class="arr">▶</span></button>
-      <div id="mgrBox" style="display:none"></div>
-      <div class="block-title">My guys ★ <span class="cnt" id="guysCnt"></span></div>
-      <div id="guysBox" class="ctxbox"></div>
-      <button class="expander" data-x="expBox"><span>Expert lists <span class="cnt" id="expCnt"></span></span><span class="arr">▶</span></button>
-      <div id="expBox" style="display:none"></div>
-      <button class="expander" data-x="rookieBox"><span>Rookie watch <span class="cnt" id="rookieCnt"></span></span><span class="arr">▶</span></button>
-      <div id="rookieBox" style="display:none"></div>
-      <button class="expander" data-x="injuryBox"><span>Injury report</span><span class="arr">▶</span></button>
-      <div id="injuryBox" style="display:none"></div>
-      <button class="expander" data-x="udkBox"><span>UDK analysis notes</span><span class="arr">▶</span></button>
-      <div id="udkBox" style="display:none"></div>
-      <button class="expander" data-x="notesBox"><span>League notes</span><span class="arr">▶</span></button>
-      <div id="notesBox" style="display:none">
-        <textarea id="notesArea" placeholder="Pre-draft thoughts, reach targets, league quirks…"></textarea>
+    <div id="rightBody">
+      <div id="rvCall"><div id="nextCall"></div></div>
+      <div id="rvRoster" style="display:none"><div id="byeWarn" class="bye-warn" style="display:none"></div><div id="rosterBox"></div></div>
+      <div id="rvScarcity" style="display:none">
+        <div class="block-title">Position scarcity — top players gone</div>
+        <div id="scarcityBox" class="scarcity"></div>
+        <div class="block-title">Runs &amp; snipers — live league pressure</div>
+        <div id="runBox"></div>
+      </div>
+      <div id="rvLog" style="display:none">
+        <div class="block-title">Draft log</div>
+        <div id="draftLog" class="ctxbox"></div>
+        <button class="expander" data-x="mgrBox"><span>Managers &amp; needs <span class="cnt" id="mgrCnt"></span></span><span class="arr">▶</span></button>
+        <div id="mgrBox" style="display:none"></div>
+      </div>
+      <div id="rvGuys" style="display:none">
+        <div class="block-title">My guys ★ <span class="cnt" id="guysCnt"></span></div>
+        <div id="guysBox" class="ctxbox"></div>
+        <div class="hint">Stars feed the read's ★ factor — load a preset or hit ★ on the board.</div>
+      </div>
+      <div id="rvContext" style="display:none">
+        <button class="expander" data-x="expBox"><span>Expert lists <span class="cnt" id="expCnt"></span></span><span class="arr">▶</span></button>
+        <div id="expBox" style="display:none"></div>
+        <button class="expander" data-x="rookieBox"><span>Rookie watch <span class="cnt" id="rookieCnt"></span></span><span class="arr">▶</span></button>
+        <div id="rookieBox" style="display:none"></div>
+        <button class="expander" data-x="injuryBox"><span>Injury report</span><span class="arr">▶</span></button>
+        <div id="injuryBox" style="display:none"></div>
+        <button class="expander" data-x="udkBox"><span>UDK analysis notes</span><span class="arr">▶</span></button>
+        <div id="udkBox" style="display:none"></div>
+        <button class="expander" data-x="notesBox"><span>League notes</span><span class="arr">▶</span></button>
+        <div id="notesBox" style="display:none">
+          <textarea id="notesArea" placeholder="Pre-draft thoughts, reach targets, league quirks…"></textarea>
+        </div>
       </div>
     </div>
   </section>
@@ -592,6 +615,10 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
   <div class="panel">
     <div class="t">League Rosters — who took who</div>
     <div class="sk-section" id="skRostersWrap"></div>
+  </div>
+  <div class="panel">
+    <div class="t">Team Insights — needs, trends, next picks</div>
+    <div class="sk-section" id="skInsightsWrap"></div>
   </div>
 </main>
 
@@ -726,7 +753,7 @@ function defaultLeague(i){
   };
 }
 const LEAGUES = [defaultLeague(0), defaultLeague(1)];
-window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, MYGUYS, managers, render, renderPredraft, renderSkeleton, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap, sharinganRead, survivalProb, tierCliff, posPressure, mockRoundPos, applyMyGuys});
+window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, MYGUYS, managers, render, renderPredraft, renderSkeleton, renderRight, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap, sharinganRead, survivalProb, tierCliff, posPressure, mockRoundPos, applyMyGuys});
 function saveState(){ localStorage.setItem(LS_KEY, JSON.stringify({leagues: LEAGUES, ui: UI})); }
 function loadState(){
   try{
@@ -971,6 +998,31 @@ function renderSkeleton(){
   $('skListWrap').innerHTML = list;
   $('skRostersWrap').innerHTML = ro;
   $('skLeagueName').textContent = lg.name + ' · ' + tn + ' teams · ' + rounds + ' rounds';
+  // TEAM INSIGHTS — needs, trends (mocks + live mix), predicted next pick
+  const pred = predictNext();
+  let ins = '<div class="sk-insights">';
+  const run = pred ? pred.run : null;
+  if(run) ins += `<div class="sk-runline">🔥 Live position run: ${run.pos} ×${run.n} of last ${run.total} picks</div>`;
+  for(const t of teams){
+    const picks = Object.values(lg.drafted||{}).filter(d=>d.team===t).sort((a,b)=>a.pickNum-b.pickNum);
+    const ks = kByTeam[t] || [];
+    const need = teamNeed(t);
+    const nxt = nextPickFor(t);
+    const mix = {};
+    picks.forEach(d=>{ const pl = playerByID(d.pid); if(pl) mix[pl.p]=(mix[pl.p]||0)+1; });
+    const prof = mockProfiles()[t];
+    const sig = prof && prof.sig && prof.sig.sigs ? prof.sig.sigs.slice(0,3).map(s=>s.txt).join(' · ') : '';
+    const predPid = pred && pred.predMap ? Object.keys(pred.predMap).find(k=>pred.predMap[k]===nxt) : null;
+    ins += `<div class="sk-insight${t===lg.teamName?' mine':''}">
+      <div class="sk-roster-h">${esc(t)}${t===lg.teamName?' ★':''}</div>
+      <div class="sk-il">Needs: <b${need?'':' class="ok"'}>${need?esc(need):'roster set ✓'}</b></div>
+      <div class="sk-il">Taken: ${picks.length+ks.length} · ${Object.entries(mix).map(([p,n])=>`<span class="pchip ${pcl(p)}">${p}</span>×${n}`).join(' ')||'—'}</div>
+      ${sig?`<div class="sk-il sk-mock">Mock: ${esc(sig)}</div>`:''}
+      <div class="sk-il">Next p${nxt}: ${predPid?`<b>${nm(predPid)}</b> <span class="pchip ${pcl(pp(predPid))}">${esc(pp(predPid))||'?'}</span>`:'—'}</div>
+    </div>`;
+  }
+  ins += '</div>';
+  $('skInsightsWrap').innerHTML = ins;
 }
 
 function render(){
@@ -985,6 +1037,13 @@ function render(){
   if(mode === 'pre') renderPredraft();
   else if(mode === 'grid') renderSkeleton();
   else { renderBoard(); renderTeam(); renderContext(); }
+  renderRight();
+}
+function renderRight(){
+  const v = UI.rightView || 'call';
+  const sel = $('rightView'); if(sel) sel.value = v;
+  const map = {call:'rvCall', roster:'rvRoster', scarcity:'rvScarcity', log:'rvLog', guys:'rvGuys', context:'rvContext'};
+  for(const k in map){ const el = $(map[k]); if(el) el.style.display = k===v ? '' : 'none'; }
 }
 function renderHeader(){
   const lg = L();
@@ -1285,6 +1344,7 @@ $('myGuysPreset').addEventListener('change', e=>{
     saveState(); render();
   }
 });
+$('rightView').addEventListener('change', e=>{ UI.rightView = e.target.value; saveState(); renderRight(); });
 $('tagFilter').addEventListener('change', e=>{ boardState.tag = e.target.value; renderBoard(); });
 
 /* ---------------- MY TEAM ---------------- */
@@ -1308,6 +1368,7 @@ function renderTeam(){
       </div>
       <div class="why">${esc(b.reason)}</div>
       <div class="call-chips">${(b.chips||[]).map(ch=>`<span class="cchip ${chipCls(ch)}">${esc(ch)}</span>`).join('')}</div>
+      ${call.trials?`<div class="read-detail">${call.trials} simulated boards · window p${call.start}${call.myNext?` → p${call.myNext}`:''} · baseline: ${b.blMode} @ ${b.blPts} pts</div>`:''}
       <div class="call-alt">${call.alts.map(a=>{
         const ap = a.survival!=null ? Math.round(a.survival*100) : null;
         return `<div class="alt-line"><b>${esc(a.p.n)}</b> <span class="pmeta">${esc(a.p.t)} · ${a.pos}</span> <span class="alt-gain">+${a.gain}pts</span>${ap!=null?` <span class="surv-mini"><span class="surv-fill ${survCls(ap)}" style="width:${ap}%"></span></span> ${ap}%`:''} <span class="alt-chips">${(a.chips||[]).map(ch=>esc(ch)).join(' · ')}</span></div>`;
@@ -1370,6 +1431,17 @@ function renderTeam(){
       <span class="sc-num">${gone}/${top.length}${cliff>=12?` <span title="Tier cliff — best available is ${cliff} pts above the next tier" style="color:var(--warn)">cliff ${cliff}pts</span>`:''}</span></div>`;
   }
   $('scarcityBox').innerHTML = scHTML;
+  // runs & snipers — live league pressure
+  if($('runBox')){
+    const run = call ? call.run : null;
+    const nc = call ? call.needCount : null;
+    const ms = call ? call.mockSnip : null;
+    let rh = '';
+    if(run) rh += `<div class="run-line">🔥 Position run: ${run.pos} ×${run.n} of last ${run.total} picks</div>`;
+    rh += ['QB','RB','WR','TE'].map(p=>`<div class="run-line">${p}: <b>${nc?(nc[p]||0):0}</b> ahead need · mock-heavy <b>${ms?(ms[p]||0):0}</b></div>`).join('');
+    if(!run && (!nc || !Object.values(nc||{}).some(v=>v>0))) rh += '<div class="hint">No live runs yet — mark picks to light this up.</div>';
+    $('runBox').innerHTML = rh;
+  }
 }
 
 function posRows(pos){ return rankingRows()?.[pos] || []; }
@@ -1603,12 +1675,12 @@ function sharinganRead(){
   }
   scored.sort((a,b)=>b.score-a.score);
   const top = scored.slice(0,4);
-  const reason = c => `+${Math.round(c.gain)} pts over baseline ${c.pos}`;
-  const mk = (c, n) => ({p:c.p, pid:c.row[0], reason:reason(c), chips:c.chips.slice(0,n), survival:c.survival, score:c.score, gain:Math.round(c.gain), pos:c.pos, need:c.need});
+  const reason = c => `+${Math.round(c.gain)} pts over ${c.need?'replacement':'your worst starter'} ${c.pos} (${Math.round(c.baseline)} pts)`;
+  const mk = (c, n) => ({p:c.p, pid:c.row[0], reason:reason(c), chips:c.chips.slice(0,n), survival:c.survival, score:c.score, gain:Math.round(c.gain), pos:c.pos, need:c.need, blMode:c.need?'replacement level':'worst starter', blPts:Math.round(c.baseline)});
   return {
     primary: mk(top[0], 7),
     alts: top.slice(1).map(c=>mk(c, 5)),
-    scored, myNext, start, ahead, run, needCount, mockSnip, pressure, cliffs
+    scored, myNext, start, ahead, run, needCount, mockSnip, pressure, cliffs, trials: 40
   };
 }
 function nextPickCall(){ return sharinganRead(); }

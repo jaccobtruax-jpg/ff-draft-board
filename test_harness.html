@@ -381,8 +381,25 @@ f.onload = () => {
       const filledCells = [...d.querySelectorAll('.sk-grid tbody td.sk-cell:not(.sk-open)')];
       log('skeleton: grid fills from draft log', filledCells.length >= 1 && filledCells[0].textContent.trim().length > 3);
       log('skeleton: master list shows the pick', [...d.querySelectorAll('.sk-list tbody tr')].some(r=> r.querySelector('td:nth-child(3)').textContent.trim().length > 0));
+      log('skeleton: team insights rendered (needs/trends/next picks)', d.querySelectorAll('.sk-insight').length === 10 && /Needs:/.test(d.querySelector('#skInsightsWrap').textContent) && /Next p/.test(d.querySelector('#skInsightsWrap').textContent));
       d.querySelector('#modeToggle button[data-mode="day"]').click();
       log('skeleton: back to draft day', d.querySelector('#main').style.display !== 'none');
+      // ============ DRAFT COMMAND (right panel views) ============
+      const rv = d.querySelector('#rightView');
+      log('right: view dropdown with 6 options', !!rv && rv.querySelectorAll('option').length === 6);
+      log('right: default view is the call', d.querySelector('#rvCall').style.display !== 'none' && d.querySelector('#rvRoster').style.display === 'none');
+      log('right: call shows read detail (sims + baseline)', /simulated boards/.test(d.querySelector('.read-detail').textContent) && /baseline/.test(d.querySelector('.read-detail').textContent));
+      log('right: runs & snipers box populated', /ahead need/.test(d.querySelector('#runBox').textContent));
+      rv.value = 'roster'; rv.dispatchEvent(new w.Event('change', {bubbles:true}));
+      log('right: switching to roster view', d.querySelector('#rvRoster').style.display !== 'none' && d.querySelector('#rvCall').style.display === 'none' && /RB/.test(d.querySelector('#rosterBox').textContent));
+      rv.value = 'log'; rv.dispatchEvent(new w.Event('change', {bubbles:true}));
+      log('right: log view shows draft log + managers', d.querySelector('#rvLog').style.display !== 'none' && d.querySelector('#draftLog') && d.querySelector('#mgrBox'));
+      rv.value = 'guys'; rv.dispatchEvent(new w.Event('change', {bubbles:true}));
+      log('right: guys view has preset hint', d.querySelector('#rvGuys').style.display !== 'none' && /preset/.test(d.querySelector('#rvGuys').textContent));
+      rv.value = 'context'; rv.dispatchEvent(new w.Event('change', {bubbles:true}));
+      log('right: reference view has expanders', d.querySelector('#rvContext').style.display !== 'none' && !!d.querySelector('.expander[data-x="injuryBox"]'));
+      log('right: choice persists in state', dq.ui.rightView === 'context');
+      rv.value = 'call'; rv.dispatchEvent(new w.Event('change', {bubbles:true}));
     } catch(e){ log('PD EXCEPTION: ' + e.message + '\n' + (e.stack||'').split('\n').slice(0,3).join(' | '), false); }
     finish();
   };
