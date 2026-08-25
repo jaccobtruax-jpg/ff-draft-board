@@ -402,8 +402,8 @@ f.onload = () => {
       log('league2 toggle shows waiting badge', /waiting/.test(d.querySelector('[data-lg="1"]').textContent));
       rv.value = 'value'; rv.dispatchEvent(new w.Event('change', { bubbles: true }));
       log('right: value view lists steals + VBD', d.querySelector('#rvValue').style.display !== 'none' && /steals/i.test(d.querySelector('#valueBox').textContent) && /VBD/.test(d.querySelector('#valueBox').textContent));
-      rv.value = 'auction'; rv.dispatchEvent(new w.Event('change', { bubbles: true }));
-      log('right: auction view shows budget math', d.querySelector('#rvAuction').style.display !== 'none' && /Spent/.test(d.querySelector('#auctionBox').textContent) && /max bid/.test(d.querySelector('#auctionBox').textContent));
+      rv.value = 'waivers'; rv.dispatchEvent(new w.Event('change', { bubbles: true }));
+      log('right: waivers view shows FAAB budget + bid guide', d.querySelector('#rvWaivers').style.display !== 'none' && /FAAB/.test(d.querySelector('#waiverBox').textContent) && /bid guide/i.test(d.querySelector('#waiverBox').textContent) && d.querySelectorAll('#waiverBox .alt-line').length >= 5);
       rv.value = 'injury'; rv.dispatchEvent(new w.Event('change', { bubbles: true }));
       log('right: injury room lists entries with severity', d.querySelector('#rvInjury').style.display !== 'none' && d.querySelectorAll('#injuryList2 .inj-row').length >= 5 && d.querySelectorAll('#injChips .need-chip').length >= 3);
       const injF2 = d.querySelector('#injFilter2');

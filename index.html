@@ -586,7 +586,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
         <option value="guys">⭐ My Guys</option>
         <option value="context">📚 Reference</option>
         <option value="value">📊 Value &amp; Tiers</option>
-        <option value="auction">💰 Auction</option>
+        <option value="waivers">💵 Waivers &amp; FAAB</option>
         <option value="injury">🚑 Injury Room</option>
         <option value="rookie">🌱 Rookies</option>
       </select>
@@ -629,9 +629,9 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
         <div class="block-title">Value &amp; tiers — where the board is wrong</div>
         <div id="valueBox" class="ctxbox"></div>
       </div>
-      <div id="rvAuction" style="display:none">
-        <div class="block-title">Auction reference — $200 budget math</div>
-        <div id="auctionBox" class="ctxbox"></div>
+      <div id="rvWaivers" style="display:none">
+        <div class="block-title">Waivers &amp; FAAB — $200 post-draft budget</div>
+        <div id="waiverBox" class="ctxbox"></div>
       </div>
       <div id="rvInjury" style="display:none">
         <div class="block-title">Injury room — severity watch</div>
@@ -706,7 +706,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 </main>
 
 <footer>
-  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b26b, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b26b</span><br>
+  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b26c, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b26c</span><br>
   <span style="opacity:.75">Data: Fantasy Footballers 2026 Ultimate Draft Kit (rankings computed with the UDK engine for your league scoring). Your draft state lives only in this browser.</span>
   <button class="btn ghost" id="exportBtn">Export state</button>
   <button class="btn ghost" id="importBtn">Import state</button>
@@ -890,7 +890,7 @@ function defaultLeague(i){
   return {
     name: i===0 ? 'League of Champs' : 'Leg of bastards',
     scoring: 'TE PREM (4pt QB)',
-    teams: 10, slot: i===0 ? 3 : 5, snake: true, auction: false, budget: 200,
+    teams: 10, slot: i===0 ? 3 : 5, snake: true, auction: false, budget: 200, /* budget = FAAB for post-draft waivers (not an auction draft) */
     roster: i===0 ? {QB:1, RB:2, WR:2, TE:1, FLEX:2, RBW:1, SFLEX:1, DST:1, K:1, BN:10, IR:3}
                   : {QB:1, RB:2, WR:2, TE:1, FLEX:1, DST:1, K:1, BN:6},
     teamName: i===0 ? 'Dolphin fans are gay' : '',
@@ -1196,7 +1196,7 @@ function render(){
 function renderRight(){
   const v = UI.rightView || 'call';
   const sel = $('rightView'); if(sel) sel.value = v;
-  const map = {call:'rvCall', roster:'rvRoster', scarcity:'rvScarcity', log:'rvLog', guys:'rvGuys', context:'rvContext', value:'rvValue', auction:'rvAuction', injury:'rvInjury', rookie:'rvRookie'};
+  const map = {call:'rvCall', roster:'rvRoster', scarcity:'rvScarcity', log:'rvLog', guys:'rvGuys', context:'rvContext', value:'rvValue', waivers:'rvWaivers', injury:'rvInjury', rookie:'rvRookie'};
   for(const k in map){ const el = $(map[k]); if(el) el.style.display = k===v ? '' : 'none'; }
 }
 function renderHeader(){
@@ -1857,8 +1857,8 @@ function sharinganRead(){
 function nextPickCall(){ return sharinganRead(); }
 
 /* ---------------- DRAFT CONTEXT ---------------- */
-/* ---------------- DRAFT COMMAND EXTRA VIEWS (value, auction, injury, rookies) ---------------- */
-function renderDraftTools(){ renderValue(); renderAuction(); renderInjury(); renderRookie(); }
+/* ---------------- DRAFT COMMAND EXTRA VIEWS (value, waivers, injury, rookies) ---------------- */
+function renderDraftTools(){ renderValue(); renderWaivers(); renderInjury(); renderRookie(); }
 
 function renderValue(){
   const steals = [], vbdList = [];
@@ -1884,14 +1884,8 @@ function renderValue(){
   $('valueBox').innerHTML = h;
 }
 
-function renderAuction(){
+function renderWaivers(){
   const lg = L();
-  const spent = Object.values(lg.drafted).reduce((a,d)=>a+(d.amount||0),0);
-  const left = Math.max(0, lg.budget - spent);
-  const fills = rosterFill();
-  const playPos = ['QB','RB','WR','TE','FLEX','RBW','SFLEX','DST','K'];
-  const openSlots = playPos.reduce((a,pos)=> a + Math.max(0, (lg.roster[pos]||0) - (fills[pos]||0)), 0);
-  const maxBid = openSlots ? Math.floor(left/openSlots) : 0;
   const amap = auctionMap();
   const rows = [];
   for(const pos of ['QB','RB','WR','TE']){
@@ -1903,14 +1897,10 @@ function renderAuction(){
     }
   }
   rows.sort((a,b)=>b.cost-a.cost);
-  const pct = lg.budget ? Math.round(spent/lg.budget*100) : 0;
-  let h = `<div class="sc-item"><span class="lbl">Spent</span>
-      <div class="sc-track"><div class="sc-fill ${pct>80?'hot':''}" style="width:${Math.min(100,pct)}%"></div></div>
-      <span class="sc-num">$${spent}/${lg.budget}</span></div>
-    <div class="hint">Left $${left} · ${openSlots} open slots · suggested max bid $${maxBid}${lg.auction?'':' · snake draft — $ shown as a value reference'}</div>`;
-  h += `<div class="t" style="font-size:11.5px;margin-top:8px">Top undrafted by auction value</div>`;
-  h += rows.slice(0,12).map(r=>`<div class="alt-line"><b>${esc(r.p.n)}</b> <span class="pmeta">${esc(r.p.t)} · ${r.p.p}</span> <span class="alt-gain">$${r.cost}</span> <span class="pmeta">${r.pts!=null?Math.round(r.pts)+'pts':'—'} · ADP ${fmtADP(r.adp)}</span></div>`).join('') || '<div class="hint">No auction data yet.</div>';
-  $('auctionBox').innerHTML = h;
+  let h = `<div class="hint" style="margin-bottom:6px">Not an auction draft — the $${lg.budget} is your <b>FAAB</b> for post-draft waivers. Every team starts with $${lg.budget}; bids are blind each waiver run. The $ figures below are a bid guide: if one of these players hits the wire, this is the neighborhood to bid.</div>`;
+  h += `<div class="t" style="font-size:11.5px">Waiver bid guide — top undrafted by value</div>`;
+  h += rows.slice(0,12).map(r=>`<div class="alt-line"><b>${esc(r.p.n)}</b> <span class="pmeta">${esc(r.p.t)} · ${r.p.p}</span> <span class="alt-gain">$${r.cost}</span> <span class="pmeta">${r.pts!=null?Math.round(r.pts)+'pts':'—'} · ADP ${fmtADP(r.adp)}</span></div>`).join('') || '<div class="hint">No value data yet.</div>';
+  $('waiverBox').innerHTML = h;
 }
 
 const INJ_SEV = [
