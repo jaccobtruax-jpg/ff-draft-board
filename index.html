@@ -738,7 +738,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 </main>
 
 <footer>
-  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b28b, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b28b</span><br>
+  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b29a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b29a</span><br>
   <span style="opacity:.75">Data: Fantasy Footballers 2026 Ultimate Draft Kit (rankings computed with the UDK engine for your league scoring). Your draft state lives only in this browser.</span>
   <button class="btn ghost" id="exportBtn">Export state</button>
   <button class="btn ghost" id="importBtn">Import state</button>
@@ -2097,15 +2097,30 @@ function kickoffMessage(){
   const body = chirps.length ? chirps.join('\n') : '• Nobody has made a pick yet. The silence is deafening — and frankly, the best draft any of you have had.';
   return `⚔️ ${lg.name} — Week 1 kickoff\n\nTo every manager who thought this draft was a good idea:\n\n${body}\n\nGood luck. You're going to need it.\n\n— the Sharingan sees everything`;
 }
+function draftComplete(){
+  const lg = L();
+  return Object.keys(lg.drafted).length >= lg.teams * 22;
+}
 function renderRoast(){
   const lg = L();
   const teams = managers().filter(t=>teamPicks(t).length);
   const kb = $('kickoffBox');
   if(kb){
-    const msg = kickoffMessage();
-    ROAST_TEXTS.kickoff = msg;
-    kb.innerHTML = `<div style="white-space:pre-wrap;font-size:12px;line-height:1.55">${esc(msg)}</div>
-      <div style="display:flex;justify-content:flex-end;margin-top:4px"><button class="cpy" onclick="copyTextById('kickoff', this)">Copy</button></div>`;
+    if(!draftComplete()){
+      const marked = Object.keys(lg.drafted).length;
+      const total = lg.teams * 22;
+      const pct = Math.min(100, Math.round(marked/total*100));
+      ROAST_TEXTS.kickoff = '';
+      kb.innerHTML = `<div class="hint">⚔️ The Week 1 kickoff message is written after the last pick — it roasts the finished draft, not the half of it. Keep marking picks.</div>
+        <div class="sc-item"><span class="lbl">Draft progress</span>
+        <div class="sc-track"><div class="sc-fill" style="width:${pct}%"></div></div>
+        <span class="sc-num">${marked}/${total} · ${pct}%</span></div>`;
+    } else {
+      const msg = kickoffMessage();
+      ROAST_TEXTS.kickoff = msg;
+      kb.innerHTML = `<div style="white-space:pre-wrap;font-size:12px;line-height:1.55">${esc(msg)}</div>
+        <div style="display:flex;justify-content:flex-end;margin-top:4px"><button class="cpy" onclick="copyTextById('kickoff', this)">Copy</button></div>`;
+    }
   }
   const rb = $('roastBox');
   if(!rb) return;

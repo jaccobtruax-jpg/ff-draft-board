@@ -437,9 +437,21 @@ f.onload = () => {
       d16.markDrafted(pB, null, false, 'Mothership');
       d16.render();
       log('trash talk: manager cards render for teams with picks', d.querySelectorAll('#roastBox .roast-card').length >= 2);
-      log('trash talk: kickoff message names the league', /League of Champs/.test(d.querySelector('#kickoffBox').textContent) && /kickoff/i.test(d.querySelector('#kickoffBox').textContent) && /Good luck/.test(d.querySelector('#kickoffBox').textContent));
+      log('trash talk: kickoff locked until draft complete', /progress/.test(d.querySelector('#kickoffBox').textContent) && !/Good luck/.test(d.querySelector('#kickoffBox').textContent) && !d.querySelector('#kickoffBox .cpy'));
       log('trash talk: cards carry a chirp + record line', /".+"/.test(d.querySelector('#roastBox').textContent) && /avg gap/.test(d.querySelector('#roastBox').textContent));
-      log('trash talk: copy buttons present', d.querySelectorAll('#roastBox .cpy').length >= 2 && !!d.querySelector('#kickoffBox .cpy'));
+      log('trash talk: autopsy copy buttons present', d.querySelectorAll('#roastBox .cpy').length >= 2);
+      // complete the draft (220 picks) -> kickoff unlocks
+      const lgx = d16.L;
+      const rowsA = d16.data.rankings['TE PREM (4pt QB)'].top200;
+      const teamList = ['Gare-e Bears','Mothership','Dolphin fans are gay','I Chase Brown Kids','Kirk-umsized Penix','Commander in Children','OJ did it?','Team Name TBD',"Sandusky's Home of TEs",'Ankle Breakers Anonymous'];
+      lgx.drafted = {}; lgx.log = [];
+      for(let n=1; n<=220; n++){
+        const pid = rowsA[(n-1) % rowsA.length][0];
+        lgx.drafted[pid + '_' + n] = { pickNum: n, team: teamList[(n-1) % teamList.length] };
+        lgx.log.push({ pickNum: n, team: teamList[(n-1) % teamList.length], pid });
+      }
+      d16.render();
+      log('trash talk: kickoff unlocks at 220/220', /Good luck/.test(d.querySelector('#kickoffBox').textContent) && /League of Champs/.test(d.querySelector('#kickoffBox').textContent) && !!d.querySelector('#kickoffBox .cpy'));
       lg16.drafted = {}; lg16.log = []; d16.render();
       // ============ NEWS & INJECTION ============
       lgR.drafted = {}; lgR.log = []; dq.render();
