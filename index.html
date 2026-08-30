@@ -738,7 +738,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 </main>
 
 <footer>
-  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b30a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b30a</span><br>
+  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b31a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b31a</span><br>
   <span style="opacity:.75">Data: Fantasy Footballers 2026 Ultimate Draft Kit (rankings computed with the UDK engine for your league scoring). Your draft state lives only in this browser.</span>
   <button class="btn ghost" id="exportBtn">Export state</button>
   <button class="btn ghost" id="importBtn">Import state</button>
@@ -929,7 +929,7 @@ const L2_ORDER = [
 function defaultLeague(i){
   return {
     name: i===0 ? 'League of Champs' : '10 Kage summit',
-    scoring: 'TE PREM (4pt QB)',
+    scoring: i===0 ? 'TE PREM (4pt QB)' : 'HALF (4pt QB)',
     teams: 10, slot: i===0 ? 3 : 2, snake: true, auction: false, budget: 200, /* budget = FAAB for post-draft waivers (not an auction draft) */
     roster: i===0 ? {QB:1, RB:2, WR:2, TE:1, FLEX:2, RBW:1, SFLEX:1, DST:1, K:1, BN:10, IR:3}
                   : {QB:1, RB:2, WR:2, TE:1, FLEX:2, DST:1, K:1, BN:5, IR:1},
@@ -979,6 +979,15 @@ function adpFor(p, cat){
   const r = L().roster;
   if((r.SFLEX||0) > 0 || (r.QB||0) > 1) return p.adp_q != null ? p.adp_q : (p.adp_h != null ? p.adp_h : p.adp);
   return cat==='ppr'?p.adp_p : cat==='std'?p.adp : (p.adp_h!=null?p.adp_h:p.adp);
+}
+/* mock analysis is judged on UDK data: resolve the board player's ADP for this league's
+   scoring cat (adp_q for superflex, adp_h half, adp_p PPR, adp std); fall back to the
+   mock's embedded adp only when the player isn't on the UDK board */
+function udkAdpOf(p){
+  const bp = playerByID(p.pid||p.id);
+  if(!bp) return (p.adp!=null?p.adp:null);
+  const a = adpFor(bp, scoringCat());
+  return a!=null ? a : (p.adp!=null?p.adp:null);
 }
 /* ---------------- data utilization helpers ---------------- */
 function cleanHtml(s){
@@ -2706,7 +2715,7 @@ function pdLocked(myMocks){
   const agg={};
   for(const {mine} of myMocks) for(const p of mine){
     const x=(agg[p.pid]=agg[p.pid]||{pid:p.pid, name:p.name, pos:p.pos, rnds:[], ovs:[], adps:[]});
-    x.rnds.push(p.round); x.ovs.push(p.overall); if(p.adp) x.adps.push(p.adp);
+    x.rnds.push(p.round); x.ovs.push(p.overall); const ua=udkAdpOf(p); if(ua!=null) x.adps.push(ua);
   }
   const list=Object.values(agg).filter(x=>x.rnds.length>=2)
     .sort((a,b)=>b.rnds.length-a.rnds.length || avg(a.rnds)-avg(b.rnds)).slice(0,10);
@@ -2739,7 +2748,7 @@ function pdTiming(myMocks){
 }
 function pdAdp(myMocks){
   const diffs=[];
-  for(const {mine} of myMocks) for(const p of mine) if(p.adp) diffs.push(p.overall-p.adp);
+  for(const {mine} of myMocks) for(const p of mine){ const ua=udkAdpOf(p); if(ua!=null) diffs.push(p.overall-ua); }
   if(!diffs.length) return '';
   const d=diffs.reduce((a,b)=>a+b,0)/diffs.length;
   const cls=d>1.5?'up':d<-1.5?'down':'';

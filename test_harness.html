@@ -61,6 +61,8 @@ f.onload = () => {
       log('league switched to 1', dbg2.ui.league === 1);
       log('scoring label HALF (lg2)', d.querySelector('#scoringLabel').textContent.includes('HALF'));
       log('league 2 draft state separate', Object.keys(dbg2.L.drafted).length === 0);
+      // 3b. back to league 0 — keeper-hiding checks need a league WITH keepers
+      d.querySelectorAll('#lgToggle button')[0].click();
       // 4. search
       const sb = d.querySelector('#searchBox');
       sb.value = 'Bijan'; sb.dispatchEvent(new w.Event('input', {bubbles:true}));
@@ -131,7 +133,7 @@ f.onload = () => {
       d.querySelector('tr.player:not(.drafted) .mk.chk').click();
       d.querySelector('tr.player:not(.drafted) .mk.chk').click();
       d.querySelector('tr.player:not(.drafted) .mk.chk').click();
-      log('log teams follow draft order', ['Alpha','Bravo','Charlie'].every((t,i)=> di.L.log[i].team===t));
+      log('log teams follow draft order (own pick = my team)', ['Alpha','Bravo','Dolphin fans are gay'].every((t,i)=> di.L.log[i].team===t));
       // modal: at-a-glance strip + collapsed notes
       lg0.drafted = {}; lg0.log = []; di.render();
       d.querySelector('tr.player:not(.drafted) .pname').click();
@@ -147,7 +149,7 @@ f.onload = () => {
     setTimeout(runPD, 50);
   };
   // ============ PRE-DRAFT + WHO-DRAFTED-WHO ============
-  const runPD = () => {
+  const runPD = async () => {
     try{
       if(!w.__dbg().MOCKS || !w.__dbg().MOCKS.mocks.length){
         return setTimeout(runPD, 200);
@@ -415,11 +417,11 @@ f.onload = () => {
       log('right: value section lists steals + VBD', /steals/i.test(d.querySelector('#valueBox').textContent) && /VBD/.test(d.querySelector('#valueBox').textContent));
       log('right: waivers section shows FAAB budget + bid guide', /FAAB/.test(d.querySelector('#waiverBox').textContent) && /bid guide/i.test(d.querySelector('#waiverBox').textContent) && d.querySelectorAll('#waiverBox .alt-line').length >= 5);
       log('right: injury room lists entries with severity', d.querySelectorAll('#injuryList2 .inj-row').length >= 5 && d.querySelectorAll('#injChips .need-chip').length >= 3);
-      const injF2 = d.querySelector('#injFilter2');
-      injF2.value = 'achilles'; injF2.dispatchEvent(new w.Event('input', { bubbles: true }));
+      const injF3 = d.querySelector('#injFilter2');
+      injF3.value = 'achilles'; injF3.dispatchEvent(new w.Event('input', { bubbles: true }));
       const injN2 = d.querySelectorAll('#injuryList2 .inj-row').length;
       log('right: injury filter narrows the list', injN2 >= 1 && injN2 < 31);
-      injF2.value = ''; injF2.dispatchEvent(new w.Event('input', { bubbles: true }));
+      injF3.value = ''; injF3.dispatchEvent(new w.Event('input', { bubbles: true }));
       log('right: rookies section lists rookies', d.querySelectorAll('#rookieBox2 .alt-line').length >= 5);
       // baseline modes against a filled roster (2 RBs drafted)
       const d16 = dq;
