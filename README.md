@@ -31,15 +31,15 @@ Draft-day companion board for Jaccob's two leagues, built on the Fantasy Footbal
 - **⚡ Living read pulse** — every pick (or undo) re-runs the research and reports what it changed: survival swings (CMC 88→41%), tier-cliff jumps, scarcity counts — plus the callbox visibly pulses when the clock lands on your pick.
 - **💩 Trash Talk engine** — autopsies every manager's draft from the log: reaches (pick vs keeper-adjusted ADP), bye-week pileups (3+ starters on one bye), glass-and-hope risk picks, rookie roulette, bust tags, QB-forgotten strategies — each gets a savage summary card with a one-liner chirp and a Copy button. The **Week 1 kickoff message** (addressed to every manager with @handles) stays locked with a draft-progress bar until the draft is complete (220/220) — it roasts the finished draft, not the half of it.
 - **📰 News & Impact page + injection engine** — a collector cron (every 6h) monitors FFB site search + Google News + the podcast feed, and an LLM pass writes a **suggested edit per article** ("Tag Kenneth Walker injured · −16 pts · drops ~2 rounds"). The News page shows every article with its suggestion and **Inject / Ignore / Revert** buttons — nothing touches the board until you inject. Injections apply live: inj/boost tag on the player's row, pts delta off projections, and the pts sort + Sharingan read re-rank accordingly. Per-article state persists (ffb-news-v1); bundled items are labeled SAMPLE until the collector's first real run.
-- `test_harness.html` — in-browser smoke test, **160 checks** (open it, PASS/FAIL list renders)
+- `test_harness.html` — in-browser smoke test, **167 checks** (open it, PASS/FAIL list renders)
 - `data/board.json` — all player/ranking data (~660KB)
-- `data/mocks.json` — mock-draft corpus for the Pre-Draft page (bundled SAMPLE mocks; override via in-app import)
+- `data/mocks.json` — mock-draft corpus for the Pre-Draft page (3 SAMPLE mocks for League 1 + the real League 2 mock from Sleeper, 8/28; override via in-app import)
 - `build/` — the scripts that scraped the UDK site and built board.json, plus `build_mocks.py` (converts mock exports → mocks.json, name-matches players, joins ADP)
 
 ## League defaults
 
 - League of Champs (League 1) — real config from the Sleeper import: TE PREM (4pt QB: 0.5 PPR WR/RB + 1.0 TE, 4pt pass TD, INT −1), 10 teams, slot 3, superflex, roster QB1/RB2/WR2/TE1/FLEX2/RBW1/SFLEX1/DST1/K1/BN10/IR3, team "Dolphin fans are gay". Draft order (pick 1 → 10): Mothership, Gare-e Bears, Dolphin fans are gay, I Chase Brown Kids, Kirk-umsized Penix, Commander in Children, OJ did it?, Team Name TBD, Sandusky's Home of TEs, Ankle Breakers Anonymous (handles map to @aws1990, @eriksske, @truax571, @nmilli29, @jgank10, @jmarko1991, @combes101, @jkeeney2010, @aalte12, @Dillonpatric).
-- League 2: TBD — candidate from FFB account: "O.G." (6pt QB, TE premium, QB1/RB2/WR3) or "Leg of bastards" (4pt QB, TE premium, 10 teams)
+- 10 Kage summit (League 2) — real config from the Sleeper import: half PPR TE-prem (0.5 PPR WR/RB + 1.0 TE, 4pt pass TD), 10 teams, slot 2 (mock slot; real draft order randomizes at creation — provisional roster order in Settings), no superflex, roster QB1/RB2/WR2/TE1/FLEX2/K1/DEF1/BN5/IR1, 15 rounds, team "truax571". Real mock loaded: truax571 @ 1.02, 150 picks, 8/28 (only 2 live managers — jallen1925 @ 1.01 and truax571; slots 3–10 were Sleeper CPU autopicks and are labeled CPU in the mock).
 
 ## Use
 

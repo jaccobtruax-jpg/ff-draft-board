@@ -738,7 +738,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 </main>
 
 <footer>
-  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b29a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b29a</span><br>
+  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b30a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b30a</span><br>
   <span style="opacity:.75">Data: Fantasy Footballers 2026 Ultimate Draft Kit (rankings computed with the UDK engine for your league scoring). Your draft state lives only in this browser.</span>
   <button class="btn ghost" id="exportBtn">Export state</button>
   <button class="btn ghost" id="importBtn">Import state</button>
@@ -918,20 +918,28 @@ const L1_HANDLES = {
   'Commander in Children':'@jmarko1991', 'OJ did it?':'@combes101', 'Team Name TBD':'@jkeeney2010',
   "Sandusky's Home of TEs":'@aalte12', 'Ankle Breakers Anonymous':'@Dillonpatric'
 };
+// League 2 = "10 Kage summit" (real, Sleeper league 1397048488352583680): 10 teams, half PPR
+// (0.5 WR/RB, 1.0 TE), 4pt pass TD, QB1/RB2/WR2/TE1/FLEX2/K1/DEF1/BN5+IR, 15 rounds, snake.
+// Order is the Sleeper roster order (join order) — PROVISIONAL: Sleeper randomizes the real
+// draft order when the draft is created; fix via Settings → Draft order when it's announced.
+const L2_ORDER = [
+  'truax571', 'KingOwlexander', 'jallen1925', 'KingLatch', 'HAILTOTHEKING97',
+  'RenegadeReloaded', 'NBRobins23', 'mtljr', 'Bavery24', 'SweatySupa1323'
+];
 function defaultLeague(i){
   return {
-    name: i===0 ? 'League of Champs' : 'Leg of bastards',
+    name: i===0 ? 'League of Champs' : '10 Kage summit',
     scoring: 'TE PREM (4pt QB)',
-    teams: 10, slot: i===0 ? 3 : 5, snake: true, auction: false, budget: 200, /* budget = FAAB for post-draft waivers (not an auction draft) */
+    teams: 10, slot: i===0 ? 3 : 2, snake: true, auction: false, budget: 200, /* budget = FAAB for post-draft waivers (not an auction draft) */
     roster: i===0 ? {QB:1, RB:2, WR:2, TE:1, FLEX:2, RBW:1, SFLEX:1, DST:1, K:1, BN:10, IR:3}
-                  : {QB:1, RB:2, WR:2, TE:1, FLEX:1, DST:1, K:1, BN:6},
-    teamName: i===0 ? 'Dolphin fans are gay' : '',
+                  : {QB:1, RB:2, WR:2, TE:1, FLEX:2, DST:1, K:1, BN:5, IR:1},
+    teamName: i===0 ? 'Dolphin fans are gay' : 'truax571',
     drafted: {},       // pid -> {pick, pickNum, team, amount}
     keepers: {},       // pid -> round label
     stars: [], watch: [], avoid: [],
     log: [],           // {pickNum, team, pid, amount}
     notes: '',
-    order: i===0 ? L1_ORDER.slice() : [],   // draft order team names, pick 1 → N (optional)
+    order: i===0 ? L1_ORDER.slice() : L2_ORDER.slice(),   // draft order team names, pick 1 → N (optional)
     handles: i===0 ? Object.assign({}, L1_HANDLES) : {},  // team name -> @handle
     timer: null        // {endAt}
   };
@@ -2810,7 +2818,7 @@ function pdRuns(mocks){
 function renderPredraft(){
   if(!MOCKS){ $('pdBanner').innerHTML='<span>Loading mock data…</span>'; return; }
   const mocks=leagueMocks();
-  const sample=!!MOCKS.sample;
+  const sample = mocks.length ? mocks.every(m=>m.sample) : !!MOCKS.sample;  // per-league: banner only when every mock for THIS league is sample
   const pdB=$('pdBanner');
   pdB.className='pd-banner'+(sample?' sample':'');
   const btns=`<span class="sp"></span><button class="btn ghost" id="pdImport">${mocks.length?'Import more':'Import mocks'}</button>${mocks.length?'<button class="btn ghost" id="pdClear">Clear</button>':''}`;

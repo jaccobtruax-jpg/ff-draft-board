@@ -161,6 +161,18 @@ f.onload = () => {
       log('predraft manager map rows', d.querySelectorAll('#pdMapBody .mgr-map-row').length === 10);
       log('predraft around-my-picks', d.querySelectorAll('#pdIntelBody .amp-row').length >= 5);
       log('predraft run-risk rows', d.querySelectorAll('#pdIntelBody .runrow').length >= 5);
+      // ---- League 2 (10 Kage summit): real truax571 mock ----
+      const dp2 = w.__dbg();
+      dp2.ui.league = 1; dp2.renderPredraft();
+      const l2m = dp2.MOCKS.mocks.find(m=>m.league===1);
+      log('l2 mock loaded (mySlot 2, 150 picks)', !!l2m && l2m.mySlot === 2 && l2m.picks.length === 150);
+      log('l2 predraft no sample banner', !/SAMPLE/.test(d.querySelector('#pdBanner').textContent));
+      log('l2 banner names league', /10 Kage summit/.test(d.querySelector('#pdBanner').textContent));
+      log('l2 my slot label', /my slot 2/.test(d.querySelector('#pdMyCount').textContent));
+      log('l2 first my-pick is Jonathan Taylor', !!l2m && l2m.picks.filter(p=>p.slot===l2m.mySlot)[0].name === 'Jonathan Taylor');
+      log('l2 manager map rows', d.querySelectorAll('#pdMapBody .mgr-map-row').length === 10);
+      log('l2 teams: truax571 + CPU labels', !!l2m && l2m.teams[1] === 'truax571' && /^CPU/.test(l2m.teams[2]));
+      dp2.ui.league = 0; dp2.renderPredraft();
       d.querySelector('#modeToggle button[data-mode="day"]').click();
       log('draft day restored', d.querySelector('#main').style.display !== 'none');
       // who-drafted-who with real manager names (matches sample corpus for mock sigs)
