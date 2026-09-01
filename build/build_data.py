@@ -20,8 +20,12 @@ def to_f(v):
         return None
 
 # ---------------------------------------------------------------- scoring systems
-SCORING = json.load(open('/tmp/scoring_systems.json'))
-print('scoring systems:', list(SCORING.keys()))
+# scoring systems: repo copy first (committed source of truth), /tmp fallback (legacy build location)
+_SCORING_PATH = os.path.join(BASE, 'build', 'scoring_systems.json')
+if not os.path.exists(_SCORING_PATH):
+    _SCORING_PATH = '/tmp/scoring_systems.json'
+SCORING = json.load(open(_SCORING_PATH))
+print('scoring systems file:', _SCORING_PATH)
 
 TIERS = BLOB['tiers']
 TOP200_MULT = BLOB['top200_multipliers']

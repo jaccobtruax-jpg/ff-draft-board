@@ -1,0 +1,58 @@
+{
+  "STD (4pt QB)": {
+    "pointsPerReceptionRB": 0, "pointsPerReceptionWR": 0, "pointsPerReceptionTE": 0,
+    "pointsPerPassingTouchdown": 4, "pointsPerPassingInterception": -2, "pointsPerFumbleLost": -2,
+    "pointsPerRushingTouchdown": 6, "pointsPerReceivingTouchdown": 6,
+    "rosterSlots": [["QB", 1], ["RB", 2], ["WR", 2], ["TE", 1], ["FLEX", 1], ["DST", 1], ["K", 1], ["BN", 6]],
+    "leagueSize": 12
+  },
+  "STD (6pt QB)": {
+    "pointsPerReceptionRB": 0, "pointsPerReceptionWR": 0, "pointsPerReceptionTE": 0,
+    "pointsPerPassingTouchdown": 6, "pointsPerPassingInterception": -2, "pointsPerFumbleLost": -2,
+    "pointsPerRushingTouchdown": 6, "pointsPerReceivingTouchdown": 6,
+    "rosterSlots": [["QB", 1], ["RB", 2], ["WR", 2], ["TE", 1], ["FLEX", 1], ["DST", 1], ["K", 1], ["BN", 6]],
+    "leagueSize": 12
+  },
+  "HALF (4pt QB)": {
+    "pointsPerReceptionRB": 0.5, "pointsPerReceptionWR": 0.5, "pointsPerReceptionTE": 1.0,
+    "pointsPerPassingTouchdown": 4, "pointsPerPassingInterception": -2, "pointsPerFumbleLost": -2,
+    "pointsPerRushingTouchdown": 6, "pointsPerReceivingTouchdown": 6,
+    "rosterSlots": [["QB", 1], ["RB", 2], ["WR", 2], ["TE", 1], ["FLEX", 2], ["DST", 1], ["K", 1], ["BN", 5], ["IR", 1]],
+    "leagueSize": 10
+  },
+  "HALF (6pt QB)": {
+    "pointsPerReceptionRB": 0.5, "pointsPerReceptionWR": 0.5, "pointsPerReceptionTE": 1.0,
+    "pointsPerPassingTouchdown": 6, "pointsPerPassingInterception": -2, "pointsPerFumbleLost": -2,
+    "pointsPerRushingTouchdown": 6, "pointsPerReceivingTouchdown": 6,
+    "rosterSlots": [["QB", 1], ["RB", 2], ["WR", 2], ["TE", 1], ["FLEX", 2], ["DST", 1], ["K", 1], ["BN", 5], ["IR", 1]],
+    "leagueSize": 10
+  },
+  "PPR (4pt QB)": {
+    "pointsPerReceptionRB": 1, "pointsPerReceptionWR": 1, "pointsPerReceptionTE": 1,
+    "pointsPerPassingTouchdown": 4, "pointsPerPassingInterception": -2, "pointsPerFumbleLost": -2,
+    "pointsPerRushingTouchdown": 6, "pointsPerReceivingTouchdown": 6,
+    "rosterSlots": [["QB", 1], ["RB", 2], ["WR", 2], ["TE", 1], ["FLEX", 1], ["DST", 1], ["K", 1], ["BN", 6]],
+    "leagueSize": 12
+  },
+  "PPR (6pt QB)": {
+    "pointsPerReceptionRB": 1, "pointsPerReceptionWR": 1, "pointsPerReceptionTE": 1,
+    "pointsPerPassingTouchdown": 6, "pointsPerPassingInterception": -2, "pointsPerFumbleLost": -2,
+    "pointsPerRushingTouchdown": 6, "pointsPerReceivingTouchdown": 6,
+    "rosterSlots": [["QB", 1], ["RB", 2], ["WR", 2], ["TE", 1], ["FLEX", 1], ["DST", 1], ["K", 1], ["BN", 6]],
+    "leagueSize": 12
+  },
+  "TE PREM (4pt QB)": {
+    "pointsPerReceptionRB": 0.5, "pointsPerReceptionWR": 0.5, "pointsPerReceptionTE": 1.0,
+    "pointsPerPassingTouchdown": 4, "pointsPerPassingInterception": -2, "pointsPerFumbleLost": -2,
+    "pointsPerRushingTouchdown": 6, "pointsPerReceivingTouchdown": 6,
+    "rosterSlots": [["QB", 1], ["RB", 2], ["WR", 2], ["TE", 1], ["FLEX", 2], ["RBW", 1], ["SFLEX", 1], ["DST", 1], ["K", 1], ["BN", 10], ["IR", 3]],
+    "leagueSize": 10
+  },
+  "TE PREM (6pt QB)": {
+    "pointsPerReceptionRB": 0.5, "pointsPerReceptionWR": 0.5, "pointsPerReceptionTE": 1.0,
+    "pointsPerPassingTouchdown": 6, "pointsPerPassingInterception": -2, "pointsPerFumbleLost": -2,
+    "pointsPerRushingTouchdown": 6, "pointsPerReceivingTouchdown": 6,
+    "rosterSlots": [["QB", 1], ["RB", 2], ["WR", 2], ["TE", 1], ["FLEX", 2], ["DST", 1], ["K", 1], ["BN", 10], ["IR", 3]],
+    "leagueSize": 10
+  }
+}
