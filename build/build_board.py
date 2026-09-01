@@ -126,7 +126,7 @@ for sc_name, r in rankings.items():
     R[sc_name] = entry
 
 board = {
-    'meta': {'season': '2026', 'source': 'Fantasy Footballers Ultimate Draft Kit 2026', 'updated': '2026-08-25'},
+    'meta': {'season': '2026', 'source': 'Fantasy Footballers Ultimate Draft Kit 2026', 'updated': '2026-09-02'},
     'players': P,
     'rankings': R,
     'rookies': [{'id': x['pid'], 'n': x['name'], 'p': x['pos'], 't': x['team']} for x in rookies],
