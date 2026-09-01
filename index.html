@@ -738,7 +738,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 </main>
 
 <footer>
-  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b34a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b34a</span><br>
+  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b35a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b35a</span><br>
   <span style="opacity:.75">Data: Fantasy Footballers 2026 Ultimate Draft Kit (rankings computed with the UDK engine for your league scoring). Your draft state lives only in this browser.</span>
   <button class="btn ghost" id="exportBtn">Export state</button>
   <button class="btn ghost" id="importBtn">Import state</button>
@@ -2388,9 +2388,10 @@ function openDetail(pid){
   // who-drafted attribution
   const whoSel = $('ddWho');
   whoSel.innerHTML = `<option value="">— on the clock —</option>` + managers().map(m=>`<option>${esc(m)}</option>`).join('');
-  const curTeam = lg.drafted[pid] ? lg.drafted[pid].team : null;
+  const curTeam = lg.drafted[pid] ? lg.drafted[pid].team : (lg.keepers[pid] ? (normK(lg.keepers[pid]).team || null) : null);
   if(curTeam) whoSel.value = curTeam;
   else whoSel.value = teamAtPick(onTheClockPick());
+  const whoDefault = whoSel.value;   // captured default — lets keeper marks tell explicit picks apart from the on-clock default
   // live mode: attribution is automatic — lock the select to the on-clock team
   let hint = $('ddWhoHint');
   if(!hint){ hint = document.createElement('span'); hint.id = 'ddWhoHint'; hint.className = 'live-note'; $('ddWhoRow').appendChild(hint); }
@@ -2411,7 +2412,7 @@ function openDetail(pid){
       const rp = prompt('Keeper — which round.pick is '+p.n+' kept at? (e.g. 6.9)', '');
       if(rp!==null && rp.trim()){
         const m = rp.trim().match(/^(\d+)(?:[.\s](\d+))?$/);
-        if(m){ const team = whoSel.value || teamAtPick(onTheClockPick());
+        if(m){ const team = (whoSel.value && whoSel.value !== whoDefault) ? whoSel.value : (lg.teamName || whoSel.value || teamAtPick(onTheClockPick()));
           lg.keepers[pid] = { rnd:+m[1], pk: m[2]?+m[2]:0, team }; }
         else toast('Keeper round must look like 6.9 (round.pick)');
       }

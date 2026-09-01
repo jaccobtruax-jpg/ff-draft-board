@@ -267,7 +267,7 @@ f.onload = () => {
       const tgtPid = tgt.dataset.id;
       tgt.querySelector('.pname').click();
       d.querySelector('#ddKeeper').click();
-      log('keeper added via modal (5.3, auto team)', !!lgK.keepers[tgtPid] && lgK.keepers[tgtPid].rnd===5 && lgK.keepers[tgtPid].pk===3 && lgK.keepers[tgtPid].team==='Mothership');
+      log('keeper added via modal (5.3, your team)', !!lgK.keepers[tgtPid] && lgK.keepers[tgtPid].rnd===5 && lgK.keepers[tgtPid].pk===3 && lgK.keepers[tgtPid].team===lgK.teamName);
       d.querySelector('#ddKeeper').click();
       log('keeper removed via modal', !lgK.keepers[tgtPid]);
       d.querySelector('#ddClose').click();
