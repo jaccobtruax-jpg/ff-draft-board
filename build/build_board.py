@@ -96,7 +96,12 @@ def auction_values(sc_name, sc, pos_rankings, team_comp, league_size=12, budget=
 DEFAULT_COMP = [['QB', 1], ['RB', 2], ['WR', 2], ['TE', 1], ['FLEX', 1], ['D', 1], ['K', 1], ['BN', 6]]
 
 # ---- per-scoring-system team composition + league size (from the league's own rosterSlots)
-SCORING = json.load(open('/tmp/scoring_systems.json'))
+# scoring systems: repo copy first (committed source of truth), /tmp fallback (legacy build location)
+_SCORING_PATH = os.path.join(BASE, 'build', 'scoring_systems.json')
+if not os.path.exists(_SCORING_PATH):
+    _SCORING_PATH = '/tmp/scoring_systems.json'
+SCORING = json.load(open(_SCORING_PATH))
+print('scoring systems file:', _SCORING_PATH)
 
 def comp_from_slots(slots):
     counts = {}
