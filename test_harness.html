@@ -368,9 +368,10 @@ f.onload = () => {
       lgR.drafted = {}; lgR.log = []; dq.render();
       const mg = d.querySelector('#myGuysPreset');
       log('myguys: preset select + host options', !!mg && mg.querySelectorAll('option').length === 5);
-      log('myguys: 2026-only guard (no 2025 data anywhere)', (()=>{ const pr = dq.MYGUYS.presets; const all = Object.values(pr).map(p=>p.source).join(' '); return Object.keys(pr).every(k=>k==='udk2026') && !/2025/.test(all) && /2026/.test(all); })());
+      log('myguys: 2026-only guard (no 2025 data anywhere)', (()=>{ const pr = dq.MYGUYS.presets; const all = Object.values(pr).map(p=>p.source).join(' '); return Object.keys(pr).every(k=>['udk2026','mike','jason','andy'].includes(k)) && !/2025/.test(all) && /2026/.test(all); })());
+      log('myguys: host presets enabled (2026 ep aired)', (()=>{ const o = d.querySelector('#myGuysPreset'); return ['mike','jason','andy'].every(k=>{ const el = o.querySelector('option[value="'+k+'"]'); return el && !el.disabled; }); })());
       log('myguys: data loaded with resolved ids', (()=>{ const p = dq.MYGUYS.presets.udk2026; return !!p && p.players.length === 10 && p.players.every(x=>x.id); })());
-      log('myguys: host options disabled until 2026 data exists', mg.querySelector('option[value="mike"]').disabled && mg.querySelector('option[value="jason"]').disabled && mg.querySelector('option[value="andy"]').disabled);
+      log('myguys: host presets each carry 3 real 2026 picks', (()=>{ const pr = dq.MYGUYS.presets; return ['mike','jason','andy'].every(k=>pr[k] && pr[k].players.length === 3 && pr[k].players.every(x=>x.id)); })());
       mg.value = 'udk2026'; mg.dispatchEvent(new w.Event('change', {bubbles:true}));
       log('myguys: applying udk2026 sets stars', (()=>{ const st = dq.L.stars; const ids = dq.MYGUYS.presets.udk2026.players.map(x=>String(x.id)); return st.length === ids.length && ids.every(i=>st.includes(i)); })());
       const og = d.querySelector('#onlyGuys');
@@ -471,13 +472,13 @@ f.onload = () => {
       lgR.drafted = {}; lgR.log = []; dq.render();
       d.querySelector('#modeToggle button[data-mode="news"]').click();
       await new Promise(r=>setTimeout(r, 60));
-      log('news: renders with no sample articles', d.querySelector('#news').style.display !== 'none' && d.querySelectorAll('.news-card').length === 0);
+      log('news: renders 8 live YouTube articles (no samples)', d.querySelector('#news').style.display !== 'none' && d.querySelectorAll('.news-card').length === 8);
       log('news: sample banner hidden', d.querySelector('#newsSample').style.display === 'none');
       // synthetic article exercises the injection engine (real corpus arrives via collector cron)
       const kwPid = dq.findPlayerId('Kenneth Walker');
       dq.NEWS.items.push({ id:'t-kw', title:'TEST Kenneth Walker ankle', url:'https://example.com', source:'TEST', published:'2026-08-26T00:00:00Z', impact:{ players:[{ name:'Kenneth Walker', pid: kwPid, action:'injured', games:1, deltaPts:-16.4 }] } });
       dq.renderNews();
-      log('news: synthetic article renders', d.querySelectorAll('.news-card').length === 1);
+      log('news: synthetic article renders (8 + 1)', d.querySelectorAll('.news-card').length === 9);
       log('news: player name resolves to board id', !!kwPid && kwPid.length > 0);
       d.querySelector('.news-card[data-aid="t-kw"] [data-na="inject"]').click();
       log('news: inject applies pts delta', dq.injDelta(kwPid) === -16.4);

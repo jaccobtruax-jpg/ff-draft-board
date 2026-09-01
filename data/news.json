@@ -1,6 +1,119 @@
 {
-  "updated": "2026-08-26",
-  "sample": false,
-  "note": "Sample articles removed per user request. Real articles arrive via the ffb-news-collector cron (6d3a11ac6af2) into this file.",
-  "items": []
+ "updated": "2026-09-02",
+ "sample": false,
+ "items": [
+  {
+   "id": "yt-ep-1963-best-offenses-mock",
+   "title": "Best Offenses Mock Draft + Draft Day Regrets (Ep. 1963)",
+   "url": "https://youtu.be/Xr5hIxFhzFY",
+   "source": "YouTube \u00b7 FFB",
+   "published": "2026-09-01T00:00:00Z",
+   "summary": "Sep 1 show: the Ballers draft the top 12 offenses for fantasy + biggest draft-day regrets. Injury updates included. Latest episode before your draft.",
+   "impact": {
+    "players": [],
+    "note": "Informational \u2014 watch for offense-stack and injury-update takes. No player-specific edit suggested."
+   }
+  },
+  {
+   "id": "jacobs-exempt-list-fallout",
+   "title": "Josh Jacobs on Commissioner Exempt List \u2014 out indefinitely (FFB Ep. 1962)",
+   "url": "https://youtu.be/OO357jcpMKE",
+   "source": "YouTube \u00b7 FFB",
+   "published": "2026-08-31T11:28:46Z",
+   "summary": "Packers RB Josh Jacobs faces 2 misdemeanor charges and was placed on the commissioner exempt list (Aug 30); CBS: out indefinitely. FFB Ep. 1962 debates where Jacobs and MarShawn Lloyd go \u2014 ESPN mocks now have Lloyd in Round 6.",
+   "impact": {
+    "players": [
+     {"name": "Josh Jacobs", "action": "suspension", "deltaPts": -16.4, "suggestedEdit": "Out indefinitely (exempt list) \u2014 don't draft as a starter"},
+     {"name": "MarShawn Lloyd", "action": "boost", "deltaPts": 12, "suggestedEdit": "Lead back with Jacobs out \u2014 ADP rising to Round 6"}
+    ],
+    "note": "Grounded: NYT 8/27 (2 misdemeanor charges) \u00b7 Yahoo/NBC 8/30 (exempt list) \u00b7 CBS 8/31 (out indefinitely) \u00b7 ESPN mock 8/31 (Lloyd Round 6)."
+   }
+  },
+  {
+   "id": "yt-megalashow-bold-predictions",
+   "title": "THE MEGALASHOW! Bold Predictions LIVE in PHX (Ep. 1961)",
+   "url": "https://youtu.be/3DID0RXlVLk",
+   "source": "YouTube \u00b7 FFB",
+   "published": "2026-08-29T00:00:00Z",
+   "summary": "Bonus live episode: spicy bold predictions for 2026 + player-to-blockbuster-movie comps + live mailbag.",
+   "impact": {
+    "players": [],
+    "note": "Informational \u2014 bold-prediction signal only. No player-specific edit suggested."
+   }
+  },
+  {
+   "id": "yt-loveland-my-guy-short",
+   "title": "MY GUY... Colston Loveland \u2014 Bowers in the 2nd or Loveland in the 4th?",
+   "url": "https://youtu.be/15x0TfcBhBs",
+   "source": "YouTube \u00b7 FFB",
+   "published": "2026-08-28T00:00:00Z",
+   "summary": "My Guys clip: Mike's TE pick Colston Loveland (Bears) at a 4th-round cost vs Bowers in the 2nd. Loveland is also on the UDK 2026 expert breakout list.",
+   "impact": {
+    "players": [
+     {"name": "Colston Loveland", "action": "news_only", "suggestedEdit": "My Guy TE \u2014 4th-round ADP value; on UDK breakout list"}
+    ],
+    "note": "From the My Guys clip series. If you want a TE here, Loveland at ADP beats paying 2nd-round for Bowers per Mike."
+   }
+  },
+  {
+   "id": "yt-mock-draft-episode",
+   "title": "Mock Draft Episode! + Meat Your Maker (Ep. 1959)",
+   "url": "https://youtu.be/zrM8x7YIalw",
+   "source": "YouTube \u00b7 FFB",
+   "published": "2026-08-27T00:00:00Z",
+   "summary": "Mock draft ep (less than 2 weeks to kickoff): draft tips, mistakes to avoid, players looking like draft-day values + Steelers backfield breakdown.",
+   "impact": {
+    "players": [],
+    "note": "Informational \u2014 value-target signal. No player-specific edit suggested."
+   }
+  },
+  {
+   "id": "yt-my-guys-2026-ep",
+   "title": "The 2026 \u201cMy Guys\u201d Episode! (Ep. 1958) \u2014 Andy, Mike & Jason plant their flags",
+   "url": "https://youtu.be/jM_iY5SDms4",
+   "source": "YouTube \u00b7 FFB",
+   "published": "2026-08-26T11:41:17Z",
+   "summary": "The annual My Guys episode aired Aug 26. Each host picks 3 players they refuse to leave drafts without. All 9 are now loaded as \u2605 presets on this board.",
+   "impact": {
+    "players": [
+     {"name": "Garrett Wilson", "action": "news_only", "suggestedEdit": "Jason's My Guy \u2014 WR20 ADP, target share monster"},
+     {"name": "Carnell Tate", "action": "news_only", "suggestedEdit": "Jason's My Guy \u2014 rookie WR29 ADP"},
+     {"name": "Omarion Hampton", "action": "news_only", "suggestedEdit": "Jason's My Guy \u2014 Round 2 smash"},
+     {"name": "Christian Watson", "action": "news_only", "suggestedEdit": "Mike's My Guy \u2014 WR3/Flex at WR28 ADP"},
+     {"name": "Colston Loveland", "action": "news_only", "suggestedEdit": "Mike's My Guy \u2014 4th-round TE"},
+     {"name": "Kenneth Walker", "action": "news_only", "suggestedEdit": "Mike's My Guy \u2014 Round 2 Chiefs RB1"},
+     {"name": "Ladd McConkey", "action": "news_only", "suggestedEdit": "Andy's My Guy \u2014 4th/5th-round WR"},
+     {"name": "De'Zhaun Stribling", "action": "news_only", "suggestedEdit": "Andy's My Guy \u2014 double-digit-round rookie WR"},
+     {"name": "Caleb Williams", "action": "news_only", "suggestedEdit": "Andy's My Guy \u2014 QB7 ADP, top-5 upside"}
+    ],
+    "note": "Jason: Garrett Wilson, Carnell Tate, Omarion Hampton \u00b7 Mike: Christian Watson, Colston Loveland, Kenneth Walker III \u00b7 Andy: Ladd McConkey, De'Zhaun Stribling, Caleb Williams. Load any host's list via \u2605 Preset dropdown (hosts now live)."
+   }
+  },
+  {
+   "id": "yt-kyle-pitts-andy",
+   "title": "A player Andy is embarrassed to LOVE \u2014 Is Kyle Pitts worth drafting?",
+   "url": "https://youtu.be/m7ttmO4eggE",
+   "source": "YouTube \u00b7 FFB",
+   "published": "2026-08-26T00:00:00Z",
+   "summary": "My Guys clip: Andy's guiltiest pleasure at TE \u2014 Kyle Pitts at his current ADP. Draftable as a value TE.",
+   "impact": {
+    "players": [
+     {"name": "Kyle Pitts Sr.", "action": "news_only", "suggestedEdit": "Andy's guiltiest pleasure \u2014 value TE at ADP"}
+    ],
+    "note": "From the My Guys clip series (8/26)."
+   }
+  },
+  {
+   "id": "yt-stack-attack-adp-risers",
+   "title": "Stack Attack! + High Risk Picks (Ep. 1957)",
+   "url": "https://youtu.be/N6MC-XudOSU",
+   "source": "YouTube \u00b7 FFB",
+   "published": "2026-08-25T00:00:00Z",
+   "summary": "Underrated QB/WR stacks to target + biggest ADP risers after another week of preseason + injury updates.",
+   "impact": {
+    "players": [],
+    "note": "Informational \u2014 stack-target signal. No player-specific edit suggested."
+   }
+  }
+ ]
 }

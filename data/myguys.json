@@ -1,51 +1,48 @@
 {
- "updated": "2026-08-25",
- "note": "2026-ONLY. Host 'My Guys' lists populate when the 2026 My Guys episode airs (watcher cron).",
+ "updated": "2026-09-02",
+ "note": "2026-ONLY. Host lists from the 2026 My Guys episode (Ep. 1958, aired 2026-08-26) + FFB site 'My Guys for 2026' article (2026-08-27).",
  "presets": {
   "udk2026": {
    "label": "UDK 2026 Expert Breakouts",
    "source": "thefantasyfootballers.com UDK 2026 \u2014 Our Expert Breakout Picks (shared expert list, not per-host)",
    "players": [
-    {
-     "name": "Jaxson Dart",
-     "id": "26082"
-    },
-    {
-     "name": "Trevor Lawrence",
-     "id": "22490"
-    },
-    {
-     "name": "Omarion Hampton",
-     "id": "25956"
-    },
-    {
-     "name": "Kenneth Walker",
-     "id": "23214"
-    },
-    {
-     "name": "Bhayshul Tuten",
-     "id": "25898"
-    },
-    {
-     "name": "Christian Watson",
-     "id": "23395"
-    },
-    {
-     "name": "Carnell Tate",
-     "id": "26752"
-    },
-    {
-     "name": "Tetairoa McMillan",
-     "id": "26054"
-    },
-    {
-     "name": "Colston Loveland",
-     "id": "25869"
-    },
-    {
-     "name": "Harold Fannin Jr.",
-     "id": "25870"
-    }
+    {"name": "Jaxson Dart", "id": "26082"},
+    {"name": "Trevor Lawrence", "id": "22490"},
+    {"name": "Omarion Hampton", "id": "25956"},
+    {"name": "Kenneth Walker", "id": "23214"},
+    {"name": "Bhayshul Tuten", "id": "25898"},
+    {"name": "Christian Watson", "id": "23395"},
+    {"name": "Carnell Tate", "id": "26752"},
+    {"name": "Tetairoa McMillan", "id": "26054"},
+    {"name": "Colston Loveland", "id": "25869"},
+    {"name": "Harold Fannin Jr.", "id": "25870"}
+   ]
+  },
+  "mike": {
+   "label": "Mike's My Guys 2026",
+   "source": "thefantasyfootballers.com \u2014 'The Fantasy Footballers' My Guys for 2026' (Ep. 1958, aired 2026-08-26)",
+   "players": [
+    {"name": "Christian Watson", "id": "23395"},
+    {"name": "Colston Loveland", "id": "25869"},
+    {"name": "Kenneth Walker", "id": "23214"}
+   ]
+  },
+  "jason": {
+   "label": "Jason's My Guys 2026",
+   "source": "thefantasyfootballers.com \u2014 'The Fantasy Footballers' My Guys for 2026' (Ep. 1958, aired 2026-08-26)",
+   "players": [
+    {"name": "Garrett Wilson", "id": "23122"},
+    {"name": "Carnell Tate", "id": "26752"},
+    {"name": "Omarion Hampton", "id": "25956"}
+   ]
+  },
+  "andy": {
+   "label": "Andy's My Guys 2026",
+   "source": "thefantasyfootballers.com \u2014 'The Fantasy Footballers' My Guys for 2026' (Ep. 1958, aired 2026-08-26)",
+   "players": [
+    {"name": "Ladd McConkey", "id": "25097"},
+    {"name": "De'Zhaun Stribling", "id": "28053"},
+    {"name": "Caleb Williams", "id": "24927"}
    ]
   }
  }
