@@ -945,7 +945,7 @@ function defaultLeague(i){
   };
 }
 const LEAGUES = [defaultLeague(0), defaultLeague(1)];
-window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, MYGUYS, NEWS, NEWS_STATE, managers, render, renderPredraft, renderSkeleton, renderRight, renderNews, newsAction, injDelta, findPlayerId, markDrafted, teamAtPick, teamNeed, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap, sharinganRead, survivalProb, tierCliff, posPressure, mockRoundPos, applyMyGuys});
+window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, MYGUYS, NEWS, NEWS_STATE, managers, render, renderPredraft, renderSkeleton, renderRight, renderNews, newsAction, injDelta, findPlayerId, markDrafted, teamAtPick, teamNeed, teamNeedMap, teamNeedCalc, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap, sharinganRead, survivalProb, tierCliff, posPressure, mockRoundPos, applyMyGuys});
 function saveState(){ localStorage.setItem(LS_KEY, JSON.stringify({leagues: LEAGUES, ui: UI})); }
 function loadState(){
   try{
@@ -1729,12 +1729,11 @@ function tierCliff(pos){
 /* positional pressure across the league: how many teams still need a position
    (live needs + keeper-aware) plus the league's mock share of it */
 function posPressure(){
-  const lg = L();
   const cnt = {QB:0,RB:0,WR:0,TE:0};
-  for(const name of managers()) if(teamNeed(name).includes('QB')||teamNeed(name)==='') cnt.QB++;
-  for(const name of managers()) if(teamNeed(name).includes('RB')||teamNeed(name)==='') cnt.RB++;
-  for(const name of managers()) if(teamNeed(name).includes('WR')||teamNeed(name)==='') cnt.WR++;
-  for(const name of managers()) if(teamNeed(name).includes('TE')||teamNeed(name)==='') cnt.TE++;
+  for(const name of managers()){
+    const m = teamNeedMap(name);
+    for(const pos of ['QB','RB','WR','TE']) if(m[pos]) cnt[pos]++;
+  }
   return cnt;
 }
 /* probabilistic survival: simulate the draft window N times; each on-clock team
@@ -1816,7 +1815,8 @@ function sharinganRead(){
       const p = playerByID(row[0]);
       const myRosterPids = [...myDraftedEntries(), ...myKeptEntries()];
       const filled = myRosterPids.map(pid=>playerByID(pid)).filter(p=>p&&p.p===pos);
-      const need = filled.length < rosterSlots(pos);
+      const slots = rosterSlots(pos) + ((pos==='QB' && (lg.roster.SFLEX||0)>0) ? (lg.roster.SFLEX||0) : 0); // SFLEX ≈ 2nd QB slot
+      const need = filled.length < slots;
       let baseline, blLabel;
       if(need){ baseline = replacementBaseline(pos); blLabel = 'replacement level'; }
       else {
@@ -1837,7 +1837,7 @@ function sharinganRead(){
   if(myNext){ for(let n=start; n<myNext; n++){ const t=teamAtPick(n); if(t && !ahead.includes(t)) ahead.push(t); } }
   const needCount = {}; const mockSnip = {};
   for(const pos of ['QB','RB','WR','TE']){
-    needCount[pos] = ahead.filter(t=>teamNeed(t).includes(pos)).length;
+    needCount[pos] = ahead.filter(t=>teamNeedMap(t)[pos]).length;
     mockSnip[pos] = ahead.filter(t=>{ const pr=profs[t]; return !!(pr && pr.sig && pr.sig.mix && pr.sig.mix.pct && pr.sig.mix.pct[pos] >= 30); }).length;
   }
   const run = pred.run;
@@ -2546,23 +2546,48 @@ $('importBtn').onclick = ()=>{
 };
 
 /* ================================================================ WHO-DRAFTED-WHO ======= */
-function teamNeed(team){
-  const lg=L(); if(!team) return '';
+/* SF-aware positional need (b36a). In superflex the SFLEX is effectively a 2nd QB slot —
+   every team wants ~2 QBs for steady points, so QB stays a STRUCTURAL need until 2 are
+   rostered (QB start + SFLEX). RB/WR/TE needs combine their own starting slots with
+   flex-family appetite (FLEX/RBW shared by RB+WR, FLEX open to TE). Structural holes
+   sort ahead of appetite: the old model added every flex slot to every position
+   (RB/WR claim 6, QB claim 2) so a 0-QB superflex team read "needs RB,WR" and the
+   ahead-pressure/run-box counts showed "QB: 0 ahead need". Counting consumers must
+   use teamNeedMap() per position — never substring-match the truncated display string. */
+function teamNeedCalc(team){
+  const lg=L();
   const cnt={QB:0,RB:0,WR:0,TE:0};
-  for(const e of lg.log){ if(e.team!==team) continue; const p=playerByID(e.pid); if(p&&cnt[p.p]!=null) cnt[p.p]++; }
-  for(const pid in lg.keepers){ const k=normK(lg.keepers[pid]); if(k.team!==team) continue; const p=playerByID(pid); if(p&&cnt[p.p]!=null) cnt[p.p]++; }
+  if(team){
+    for(const e of lg.log){ if(e.team!==team) continue; const p=playerByID(e.pid); if(p&&cnt[p.p]!=null) cnt[p.p]++; }
+    for(const pid in lg.keepers){ const k=normK(lg.keepers[pid]); if(k.team!==team) continue; const p=playerByID(pid); if(p&&cnt[p.p]!=null) cnt[p.p]++; }
+  }
+  const r=lg.roster||{};
+  const sf=(r.SFLEX||0)>0;
+  return {
+    cnt,
+    struct:{QB:(r.QB||0)+(sf?(r.SFLEX||0):0), RB:(r.RB||0), WR:(r.WR||0), TE:(r.TE||0)},
+    appetite:{QB:0, RB:(r.FLEX||0)+(r.RBW||0), WR:(r.FLEX||0)+(r.RBW||0), TE:(r.FLEX||0)}
+  };
+}
+function teamNeedMap(team){
+  const out={QB:false,RB:false,WR:false,TE:false};
+  if(!team) return out;   // unknown/empty slot — every position plausibly needed
+  const c=teamNeedCalc(team);
+  for(const pos of ['QB','RB','WR','TE']) out[pos] = c.cnt[pos] < c.struct[pos] + c.appetite[pos];
+  return out;
+}
+function teamNeed(team){
+  if(!team) return '';
+  const c=teamNeedCalc(team);
   const gaps=[];
   for(const pos of ['QB','RB','WR','TE']){
-    let slots=(lg.roster[pos]||0);
-    if(pos==='RB'||pos==='WR'||pos==='TE') slots+=(lg.roster.FLEX||0);
-    if(pos==='RB'||pos==='WR') slots+=(lg.roster.RBW||0);
-    if(pos==='QB'||pos==='RB'||pos==='WR'||pos==='TE') slots+=(lg.roster.SFLEX||0);
-    const need=Math.max(0, slots-cnt[pos]);
-    if(need>0) gaps.push([pos, need]);
+    const hard=Math.max(0, c.struct[pos]-c.cnt[pos]);
+    const soft=Math.max(0, c.struct[pos]+c.appetite[pos]-c.cnt[pos]);
+    if(soft>0) gaps.push({pos, hard, soft});
   }
-  gaps.sort((a,b)=>b[1]-a[1]);
   if(!gaps.length) return 'roster set';
-  return 'needs '+gaps.slice(0,2).map(g=>g[0]).join(',');
+  gaps.sort((a,b)=> (b.hard>0)-(a.hard>0) || b.hard-a.hard || (b.pos==='QB')-(a.pos==='QB') || b.soft-a.soft);
+  return 'needs '+gaps.slice(0,2).map(g=>g.pos).join(',');
 }
 function nextPickFor(team){
   const lg=L(); const start=onTheClockPick();
