@@ -738,7 +738,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 </main>
 
 <footer>
-  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b35a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b35a</span><br>
+  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b37a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b37a</span><br>
   <span style="opacity:.75">Data: Fantasy Footballers 2026 Ultimate Draft Kit (rankings computed with the UDK engine for your league scoring). Your draft state lives only in this browser.</span>
   <button class="btn ghost" id="exportBtn">Export state</button>
   <button class="btn ghost" id="importBtn">Import state</button>
@@ -1041,7 +1041,9 @@ function myKeptEntries(){
   for(const pid in lg.keepers){ const k=normK(lg.keepers[pid]); if(k.team && lg.teamName && k.team!==lg.teamName) continue; out.push(pid); }
   return out;
 }
-/* declared League of Champs keepers (locked in on Sleeper, 2026): [name, rnd, pk, team] */
+/* declared League of Champs keepers — AUTHORITATIVE 2026-09-03, verified live via Sleeper API
+   (draft picks is_keeper=true, slot math cross-checked). 20 keepers, 2 per team.
+   NOTE: Rashee Rice was declared 8/25 but NOT kept — aalte12 swapped him for Drake Maye at lock. */
 const L1_KEEPERS = [
   ['Zay Flowers', 7, 1, 'Mothership'],
   ['Kyle Pitts', 10, 10, 'Mothership'],
@@ -1049,10 +1051,20 @@ const L1_KEEPERS = [
   ['Colston Loveland', 7, 2, 'Gare-e Bears'],
   ['Javonte Williams', 9, 3, 'Dolphin fans are gay'],
   ["De'Von Achane", 11, 3, 'Dolphin fans are gay'],
+  ['Nico Collins', 14, 4, 'I Chase Brown Kids'],
+  ['Bucky Irving', 16, 4, 'I Chase Brown Kids'],
+  ['Courtland Sutton', 9, 5, 'Kirk-umsized Penix'],
+  ['Josh Downs', 10, 6, 'Kirk-umsized Penix'],
+  ['Jaylen Waddle', 6, 5, 'Commander in Children'],
+  ['Bryce Young', 9, 6, 'Commander in Children'],
+  ['Rome Odunze', 8, 4, 'OJ did it?'],
+  ['Cam Skattebo', 12, 4, 'OJ did it?'],
   ['Brock Bowers', 6, 3, 'Team Name TBD'],
   ['James Cook', 7, 8, 'Team Name TBD'],
-  ['Rashee Rice', 7, 9, "Sandusky's Home of TEs"],
+  ['Drake Maye', 6, 2, "Sandusky's Home of TEs"],
   ['Jaxon Smith-Njigba', 8, 2, "Sandusky's Home of TEs"],
+  ['DJ Moore', 5, 10, 'Ankle Breakers Anonymous'],
+  ['C.J. Stroud', 11, 10, 'Ankle Breakers Anonymous'],
 ];
 function normName(s){ return (s||'').toLowerCase().replace(/\s+(sr|jr|ii|iii|iv|v)\.?$/, ''); }
 function seedKeepers(){

@@ -19,7 +19,7 @@ Draft-day companion board for Jaccob's two leagues, built on the Fantasy Footbal
 ## Files
 
 - `index.html` — the app (single page, vanilla JS, no build step)
-- **Keeper league support** — declared keepers are seeded from the real Sleeper locks (League of Champs: Flowers/Pitts, Pickens/Loveland, Javonte/Achane, Bowers/Cook, Rice/JSN with their round.pick and team). Kept players count as taken (hidden, excluded from recommendations, fill needs/roster), the Managers panel shows each team's keeps, and you can mark/remove keepers from any player's modal (round.pick + team). Reset keeps declared keepers.
+- **Keeper league support** — declared keepers are seeded from the real Sleeper locks (League of Champs: 20 keepers, 2 per team, verified live via Sleeper API 2026-09-03; Rice was NOT kept — Maye replaced him at lock). Kept players count as taken (hidden, excluded from recommendations, fill needs/roster), the Managers panel shows each team's keeps, and you can mark/remove keepers from any player's modal (round.pick + team). Reset keeps declared keepers.
 - **My Team is *your* team** — roster/needs now count only picks attributed to you (plus your keepers), so live-mode tracking of the whole board can't pollute your roster view.
 - **Itachi / Sharingan theme** — black-crimson palette, CSS-drawn Sharingan logo (spins when Draft is live → Mangekyō), "i see everything" branding.
 - **Data fully used** — keeper-adjusted ADP ("eff" under ADP: real availability with 10 players already off the board), upside ▲ on every row + Upside sort, VBD (value-over-replacement) sort + modal stat, UDK auction $ values in the modal + Auction $ sort, searchable full injury report, and the UDK analysis notes (free agency, etc.) now surfaced.
