@@ -1,6 +1,6 @@
 # 2026 Draft Board — Fantasy Footballers UDK
 
-Draft-day companion board for Jaccob's two leagues, built on the Fantasy Footballers 2026 Ultimate Draft Kit data.
+Draft-day companion board for Jaccob's three leagues, built on the Fantasy Footballers 2026 Ultimate Draft Kit data.
 
 ## What's inside
 
@@ -40,6 +40,7 @@ Draft-day companion board for Jaccob's two leagues, built on the Fantasy Footbal
 
 - League of Champs (League 1) — real config from the Sleeper import: TE PREM (4pt QB: 0.5 PPR WR/RB + 1.0 TE, 4pt pass TD, INT −1), 10 teams, slot 3, superflex, roster QB1/RB2/WR2/TE1/FLEX2/RBW1/SFLEX1/DST1/K1/BN10/IR3, team "Dolphin fans are gay". Draft order (pick 1 → 10): Mothership, Gare-e Bears, Dolphin fans are gay, I Chase Brown Kids, Kirk-umsized Penix, Commander in Children, OJ did it?, Team Name TBD, Sandusky's Home of TEs, Ankle Breakers Anonymous (handles map to @aws1990, @eriksske, @truax571, @nmilli29, @jgank10, @jmarko1991, @combes101, @jkeeney2010, @aalte12, @Dillonpatric).
 - 10 Kage summit (League 2) — real config from the Sleeper import: half PPR TE-prem (0.5 PPR WR/RB + 1.0 TE, 4pt pass TD), 10 teams, slot 2 (mock slot; real draft order randomizes at creation — provisional roster order in Settings), no superflex, roster QB1/RB2/WR2/TE1/FLEX2/K1/DEF1/BN5/IR1, 15 rounds, team "truax571". Real mock loaded: truax571 @ 1.02, 150 picks, 8/28 (only 2 live managers — jallen1925 @ 1.01 and truax571; slots 3–10 were Sleeper CPU autopicks and are labeled CPU in the mock).
+- TE Premium + SuperFlex (League 3) — DYNASTY startup from the Sleeper import (league 1394467194946977792, draft 1394467196477919232): 1.0 PPR all positions + 1.5 TE bonus (TE = 2.5 PPR), 4pt pass TD, INT −1, superflex, NO DST/K, 10 teams, slot 10 (Sleeper's randomized draft_order, verified 2026-09-03; snake → 1.10 then 2.01), roster QB1/RB2/WR2/TE1/FLEX2/SFLEX1/BN14/IR2 (BN = 10 bench + 4 taxi, folded → 23 draftable = 23 startup rounds), team "truax571". Rankings come from a custom 9th UDK engine system "PPR TE+ (4pt QB)" added to build/scoring_systems.json (built from the same blob as the other 8 — verified byte-identical, so Leagues 1–2 numbers did not shift).
 
 ## Use
 

@@ -54,5 +54,12 @@
     "pointsPerRushingTouchdown": 6, "pointsPerReceivingTouchdown": 6,
     "rosterSlots": [["QB", 1], ["RB", 2], ["WR", 2], ["TE", 1], ["FLEX", 2], ["DST", 1], ["K", 1], ["BN", 10], ["IR", 3]],
     "leagueSize": 10
+  },
+  "PPR TE+ (4pt QB)": {
+    "pointsPerReceptionRB": 1, "pointsPerReceptionWR": 1, "pointsPerReceptionTE": 2.5,
+    "pointsPerPassingTouchdown": 4, "pointsPerPassingInterception": -1, "pointsPerFumbleLost": -2,
+    "pointsPerRushingTouchdown": 6, "pointsPerReceivingTouchdown": 6,
+    "rosterSlots": [["QB", 1], ["RB", 2], ["WR", 2], ["TE", 1], ["FLEX", 2], ["SFLEX", 1], ["BN", 14], ["IR", 2]],
+    "leagueSize": 10
   }
 }

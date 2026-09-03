@@ -247,14 +247,14 @@ f.onload = () => {
       hd0.checked = true; hd0.dispatchEvent(new w.Event('change', {bubbles:true}));
       const allTab0 = d.querySelector('#posTabs button[data-pos="ALL"]');
       if(allTab0) allTab0.click();
-      log('10 keepers seeded', Object.keys(lgK.keepers).length === 10);
+      log('20 keepers seeded', Object.keys(lgK.keepers).length === 20);
       const myK = Object.entries(lgK.keepers).filter(([pid,k])=> (k.team||'') === 'Dolphin fans are gay');
       log('my keepers = Javonte 9.3 + Achane 11.3', myK.length === 2 &&
         myK.some(([pid,k])=> /Javonte/.test(dq.data.players[pid].n) && k.rnd===9 && k.pk===3) &&
         myK.some(([pid,k])=> /Achane/.test(dq.data.players[pid].n) && k.rnd===11 && k.pk===3));
       log('kept players hidden by default', Object.keys(lgK.keepers).every(pid => !d.querySelector('tr.player[data-id="'+pid+'"]')));
       log('roster counts my keepers as RBs', dq.rosterFill().RB === 2);
-      log('teamNeed counts keepers (Mothership: RB,WR)', /needs RB,WR/.test(dq.teamNeed('Mothership')));
+      log('teamNeed counts keepers (Mothership: QB,RB — 0-QB superflex)', /needs QB,RB/.test(dq.teamNeed('Mothership')));
       log('managers panel shows kept players', /Flowers 7.1/.test(d.querySelector('#mgrBox').textContent) && /Pitts 10.10/.test(d.querySelector('#mgrBox').textContent) && /Bowers 6.3/.test(d.querySelector('#mgrBox').textContent));
       const hdK = d.querySelector('#hideDrafted');
       hdK.checked = false; hdK.dispatchEvent(new w.Event('change', {bubbles:true}));
@@ -495,6 +495,21 @@ f.onload = () => {
       nf.value = 'all'; nf.dispatchEvent(new w.Event('change', {bubbles:true}));
       d.querySelector('.news-card[data-aid="t-kw"] [data-na="restore"]').click();
       d.querySelector('#modeToggle button[data-mode="day"]').click();
+      // ---- League 3 (dynasty startup "TE Premium + SuperFlex") ----
+      d.querySelector('[data-lg="2"]').click();
+      const d3 = w.__dbg();
+      log('L3: league count = 3', w.__dbg().leagues.length === 3);
+      log('L3: name/scoring/slot', d3.L.name === 'TE Premium + SuperFlex' && d3.L.scoring === 'PPR TE+ (4pt QB)' && d3.L.slot === 10 && d3.L.teams === 10);
+      log('L3: 23 draftable rounds (9 starters + 10 BN + 4 taxi)', (Object.values(d3.L.roster).reduce((a,b)=>a+b,0) - d3.L.roster.IR) === 23);
+      log('L3: randomized order, user slot 10 last', d3.L.order.length === 10 && d3.L.order[0] === 'TaqueriaTapatio' && d3.L.order[9] === 'truax571');
+      log('L3: superflex + no DST/K + FAAB $100', d3.L.roster.SFLEX === 1 && d3.L.roster.DST === 0 && d3.L.roster.K === 0 && d3.L.budget === 100);
+      log('L3: rankings key present', !!d3.data.rankings['PPR TE+ (4pt QB)']);
+      const top3b = d3.data.rankings['PPR TE+ (4pt QB)'].top200.slice(0,3).map(r=>d3.data.players[String(r[0])].n).join(',');
+      log('L3 board: top-3 = Allen/McBride/Bowers', top3b === 'Josh Allen,Trey McBride,Brock Bowers');
+      log('L3 header: 3 toggle buttons', d.querySelectorAll('#lgToggle button').length === 3);
+      d.querySelector('[data-lg="0"]').click();
+      const d3b = w.__dbg();
+      log('L1 intact after L3 visit', d3b.L.scoring === 'TE PREM (4pt QB)' && d3b.L.slot === 3 && d3b.L.order[0] === 'Mothership');
     } catch(e){ log('PD EXCEPTION: ' + e.message + '\n' + (e.stack||'').split('\n').slice(0,3).join(' | '), false); }
     finish();
   };

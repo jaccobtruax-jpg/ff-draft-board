@@ -738,7 +738,7 @@ table.heat td.rnd{color:var(--dim);font-weight:800;font-size:10.5px;text-align:l
 </main>
 
 <footer>
-  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b37a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b37a</span><br>
+  Sharingan <b style="color:var(--acc)">Draft&nbsp;Board</b> — i see everything. <span id="buildTag" style="opacity:.6;font-size:10px;letter-spacing:.5px" title="Build tag — if this isn't b38a, hard-refresh (Ctrl/Cmd+Shift+R) to pick up the new version">b38a</span><br>
   <span style="opacity:.75">Data: Fantasy Footballers 2026 Ultimate Draft Kit (rankings computed with the UDK engine for your league scoring). Your draft state lives only in this browser.</span>
   <button class="btn ghost" id="exportBtn">Export state</button>
   <button class="btn ghost" id="importBtn">Import state</button>
@@ -902,7 +902,7 @@ let MOCKS = null;          // {generated, sample, mocks:[...]}
 let UI = { league: 0, mode: 'day', live: false, rightOpen: {call:1, roster:1, scarcity:1, log:1}, baselineMode: 'worst' };   // mode: 'day' (draft board) | 'pre' (pre-draft); live: draft-is-live mode; rightOpen: which Draft Command sections are expanded; baselineMode: gain baseline (worst/avg starter or replacement)
 
 const POS_COLORS = {QB:'qb',RB:'rb',WR:'wr',TE:'te',FLEX:'flex',RBW:'wr',SFLEX:'qb',DST:'dst',K:'k'};
-const SCORING_ALIAS = {'HALF (6pt QB)':'half','HALF (4pt QB)':'half','PPR (6pt QB)':'ppr','PPR (4pt QB)':'ppr','STD (6pt QB)':'std','STD (4pt QB)':'std','TE PREM (4pt QB)':'teprem','TE PREM (6pt QB)':'teprem'};
+const SCORING_ALIAS = {'HALF (6pt QB)':'half','HALF (4pt QB)':'half','PPR (6pt QB)':'ppr','PPR (4pt QB)':'ppr','STD (6pt QB)':'std','STD (4pt QB)':'std','TE PREM (4pt QB)':'teprem','TE PREM (6pt QB)':'teprem','PPR TE+ (4pt QB)':'ppr'};
 
 /* ---------------- league config ---------------- */
 // League of Champs (real, from Sleeper import): 10 teams, TE premium superflex, snake.
@@ -926,25 +926,43 @@ const L2_ORDER = [
   'truax571', 'KingOwlexander', 'jallen1925', 'KingLatch', 'HAILTOTHEKING97',
   'RenegadeReloaded', 'NBRobins23', 'mtljr', 'Bavery24', 'SweatySupa1323'
 ];
+// League 3 = "TE Premium + SuperFlex" (Sleeper league 1394467194946977792, draft 1394467196477919232):
+// DYNASTY startup (Sleeper settings.type 2). 10 teams, 1.0 PPR all + 1.5 TE bonus (TE = 2.5 PPR),
+// 4pt pass TD, INT −1, superflex, NO DST/K. Roster = QB1/RB2/WR2/TE1/FLEX2/SFLEX1 + 10 BN + 4 taxi
+// (taxi folded into BN below → 23 draftable = 23 startup rounds) + 2 IR (reserve, undrafted).
+// Order = Sleeper's RANDOMIZED draft_order (verified 2026-09-03; draft scheduled 14:30 UTC 9/3):
+// user @truax571 drew slot 10 (LAST in round 1, snake → 1.10 then 2.01).
+const L3_ORDER = [
+  'TaqueriaTapatio', 'jallen1925', 'KingOwlexander', 'Bavery24', 'HAILTOTHEKING97',
+  'SweatySupa1323', 'acemigo', 'iAmLikeVrabel', 'bigchaunz', 'truax571'
+];
+const L3_HANDLES = {
+  'TaqueriaTapatio':'@TaqueriaTapatio', 'jallen1925':'@jallen1925', 'KingOwlexander':'@KingOwlexander',
+  'Bavery24':'@Bavery24', 'HAILTOTHEKING97':'@HAILTOTHEKING97', 'SweatySupa1323':'@SweatySupa1323',
+  'acemigo':'@acemigo', 'iAmLikeVrabel':'@iAmLikeVrabel', 'bigchaunz':'@bigchaunz', 'truax571':'@truax571'
+};
 function defaultLeague(i){
   return {
-    name: i===0 ? 'League of Champs' : '10 Kage summit',
-    scoring: i===0 ? 'TE PREM (4pt QB)' : 'HALF (4pt QB)',
-    teams: 10, slot: i===0 ? 3 : 2, snake: true, auction: false, budget: 200, /* budget = FAAB for post-draft waivers (not an auction draft) */
+    name: i===0 ? 'League of Champs' : (i===1 ? '10 Kage summit' : 'TE Premium + SuperFlex'),
+    scoring: i===0 ? 'TE PREM (4pt QB)' : (i===1 ? 'HALF (4pt QB)' : 'PPR TE+ (4pt QB)'),
+    teams: 10, slot: i===0 ? 3 : (i===1 ? 2 : 10), snake: true, auction: false,
+    budget: i===2 ? 100 : 200, /* budget = FAAB for post-draft waivers (not an auction draft); dynasty league waivers = $100 */
     roster: i===0 ? {QB:1, RB:2, WR:2, TE:1, FLEX:2, RBW:1, SFLEX:1, DST:1, K:1, BN:10, IR:3}
-                  : {QB:1, RB:2, WR:2, TE:1, FLEX:2, DST:1, K:1, BN:5, IR:1},
+                  : (i===1 ? {QB:1, RB:2, WR:2, TE:1, FLEX:2, DST:1, K:1, BN:5, IR:1}
+                           : {QB:1, RB:2, WR:2, TE:1, FLEX:2, RBW:0, SFLEX:1, DST:0, K:0, BN:14, IR:2}),
+    // L3: 9 starters + BN 14 (10 bench + 4 taxi) = 23 draftable rounds; IR 2 excluded (reserve)
     teamName: i===0 ? 'Dolphin fans are gay' : 'truax571',
     drafted: {},       // pid -> {pick, pickNum, team, amount}
     keepers: {},       // pid -> round label
     stars: [], watch: [], avoid: [],
     log: [],           // {pickNum, team, pid, amount}
     notes: '',
-    order: i===0 ? L1_ORDER.slice() : L2_ORDER.slice(),   // draft order team names, pick 1 → N (optional)
-    handles: i===0 ? Object.assign({}, L1_HANDLES) : {},  // team name -> @handle
+    order: i===0 ? L1_ORDER.slice() : (i===1 ? L2_ORDER.slice() : L3_ORDER.slice()),   // draft order team names, pick 1 → N (optional)
+    handles: i===0 ? Object.assign({}, L1_HANDLES) : (i===1 ? {} : Object.assign({}, L3_HANDLES)),  // team name -> @handle
     timer: null        // {endAt}
   };
 }
-const LEAGUES = [defaultLeague(0), defaultLeague(1)];
+const LEAGUES = [defaultLeague(0), defaultLeague(1), defaultLeague(2)];
 window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, MYGUYS, NEWS, NEWS_STATE, managers, render, renderPredraft, renderSkeleton, renderRight, renderNews, newsAction, injDelta, findPlayerId, markDrafted, teamAtPick, teamNeed, teamNeedMap, teamNeedCalc, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap, sharinganRead, survivalProb, tierCliff, posPressure, mockRoundPos, applyMyGuys});
 function saveState(){ localStorage.setItem(LS_KEY, JSON.stringify({leagues: LEAGUES, ui: UI})); }
 function loadState(){
@@ -953,7 +971,7 @@ function loadState(){
     if(!raw) return;
     const s = JSON.parse(raw);
     if(s.leagues){
-      for(let i=0;i<2;i++){
+      for(let i=0;i<LEAGUES.length;i++){
         const d = defaultLeague(i);
         LEAGUES[i] = Object.assign(d, s.leagues[i] || {});
       }
@@ -1267,7 +1285,7 @@ function renderRight(){
 }
 function renderHeader(){
   const lg = L();
-  $('lgToggle').innerHTML = [0,1].map(i =>
+  $('lgToggle').innerHTML = LEAGUES.map((_,i) =>
     `<button class="${UI.league===i?'on':''}" data-lg="${i}">${esc(LEAGUES[i].name)}${i===1?'<span class="lg-wait"> · waiting</span>':''}</button>`).join('');
   $('lgToggle').querySelectorAll('button').forEach(b=> b.onclick=()=>{ UI.league=+b.dataset.lg; saveState(); render(); });
 
@@ -2473,7 +2491,7 @@ $('timerBtn').onclick = ()=>{
 /* ---------------- settings ---------------- */
 function openSettings(){
   const lg = L();
-  $('settingsLgToggle').innerHTML = [0,1].map(i=>`<button class="${UI.league===i?'on':''}" data-slg="${i}">${esc(LEAGUES[i].name)}</button>`).join('');
+  $('settingsLgToggle').innerHTML = LEAGUES.map((_,i)=>`<button class="${UI.league===i?'on':''}" data-slg="${i}">${esc(LEAGUES[i].name)}</button>`).join('');
   $('settingsLgToggle').querySelectorAll('button').forEach(b=> b.onclick=()=>{ UI.league=+b.dataset.slg; saveState(); openSettings(); });
   $('stName').value = lg.name;
   const sel = $('stScoring');
@@ -2548,7 +2566,7 @@ $('importBtn').onclick = ()=>{
           if(UI.mode==='pre') renderPredraft();
           return;
         }
-        if(s.leagues){ for(let i=0;i<2;i++) if(s.leagues[i]) LEAGUES[i]=Object.assign(defaultLeague(i), s.leagues[i]); if(s.ui) UI=Object.assign(UI,s.ui); saveState(); render(); toast('State imported'); }
+        if(s.leagues){ for(let i=0;i<LEAGUES.length;i++) if(s.leagues[i]) LEAGUES[i]=Object.assign(defaultLeague(i), s.leagues[i]); if(s.ui) UI=Object.assign(UI,s.ui); saveState(); render(); toast('State imported'); }
         else toast('Not a valid draft-state file');
       }catch(e){ toast('Import failed — bad file'); }
     };
