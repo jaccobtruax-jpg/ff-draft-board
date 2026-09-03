@@ -963,7 +963,7 @@ function defaultLeague(i){
   };
 }
 const LEAGUES = [defaultLeague(0), defaultLeague(1), defaultLeague(2)];
-window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, MYGUYS, NEWS, NEWS_STATE, managers, render, renderPredraft, renderSkeleton, renderRight, renderNews, newsAction, injDelta, findPlayerId, markDrafted, teamAtPick, teamNeed, teamNeedMap, teamNeedCalc, onTheClockPick, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap, sharinganRead, survivalProb, tierCliff, posPressure, mockRoundPos, applyMyGuys});
+window.__dbg = () => ({leagues: LEAGUES, ui: UI, L: L(), data: DATA, MOCKS, MYGUYS, NEWS, NEWS_STATE, managers, render, renderPredraft, renderSkeleton, renderRight, renderNews, newsAction, injDelta, findPlayerId, markDrafted, teamAtPick, teamNeed, teamNeedMap, teamNeedCalc, onTheClockPick, liveCells, keeperCellSet, repairKeeperLogDrift, nextOwnPick, mockProfiles, rosterFill, isDrafted, keeperInfo, keepers: L().keepers, effAdp, vbdFor, vbdBaselines, auctionMap, sharinganRead, survivalProb, tierCliff, posPressure, mockRoundPos, applyMyGuys});
 function saveState(){ localStorage.setItem(LS_KEY, JSON.stringify({leagues: LEAGUES, ui: UI})); }
 function loadState(){
   try{
@@ -1098,6 +1098,47 @@ function seedKeepers(){
   lg.keepersSeeded = true;
   saveState();
 }
+/* Keeper leagues (Sleeper reality): every grid cell 1..N exists, keeper cells are pre-filled,
+   and live picks SKIP them — so live pick numbers are NOT sequential (1,2,3…). All clock math
+   below must walk live cells only, or picks drift off by one keeper per cell from round 5/6 on
+   (wrong labels, wrong teams, your own pick landing on another manager). */
+function keeperCellMap(lg){
+  // Sleeper numbers keeper cells by snake pick-in-round for the keeper's TEAM (round + slot),
+  // NOT by the recorded pk (which was entered inconsistently as slot or pick-in-round).
+  const tn = lg.teams||10;
+  const ord = lg.order||[];
+  const m = {};
+  for(const pid in (lg.keepers||{})){
+    const k = normK(lg.keepers[pid]);
+    if(!k || k.rnd<=0) continue;
+    let cell = null;
+    if(k.team && ord.length){
+      const idx = ord.indexOf(k.team);
+      if(idx>=0) cell = (k.rnd-1)*tn + ((k.rnd%2===1) ? idx+1 : tn-idx);
+    }
+    if(cell==null && k.pk>0) cell = (k.rnd-1)*tn + k.pk;   // fallback: explicit pk
+    if(cell!=null) m[cell] = String(pid);
+  }
+  return m;
+}
+function keeperCellSet(lg){
+  return new Set(Object.keys(keeperCellMap(lg)).map(Number));
+}
+function draftRounds(lg){
+  if(lg.rounds) return lg.rounds;
+  if(lg.draftSlots) return lg.draftSlots;
+  if(!lg.roster) return 22;
+  const slots = Object.values(lg.roster).reduce((a,b)=>a+b,0)-(lg.roster.IR||0);
+  return Math.max(1, Math.round(slots));
+}
+function liveCells(lg){
+  const tn = lg.teams||10;
+  const total = draftRounds(lg)*tn;
+  const skip = keeperCellSet(lg);
+  const out = [];
+  for(let n=1;n<=total;n++) if(!skip.has(n)) out.push(n);
+  return out;
+}
 function myPickNums(){
   const lg=L(); if(lg.auction) return [];
   const nums=[];
@@ -1107,7 +1148,8 @@ function myPickNums(){
     const n = (r-1)*lg.teams + (r%2===1 ? lg.slot : lg.teams+1-lg.slot);
     nums.push(n);
   }
-  return nums;
+  const skip = keeperCellSet(lg);   // your keeper cells are pre-filled — never live picks
+  return nums.filter(n=>!skip.has(n));
 }
 function nextOwnPick(){
   const lg=L(); if(lg.auction) return null;
@@ -1116,12 +1158,55 @@ function nextOwnPick(){
   for(const n of nums){ if(!taken.includes(n)) return n; }
   return nums[nums.length-1]+1;
 }
-/* sequential pick tracking — every marked player consumes the next real pick number */
+/* sequential pick tracking — every marked player consumes the next real grid cell;
+   keeper cells are pre-filled in Sleeper and never come on the clock */
 function onTheClockPick(){
   const lg=L();
   let m=0;
   for(const e of lg.log) if(e.pickNum>m) m=e.pickNum;
+  for(const n of liveCells(lg)) if(n>m) return n;
   return m+1;
+}
+/* Keeper-league draft log drift repair: pre-fix builds numbered live picks sequentially
+   (1,2,3…) instead of skipping keeper cells, so from the first keeper cell (L1: 5.10) every
+   entry sat at a wrong pick number and a wrong team. Detect that (entry parked on a keeper
+   cell that isn't that keeper, or duplicated pick numbers) and rebuild the log in order onto
+   the real live cells. Idempotent — a clean log never matches. */
+function repairKeeperLogDrift(){
+  let touched = false;
+  for(let i=0;i<LEAGUES.length;i++){
+    const lg = LEAGUES[i];
+    if(lg.auction || !lg.keepers || !Object.keys(lg.keepers).length) continue;
+    const tn = lg.teams||10;
+    const cells = liveCells(lg);
+    const kCellPid = keeperCellMap(lg);
+    const log = lg.log.slice().sort((a,b)=>a.pickNum-b.pickNum);
+    if(!log.length) continue;
+    let drift = false;
+    const seen = new Set();
+    for(const e of log){
+      if(seen.has(e.pickNum)){ drift = true; break; }
+      seen.add(e.pickNum);
+      if(kCellPid[e.pickNum] != null && kCellPid[e.pickNum] !== String(e.pid)){ drift = true; break; }
+    }
+    if(!drift) continue;
+    const rebuilt = [];
+    const drafted = {};
+    for(let j=0;j<log.length;j++){
+      const e = log[j];
+      const n = cells[j];
+      if(n == null) break;               // safety: more entries than live cells
+      const team = teamAtPick(n);        // recompute — drift had corrupted teams too
+      drafted[e.pid] = {pick: pickLabel(n), pickNum: n, team, amount: e.amount||null};
+      rebuilt.push({pickNum: n, team, pid: e.pid, amount: e.amount||null});
+    }
+    lg.log = rebuilt;
+    lg.drafted = drafted;
+    touched = true;
+    console.warn('L'+(i+1)+' draft log was numbered past keeper cells — rebuilt '+rebuilt.length+' picks onto live cells');
+  }
+  if(touched){ UI.pulse = {events:[]}; saveState(); }
+  return touched;
 }
 function teamAtPick(n){
   const lg=L();
@@ -1324,8 +1409,10 @@ function renderHeader(){
     const n = onTheClockPick();
     const team = teamAtPick(n);
     const need = teamNeed(team);
+    const cells = liveCells(lg);
+    const ci = cells.indexOf(n);
     const nexts = [];
-    for(let i=1;i<=3;i++){ const t = teamAtPick(n+i); if(t) nexts.push(t); }
+    for(let i=1;i<=3;i++){ const c = cells[ci+i]; if(!c) break; const t = teamAtPick(c); if(t) nexts.push(t); }
     $('lbPickN').textContent = n;
     $('lbTeam').textContent = team ? (team + (need ? ' · '+need : '')) : '—';
     $('lbNext').textContent = nexts.length ? 'next: '+nexts.join(' → ') : '';
@@ -1380,10 +1467,13 @@ function predictNext(){
   const run = positionRun();
   const myNext = nextOwnPick();
   const start = onTheClockPick();
-  const windowN = myNext ? Math.max(7, myNext-start+1) : 7;
+  const cells = liveCells(lg);
+  const si = Math.max(0, cells.indexOf(start));
+  const endIdx = Math.min(cells.length, si + (myNext ? Math.max(7, cells.indexOf(myNext)-si+1) : 7));
   const pool = avail.slice();
   const picks = [];
-  for(let n=start; n<start+windowN; n++){
+  for(let k=si;k<endIdx;k++){
+    const n = cells[k];
     let idx = 0;
     if(run){
       const ri = pool.findIndex(r=>playerByID(r[0]).p===run.pos);
@@ -2146,7 +2236,7 @@ function kickoffMessage(){
 }
 function draftComplete(){
   const lg = L();
-  return Object.keys(lg.drafted).length >= lg.teams * 22;
+  return Object.keys(lg.drafted).length >= liveCells(lg).length;
 }
 function renderRoast(){
   const lg = L();
@@ -2155,7 +2245,7 @@ function renderRoast(){
   if(kb){
     if(!draftComplete()){
       const marked = Object.keys(lg.drafted).length;
-      const total = lg.teams * 22;
+      const total = liveCells(lg).length;
       const pct = Math.min(100, Math.round(marked/total*100));
       ROAST_TEXTS.kickoff = '';
       kb.innerHTML = `<div class="hint">⚔️ The Week 1 kickoff message is written after the last pick — it roasts the finished draft, not the half of it. Keep marking picks.</div>
@@ -2949,6 +3039,7 @@ fetch(DATA_URL).then(r=>r.json()).then(d=>{
   DATA = d;
   resolveNewsPids();   // news pids need DATA — re-resolve (idempotent) after the data race is settled
   seedKeepers();
+  repairKeeperLogDrift();   // heal pre-fix logs that numbered live picks past keeper cells
   renderTimer();
   if(L().timer && L().timer.endAt > Date.now()){ clearInterval(timerInt); timerInt=setInterval(renderTimer,1000); }
   render();
