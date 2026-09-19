@@ -3,6 +3,65 @@
  "sample": false,
  "items": [
   {
+   "id": "yahoo-how-does-nico-collins-injury-impact-dalton-schultz-s",
+   "title": "How does Nico Collins' injury impact Dalton Schultz's fantasy value? - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOYmVabC1zWm0wVUJFM21oOGEyQnVpLXp3TWVwOUhFb1NfWlB1SDJZVDNkVGxxdk5GZG0zSktEREhCbHgxTFZHMS1Va2ZhSU4weWdzbzJVejVFOTNiOG9kMHFWUjBPZXpleHdGTmJwZFlvbmJXUzZMdUY4NkFSaWNjQ3kxOF9RRGs?oc=5",
+   "source": "Yahoo Sports",
+   "published": "2026-09-19T13:56:50Z",
+   "summary": "Yahoo examines how Texans WR Nico Collins' Week 2 absence shifts targets to Houston's other pass-catchers.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Dalton Schultz",
+      "action": "boost",
+      "deltaPts": 10,
+      "suggestedEdit": "Role boost \u00b7 +10 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: Yahoo 9/19 headline links Collins' injury to Schultz's value. Short-term target-share bump (est. for TE2 workload)."
+   }
+  },
+  {
+   "id": "fantasypros-is-chris-olave-playing-week-2-fantasy-football-injury",
+   "title": "Is Chris Olave Playing Week 2? Fantasy Football Injury Update - FantasyPros",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQmk3eFN1dzJRaGlRUWliXzFTYVhQUm5fcF9sNDJvU3ZqNWpPaDhzUEU5ZDlqX3N4MUdVMFFaM2x4d1gtUjB0UGMyd1FadVpROEFoVkVHSmZCWWR0emtEME51b0JNc3dVNU5YamNQMFlYUWhpUDhEY3dPbTJtU3ZVemVqQjBMLTVObEJScm5CaEtPbGcyM19MX1FUVUhhSGIyT0JHNGVXY3JpZGVJSnfSAa4BQVVfeXFMTUJpN3hTdXcyUWhpUVFpYl8xU2FYUFJuX3BfbDQyb1N2ajVqT2g4c1BFOWQ5al9zeDFHVTBRWjNseHdYLVIwdFBjMndRWnVaUThBaFZFR0pmQllkdHprRDBOdW9CTXN3VTVOWGpjUDBZWFFoaVA4RGN3T20ybVN2VXplakIwTC01TmxCUnJuQmhLT2xnMjNfTF9RVFVIYUhiMk9CRzRlV2NyaWRlSUp3?oc=5",
+   "source": "FantasyPros",
+   "published": "2026-09-19T11:47:00Z",
+   "summary": "FantasyPros checks Saints WR Chris Olave's Week 2 status amid a hamstring injury.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: FantasyPros 9/19 status check. Hamstring, no confirmed games \u2014 no injection (Chris Olave hamstring item already on board)."
+   }
+  },
+  {
+   "id": "fantasypros-is-ladd-mcconkey-playing-week-2-fantasy-football-injury",
+   "title": "Is Ladd McConkey Playing Week 2? Fantasy Football Injury Update - FantasyPros",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNM0UtVHNjZVFkakZESVlROXdGc0VsQV9IMERIdXRvYmJDNlJ1d2NrWkFuVTlBVWd5UXZ0Z3hmaGtWTkpuaGRiaktBQkwxSWNCMm1OOEsxMFNvak1kcDNuUk8tMlpQR0JpaThzRGVRNGlMeG80VDRJVG1KWjV1ZWxadEVDczd1bnNGWlhSbENPb0h5dVd6Y1RQejIxdG9Na1lVTWFPck9zM09uRzdYV183bNIBsAFBVV95cUxNM0UtVHNjZVFkakZESVlROXdGc0VsQV9IMERIdXRvYmJDNlJ1d2NrWkFuVTlBVWd5UXZ0Z3hmaGtWTkpuaGRiaktBQkwxSWNCMm1OOEsxMFNvak1kcDNuUk8tMlpQR0JpaThzRGVRNGlMeG80VDRJVG1KWjV1ZWxadEVDczd1bnNGWlhSbENPb0h5dVd6Y1RQejIxdG9Na1lVTWFPck9zM09uRzdYV183bA?oc=5",
+   "source": "FantasyPros",
+   "published": "2026-09-19T11:44:00Z",
+   "summary": "FantasyPros checks Chargers WR Ladd McConkey's Week 2 playing status amid his injury.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: FantasyPros 9/19 status check. No confirmed absence/games count \u2014 no injection (existing McConkey item covers the outlook)."
+   }
+  },
+  {
+   "id": "yahoo-josh-jacobs-suspension-timeline-makes-marshawn-lloyd-a-high",
+   "title": "Josh Jacobs suspension timeline makes MarShawn Lloyd a high-stakes fantasy football decision - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZ0Z5cnk0NDVoNk9RNE5WNnhsYk1FTDFsUmRFQ3pYM2RwUllCaVpnQjhTaTFZQWxaRm0wUUVHMlFRUG4zd1RITlU1WFM2a083cEhjSFc5MkNxWWJkTmh5eHQ3Q2FfelNQMkFLb19feDhLckZlUFpkTnM3U1QtcXBhcERnQ2ZvVUFSNDlPYTIyMA?oc=5",
+   "source": "Yahoo Sports",
+   "published": "2026-09-19T11:14:09Z",
+   "summary": "Yahoo breaks down how the length of Josh Jacobs' suspension shapes MarShawn Lloyd's fantasy decision.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 9/19. Lloyd (RB, GB) is already projected with a lead-back workload (11.2 ppg on board), so the role is priced in \u2014 no double-count boost suggested."
+   }
+  },
+  {
    "id": "si-week2-injury-report-henderson-in-collins-out",
    "title": "Fantasy Football Injury Report Week 2: TreVeyon Henderson Is In, Nico Collins Is Out, And Ladd McConkey Has Hope",
    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPWWhTbGZXRU9yYTVEMjNnUWZacWVRLWRPUnVGUDUyY1p4djVVTFFiejFiTVI5V3pHU0MwaFZScjRpUUgwZlh2SVlNOG9Yc1lYWjF5VkcwSWNEVkNBQkM5V3lZLU55cklDNnB2WWpQWV9VUV9sblBJR1FjVGZ1ZldyQzJfZkI2OXZ4X3BPNDVjWXItQm1QZUNwRDRqSll0dE1EMlFwYTNMNDl6MmpTajFQZzVYbUQyVVd5WndoUDlaa0VwTlR0SUg4Q3B4LXFvZmNLc3h4QldOUjBtV3V3eE9ONlFkNjQ?oc=5",
@@ -12,7 +71,7 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Aggregator. Henderson is active (mild positive), Collins is out (see Nico Collins items for the suggested −15.0 injection). No single edit from this piece."
+    "note": "Aggregator. Henderson is active (mild positive), Collins is out (see Nico Collins items for the suggested \u221215.0 injection). No single edit from this piece."
    }
   },
   {
@@ -30,7 +89,7 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 5.3,
-      "suggestedEdit": "Cleared (hamstring) · +5.3 pts · move up ~1 round"
+      "suggestedEdit": "Cleared (hamstring) \u00b7 +5.3 pts \u00b7 move up ~1 round"
      }
     ]
    }
@@ -50,7 +109,7 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 6.9,
-      "suggestedEdit": "Cleared (back) · +6.9 pts · move up ~1 round"
+      "suggestedEdit": "Cleared (back) \u00b7 +6.9 pts \u00b7 move up ~1 round"
      }
     ]
    }
@@ -70,7 +129,7 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -3.4,
-      "suggestedEdit": "Tag injured · −3.4 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured \u00b7 \u22123.4 pts (1 game) \u00b7 drops ~1 round"
      }
     ]
    }
@@ -85,7 +144,7 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Waiver/streaming advice — no single player edit (est. targets vary by league size)."
+    "note": "Waiver/streaming advice \u2014 no single player edit (est. targets vary by league size)."
    }
   },
   {
@@ -98,7 +157,7 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Aggregator — no player-specific edit. See the individual items above (Collins, Flowers, Burrow, Nacua) for suggested injections."
+    "note": "Aggregator \u2014 no player-specific edit. See the individual items above (Collins, Flowers, Burrow, Nacua) for suggested injections."
    }
   },
   {
@@ -111,7 +170,20 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Aggregator — no single player edit. See the individual Collins/injury items for suggested injections."
+    "note": "Aggregator \u2014 no single player edit. See the individual Collins/injury items for suggested injections."
+   }
+  },
+  {
+   "id": "yahoo-rams-star-puka-nacua-s-mysterious-injury-puts-monday",
+   "title": "Rams star Puka Nacua\u2019s mysterious injury puts Monday Night Football status in doubt - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOVnEwNTduLWgzb1hnek5VYmFJSG1KczZRZjhjZm94REdqS3l0QWVqTU1ZcHVSeThmcE5BalcyRkxRX2RpbUZzbHZDekgtVUVsZlo0ckF0TEFaV2tlWGRaaVNkSVFwLUhrcmZKSUk3U0x4eHJTNDlLQTdTWTN6NkdDb1J6NnRKTFk?oc=5",
+   "source": "Yahoo Sports",
+   "published": "2026-09-18T23:41:15Z",
+   "summary": "Yahoo reports Rams WR Puka Nacua's hip injury leaves his Monday Night Football status in doubt.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 9/18. Status in doubt, no confirmed games out \u2014 no injection (Puka Nacua DNP item already on board)."
    }
   },
   {
@@ -129,37 +201,71 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -14.9,
-      "suggestedEdit": "Tag injured · −14.9 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured \u00b7 \u221214.9 pts (1 game) \u00b7 drops ~1 round"
      },
      {
       "name": "Zay Flowers",
       "action": "injured",
       "games": 1,
       "deltaPts": -14.4,
-      "suggestedEdit": "Tag injured · −14.4 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured \u00b7 \u221214.4 pts (1 game) \u00b7 drops ~1 round"
      },
      {
       "name": "Joe Burrow",
       "action": "injured",
       "games": 1,
       "deltaPts": -19.0,
-      "suggestedEdit": "Tag injured · −19.0 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured \u00b7 \u221219.0 pts (1 game) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Grounded: ESPN Week 2 inactives 9/18 (Collins out, Flowers doubtful, Burrow questionable). PPR ppg from UDK 2026 projections (÷17). Dalton Schultz (9.5 ppg) picks up HOU targets with Collins out."
+    "note": "Grounded: ESPN Week 2 inactives 9/18 (Collins out, Flowers doubtful, Burrow questionable). PPR ppg from UDK 2026 projections (\u00f717). Dalton Schultz (9.5 ppg) picks up HOU targets with Collins out."
+   }
+  },
+  {
+   "id": "nyt-nfl-week-2-fantasy-football-injury-report-and-weather",
+   "title": "NFL Week 2 fantasy football injury report and weather forecast - The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQamhyM0tBUmczVWpQa0R2NWpvXy16bkZQMFV5WlI0Yl9GVENrOHBVcExvbS1TeWkyNWprQkpFTDdta3FyQU0yTmY1MldqSEFqR3lFWUtKbmQxczBYTm5GWmNfRkNJY3VRa2dYc2haZjFPeEtiTjFWc1czczZFak81d2FUYldmRDRQN2tUV0JiSWNObXFRS2xMSTlKZG0waXM?oc=5",
+   "source": "The New York Times",
+   "published": "2026-09-18T23:31:00Z",
+   "summary": "The New York Times' Week 2 fantasy football injury report and weather forecast roundup.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Aggregator (NYT 9/18). No single edit \u2014 see player-specific items."
    }
   },
   {
    "id": "puka-nacua-hip-dnp",
    "title": "Puka Nacua DNP (hip) ahead of Monday night",
    "url": "https://www.thefantasyfootballers.com/news/637923/puka-nacua-dnp-due-to-hip-injury/",
-   "source": "Fantasy Footballers · News",
+   "source": "Fantasy Footballers \u00b7 News",
    "published": "2026-09-18T22:41:16Z",
    "summary": "Rams WR Puka Nacua (hip) did not take part in the media-access portion of Friday's practice. No game designation yet ahead of Monday night.",
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Monitor — practice DNP only, no game status. No edit suggested until the Rams issue a designation."
+    "note": "Monitor \u2014 practice DNP only, no game status. No edit suggested until the Rams issue a designation."
+   }
+  },
+  {
+   "id": "si-despite-practicing-zay-flowers-gets-rough-injury-update-target",
+   "title": "Despite Practicing, Zay Flowers Gets Rough Injury Update: Target These Ravens Fantasy Football Sleepers Week 2 - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPRVFyQkpMUUFVUDNBM0tzV05OeU5XRl8ydWl5OGJmNzRRdUpjR0N1OGRoMTVsS3dWUzlQN2NlZmN5bm9zVlpGeDBpd2pUenRuSklFTVRfeUhhbnhsZXoxcWE1c1lKaUJHNUhmcC1LZXNnaklrdzBuYi1rWkZiZGVaQnJPdFNQOFZjT3hnNWlYNk8zX2RjY2tjXzUwS2Z1WUR6M1VVcW5rOVo0b3VTUDNfcW8wUFdvelR5QkRQM251OWJwZno0UU5oS1RkRm1aTklyR0dDUzM5WTZiM3U5TC1CbkVJUQ?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-18T20:27:02Z",
+   "summary": "SI reports Ravens WR Zay Flowers, despite practicing, is trending toward missing Week 2.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Zay Flowers",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -14.4,
+      "suggestedEdit": "Tag injured \u00b7 \u221214.4 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/18 ('rough' update; listed doubtful elsewhere). 14.4 ppg from board.json."
    }
   },
   {
@@ -176,10 +282,10 @@
       "name": "Brock Bowers",
       "action": "boost",
       "deltaPts": 15.0,
-      "suggestedEdit": "Role boost · +15 pts · move up ~1 round"
+      "suggestedEdit": "Role boost \u00b7 +15 pts \u00b7 move up ~1 round"
      }
     ],
-    "note": "Grounded: Yahoo 9/18 — update is 'a sign of progress'. Boost est. (15.3 ppg UDK)."
+    "note": "Grounded: Yahoo 9/18 \u2014 update is 'a sign of progress'. Boost est. (15.3 ppg UDK)."
    }
   },
   {
@@ -188,7 +294,7 @@
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPUE9QOEdZQVRxVlJfc2s3bDVHd0FmdmYzV0ctcWJBWmZKcGJWRG5PZV9SN2daUjd2RG51cUQxRmlwY2tSMTdFR0pNNTJ4RGFBUGpHcFd2MEdWRWgyVW10MkhhSlp0djItUVVCaUtwZ2s0c1liQURzUUhmSzBCaDM4UXhMRGZLNDhMc3QzaWc2OXVBZGJma0NhekE2ZkhPSVlQSlZwaGVHMnVEQk9iWEZGQjkxbVRXZVBqNnRLcjdXQlB0US0xSDRLM2taVTR0N1NJRDVGU3V6M2I?oc=5",
    "source": "Sports Illustrated",
    "published": "2026-09-18T16:52:29Z",
-   "summary": "SI reports Packers RB Josh Jacobs is expected to receive a 4-6 game suspension, and argues the defined window tempers MarShawn Lloyd’s fantasy value.",
+   "summary": "SI reports Packers RB Josh Jacobs is expected to receive a 4-6 game suspension, and argues the defined window tempers MarShawn Lloyd\u2019s fantasy value.",
    "sample": false,
    "impact": {
     "players": [
@@ -197,10 +303,31 @@
       "action": "suspension",
       "games": 5,
       "deltaPts": -67.5,
-      "suggestedEdit": "Tag suspension · −67.5 pts (5 games) · drops ~4 rounds"
+      "suggestedEdit": "Tag suspension \u00b7 \u221267.5 pts (5 games) \u00b7 drops ~4 rounds"
      }
     ],
-    "note": "Grounded: SI 9/18 (4-6 games, 5 used). ppg est. (RB ≈13.5) — UDK projection already reflects missed time. Note: unlike the earlier \"out indefinitely\" report, a fixed 4-6 game window limits Lloyd’s runway and GB may add a veteran."
+    "note": "Grounded: SI 9/18 (4-6 games, 5 used). ppg est. (RB \u224813.5) \u2014 UDK projection already reflects missed time. Note: unlike the earlier \"out indefinitely\" report, a fixed 4-6 game window limits Lloyd\u2019s runway and GB may add a veteran."
+   }
+  },
+  {
+   "id": "si-nico-collins-expected-to-miss-week-2-with-injury",
+   "title": "Nico Collins Expected To Miss Week 2 With Injury, Dalton Schultz Leads Our Fantasy Football Targets In Houston - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOZHlSalA5RnVjN0RQSHBYZkpKel9zMERablZsUWN1aTFiN0wzQWNJOE5NTDJoNUQ1WUxhc29Tc0d4N2pXZGdHV0tEeHB5U0dpYjJlZjN1OXFuRGgzSjg2ZFRHUmJfYW9sbmN6VUJoT3ExX25CejgyRG9BX0FSbWdLQWw4eE8yZ2Q1VU1TQXNzTzNkVV9XUzJwVWVmcTZSMDBORFhQOWs3aGhVdzdocERTYTFUZGlqcDlnT19tcDRxWF9fVzdWaEFsc05KbGFKcnNXaEFyWk55MzYzelh4enc?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-18T16:31:47Z",
+   "summary": "SI reports Texans WR Nico Collins is expected to miss Week 2 with his hamstring injury, pointing to Dalton Schultz in Houston.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Nico Collins",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -14.9,
+      "suggestedEdit": "Tag injured \u00b7 \u221214.9 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/18 (Collins expected to miss Week 2). 14.9 ppg from board.json projections."
    }
   },
   {
@@ -213,7 +340,20 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Non-issue — returned and off the injury report. No edit suggested."
+    "note": "Non-issue \u2014 returned and off the injury report. No edit suggested."
+   }
+  },
+  {
+   "id": "si-dj-moore-fantasy-football-injury-update-how-moore-s",
+   "title": "DJ Moore Fantasy Football Injury Update: How Moore\u2019s Shoulder Injury Affects the Bills\u2019 Offense - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNVzZ4a29UTm9LUFlDNHFzeWc4UmFIZlhhOGtsc2hRUU9HeW5UallXS2dqcXlJYWVMQzVfVXU4dk5JbUk2QVE5a3haay1mNUZpUUlYT1I4NjRHTnc0NjFRaE5tb0RhZXhoSEl2eUFOZ3JTQmYzdFRMY3RwUjc2aXB3STM0OUstbVZGUTRncGh6cTFYc3ozNGlyMVJuMVNNTDU0MG1pdzZ0MXhHd3hoYUVSLTBUODJkbjlqMGFPdnNSRGZETG8xNUs3WVV1UzA1LTQ?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-18T14:06:06Z",
+   "summary": "SI details how Bills WR DJ Moore's shoulder injury affects Buffalo's offense.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: SI 9/18. Moore is reported 'not serious' elsewhere on the board and isn't ruled out \u2014 no injection."
    }
   },
   {
@@ -231,7 +371,7 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 6.0,
-      "suggestedEdit": "Buy-low film buzz · +6 pts · move up ~1 round"
+      "suggestedEdit": "Buy-low film buzz \u00b7 +6 pts \u00b7 move up ~1 round"
      }
     ]
    }
@@ -251,7 +391,7 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -11.4,
-      "suggestedEdit": "Tag injured · −11.4 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured \u00b7 \u221211.4 pts (1 game) \u00b7 drops ~1 round"
      }
     ]
    }
@@ -271,7 +411,7 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -4.9,
-      "suggestedEdit": "Tag injured · −4.9 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured \u00b7 \u22124.9 pts (1 game) \u00b7 drops ~1 round"
      }
     ]
    }
@@ -290,10 +430,10 @@
       "name": "Alvin Kamara",
       "action": "boost",
       "deltaPts": 15.0,
-      "suggestedEdit": "Role boost · +15 pts · move up ~1 round"
+      "suggestedEdit": "Role boost \u00b7 +15 pts \u00b7 move up ~1 round"
      }
     ],
-    "note": "Grounded: SI 9/17 — Kamara set to return Week 2; boost est. (5.8 ppg UDK, but NO touch share returns). Olave limited — see the separate Olave item."
+    "note": "Grounded: SI 9/17 \u2014 Kamara set to return Week 2; boost est. (5.8 ppg UDK, but NO touch share returns). Olave limited \u2014 see the separate Olave item."
    }
   },
   {
@@ -311,7 +451,7 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -15.1,
-      "suggestedEdit": "Tag injured · −15.1 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured \u00b7 \u221215.1 pts (1 game) \u00b7 drops ~1 round"
      }
     ],
     "note": "Grounded: FFB 9/17 + SI 9/17 (limited). Week 2 availability TBD; 15.1 ppg UDK."
@@ -332,10 +472,23 @@
       "action": "injured",
       "games": 2,
       "deltaPts": -17.2,
-      "suggestedEdit": "Tag injured · −17.2 pts (2 games) · drops ~1 round"
+      "suggestedEdit": "Tag injured \u00b7 \u221217.2 pts (2 games) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Grounded: SI 9/17 — hamstring, games est. (2). Denver RB sleeper candidate not yet named in the headline; monitor J.K. Dobbins/Jonah Coleman reps."
+    "note": "Grounded: SI 9/17 \u2014 hamstring, games est. (2). Denver RB sleeper candidate not yet named in the headline; monitor J.K. Dobbins/Jonah Coleman reps."
+   }
+  },
+  {
+   "id": "si-fantasy-football-impact-joe-burrow-s-back-injury-has",
+   "title": "Fantasy Football Impact: Joe Burrow's Back Injury \"Has To Be A Concern\" For Week 2 - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOczhzamR0Ul81MlkyNXY2VGd0b18zM1NaWl9JWUJTRmg5TTcxRjctOE9uVFF3UkZNdmxGYjVxWWVheW5BX1hBelo2UUtUallpVG5tV2VRWDNiamNlLTl0d09FQkw3bWg2QlpBd0FWMWVoZXBYd3liYUFiZElsVzNqbTVEWm9KWUN5ZTZzeklqSnc3VlhQRElsajV4eEpGTmNoNjVUNktmYmJBbXJvSjJfeUNaSXl0NlR0TF8xYQ?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-17T15:07:23Z",
+   "summary": "SI reports Bengals QB Joe Burrow's back injury 'has to be a concern' for Week 2.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: SI 9/17 (Burrow questionable, back). Not confirmed out \u2014 no injection; reports vary on his status."
    }
   },
   {
@@ -353,10 +506,10 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -15.6,
-      "suggestedEdit": "Tag injured · −15.6 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured \u00b7 \u221215.6 pts (1 game) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Darnold out is a negative for Jaxon Smith-Njigba's ceiling (QB downgrade) — consider a small fade rather than a boost."
+    "note": "Darnold out is a negative for Jaxon Smith-Njigba's ceiling (QB downgrade) \u2014 consider a small fade rather than a boost."
    }
   },
   {
@@ -374,267 +527,16 @@
       "action": "injured",
       "games": 4,
       "deltaPts": -36.0,
-      "suggestedEdit": "Tag injured · −36.0 pts (4 games) · drops ~2 rounds"
+      "suggestedEdit": "Tag injured \u00b7 \u221236.0 pts (4 games) \u00b7 drops ~2 rounds"
      },
      {
       "name": "Aaron Jones Sr.",
       "action": "boost",
       "deltaPts": 40.0,
-      "suggestedEdit": "Role boost · +40 pts · move up ~2 rounds"
+      "suggestedEdit": "Role boost \u00b7 +40 pts \u00b7 move up ~2 rounds"
      }
     ],
-    "note": "Grounded: SI 9/16 — Mason to IR (4 games min). Jones lead-back boost est. (8.1 ppg UDK)."
-   }
-  },
-  {
-   "id": "stribling-ir-49ers-sleeper",
-   "title": "De'Zhaun Stribling lands on IR, opening the door for a 49ers sleeper",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxORU0xM0RBVWNlckIzSGFrNjluTWpscmlLRXFabFVnbEpBMWVMN2k5YnZUSHFUUWkzZ0JtS1JaTzlvRTdkN0lfMThPM0R0VlJnaFU4NnAwT05HNUdDNVI0amJxVDdYTzZLa3hIZFROUjE1MWl1dW44dm1CSllHOGVEaDAwcE0zLTRWWTlDRkJabGNlMllvazc4ZlJVY0VVUm96WUlNcmUyY0ozTGJLUXB6OHZlTGFpM29UYmZFVXpDSXpiYnpTWW1tZGF5Q010dU8xVmxRX2NR?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-16T18:59:52Z",
-   "summary": "49ers WR De'Zhaun Stribling (left ankle) lands on IR, opening extra WR work for the rest of San Francisco's room.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "De'Zhaun Stribling",
-      "action": "injured",
-      "games": 4,
-      "deltaPts": -41.6,
-      "suggestedEdit": "Tag injured · −41.6 pts (4 games) · drops ~2 rounds"
-     },
-     {
-      "name": "Mike Evans",
-      "action": "boost",
-      "deltaPts": 20.0,
-      "suggestedEdit": "Role boost · +20 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 9/16 + FFB 9/15 (left medial ankle sprain, 4+ weeks). Evans/Deebo Samuel are the SF beneficiaries."
-   }
-  },
-  {
-   "id": "ffb-week1-injury-recap-2026",
-   "title": "Week 1 Fantasy Football Injury Recap (2026)",
-   "url": "https://www.thefantasyfootballers.com/analysis/week-1-fantasy-football-injury-recap-7/",
-   "source": "Fantasy Footballers",
-   "published": "2026-09-15T16:33:18Z",
-   "summary": "Ballers injury analyst (Betz) recaps Week 1: A.J. Brown high-ankle sprain out 4-6 weeks (IR), Sam Darnold hip/glute strain out Weeks 2-3, Dylan Sampson knee heading to IR, McConkey ribs, Kyler Murray concussion.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "A.J. Brown",
-      "action": "injured",
-      "games": 5,
-      "deltaPts": -76.0,
-      "suggestedEdit": "Tag injured · −76.0 pts (5 games) · drops ~4 rounds"
-     },
-     {
-      "name": "Sam Darnold",
-      "action": "injured",
-      "games": 2,
-      "deltaPts": -29.8,
-      "suggestedEdit": "Tag injured · −29.8 pts (2 games) · drops ~2 rounds"
-     },
-     {
-      "name": "Dylan Sampson",
-      "action": "injured",
-      "games": 4,
-      "deltaPts": -24.8,
-      "suggestedEdit": "Tag injured · −24.8 pts (4 games) · drops ~1 round"
-     },
-     {
-      "name": "Ladd McConkey",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -14.1,
-      "suggestedEdit": "Tag injured · −14.1 pts (1 game) · drops ~1 round"
-     },
-     {
-      "name": "Kyler Murray",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -17.6,
-      "suggestedEdit": "Tag injured · −17.6 pts (1 game) · drops ~1 round"
-     }
-    ],
-    "note": "Grounded: FFB Week 1 Injury Recap 9/15. Impacted per the article — A.J. Brown: Doubs/Douglas/Henry; Darnold: Jaxon Smith-Njigba; Sampson: Quinshon Judkins; McConkey: Quentin Johnston; Murray: Carson Wentz."
-   }
-  },
-  {
-   "id": "complex-mcconkey-when-will-return",
-   "title": "Ladd McConkey Fantasy Football Injury Update: When Will WR Return?",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOY0JaQlNBMHpNUnVwb3hhZnZ2YnNPLVR4MUczZjFtOXlzcmplMGNEdmhqXy12emY1Qi13bGczS3RTb05vcTVSNmctU0xLUmxRTS1XdUpmSTBaREZ2LVdFZ0JFUXVUZWl6MDJWVFE4bzZkU2ZQQXBKVGRvWFY5RjE1azNNNEFVa0hHXzlTTGxmcw?oc=5",
-   "source": "Complex",
-   "published": "2026-09-14T16:43:00Z",
-   "summary": "Chargers WR Ladd McConkey's injury leaves his return timeline unclear heading into Week 2.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Ladd McConkey",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -14.2,
-      "suggestedEdit": "Tag injured · −14.2 pts (1 game) · drops ~2 rounds"
-     }
-    ]
-   }
-  },
-  {
-   "id": "yt-ep-1963-best-offenses-mock",
-   "title": "Best Offenses Mock Draft + Draft Day Regrets (Ep. 1963)",
-   "url": "https://youtu.be/Xr5hIxFhzFY",
-   "source": "YouTube · FFB",
-   "published": "2026-09-01T00:00:00Z",
-   "summary": "Sep 1 show: the Ballers draft the top 12 offenses for fantasy + biggest draft-day regrets. Injury updates included. Latest episode before your draft.",
-   "impact": {
-    "players": [],
-    "note": "Informational — watch for offense-stack and injury-update takes. No player-specific edit suggested."
-   }
-  },
-  {
-   "id": "jacobs-exempt-list-fallout",
-   "title": "Josh Jacobs on Commissioner Exempt List — out indefinitely (FFB Ep. 1962)",
-   "url": "https://youtu.be/OO357jcpMKE",
-   "source": "YouTube · FFB",
-   "published": "2026-08-31T11:28:46Z",
-   "summary": "Packers RB Josh Jacobs faces 2 misdemeanor charges and was placed on the commissioner exempt list (Aug 30); CBS: out indefinitely. FFB Ep. 1962 debates where Jacobs and MarShawn Lloyd go — ESPN mocks now have Lloyd in Round 6.",
-   "impact": {
-    "players": [
-     {
-      "name": "Josh Jacobs",
-      "action": "suspension",
-      "deltaPts": -16.4,
-      "suggestedEdit": "Out indefinitely (exempt list) — don't draft as a starter"
-     },
-     {
-      "name": "MarShawn Lloyd",
-      "action": "boost",
-      "deltaPts": 12,
-      "suggestedEdit": "Lead back with Jacobs out — ADP rising to Round 6"
-     }
-    ],
-    "note": "Grounded: NYT 8/27 (2 misdemeanor charges) · Yahoo/NBC 8/30 (exempt list) · CBS 8/31 (out indefinitely) · ESPN mock 8/31 (Lloyd Round 6)."
-   }
-  },
-  {
-   "id": "yt-megalashow-bold-predictions",
-   "title": "THE MEGALASHOW! Bold Predictions LIVE in PHX (Ep. 1961)",
-   "url": "https://youtu.be/3DID0RXlVLk",
-   "source": "YouTube · FFB",
-   "published": "2026-08-29T00:00:00Z",
-   "summary": "Bonus live episode: spicy bold predictions for 2026 + player-to-blockbuster-movie comps + live mailbag.",
-   "impact": {
-    "players": [],
-    "note": "Informational — bold-prediction signal only. No player-specific edit suggested."
-   }
-  },
-  {
-   "id": "yt-loveland-my-guy-short",
-   "title": "MY GUY... Colston Loveland — Bowers in the 2nd or Loveland in the 4th?",
-   "url": "https://youtu.be/15x0TfcBhBs",
-   "source": "YouTube · FFB",
-   "published": "2026-08-28T00:00:00Z",
-   "summary": "My Guys clip: Mike's TE pick Colston Loveland (Bears) at a 4th-round cost vs Bowers in the 2nd. Loveland is also on the UDK 2026 expert breakout list.",
-   "impact": {
-    "players": [
-     {
-      "name": "Colston Loveland",
-      "action": "news_only",
-      "suggestedEdit": "My Guy TE — 4th-round ADP value; on UDK breakout list"
-     }
-    ],
-    "note": "From the My Guys clip series. If you want a TE here, Loveland at ADP beats paying 2nd-round for Bowers per Mike."
-   }
-  },
-  {
-   "id": "yt-mock-draft-episode",
-   "title": "Mock Draft Episode! + Meat Your Maker (Ep. 1959)",
-   "url": "https://youtu.be/zrM8x7YIalw",
-   "source": "YouTube · FFB",
-   "published": "2026-08-27T00:00:00Z",
-   "summary": "Mock draft ep (less than 2 weeks to kickoff): draft tips, mistakes to avoid, players looking like draft-day values + Steelers backfield breakdown.",
-   "impact": {
-    "players": [],
-    "note": "Informational — value-target signal. No player-specific edit suggested."
-   }
-  },
-  {
-   "id": "yt-my-guys-2026-ep",
-   "title": "The 2026 “My Guys” Episode! (Ep. 1958) — Andy, Mike & Jason plant their flags",
-   "url": "https://youtu.be/jM_iY5SDms4",
-   "source": "YouTube · FFB",
-   "published": "2026-08-26T11:41:17Z",
-   "summary": "The annual My Guys episode aired Aug 26. Each host picks 3 players they refuse to leave drafts without. All 9 are now loaded as ★ presets on this board.",
-   "impact": {
-    "players": [
-     {
-      "name": "Garrett Wilson",
-      "action": "news_only",
-      "suggestedEdit": "Jason's My Guy — WR20 ADP, target share monster"
-     },
-     {
-      "name": "Carnell Tate",
-      "action": "news_only",
-      "suggestedEdit": "Jason's My Guy — rookie WR29 ADP"
-     },
-     {
-      "name": "Omarion Hampton",
-      "action": "news_only",
-      "suggestedEdit": "Jason's My Guy — Round 2 smash"
-     },
-     {
-      "name": "Christian Watson",
-      "action": "news_only",
-      "suggestedEdit": "Mike's My Guy — WR3/Flex at WR28 ADP"
-     },
-     {
-      "name": "Colston Loveland",
-      "action": "news_only",
-      "suggestedEdit": "Mike's My Guy — 4th-round TE"
-     },
-     {
-      "name": "Kenneth Walker",
-      "action": "news_only",
-      "suggestedEdit": "Mike's My Guy — Round 2 Chiefs RB1"
-     },
-     {
-      "name": "Ladd McConkey",
-      "action": "news_only",
-      "suggestedEdit": "Andy's My Guy — 4th/5th-round WR"
-     },
-     {
-      "name": "De'Zhaun Stribling",
-      "action": "news_only",
-      "suggestedEdit": "Andy's My Guy — double-digit-round rookie WR"
-     },
-     {
-      "name": "Caleb Williams",
-      "action": "news_only",
-      "suggestedEdit": "Andy's My Guy — QB7 ADP, top-5 upside"
-     }
-    ],
-    "note": "Jason: Garrett Wilson, Carnell Tate, Omarion Hampton · Mike: Christian Watson, Colston Loveland, Kenneth Walker III · Andy: Ladd McConkey, De'Zhaun Stribling, Caleb Williams. Load any host's list via ★ Preset dropdown (hosts now live)."
-   }
-  },
-  {
-   "id": "yt-kyle-pitts-andy",
-   "title": "A player Andy is embarrassed to LOVE — Is Kyle Pitts worth drafting?",
-   "url": "https://youtu.be/m7ttmO4eggE",
-   "source": "YouTube · FFB",
-   "published": "2026-08-26T00:00:00Z",
-   "summary": "My Guys clip: Andy's guiltiest pleasure at TE — Kyle Pitts at his current ADP. Draftable as a value TE.",
-   "impact": {
-    "players": [
-     {
-      "name": "Kyle Pitts Sr.",
-      "action": "news_only",
-      "suggestedEdit": "Andy's guiltiest pleasure — value TE at ADP"
-     }
-    ],
-    "note": "From the My Guys clip series (8/26)."
+    "note": "Grounded: SI 9/16 \u2014 Mason to IR (4 games min). Jones lead-back boost est. (8.1 ppg UDK)."
    }
   }
  ]
