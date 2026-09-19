@@ -3,6 +3,92 @@
  "sample": false,
  "items": [
   {
+   "id": "si-week2-injury-report-henderson-in-collins-out",
+   "title": "Fantasy Football Injury Report Week 2: TreVeyon Henderson Is In, Nico Collins Is Out, And Ladd McConkey Has Hope",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPWWhTbGZXRU9yYTVEMjNnUWZacWVRLWRPUnVGUDUyY1p4djVVTFFiejFiTVI5V3pHU0MwaFZScjRpUUgwZlh2SVlNOG9Yc1lYWjF5VkcwSWNEVkNBQkM5V3lZLU55cklDNnB2WWpQWV9VUV9sblBJR1FjVGZ1ZldyQzJfZkI2OXZ4X3BPNDVjWXItQm1QZUNwRDRqSll0dE1EMlFwYTNMNDl6MmpTajFQZzVYbUQyVVd5WndoUDlaa0VwTlR0SUg4Q3B4LXFvZmNLc3h4QldOUjBtV3V3eE9ONlFkNjQ?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-19T10:00:00Z",
+   "summary": "SI's Week 2 injury report roundup: Patriots RB TreVeyon Henderson is active, while Texans WR Nico Collins is out.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Aggregator. Henderson is active (mild positive), Collins is out (see Nico Collins items for the suggested −15.0 injection). No single edit from this piece."
+   }
+  },
+  {
+   "id": "fantasypros-horton-no-designation",
+   "title": "Tory Horton (hamstring) without injury designation for Sunday",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaUk1ckpqVmdkUWhUcElMQ3FNdndqeUJsdkxsNktDUVNVTm1Qc3lnUUgwUGlXR1dBV3BkZnpheWRuUmo4S2ozdGFLRFdnU1dUZmJwYTlFVDQxaTU1YUFCU1pBckUzRmhWMzhYangtUkp5MkVNU2NzQVRTdXh4dG5scXhMb29QOGsyWkM2ZVZrUThESDB6Nld4cFZqR1pfQjBJVF9PLWZB0gGrAUFVX3lxTFB1U3M3TzRyV1RsWlZWQzAxY3BKMWJSS0Z6MVk5THhiUWJSTGZBYlhzVDc3T056Wms1ZFNrSTAyMXhET1drWTZ5ZVlmQ3FGcFVJZjhmd0Zra0g3QnltMlc4TW8ydzg5U1Z5V2dacWhjVG5pVzktTGJrYTcyS0xXamFZVmpYazBycThXTzBBdWJNeThJSENnd0pRYXJ1VlJzdjgyYm1za3Z6NmVOTQ?oc=5",
+   "source": "FantasyPros",
+   "published": "2026-09-19T04:23:00Z",
+   "summary": "Seahawks WR Tory Horton (hamstring) carries no injury designation into Sunday.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Tory Horton",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 5.3,
+      "suggestedEdit": "Cleared (hamstring) · +5.3 pts · move up ~1 round"
+     }
+    ]
+   }
+  },
+  {
+   "id": "fantasypros-kupp-back-off-injury-report",
+   "title": "Cooper Kupp (back) off injury report for Sunday",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWnlDbGU3dTU3cnJoZ0xTbWpnWUdmeGN6TWd2SzBnbzRQSzNXWW04NjFqbWkzc0dMR0ZvRlpJcnlmUkpxQ1JWT01WdHB2ZW1qc0l6RjZieDF5S0NiTnlab0doSm9RVEcyMUdGUGdXRDVJY2I5NWt0VkRHMFVGVHhSbUNpT09xcDVHQndpWG1TaWFRZkHSAZgBQVVfeXFMTV9JS3NUdDJsdVFVZU5vUXN1WE9rLVVaMmswUi1Ia1E0VGZrQ2FMa0JMR2RNMkpMQ2w2cmNRSWQyYU1QZjRoOHQyMUppckI1YUk3bmdNeDNEM19ZejdHRmxBSkZLQUYxX0x5MndJanJ5VGhVbXQza3UtLWRNZ1lXeUZTZ1UzVU1ySXhJSmc5S04tZWY2TTZMZG0?oc=5",
+   "source": "FantasyPros",
+   "published": "2026-09-19T04:21:00Z",
+   "summary": "Veteran Seahawks WR Cooper Kupp (back) is off the injury report and cleared for Sunday.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Cooper Kupp",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 6.9,
+      "suggestedEdit": "Cleared (back) · +6.9 pts · move up ~1 round"
+     }
+    ]
+   }
+  },
+  {
+   "id": "fantasypros-whittington-quad-added",
+   "title": "Jordan Whittington (quad) added to injury report Friday",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbGxCcVV6eTl5VF93OHVWY2xnU0I1SzVkcUpWSl9CZkphbFJmaUxIeEpCMTJTVmhhVHRHaTNTSEc2WGljZmlIRWNjN1ZieXVDclpTNlI3dGgzUWlDbzdYY1F1ZDJSN2w0MDlWcjdfeFJHR0V1UlRrWkkwVWMyOXY2Y21ybUdsbUZla1lyMXNCZzdqR3V4SVhsMy1NN29yQXpnci040gGoAUFVX3lxTE5zc19XYlRtX0Q5cWNsNVZ0YTZ1Q0N1ZHNfaWVIdFhnU3lZajZWdE5velZWV0tIYS12WXVCX3JoektJMVA4aTljREx4SVNTWkFPTVk0Mm8wdUpYaFZpSjkyMHFqMjcxamhsa1hnaGZkbURPb1NoSkNsX2dOaUJKUFBaYlVIcDI3LU5QUkZUN24yZnlPWXNxTU13T2RNTzdfaW5HVWNDR3E0WQ?oc=5",
+   "source": "FantasyPros",
+   "published": "2026-09-19T04:17:00Z",
+   "summary": "Rams WR Jordan Whittington (quad) was added to the injury report on Friday, putting his Week 2 status in doubt.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jordan Whittington",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -3.4,
+      "suggestedEdit": "Tag injured · −3.4 pts (1 game) · drops ~1 round"
+     }
+    ]
+   }
+  },
+  {
+   "id": "nypost-week2-injury-replacements",
+   "title": "Fantasy football injury replacements to target for Week 2",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZzVDQnNrOEMzcmI2QXpBUmVMZmNESUt1c2hqUEd6Y3VjYk1aQ3pPSGQtTWpKdHRyLXNRUjZ4cTQ0ekxnMGZNVDJGUmM3Zi1DOVFPMFdzck02MHBoaXNKaUwxa2tEX2FpTFg5ZUxZblNET1hrTjR3d1JuSk0zM1h3T3lOdUxwcGpVOVdNMEJud1Y3OF9VZDZsU0VLajM?oc=5",
+   "source": "New York Post",
+   "published": "2026-09-19T02:42:00Z",
+   "summary": "Waiver-wire piece naming injury replacements to target for Week 2 lineups.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Waiver/streaming advice — no single player edit (est. targets vary by league size)."
+   }
+  },
+  {
    "id": "fantasy-six-pack-week2-final-injury-report",
    "title": "2026 Fantasy Football Week 2 Final Injury Report",
    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOTTRtUHpVcU1kNVdpcWFnOGFsWHJBeEhRTXA5X0lwaUM0d0twZndlU0hGWUI0ZDAxd18xVENHY2ljekp3ekJJZG9EaXJIckdUZzczVk9LdjlrZ1BINF9veW1SX3pLb2RKekxTbmlCQU96UVB4QTBUcGktblBsSzV0WUNR?oc=5",
@@ -13,6 +99,19 @@
    "impact": {
     "players": [],
     "note": "Aggregator — no player-specific edit. See the individual items above (Collins, Flowers, Burrow, Nacua) for suggested injections."
+   }
+  },
+  {
+   "id": "fantasylife-week2-injuries-coachspeak",
+   "title": "Week 2 Fantasy Football Injuries, Coachspeak and News to Help You Win: Updates on Nico Collins, Zay Flowers & More",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX1ZpU2xmeUZ0UmRDcUJES1UxWHhNR1VpdS03NGVubmdFSGE1YXZydFAyZVM5VTJHMmRneHJkcDJXTUc4aENfM19lSV9MMmg3clVvaWxsNWZDU3RqUDNuZE5wMWtZdlRCbVVHT0ZmZUxCZFVMODA2QWo1OG9SUl9rTEd2ekhBUTA3MG9Oa1hCQV9ZZEVxZFNvWjNYQkhKazRza2c0RDJ2aE40QWRXR0E?oc=5",
+   "source": "FantasyLife",
+   "published": "2026-09-18T23:42:00Z",
+   "summary": "FantasyLife's Week 2 injuries, coachspeak and news column with updates on Nico Collins and other fantasy-relevant names.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Aggregator — no single player edit. See the individual Collins/injury items for suggested injections."
    }
   },
   {
@@ -118,6 +217,66 @@
    }
   },
   {
+   "id": "nyt-film-room-loveland-bears",
+   "title": "Fantasy football film room: Buy low on Loveland, Bears receivers, plus rookies to stash",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNU01IYWx1N3lHN1FJdE55UmNIVTNGWXQ4bXN5WUZXRVhJRXRfZ3pCOGZJX3FqQmdxallvdXA3OGdkbzdtUUZSSGRPRHB0bVpGY3NRUS1mOTBURFVMX2h0VC1vWEJReUFkRFhGQkljTGN3cGNaWDdKMmZZYUE4dmx3ZWtyR1d6NG9HWnJFcUtrMVdmYnBZMTRqVHhZazZKVUk?oc=5",
+   "source": "The New York Times",
+   "published": "2026-09-18T13:26:00Z",
+   "summary": "Film-room piece urging fantasy managers to buy low on Bears TE Colston Loveland and Chicago's receivers, plus rookies to stash.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Colston Loveland",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 6.0,
+      "suggestedEdit": "Buy-low film buzz · +6 pts · move up ~1 round"
+     }
+    ]
+   }
+  },
+  {
+   "id": "yahoo-pittman-injury-update",
+   "title": "Steelers news: Michael Pittman Jr. injury update will catch fantasy attention",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOLVBseEQ2Y0M5RTAxLUxVcHNreGRBcGdPZU5aZXNOeWc5UkdPeGcwMXY1UEVHaTNzY3hWM2V5aHhrNV85dHJWTVM2NlByaFVpMHBkT29EZEE0SlJxc0FDaDV6OXlmOWtfbHFnU24xUVl1SlV4dVdmZkM0Smc4MDh5MllLUVJvdm5G?oc=5",
+   "source": "Yahoo Sports",
+   "published": "2026-09-17T23:46:00Z",
+   "summary": "Steelers WR Michael Pittman Jr.'s latest injury update is one fantasy managers need to track before Sunday.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Michael Pittman Jr.",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -11.4,
+      "suggestedEdit": "Tag injured · −11.4 pts (1 game) · drops ~1 round"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ffb-samaje-perine-injury-report",
+   "title": "Samaje Perine Added to injury report",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdkFOVmZNa2oyR1J2ZWhFSjNZNUpNZVJhcTFJV0ZlbDhiSmNkT1ZEUXJkcVVlLVZKbWJsY2NNWXV4Q203elRmZk1WLXVPa3BtVkN0SXJmUkRCYU85TlVRQTFfOGhnaDBiZjFQN09SQ1FHdVBFYWtVWVZXMU1HYzlZQWVLWUJrWGVMSVBndkFHOW0?oc=5",
+   "source": "Fantasy Footballers",
+   "published": "2026-09-17T23:43:00Z",
+   "summary": "Bengals RB Samaje Perine was added to the Week 2 injury report, clouding his availability.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Samaje Perine",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -4.9,
+      "suggestedEdit": "Tag injured · −4.9 pts (1 game) · drops ~1 round"
+     }
+    ]
+   }
+  },
+  {
    "id": "saints-report-olave-limited-kamara-return",
    "title": "Saints: Chris Olave limited, Alvin Kamara set to return",
    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOT0hMbDBfcUpNYmZQNmJDSkx2dXlpaDk1UmZvNWRZX3UtSDJKbWY1UVdFelRJQlp3SG5QWXMxTEhQdHRCcjdUYjV6WjZPLU5JTHJEWmRUcVZ3MlB3VFFIdUtkR2t5OFpOazJxX2NjWHhId2JpU0xadUx1eFRzWlBfc2twT0dLQUlrbU04RW9XNXlEeEZCTHM5YUU3RFgxcnVaY3VlVmFzU0Mta01CYWJKNTBYVUtOSV9QWjdIbTByc0Y0YkwwY2RpMU5IZ3hPX05nM0s0Szlndm5sQ2U3TmZReHEwNA?oc=5",
@@ -177,6 +336,27 @@
      }
     ],
     "note": "Grounded: SI 9/17 — hamstring, games est. (2). Denver RB sleeper candidate not yet named in the headline; monitor J.K. Dobbins/Jonah Coleman reps."
+   }
+  },
+  {
+   "id": "si-seahawks-rule-out-darnold-jsn",
+   "title": "Fantasy Football Injury Impact: Seahawks Rule Out Sam Darnold, Bringing Volatility To Jaxon Smith-Njigba In Week 2",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPR2o4dzdvYndzWlh2NFZCNjNGRk1jY1ZrcEdDakVpdzlVU2hCZ1JJZDlIM040bktOd0EzUGlZX3owNzBXdkNwX1NRbDJWUThxWDhLZTJfU1dlUDRuRzlJMnlTX2tvdm9VNlpDU0kxNy1mWGMyWUJUQzg0TEpBcUpaQkdGT01KZHZaTE9NbUJZbFVSRm50dEpWcGZMaFJHR3pBNVQ5RUtJVWt5ZjRodmhyOEF5Y3UweHRreEh5am96b1pHNmRqR09qOWx1V2Q5UmhiT2Q3Z3VDT04xQW5MU2JvdHlFUTBDV1Za?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-16T21:56:00Z",
+   "summary": "Seattle ruled out QB Sam Darnold, adding volatility to Jaxon Smith-Njigba and the Seahawks' passing game.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Sam Darnold",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -15.6,
+      "suggestedEdit": "Tag injured · −15.6 pts (1 game) · drops ~1 round"
+     }
+    ],
+    "note": "Darnold out is a negative for Jaxon Smith-Njigba's ceiling (QB downgrade) — consider a small fade rather than a boost."
    }
   },
   {
@@ -280,6 +460,26 @@
      }
     ],
     "note": "Grounded: FFB Week 1 Injury Recap 9/15. Impacted per the article — A.J. Brown: Doubs/Douglas/Henry; Darnold: Jaxon Smith-Njigba; Sampson: Quinshon Judkins; McConkey: Quentin Johnston; Murray: Carson Wentz."
+   }
+  },
+  {
+   "id": "complex-mcconkey-when-will-return",
+   "title": "Ladd McConkey Fantasy Football Injury Update: When Will WR Return?",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOY0JaQlNBMHpNUnVwb3hhZnZ2YnNPLVR4MUczZjFtOXlzcmplMGNEdmhqXy12emY1Qi13bGczS3RTb05vcTVSNmctU0xLUmxRTS1XdUpmSTBaREZ2LVdFZ0JFUXVUZWl6MDJWVFE4bzZkU2ZQQXBKVGRvWFY5RjE1azNNNEFVa0hHXzlTTGxmcw?oc=5",
+   "source": "Complex",
+   "published": "2026-09-14T16:43:00Z",
+   "summary": "Chargers WR Ladd McConkey's injury leaves his return timeline unclear heading into Week 2.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Ladd McConkey",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -14.2,
+      "suggestedEdit": "Tag injured · −14.2 pts (1 game) · drops ~2 rounds"
+     }
+    ]
    }
   },
   {
@@ -435,18 +635,6 @@
      }
     ],
     "note": "From the My Guys clip series (8/26)."
-   }
-  },
-  {
-   "id": "yt-stack-attack-adp-risers",
-   "title": "Stack Attack! + High Risk Picks (Ep. 1957)",
-   "url": "https://youtu.be/N6MC-XudOSU",
-   "source": "YouTube · FFB",
-   "published": "2026-08-25T00:00:00Z",
-   "summary": "Underrated QB/WR stacks to target + biggest ADP risers after another week of preseason + injury updates.",
-   "impact": {
-    "players": [],
-    "note": "Informational — stack-target signal. No player-specific edit suggested."
    }
   }
  ]
