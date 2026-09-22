@@ -3,6 +3,193 @@
  "sample": false,
  "items": [
   {
+   "id": "fantasy-football-week-3-wr-preview-malik-nabers-tough-t",
+   "title": "Fantasy football Week 3 WR preview: Malik Nabers tough to trust as injuries, QB change create concerns - CBS Sports",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQaW9TZE43cXd0WWd2S08zMi1WaVp4SW1USzdiYWJEMHBSbGp0RGFnUHNfZjUzcVgyOE5sd3I1ZzgzOXRhQ2swRXNjV3BfZWRBQTRtaHA1U3lhaEIzYUNkT2tGeEd4dDJhdXRQSXBlTy12NEJKemg1aGtweUNpWWhBVFhsOEUyZXNIZFdVRTZWcU82dGZPS3FOYzJ3?oc=5",
+   "source": "CBS Sports",
+   "published": "2026-09-22T21:06:15Z",
+   "summary": "CBS Sports' Week 3 WR preview says Malik Nabers is tough to trust given his injury and the Giants' QB change.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Nabers already tagged injured (shoulder); article reinforces the downgrade but adds no new ruling."
+   }
+  },
+  {
+   "id": "fantasy-football-week-3-insights-your-best-qb-options-f",
+   "title": "Fantasy football Week 3 insights: Your best QB options for replacing injured stars - The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdnVUMHBZYXplRnRLS0haYWN6NHBXN2FmWVJrUE1OTno1REh3MnlJdi0wTENoWFpqWjNJb28yTnJDc3JNNUswb1RfcWwwclBoanZBM3lKT1FqemhBRjcxbGVXN0tjVlpIVXMtT0hlUUZQa2pTQjBacGo2RUZQYXpjRWVCSTlkZlA0NXlhSzRDR0E3X09VY1dnT05R?oc=5",
+   "source": "The New York Times",
+   "published": "2026-09-22T20:28:57Z",
+   "summary": "The Athletic/NYT lays out the best QB streaming options for managers replacing injured starters in Week 3.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "QB streamer list; no single player change named in the headline."
+   }
+  },
+  {
+   "id": "latest-fantasy-football-news-dart-facing-surgery-bagent",
+   "title": "Latest fantasy football news: Dart facing surgery; Bagent in concussion protocol - The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcVYxMUJyd29Ccm4ydUlsZmlHaXl5NHQtS1c5QmJ4QmQ2Zi1zSTFuMzJxc2N5bVgzUUpfY0l2WU50ZjNnRmRfdEt6UWs4VnY4ZVprWnJPNzQxelFQVGNHS1hiNTBiclMyUjJlVEZEUzNwS0VkNEM5T1ZKbUgxZnZLRk00ZmthLXM2ZnF6WEJNUkxEVldGT0FkUjBXTWY?oc=5",
+   "source": "The New York Times",
+   "published": "2026-09-22T20:23:51Z",
+   "summary": "The Athletic/NYT reports Jaxson Dart is facing knee surgery while Bears QB Tyson Bagent is in the concussion protocol.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jaxson Dart",
+      "action": "injured",
+      "games": 3,
+      "deltaPts": -56.1,
+      "suggestedEdit": "Tag injured (surgery) \u00b7 \u221256.1 pts (3 games) \u00b7 drops ~3 rounds"
+     },
+     {
+      "name": "Tyson Bagent",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -18.0,
+      "suggestedEdit": "Tag injured (concussion) \u00b7 \u221218.0 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: NYT 9/22 \u2014 Dart facing knee surgery; Bagent in the concussion protocol. Dart \u221256.1 = 18.7 ppg board projection \u00d7 3 games (est.). Bagent not in board.json; \u221218.0 = est. QB value (est.)."
+   }
+  },
+  {
+   "id": "nfl-week-3-injury-report-fantasy-football-status-update",
+   "title": "NFL Week 3 Injury Report: Fantasy Football Status Updates for QB, RB, WR, & TE - PrizePicks",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQjRhQzdhZ2Jya3BCNUktLWlMSzF6S2gyLUIxWHNsaUlBMmhDREZYLTBqb1JhUGRwRXZwWlN1NGZOWGpnNk96VUQydUtUUy1CYXJEa3ZzTXQwd2JfZVZoeXY4bEJxcFFCSURoTjdKRHB5bUlwTWVuVHlOWncybEFaaHAwb1VmekgydnNKZ0FoQkpoVUo4X1dDWFpBdGhtS1lpX2ZkVnZNSEMyVGFBMEZQdmNjVFd3cS1UNnZsakNn?oc=5",
+   "source": "PrizePicks",
+   "published": "2026-09-22T19:58:39Z",
+   "summary": "PrizePicks rounds up Week 3 injury statuses across QB, RB, WR and TE.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Position-wide Week 3 status roundup; no single player change called out."
+   }
+  },
+  {
+   "id": "jaxson-dart-injury-update-fantasy-football-waiver-wire",
+   "title": "Jaxson Dart Injury Update: Fantasy Football Waiver Wire Pickups - FantasyPros",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeWxVc1hsNFlfRjVGMjF4YlJDeWFCbEk0OFNOUmdfUENUNHFENEcydV8xN0ZJMHd6bmhFUHVxQmo0b1RIYV9qRmo5UGZPckZUSERkVVV6UERZRWNtZUJWVkR0Z2x6ZHRiUG9XcXl2V0FBMmctYmlLM2xQYmkyZm5rN2R5aVJCeDZ2ZURzOXlJRjA4dW1Jc1h1VkppcldfbzRTOHdwQ0ptRdIBrAFBVV95cUxQSFlRdnM3RjVvZGZ4NGRtaTNvNHdzUURMc1dncTFnS3VXaVg3RnVsc0YzbVpxU0lkOTZwamM5dzVuLUMyVjdNaHdDQXhGN0o4NzJjOHRqX2RldzdHaGVqSU9BbWxldndHVkl0U3BUbXNWUmZEVzlnbm14LWhEQ19YNW90NEVtYkNyVGVmVldBUDNMdmVSWlVXVjRBdEl1YjJ2bXJaNFpnS3VsM1F2?oc=5",
+   "source": "FantasyPros",
+   "published": "2026-09-22T19:21:52Z",
+   "summary": "FantasyPros looks at waiver-wire QB pickups in the wake of Jaxson Dart's knee injury.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Waiver-wire list framed around Dart's injury; Dart already tagged and replacement QBs already suggested."
+   }
+  },
+  {
+   "id": "fantasy-football-injury-update-kyler-murray-is-a-must-s",
+   "title": "Fantasy Football Injury Update: Kyler Murray is a Must Start in His Return From Concussion Protocol - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMUdqTWVRbXVjSndxWUhDOG10blBqcHFsUW1MSzM5LVFFMF9tT0VhcGhjSE1VTXNOMlBqNmZmM1FETkQ3V0twNlU2UGJVeUd1M2JlLWdhaExhMmN4OWM2TEI3dHVWcDg0YWc1SFJoTEdWZFhXU0J5UjczTDZxSVQ2OWlGbktuN3RWOVFvOEJyVE9yRHZNbVI0MEsybWV6RDJmc01Qd1lYcnlveE4zTGRSU0RPUzlxWktCWFg4OFB3d0F5Q0Z5TGZ0c196VmNMNUJP?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-22T18:56:11Z",
+   "summary": "SI says Kyler Murray is a must-start in his return from the concussion protocol.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Kyler Murray",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 18.0,
+      "suggestedEdit": "Cleared (concussion) \u00b7 +18.0 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/22 \u2014 Murray back from the concussion protocol and called a must-start. +18.0 = est. starting-QB value (board projection incomplete; est.)."
+   }
+  },
+  {
+   "id": "week-3-waivers-someone-to-blame",
+   "title": "Week 3 Waivers + Someone to Blame",
+   "url": "https://www.thefantasyfootballers.com/episodes/week-3-waivers-someone-to-blame/",
+   "source": "Fantasy Footballers Podcast",
+   "published": "2026-09-22T18:19:12Z",
+   "summary": "The Fantasy Footballers' Week 3 episode covers waiver pickups and the Week 2 fallout.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Podcast episode; no single player change called out in the title."
+   }
+  },
+  {
+   "id": "waiver-wire-pickups-week-3-fantasy-football-thefantasyf",
+   "title": "Waiver Wire Pickups: Week 3 (Fantasy Football) - thefantasyfootballers.com",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTjJXY2dvQ18zd3R1SFhCcDF0RWRhWjd0NDF3b0tMai16UmtsNldiUVZoSkRhMlM1dVo4WUR6RkJTUDdRRjBxYjJoMzhVWGRCX1BfTjc5Q3F0dURkWVF6a0w4YTU4VmdTMkx5S1RkZXJmS1pkMmdCcXZ0N1RPQ0xpcXNyUGV5ZHNkcW14bnRnSlVQdl9FLVViag?oc=5",
+   "source": "Fantasy Footballers",
+   "published": "2026-09-22T17:55:34Z",
+   "summary": "The Fantasy Footballers' Week 3 waiver-wire pickups across positions.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Waiver-wire list; no single player named in the headline."
+   }
+  },
+  {
+   "id": "week-3-nfl-preview-banished-by-the-bucs-fantasy-footbal",
+   "title": "Week 3 NFL Preview + Banished by the Bucs \u2013 Fantasy Football DFS & Betting",
+   "url": "https://www.thefantasyfootballers.com/dfs-podcast/week-3-nfl-preview-banished-by-the-bucs-fantasy-football-dfs-betting/",
+   "source": "Fantasy Footballers DFS Podcast",
+   "published": "2026-09-22T17:22:52Z",
+   "summary": "The Fantasy Footballers DFS/betting show previews Week 3 matchups.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "DFS/betting podcast episode; no single player change called out in the title."
+   }
+  },
+  {
+   "id": "week-2-fantasy-football-injury-recap-thefantasyfootball",
+   "title": "Week 2 Fantasy Football Injury Recap - thefantasyfootballers.com",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcXBha0NrNnNkcUw1ZUEyb28yamtEN0U4TXVIQldoVTFMS0p2VkNzdnYtWG4xdngtZVYzcEU3LWI5enNEeFYwbHJyMkpZYTRTN3J2V1VrUnpDQnpHZXE3YW9Cb2lYRi1vOFlSR0UxVFFRTDRNcjdZV00yX0gwTzBHN3V5TFNwYnBCc1RNdmRDOA?oc=5",
+   "source": "Fantasy Footballers",
+   "published": "2026-09-22T16:38:22Z",
+   "summary": "The Fantasy Footballers recap every fantasy-relevant injury from Week 2 and what it means going forward.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Week 2 multi-player injury recap; no single player change called out in the headline."
+   }
+  },
+  {
+   "id": "aj-brown-fantasy-football-injury-update-when-will-patri",
+   "title": "AJ Brown Fantasy Football Injury Update: When Will Patriots WR Return? - Complex",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdDZRYXBzZWpCbkktX1Z4R251aElJSmpOdzhOdXpscnRSeFZ2Z0d2RHJHaHlsZWkwNXd2ZENPUzZWUzkzQ2ZqYWdmU2p4Rm1hcXBlR0lEV0x5V1pQMmFsNUxNeDZpN2NtLV9TblpQVnI3QlNlYVRkNE15S21fb3dURlp5eFhqXzFz?oc=5",
+   "source": "Complex",
+   "published": "2026-09-22T16:29:07Z",
+   "summary": "Complex checks in on A.J. Brown's injury and when the Patriots expect their WR to return.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "A.J. Brown",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -15.2,
+      "suggestedEdit": "Tag injured \u00b7 \u221215.2 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: Complex 9/22 \u2014 headline frames A.J. Brown as injured with his return timeline TBD. \u221215.2 = 15.2 ppg board projection (NE WR); 1 game assumed (est.)."
+   }
+  },
+  {
+   "id": "18-fantasy-football-injury-updates-for-week-3-2026-fant",
+   "title": "18 Fantasy Football Injury Updates for Week 3 (2026) - FantasyPros",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVndkZWZKQm92djhHb1V2TFo1WnU4b0dxWUVXWFFqVDduZ3lPNU4zWXhjdzNBOHA4RE5DU0x4QU1wcl9XWEFiMVJxTk10TVQtVmdxQ0tURlBSd3RxSUw4OVU1dnIyQnQyTzd6ZDNucnpSUzV2ZVNxOUpWcEFRVUhOTlFkTlB4OS1QdjVGTkV6ZXNRbGwwdlHSAZYBQVVfeXFMTlZ3ZGVmSkJvdnY4R29VdkxaNVp1OG9HcVlFV1hRalQ3bmd5TzVOM1l4Y3czQThwOEROQ1NMeEFNcHJfV1hBYjFScU5NdE1ULVZncUNLVEZQUnd0cUlMODlVNXZyMkJ0Mk83emQzbnJ6UlM1dmVTcTlKVnBBUVVITk5RZE5QeDktUHY1Rk5FemVzUWxsMHZR?oc=5",
+   "source": "FantasyPros",
+   "published": "2026-09-22T15:23:00Z",
+   "summary": "FantasyPros delivers 18 injury updates ahead of Week 3.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Multi-player Week 3 update list; no single player change called out."
+   }
+  },
+  {
    "id": "fantasy-football-backup-rb-rankings-blake-corum-remains",
    "title": "Fantasy Football Backup RB Rankings: Blake Corum remains heavily involved behind Kyren Williams going into Week 3 - Yahoo Sports",
    "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOaGV1eHZHQVVkVTl5a1JzcE4tajc5ME9hVmk2NGpQU0pockQ3bHZYM3ozZU9wby1UUHZSUXZlWHotQVdYN2RmZmp2cURab1pyTG4xX3h5LTN1d29XVmU4cktTaGI2bkVkTHlmaWdwVkhTa1lpOXY1WThSQlFpMUhSWWM2aTJQbkJJQ19kdHp4SHRvZ3ZfblhGU2xVYTFkbVhSNUtUb0NpaEVDR0owU09hbnk0QWpUd3JNMmdOQ2FNZ1NVLUZXQWxJTjdGd1pHR2pmUlFOVHdGMURoNTNiRFBMVEVfcmlmcjlQWXRKQmNfWldxNnR2Vmt2TllzNEs?oc=5",
@@ -17,10 +204,10 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 3.0,
-      "suggestedEdit": "Standalone-role bump · +3.0 pts · move up ~1 round"
+      "suggestedEdit": "Standalone-role bump \u00b7 +3.0 pts \u00b7 move up ~1 round"
      }
     ],
-    "note": "Grounded: Yahoo 9/22 — Corum 'remains heavily involved' behind Williams. +3.0 = partial bump on his 8.7 ppg board projection (est.)."
+    "note": "Grounded: Yahoo 9/22 \u2014 Corum 'remains heavily involved' behind Williams. +3.0 = partial bump on his 8.7 ppg board projection (est.)."
    }
   },
   {
@@ -50,6 +237,45 @@
    }
   },
   {
+   "id": "5-fantasy-football-waiver-wire-qbs-to-target-with-jaxso",
+   "title": "5 fantasy football waiver wire QBs to target with Jaxson Dart, Caleb Williams injured - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNakxPalF2cG5oUzJocDVzX0JhZjVFR1pfUDRhVDdTTkZ0WDZwRERZbHRHZDlUaWwtVU5yQWh2TGdnNy13eUg5c0NTbllFQjBIQl9KTTB0MVc4S2kzU05LOG5aUkpHU3NOVHFpRXZDN1pKLUFoQlRpUF9kcnpveVNvNk50b0VDdw?oc=5",
+   "source": "Yahoo Sports",
+   "published": "2026-09-22T14:02:34Z",
+   "summary": "Yahoo lists five waiver-wire QBs to target with Jaxson Dart and Caleb Williams injured.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "QB streamer list; Dart/Williams already tagged and replacement QBs already suggested."
+   }
+  },
+  {
+   "id": "fantasy-football-week-3-injury-report-jayden-daniels-ca",
+   "title": "Fantasy Football Week 3 Injury Report: Jayden Daniels, Caleb Williams, Saquon Barkley And More - forbes.com",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTGQ4TkFQTGQ3dngyOTdRbjRzT2pLRlhYQS0zd08ybDFBaFkzSll6SjcweFBvNzJhQ2VEX2FGNXZTT3pGcW00WmRYMVVUQXEtd1JhQUp2YjM2RzNyRXBPcXZxQkR4VkNsZVo5RjhqdkNabzI2eVZHVEJ4QzhNaWJodUFpSEs5b2daZ056MVd5WGFRU09rX2drSkdDWUR6dG11ZGxOdFpQVG80SnpWS3dURnB6VzlvSXVLQUFJelM4SWNWVkFoQWx4MF81a3BOWENvR1A0TFN3bw?oc=5",
+   "source": "Forbes",
+   "published": "2026-09-22T13:34:00Z",
+   "summary": "Forbes' Week 3 injury report tracks Jayden Daniels, Caleb Williams, Saquon Barkley and other fantasy names.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Multi-player Week 3 injury roundup; Daniels, Williams and Barkley already carry individual tags on the board."
+   }
+  },
+  {
+   "id": "fantasy-football-implications-after-week-2-injuries-to",
+   "title": "Fantasy football implications after Week 2 injuries to Caleb Williams, Jayden Daniels - The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZUZ3bTlCLWVhcDQ1Wi1MZ1l3VEtmZjhxeHRDcU04VnRFRFZQdkpaWnNtUjU4dXRUWnZyX3RrakNNNHh3Z2VvNHdUYmJtVV9WUHY0SUN5RkotempFSnJmeWE5SzZRNThEVzNqOEc5b2Vrd2N6eGdkM2tTMmJiUDBPbDJsb0tZMXZyNUhGLVB6SzBhREhRQ29OeERXeVpwbHVjWFNfb2QtOWtDbHdk?oc=5",
+   "source": "The New York Times",
+   "published": "2026-09-22T11:22:00Z",
+   "summary": "The Athletic/NYT breaks down the fantasy fallout from the Week 2 injuries to Caleb Williams and Jayden Daniels.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Williams and Daniels already tagged (cleared/injured); this is analysis of their existing statuses."
+   }
+  },
+  {
    "id": "week-3-fantasy-football-injury-report-jaxson-dart-jayden",
    "title": "Week 3 Fantasy Football Injury Report: Jaxson Dart, Jayden Daniels, Caleb Williams And More - Forbes",
    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQY25JOTFwRi1ZUXJhZjdod3FfWVk4Y29obmpWNDl3d1F3cldKWDlDQVVxNVdUZU0weXk5M0xYOEhibmdBZnY2V1ROZXpteHoxcm5fcmtTc3A5cGk3V3QtUUJNRU5BT1BJNmdRdzRhOHhpb1hjVU4weWhHZ0ZNX2huVVcwZGdLeXpzSUVYVkM2aEpib0NiM3ZVWFVYeUFMRm9UczNwMWROYWJHVGNMdUxLU09RQUhfRXJ5enp5SlJNcTlSRDVQRFVyMTJrc3lDLTktOE5wOXkzUG5Sdw?oc=5",
@@ -60,6 +286,19 @@
    "impact": {
     "players": [],
     "note": "Multi-player Week 3 injury roundup; Dart, Daniels and Williams already have individual tags on the board."
+   }
+  },
+  {
+   "id": "target-these-pickups-to-combat-injuries-to-your-fantasy",
+   "title": "Target These Pickups To Combat Injuries To Your Fantasy Football Team - FantasyLife",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSTBwXzctd0U4TzZJT1A3WVhkdGlqWUlFYXJ0YzA0bHNoZ3BIMnVyZWJza21hN213UFhiYWdqM2lfeWp6akFTTmxRXzR1YmRmdnVFVEQyRXVObnM1aEg5NXUwcFJpT3NNc0FlaHlBVXZJQ3NMemM4Vm5tQ09oT19lZDdSN2RXalk3WTBJSXY3NkpPZnRKOENfSElLVWd5ZVViZjJHOUF1LTdfaXI0bnc?oc=5",
+   "source": "FantasyLife",
+   "published": "2026-09-22T10:00:00Z",
+   "summary": "FantasyLife suggests waiver pickups to cover the injuries piling up on fantasy rosters.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Pickup list; no single player named in the headline."
    }
   },
   {
@@ -77,7 +316,7 @@
   },
   {
    "id": "giants-john-harbaugh-jaxson-dart-knee-injury-in-the-neighbor",
-   "title": "Giants’ John Harbaugh: Jaxson Dart knee injury ‘in the neighborhood’ of sprained MCL - The Athletic - The New York Times",
+   "title": "Giants\u2019 John Harbaugh: Jaxson Dart knee injury \u2018in the neighborhood\u2019 of sprained MCL - The Athletic - The New York Times",
    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbEFlQ3h2VzhEQ3BIbFVtUHdFZktSLVdxenFkd1dEV193cDVFVVA2eWthNXdJNkNJekFDd083TEJWY0l4SHpIZGh3OTcxNTFzSjZpd1JYd0lKaTc5V3BTbFduMk9GYUJoNU1fTS1IbnNGNFk5aS1uMm1VMm5hR2lleXhDOGV3ZWh6YmVnc3ZRd0FlZV9tM3ZSLUNvbGh4NGZ0MTAydzBKRWs?oc=5",
    "source": "The New York Times",
    "published": "2026-09-22T05:01:00Z",
@@ -90,10 +329,10 @@
       "action": "injured",
       "games": 3,
       "deltaPts": -56.1,
-      "suggestedEdit": "Tag injured · −56.1 pts (3 games, sprained MCL) · drops ~3 rounds"
+      "suggestedEdit": "Tag injured \u00b7 \u221256.1 pts (3 games, sprained MCL) \u00b7 drops ~3 rounds"
      }
     ],
-    "note": "Grounded: The Athletic 9/22 — Dart's knee injury is 'in the neighborhood' of a sprained MCL. −56.1 = 18.7 ppg board projection × 3 games (est.; MCL timeline not confirmed)."
+    "note": "Grounded: The Athletic 9/22 \u2014 Dart's knee injury is 'in the neighborhood' of a sprained MCL. \u221256.1 = 18.7 ppg board projection \u00d7 3 games (est.; MCL timeline not confirmed)."
    }
   },
   {
@@ -111,10 +350,10 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -14.6,
-      "suggestedEdit": "Tag injured (shoulder) · −14.6 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured (shoulder) \u00b7 \u221214.6 pts (1 game) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Grounded: RotoBaller 9/22 — Nabers suffered a shoulder injury vs. the Rams. −14.6 = 14.6 ppg board projection (NYG WR)."
+    "note": "Grounded: RotoBaller 9/22 \u2014 Nabers suffered a shoulder injury vs. the Rams. \u221214.6 = 14.6 ppg board projection (NYG WR)."
    }
   },
   {
@@ -132,10 +371,10 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 4.1,
-      "suggestedEdit": "Waiver role boost · +4.1 pts · move up ~1 round"
+      "suggestedEdit": "Waiver role boost \u00b7 +4.1 pts \u00b7 move up ~1 round"
      }
     ],
-    "note": "Grounded: NYT 9/22 — Boston named in the Week 3 waiver wire. +4.1 = added role ≈ half of his 8.3 ppg board projection (est.); Coleman already tagged separately."
+    "note": "Grounded: NYT 9/22 \u2014 Boston named in the Week 3 waiver wire. +4.1 = added role \u2248 half of his 8.3 ppg board projection (est.); Coleman already tagged separately."
    }
   },
   {
@@ -153,10 +392,10 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 16.0,
-      "suggestedEdit": "Starter boost (Dart out) · +16.0 pts · move up ~1 round"
+      "suggestedEdit": "Starter boost (Dart out) \u00b7 +16.0 pts \u00b7 move up ~1 round"
      }
     ],
-    "note": "Grounded: SI 9/22 — headline ties Dart's knee injury to Winston's opportunity. Winston not in board.json; +16.0 = est. spot-start QB value (est.). Nabers already tagged injured from the MNF injury."
+    "note": "Grounded: SI 9/22 \u2014 headline ties Dart's knee injury to Winston's opportunity. Winston not in board.json; +16.0 = est. spot-start QB value (est.). Nabers already tagged injured from the MNF injury."
    }
   },
   {
@@ -174,10 +413,10 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -18.7,
-      "suggestedEdit": "Tag injured · −18.7 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured \u00b7 \u221218.7 pts (1 game) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Grounded: RotoBaller 9/22 — Dart ruled out with a knee injury. −18.7 = 18.7 ppg board projection (NYG QB); timeline beyond the game unknown."
+    "note": "Grounded: RotoBaller 9/22 \u2014 Dart ruled out with a knee injury. \u221218.7 = 18.7 ppg board projection (NYG QB); timeline beyond the game unknown."
    }
   },
   {
@@ -195,10 +434,10 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -14.6,
-      "suggestedEdit": "Tag injured · −14.6 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured \u00b7 \u221214.6 pts (1 game) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Grounded: TFF 9/22 — Nabers sustained an apparent arm injury. −14.6 = 14.6 ppg board projection (NYG WR)."
+    "note": "Grounded: TFF 9/22 \u2014 Nabers sustained an apparent arm injury. \u221214.6 = 14.6 ppg board projection (NYG WR)."
    }
   },
   {
@@ -216,10 +455,10 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -19.1,
-      "suggestedEdit": "Tag injured · −19.1 pts (1 game, inactive MNF) · drops ~1 round"
+      "suggestedEdit": "Tag injured \u00b7 \u221219.1 pts (1 game, inactive MNF) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Grounded: Yahoo 9/21 — Rams ruled Nacua out (hip) for MNF. −19.1 = 19.1 ppg board projection (LAR WR)."
+    "note": "Grounded: Yahoo 9/21 \u2014 Rams ruled Nacua out (hip) for MNF. \u221219.1 = 19.1 ppg board projection (LAR WR)."
    }
   },
   {
@@ -237,10 +476,10 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -6.0,
-      "suggestedEdit": "Tag injured · −6.0 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured \u00b7 \u22126.0 pts (1 game) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Grounded: TFF 9/21 — Robinson (ankle) dealing with an injury. −6.0 = 6.0 ppg board projection (ATL RB)."
+    "note": "Grounded: TFF 9/21 \u2014 Robinson (ankle) dealing with an injury. \u22126.0 = 6.0 ppg board projection (ATL RB)."
    }
   },
   {
@@ -258,359 +497,10 @@
       "action": "injured",
       "games": 2,
       "deltaPts": -21.2,
-      "suggestedEdit": "Tag injured · −21.2 pts (2 games) · drops ~2 rounds"
+      "suggestedEdit": "Tag injured \u00b7 \u221221.2 pts (2 games) \u00b7 drops ~2 rounds"
      }
     ],
-    "note": "Grounded: TFF 9/21 — Brooks (groin) week-to-week (2 games est.). −21.2 = 10.6 ppg board projection × 2 (est.)."
-   }
-  },
-  {
-   "id": "jayden-daniels-injury-fantasy-football-impact-with-marcu",
-   "title": "Jayden Daniels injury: Fantasy football impact with Marcus Mariota expected to start Week 3 - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQmRMMU1sTWgyR1BmV3NrMnpDejNhMjVyLUU5eG9TbnpEZTJnd0JKOEgtUEpZZzNfVnBHam53UE1wTF9KYzhrM1Atc0VIZnBFUFZqNGk2bW5uNUF0Y29McDZDMk91ZGJ1RmVDMktnWGZOWUh4T2dVOWV6X040d21Pb3ZuV2JvM2ZiZTEwTUpEZDM?oc=5",
-   "source": "Yahoo Sports",
-   "published": "2026-09-21T21:12:58Z",
-   "summary": "With Jayden Daniels out, Marcus Mariota is expected to start Week 3 for Washington and gets a short-term fantasy bump in superflex/2QB leagues.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Marcus Mariota",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 18.0,
-      "suggestedEdit": "Starter boost (Daniels out) · +18.0 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: Yahoo 9/21 — Mariota expected to start Week 3 with Daniels (elbow) out. Mariota is not in board.json, so +18.0 = est. starting-QB value (QB ≈ 18-22 pts/gm, est.)."
-   }
-  },
-  {
-   "id": "michael-pittman-jr-dealing-with-new-foot-injury-fantasy-foot",
-   "title": "Michael Pittman Jr. Dealing with new foot injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWmVWY01nUnBRVEo1eldlM0JGLXN5b1BYeTQ3WTNSUGEtNFB3OENYM1pfTlhpSFpTSmJZWThZQmEyOEE0TVk1OVRMaHdYaklESHJMNW5tWTdDRks2LUwtM09IWU5rYzZiZVJtbjducXdYbnhtWTVZSlBSVEtzZ0dtaU5mOVhSdTE2a1BDN3JmcE1zU2REQUFVYTRIcmFUams?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-21T20:58:57Z",
-   "summary": "Fantasy Footballers report Steelers WR Michael Pittman Jr. is dealing with a new foot injury.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Michael Pittman Jr.",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -11.3,
-      "suggestedEdit": "Tag injured · −11.3 pts (1 game) · drops ~1 round"
-     }
-    ],
-    "note": "Grounded: TFF 9/21 — Pittman (new foot injury). −11.3 = 11.3 ppg board projection (PIT WR)."
-   }
-  },
-  {
-   "id": "jayden-reed-tending-to-back-injury-timeline-tbd-fantasy-foot",
-   "title": "Jayden Reed Tending to back injury, timeline TBD - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQaVZrdng1UGlMRUpDSmJNY29ubTBDbzYwQnB0aGY4NkVoNWhiUUR0a2VhTW1lVUpfcnBERW9RamV2eHU0WkpDbnYxRzNHMndzT2d5cjdrUkVvbGNJcXg3cDBqTnhiZlY4dW02M3NUWUxlalB3MUktQkdnTGc0amxZSEEwa1g1eVAyRlBrRkxJYkdqek1mTTZRRHpQMU1LeE0?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-21T20:42:35Z",
-   "summary": "Packers WR Jayden Reed is tending to a back injury with no timeline set, leaving his Week 3 availability uncertain.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jayden Reed",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -10.3,
-      "suggestedEdit": "Tag injured · −10.3 pts (1 game) · drops ~1 round"
-     }
-    ],
-    "note": "Grounded: TFF 9/21 — Reed (back) timeline TBD. −10.3 = 10.3 ppg board projection (GB WR); 1 game assumed, more possible."
-   }
-  },
-  {
-   "id": "caleb-williams-avoids-major-injury-could-play-week-3-fantasy",
-   "title": "Caleb Williams Avoids major injury, could play Week 3 - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPN2ZsWFVsQnRiemFXWnFlY3paZU94Y3lBMmdqd1B5aXA1aHk1VUNBbmp3TGlaa3ZpbTVYZGRHbUF5NFRjdEZETXFZdTQyeWpvYzBxbmFNWTliR0paRnBiTlZqM1dobk55YlFSMlpxdGlkb2RnVDZzSDU3US1KeERzbjVxUlVaTWtGdkxteXJYcUhCTjdBcHg3UnhTMzZid1NFUmptb0Z3?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-21T20:16:46Z",
-   "summary": "Caleb Williams avoided a major hamstring injury and could be available for the Bears in Week 3 after leaving the Week 2 loss early.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Caleb Williams",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 18.6,
-      "suggestedEdit": "Cleared (hamstring) · +18.6 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: TFF 9/21 — Williams (hamstring) avoided a major injury and could play Week 3. +18.6 = board ppg recovered."
-   }
-  },
-  {
-   "id": "commanders-qb-jayden-daniels-out-week-3-will-see-specialists",
-   "title": "Commanders QB Jayden Daniels out Week 3, will see specialists about elbow injury - The New York Times",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdWI3R2txcnY3QkxadmVtY05QTktoRnNzQWZEN3luVDRjeDY1aDR6WmxSTUNiS09jT1NVUGJGYnlpdnkwd3l4cTVadm9mQWwyaXRHWUs1Y3pyRmhZU2VBbTRGYnJZU0wxMUVYZkxuTkhZdWlIYU56aEpjZmZuM1RwLWxLTzhBZTlYQjNlbnYzTldpU3h4eDEw?oc=5",
-   "source": "The New York Times",
-   "published": "2026-09-21T20:15:33Z",
-   "summary": "The Commanders have ruled QB Jayden Daniels out for Week 3 as he visits specialists about his elbow injury, leaving his timeline beyond this week unclear.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jayden Daniels",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -19.1,
-      "suggestedEdit": "Tag injured · −19.1 pts (1 game) · drops ~1 round"
-     }
-    ],
-    "note": "Grounded: NYT 9/21 — Daniels out Week 3 (elbow). −19.1 = 19.1 ppg board projection (WAS QB); extra weeks possible with specialist visits."
-   }
-  },
-  {
-   "id": "fantasy-football-impact-saquon-barkley-s-injury-could-open-t",
-   "title": "Fantasy Football Impact: Saquon Barkley's Injury Could Open The Door For Tank Bigsby To Emerge - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNSmdRcERWS2k2U1paWHI4R1VsNzJvN3NHZTJHUmdIdlJvTmRQTTFsSXJpLXpZRHVXUGRUTWxxZFdKN0Uzd1BnNUlRT2xqQWRleW1tVEJHd2FRckFqRGZrbjVxaDFoaXVvaVdVMkE4NHZJVVFrQ3NIYVdoTGUwbXJTMC15WjlQcmRJZ1UtWkVZNzBaT093YjM5LWdrX2E4UXU3MGVFLWlheDFGaFlpRWs4VkZ6Mi0zUm5MbF94OUJPOEF0RXBSVHc1akxBWks1X1k?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-21T20:10:35Z",
-   "summary": "Saquon Barkley's injury could open the door for Tank Bigsby to emerge in the Eagles' backfield, per SI.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Saquon Barkley",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -15.9,
-      "suggestedEdit": "Tag injured · −15.9 pts (1 game) · drops ~1 round"
-     },
-     {
-      "name": "Tank Bigsby",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 6.5,
-      "suggestedEdit": "Role boost · +6.5 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 9/21 — Barkley injury could hand Bigsby a bigger role. Barkley −15.9 = 15.9 ppg (PHI RB); Bigsby +6.5 = 6.5 ppg board projection (est.)."
-   }
-  },
-  {
-   "id": "fantasy-football-fallout-puka-nacua-trends-out-davante-adams",
-   "title": "Fantasy Football Fallout: Puka Nacua Trends Out, Davante Adams Gets a Major Boost, Last-Minute Adds - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVm94MlY3Ymt6VzFEVEJXekpPYVlVQnRlY3VVbm5ITkJzTnJyQ0xoNXFGN0JFVjN2T0hpNkFKSXVSQ0Q5X1JISWtwT3VMT1pZQlFYM1I3eXMtQXBoQWxwVFd0eURYSVFrRkRYcldZQzhFa0p0dGdZVnRUa2t2a0Rxb3JnNEhuUEU5dWMtMV84dURTR1V3V0E?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-21T19:51:32Z",
-   "summary": "SI's Week 2 fallout piece has Puka Nacua trending out and hands Davante Adams a major boost in the Rams' target hierarchy.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Davante Adams",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 12.9,
-      "suggestedEdit": "Role boost (Nacua out) · +12.9 pts · move up ~2 rounds"
-     }
-    ],
-    "note": "Grounded: SI 9/21 — Nacua trending out, Adams gets a 'major boost'. +12.9 = Adams' 12.9 ppg board projection (est. for the expanded role)."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-update-jadarian-price-could-return-i",
-   "title": "Fantasy Football Injury Update: Jadarian Price Could Return In Week 3, But Emanuel Wilson Is A Waiver Wire Add - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPb0JQYnFUZFdkR1M5SlVhd2UyQTFpT3VDNFBqTko4LWc4NzByT0FZSGNXbGJsdGxSdklzVDN5LThBZk1DbWhVQkpZUEhsRFVkX3NlalpKQ0pEN0JnT0pJaXZZNUFjbWMwYkJLbUtlN2lON1YzdnA0VzhvS2N0dU1pMUY1M21YX25wTG9UZXJzT3pobnRJblR6Nm10V3JTSlYtQ2FGcUtfNE5mQjJvVUp0ejVzbTJLdS1VV2F6YW9KYXZ3TDhlSVpSMmh4YWZFSGNpUFAxbkFNUVhKT19VWjVnVWlVQQ?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-21T19:31:55Z",
-   "summary": "SI notes Jadarian Price could return in Week 3, but names Emanuel Wilson as the Seahawks back to add off waivers.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Emanuel Wilson",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 4.5,
-      "suggestedEdit": "Waiver role boost · +4.5 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 9/21 — Wilson named the waiver add with Price's Week 3 status uncertain. +4.5 = added workload on top of his 3.2 ppg board projection (est.)."
-   }
-  },
-  {
-   "id": "jonathan-brooks-week-2-injury-update-chuba-hubbard-s-fantasy",
-   "title": "Jonathan Brooks Week 2 Injury Update: Chuba Hubbard's Fantasy Football Value Set to Skyrocket? - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQazB5UUdjaGdlaVZMcXBvUEg4Mm1sRDF6emRqX1ZJR3Y3M2ZBZmJMb0l1TG13VDR2RF93QTJsck1aWDBDRHZOSVlSYXgwYllERXp3eHkxNzV6RzdhM1lPSk1ORk9BSVIxd3JBTkh1YVZZcDU4NURNZnVLRnBxU3pBa1pLTGtPVGVuNzhhZ2JPVkpuYzBhbkpiMVNNejdZNXo3RmFNREhFR2x3czhLU2c3THVORGJGNmVUSTZQcFVDT09pZmZ0S2xN?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-21T18:05:11Z",
-   "summary": "With Jonathon Brooks sidelined by a groin injury, SI argues Chuba Hubbard's fantasy value is set to skyrocket as Carolina's lead back.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Chuba Hubbard",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 10.7,
-      "suggestedEdit": "Role boost · +10.7 pts · move up ~2 rounds"
-     }
-    ],
-    "note": "Grounded: SI 9/21 headline ties Brooks' injury to a Hubbard value spike. +10.7 = Hubbard's 10.7 ppg board projection as the lead option (est.)."
-   }
-  },
-  {
-   "id": "jadarian-price-dealing-with-shoulder-injury-fantasy-football",
-   "title": "Jadarian Price Dealing with shoulder injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQYWxnWllna2s1dmdhaW9WS2FxQ2dHSjZrXy1PVExQMUtrVHl0aHRNclBlb0VsM19XM0lQWDU3NzZKRVZURzk2aVFFTGlDQjN3bjZfOHpDQ2FYRWhBY1BueVU3dmdHT25RdDVQZWdKYnNxZjEzd1dDNlIyNV9pbzJ4RzlhcjNJMFdBbWw5R1lOVVIzV0JFVkRjQzF3?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-21T17:48:19Z",
-   "summary": "Seahawks RB Jadarian Price is dealing with a shoulder injury, making his Week 3 status one to monitor.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jadarian Price",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -12.8,
-      "suggestedEdit": "Tag injured · −12.8 pts (1 game) · drops ~1 round"
-     }
-    ],
-    "note": "Grounded: TFF 9/21 — Price (shoulder) dealing with an injury. −12.8 = 12.8 ppg board projection (SEA RB); he could still return Week 3."
-   }
-  },
-  {
-   "id": "alec-pierce-week-2-injury-update-what-his-heel-injury-means-",
-   "title": "Alec Pierce Week 2 Injury Update: What His Heel Injury Means for Josh Downs and the Colts' Fantasy Football Value - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPQkxIc2pnZGFId0t1QTlzUktnbGM4Qy12TEp2cHh1dVZDazR6cHFhbkJMeWxJcngyMjhqRVRDNzhHWHRzcEp2dENLUkh1eWlLZmxUdmVrTHlzT1VqeFF6ZE5feGdsLUMwbFdTd25Bb1hCUEoxQV9PTjNzWkJGaC1uY2RuTDkzR2o2eWdaWXZ1TFd6YmVGWUdZdEVzNGRPNTF4SnA2a1owWGVHbUc5T1BkdUVXWWhnbHlUX1VnYnRRN2FGbGVRZVNXSm1ya2lIUkpTNXo3ZnJKdE9Sc3VyUzhxUA?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-21T17:24:11Z",
-   "summary": "SI examines what Colts WR Alec Pierce's heel injury means for Josh Downs and the rest of Indianapolis' pass-catchers.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Alec Pierce",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -12.3,
-      "suggestedEdit": "Tag injured · −12.3 pts (1 game) · drops ~1 round"
-     },
-     {
-      "name": "Josh Downs",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 9.9,
-      "suggestedEdit": "Role boost · +9.9 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 9/21 — Pierce (heel) injury shifts targets. Pierce −12.3 = 12.3 ppg (IND WR); Downs +9.9 = 9.9 ppg board projection (est.)."
-   }
-  },
-  {
-   "id": "latest-fantasy-football-news-michael-penix-returns-to-rescue",
-   "title": "Latest fantasy football news: Michael Penix returns to rescue Drake London, Kyle Pitts - The New York Times",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdmUwclNzSUlRTUQtcXFSMWtoRE9DQzByaEJlV3gyRTM4MU9Hc2xXaWV3eVQzeUMzM3hwLTMzWUstU016Vkx1LW5EcDh5TXF2dXVEQ2h2SFpPUE8wb213Zko3QUJFRVRydDhTai1YMGlNcjZNMHZic0VNVTItRktycGVYWk5OeFhvTTNBR3F0VzJrSWtTZ2YwSndWVkhPeEZQa3ZBM0dGYnM0NldCOER1MkM1YjhPMy0xZmE1bDV0XzRqR1M2?oc=5",
-   "source": "The New York Times",
-   "published": "2026-09-21T17:21:38Z",
-   "summary": "Michael Penix returns at quarterback for the Falcons, which the headline frames as a boost for Drake London and Kyle Pitts.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Drake London",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 3.1,
-      "suggestedEdit": "QB upgrade (Penix back) · +3.1 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: NYT 9/21 — Penix returns 'to rescue' London/Pitts. +3.1 ≈ QB-stability bump on London's 15.8 ppg board projection (est.)."
-   }
-  },
-  {
-   "id": "jk-dobbins-injury-opens-the-door-for-jonah-coleman-to-become",
-   "title": "JK Dobbins' Injury Opens The Door For Jonah Coleman To Become A Fantasy Football Waiver Wire Priority - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPTm5WVXo3OTBqcEkxdnRQNjdrTWlZUWw4cktuU1UwVDBsZG5abXFVREw4YUU5WW1GSUlya3ZNbmN4aEE2aEV6SUliT0VDUHhBWjVVTDlvS3ItMHRrUjFzVkhwQ3VQTElyTnNGOHFCS1pLZGUtOFNvWVItRDU3Q2NwUUQ3TEVLX29uNnFURFFDbkpIT1FMM1QwY0M5MTJpNm5IVHFyWF9FaERUQXhBSERSbE1oeDl6M2VNQ3lmTkczMGxtOWNaUlExUlI5TkIxQ01FOXVWdDNWc3g?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-21T17:18:00Z",
-   "summary": "J.K. Dobbins' injury opens the door for rookie Jonah Coleman to become a fantasy waiver-wire priority in Denver.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "J.K. Dobbins",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -10.8,
-      "suggestedEdit": "Tag injured · −10.8 pts (1 game) · drops ~1 round"
-     },
-     {
-      "name": "Jonah Coleman",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 6.7,
-      "suggestedEdit": "Role boost (waiver add) · +6.7 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 9/21 — Dobbins injury gives Coleman a runway. Dobbins −10.8 = 10.8 ppg (DEN RB); Coleman +6.7 = 6.7 ppg board projection (est. as the fill-in)."
-   }
-  },
-  {
-   "id": "dallas-goedert-set-for-tests-on-knee-injury-fantasy-football",
-   "title": "Dallas Goedert Set for tests on knee injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbm9NRlNRcnk3TmtzS1ljWVlkQ2xvb0gyR2dtZENxaHlhTXNUS1c3T0dWS2NWaUdfWnFPcERzZnFtZlloSVd3UUFSX1ozTUdRN3JsVE5ER1o1cmpSQzhIYVBibHlvSENBd1FEOWVWbFhFMVJJc3FVSWRaaXJ6eE9rNTBKV29LWFBodG5pSE1RYnpJbnh5RVhFcFBR?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-21T16:52:38Z",
-   "summary": "Eagles TE Dallas Goedert is set for tests on a knee injury suffered in Week 2, putting his Week 3 status in doubt.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Dallas Goedert",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -9.2,
-      "suggestedEdit": "Tag injured · −9.2 pts (1 game) · drops ~1 round"
-     }
-    ],
-    "note": "Grounded: TFF 9/21 — Goedert set for tests (knee). −9.2 = 9.2 ppg board projection (PHI TE); severity unknown, 1 game assumed."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-report-updates-week-3-2026-fanta",
-   "title": "Fantasy Football Injury Report & Updates: Week 3 (2026) - FantasyPros",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQTTN2YmYxZ3gyRDVOdHlMZWJadDZpdk1VdFFrbjNEbzZaMVRYNElvM1Qyalp5Qk84T0ludjM1TXBTYTc1WFd4VXVWdU5BTEpvU1FZZ1FPa09XRE5CU2dCNEZBRHhiTFd6SEFiV1FLUTF2ZGR3RVZvSTBzVldyNkFQRlRjVVpfQ3c4dl9NOFEtYTlvTnctakExR2EwWDIzNlBBTEV1dzZUa9IBrAFBVV95cUxQeHh3dlB4eDdISXh1c2g0cTBYMzdkUFhmRmdkX1ByVmRKVHUxTGJST0p1TlE4Y1dnWnU0X1VxOFkxdEUxNFhZaVR4MkVGTE1Mb2p6Rk9KSU5uOUh4NVFuSmVGUUFJM2tTV2xpdWlDMjVjLXl4U0hLTWJEYm1wSzNYb3k5OVNwazI1OHZ4TVUwaDVZSTBYVHNUZkQwWEttX01FTVEybW10LU1kUDhE?oc=5",
-   "source": "FantasyPros",
-   "published": "2026-09-21T11:21:02Z",
-   "summary": "FantasyPros publishes its Week 3 injury report and updates across all fantasy-relevant positions.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Position-wide Week 3 injury report; no single player change called out in the headline."
-   }
-  },
-  {
-   "id": "fantasy-football-early-week-3-waiver-wire-pickups-bryce",
-   "title": "Fantasy Football Early Week 3 Waiver Wire Pickups: Bryce Young is an option if you need a QB after Caleb Williams, Jayden Daniels injuries - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOU3pSS19kUklPNDNFcnJhaUpvNWY5MXV1Q05JbDBGSTRtNGJNWWg5eWpKNExqU0g1ektYdVdFUGdMZUtPVHo4MUNJQ0NfR2ZEZjdjaDRKQlVNNlE2RFp0NmRvWDNKVndURHFyZXV3dDBwbW1NdFFtd1V2ek5kWGFPT1BFWTJLazdRQjFfaEdvY2lDaFBNSzJWcnlqYlk3WXQwZWhFYW5aWjZHUEVjRGNsNkh1ZU9pbU4zU2hzdTlMREFFbC1JOHZTVnAzY0UwNEZwX2MtbldrT0g0UXM3cFFRU1FnMXozXzU5MjJ1VWUyZmtpbUhBa0RWb1psb0FWZlp4dzFtb3VQQ0ZFSGlGbG1IbnpXTFNZMG9GektCOA?oc=5",
-   "source": "Yahoo Sports",
-   "published": "2026-09-20T21:55:44Z",
-   "summary": "Yahoo names Bryce Young as a Week 3 waiver-wire QB option for managers dealing with the Caleb Williams and Jayden Daniels injuries.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Bryce Young",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 14.5,
-      "suggestedEdit": "Streaming QB boost · +14.5 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: Yahoo 9/20 — Young named the top QB add after Williams/Daniels injuries. +14.5 = his 14.5 ppg board projection (CAR QB, PPR-style est.)."
+    "note": "Grounded: TFF 9/21 \u2014 Brooks (groin) week-to-week (2 games est.). \u221221.2 = 10.6 ppg board projection \u00d7 2 (est.)."
    }
   }
  ]
