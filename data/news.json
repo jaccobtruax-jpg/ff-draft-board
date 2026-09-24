@@ -3,6 +3,139 @@
  "sample": false,
  "items": [
   {
+   "id": "start-em-sit-em-wide-receivers-for-week",
+   "title": "Start 'Em, Sit 'Em wide receivers for Week 3 fantasy football - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5iclFjcW1ta1BkUnNZUV94dDdTTFRhU3hzMzRDejUtUGxkcVYzckc0aFdkS0JDc09UOE1tMllKNG1pQnpXR09EOHV0WUNBTUptcHd1MnRKLV9aRVBvenJvNVJrcHZqT0I5OFBCSVcwYUJLNGdUdjRfYw?oc=5",
+   "source": "Yahoo Sports",
+   "published": "2026-09-24T10:08:51Z",
+   "summary": "Yahoo's Week 3 wide-receiver start/sit column lays out the lineup calls for the weekend.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Start/sit WR column; the headline states no specific new player ruling, so no stat edit is suggested."
+   }
+  },
+  {
+   "id": "start-em-sit-em-quarterbacks-for-week-3",
+   "title": "Start 'Em, Sit 'Em quarterbacks for Week 3 fantasy football - usatoday.com",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQUx3emhmN2plN0RDLUd1WVI4YTd3ZEVfMVJXMGhpRU93bF9HNkpmdVZFcWVKaVNPSjJZU1NNS2lqaWhaWGk4QUpsRzU3TlRvUGNiak1Ja2xwQUF4ZkFsb3hBTUZ5NVZTRXA5TnRpWWN4TlBURzA3SDBBbXNHb3VxRWRiVnBzQl9jb0Rlb08zZWc2VlFsN0JFa3oxTzVBVnJ0V0szZUM4bFFwdFVNOFc5bXI3a1c3aHRYVW1nVUJ1YnQ1dFc4VDNoYw?oc=5",
+   "source": "usatoday.com",
+   "published": "2026-09-24T10:08:00Z",
+   "summary": "USA Today's Week 3 quarterback start/sit piece breaks down the weekend's QB decisions.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Start/sit QB column; no specific new player ruling named in the headline."
+   }
+  },
+  {
+   "id": "fantasy-football-injury-report-week-3-fe",
+   "title": "Fantasy Football Injury Report Week 3: Featuring Puka Nacua, Zay Flowers, And Brock Bowers - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQazdIbUN5WW81eDV1M09kekdUQm94OVRSMkI2eWpmWlQtOEdoUVluMkNYaWZNTUVrLUlMRnZzcmFOYnowdlhKS2pOdlZsSlJkZEpnUXZwRzRta19QR2FocVI1MXcycXdITUNTYnBuSWRVLVFvYnpveTZVcVhqTlVsRGp0Mm1Oa0s3Yi1MMF9Kb2hUMldTTDM0b19WVm1JUXZqUXNPQmdqeWw1elpCUldheWZraEJYZjRZSDZCUlF3S214ekhQRWs0?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-24T10:00:01Z",
+   "summary": "Sports Illustrated's Week 3 injury report leads with updates on Puka Nacua, Zay Flowers and Brock Bowers.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: SI 9/24 Week 3 injury report names Nacua, Flowers and Bowers but states no new ruling. Nacua (return boost) and Bowers (season-debut boost) are already itemized; Zay Flowers is the name to monitor before editing."
+   }
+  },
+  {
+   "id": "the-latest-injury-updates-for-week-3-in",
+   "title": "The Latest Injury Updates For Week 3 In Fantasy Football: Jaxson Dart Out For The Year, Jameis Winston In - FantasyLife",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRFJIYWZjVnhaRFhEOTlUbXg5WUpVbUZtQmtFOWlQdmxpdTFXMjRCejRzR0xIeXFndmpjN2xzNGptRDdVR09OSkZVSHpJSWZUZ3BQM0laenJEc1BTamJuOTNiNmxQSnlueUstYmpuRG5vcXVidi1yZ0lpR3BTR1Fhd19yX3J6VF9rd2JENnpyUnNWaHZ3cDFxanZaWU9WU2prYnpXSzlrbG5RNHJSV2xaYjB6UmlHOTFNYUpNeG0wNGV1S090U2dkZDlR?oc=5",
+   "source": "FantasyLife",
+   "published": "2026-09-24T10:00:00Z",
+   "summary": "FantasyLife reports Jaxson Dart is out for the year and Jameis Winston is in as the Giants' quarterback.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jameis Winston",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 15.0,
+      "suggestedEdit": "Role boost (Giants QB1) \u00b7 +15.0 pts \u00b7 move up ~2 rounds"
+     }
+    ],
+    "note": "Grounded: FantasyLife 9/24 \u2014 Dart out for the year, Jameis Winston in at QB for the Giants. Winston not in board.json; +15.0 = est. QB streaming value (est.). Dart is already tagged injured (season) \u2014 do not double-count."
+   }
+  },
+  {
+   "id": "wr-cb-matchups-for-fantasy-football-slee",
+   "title": "WR/CB Matchups for Fantasy Football: Sleepers, Targets for Week 3 (2026) - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNkxGZDNaQTNYbUtqNkh6cklOYWRwWFphb25DdjJ4OUR4WWF6OWJiRnNqQ3NkM1lVaUp2ZzE5SUVrMFlVa0NKbDlIWDlBaWE1SXZoRTJCSms3VGx1RVlhUjJDY3I2cGZxTUpUOWVHYXNYN3p1Sko4MGdXaDh6VW9VN1hjY01BbmlaZnJUdmR0SzQ1cm9wUFVXQVFreUhBYXROSXBmME93?oc=5",
+   "source": "RotoBaller",
+   "published": "2026-09-24T09:30:21Z",
+   "summary": "RotoBaller breaks down Week 3 WR/CB matchups to surface sleepers and targets.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Matchup analysis piece; the headline names no individual player, so no stat edit is suggested."
+   }
+  },
+  {
+   "id": "what-the-viral-video-missed-about-jayden",
+   "title": "What the viral video missed about Jayden Daniels\u2019 injury and his Commanders teammates\u2019 reaction - The Athletic - The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeHA0ZjlWN3lxS1NENktvOVpKbF9WNXgyQ2RKNFk4RE5TXy04eGg1cHZZanJQRFhZV001QS05d09MWVF3YUczbnFwRTJnbmg4QmlBQ2l2bzQ3aU5FZzdob3hDZklMRU9uNC1GNVNRTjhCWFVwdm5HUHdNSERSZ05BR2xUVlFqNGxwcEF5d0hsYWVkVk1qLUpEWVV5SlVrTXg5?oc=5",
+   "source": "The New York Times",
+   "published": "2026-09-24T06:59:04Z",
+   "summary": "The Athletic examines the viral video of Jayden Daniels' injury and his Commanders teammates' reaction.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: The Athletic 9/24 \u2014 context piece on Jayden Daniels' (WAS QB) injury. No new designation stated in the headline, so no stat edit; monitor his Week 3 status."
+   }
+  },
+  {
+   "id": "ruined-new-york-giants-jaxson-dart-malik",
+   "title": "RUINED: New York Giants\u2019 Jaxson Dart & Malik Nabers INJURIES SHAKE Fantasy Football Outlook - KSDK",
+   "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQN05GdGdkVFVDdVRIaVcxVTlEejRDRjU5Vlc2d3UwU3dQUTVMRVdUXy1PZWU0eU1tVmpENi1FZEN5eWM5d0lFREZ0dEQtUjhhNG1uZjFuOHpqYmo4UnNuZ3k3ekVoMzNtSmJWNmt5TmhKQ0RRTzdKZTlxczlYc1diZ2k2ZE9Ca3Bncm80cm1WTXR1QldiQm1acDRnNzZUdFJfbUpNZHhqWDh2eHo0ZjVPV2xScUs4amxacTJlalBHVFNhcUd3cmNhX3d5ZEI2UzREeTd5MkswaXUxZ2V4RE1UWWN1X1JqdWxUUEdWNlFTTWR5dkd4Nmhyek1XTnMyTTg5QUlMYWtUWWtKZ0s0bU1LSEp5UVNfSWlDN1lVbWptV3Z4Zy1mcEVYUnpqT0tYME0?oc=5",
+   "source": "KSDK",
+   "published": "2026-09-24T02:48:00Z",
+   "summary": "KSDK breaks down how the injuries to Jaxson Dart and Malik Nabers shake up the Giants' fantasy outlook.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: KSDK 9/24 \u2014 Dart (out for season) and Nabers (shoulder, limited) are both already tagged injured; article reinforces the downgrades but adds no new ruling."
+   }
+  },
+  {
+   "id": "fantasy-football-qb-rankings-week-3-who",
+   "title": "Fantasy Football QB Rankings Week 3: Who to start, best sleepers, top busts - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTko4ZnFZMi1RdUlzRkJVWUx0VHNIUU05MUo3a1ViNzEtNVI5aWduRUdXWDFhaWg1ZDY5Y3RYTjU1VS1mMHgweDNFQkRjdFdWeVFTMzkwTFVpNklrQUIyTHVBaGJOSnV5YllYVFAyaFJ5N25JVVdCZ2lLZjdpYUZtUjA0cXF6ZXF4OGc?oc=5",
+   "source": "Yahoo Sports",
+   "published": "2026-09-24T01:27:00Z",
+   "summary": "Yahoo's Week 3 QB rankings flag starts, sleepers and busts at the position.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Rankings piece; the headline states no new injury ruling or role change, so no stat edit is suggested."
+   }
+  },
+  {
+   "id": "fantasy-football-week-3-start-em-sit-em",
+   "title": "Fantasy football Week 3 Start 'Em & Sit 'Em: Chuba Hubbard continues heater with a top-10 finish in sight - CBS Sports",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcVFadUFDdEo4X3p0ZFoydHdwbjZiRjRUSGVvc0loMmFQQ1IxQW45dS11SlpGTUNyMUJyeGRta1RtVUZibG1oVmxHWDZXTU9FcDJTTzF2MkhWSE9keG54WFpyVVVxT1NfQkt0SWFMaXpOSEJxUFhOUElTLU5EbERhc1ViMGE0enBhU1plNlpScnBMSGxVZ0VkZEpza3BqUVFBTW5kTTRFRENzX0gxZnV1VU9yRG9uMHFaNlZjOEFzNA?oc=5",
+   "source": "CBS Sports",
+   "published": "2026-09-24T01:02:40Z",
+   "summary": "CBS Sports backs Panthers RB Chuba Hubbard to continue his hot streak with a top-10 finish in sight for Week 3.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Chuba Hubbard",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 9.8,
+      "suggestedEdit": "Role boost (top-10 RB heater) \u00b7 +9.8 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: CBS Sports 9/24 \u2014 Chuba Hubbard 'continues heater with a top-10 finish in sight'. +9.8 = board per-game value (Chuba Hubbard, CAR RB, 9.8 ppg) (est.)."
+   }
+  },
+  {
    "id": "2026-nfl-week-3-injury-report-jaxson",
    "title": "2026 NFL Week 3 Injury Report: Jaxson Dart out for season, updates on Puka Nacua, Zay Flowers, Travis Etienne - NBC Sports",
    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSVVkZnRMMzZSemJjZmVWckFuX01zcHlNTjNreUx5VVVwejk0aWh1Tk8tY0tOVW1ON3lMMkpGUU84dTRsSElhUGdBQXZxQ09ubjFCT2ZJWDZNdGZUTlNhVFZIS0N5Zk5OU3Z2Rzd6VF9CbGQ2akZ6VHdxY2NKeVEtdHFRV0FpNzhJTm8wUXpMZ3RJMDRBeGt2cm16MFk1dml5MnRzQTZzdlNORlV4NUR0WllqTW5vNnRISkFSRTJzcEpYY1lCeTRTMHJIY2ozQ2l2?oc=5",
@@ -12,7 +145,20 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: NBC Sports 9/24 roundup — Dart (knee) out for the season (already tagged); updates on Nacua, Zay Flowers and Etienne (all already itemized). Flowers is the new name to monitor, but the headline states no specific ruling for him."
+    "note": "Grounded: NBC Sports 9/24 roundup \u2014 Dart (knee) out for the season (already tagged); updates on Nacua, Zay Flowers and Etienne (all already itemized). Flowers is the new name to monitor, but the headline states no specific ruling for him."
+   }
+  },
+  {
+   "id": "bills-wr-dj-moore-gives-positive-injury",
+   "title": "Bills WR DJ Moore Gives Positive Injury Update After Practice - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1UUzJyMUduNUpVbmRIRUtWOFJjZ1lZTVkzOS1sd2J5b1NodkhEa2d5TVZGSGExR0tiVjVKTnYtc0VTcE1oeXE3eWxrbzBYY2tWc1IwTlBpZlBYYnI4dldqZzg0eDJOTTA0RzVERHh3Yy1qcjNoRzhCTVVGM2g?oc=5",
+   "source": "Yahoo Sports",
+   "published": "2026-09-24T00:42:00Z",
+   "summary": "Yahoo reports Bills WR DJ Moore gave a positive injury update after practice.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 9/24 \u2014 positive practice update for DJ Moore. He already carries a return boost (+13.0) from the 9/23 Yahoo item, so no separate edit is proposed to avoid double-counting."
    }
   },
   {
@@ -30,10 +176,10 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 13.0,
-      "suggestedEdit": "Return boost · +13.0 pts · move up ~1 round"
+      "suggestedEdit": "Return boost \u00b7 +13.0 pts \u00b7 move up ~1 round"
      }
     ],
-    "note": "Grounded: Yahoo 9/23 — D.J. Moore (BUF) injury update puts a Week 3 return in play. +13.0 = board per-game value (DJ Moore, BUF WR, 13.0 ppg) as a return bump (est.)."
+    "note": "Grounded: Yahoo 9/23 \u2014 D.J. Moore (BUF) injury update puts a Week 3 return in play. +13.0 = board per-game value (DJ Moore, BUF WR, 13.0 ppg) as a return bump (est.)."
    }
   },
   {
@@ -51,10 +197,10 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -5.0,
-      "suggestedEdit": "Tag injured (ankle, limited) · −5.0 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured (ankle, limited) \u00b7 \u22125.0 pts (1 game) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Grounded: RotoBaller 9/23 — Terrance Ferguson listed with ankle. 5.0 pts = 5.0 ppg board value (LAR, Terrance Ferguson) × 1 game (est.)."
+    "note": "Grounded: RotoBaller 9/23 \u2014 Terrance Ferguson listed with ankle. 5.0 pts = 5.0 ppg board value (LAR, Terrance Ferguson) \u00d7 1 game (est.)."
    }
   },
   {
@@ -85,10 +231,10 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -14.6,
-      "suggestedEdit": "Tag injured (shoulder, limited) · −14.6 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured (shoulder, limited) \u00b7 \u221214.6 pts (1 game) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Grounded: RotoBaller 9/23 — Nabers limited with a shoulder on Wednesday. −14.6 = 14.6 ppg board value (NYG, Malik Nabers) × 1 game (est.). Re-confirms the existing Nabers shoulder tag — do not double-inject."
+    "note": "Grounded: RotoBaller 9/23 \u2014 Nabers limited with a shoulder on Wednesday. \u221214.6 = 14.6 ppg board value (NYG, Malik Nabers) \u00d7 1 game (est.). Re-confirms the existing Nabers shoulder tag \u2014 do not double-inject."
    }
   },
   {
@@ -119,10 +265,10 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -9.6,
-      "suggestedEdit": "Tag injured (ankle) · −9.6 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured (ankle) \u00b7 \u22129.6 pts (1 game) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Grounded: Fantasy Footballers 9/23 — Tony Pollard listed with ankle. 9.6 pts = 9.6 ppg board value (TEN, Tony Pollard) × 1 game (est.)."
+    "note": "Grounded: Fantasy Footballers 9/23 \u2014 Tony Pollard listed with ankle. 9.6 pts = 9.6 ppg board value (TEN, Tony Pollard) \u00d7 1 game (est.)."
    }
   },
   {
@@ -140,10 +286,10 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 19.1,
-      "suggestedEdit": "Return boost · +19.1 pts · move up ~1 round"
+      "suggestedEdit": "Return boost \u00b7 +19.1 pts \u00b7 move up ~1 round"
      }
     ],
-    "note": "Grounded: RotoBaller 9/23 — return boost. +19.1 = board per-game value (Puka Nacua, 19.1 ppg) as a return/streaming bump (est.)."
+    "note": "Grounded: RotoBaller 9/23 \u2014 return boost. +19.1 = board per-game value (Puka Nacua, 19.1 ppg) as a return/streaming bump (est.)."
    }
   },
   {
@@ -161,10 +307,10 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -4.9,
-      "suggestedEdit": "Tag injured (knee) · −4.9 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured (knee) \u00b7 \u22124.9 pts (1 game) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Grounded: Fantasy Footballers 9/23 — Chris Bell listed with knee. 4.9 pts = 4.9 ppg board value (MIA, Chris Bell) × 1 game (est.)."
+    "note": "Grounded: Fantasy Footballers 9/23 \u2014 Chris Bell listed with knee. 4.9 pts = 4.9 ppg board value (MIA, Chris Bell) \u00d7 1 game (est.)."
    }
   },
   {
@@ -182,10 +328,10 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -10.2,
-      "suggestedEdit": "Tag injured (shoulder, limited) · −10.2 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured (shoulder, limited) \u00b7 \u221210.2 pts (1 game) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Grounded: RotoBaller 9/23 — Jaylen Warren listed with shoulder. 10.2 pts = 10.2 ppg board value (PIT, Jaylen Warren) × 1 game (est.)."
+    "note": "Grounded: RotoBaller 9/23 \u2014 Jaylen Warren listed with shoulder. 10.2 pts = 10.2 ppg board value (PIT, Jaylen Warren) \u00d7 1 game (est.)."
    }
   },
   {
@@ -203,10 +349,10 @@
       "action": "injured",
       "games": 1,
       "deltaPts": -12.8,
-      "suggestedEdit": "Tag injured (hamstring) · −12.8 pts (1 game) · drops ~1 round"
+      "suggestedEdit": "Tag injured (hamstring) \u00b7 \u221212.8 pts (1 game) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Grounded: Fantasy Footballers 9/23 — Travis Etienne Jr. listed with hamstring. 12.8 pts = 12.8 ppg board value (NO, Travis Etienne Jr.) × 1 game (est.)."
+    "note": "Grounded: Fantasy Footballers 9/23 \u2014 Travis Etienne Jr. listed with hamstring. 12.8 pts = 12.8 ppg board value (NO, Travis Etienne Jr.) \u00d7 1 game (est.)."
    }
   },
   {
@@ -219,7 +365,7 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: Yahoo 9/23 — headline names Aaron Jones and Nico Collins in a Week 3 injury-update roundup but states no specific ruling. Collins already carries a return boost; monitor Aaron Jones' status before editing."
+    "note": "Grounded: Yahoo 9/23 \u2014 headline names Aaron Jones and Nico Collins in a Week 3 injury-update roundup but states no specific ruling. Collins already carries a return boost; monitor Aaron Jones' status before editing."
    }
   },
   {
@@ -237,10 +383,10 @@
       "action": "injured",
       "games": 15,
       "deltaPts": -156.0,
-      "suggestedEdit": "Tag injured (season-ending) · −156.0 pts (15 games) · drops ~9 rounds"
+      "suggestedEdit": "Tag injured (season-ending) \u00b7 \u2212156.0 pts (15 games) \u00b7 drops ~9 rounds"
      }
     ],
-    "note": "Grounded: RotoBaller 9/23 — Stribling (SF) out for the season. −156.0 = 10.4 ppg board value × 15 remaining games (est.)."
+    "note": "Grounded: RotoBaller 9/23 \u2014 Stribling (SF) out for the season. \u2212156.0 = 10.4 ppg board value \u00d7 15 remaining games (est.)."
    }
   },
   {
@@ -258,10 +404,10 @@
       "action": "injured",
       "games": 2,
       "deltaPts": -12.2,
-      "suggestedEdit": "Tag injured (ankle sprain) · −12.2 pts (2 games) · drops ~1 round"
+      "suggestedEdit": "Tag injured (ankle sprain) \u00b7 \u221212.2 pts (2 games) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Grounded: nytimes.com 9/23 — Jonah Coleman listed with ankle sprain. 12.2 pts = 6.1 ppg board value (DEN, Jonah Coleman) × 2 games (est.)."
+    "note": "Grounded: nytimes.com 9/23 \u2014 Jonah Coleman listed with ankle sprain. 12.2 pts = 6.1 ppg board value (DEN, Jonah Coleman) \u00d7 2 games (est.)."
    }
   },
   {
@@ -274,7 +420,7 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: NBC Sports 9/23 — Dart out for the rest of 2026 with a knee injury. The existing Dart injured tag (−56.1 / 3 games) should be extended to a season-long absence; no separate player edit proposed here to avoid double-counting."
+    "note": "Grounded: NBC Sports 9/23 \u2014 Dart out for the rest of 2026 with a knee injury. The existing Dart injured tag (\u221256.1 / 3 games) should be extended to a season-long absence; no separate player edit proposed here to avoid double-counting."
    }
   },
   {
@@ -292,17 +438,17 @@
       "action": "injured",
       "games": 4,
       "deltaPts": -49.6,
-      "suggestedEdit": "Tag injured (IR) · −49.6 pts (4 games) · drops ~3 rounds"
+      "suggestedEdit": "Tag injured (IR) \u00b7 \u221249.6 pts (4 games) \u00b7 drops ~3 rounds"
      },
      {
       "name": "Josh Downs",
       "action": "boost",
       "games": 0,
       "deltaPts": 12.0,
-      "suggestedEdit": "Role boost (Pierce to IR) · +12.0 pts · move up ~1 round"
+      "suggestedEdit": "Role boost (Pierce to IR) \u00b7 +12.0 pts \u00b7 move up ~1 round"
      }
     ],
-    "note": "Grounded: Bellingham Herald 9/23 — Pierce placed on IR; Downs framed as a breakout beneficiary. Pierce −49.6 = 12.4 ppg board value × 4 games (IR minimum, est.). Downs +12.0 = est. expanded role (est.)."
+    "note": "Grounded: Bellingham Herald 9/23 \u2014 Pierce placed on IR; Downs framed as a breakout beneficiary. Pierce \u221249.6 = 12.4 ppg board value \u00d7 4 games (IR minimum, est.). Downs +12.0 = est. expanded role (est.)."
    }
   },
   {
@@ -320,17 +466,17 @@
       "action": "injured",
       "games": 4,
       "deltaPts": -38.6,
-      "suggestedEdit": "Tag injured (IR) · −38.6 pts (4 games) · drops ~2 rounds"
+      "suggestedEdit": "Tag injured (IR) \u00b7 \u221238.6 pts (4 games) \u00b7 drops ~2 rounds"
      },
      {
       "name": "Austin Ekeler",
       "action": "boost",
       "games": 0,
       "deltaPts": 12.0,
-      "suggestedEdit": "Return boost · +12.0 pts · move up ~1 round"
+      "suggestedEdit": "Return boost \u00b7 +12.0 pts \u00b7 move up ~1 round"
      }
     ],
-    "note": "Grounded: SI 9/23 — Brooks to IR, opening a path for an Ekeler return. Brooks −38.6 = 9.7 ppg board value × 4 games (IR minimum, est.). Ekeler not in board.json; +12.0 = est. RB value (est.)."
+    "note": "Grounded: SI 9/23 \u2014 Brooks to IR, opening a path for an Ekeler return. Brooks \u221238.6 = 9.7 ppg board value \u00d7 4 games (IR minimum, est.). Ekeler not in board.json; +12.0 = est. RB value (est.)."
    }
   },
   {
@@ -343,7 +489,7 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: NYT 9/23 — Panthers placed Brooks on IR. No separate stat edit proposed to avoid double-counting the Brooks IR downgrade (see the SI item)."
+    "note": "Grounded: NYT 9/23 \u2014 Panthers placed Brooks on IR. No separate stat edit proposed to avoid double-counting the Brooks IR downgrade (see the SI item)."
    }
   },
   {
@@ -361,10 +507,10 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 13.8,
-      "suggestedEdit": "Streamer add · +13.8 pts · move up ~1 round"
+      "suggestedEdit": "Streamer add \u00b7 +13.8 pts \u00b7 move up ~1 round"
      }
     ],
-    "note": "Grounded: Sports Illustrated 9/23 — streamer add. +13.8 = board per-game value (Bryce Young, 13.8 ppg) as a return/streaming bump (est.)."
+    "note": "Grounded: Sports Illustrated 9/23 \u2014 streamer add. +13.8 = board per-game value (Bryce Young, 13.8 ppg) as a return/streaming bump (est.)."
    }
   },
   {
@@ -382,155 +528,10 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 15.3,
-      "suggestedEdit": "Return boost (season debut) · +15.3 pts · move up ~1 round"
+      "suggestedEdit": "Return boost (season debut) \u00b7 +15.3 pts \u00b7 move up ~1 round"
      }
     ],
-    "note": "Grounded: SI 9/23 — Bowers set for his Week 3 season debut. +15.3 = board per-game value (15.3 ppg, LV TE) restored (est.)."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-report-latest-we",
-   "title": "Fantasy football injury report: Latest Week 3 updates on key players - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTVMtQ1BldU8teVJ4S1R2QUVUZnJlRTZKdVd0dHhCTUZfU084c0ljZ2ZIY01lSTdaYmRVOGhIV1Fsd3d5TzZEYmtITnlvZFFpaE9UZXdzMUtRS3Y2RDVNWmdnYU9nOGtGT0drSUxkeFZkVWhLQmUzZ2Y1ZXpVSi16eTdLZ1lBX29fck5wRnZPYw?oc=5",
-   "source": "Yahoo Sports",
-   "published": "2026-09-23T14:12:51Z",
-   "summary": "Yahoo's Week 3 injury report rounds up the latest status updates on the key fantasy-relevant players.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Week 3 multi-player injury roundup; no single player ruling stated in the headline."
-   }
-  },
-  {
-   "id": "fantasy-football-week-3-injuries-saquon",
-   "title": "Fantasy Football Week 3 Injuries: Saquon Barkley, Malik Nabers, And More - Forbes",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbzd1U3ZxWHlpcjhVWlBtcXNRa2FzNzYwcWZFRE5UMTZEaFB5aUdaVWs2M1pwXzZhVjRSZm40N1B0NU9NbE1hanVLOUZCT0tZR1h2MVhOaUtQazRENXJXY1V4YnBkNjZTdFpwazdzdmRPQzl3T1VySjh2QmhhNFJNLWRHcVNYc1pRVnRaYUFuUEt0SE1famtOVXZoaFFReEw3dU5aRV81OC1LS25xRmdEZnhlLTUyMTZUbmZOT1NB?oc=5",
-   "source": "Forbes",
-   "published": "2026-09-23T12:15:08Z",
-   "summary": "Forbes' Week 3 injury piece bundles Saquon Barkley, Malik Nabers and more under the weekend's injury news.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Flags Saquon Barkley and Malik Nabers in Week 3 injury reports, but the headline states no specific ruling. Nabers is already tagged; monitor Saquon's status before editing."
-   }
-  },
-  {
-   "id": "injury-wrecked-49ers-add-brandin-cooks",
-   "title": "Injury-Wrecked 49ers Add Brandin Cooks - Draft Sharks",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQVENjU0FUejJUenlHNGJiS0NrOGdBelZMTG9OdjcyVUw2T3dCdmxHbHA4NmRKUEkzY3JkQlZneDV4Y0tscm4waWZ5cTdoaEh6WmNhcVlDTjR4NmpsRWZnNGVtbGZRclpaYlBfRF9Jbk9qQ3YxSHI0bFFBQnVWT00wUjRMTkxNZmU4YWU5WWpFQ3l1TjJDb0h5RDZn?oc=5",
-   "source": "Draft Sharks",
-   "published": "2026-09-23T12:00:50Z",
-   "summary": "Draft Sharks notes the injury-wrecked 49ers added veteran WR Brandin Cooks, creating an immediate opportunity.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Brandin Cooks",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 10.0,
-      "suggestedEdit": "Role boost (49ers WR-needy) · +10.0 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: Draft Sharks 9/23 — 49ers signed WR Brandin Cooks amid injuries. Cooks not in board.json; +10.0 = est. WR value (est.)."
-   }
-  },
-  {
-   "id": "targets-per-route-run-report-week-3-fant",
-   "title": "Targets Per Route Run Report: Week 3 (Fantasy Football)",
-   "url": "https://www.thefantasyfootballers.com/analysis/targets-per-route-run-report-week-3-fantasy-football-4/",
-   "source": "Fantasy Footballers",
-   "published": "2026-09-23T11:48:34Z",
-   "summary": "The Fantasy Footballers' targets-per-route-run report tracks which pass-catchers are earning the most routes and targets entering Week 3.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Trend analysis piece; the headline names no individual player, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "trade-targets-for-week-3-fantasy-footbal",
-   "title": "Trade Targets for Week 3 (Fantasy Football)",
-   "url": "https://www.thefantasyfootballers.com/analysis/trade-targets-for-week-3-fantasy-football-3/",
-   "source": "Fantasy Footballers",
-   "published": "2026-09-23T11:34:49Z",
-   "summary": "The Fantasy Footballers' Week 3 trade-targets article highlights buy-low and sell-high candidates ahead of the weekend.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Trade-advice article; the headline names no individual player, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "fantasy-football-week-3-qb-start-sit-how-do-the",
-   "title": "Fantasy Football Week 3 QB Start/Sit: How do the Injuries Affect the Fantasy Quarterback Outlook? - FantasySP",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRTZxX2FfTXVORXNvZmRncy1NMVhRZmlMZXdfWkJEeUZXTzlSSjR6RjlGd0lleFZBZGJUc3hvSGZhbWFXSEx3T1ZBVTBVR1JUSTlkcUVCdHZoSlBhbmFCVTBpNEVyWjduQjNyRGdLZHJCZkNqV1RISm1WNS1aMDdHT2tWanU?oc=5",
-   "source": "FantasySP",
-   "published": "2026-09-23T04:45:07Z",
-   "summary": "FantasySP weighs how the wave of Week 3 quarterback injuries reshapes start/sit decisions at the position.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Start/sit advice; no specific new player ruling named in the headline."
-   }
-  },
-  {
-   "id": "nfl-week-3-fantasy-football-rankings-starts-proj",
-   "title": "NFL Week 3 fantasy football rankings, starts, projections: Drake Maye, Aaron Jones and more - The New York Times",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOQ3lmQWRxMGZTWEpmVnJfUllqTlY2Y3ZGNnoyejBpdjEzVWFzcmU3ZVNIREVTQ2pQMnFGUHM3TjhuLUlwMjJ3YTZZQW9mb1hTVGNWa2NZQ2tGVFNZM3dyNTdpNmVkMXFQcEFBSGdITDRHUHhNMTdyd0VyT1J5a29sVGlZZGJaelp2bUV2OTgxQTc2ai0yLWJkcEdLaVIyTU9EYllrWGFWQjE1VXFHczloR2NtRVJ4LXpucjhncGpDU0daaFVtdFVrLUs3NXB1TFFMaC1aT3huZVNyQQ?oc=5",
-   "source": "The New York Times",
-   "published": "2026-09-23T04:00:04Z",
-   "summary": "The Athletic/NYT posts its Week 3 rankings and start/sit projections, with Drake Maye and Aaron Jones among the names to know.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Rankings/projections piece; the headline states no new injury ruling or role change, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "nfl-snap-counts-report-for-week-3-fantasy-footba",
-   "title": "NFL Snap Counts Report For Week 3 Fantasy Football: Is Rhamondre Stevenson Falling Out Of Favor? - FantasyLife",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONkgtNDNhcVBJUGYxR1lnX0oxV0U5SjhyZnVHM3kwNDZDd3NHNE5zeHhNdHFGOENKZlQtY1AyS3N2ZFYyaFZ5XzR4U2NVell1Zld4aFRfNFpMV2tlRXhvS1lEZS1HWTlYZGFJdG14Q0JhMEpKWHFqbkdBXzNFRXZCWnBmM0VhdWZXS2RTVHItckstWXRKaTRNQ1ZJSEFoOUlNNDlBbzZ2RlRzMnlQ?oc=5",
-   "source": "FantasyLife",
-   "published": "2026-09-23T00:35:00Z",
-   "summary": "FantasyLife's Week 3 snap-count report questions whether Rhamondre Stevenson is losing work in the Patriots backfield.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Usage question based on snap counts, not a confirmed role change; headline doesn't support a firm downgrade."
-   }
-  },
-  {
-   "id": "when-is-nico-collins-coming-back-week-3-fantasy",
-   "title": "When Is Nico Collins Coming Back - Week 3 Fantasy Football Injury Return Update (2026) - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOX3FHWG4yVW5CRlJWZEVjM0JFZ2dBS0V5R1FmNVRsYU5rZnM2ZWd5dk5vQ0lEak1ZRmtqSmdKRnRHOU5GY0I5cDh4VWh4aWtCRG1vUGFSbU9oaFpKZkJHSnhlOVhhRG9uVTZ6X0wza0J6QUxTeWhsYzZnVS1aRXVVamVYNVBtSlhEVERUZ0Z0b0w5QnA2bU1lRVBLT0U0Qkdtbjhod2xEVV96aHY2V0xlcjAzM0JKenBy?oc=5",
-   "source": "RotoBaller",
-   "published": "2026-09-22T21:15:00Z",
-   "summary": "RotoBaller's Week 3 injury-return update examines when Texans WR Nico Collins might return to the field.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Nico Collins",
-      "action": "boost",
-      "deltaPts": 12.5,
-      "suggestedEdit": "Return boost · +12.5 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: RotoBaller 9/22 return update. +12.5 = board per-game value (Nico Collins, 12.5 ppg) as a return-to-lineup bump (est.)."
-   }
-  },
-  {
-   "id": "fantasy-football-week-3-wr-preview-malik-nabers-tough-t",
-   "title": "Fantasy football Week 3 WR preview: Malik Nabers tough to trust as injuries, QB change create concerns - CBS Sports",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQaW9TZE43cXd0WWd2S08zMi1WaVp4SW1USzdiYWJEMHBSbGp0RGFnUHNfZjUzcVgyOE5sd3I1ZzgzOXRhQ2swRXNjV3BfZWRBQTRtaHA1U3lhaEIzYUNkT2tGeEd4dDJhdXRQSXBlTy12NEJKemg1aGtweUNpWWhBVFhsOEUyZXNIZFdVRTZWcU82dGZPS3FOYzJ3?oc=5",
-   "source": "CBS Sports",
-   "published": "2026-09-22T21:06:15Z",
-   "summary": "CBS Sports' Week 3 WR preview says Malik Nabers is tough to trust given his injury and the Giants' QB change.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Nabers already tagged injured (shoulder); article reinforces the downgrade but adds no new ruling."
+    "note": "Grounded: SI 9/23 \u2014 Bowers set for his Week 3 season debut. +15.3 = board per-game value (15.3 ppg, LV TE) restored (est.)."
    }
   }
  ]
