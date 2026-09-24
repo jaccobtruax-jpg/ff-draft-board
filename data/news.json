@@ -3,6 +3,202 @@
  "sample": false,
  "items": [
   {
+   "id": "the-fantasy-footballers-starts-of-the-we",
+   "title": "The Fantasy Footballers\u2019 Starts of the Week for Week 3 (Fantasy Football)",
+   "url": "https://www.thefantasyfootballers.com/analysis/the-fantasy-footballers-starts-of-the-week-for-week-3-fantasy-football/",
+   "source": "Fantasy Footballers",
+   "published": "2026-09-24T21:00:37Z",
+   "summary": "The Fantasy Footballers' starts of the week for Week 3",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Fantasy Footballers Week 3 starts column; the title names no individual player ruling, so no stat edit is suggested."
+   }
+  },
+  {
+   "id": "when-is-brock-bowers-coming-back-week-3",
+   "title": "When Is Brock Bowers Coming Back - Week 3 Fantasy Football Injury Return Update (2026) - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQ0VUWHFRSmRCVDBPWTBMWFJPMWkxVXptUTFTZVBFNkliMnR5bWRybnNUX0gxNUJ4elUzNEdlMEdwd2MtS2Z1TWVjcTluQUdQc3lRbVB5RFk0MjZyTWg3SzBPRUJXVTF3MWE0OFBPTjc1amlIbC01cmNnTXp6Y1Y1OTVTV2dqdWZtdkxEZlpteVd6WVJRQnowczVERy1pZTgxT2xLcFlCMEM4amhEVDdLYjhyRU4taVQ3?oc=5",
+   "source": "RotoBaller",
+   "published": "2026-09-24T20:30:25Z",
+   "summary": "When is Brock Bowers coming back? Week 3 injury return update",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: RotoBaller 9/24 \u2014 Bowers (LV TE) return-timeframe update. His +15.3 season-debut boost is already itemized (9/23), so no stat edit is suggested here to avoid double-counting."
+   }
+  },
+  {
+   "id": "adonai-mitchell-dealing-with-finger-inju",
+   "title": "Adonai Mitchell Dealing with finger injury - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNR1VYTE1HSVpWN2k1OC1MOENNNUJUcWtzZHkzX2dQcjc5RXFlNkVtV2VOaVRaWFBGb3pobW5EZDdCY3ZMdF9hX1dVa0ZUcUpQd0dheklnOUdFUGtzdkd2WmpQWWtxUGNxT0cxUndKazl4ZFlkSERtdHgwNXRSd2hRSG1zbWo0T1BsazB5S1AzUk5MdVhUbmVjUQ?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "2026-09-24T20:28:32Z",
+   "summary": "Adonai Mitchell is dealing with a finger injury",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: FF Podcast 9/24 \u2014 Mitchell (NYJ WR) is dealing with a finger injury; no game status or timeline stated, so no stat edit is suggested (low-end WR, 6.7 est. ppg)."
+   }
+  },
+  {
+   "id": "kyle-monangai-dnp-on-estimated-injury-re",
+   "title": "Kyle Monangai DNP on estimated injury report - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbnJPUl9jbDRZN29xZUxfbXNLQWdyQnMyM2h4SVNtdWVaSW1NaWZUNTBoemRwYi05V3lab0txNldhNWNmZ18tVVRaVEh0STlITUNWd0FMcU9yV1FNeF9YbmJRVFFYVTd5X3hJWG1td2ZTWVNHWEdPTXBBZDNNcFlOZmJ3TFB6cndYR2gybHRXRUtWWHhTdnpfVFVKMA?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "2026-09-24T20:23:08Z",
+   "summary": "Kyle Monangai was a DNP on the estimated injury report",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Kyle Monangai",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -9.3,
+      "suggestedEdit": "Tag injured (DNP on injury report) \u00b7 \u22129.3 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: FF Podcast 9/24 \u2014 Monangai (CHI RB) was a DNP on the estimated injury report. \u22129.3 = board per-game value (9.3 ppg) for one projected game missed."
+   }
+  },
+  {
+   "id": "saquon-barkley-expects-to-play-week-3-dr",
+   "title": "Saquon Barkley Expects To Play Week 3 - Draft Sharks",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVi1VLU1OdXFKMEJ4WnBFX0l2eENLanZQT0NoRXZkaU5DVUJ3eWZZM2FQNmxVaWtkakZnNGJ0U1pXbG5SVlprY3NRd002am4tQXkyTnVoVEt5OHJ3VGZ5ZUhlTzk1Y3RwdWdjNl9IM0RZVGlwb25RbF9tbXhUejhCX2ZCUF9VaVVRanZSWTlMeE82MHFZWnloZA?oc=5",
+   "source": "Draft Sharks",
+   "published": "2026-09-24T20:08:47Z",
+   "summary": "Saquon Barkley expects to play in Week 3, per Draft Sharks",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Saquon Barkley",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 14.6,
+      "suggestedEdit": "Return/health boost (on track to play Week 3) \u00b7 +14.6 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: Draft Sharks 9/24 \u2014 Barkley (PHI RB) expects to play Week 3. +14.6 = board per-game value (14.6 ppg, full-PPR season total /17)."
+   }
+  },
+  {
+   "id": "nico-collins-injury-update-opens-the-doo",
+   "title": "Nico Collins Injury Update Opens the Door for an Unexpected Top-5 Fantasy Football Tight End - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYkJHX01qM1ZlN2xsS25tbEY3c3d0eDRmVTN2VHVXVFN6eURZd18zbFpiNDFLRDUtZVEwTUNVQ21WTnlJVy1EVFpvWlo1V01SSGRNS0FUVlYwYUhRUjJVeGsxNW5iUkZkLUNhRUNJLWYzaTVuTWY1UHBLdEtzNlhFa3FFeWcwV1BqeEVrRlpFdEpFdzlOY1N0LUxIVFpGcVMzelQ0bQ?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-24T19:12:33Z",
+   "summary": "Nico Collins injury update opens the door for an unexpected top-5 fantasy football tight end",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Dalton Schultz",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 3.4,
+      "suggestedEdit": "Nico Collins out \u2192 expanded TE role \u00b7 +3.4 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/24 \u2014 with Nico Collins (HOU WR) sidelined, the column flags a Texans tight end (Dalton Schultz) as an unexpected top-5 fantasy beneficiary. +3.4 is an estimated target-share bump (est.), not a board figure."
+   }
+  },
+  {
+   "id": "starts-of-the-week-week-3-games-tucker-2",
+   "title": "Starts of the Week + Week 3 Games, Tucker 2\u00d74!",
+   "url": "https://www.thefantasyfootballers.com/episodes/starts-of-the-week-week-3-games-tucker-2x4/",
+   "source": "Fantasy Footballers",
+   "published": "2026-09-24T18:33:27Z",
+   "summary": "Podcast: Starts of the Week + Week 3 games, Tucker 2x4!",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Fantasy Footballers Week 3 episode; roundtable of starts with no single player ruling in the title, so no stat edit is suggested."
+   }
+  },
+  {
+   "id": "latest-ruling-in-josh-jacobs-case-could",
+   "title": "Latest Ruling In Josh Jacobs' Case Could Cause Uncertainty For Fantasy Football - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPV1RHY2dxdGkyMFlNQ3BpOHRxNDc4OTZ6VkEwOEk5M3FGdC1PVWdWZ0p6ZW9pajZTN095NXpBTXc4cVVKdHlPOUlmUTRGWjdHMW5zcnhOeHoyTThGVndUTWRjM0FvTzZkcU0zc2lyY05mdXFpU05lbWc1OTBkaTBRSloxeURyYkJSYlA0dkJQUGwyUEN1aUg5bHZMV01CZjh3VlBZb21HYmc0ZVhiSW9sc0Z0d3c?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-24T18:15:54Z",
+   "summary": "Latest ruling in Josh Jacobs' case could cause fantasy football uncertainty",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Josh Jacobs",
+      "action": "suspension",
+      "games": 2,
+      "deltaPts": -5.2,
+      "suggestedEdit": "Suspension risk (legal ruling) \u00b7 \u22125.2 pts (2 games, est.) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/24 \u2014 a new ruling in Jacobs' (GB RB) legal case creates uncertainty (potential discipline). \u22125.2 = board per-game value (2.6 ppg, already discounted for missed time) \u00d7 2 estimated games (est.)."
+   }
+  },
+  {
+   "id": "is-jayden-daniels-out-for-the-season-inj",
+   "title": "Is Jayden Daniels Out for the Season? Injury Update and Fantasy Football Outlook (Week 3) - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUE1ZVnNnQTExX1ptX3A3T2tvblAtS2dDSkx5djRINUpEemZpYVB4ZzRvRmNOejhvZ0JfMTJwSnozNXUwTkF2cTV0YVhncVcxUFFmd3AzLUxFMUtScXdPdjM3TS1kOFdfeC1lblBsRGM5Y21GNHdobWtlMHFwaGpyczI0OFJlSi1Zb19XOWJKQjY4SVFXbW0wdkVVRHFfV3psWVM5WHAxdG1uVlppQVh5bXNncUJUQ1pjbzVNMU5B?oc=5",
+   "source": "RotoBaller",
+   "published": "2026-09-24T17:00:49Z",
+   "summary": "Is Jayden Daniels out for the season? Injury update and Week 3 fantasy outlook",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: RotoBaller 9/24 \u2014 raises a season-ending possibility for Daniels (WAS QB) but states no confirmed timeline in the headline. His Week 2 injury is already logged; no new stat edit until a return date is reported."
+   }
+  },
+  {
+   "id": "injury-impact-zay-flowers-looks-unlikely",
+   "title": "Injury Impact: Zay Flowers Looks Unlikely To Play In Week 3, Opening The Door For A Fantasy Football Sleeper - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUFExeWkyTlN4dzNCYTB6eDlwaGZ2V1RGRTlTdHlIcUJrYXpyU0JsMmE1WkFHeDRPNnFJSFd1ZHBhOFZmWkN6Tkd1VDhhTy1CZmxrb1JINkFPS2FhWmVFLVlzYmF1RVFQTllmNjcyVHpKV2JhUXNBQVlIcVRra01PT1dKRGd0d3ppemtWVWdBb01SbENmMi1oNWNXWUFaSXpOYVpTN3VVaHJvUnBDcUxJd3FiR0ZXcnQ5aDhLTGdRNjNhLUhQU3Bsd2hwRFVac2NIbFJkRG5PRUtkVTNvZWYyZQ?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-24T16:50:37Z",
+   "summary": "Zay Flowers looks unlikely to play in Week 3, opening the door for a fantasy football sleeper",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Zay Flowers",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -14.6,
+      "suggestedEdit": "Tag injured \u00b7 \u221214.6 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/24 \u2014 Flowers (BAL WR) looks unlikely to play Week 3. \u221214.6 = board per-game value (14.6 ppg) for an expected 1-game absence. Sleeper beneficiary not named in the headline, so no second edit."
+   }
+  },
+  {
+   "id": "latest-fantasy-football-news-puka-nacua",
+   "title": "Latest fantasy football news: Puka Nacua \u2018not making great progress\u2019 - The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYnRURjJrZjZXUDlfNHQ2R2lRaWRYLXAyb2FPTmZyUW9tcDVlNk5fZUNMUVJrSVRVTFVUSE9PX2tjV1JfVkdpY3ZSalh4bnRDVUpfZUtOMDBLSFFScXhMcWUwT2daQ21HYVBNLVJRWGtiTWo0a3JNaXBiWEFiM3dYN2V2UGtYbi00aXJUMXd0Z0c2dDhnUnBzYXItSjA?oc=5",
+   "source": "The New York Times",
+   "published": "2026-09-24T16:46:00Z",
+   "summary": "Latest fantasy football news: Puka Nacua is 'not making great progress' in his recovery",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: NYT 9/24 \u2014 Nacua (LAR WR) is 'not making great progress' in his return. This flags downside risk to his existing +19.1 return boost in the 9/23 item, but no new game designation is confirmed, so no stat edit is suggested \u2014 monitor his Week 3 status."
+   }
+  },
+  {
+   "id": "is-isiah-pacheco-out-for-the-season-inju",
+   "title": "Is Isiah Pacheco Out for the Season? Injury Update and Fantasy Football Outlook (Week 3) - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVWFTaFVwWGRGZWNNdG40SzlXYk9VcWxpajN2czBlM1FqUmlYeTJKOUJWY0lGRC1vaDljc1JUT29nNnNVZW82aEJLa2x2bFZjdW4yOTdvSkhOdG5ZNy1ranRKRHRtYkhKSjR2dmxyNWtvaVY2ODlRaEpmZWhodklWbVhDRnFFMGNucUNVOE1CYzF6Z0RIM241aW12d1AxQWtaR2pBTEhLQUluTVVyeVp2RDc4TTQ5NnFDLVJ3Qw?oc=5",
+   "source": "RotoBaller",
+   "published": "2026-09-24T16:00:09Z",
+   "summary": "Is Isiah Pacheco out for the season? Week 3 injury update and fantasy outlook",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: RotoBaller 9/24 \u2014 frames Pacheco's (DET RB) status as a season-ending question without a confirmed timeline. Low-end RB (4.5 est. ppg); no stat edit is suggested."
+   }
+  },
+  {
    "id": "nfl-week-3-fantasy-football-injury-report-and",
    "title": "NFL Week 3 fantasy football injury report and weather forecast - The New York Times",
    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSnRWM3dHSmh5YXBzaHdic3F1aUVXTndRQ2paaEhNV1VaRGJaQVY0Vll3aHBxVTBvQWI1bXlNbV9XNW51SldKWGtWc1hYdlYxMWE1Rlc2UjhrQlFHN21kakU0SGdJSGQ1YUpHWEtxNWxQc0Y0RjRkYl9zQkhUelRtOFBfZWRuckp0by0zLWdZQUktUFZPbkNMeQ?oc=5",
@@ -60,6 +256,19 @@
    "impact": {
     "players": [],
     "note": "Fantasy Footballers Week 3 column; the title names no individual player ruling, so no stat edit is suggested."
+   }
+  },
+  {
+   "id": "is-jordan-mason-out-for-the-season-injur",
+   "title": "Is Jordan Mason Out for the Season? Injury Update and Fantasy Football Outlook (Week 3) - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWE5aNHhVQ19scFpYSzQxRWFPMWoySVRidzEtSFBXMXl0ZTNhbGJkMTV5WWVBOTN3M01IQ2ozSVRnaDZKTmY1di02dzd2UVRQQ01tbXREekc1ZUh6SmpFcmJGd2ZWWWpIOWFIZURrSWlFSEpiMkQxNE5xcll3NFZGWkVyWm9EYzlINDlYZVRwR2pteU5BV2xvSHVHd1JPUzhiQjVZLWFEdW9CNDFUbHBJTjB5X3F1Um9PSHBJ?oc=5",
+   "source": "RotoBaller",
+   "published": "2026-09-24T13:30:54Z",
+   "summary": "Is Jordan Mason out for the season? Week 3 injury update and fantasy outlook",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: RotoBaller 9/24 \u2014 poses a season-ending question for Mason (MIN RB) with no confirmed timeline in the headline; no stat edit is suggested."
    }
   },
   {
@@ -225,175 +434,6 @@
    "source": "Yahoo Sports",
    "published": "2026-09-24T00:42:00Z",
    "summary": "Bills WR DJ Moore Gives Positive Injury Update After Practice",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Auto-added from feed; no specific player ruling stated in the headline, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "bills-news-d-j-moore-s-injury-update-puts-wee",
-   "title": "Bills news: D.J. Moore's injury update puts Week 3 return in play - sports.yahoo.com",
-   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5XU0Zaa18wRllIdVdJZ2lsWloyMDJTZGdlV1FueWxZc01zTy1JNTJpdkZPY2Q0VGNxNjlZbFdWdGJsZDc0MWdidUZHVXJaNWZBZ3JZa1NNVkRjSEx4RFJmUFpLUFBVdDVESTUzcV9CN19SdTdLOF9pLUh3?oc=5",
-   "source": "Yahoo Sports",
-   "published": "2026-09-23T22:33:10Z",
-   "summary": "Bills news: D.J. Moore's injury update puts Week 3 return in play",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Auto-added from feed; no specific player ruling stated in the headline, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "terrance-ferguson-limited-with-ankle-injury-n",
-   "title": "Terrance Ferguson Limited With Ankle Injury - NFL News | Fantasy Football - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQRDQxMGN4MXMxM253SFAwMjhPRjhXZ3VyeW5ZeHFmdmFMdUV0OUw3MUZhaUk5VEtzdXBjcUtTRkF2UkVTLS16UXFVV01OQjFuUndvaXVQMWdJaHVGVkoxSnFncEgtNUR0OWRDNHhGcmQzU2E3OEFHR2VoZjlMd3JaUnFHeEdxWTFYZUlWTGJ4R2JJTFpO?oc=5",
-   "source": "RotoBaller",
-   "published": "2026-09-23T22:22:21Z",
-   "summary": "Terrance Ferguson Limited With Ankle Injury",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Auto-added from feed; no specific player ruling stated in the headline, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "nfl-injury-report-week-3-latest-news-updates-2",
-   "title": "NFL Injury Report, Week 3: Latest news, updates for Caleb Williams, Jaxson Dart, more with fantasy football analysis - sports.yahoo.com",
-   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPM2g0dHNUZUF2NE5ua0pqZVNpNE1PX3NvTnNqTU5sVkctbTFKYWpsRVFnZjA3dzJnWE1TM3lCZVl2Y1kwaE1IYkFlM1NwbmhldV9jLUFTRXl2ak1ZS2RSX29uTHJmMzkzLVR5Q1pqMHY2U2RTUW1BQW9oZUd5LUQ2STIyVl9EajJQaTdfdUNSUXJ2T3BKQktyOThtQlZJUWhrOVo0V09KUVZ6ZkhJSjZMbVI5VndUalpKX09XWTlTelZjQzFjbHVUVDlxZVhLM3BYUEwwMTBCZHY4VU9fb3hOZmNsa0VjMDVDbmhhUDMtaG9IcERqa2x0QUtiNA?oc=5",
-   "source": "Yahoo Sports",
-   "published": "2026-09-23T21:49:17Z",
-   "summary": "NFL Injury Report, Week 3: Latest news, updates for Caleb Williams, Jaxson Dart, more with fantasy football analysis",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Auto-added from feed; no specific player ruling stated in the headline, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "malik-nabers-limited-with-shoulder-injury-on",
-   "title": "Malik Nabers Limited With Shoulder Injury on Wednesday - NFL News | Fantasy Football - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNVJDRHdSR00yeVRIc3FkcHBTWE5kWDdFTWtzbmx3ZzFUZmY0VVk0UFNaSVdFd0dmSzJMM2hRTG13TXhwWndHNExubGpFUW03OXMtcEhQejFBQ2tQNkFVRTVBSGFDQTFvck5QU1h1cm95OHNUMFBhdFk3SEpmaUxqQVZhQmVzaXYzWEdqOXQyU2syT1JlUl9iLXVKOWtvWkxEWDFZ?oc=5",
-   "source": "RotoBaller",
-   "published": "2026-09-23T21:47:07Z",
-   "summary": "Malik Nabers Limited With Shoulder Injury on Wednesday",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Auto-added from feed; no specific player ruling stated in the headline, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "dynasty-film-review-week-3-fantasy-football",
-   "title": "Dynasty Film Review: Week 3 (Fantasy Football)",
-   "url": "https://www.thefantasyfootballers.com/dynasty/dynasty-film-review-week-3-fantasy-football-2/",
-   "source": "Fantasy Footballers",
-   "published": "2026-09-23T21:36:49Z",
-   "summary": "Dynasty Film Review: Week 3 (Fantasy Football)",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Auto-added from feed; no specific player ruling stated in the headline, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "tony-pollard-managing-ankle-injury",
-   "title": "Tony Pollard Managing ankle injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVm5rTXo4WUNxVWJIdVJWVHB4N0xnMzc0ZmJOMTBDVENOa2t4THdMZmU1TXAyMWpzc3UzWmRXNTBFMlBEa0F0ZlBMaTgyQ0p1dTJqYXBzUEJJNnhwY2w0VnpHT2dZc1BUTjFRM2swbEJNUjFJSDV6REFxUGpKeDA1THZPdmVTT0JRRXRIZllR?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-23T21:33:31Z",
-   "summary": "Tony Pollard Managing ankle injury",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Auto-added from feed; no specific player ruling stated in the headline, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "when-is-puka-nacua-coming-back-week-3-fantasy",
-   "title": "When Is Puka Nacua Coming Back - Week 3 Fantasy Football Injury Return Update (2026) - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRG5tQlBHUFcwRXBuRnE0V2drSVFGTlBsMFdXUlozQkUtTldCRm12bXRtWXY4S1dSSzE1S2dOZWNkbmEzeHdxZ01YZkNVUmwxdUlsYktXOU00U3ZpVFR6Z0ROaFBtRjItVWVBZzZSLTJPN3RMWjdPSnprNVhPeHFSaDJ3SnFQMFhIOFZBaTNramFoRHVRbnY1aWQxbnU4V3VMckpRQmVsZVhsVzNvRVowd21Cb1M2Zw?oc=5",
-   "source": "RotoBaller",
-   "published": "2026-09-23T21:30:54Z",
-   "summary": "When Is Puka Nacua Coming Back",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Auto-added from feed; no specific player ruling stated in the headline, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "chris-bell-dealing-with-knee-injury",
-   "title": "Chris Bell Dealing with knee injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQa2UtUExQQXJOR0pja2FtdmVRMlp6MlFXeDVReTJqODlYRlFJVzlMNlBCLUNaMVZPemFMUzB2QjBQd0g4d0VFTHhQa1ZWRFI0SVhCXzRUTTBmTWR5TllPV1JmZTJQaWJiOXlpZGVWaElBZUVJa3lqeHI1dktmZW9MYzladER6OGF5UHBmMjVEOA?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-23T21:22:52Z",
-   "summary": "Chris Bell Dealing with knee injury",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Auto-added from feed; no specific player ruling stated in the headline, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "jaylen-warren-limited-with-shoulder-injury-on",
-   "title": "Jaylen Warren Limited With Shoulder Injury on Wednesday - NFL News | Fantasy Football - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVmlEeTJRVS1jZVNTTW92UnFnUFhSOUExM0FLandvS0l5QjY3d0dQXzFsLVRPTm9ib2xHSDVfbG5QSkFUNjctOU53OE5UQm1wbGN0RW1wVUdxU3d2UTN1eUxhVThxbzlKZkVhNHZ4NU1jT3RUZTg1MVNzMGhBOFpkLW1kb1dVeHZCalgya2VOQzBLYnRmM3hGUzdtOG5kNWlLZ01lNw?oc=5",
-   "source": "RotoBaller",
-   "published": "2026-09-23T20:45:06Z",
-   "summary": "Jaylen Warren Limited With Shoulder Injury on Wednesday",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Auto-added from feed; no specific player ruling stated in the headline, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "travis-etienne-jr-limited-by-hamstring-injury",
-   "title": "Travis Etienne Jr. Limited by hamstring injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOOHRwS21aZUR4MFA5bEhiLVZHVHhSVGExb01ZRVpObDdmQXczUEljZUZDY1ZXWFVZcEFHemZHRUhUUmpKYTlmZ2FiS3ltTjJHcUN1dmc1WndJb1Fma1VibEo3akRaTFlXWThuR0htckJaSUY2eFQwdEJVVUZsUE5GM0M3UXJoMV9NbG9SOWZMbXJDZHBhWWtiYw?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-23T20:42:33Z",
-   "summary": "Travis Etienne Jr. Limited by hamstring injury",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Auto-added from feed; no specific player ruling stated in the headline, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "week-3-fantasy-football-impact-aaron-jones-ni",
-   "title": "Week 3 Fantasy Football Impact: Aaron Jones, Nico Collins, and 3 Other Injury Updates - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdmJOanR5TzlTWmlUQUt6RnJITjVOSi1XLU5uV0l4QmJmaDdFMjJsUjBVemZGZGNmbWFYZ240Sk1oVWFUdTBUaEZoLUdVUmMyVlVGOGE4NHE3QWNOaHFfS0VsWXplSXc5LUd4MlRzeHFJMmV1RW1IUGE3U29rTkI5d0ZSLUFUdw?oc=5",
-   "source": "Yahoo Sports",
-   "published": "2026-09-23T20:37:10Z",
-   "summary": "Week 3 Fantasy Football Impact: Aaron Jones, Nico Collins, and 3 Other Injury Updates",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Auto-added from feed; no specific player ruling stated in the headline, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "is-de-zhaun-stribling-out-for-the-season-inju",
-   "title": "Is De'Zhaun Stribling Out for the Season? Injury Update and Fantasy Football Outlook (Week 3) - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONE1MU2QtMV9lc3pSSk9kMVFFR0puVWdVRHpzdnVqVXlDWGV2aVhJX0NfWXI3ZHJGRUZsR3hZY09fak9iS0JhUFJSZ0t6Q2pzaUtzQ3lEVjBRQmVTR3lvT0ZnZ05YaC1VNTFJYlVBeHVMa2s1aUNOUFkxU0xIVUM1SGpuTzF3U3BMa3B3LThVdjdhX2V5TVRuLTV0cnUtMlQtcW8weG1Rdm1JZG5VYlg4QlE3aDJjZExVQXdFbmNya25ZM0Zm?oc=5",
-   "source": "RotoBaller",
-   "published": "2026-09-23T20:30:04Z",
-   "summary": "Is De'Zhaun Stribling Out for the Season? Injury Update and Fantasy Football Outlook (Week 3)",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Auto-added from feed; no specific player ruling stated in the headline, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "latest-fantasy-football-news-jonah-coleman-su",
-   "title": "Latest fantasy football news: Jonah Coleman suffers ankle sprain - nytimes.com",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYnRURjJrZjZXUDlfNHQ2R2lRaWRYLXAyb2FPTmZyUW9tcDVlNk5fZUNMUVJrSVRVTFVUSE9PX2tjV1JfVkdpY3ZSalh4bnRDVUpfZUtOMDBLSFFScXhMcWUwT2daQ21HYVBNLVJRWGtiTWo0a3JNaXBiWEFiM3dYN2V2UGtYbi00aXJUMXd0Z0c2dDhnUnBzYXItSjA?oc=5",
-   "source": "nytimes.com",
-   "published": "2026-09-23T20:26:50Z",
-   "summary": "Latest fantasy football news: Jonah Coleman suffers ankle sprain",
    "sample": false,
    "impact": {
     "players": [],
