@@ -3,6 +3,19 @@
  "sample": false,
  "items": [
   {
+   "id": "fantasy-football-last-minute-pickups-w",
+   "title": "Fantasy football last-minute pickups for Week 3: Stroud, Wicks, Spears among top options - ESPN",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWEdoSDNDNjk2S1h1X3JwYVF1ODlmU002VXB1d1czVHpoR21Pb19xQUdZWnZ6dFBCR3BwTHJXV1NWUHhZd3FvMEhmMjhBdHJrQmFUTmFaNzVKVjBGT0JYSDVQN1IzczB0QXYyU2Q0M0l4cWtNUmludjl0b1N4b0w5UjRLN2NjWm1vcThlLWJOdk8wWUxsajMyS1RUcXIyUTVYalZrcXhEZk12QVowRVF0cQ?oc=5",
+   "source": "ESPN",
+   "published": "2026-09-25T10:48:00Z",
+   "summary": "ESPN's Week 3 last-minute pickup column highlights C.J. Stroud, Dontayvion Wicks and Tyjae Spears among the top options.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: ESPN 9/25 — Week 3 pickup/streamer column naming Stroud (QB), Wicks (WR) and Spears (RB); a waiver list with no ruling on rostered stars, so no stat edit."
+   }
+  },
+  {
    "id": "week-3-fantasy-football-injuries-puka-na",
    "title": "Week 3 Fantasy football injuries: Puka Nacua, Zay Flowers likely absences leave managers scrambling - CBS Sports",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMHhULVdtWXpPdko4ZldTektuMEN2ampMQy1feUNROW42M0FZWUJiVHE4WjNwV0Y0X0Nod19XdkhYWWtVbXpoRFJJVVIwVWFLMjZGMjJIVHZxRHBYMkVPaEtrSTYwZlNzbUVpX0ZTTmJXWlBHLVhLSkI3WjJYX2IxTzdyeXhWdGVQa0pRdTI1SlJwOU5JX210LVBjTE1yUHJ6ZnU3ckpnNE9FdWc?oc=5",
@@ -52,6 +65,19 @@
    "impact": {
     "players": [],
     "note": "Grounded: RotoBaller 9/24 — buy-low column; the headline names no individual player ruling, so no stat edit is suggested."
+   }
+  },
+  {
+   "id": "nfl-week-3-injury-report-weather-forec",
+   "title": "NFL Week 3 fantasy football injury report and weather forecast - The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSnRWM3dHSmh5YXBzaHdic3F1aUVXTndRQ2paaEhNV1VaRGJaQVY0Vll3aHBxVTBvQWI1bXlNbV9XNW51SldKWGtWc1hYdlYxMWE1Rlc2UjhrQlFHN21kakU0SGdJSGQ1YUpHWEtxNWxQc0Y0RjRkYl9zQkhUelRtOFBfZWRuckp0by0zLWdZQUktUFZPbkNMeQ?oc=5",
+   "source": "The New York Times",
+   "published": "2026-09-24T23:40:30Z",
+   "summary": "The Athletic's Week 3 injury report and weather forecast roundup for fantasy football.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: NYT/Athletic 9/24 — Week 3 injury-report + weather roundup; a multi-game summary that names no single player ruling in the headline, so no stat edit is suggested."
    }
   },
   {
@@ -112,6 +138,27 @@
    "impact": {
     "players": [],
     "note": "Grounded: Yahoo 9/24 — Parsons is a Packers defender (LB/EDGE), not a fantasy-relevant offensive player, so no stat edit."
+   }
+  },
+  {
+   "id": "jalen-coker-sidelined-thursday-draft-s",
+   "title": "Jalen Coker Sidelined Thursday - Draft Sharks",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNY1BWbS1pRjRfZkVfVnRWaVJzOXk3OGgwRV9mNXhWMmFyUlRLRFdyNmxPdmtRem9BbmpHVkkyY1FteHZ5d2UtQXJOS0FpQm55LTk4bkxVN0cyZnpRMkkxMFFhdkwwUzFabWhCSUhMUVZUWEZOVkItV1h4b2ZqUzBhYWpIbERCNnJsSkRaS3lzbw?oc=5",
+   "source": "Draft Sharks",
+   "published": "2026-09-24T23:27:44Z",
+   "summary": "Jalen Coker was sidelined at Thursday's practice, per Draft Sharks.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jalen Coker",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -9.3,
+      "suggestedEdit": "Tag injured (sidelined Thursday) · −9.3 pts (1 game) · drops ~1 round"
+     }
+    ],
+    "note": "Grounded: Draft Sharks 9/24 — Coker (CAR WR) sidelined Thursday. −9.3 = board per-game value (9.3 ppg) for one projected game missed."
    }
   },
   {
@@ -295,157 +342,149 @@
    }
   },
   {
-   "id": "dj-moore-and-keon-coleman-injury-update",
-   "title": "DJ Moore and Keon Coleman Injury Update Provides an Opening for a Week 3 Wide Receiver Sleeper - sports.yahoo.com",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMk5hRjFZeHFuOXVMZTdHVHVHMWdsOUg0eTF5SnVVcXdNbXZJT2NFRFVFdDNIRlJaZ3ctM0hQRTVLX3NMa1RDaTFuam9xaTVLLXZLMGRaOWstUHktcEpBM09DZjlqd2VzQXJwa1lnbUFubXllWWo1Ri0xOFFPNFJfVm12NA?oc=5",
-   "source": "sports.yahoo.com",
-   "published": "2026-09-24T19:56:55Z",
-   "summary": "Injury updates on DJ Moore and Keon Coleman open the door for a Week 3 wide-receiver sleeper.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 9/24 — DJ Moore and Keon Coleman (BUF WRs) updates open a sleeper role, but the beneficiary is not named in the headline, so no stat edit."
-   }
-  },
-  {
-   "id": "nico-collins-injury-update-opens-the-doo",
-   "title": "Nico Collins Injury Update Opens the Door for an Unexpected Top-5 Fantasy Football Tight End - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYkJHX01qM1ZlN2xsS25tbEY3c3d0eDRmVTN2VHVXVFN6eURZd18zbFpiNDFLRDUtZVEwTUNVQ21WTnlJVy1EVFpvWlo1V01SSGRNS0FUVlYwYUhRUjJVeGsxNW5iUkZkLUNhRUNJLWYzaTVuTWY1UHBLdEtzNlhFa3FFeWcwV1BqeEVrRlpFdEpFdzlOY1N0LUxIVFpGcVMzelQ0bQ?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-24T19:12:33Z",
-   "summary": "Nico Collins injury update opens the door for an unexpected top-5 fantasy football tight end",
+   "id": "chris-bell-dealing-with-knee-injury-ff",
+   "title": "Chris Bell Dealing with knee injury - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQa2UtUExQQXJOR0pja2FtdmVRMlp6MlFXeDVReTJqODlYRlFJVzlMNlBCLUNaMVZPemFMUzB2QjBQd0g4d0VFTHhQa1ZWRFI0SVhCXzRUTTBmTWR5TllPV1JmZTJQaWJiOXlpZGVWaElBZUVJa3lqeHI1dktmZW9MYzladER6OGF5UHBmMjVEOA?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "2026-09-23T21:28:46Z",
+   "summary": "Chris Bell is dealing with a knee injury, per the Fantasy Footballers podcast.",
    "sample": false,
    "impact": {
     "players": [
      {
-      "name": "Dalton Schultz",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 3.4,
-      "suggestedEdit": "Nico Collins out → expanded TE role · +3.4 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 9/24 — with Nico Collins (HOU WR) sidelined, the column flags a Texans tight end (Dalton Schultz) as an unexpected top-5 fantasy beneficiary. +3.4 is an estimated target-share bump (est.), not a board figure."
-   }
-  },
-  {
-   "id": "2026-fantasy-football-week-3-start-sit-g",
-   "title": "2026 Fantasy Football Week 3 Start/Sit Guide: 241 players, every NFL matchup - San Diego Union-Tribune",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMXFxSE9SaGk0b0VDeVFmZUFRekpRZHhtNnVpWVJEMXJqdkY5cnRWZFBrSFB4SXpRdVZ4eHpqMlczVzJ6U2UxWVBSRUlXMjA1RHNxWGh6OVpKaTZmODdhV1ZfMU5NNzA3THhrUzZwOGJ6MGxpaHhDY01rRlI0ODgyNFVSUXNEMmhCTGdfTzdmTkJpZTFteE83eXZySW9YQzRTTl9HS1ZjbWhLYVBsT2djSk82YldOSTltcHpzQU1rNzM?oc=5",
-   "source": "San Diego Union-Tribune",
-   "published": "2026-09-24T19:01:42Z",
-   "summary": "A Week 3 start/sit guide covering 241 players and every NFL matchup.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: San Diego Union-Tribune 9/24 — full Week 3 start/sit guide; a multi-player roundup that names no single ruling in the headline, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "starts-of-the-week-week-3-games-tucker-2",
-   "title": "Starts of the Week + Week 3 Games, Tucker 2×4!",
-   "url": "https://www.thefantasyfootballers.com/episodes/starts-of-the-week-week-3-games-tucker-2x4/",
-   "source": "Fantasy Footballers",
-   "published": "2026-09-24T18:33:27Z",
-   "summary": "Podcast: Starts of the Week + Week 3 games, Tucker 2x4!",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Fantasy Footballers Week 3 episode; roundtable of starts with no single player ruling in the title, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "latest-ruling-in-josh-jacobs-case-could",
-   "title": "Latest Ruling In Josh Jacobs' Case Could Cause Uncertainty For Fantasy Football - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPV1RHY2dxdGkyMFlNQ3BpOHRxNDc4OTZ6VkEwOEk5M3FGdC1PVWdWZ0p6ZW9pajZTN095NXpBTXc4cVVKdHlPOUlmUTRGWjdHMW5zcnhOeHoyTThGVndUTWRjM0FvTzZkcU0zc2lyY05mdXFpU05lbWc1OTBkaTBRSloxeURyYkJSYlA0dkJQUGwyUEN1aUg5bHZMV01CZjh3VlBZb21HYmc0ZVhiSW9sc0Z0d3c?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-24T18:15:54Z",
-   "summary": "Latest ruling in Josh Jacobs' case could cause fantasy football uncertainty",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Josh Jacobs",
-      "action": "suspension",
-      "games": 2,
-      "deltaPts": -5.2,
-      "suggestedEdit": "Suspension risk (legal ruling) · −5.2 pts (2 games, est.) · drops ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 9/24 — a new ruling in Jacobs' (GB RB) legal case creates uncertainty (potential discipline). −5.2 = board per-game value (2.6 ppg, already discounted for missed time) × 2 estimated games (est.)."
-   }
-  },
-  {
-   "id": "is-jayden-daniels-out-for-the-season-inj",
-   "title": "Is Jayden Daniels Out for the Season? Injury Update and Fantasy Football Outlook (Week 3) - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUE1ZVnNnQTExX1ptX3A3T2tvblAtS2dDSkx5djRINUpEemZpYVB4ZzRvRmNOejhvZ0JfMTJwSnozNXUwTkF2cTV0YVhncVcxUFFmd3AzLUxFMUtScXdPdjM3TS1kOFdfeC1lblBsRGM5Y21GNHdobWtlMHFwaGpyczI0OFJlSi1Zb19XOWJKQjY4SVFXbW0wdkVVRHFfV3psWVM5WHAxdG1uVlppQVh5bXNncUJUQ1pjbzVNMU5B?oc=5",
-   "source": "RotoBaller",
-   "published": "2026-09-24T17:00:49Z",
-   "summary": "Is Jayden Daniels out for the season? Injury update and Week 3 fantasy outlook",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: RotoBaller 9/24 — raises a season-ending possibility for Daniels (WAS QB) but states no confirmed timeline in the headline. His Week 2 injury is already logged; no new stat edit until a return date is reported."
-   }
-  },
-  {
-   "id": "injury-impact-zay-flowers-looks-unlikely",
-   "title": "Injury Impact: Zay Flowers Looks Unlikely To Play In Week 3, Opening The Door For A Fantasy Football Sleeper - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUFExeWkyTlN4dzNCYTB6eDlwaGZ2V1RGRTlTdHlIcUJrYXpyU0JsMmE1WkFHeDRPNnFJSFd1ZHBhOFZmWkN6Tkd1VDhhTy1CZmxrb1JINkFPS2FhWmVFLVlzYmF1RVFQTllmNjcyVHpKV2JhUXNBQVlIcVRra01PT1dKRGd0d3ppemtWVWdBb01SbENmMi1oNWNXWUFaSXpOYVpTN3VVaHJvUnBDcUxJd3FiR0ZXcnQ5aDhLTGdRNjNhLUhQU3Bsd2hwRFVac2NIbFJkRG5PRUtkVTNvZWYyZQ?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-24T16:50:37Z",
-   "summary": "Zay Flowers looks unlikely to play in Week 3, opening the door for a fantasy football sleeper",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Zay Flowers",
+      "name": "Chris Bell",
       "action": "injured",
       "games": 1,
-      "deltaPts": -14.6,
-      "suggestedEdit": "Tag injured · −14.6 pts (1 game) · drops ~1 round"
+      "deltaPts": -4.9,
+      "suggestedEdit": "Tag injured (knee) · −4.9 pts (1 game) · drops ~1 round"
      }
     ],
-    "note": "Grounded: SI 9/24 — Flowers (BAL WR) looks unlikely to play Week 3. −14.6 = board per-game value (14.6 ppg) for an expected 1-game absence. Sleeper beneficiary not named in the headline, so no second edit."
+    "note": "Grounded: FF Podcast 9/23 — Bell (MIA WR) dealing with a knee injury; no game status stated. −4.9 = board per-game value (4.9 ppg) for one projected game missed (est.)."
    }
   },
   {
-   "id": "latest-fantasy-football-news-puka-nacua",
-   "title": "Latest fantasy football news: Puka Nacua ‘not making great progress’ - The New York Times",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYnRURjJrZjZXUDlfNHQ2R2lRaWRYLXAyb2FPTmZyUW9tcDVlNk5fZUNMUVJrSVRVTFVUSE9PX2tjV1JfVkdpY3ZSalh4bnRDVUpfZUtOMDBLSFFScXhMcWUwT2daQ21HYVBNLVJRWGtiTWo0a3JNaXBiWEFiM3dYN2V2UGtYbi00aXJUMXd0Z0c2dDhnUnBzYXItSjA?oc=5",
+   "id": "travis-etienne-jr-limited-hamstring-ff",
+   "title": "Travis Etienne Jr. Limited by hamstring injury - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOOHRwS21aZUR4MFA5bEhiLVZHVHhSVGExb01ZRVpObDdmQXczUEljZUZDY1ZXWFVZcEFHemZHRUhUUmpKYTlmZ2FiS3ltTjJHcUN1dmc1WndJb1Fma1VibEo3akRaTFlXWThuR0htckJaSUY2eFQwdEJVVUZsUE5GM0M3UXJoMV9NbG9SOWZMbXJDZHBhWWtiYw?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "2026-09-23T21:01:37Z",
+   "summary": "Travis Etienne Jr. is listed as limited by a hamstring injury, per the Fantasy Footballers podcast.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Travis Etienne Jr.",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -12.0,
+      "suggestedEdit": "Tag injured (hamstring, limited) · −12.0 pts (1 game, est.) · drops ~1 round"
+     }
+    ],
+    "note": "Grounded: FF Podcast 9/23 — Etienne (RB) limited by a hamstring injury; not in board.json, so −12.0 uses the RB estimate of ~12 pts/gm (est.). No game status confirmed — monitor."
+   }
+  },
+  {
+   "id": "alec-pierce-ir-josh-downs-breakout-si",
+   "title": "Fantasy Football Injury Impact: Alec Pierce Being Placed On IR Could Make Josh Downs A Breakout Star - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOckNIc3Y2OXZ6OVFNRmVPYUhzdDE0ZEFoSmRYUzVLenMwN0cya3FTeHgwSDhnTTBCaFVzSUhpSUppSUNMWF9jNUd4d1h0YXlWa1pweWNKSUZvcUF1dDllY0JTWHpZdHJqS09qVkhmdjB0T05SZ2tLV1VpMzdlc0prdEVncEhxU0VWSGZYUThwQ3ZNMERNcW03RXdxVkFOcjhEX3g1MVNhUjhHOFV5dFVaSHN6ME5UenNfaUZ3YUR6TkhwSHdZMTFmVHhOeXNib3AxWU1uN1BHNA?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-23T16:10:47Z",
+   "summary": "Sports Illustrated reports Alec Pierce is being placed on IR, a move that could hand Josh Downs a breakout role in the Colts' passing game.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Alec Pierce",
+      "action": "injured",
+      "games": 4,
+      "deltaPts": -49.2,
+      "suggestedEdit": "Tag injured (IR) · −49.2 pts (4 games) · drops ~4 rounds"
+     },
+     {
+      "name": "Josh Downs",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 3.5,
+      "suggestedEdit": "Alec Pierce to IR → expanded role · +3.5 pts · move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/23 — Alec Pierce (IND WR) being placed on IR; Josh Downs (IND WR) is the flagged beneficiary. Pierce −49.2 = board per-game value (12.3 ppg) × 4 (IR minimum, est.). Downs +3.5 is an estimated target-share bump (est.)."
+   }
+  },
+  {
+   "id": "should-jaxson-dart-injury-worry-malik",
+   "title": "Should Jaxson Dart injury worry Malik Nabers fantasy football managers? - Central Oregon Daily",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOQmhjYmxtNDEweGQxUEM0bW5hZ1doQmdDYzUxY2g0Si1CYWNkaFBNajNlZHVDSmU4cEI4NU9RSFQxTlJUNFE0M3AyQ3pDOFhOTzI5b1RCV2tsdGJZclRRS25ybVp2WWxUc3ZfdzNfM1ZpR2dMVVN0dTJoOWtscVZHVFhTTG1hUWlDY3dQLW84Vlk4UlpIZDZYT2NGenk1Wno0b09qTjZMZ3ZGTnhoS0wwZlVJNWdkZjByeDZQVUYzZENmb0x6bV9UQ3NJMTktQTRGcmFyclVuMko0M1NPTy1xM2dtY2dMY2tZeTdzV2tUOE51TVcw?oc=5",
+   "source": "Central Oregon Daily",
+   "published": "2026-09-23T14:26:43Z",
+   "summary": "A look at how Jaxson Dart's injury affects Malik Nabers' fantasy value for the Giants.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Central Oregon Daily 9/23 — Dart's injury (NYG QB) threatens Malik Nabers' (NYG WR) value, but the headline states no new injury or designation for Nabers himself, so no stat edit is suggested — monitor NYG QB play."
+   }
+  },
+  {
+   "id": "jaxson-dart-facing-surgery-season-endi",
+   "title": "Latest fantasy football news: Dart facing surgery; Bagent in concussion protocol - The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcVYxMUJyd29Ccm4ydUlsZmlHaXl5NHQtS1c5QmJ4QmQ2Zi1zSTFuMzJxc2N5bVgzUUpfY0l2WU50ZjNnRmRfdEt6UWs4VnY4ZVprWnJPNzQxelFQVGNHS1hiNTBiclMyUjJlVEZEUzNwS0VkNEM5T1ZKbUgxZnZLRk00ZmthLXM2ZnF6WEJNUkxEVldGT0FkUjBXTWY?oc=5",
    "source": "The New York Times",
-   "published": "2026-09-24T16:46:00Z",
-   "summary": "Latest fantasy football news: Puka Nacua is 'not making great progress' in his recovery",
+   "published": "2026-09-22T23:52:54Z",
+   "summary": "The Athletic reports Jaxson Dart is facing surgery (season-ending) while Tyson Bagent entered the concussion protocol.",
    "sample": false,
    "impact": {
-    "players": [],
-    "note": "Grounded: NYT 9/24 — Nacua (LAR WR) is 'not making great progress' in his return. This flags downside risk to his existing +19.1 return boost in the 9/23 item, but no new game designation is confirmed, so no stat edit is suggested — monitor his Week 3 status."
+    "players": [
+     {
+      "name": "Jaxson Dart",
+      "action": "injured",
+      "games": 15,
+      "deltaPts": -280.5,
+      "suggestedEdit": "Season-ending (surgery) · −280.5 pts (15 games, est.) · drops ~12 rounds"
+     }
+    ],
+    "note": "Grounded: NYT/Athletic 9/22 — Dart (NYG QB) facing season-ending surgery; Bagent in concussion protocol. −280.5 = board per-game value (18.7 ppg) × 15 remaining games (Weeks 3-17, est.)."
    }
   },
   {
-   "id": "oronde-gadsden-sam-darnold-and-more-fant",
-   "title": "Oronde Gadsden, Sam Darnold, And More Fantasy Football Bench Players To Consider Starting In Week 3 - sports.yahoo.com",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQlR0bHBlQmFNY0xrRkt4aGoxX3RNTnc4enJJNWFhNXRsQmFYNHJaZFBmTFNadHdiRGpfeFY5aDkwWEtiOUdQZkxsMjdtRmRPaXd4ZXQwc2VXcGRDeGluOHhRZGdwNEc1a01acGhFY1hId0RJNEpOdU5FektRbE0xTFZzMUJYRkE?oc=5",
-   "source": "sports.yahoo.com",
-   "published": "2026-09-24T16:20:59Z",
-   "summary": "Yahoo suggests bench players like Oronde Gadsden and Sam Darnold to consider starting in Week 3.",
+   "id": "kyler-murray-return-concussion-protoco",
+   "title": "Fantasy Football Injury Update: Kyler Murray is a Must Start in His Return From Concussion Protocol - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMUdqTWVRbXVjSndxWUhDOG10blBqcHFsUW1MSzM5LVFFMF9tT0VhcGhjSE1VTXNOMlBqNmZmM1FETkQ3V0twNlU2UGJVeUd1M2JlLWdhaExhMmN4OWM2TEI3dHVWcDg0YWc1SFJoTEdWZFhXU0J5UjczTDZxSVQ2OWlGbktuN3RWOVFvOEJyVE9yRHZNbVI0MEsybWV6RDJmc01Qd1lYcnlveE4zTGRSU0RPUzlxWktCWFg4OFB3d0F5Q0Z5TGZ0c196VmNMNUJP?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-22T18:56:11Z",
+   "summary": "Sports Illustrated calls Kyler Murray a must-start as he returns from concussion protocol.",
    "sample": false,
    "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 9/24 — 'bench players to consider starting' column naming Oronde Gadsden (LAC TE) and Sam Darnold (SEA QB); a streamer list with no ruling on existing rostered stars, so no stat edit."
+    "players": [
+     {
+      "name": "Kyler Murray",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 17.6,
+      "suggestedEdit": "Cleared concussion protocol → starting · +17.6 pts · move up ~2 rounds"
+     }
+    ],
+    "note": "Grounded: SI 9/22 — Murray (listed MIN QB in board.json) back from concussion protocol and a recommended start. +17.6 = board per-game value (17.6 ppg)."
    }
   },
   {
-   "id": "is-isiah-pacheco-out-for-the-season-inju",
-   "title": "Is Isiah Pacheco Out for the Season? Injury Update and Fantasy Football Outlook (Week 3) - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVWFTaFVwWGRGZWNNdG40SzlXYk9VcWxpajN2czBlM1FqUmlYeTJKOUJWY0lGRC1vaDljc1JUT29nNnNVZW82aEJLa2x2bFZjdW4yOTdvSkhOdG5ZNy1ranRKRHRtYkhKSjR2dmxyNWtvaVY2ODlRaEpmZWhodklWbVhDRnFFMGNucUNVOE1CYzF6Z0RIM241aW12d1AxQWtaR2pBTEhLQUluTVVyeVp2RDc4TTQ5NnFDLVJ3Qw?oc=5",
-   "source": "RotoBaller",
-   "published": "2026-09-24T16:00:09Z",
-   "summary": "Is Isiah Pacheco out for the season? Week 3 injury update and fantasy outlook",
+   "id": "jadarian-price-could-return-week-3-si",
+   "title": "Fantasy Football Injury Update: Jadarian Price Could Return In Week 3, But Emanuel Wilson Is A Waiver Wire Add - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPb0JQYnFUZFdkR1M5SlVhd2UyQTFpT3VDNFBqTko4LWc4NzByT0FZSGNXbGJsdGxSdklzVDN5LThBZk1DbWhVQkpZUEhsRFVkX3NlalpKQ0pEN0JnT0pJaXZZNUFjbWMwYkJLbUtlN2lON1YzdnA0VzhvS2N0dU1pMUY1M21YX25wTG9UZXJzT3pobnRJblR6Nm10V3JTSlYtQ2FGcUtfNE5mQjJvVUp0ejVzbTJLdS1VV2F6YW9KYXZ3TDhlSVpSMmh4YWZFSGNpUFAxbkFNUVhKT19VWjVnVWlVQQ?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-21T19:31:55Z",
+   "summary": "Sports Illustrated notes Jadarian Price could return in Week 3, while Emanuel Wilson is a waiver-wire add.",
    "sample": false,
    "impact": {
-    "players": [],
-    "note": "Grounded: RotoBaller 9/24 — frames Pacheco's (DET RB) status as a season-ending question without a confirmed timeline. Low-end RB (4.5 est. ppg); no stat edit is suggested."
+    "players": [
+     {
+      "name": "Jadarian Price",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 11.5,
+      "suggestedEdit": "On track to return Week 3 · +11.5 pts · move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/21 — Price (SEA RB) could return Week 3; Emanuel Wilson (SEA RB) is the flagged waiver add. +11.5 = board per-game value (11.5 ppg)."
    }
   }
  ]
