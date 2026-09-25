@@ -3,6 +3,195 @@
  "sample": false,
  "items": [
   {
+   "id": "kendre-miller-avoids-injury-designation",
+   "title": "Kendre Miller Avoids injury designation for Week 3 - thefantasyfootballers.com",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQ0c4VlRIWEVTMVJEM0h1RUlmUlpSZGhGLUZZMmx6b0pUUkQ0eGVRYU56ZmU2T1ZyclZMSG8tblIwcFMyTkw2c3F1N3dsRXVkOVVSaDBEVjctaXpSZ0MzeS1EVWZkRmJEZXJaSGZkaTNrd1o0V3hkbTNiaWtxU1VLMTNRYVZtTWxPSXBmbFlqVWZxSUNCajlVdDFoeFdWT1AzR2VF?oc=5",
+   "source": "thefantasyfootballers.com",
+   "published": "2026-09-25T22:07:30Z",
+   "summary": "The Fantasy Footballers report Saints RB Kendre Miller carries no injury designation into Week 3.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Kendre Miller",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 3.0,
+      "suggestedEdit": "Role boost (no injury designation for Week 3) · +3.0 pts · move up ~1 round"
+     }
+    ],
+    "note": "Grounded: Fantasy Footballers 9/25 — Miller (NO RB) avoids an injury designation; not in board.json, so +3.0 uses a RB backup estimate (est.)."
+   }
+  },
+  {
+   "id": "fantasy-football-injury-update-jonah-col",
+   "title": "Fantasy Football Injury Update: Jonah Coleman Ruled Out While JK Dobbins And RJ Harvey Are Good To Go For Week 3 - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOU0tIRGt6QjBtVUlZQnhmaUVvZjdjVFcyRW9FWUF2RGozNnVIZWdTbVJKNmhZeU1Ga21TU0hoczNBU2VMTEE4aHVHYkNfRmJSWGRwc3ZvMXk4NkRCcmtEVVVwcHpmS2ZUVElaa3piVG9kcE1XdmFVX2pDTnQ5bVdwejJnaEFWOU51OGRuR3JTdkR5MFdJVzdGUFUxUTV0TVB4NzJ6a2V0a1FNNEdRazR1Z2Q0Y1A4NDIyZWQ4aHJudk5QTEFvOEl0TzZ4RmNTalk1eDBrQVFyUmZrQWdOX2JwQXFidE9xdG8?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-25T21:08:33Z",
+   "summary": "Sports Illustrated reports Broncos RB Jonah Coleman is ruled out for Week 3 while J.K. Dobbins and RJ Harvey are good to go.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jonah Coleman",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -6.1,
+      "suggestedEdit": "Tag injured (ruled out Week 3) · −6.1 pts (1 game) · drops ~1 round"
+     },
+     {
+      "name": "J.K. Dobbins",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 3.5,
+      "suggestedEdit": "Role boost (cleared, Coleman out) · +3.5 pts · move up ~1 round"
+     },
+     {
+      "name": "RJ Harvey",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 3.5,
+      "suggestedEdit": "Role boost (cleared, Coleman out) · +3.5 pts · move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/25 — Coleman (DEN RB) ruled out for Week 3; −6.1 = board per-game value (6.1 ppg) × 1 game. Dobbins (9.6 ppg) and Harvey (8.6 ppg) are good to go; +3.5 each (est. share gain with Coleman out)."
+   }
+  },
+  {
+   "id": "jakobi-meyers-avoids-injury-designation",
+   "title": "Jakobi Meyers Avoids injury designation - thefantasyfootballers.com",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVDZwWmowdEJEbUdTNV9VOTh0ZnZjbXFFTnhlNXFOZVEyeE83ajMteHdhOEJSNlRldVg1WE15SzNfMDlKb21TU1poTi15UW5vUDZqVi1PbjVENHV6TGE1OWF5eEdoazVvbkc1SERQNkZzMDE0eXhSa09SRTlzMGFZa2JRd0ozSUNMTXNxaTk0UFlCM1VR?oc=5",
+   "source": "thefantasyfootballers.com",
+   "published": "2026-09-25T20:33:54Z",
+   "summary": "The Fantasy Footballers report Jaguars WR Jakobi Meyers carries no injury designation into Week 3.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jakobi Meyers",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 3.0,
+      "suggestedEdit": "Role boost (no injury designation for Week 3) · +3.0 pts · move up ~1 round"
+     }
+    ],
+    "note": "Grounded: Fantasy Footballers 9/25 — Meyers (JAX WR, 9.7 ppg) avoids an injury designation, confirming he is good to go; +3.0 (est. small bump off the report)."
+   }
+  },
+  {
+   "id": "aaron-jones-cleared-to-play-for-week-3-v",
+   "title": "Aaron Jones cleared to play for Week 3 vs. Buccaneers. What does this mean for fantasy football managers? - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQU2RQN1J0aVEwNTNRWGYyc1piZTdfVjJ5RGczWGtGZzZvVG9jWUY5TWkyd2djZWtxNzhyUjhZSVYwNlFEVGJZUWpWR3JXbEpKYnlvQnJjNHRnR0d3OWQ5MnJ1R0ZybmZoLVZtZS1RZVZjRF9OZnFpeE5QbTBNSnVkeFZkekk4ZjZmYlVpd01hS2FZVEJiLXBtQlNyczhqSXRzMmROZFRFc2huNWotTWQ1VllTdkU5TmVOczlONTBnd09adzB1M3hWSllLQnVLaDhq?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-25T20:17:05Z",
+   "summary": "Sports Illustrated reports Vikings RB Aaron Jones has been cleared to play in Week 3 against Tampa Bay.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Aaron Jones Sr.",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 8.1,
+      "suggestedEdit": "Return/health boost (cleared for Week 3) · +8.1 pts · move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/25 — Jones (MIN RB) cleared to play Week 3; +6.4 = board per-game value (6.4 ppg). This supersedes the earlier 9/23 injury tag on Jones — consider reversing it."
+   }
+  },
+  {
+   "id": "injury-update-rico-dowdle-ruled-out-for",
+   "title": "Injury Update: Rico Dowdle Ruled Out For Week 3, Locking Jaylen Warren Into Fantasy Football Lineups - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOS3lHSm1BS3cxNnhvdi1odkxZby1YUlpfb2VkM3E0aHA1MGdvUGw2TGs4Z0pyZDBWbFVKOXdJeWVxdmRETEtEdGx6UmF0LXJ6WFoyTi03cEZDQ2t0UG5vcmJhM19IbFctMkxaWVN3bzRBeE84UW92dEF1M3pFMTc3U2k0UUY5LWgzWlJUcEVnd2F5YWpSTzZ0aVlyLUtnRHItMWRreDhNZWlNR0dtZmg3REFVanNZYm81RHRLcnF4ZkctTlo5MHFHaE9oWW5sblVtc0QxT1EwLVBPVWc?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-25T19:40:30Z",
+   "summary": "Sports Illustrated reports Steelers RB Rico Dowdle has been ruled out for Week 3, which locks Jaylen Warren into fantasy lineups.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Rico Dowdle",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -10.8,
+      "suggestedEdit": "Tag injured (ruled out Week 3) · −10.8 pts (1 game) · drops ~1 round"
+     },
+     {
+      "name": "Jaylen Warren",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 5.0,
+      "suggestedEdit": "Role boost (backfield clear w/ Dowdle out) · +5.0 pts · move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/25 — Dowdle (PIT RB) ruled out for Week 3; −10.8 = board per-game value (10.8 ppg) × 1 game. Warren (PIT RB, 7.8 ppg) gets the backfield to himself — +5.0 role bump (est. share gain)."
+   }
+  },
+  {
+   "id": "quinshon-judkins-clear-of-injury-report",
+   "title": "Quinshon Judkins Clear of injury report - thefantasyfootballers.com",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPakQ3a3R5UnBoYjBxZDB0MUhmMGw5TmxUdmNtcjQxb0ozbkN3T0FFUmZPQld0Y25hVlZkQXJ3VXpoOERBcTBpajNCSzVBVlRhWVpFejZTNjNxLXFHUUI2OVZPOXNFc3E3R2JUQ2NNV3UzYnJZcC1mQmJ3d1hnbWJTdDdGbm16Q3F2aDNnMGk1UDRFYmhN?oc=5",
+   "source": "thefantasyfootballers.com",
+   "published": "2026-09-25T19:12:34Z",
+   "summary": "The Fantasy Footballers report Browns RB Quinshon Judkins is clear of the injury report ahead of Week 3.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Quinshon Judkins",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 4.0,
+      "suggestedEdit": "Role boost (off injury report, lead role intact) · +4.0 pts · move up ~1 round"
+     }
+    ],
+    "note": "Grounded: Fantasy Footballers 9/25 — Judkins (CLE RB, 11.8 ppg) is clear of the injury report; +4.0 for the clean bill of health / lead-back clarity (est.)."
+   }
+  },
+  {
+   "id": "keon-coleman-questionable-to-play-with-a",
+   "title": "Keon Coleman Questionable to Play With Ankle Injury - NFL News | Fantasy Football - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRldjTzBIRDJtblBfeVphMHU4UE9KaWI5ZFFac1AxWUw5b3R1WDhRSWJCWDlLejNFTDlvX3pUb2ZfaUozM3FwRHdYOXJuci1rY2JTSFhGZm4zbTdlV2FWRXRWSXZucmNNS1l0cTNDNWVsUHlzWjZGdVRfRjZBYXV6M2gweWREclhDTWotbEpRdmdnODdTV1UwZmdubDQ0VE0?oc=5",
+   "source": "RotoBaller",
+   "published": "2026-09-25T19:05:07Z",
+   "summary": "RotoBaller reports Bills WR Keon Coleman is questionable for Week 3 with an ankle injury.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Keon Coleman",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -6.2,
+      "suggestedEdit": "Tag injured (ankle, questionable) · −6.2 pts (1 game) · drops ~1 round"
+     }
+    ],
+    "note": "Grounded: RotoBaller 9/25 — Coleman (BUF WR) questionable with an ankle injury; −6.2 = board per-game value (6.2 ppg) × 1 projected game."
+   }
+  },
+  {
+   "id": "zay-flowers-returns-to-practice-opening",
+   "title": "Zay Flowers Returns To Practice, Opening The Door For A Potential Week 3 Return To Fantasy Football Lineups - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNVEd0ZDBLU0pnYXVrZGpjd216QjBkMkIweW5Fc1VRQjRWVDU4U2FHZGpzeE1Uazhwc3h4VFFSQ1d1U01hUmVVeEJuUmVIV1BxT3hjeFpMc0tvcTBhdnRCMUJsZGx0bFZKaEZUc2dxWWFaRlZDRkdMNXZ4dDZwOFRXMTV0WmlINUV2RDhLS2E4UUhPbXVLM1JEMTZvUHRlSDdwb0VwS280X191RWVGa3Y1MHdubG13dDJmQXVPSFhJWHRadk1fVmdGczlLYU1xVkdETFBTelJ3VFJVQjFtSjN0Rg?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-25T19:00:32Z",
+   "summary": "Sports Illustrated reports Ravens WR Zay Flowers returned to practice, opening the door to a Week 3 return.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Zay Flowers",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 14.4,
+      "suggestedEdit": "Return/health boost (back at practice, Week 3 return possible) · +14.4 pts · move up ~2 rounds"
+     }
+    ],
+    "note": "Grounded: SI 9/25 — Flowers (BAL WR) returned to practice and could play Week 3; +14.4 = board per-game value (14.4 ppg) restored."
+   }
+  },
+  {
    "id": "latest-fantasy-football-injury-update-fo",
    "title": "Latest Fantasy Football Injury Update for Jayden Daniels Lowers Ceiling of Commanders’ Wide Receivers - Sports Illustrated",
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQMHdkSEVpVmNKWERqN1lmelE2S2VGWkxJOUZWRmJQbk1Gc1FncVdJSWhYUmZaOFdUOVpGbFA5cFgzTEpMQXVMQlR4SmxDYjdyRVp3eXpSZWRhalMxQXNESVJxLTVFOS11MlVKZTZhdFd0MXNQbEtfTG9FbTVDQWx2Y0EzTFJBUUY4d1N5dTV4YU1peTk1VHRILU95NUpUYVNQZi04R1pha08yRVpXSDZoUzlLQmJ0dEN5aFhFU2hUeGswcUxqM3B0eDZFLU8xbEtlZm10Tk5BSkc?oc=5",
@@ -318,150 +507,6 @@
    "impact": {
     "players": [],
     "note": "Grounded: RotoBaller 9/24 — drop/hold/sell-low column; the headline names no individual player ruling, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "when-is-brock-bowers-coming-back-week-3",
-   "title": "When Is Brock Bowers Coming Back - Week 3 Fantasy Football Injury Return Update (2026) - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQ0VUWHFRSmRCVDBPWTBMWFJPMWkxVXptUTFTZVBFNkliMnR5bWRybnNUX0gxNUJ4elUzNEdlMEdwd2MtS2Z1TWVjcTluQUdQc3lRbVB5RFk0MjZyTWg3SzBPRUJXVTF3MWE0OFBPTjc1amlIbC01cmNnTXp6Y1Y1OTVTV2dqdWZtdkxEZlpteVd6WVJRQnowczVERy1pZTgxT2xLcFlCMEM4amhEVDdLYjhyRU4taVQ3?oc=5",
-   "source": "RotoBaller",
-   "published": "2026-09-24T20:30:25Z",
-   "summary": "When is Brock Bowers coming back? Week 3 injury return update",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: RotoBaller 9/24 — Bowers (LV TE) return-timeframe update. His +15.3 season-debut boost is already itemized (9/23), so no stat edit is suggested here to avoid double-counting."
-   }
-  },
-  {
-   "id": "adonai-mitchell-dealing-with-finger-inju",
-   "title": "Adonai Mitchell Dealing with finger injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNR1VYTE1HSVpWN2k1OC1MOENNNUJUcWtzZHkzX2dQcjc5RXFlNkVtV2VOaVRaWFBGb3pobW5EZDdCY3ZMdF9hX1dVa0ZUcUpQd0dheklnOUdFUGtzdkd2WmpQWWtxUGNxT0cxUndKazl4ZFlkSERtdHgwNXRSd2hRSG1zbWo0T1BsazB5S1AzUk5MdVhUbmVjUQ?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-24T20:28:32Z",
-   "summary": "Adonai Mitchell is dealing with a finger injury",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: FF Podcast 9/24 — Mitchell (NYJ WR) is dealing with a finger injury; no game status or timeline stated, so no stat edit is suggested (low-end WR, 6.7 est. ppg)."
-   }
-  },
-  {
-   "id": "saquon-barkley-s-return-from-injury-sink",
-   "title": "Saquon Barkley's Return From Injury Sinks The Value Of A Week 3 Fantasy Football Waiver Wire Target - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQWZDZmxTRmtCM0JoV05rQXpENlJabnpMR3k1N3dHSXVUOWtydFlMbjRxUkpaQ3c2ZzZ5Rkcxd0paUnB6c2R0ZTByc0JSa2RCS013QVJONk5IeUFwV0NNbHNScmtBNEFiTXp0TExsZjN4Z3hVMTh3MWRRVGNkd1VXUWc5ZVd4d1ZROVF4Ujc0RVpGNGtNMFA0c0VoQ3hkVTFVV0hXSlpYSl92N2tHclZPbFI0N2REd2hHZTdvc3g5QmpNVWQ2X2NyMXhkWE9mbFVzdjVoVTVVWQ?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-24T20:24:51Z",
-   "summary": "Saquon Barkley's return from injury downgrades a Week 3 waiver-wire target, per Sports Illustrated.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: SI 9/24 — Barkley's (PHI RB) return sinks an unnamed Week 3 waiver target. Barkley's +14.4 boost is already logged (Draft Sharks 9/24); beneficiary not named, so no second edit."
-   }
-  },
-  {
-   "id": "kyle-monangai-dnp-on-estimated-injury-re",
-   "title": "Kyle Monangai DNP on estimated injury report - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbnJPUl9jbDRZN29xZUxfbXNLQWdyQnMyM2h4SVNtdWVaSW1NaWZUNTBoemRwYi05V3lab0txNldhNWNmZ18tVVRaVEh0STlITUNWd0FMcU9yV1FNeF9YbmJRVFFYVTd5X3hJWG1td2ZTWVNHWEdPTXBBZDNNcFlOZmJ3TFB6cndYR2gybHRXRUtWWHhTdnpfVFVKMA?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-24T20:23:08Z",
-   "summary": "Kyle Monangai was a DNP on the estimated injury report",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Kyle Monangai",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -9.3,
-      "suggestedEdit": "Tag injured (DNP on injury report) · −9.3 pts (1 game) · drops ~1 round"
-     }
-    ],
-    "note": "Grounded: FF Podcast 9/24 — Monangai (CHI RB) was a DNP on the estimated injury report. −9.3 = board per-game value (9.3 ppg) for one projected game missed."
-   }
-  },
-  {
-   "id": "saquon-barkley-expects-to-play-week-3-dr",
-   "title": "Saquon Barkley Expects To Play Week 3 - Draft Sharks",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVi1VLU1OdXFKMEJ4WnBFX0l2eENLanZQT0NoRXZkaU5DVUJ3eWZZM2FQNmxVaWtkakZnNGJ0U1pXbG5SVlprY3NRd002am4tQXkyTnVoVEt5OHJ3VGZ5ZUhlTzk1Y3RwdWdjNl9IM0RZVGlwb25RbF9tbXhUejhCX2ZCUF9VaVVRanZSWTlMeE82MHFZWnloZA?oc=5",
-   "source": "Draft Sharks",
-   "published": "2026-09-24T20:08:47Z",
-   "summary": "Saquon Barkley expects to play in Week 3, per Draft Sharks",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Saquon Barkley",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 14.6,
-      "suggestedEdit": "Return/health boost (on track to play Week 3) · +14.6 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: Draft Sharks 9/24 — Barkley (PHI RB) expects to play Week 3. +14.6 = board per-game value (14.6 ppg, full-PPR season total /17)."
-   }
-  },
-  {
-   "id": "chris-bell-dealing-with-knee-injury-ff",
-   "title": "Chris Bell Dealing with knee injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQa2UtUExQQXJOR0pja2FtdmVRMlp6MlFXeDVReTJqODlYRlFJVzlMNlBCLUNaMVZPemFMUzB2QjBQd0g4d0VFTHhQa1ZWRFI0SVhCXzRUTTBmTWR5TllPV1JmZTJQaWJiOXlpZGVWaElBZUVJa3lqeHI1dktmZW9MYzladER6OGF5UHBmMjVEOA?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-23T21:28:46Z",
-   "summary": "Chris Bell is dealing with a knee injury, per the Fantasy Footballers podcast.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Chris Bell",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -4.9,
-      "suggestedEdit": "Tag injured (knee) · −4.9 pts (1 game) · drops ~1 round"
-     }
-    ],
-    "note": "Grounded: FF Podcast 9/23 — Bell (MIA WR) dealing with a knee injury; no game status stated. −4.9 = board per-game value (4.9 ppg) for one projected game missed (est.)."
-   }
-  },
-  {
-   "id": "travis-etienne-jr-limited-hamstring-ff",
-   "title": "Travis Etienne Jr. Limited by hamstring injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOOHRwS21aZUR4MFA5bEhiLVZHVHhSVGExb01ZRVpObDdmQXczUEljZUZDY1ZXWFVZcEFHemZHRUhUUmpKYTlmZ2FiS3ltTjJHcUN1dmc1WndJb1Fma1VibEo3akRaTFlXWThuR0htckJaSUY2eFQwdEJVVUZsUE5GM0M3UXJoMV9NbG9SOWZMbXJDZHBhWWtiYw?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-23T21:01:37Z",
-   "summary": "Travis Etienne Jr. is listed as limited by a hamstring injury, per the Fantasy Footballers podcast.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Travis Etienne Jr.",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -12.0,
-      "suggestedEdit": "Tag injured (hamstring, limited) · −12.0 pts (1 game, est.) · drops ~1 round"
-     }
-    ],
-    "note": "Grounded: FF Podcast 9/23 — Etienne (RB) limited by a hamstring injury; not in board.json, so −12.0 uses the RB estimate of ~12 pts/gm (est.). No game status confirmed — monitor."
-   }
-  },
-  {
-   "id": "week-3-fantasy-football-impact-aaron-jon",
-   "title": "Week 3 Fantasy Football Impact: Aaron Jones, Nico Collins, and 3 Other Injury Updates - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdEFRODNZMjJVelVDem54ZXBtdkRLbHNHbXFSaDZleDh1b2hJbWh5ZWFGd1d5T0Y0TmpPLXhYM2dBSjREaTRyUENUR2JUYnJaRFhSM3NxZGg4Q0ZfVUU4T25fYXk2anhXNHRpZ3BIc2Z3MlpxQTVSZThEYkMyM1pSWUg3aTYxZ2c0blY2RHhDdXZIWGpINmtCSnluei1MNjVIUnRPVU9zYmI2VEhhQ3ZscV9DdEgwSVM5LWJ1X256eDk?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-23T20:37:10Z",
-   "summary": "Sports Illustrated breaks down the Week 3 fantasy impact of injury updates to Aaron Jones, Nico Collins and three others.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Aaron Jones Sr.",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -8.1,
-      "suggestedEdit": "Tag injured (Week 3) · −8.1 pts (1 game) · drops ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 9/23 — Aaron Jones Sr. (MIN RB) injury update; −8.1 = board per-game value (8.1 ppg) × 1 projected game. Nico Collins (HOU WR) is also flagged, but his value change was already itemized (9/24), so no duplicate edit."
    }
   }
  ]
