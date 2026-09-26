@@ -1,7 +1,117 @@
 {
- "updated": "2026-09-26",
+ "updated": "2026-09-27",
  "sample": false,
  "items": [
+  {
+   "id": "injury-update-jayden-daniels-could-be-back",
+   "title": "Injury Update: Jayden Daniels Could Be Back In Fantasy Football Lineups Much Sooner Than Expected - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObmlsX1dMSXR0dXJXczU5WHlGbmhlbU5vN0l3YURteVROdC1QbFhCMFNGVEVweUY2UVFfU2dabXIyWGpsdjkxTnhfdDJja2xiUG1YdG9uUHF5Vmdub3h4Y1NfNUlDV3lDazFlUk4yTDVqRlVfSmk0QmFtMnQ2VjZWU1lBdTYwdEFC?oc=5",
+   "source": "Yahoo Sports",
+   "published": "2026-09-26T15:55:02Z",
+   "summary": "Yahoo reports Commanders QB Jayden Daniels (elbow) could return to fantasy lineups sooner than expected after being labeled week-to-week.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jayden Daniels",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 19.1,
+      "suggestedEdit": "Return boost (back sooner than expected) \u00b7 +19.1 pts \u00b7 move up ~2 rounds"
+     }
+    ],
+    "note": "Grounded: Yahoo 9/26 + Commanders 9/25 (week-to-week, avoids IR) \u2014 Daniels (WAS QB, 19.1 ppg) is trending back earlier than feared; +19.1 = board per-game value restored, partially reversing the earlier \u221238.2 (2-game) tag."
+   }
+  },
+  {
+   "id": "is-josh-jacobs-out-for-the-season-suspensi",
+   "title": "Is Josh Jacobs Out for the Season? Suspension Update on Coming Back for Fantasy Football (Week 3) - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQcjgtYVJway1qTlhrc0tMUWhCdG5JVXVPUkVpQ09HVmE2bnZhT196NnZLeWRWYlhqRjktWUQ4LVQ2UmIxeE1pMkVUeXZhN3R4UzNKc3FjQnRkeU85UWYzWWdWS29EbThEWmpZYXV1R1ZfbXRRRS12TXd5MWIyUmR1bGt1UFNzYmVGMnBUWFkxbU9QTXR1UWFxTVZnaFRaYXR0VnFqeFFoV29YOHNrVlNXY3BDZ1dzc2xSaW1OY0pURXdCd0RtVy1jSg?oc=5",
+   "source": "RotoBaller",
+   "published": "2026-09-26T14:15:30Z",
+   "summary": "RotoBaller's Week 3 update examines Packers RB Josh Jacobs' availability as his legal case continues, with an unresolved suspension question.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: RotoBaller 9/26 + ESPN/NBC 9/24 \u2014 Jacobs (GB RB) legal case is still open (a judge denied requests to seal evidence) and a suspension is possible but has NOT been imposed, so no games/points figure exists yet. No stat edit \u2014 monitor for a league ruling."
+   }
+  },
+  {
+   "id": "injury-update-zay-flowers-playing-on-a-pit",
+   "title": "Injury Update: Zay Flowers Playing On A \"Pitch Count\" Is The Worst-Case Scenario For Fantasy Football - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVUNWMm9IOXlTV0VlZTlEODl1d2FmNHhHUkVaOHNhSFBMNnAxa2V3QjhCbXliay1KaklDZnJYanRHMFdjdUdPdHFOZm5Rc3NiWDhFTURzT3ZLUF9VY0Y3QllSTmExT2dCT0hIOXNmQVljU1lXUktaem1oYWlpNGNEMlE4SEFmZjlnTEFubDNQcGszajRITHdhUEg5QjNGc01VV3BqRUF2RE44cjIwUHZia3NPYXNfWTV1cWJ5Y3FyWS1iTkJfQ2toMkprZVh4VExmMjV1eFF3?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-26T14:12:42Z",
+   "summary": "Sports Illustrated warns that Zay Flowers playing on a 'pitch count' in his first game back would be a worst-case scenario for fantasy managers.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: SI 9/26 \u2014 Flowers (BAL WR) may be limited to a 'pitch count' in his return, which tempers the earlier +14.4 return boost already suggested. No snap count is confirmed, so no new stat edit \u2014 consider trimming the Flowers boost."
+   }
+  },
+  {
+   "id": "when-is-a-j-brown-coming-back-week-3-fanta",
+   "title": "When Is A.J. Brown Coming Back - Week 3 Fantasy Football Injury Return Update (2026) - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSmdHY2s5VXZ6eExPYmdLS3BTX2lqSVNiNzVJYl9GN09Mcm9QcS1jM240RkF0MUEzbU52c3ZhbDFoY3RMb3hZV1U0Tk9lTHZyMWpVam95R1YzdGxvalV4eFBIQ3M0cTJ2SzlTQjJqYnFpMC1yaGR4Mk44MDBIQ3RXNkhmZnozcUtfZWpBQ2pLc3dLRTdQa2NWWTJlSVhodUdTY3c0cWlnY1BHVTJNdEFDQWx5MEM?oc=5",
+   "source": "RotoBaller",
+   "published": "2026-09-26T13:45:50Z",
+   "summary": "RotoBaller's Week 3 return update tracks Patriots WR A.J. Brown, who insiders say is showing encouraging signs and could return on the quicker side of his timeline.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "A.J. Brown",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 15.2,
+      "suggestedEdit": "Return boost (quicker side of timeline) \u00b7 +15.2 pts \u00b7 move up ~2 rounds"
+     }
+    ],
+    "note": "Grounded: RotoBaller 9/26 + Schefter 9/24 ('encouraging') \u2014 Brown (NE WR, 15.2 ppg) could return sooner than expected; +15.2 = board per-game value restored."
+   }
+  },
+  {
+   "id": "saquon-barkley-kyle-monangai-and-more-inju",
+   "title": "Saquon Barkley, Kyle Monangai and more injury updates for fantasy-relevant RBs in NFL Week 3 - thebiglead.com",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNS1Z3S1ZzczI2WWxEMnF3ZXdfVzFmM2o0TWZUeUMxUUZHNnlXSjhHVVN4MTJQZWdNOTllYnJ3RV9NLXk2RWNtc3p6WkphZVRMWFZHNTZKeHFkcDRBZzdUZWJRY3FFV3lxRlZtOTVHQkJHQk54SlVPbEN2VFV3X3BvZ3RkU2liT19mVXFLX1JKa1dTQkVfdXFqWEt1V0xQYTNiTmNHWlVB?oc=5",
+   "source": "thebiglead.com",
+   "published": "2026-09-26T11:46:54Z",
+   "summary": "thebiglead.com runs through Week 3 injury updates for fantasy-relevant running backs, headlined by Saquon Barkley after his Week 2 neck stinger.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Saquon Barkley",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 5.0,
+      "suggestedEdit": "Role boost (back from stinger, Week 3 updates positive) \u00b7 +5.0 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: thebiglead.com 9/26 + NBC Sports Philly 9/26 \u2014 Barkley (PHI RB, 14.4 ppg) returned from the Week 2 neck stinger and Week 3 updates are positive; +5.0 health bump rather than a full per-game restore since he is already active (est.)."
+   }
+  },
+  {
+   "id": "is-mike-evans-playing-week-3-fantasy-footb",
+   "title": "Is Mike Evans Playing Week 3? Fantasy Football Injury Update - FantasyPros",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMUdib2hlZTE3Nmc1dmhCNkpJakJibkpnRUxOWFQ0THhlbVg2TV9LalVuOVhLREVXNWtmMlRCR280YWF2MnE5a2pwQlBxQ0JvWXNOVFhUblhCdG9XZVpBeVNxTFM0WXBkOWoyZnVhYjdlWUpCREhOMzFmdXhmSEJrdEZPSVhwaUtrTTZPRG5yTUxFdWhaSlRzT0IwTU7SAaIBQVVfeXFMTng4RDNHRFFrNGg3VlJlR182NmNQS1lHUTNxOGE4eGZ1aUFuaVE2NEU1MlNVVG05c3BDbFdPOF9YdmczQVJ4UDJUODZ4b1JjYm9ETUl1WGJIakRQQ2xNSlNaUkFmcGkzcWZJYWZkMmw1RmliRGpOMDdRbVA2cGpBSlRXX05KQk9yaXIxZHhVNW1TR2hsclFKbk5SU1RJUWZfdl9R?oc=5",
+   "source": "FantasyPros",
+   "published": "2026-09-26T11:42:34Z",
+   "summary": "FantasyPros covers 49ers WR Mike Evans' Week 3 status after he was listed questionable on the team's final injury report.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Mike Evans",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -12.8,
+      "suggestedEdit": "Tag injured (questionable, Week 3) \u00b7 \u221212.8 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: FantasyPros 9/26 + 49ers official \u2014 Evans (SF WR) is questionable for Week 3; \u221212.8 = board per-game value (12.8 ppg) \u00d7 1 projected game."
+   }
+  },
   {
    "id": "fantasy-football-injury-reports-week-3-top-stars",
    "title": "Fantasy Football Injury Reports Week 3: The Latest On Brock Bowers, Zay Flowers, And All The Top Stars - Sports Illustrated",
@@ -13,6 +123,27 @@
    "impact": {
     "players": [],
     "note": "Grounded: SI 9/26 \u2014 Week 3 injury roundup; the Bowers (LV TE) and Flowers (BAL WR) rulings are already itemized, so no duplicate stat edits."
+   }
+  },
+  {
+   "id": "puka-nacua-injury-update-status-for-rams-v",
+   "title": "Puka Nacua injury update, status for Rams vs. Broncos in Week 3 - USA Today",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNU2JMQTgyTkF3aUFTbTl2dVBNc1lNRjZFVDg0VFhLN01xVHJTdnI0OXZGR0diQUFuWmtMYm5KSXpmZDdGc2hJd2t3elBuaWxmc3VyWF91dXE3SzM1NWIyOG1JaUNmakcwb0d5dDZKcWVibVprNVU1R1c2RmJGd2dyOU9FcGFBN0JUSkRvOEFnY2ZJaFp4YXp4ZnY5bmdVUU5kUGxoN2ZlX2hZMEVyRmYzYnNSaDR5cUFPMHpSQVZvUQ?oc=5",
+   "source": "USA Today",
+   "published": "2026-09-26T04:18:00Z",
+   "summary": "USA Today's Week 3 status check on Rams WR Puka Nacua, who is nursing a hip injury and missed practice time with his status against Denver in doubt.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Puka Nacua",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -19.1,
+      "suggestedEdit": "Tag injured (hip, Week 3 in doubt) \u00b7 \u221219.1 pts (1 game) \u00b7 drops ~2 rounds"
+     }
+    ],
+    "note": "Grounded: USA Today 9/26 + The Athletic 9/24 ('not making great progress', missed another practice, hip) \u2014 Nacua (LAR WR) is at real risk of sitting Week 3; \u221219.1 = board per-game value (19.1 ppg) \u00d7 1 projected game."
    }
   },
   {
@@ -479,136 +610,6 @@
    "impact": {
     "players": [],
     "note": "Grounded: Currently.com 9/25 \u2014 Week 3 injury roundup naming Barkley (PHI RB), Nacua (LAR WR) and Bowers (LV TE); each of those storylines is already itemized, so no duplicate stat edits."
-   }
-  },
-  {
-   "id": "20-injuries-to-know-for-week-3-2026-fant",
-   "title": "20 Injuries to Know for Week 3 (2026 Fantasy Football) - FantasyPros",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMTc3WHVkUXF6R0RyYTV3bjJIeDlNV1ZqaEZfRDUzQ1BPb2ZSdXgwNHNrTDFrWGFrek9PaF9XMkpfV3lldk1URVBNT0ZpdmNMdG9kdktHU1RLNWFOOFUtREhxaXdtLTh4Z1o2cnNSVGxjNWlBdTZ6bmVTTFFQV2pMRDhYSXlUWU9SeGRnZi1CZ1BfRWPSAZgBQVVfeXFMTnA0Z2M2X1RfeHFScy1wSEdLeHNQdDJ4NVFRelAyUVdBSFJ0NnhrTG9EYWlFd2Q1Vk8tYzBmVGRGbWV4WVJVanhGNjA3dWFrMzVIN3BZVC1Pb1FDSVBLbnp5RnQ3Sm1hRXVsM3dfaDZHY25WODVhWlUxQTJmZXlHOC02dDZsSzFTc3BWLTV3RGZZZXIxU0E0NDk?oc=5",
-   "source": "FantasyPros",
-   "published": "2026-09-25T11:30:24Z",
-   "summary": "FantasyPros lists 20 injuries to know heading into Week 3 of the 2026 fantasy football season.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: FantasyPros 9/25 \u2014 broad Week 3 injury list; the headline names no single player ruling, so no stat edit is suggested."
-   }
-  },
-  {
-   "id": "fantasy-football-last-minute-pickups-w",
-   "title": "Fantasy football last-minute pickups for Week 3: Stroud, Wicks, Spears among top options - ESPN",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWEdoSDNDNjk2S1h1X3JwYVF1ODlmU002VXB1d1czVHpoR21Pb19xQUdZWnZ6dFBCR3BwTHJXV1NWUHhZd3FvMEhmMjhBdHJrQmFUTmFaNzVKVjBGT0JYSDVQN1IzczB0QXYyU2Q0M0l4cWtNUmludjl0b1N4b0w5UjRLN2NjWm1vcThlLWJOdk8wWUxsajMyS1RUcXIyUTVYalZrcXhEZk12QVowRVF0cQ?oc=5",
-   "source": "ESPN",
-   "published": "2026-09-25T10:48:00Z",
-   "summary": "ESPN's Week 3 last-minute pickup column highlights C.J. Stroud, Dontayvion Wicks and Tyjae Spears among the top options.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: ESPN 9/25 \u2014 Week 3 pickup/streamer column naming Stroud (QB), Wicks (WR) and Spears (RB); a waiver list with no ruling on rostered stars, so no stat edit."
-   }
-  },
-  {
-   "id": "devonta-smith-hamstring-injury",
-   "title": "DeVonta Smith Dealing with hamstring injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdjFBVUcxbXVLQmh5ZkxrTVN6bUd6UXNTOUZoZkNhSEZ6eHg1aWpqTXNCQnd1NTZBeTlWcGtLNnpsRXpzQUpQZXdwV2J1bFJ6MEM3TlFNMzdWbm9hUXdrT1lYN196Z1pTY25jWW1uQ0Q2cDBIMF9hQTZ4a2t5QnYybklzY2RVQmxrbzhReEcxUWlqek1DRG1ack1R?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-25T04:43:45Z",
-   "summary": "The Fantasy Footballers report Eagles WR DeVonta Smith is dealing with a hamstring injury ahead of Week 3.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "DeVonta Smith",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -14.3,
-      "suggestedEdit": "Tag injured (hamstring) \u00b7 \u221214.3 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: Fantasy Footballers Podcast 9/25 \u2014 Smith (PHI WR, 14.3 ppg) is dealing with a hamstring injury; \u221214.3 = board per-game value (14.3 ppg) \u00d7 1 projected game missed."
-   }
-  },
-  {
-   "id": "week-3-fantasy-football-injuries-puka-na",
-   "title": "Week 3 Fantasy football injuries: Puka Nacua, Zay Flowers likely absences leave managers scrambling - CBS Sports",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMHhULVdtWXpPdko4ZldTektuMEN2ampMQy1feUNROW42M0FZWUJiVHE4WjNwV0Y0X0Nod19XdkhYWWtVbXpoRFJJVVIwVWFLMjZGMjJIVHZxRHBYMkVPaEtrSTYwZlNzbUVpX0ZTTmJXWlBHLVhLSkI3WjJYX2IxTzdyeXhWdGVQa0pRdTI1SlJwOU5JX210LVBjTE1yUHJ6ZnU3ckpnNE9FdWc?oc=5",
-   "source": "CBS Sports",
-   "published": "2026-09-25T01:00:07Z",
-   "summary": "CBS Sports roundup saying Puka Nacua and Zay Flowers are likely Week 3 absences, leaving fantasy managers scrambling.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: CBS 9/25 \u2014 frames Nacua (LAR WR) and Zay Flowers (BAL WR) as likely Week 3 absences; both are already itemized (Flowers \u221214.4, Nacua +19.1 return boost), so no duplicate stat edit."
-   }
-  },
-  {
-   "id": "kyle-monangai-dnp-estimated-report",
-   "title": "Kyle Monangai DNP on estimated injury report - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbnJPUl9jbDRZN29xZUxfbXNLQWdyQnMyM2h4SVNtdWVaSW1NaWZUNTBoemRwYi05V3lab0txNldhNWNmZ18tVVRaVEh0STlITUNWd0FMcU9yV1FNeF9YNGJRVFFYVTd5X3hJWG1td2ZTWVNHWEdPTXBBZDNNcFlOZmJ3TFB6cndYR2gybHRXRUtWWHhTdnpfVFVKMA?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-24T20:59:56Z",
-   "summary": "The Fantasy Footballers report Bears RB Kyle Monangai was a DNP on the estimated injury report ahead of Week 3.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Kyle Monangai",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -9.3,
-      "suggestedEdit": "Tag injured (DNP on estimated report) \u00b7 \u22129.3 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: Fantasy Footballers Podcast 9/24 \u2014 Monangai (CHI RB, 9.3 ppg) was a DNP on the estimated report; \u22129.3 = board per-game value (9.3 ppg) \u00d7 1 projected game."
-   }
-  },
-  {
-   "id": "jaxson-dart-out-for-the-year",
-   "title": "The Latest Injury Updates For Week 3 In Fantasy Football: Jaxson Dart Out For The Year, Jameis Winston In - FantasyLife",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRFJIYWZjVnhaRFhEOTlUbXg5WUpVbUZtQmtFOWlQdmxpdTFXMjRCejRzR0xIeXFndmpjN2xzNGptRDdVR09OSkZVSHpJSWZUZ3BQM0laenJEc1BTamJuOTNiNmxQSnlueUstYmpuRG5vcXVidi1yZ0lpR3BTR1Fhd19yX3J6VF9rd2JENnpyUnNWaHZ3cDFxanZaWU9WU2prYnpXSzlrbG5RNHJSV2xaYjB6UmlHOTFNYUpNeG0wNGV1S090U2dkZDlR?oc=5",
-   "source": "FantasyLife",
-   "published": "2026-09-24T10:00:00Z",
-   "summary": "FantasyLife reports Giants QB Jaxson Dart is out for the year, with Jameis Winston taking over under center.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jaxson Dart",
-      "action": "injured",
-      "games": 15,
-      "deltaPts": -288.0,
-      "suggestedEdit": "Tag injured (out for the season) \u00b7 \u2212288 pts (15 games) \u00b7 drops off the board"
-     }
-    ],
-    "note": "Grounded: FantasyLife 9/24 \u2014 Dart (NYG QB) is out for the year; \u2212288 = board per-game value (19.2 ppg) \u00d7 15 projected games remaining (est.). Jameis Winston takes over (not on the board)."
-   }
-  },
-  {
-   "id": "alec-pierce-ir-josh-downs-breakout",
-   "title": "Fantasy Football Injury Impact: Alec Pierce Being Placed On IR Could Make Josh Downs A Breakout Star - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOckNIc3Y2OXZ6OVFNRmVPYUhzdDE0ZEFoSmRYUzVLenMwN0cya3FTeHgwSDhnTTBCaFVzSUhpSUppSUNMWF9jNUd4d1h0YXlWa1pweWNKSUZvcUF1dDllY0JTWHpZdHJqS09qVkhmdjB0T05SZ2tLV1VpMzdlc0prdEVncEhxU0VWSGZYUThwQ3ZNMERNcW03RXdxVkFOcjhEX3g1MVNhUjhHOFV5dFVaSHN6ME5UenNfaUZ3YUR6TkhwSHdZMTFmVHhOeXNib3AxWU1uN1BHNA?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-23T16:10:47Z",
-   "summary": "Sports Illustrated reports Colts WR Alec Pierce is being placed on IR, potentially opening a breakout path for Josh Downs.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Alec Pierce",
-      "action": "injured",
-      "games": 4,
-      "deltaPts": -49.6,
-      "suggestedEdit": "Tag injured (placed on IR, 4-game min) \u00b7 \u221249.6 pts (4 games) \u00b7 drops ~3 rounds"
-     },
-     {
-      "name": "Josh Downs",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 4.0,
-      "suggestedEdit": "Role boost (Pierce on IR) \u00b7 +4.0 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 9/23 \u2014 Pierce (IND WR) is headed to IR; \u221249.6 = board per-game value (12.4 ppg) \u00d7 4 projected games. Downs (IND WR, 10.0 ppg) gains targets \u2014 +4.0 (est.)."
    }
   }
  ]
