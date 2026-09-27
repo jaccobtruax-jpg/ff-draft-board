@@ -1,7 +1,96 @@
 {
- "updated": "2026-09-27",
+ "updated": "2026-09-28",
  "sample": false,
  "items": [
+  {
+   "id": "de-von-achane-injury-update-as-dolphins-",
+   "title": "De'Von Achane injury update as Dolphins RB hobbles off field - USA Today",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPd2kwSXJHazU0bHdrNC1MYS1SSzZrWWdSMjN3UG1NX0hIbjhGenpydjA3NVBtR0JsYU9rUGdvVUNuLVZjemRhNlBqRUNQSjR3X2lNb3pYVHhtOW5NWFlxeS02NjhFTVQtV1ozeG9WbzU4S2RiZGpVeVZXMlhSck90ZkJEZmFnbXNyd2kxUTJJNHBtM18xMWI0b3UzNW8zcGlDNExBVjl5RQ?oc=5",
+   "source": "USA Today",
+   "published": "2026-09-27T17:19:00Z",
+   "summary": "De'Von Achane's Week 3 status is in question after the Dolphins running back was seen hobbling off the field during Sunday's game.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "De'Von Achane",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -17.9,
+      "suggestedEdit": "Tag injured (Week 3, hobbled off) · −17.9 pts (1 game) · drops ~2 rounds"
+     }
+    ],
+    "note": "Grounded: USA Today/Yahoo 9/27 — Achane (MIA RB, 17.9 ppg per board) hobbled off in Week 3; −17.9 = board per-game value × 1 game, with the severity still unknown (est.)."
+   }
+  },
+  {
+   "id": "brock-bowers-injury-update-raiders-tight",
+   "title": "Brock Bowers injury update: Raiders tight end reportedly expected to make season debut in Week 3 against Saints - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPbFV0cEptSjBrdFBOQ3pQM1BpaHhYMS0tQ0JGQ29ZM1lNOXM0bko0T0ZZdnN1OXZETmJfNEZqRW84RE9ndktqQXZGeTV4dGFPcTNqY1hfZTVndGc5d3RZY0JtTGdHaVdpOC1sVmxwbW9vQ1EwX1ZtLUJQV0swR0tVMU82eEw5SmJTTEliY2lKSE5CU3pYWDQ1ZEtwdWVLYTFxLWRKMU1rX1hIdkdHSXhGVGN0eFVWN3dibDhWeVA5cDNzdFF1b2w2YmxsOVFEMFVVM1NwMm5wbVRvLVhZQ1pJbGlnZmtHalpncDNqVDh5M0NLSjh0bWp3QXVPZ1VaTkZBMEFzWGcwcw?oc=5",
+   "source": "Yahoo Sports",
+   "published": "2026-09-27T14:13:14Z",
+   "summary": "Reports indicate Raiders TE Brock Bowers is expected to make his season debut in Week 3 against the Saints.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Brock Bowers",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 15.3,
+      "suggestedEdit": "Return boost (expected season debut Week 3) · +15.3 pts · move up ~2 rounds"
+     }
+    ],
+    "note": "Grounded: Yahoo/Bleacher Report 9/27 — Bowers (LV TE, 15.3 ppg per board) is expected to make his season debut, reversing the earlier −15.3 (1-game) tag."
+   }
+  },
+  {
+   "id": "michael-pittman-jr-injury-update-reveals",
+   "title": "Michael Pittman Jr. injury update reveals Steelers receiver’s Week 3 status vs. Bengals - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQNGVVN3YydnpxWEZ1MkNHaW5wN1JlYWpQSWVVUE9DQzlYWEItQy1TZnQ5SDBNcjJyMmJYSUN2NmFFY2FHWlBaRXRmVUNoZnBNb0pvaHdGajFZczhnS2I2UFhqcGZNemhDbHFXNUdiZUY2R0Q4WXFGeVIzbVhNS3d0MUN1M0tLczZEMWc?oc=5",
+   "source": "Yahoo Sports",
+   "published": "2026-09-27T13:04:59Z",
+   "summary": "Yahoo's update reveals Steelers WR Michael Pittman Jr.'s Week 3 status for the matchup against the Bengals.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 9/27 — Pittman (PIT WR, 11.3 ppg per board) Week 3 status is reported, but the headline states no direction, so no stat edit until the designation is clear."
+   }
+  },
+  {
+   "id": "puka-nacua-surgery-decision-revealed-lat",
+   "title": "Puka Nacua Surgery Decision Revealed, Latest NFL Rumors on Rams Star's Injury Timeline to Return - Bleacher Report",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOMDd4S1NnY3VUV0xGSjNuZGExR2xqTjRCRkZnVG12aWZldF9tajF3NFRYT055cGFjRmZxVUl5ZG8tQlBGOUZST05rNUNURTZOSmVreTd5ZVpXTWoySVFuMlVrTmMyNmJ5QmdRT2hNX3BUdmRLNG4tQkd1UEVPeWNyZndHekttbVpwVmtSVFBHeGhrTldtaGhmQUlsZ2ZGNnFCYlhMTi1tdDY0UE43Q2dQSGRXM2VZc0ZoM1dhQUJVSGlUcUkxUG52Y3BZZzhhQQ?oc=5",
+   "source": "Bleacher Report",
+   "published": "2026-09-27T12:58:41Z",
+   "summary": "Bleacher Report relays that Puka Nacua's surgery decision and injury return timeline have been revealed as the Rams star works back.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Bleacher Report 9/27 — Nacua's (LAR WR) surgery decision and return timeline are reported as 'revealed,' but the headline states no direction, so no stat edit; the existing −19.1 tag stands pending specifics."
+   }
+  },
+  {
+   "id": "sources-caleb-williams-injury-considered",
+   "title": "Sources: Caleb Williams injury considered to have 3-4 week timeline - ESPN",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSk1aLWJXTlo2M0tZS0RsODB2SUF0cm5NNUlPbXBybndkYk9lMGswSXdzZlFwSHY5dXhlMjYtcjdhOHoyMkJfVl9JZHhBakZoR05xM1VpcDBMZUJLMEpTdHphZ0xWYmNUNHVHblQtZmZmQTdJSGpNSHl2aTRwaEJjVEJMUENRTDA2TDNlY0NaTlJRWE16WTdkWVlFMERZZ2hl?oc=5",
+   "source": "ESPN",
+   "published": "2026-09-27T12:00:00Z",
+   "summary": "ESPN reports league sources believe Caleb Williams' hamstring injury carries a 3-4 week timeline, extending the Bears QB's absence beyond Week 3.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Caleb Williams",
+      "action": "injured",
+      "games": 3,
+      "deltaPts": -55.8,
+      "suggestedEdit": "Tag injured (hamstring, 3-4 week timeline) · −55.8 pts (3 games) · drops ~4 rounds"
+     }
+    ],
+    "note": "Grounded: ESPN 9/27 — Williams (CHI QB, 18.6 ppg per board) now carries a 3-4 week timeline, extending the earlier 1-game −18.6 tag; −55.8 = board per-game value × 3 games (est., low end of the range)."
+   }
+  },
   {
    "id": "nfl-week-3-weather-conditions-fantasy-fo",
    "title": "NFL Week 3 Weather Conditions (Fantasy Football)",
@@ -428,125 +517,6 @@
      }
     ],
     "note": "Grounded: SI 9/25 — Jones (MIN RB, 8.3 ppg) cleared to play Week 3 vs. Tampa Bay; +3.0 clean-status bump (est.)."
-   }
-  },
-  {
-   "id": "injury-update-rico-dowdle-ruled-out-for",
-   "title": "Injury Update: Rico Dowdle Ruled Out For Week 3, Locking Jaylen Warren Into Fantasy Football Lineups - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOS3lHSm1BS3cxNnhvdi1odkxZby1YUlpfb2VkM3E0aHA1MGdvUGw2TGs4Z0pyZDBWbFVKOXdJeWVxdmRETEtEdGx6UmF0LXJ6WFoyTi03cEZDQ2t0UG5vcmJhM19IbFctMkxaWVN3bzRBeE84UW92dEF1M3pFMTc3U2k0UUY5LWgzWlJUcEVnd2F5YWpSTzZ0aVlyLUtnRHItMWRreDhNZWlNR0dtZmg3REFVanNZYm81RHRLcnF4ZkctTlo5MHFHaE9oWW5sblVtc0QxT1EwLVBPVWc?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-25T19:40:30Z",
-   "summary": "Sports Illustrated reports Steelers RB Rico Dowdle has been ruled out for Week 3, clearing the way for Jaylen Warren in the backfield.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Rico Dowdle",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -11.0,
-      "suggestedEdit": "Tag injured (ruled out Week 3) · −11.0 pts (1 game) · drops ~2 rounds"
-     },
-     {
-      "name": "Jaylen Warren",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 3.0,
-      "suggestedEdit": "Role boost (Dowdle out, lead back) · +3.0 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 9/25 — Dowdle (PIT RB) ruled out for Week 3; −11.0 = board per-game value (11.0 ppg) × 1 game. Warren (PIT RB, 10.4 ppg) inherits the lead role; +3.0 (est. share gain)."
-   }
-  },
-  {
-   "id": "fantasy-football-owners-get-a-promising",
-   "title": "Fantasy Football Owners Get a Promising Adonai Mitchell Finger Injury Update - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPRmJUWE9MYmM4WURnU0c2eUpwTUYwZ1U3VnBRMjJQNTYzelpmUzl5ZHc3el8xMkVyNWpxX3hfcUdmeDk1OGhab2EwTG1iNkhkbE91RDAzNFYyODhwenZsU0dUYUozY0ZoNHhrRmt0RHVBMkVJMjMydTludFJvWlJfMDVRME12R29SRllpcDdrWnR6Mm54cVRCNTZGQkxtTWVYYkl5dE1tVHlDM195UXQycA?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-25T18:51:59Z",
-   "summary": "Sports Illustrated relays a promising update on Jets WR Adonai Mitchell's finger injury, suggesting he is trending toward playing.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Adonai Mitchell",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 2.5,
-      "suggestedEdit": "Role boost (finger improving, on track to play) · +2.5 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 9/25 — Mitchell (NYJ WR, 6.7 ppg) is trending positively on his finger injury; +2.5 (est.) modest health bump for a depth WR."
-   }
-  },
-  {
-   "id": "devonta-smith-dealing-with-hamstring-inj",
-   "title": "DeVonta Smith Dealing with hamstring injury - thefantasyfootballers.com",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdjFBVUcxbXVLQmh5ZkxrTVN6bUd6UXNTOUZoZkNhSEZ6eHg1aWpqTXNCQnd1NTZBeTlWcGtLNnpsRXpzQUpQZXdwV2J1bFJ6MEM3TlFNMzdWbm9hUXdrT1lYN196Z1pTY25jWW1uQ0Q2cDBIMF9hQTZ4a2t5QnYybklzY2RVQmxrbzhReEcxUWlqek1DRG1ack1R?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-24T23:13:38Z",
-   "summary": "The Fantasy Footballers report Eagles WR DeVonta Smith is dealing with a hamstring injury, putting his Week 3 status in doubt.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "DeVonta Smith",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -14.3,
-      "suggestedEdit": "Tag injured (hamstring, Week 3 in doubt) · −14.3 pts (1 game) · drops ~2 rounds"
-     }
-    ],
-    "note": "Grounded: Fantasy Footballers 9/24 — Smith (PHI WR) is dealing with a hamstring injury and is in doubt for Week 3; −14.3 = board per-game value (14.3 ppg) × 1 projected game."
-   }
-  },
-  {
-   "id": "the-latest-injury-updates-for-week-3-in",
-   "title": "The Latest Injury Updates For Week 3 In Fantasy Football: Jaxson Dart Out For The Year, Jameis Winston In - FantasyLife",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRFJIYWZjVnhaRFhEOTlUbXg5WUpVbUZtQmtFOWlQdmxpdTFXMjRCejRzR0xIeXFndmpjN2xzNGptRDdVR09OSkZVSHpJSWZUZ3BQM0laenJEc1BTamJuOTNiNmxQSnlueUstYmpuRG5vcXVidi1yZ0lpR3BTR1Fhd19yX3J6VF9rd2JENnpyUnNWaHZ3cDFxanZaWU9WU2prYnpXSzlrbG5RNHJSV2xaYjB6UmlHOTFNYUpNeG0wNGV1S090U2dkZDlR?oc=5",
-   "source": "FantasyLife",
-   "published": "2026-09-24T10:00:00Z",
-   "summary": "FantasyLife reports Giants QB Jaxson Dart is out for the year, opening the door for Jameis Winston at quarterback.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jaxson Dart",
-      "action": "injured",
-      "games": 15,
-      "deltaPts": -288.0,
-      "suggestedEdit": "Tag injured (out for the season) · −288.0 pts (15 games) · drops ~6 rounds"
-     },
-     {
-      "name": "Jameis Winston",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 5.0,
-      "suggestedEdit": "Role boost (named NYG starting QB) · +5.0 pts · move up ~2 rounds"
-     }
-    ],
-    "note": "Grounded: FantasyLife 9/24 — Dart (NYG QB, 19.2 ppg per board) is out for the season; −288.0 = board per-game value × 15 remaining games. Winston is not in board.json, so his +5.0 streaming boost is a sane estimate (est.)."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-alec-pier",
-   "title": "Fantasy Football Injury Impact: Alec Pierce Being Placed On IR Could Make Josh Downs A Breakout Star - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOckNIc3Y2OXZ6OVFNRmVPYUhzdDE0ZEFoSmRYUzVLenMwN0cya3FTeHgwSDhnTTBCaFVzSUhpSUppSUNMWF9jNUd4d1h0YXlWa1pweWNKSUZvcUF1dDllY0JTWHpZdHJqS09qVkhmdjB0T05SZ2tLV1VpMzdlc0prdEVncEhxU0VWSGZYUThwQ3ZNMERNcW03RXdxVkFOcjhEX3g1MVNhUjhHOFV5dFVaSHN6ME5UenNfaUZ3YUR6TkhwSHdZMTFmVHhOeXNib3AxWU1uN1BHNA?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-23T16:10:47Z",
-   "summary": "Sports Illustrated argues Alec Pierce's move to IR could turn Colts WR Josh Downs into a breakout fantasy star.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Josh Downs",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 4.0,
-      "suggestedEdit": "Role boost (Pierce on IR, target share up) · +4.0 pts · move up ~2 rounds"
-     }
-    ],
-    "note": "Grounded: SI 9/23 — with Alec Pierce on IR (his −49.2 is already tagged), Downs (IND WR, 10.0 ppg) is flagged as the breakout beneficiary; +4.0 (est.) target-share gain."
    }
   }
  ]
