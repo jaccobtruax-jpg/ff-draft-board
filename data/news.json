@@ -3,6 +3,145 @@
  "sample": false,
  "items": [
   {
+   "id": "buccaneers-qb-baker-mayfield-dislocates",
+   "title": "Buccaneers QB Baker Mayfield dislocates thumb in Vikings loss, will undergo MRI - nytimes.com",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObjNxUlAtc21YZ0hRU21jbW1DbW85VUdRZElJNXM2S2xOSTQwd3REMS1ETlhrdDJzNUZCY2tSUmVkaUZRaF9STTNGOFp1S2h5ckRLUVc4UVhxRExtOUMxTjQzam12OE9ka0NrdUV6WGNpekhVNjg5MnN3S3B0SnlSdkRhMzVZaklxTldLY3IwRDJQRVZuTFFiUQ?oc=5",
+   "source": "nytimes.com",
+   "published": "2026-09-28T02:42:57Z",
+   "summary": "Buccaneers QB Baker Mayfield dislocated his thumb in the Week 3 loss to the Vikings and will undergo an MRI, putting his Week 4 status in doubt.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Baker Mayfield",
+      "action": "injured",
+      "games": 2,
+      "deltaPts": -34.8,
+      "suggestedEdit": "Tag injured (dislocated thumb, MRI) · −34.8 pts (2 games) · drops ~3 rounds"
+     }
+    ],
+    "note": "Grounded: The Athletic/NYT 9/28 — Mayfield (TB QB, 17.4 ppg per board) dislocated his thumb and will undergo an MRI; −34.8 = per-game value × 2 games, upgrading the earlier 1-game −17.4 tag (est., timetable pending MRI)."
+   }
+  },
+  {
+   "id": "jalon-daniels-steps-in-late-for-an-injur",
+   "title": "Jalon Daniels Steps in late for an injured Mayfield - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNT01HNXpkZ3ZTczVYTlhLbWx6OEdXcVR1LU9YakZ3WENhdFZXM0FabHI5SjYtQVlJWGpiU1oyb0lVOUR4VlE5N3BueUpfYTNTVWNUSTlncGVWTk9oTzVqTHB2SUtwbC1JcUpsUXc2Y2hoOC1iSDFuUDZMWXNWQnhOSHhJRmpUc1dLUGpXQm5nM2JWTG9uVE5wSUsyLXJsUHhsWGRVcg?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "2026-09-28T01:08:09Z",
+   "summary": "Backup QB Jalon Daniels stepped in late for the injured Baker Mayfield in the Buccaneers' Week 3 loss.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jalon Daniels",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 6.0,
+      "suggestedEdit": "Role boost (stepped in for injured Mayfield) · +6.0 pts · move up ~1 round"
+     }
+    ],
+    "note": "Grounded: Fantasy Footballers 9/28 — Daniels stepped in late for the injured Mayfield. Not in board.json, so +6.0 is a conservative est. spot-start bump, capped by Mayfield's unknown absence length (est.)."
+   }
+  },
+  {
+   "id": "rams-te-terrance-ferguson-exits-broncos",
+   "title": "Rams TE Terrance Ferguson Exits Broncos Game With Apparent Injury - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYVlOQm15a1JWWkZKY1FmUXdHRk9EX2Y5Y056cnRKNDNzUmkzUEdTVVJSYjhEdHRiaHAyRnc4VDk3MkNmNTBOOU9fVVNTdHdZazZFWmVCLWFiYkdqUFdjckNpaXJIZ1Zua3ZncktMTUo3SzFuWFh2X2F4Ul9UczlySUppTkw3NHc?oc=5",
+   "source": "Yahoo Sports",
+   "published": "2026-09-28T00:52:00Z",
+   "summary": "Rams TE Terrance Ferguson left Sunday's game against the Broncos with an apparent injury but returned after the scare.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 9/27 + RotoBaller 9/28 — Ferguson (LAR TE, 5.0 ppg per board) exited with an apparent injury but returned; no missed time, so no stat edit."
+   }
+  },
+  {
+   "id": "travis-etienne-jr-aggravates-hamstring-i",
+   "title": "Travis Etienne Jr. Aggravates hamstring injury - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOLUNWX01XdUp1QlMzZEVDNzlFWGJDM0l4cHVkblNQa2FaRXNTUzZ3enh1NzFwYkpibVVxX3ozcWdiZnhPMDQ2TnBrQkJud3UtNkJBbWRpaHJ0NUdkMjViR3d2TklMd2pVT1o0ZHZlUFNwaUVyeFZvQ1U1NnlNUFNVSXpvT29oMmc2d3hEMjdrQ2dOMjRWY1FPTA?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "2026-09-28T00:33:45Z",
+   "summary": "Saints RB Travis Etienne Jr. aggravated his hamstring injury and headed to the locker room in Week 3.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Travis Etienne Jr.",
+      "action": "injured",
+      "games": 2,
+      "deltaPts": -25.6,
+      "suggestedEdit": "Tag injured (hamstring aggravated) · −25.6 pts (2 games) · drops ~2 rounds"
+     }
+    ],
+    "note": "Grounded: Fantasy Footballers 9/28 — Etienne (NO RB, 12.8 ppg per board) aggravated his hamstring and left for the locker room; −25.6 = per-game value × 2 games, extending the earlier 1-game −12.8 tag (est.)."
+   }
+  },
+  {
+   "id": "mike-evans-dealing-with-rib-oblique-inju",
+   "title": "Mike Evans Dealing with rib/oblique injury - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQXzRLdkNtRWU0RlNPQzZJMEpORkJGcjA0RW50VmFDMWxjblFOT29kcm1Rek9FS3ZJQnE1cXA1UDVyZUtVcXRBdGpQVnVFVGNUelNhUW92dkVwUnR1NmplcFNqZWtzVEJYSjA0cElCTU9WbG5ZbzZkMFJVSk91ak93RVBzd1pTUlpvNFY0azk2OEtkbWJDWDJTOA?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "2026-09-27T23:59:51Z",
+   "summary": "49ers WR Mike Evans is now listed with a rib/oblique injury after being ruled out of Sunday's game.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Mike Evans",
+      "action": "injured",
+      "games": 2,
+      "deltaPts": -25.4,
+      "suggestedEdit": "Tag injured (rib/oblique, ruled out) · −25.4 pts (2 games) · drops ~2 rounds"
+     }
+    ],
+    "note": "Grounded: Fantasy Footballers 9/27 — Evans (SF WR, 12.7 ppg per board) is dealing with a rib/oblique injury after being ruled out; −25.4 = per-game value × 2 games, extending the earlier 1-game −12.7 tag (est.)."
+   }
+  },
+  {
+   "id": "vikings-wr-justin-jefferson-ruled-out-af",
+   "title": "Vikings WR Justin Jefferson ruled out after suffering ankle injury vs. Buccaneers - nytimes.com",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaVhhbnZITUpjaGtSbERBYWR2eWNrc0owdnpoelM3WnBpeXRsLXNaSERKS3FsVndvcURPVGZHLS1wbWNuTk83REVFUDRNVjh1QkUwYXJMUk95elpvZlV3VWdHRHJXb2NoRjZnaWZQeFc3Y2hLa21wMURaVGNTUWFKUF9CN0pMeG5vNlhPZkh1a2RfQWltYXRZaC1uQQ?oc=5",
+   "source": "nytimes.com",
+   "published": "2026-09-27T23:51:06Z",
+   "summary": "The Vikings ruled WR Justin Jefferson out after he suffered an ankle injury against the Buccaneers in Week 3.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Justin Jefferson",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -15.3,
+      "suggestedEdit": "Tag injured (ankle, ruled out vs. Buccaneers) · −15.3 pts (1 game) · drops ~2 rounds"
+     }
+    ],
+    "note": "Grounded: The Athletic/NYT 9/27 — Jefferson (MIN WR, 15.3 ppg per board) was officially ruled out after an ankle injury; −15.3 = board per-game value × 1 game. Monitor for a multi-week designation."
+   }
+  },
+  {
+   "id": "fantasy-football-week-3-inactives-puka-n",
+   "title": "Fantasy football Week 3 inactives: Puka Nacua out for Sunday Night Football - ESPN",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNU2ZuUWkwejhMcnp2RG5RbTlhNjVfclFuNm9MQjhQbHBIcmdyNHBrb0tYNFc5a25sU3d0eWNVUVFsY2NzeW5ta1Eyb0RJVG5JdFZOcEd4czJYeHNhc09sdTBnVk9oSmpnaFZsaVFnc1gtZWFWX2Rqam5zZmtjZl9zSHEtbDNOc3ZkZTN5Z0NGT1JjbFE1Ry1nNnpOakdaSWJPZE5RMEJ0RlRrb0FyWGgw?oc=5",
+   "source": "ESPN",
+   "published": "2026-09-27T23:35:00Z",
+   "summary": "ESPN's Week 3 inactives report lists Rams WR Puka Nacua as out for Sunday Night Football.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Puka Nacua",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -19.1,
+      "suggestedEdit": "Tag injured (out Week 3 SNF) · −19.1 pts (1 game) · drops ~2 rounds"
+     }
+    ],
+    "note": "Grounded: ESPN 9/27 — Nacua (LAR WR, 19.1 ppg per board) is out for Sunday Night Football; −19.1 = board per-game value × 1 game (est., Week 3 only until the team gives a longer timeline)."
+   }
+  },
+  {
    "id": "buccaneers-qb-baker-mayfield-leaves-late",
    "title": "Buccaneers QB Baker Mayfield leaves late vs. Vikings with apparent hand injury - The New York Times",
    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObjNxUlAtc21YZ0hRU21jbW1DbW85VUdRZElJNXM2S2xOSTQwd3REMS1ETlhrdDJzNUZCY2tSUmVkaUZRaF9STTNGOFp1S2h5ckRLUVc4UVhxRExtOUMxTjQzam12OE9ka0NrdUV6WGNpekhVNjg5MnN3S3B0SnlSdkRhMzVZaklxTldLY3IwRDJQRVZuTFFiUQ?oc=5",
@@ -42,6 +181,40 @@
      }
     ],
     "note": "Grounded: Fantasy Footballers 9/27 — Etienne (NO RB, 12.8 ppg per board) has a hamstring injury; −12.8 = board per-game value × 1 game (est., severity unconfirmed)."
+   }
+  },
+  {
+   "id": "week-3-fantasy-football-panic-meter-earl",
+   "title": "Week 3 Fantasy Football panic meter: Early Week 4 waiver wire adds, Kenyon Sadiq breaks out as must add - CBS Sports",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQdGExUDlTQVZGZUNjV0xrTEhEYVFCWGp6a3lXd3Z6QjdZOEpMekpjY3drZVNCNnJ5N2VMa2J1cVpRZ2hqVEdsSFR5NXFSclZFSzR0Z0hFM3U2MG1UZTR4RGxxWnI3ZG5OcUZOYzk0RG80LTBmbnh5UG0zRXk3UVBjYXQwSEpWMEF0dE5lT3p1X2lzeGFDTS1pd3ZPLS1fSGwwSXpkVzZyR2xwdkhBNGFncDZGanVMU2xmUTR0aVJ1NV81S0tHQVZJb09iZUlvTC1pYkRDcGFOWHJYZ2pPSnNzaHpZTlQ?oc=5",
+   "source": "CBS Sports",
+   "published": "2026-09-27T22:59:00Z",
+   "summary": "CBS Sports' Week 3 panic-meter column flags Jets TE Kenyon Sadiq as a breakout must-add for Week 4.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Kenyon Sadiq",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 5.0,
+      "suggestedEdit": "Role boost (breakout, must-add TE) · +5.0 pts · move up ~1 round"
+     }
+    ],
+    "note": "Grounded: CBS Sports 9/27 — Sadiq (NYJ TE, 7.4 ppg per board) broke out and is tabbed a must-add; +5.0 is an estimated opportunity bump (est.)."
+   }
+  },
+  {
+   "id": "fantasy-football-week-4-early-trade-targ",
+   "title": "Fantasy Football Week 4 Early Trade Targets (2026) - FantasyPros",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdWtQb3ZSVXl3ZVotU0IxQ3BYb0pnNTFhNkd2NWJwQXZBcEx0OHE5UEZZeDVQTzRDaVl0VGFmNm51ZTNMUjdwc3BFc0xTTnd5VWpDc3ZubnpxclNUY00xTWYzeVp1TGdWZkQ4ZmJkbEl4U2k4WF9lMnVBbzg0azRzZ3JHc29jbVl3eEtPRGtR0gGTAUFVX3lxTE5ENldJWDFBWV9KVTgxRktQUkNmMkRmUDlBcUpUOVM3S25La25qZXQyMWgxU0dNVHNDSTRRX0M4Zm9hOWtZanVuT293RE0yT0dXRml2blNCbW5kX0plak1nSlg5SzR5N3MxUXVCZlBRUTJoOFVEbDdoMF9rdlZBVWs1bHhuWXRLUm1Fb29KT25xdUNpTQ?oc=5",
+   "source": "FantasyPros",
+   "published": "2026-09-27T22:42:03Z",
+   "summary": "FantasyPros' early Week 4 trade-targets column highlights buy-low and sell-high names after the Week 3 injury wave.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: FantasyPros 9/27 — a Week 4 trade-targets column rather than a single-player ruling; the specific names are covered by their own items, so no standalone stat edit."
    }
   },
   {
@@ -323,6 +496,27 @@
    }
   },
   {
+   "id": "is-zay-flowers-playing-week-3-fantasy-fo",
+   "title": "Is Zay Flowers Playing Week 3? Fantasy Football Injury Update - FantasyPros",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPM3V2OGNTSzdOZHJXMkRJVC1SX09vaGJFS1FfXzhtaEtXTXNpZXRZQy1TeldlTmNoRWtwQldDSEpDUllERFJNZkZHUUM0Yy1OWTZudzVWNDJGUHNuX2hIY2owemZSM0RkdVh6dFY3czlpRzJwOGk5NHg3MHVkVVdzYy1uRndNN2xuS1I5ZllMWm9iQXhPTnZSYlRsbVplQdIBowFBVV95cUxNVWM0RzBfWEdiV2QyNW5xQzFweEdIZFg4NmNWVGVPQVh6LWRxRGt6TUhXcmhhWGV3SDBnMTlLNElrQmluRGg2UVE5VGtrdWp0Q3pISXdNOHR6TzJJX1VQWDMtWmFXcHk0SkRLa3F5a1VETHVkNmdVaUlobXNSU1JrTmRPaVMxVTJQQ016d0NLRzdaY0s5OFBGZkhWZVM0M0FuSEQw?oc=5",
+   "source": "FantasyPros",
+   "published": "2026-09-27T15:56:51Z",
+   "summary": "Ravens WR Zay Flowers was a Week 3 game-time decision, and reports leaned toward a likely absence.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Zay Flowers",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -14.4,
+      "suggestedEdit": "Tag injured (game-time decision Week 3) · −14.4 pts (1 game) · drops ~2 rounds"
+     }
+    ],
+    "note": "Grounded: FantasyPros 9/27 + CBS 9/27 — Flowers (BAL WR, 14.4 ppg per board) was a game-time decision with the team hinting at a likely absence; −14.4 = board per-game value × 1 game (est.)."
+   }
+  },
+  {
    "id": "brock-bowers-injury-update-raiders-tight",
    "title": "Brock Bowers injury update: Raiders tight end reportedly expected to make season debut in Week 3 against Saints - Yahoo Sports",
    "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPbFV0cEptSjBrdFBOQ3pQM1BpaHhYMS0tQ0JGQ29ZM1lNOXM0bko0T0ZZdnN1OXZETmJfNEZqRW84RE9ndktqQXZGeTV4dGFPcTNqY1hfZTVndGc5d3RZY0JtTGdHaVdpOC1sVmxwbW9vQ1EwX1ZtLUJQV0swR0tVMU82eEw5SmJTTEliY2lKSE5CU3pYWDQ1ZEtwdWVLYTFxLWRKMU1rX1hIdkdHSXhGVGN0eFVWN3dibDhWeVA5cDNzdFF1b2w2YmxsOVFEMFVVM1NwMm5wbVRvLVhZQ1pJbGlnZmtHalpncDNqVDh5M0NLSjh0bWp3QXVPZ1VaTkZBMEFzWGcwcw?oc=5",
@@ -388,183 +582,6 @@
      }
     ],
     "note": "Grounded: ESPN 9/27 — Williams (CHI QB, 18.6 ppg per board) now carries a 3-4 week timeline, extending the earlier 1-game −18.6 tag; −55.8 = board per-game value × 3 games (est., low end of the range)."
-   }
-  },
-  {
-   "id": "nfl-week-3-weather-conditions-fantasy-fo",
-   "title": "NFL Week 3 Weather Conditions (Fantasy Football)",
-   "url": "https://www.thefantasyfootballers.com/analysis/nfl-week-3-weather-conditions-fantasy-football-6/",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-27T11:00:11Z",
-   "summary": "The Fantasy Footballers break down Week 3 NFL weather conditions and the games most likely to be affected.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Fantasy Footballers 9/27 — a Week 3 weather-conditions piece (wind/rain flags) rather than a player ruling; useful context for kickers and DFS stacks, so no stat edit."
-   }
-  },
-  {
-   "id": "fantasy-football-week-3-injury-news-whic",
-   "title": "Fantasy Football Week 3 Injury News: Which Stars Have Been Ruled Out? - FantasySP",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRFIzSEZadzdTelhTSWlnSklUX1dwUTNZYWFrUjVpZXRYeWc3bkdSNUk0X21pZDRFVHBfQlM1Zm9TdzBfT1ROQ2ZWQ1pYZ01jNUNrOTQxcXhWSVBNakZzUldKLXZyYVZfeU1oemtZNjlQUjVyZmdXMlhXWEpSNWFTRjF6dVg?oc=5",
-   "source": "news.google.com",
-   "published": "2026-09-27T00:49:37Z",
-   "summary": "FantasySP's Week 3 roundup lists the fantasy-relevant stars who have been ruled out ahead of Sunday.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: FantasySP 9/26 — a Week 3 'who's ruled out' roundup; the individual rulings (Caleb Williams, Jonah Coleman, Alec Pierce, etc.) are itemized separately, so no duplicate stat edit."
-   }
-  },
-  {
-   "id": "final-week-3-fantasy-football-projection",
-   "title": "Final Week 3 Fantasy Football Projections and Rankings: Updated for News and Injuries - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPOHdNeGNTVFdjQ0lUcVJERUcxcUlJcjBUYjFRV2ZBbFo2NE1qSTlVRlNvT25qSFhrRm1OUzVLWkFaNW90SG5pR2dlMXhETUZnejlWenlocWNxNU1tZUV1cGtWVUJ5ckE2SHRaenZMRUZNT1lOVEdXV3JXMjNPclJ2ZVFlNGw?oc=5",
-   "source": "Yahoo Sports",
-   "published": "2026-09-26T22:47:21Z",
-   "summary": "Yahoo's final Week 3 projections and rankings, refreshed for the latest injury news and practice reports.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 9/26 — a rankings/projections refresh rather than a single-player ruling; any player-specific movement is already itemized, so no standalone stat edit."
-   }
-  },
-  {
-   "id": "demarcus-robinson-moved-to-injured-reser",
-   "title": "Demarcus Robinson Moved to injured reserve - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOczNhT2ppT1RLWnROV0ZOUFN3aERCWUF2djhUUW5RdUg3cHZPcVhvblBTNzV5SlBEVmVfS196UzdYem9zMjNvV3M2RVNYZ0hOTWVsblRTUV9UWHIySU9saEItRElGN0tNZkpPWkZLVTk3NklrUXVReG9jNGJUMENJd1Y5Y0Rhdjd1MjBrUGZRU3drc3JwLS00bw?oc=5",
-   "source": "news.google.com",
-   "published": "2026-09-26T21:29:44Z",
-   "summary": "The Fantasy Footballers report WR Demarcus Robinson has been moved to injured reserve, sidelining him at least four games.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Demarcus Robinson",
-      "action": "injured",
-      "games": 4,
-      "deltaPts": -28.0,
-      "suggestedEdit": "Tag injured (IR, out ~4 games) · −28.0 pts (4 games) · drops ~3 rounds"
-     }
-    ],
-    "note": "Grounded: Fantasy Footballers Podcast 9/26 — Robinson (WR) to IR (min. 4 games); −28.0 uses a WR depth estimate (7.0 ppg) × 4 games (est., not in board.json)."
-   }
-  },
-  {
-   "id": "fantasy-football-week-3-inactives-caleb",
-   "title": "Fantasy football Week 3 inactives: Caleb Williams out, Puka Nacua uncertain, Darnold a go - ESPN",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNU2ZuUWkwejhMcnp2RG5RbTlhNjVfclFuNm9MQjhQbHBIcmdyNHBrb0tYNFc5a25sU3d0eWNVUVFsY2NzeW5ta1Eyb0RJVG5JdFZOcEd4czJYeHNhc09sdTBnVk9oSmpnaFZsaVFnc1gtZWFWX2Rqam5zZmtjZl9zSHEtbDNOc3ZkZTN5Z0NGT1JjbFE1Ry1nNnpOakdaSWJPZE5RMEJ0RlRrb0FyWGgw?oc=5",
-   "source": "news.google.com",
-   "published": "2026-09-26T21:16:00Z",
-   "summary": "ESPN's Week 3 inactives report: Bears QB Caleb Williams is out, Rams WR Puka Nacua stays uncertain, and Seahawks QB Sam Darnold is good to go.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Caleb Williams",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -18.6,
-      "suggestedEdit": "Tag injured (ruled out Week 3) · −18.6 pts (1 game) · drops ~2 rounds"
-     },
-     {
-      "name": "Sam Darnold",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 3.0,
-      "suggestedEdit": "Role boost (active Week 3) · +3.0 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: ESPN 9/26 — Williams (CHI QB, 18.6 ppg) ruled out for Week 3; −18.6 = board per-game value × 1 game. Darnold (SEA QB, 14.9 ppg) is a go (+3.0 clean-status bump, est.). Nacua's Week 3 status is still unresolved — the existing −19.1 tag stands."
-   }
-  },
-  {
-   "id": "jonah-coleman-lands-on-injured-reserve-f",
-   "title": "Jonah Coleman Lands on injured reserve - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOODJMWUQ1UzVPY3BLNFc1bW1tVHJLQTVIZUpWZzdzT3l1UzZFZVVGN0dLMFlNMVFoYkZLN0JRbEtQWmY5TURPVTNvdWQ0NExSekpFcGdZTDJqXzhTa3c4WVlkYzdzcnhzZjJURWdXZ085dTRucElTaVpsUC1sVlF4VURhbHJTd29EVkdHcG9JYlN5WGM?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-26T20:46:27Z",
-   "summary": "The Fantasy Footballers report Broncos RB Jonah Coleman has been placed on injured reserve, sidelining him well beyond his earlier Week 3 ruling.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jonah Coleman",
-      "action": "injured",
-      "games": 4,
-      "deltaPts": -24.4,
-      "suggestedEdit": "Tag injured (IR, out ~4 games) · −24.4 pts (4 games) · drops ~3 rounds"
-     }
-    ],
-    "note": "Grounded: Fantasy Footballers Podcast 9/26 — Coleman (DEN RB) to IR (min. 4 games), extending the earlier Week 3-only tag; −24.4 = board per-game value (6.1 ppg) × 4 projected games. Dobbins/Harvey gain further (their +3.5 boosts still stand)."
-   }
-  },
-  {
-   "id": "bears-vs-eagles-injury-report-tyson-bage",
-   "title": "Bears vs. Eagles Injury Report: Tyson Bagent is Questionable - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdE10d0EzY1lVNENIa0l0d3BnRU1EbTRDV2RmWFhSdXBscDZBa3MydFIxeG8ybi1LY2RFaDlNMUdEZVRMWHVGRHVWSHZ1dGpYNVJMSHprY05pT01Ea1FrVk5UV0lsUFgyS3dyMjlRNHNPS0V5THlqb1FQTU9reWVieDd1bXI?oc=5",
-   "source": "news.google.com",
-   "published": "2026-09-26T20:13:22Z",
-   "summary": "Yahoo's Bears-Eagles injury report lists Chicago QB Tyson Bagent as questionable, clouding the backup's status with Caleb Williams already ruled out.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 9/26 — Bagent (CHI QB) is a backup and not fantasy-rosterable, so no stat edit; note Chicago's QB room is thin with Caleb Williams out (see the Williams −18.6 Week 3 tag)."
-   }
-  },
-  {
-   "id": "alec-pierce-officially-goes-on-injured-r",
-   "title": "Alec Pierce Officially goes on injured reserve - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNa0VFbW0zNFhzeVBIX2QzRVpxbEpZdTV6WkRpT0hCaDN0MnQwQnRZM0hEclYxTjNWQW9PaF9OemFoX1N1SjFoaVhQY3RwUm1EZEQ5WTY3MHdCVDlsTVM5U2s4SExHNHQxaWFBX2lvSXRhNWt0QTRtNkwyRUFNdW9IX2hVXzkyTGVSbEJCQkYzbnJNRXdBYjBpa25jUUxfdw?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-26T16:44:43Z",
-   "summary": "The Fantasy Footballers confirm Colts WR Alec Pierce has officially been placed on injured reserve, ending his regular-season availability for at least four games.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Alec Pierce",
-      "action": "injured",
-      "games": 4,
-      "deltaPts": -49.2,
-      "suggestedEdit": "Tag injured (IR, out ~4 games) · −49.2 pts (4 games) · drops ~4 rounds"
-     }
-    ],
-    "note": "Grounded: Fantasy Footballers Podcast 9/26 — Pierce (IND WR) to IR (min. 4 games); −49.2 = board per-game value (12.3 ppg) × 4 projected games. Remaining Colts WRs (e.g., Josh Downs) absorb targets — monitor."
-   }
-  },
-  {
-   "id": "nfl-injury-report-fantasy-football-week",
-   "title": "NFL Injury Report | Fantasy Football Week 3, 2026 - PlayerProfiler",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSG4yb1lkMHppaHFVSFdOTGp6WWVUNkhjUk1DMDlDUkhJUmV1VHBWWHo4cDlFdHNnWVAwa09RR0FuLUhfeWYzM0FFT2wyNV9Dcms5N3ppZFZJdnhaTUpfX3hTQVJkb2dPR09Md0loamdYenhxN3doQXVtMGQweWpqS01Td1dpbWNlVzdHZE44QQ?oc=5",
-   "source": "PlayerProfiler",
-   "published": "2026-09-26T16:20:52Z",
-   "summary": "PlayerProfiler's aggregated Week 3 injury report covering the fantasy-relevant names still carrying designations into Sunday.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: PlayerProfiler 9/26 — a composite injury-report page rather than a single ruling; player-specific tags are already itemized (Nacua, Bowers, Flowers, Moore, etc.), so no duplicate stat edit."
-   }
-  },
-  {
-   "id": "injury-update-jayden-daniels-could-be-back",
-   "title": "Injury Update: Jayden Daniels Could Be Back In Fantasy Football Lineups Much Sooner Than Expected - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObmlsX1dMSXR0dXJXczU5WHlGbmhlbU5vN0l3YURteVROdC1QbFhCMFNGVEVweUY2UVFfU2dabXIyWGpsdjkxTnhfdDJja2xiUG1YdG9uUHF5Vmdub3h4Y1NfNUlDV3lDazFlUk4yTDVqRlVfSmk0QmFtMnQ2VjZWU1lBdTYwdEFC?oc=5",
-   "source": "Yahoo Sports",
-   "published": "2026-09-26T15:55:02Z",
-   "summary": "Yahoo reports Commanders QB Jayden Daniels (elbow) could return to fantasy lineups sooner than expected after being labeled week-to-week.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jayden Daniels",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 19.1,
-      "suggestedEdit": "Return boost (back sooner than expected) · +19.1 pts · move up ~2 rounds"
-     }
-    ],
-    "note": "Grounded: Yahoo 9/26 + Commanders 9/25 (week-to-week, avoids IR) — Daniels (WAS QB, 19.1 ppg) is trending back earlier than feared; +19.1 = board per-game value restored, partially reversing the earlier −38.2 (2-game) tag."
    }
   }
  ]
