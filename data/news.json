@@ -1,7 +1,159 @@
 {
- "updated": "2026-09-28",
+ "updated": "2026-09-29",
  "sample": false,
  "items": [
+  {
+   "id": "justin-jefferson-injury-update-wr-avoid",
+   "title": "Justin Jefferson Injury Update: WR Avoids Fantasy Football Setback Ahead Of Week 4 - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPV0FJaHl6ZU9SaXdTVzhzNDc3QlJMYmFtLXoxZTBRcE14OUhnbEV5N1dJYkJkWEVTNkZDTHVtb2k0SW5Pdnp1ZjVobHBGOWItc1VnZ1puVjU1eV82Rms1d0FZV0JqTzhmYnV1Zl9YNHJjZ3N0bmZ5d01CTFVTUVpRUDFKSU5JN2tfbl9Zenc1QTBqV1ZaeDBNNU1xTlhBX3pEb1IxYXMza0Y2MWRFMHd6aHM0RGg3OEVBNW84?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-28T17:25:37Z",
+   "summary": "Justin Jefferson reportedly avoided any setback in his ankle recovery, putting the Vikings WR on track for Week 4.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Justin Jefferson",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 15.3,
+      "suggestedEdit": "Return boost (avoids setback ahead of Week 4) · +15.3 pts · move up ~2 rounds"
+     }
+    ],
+    "note": "Grounded: SI 9/28 — Jefferson (MIN WR, 15.3 ppg per board) avoided a setback; +15.3 reverses the earlier −15.3 (1-game) ankle tag (est.)."
+   }
+  },
+  {
+   "id": "fantasy-managers-sigh-relief-after-garr",
+   "title": "Fantasy Managers Sigh Relief After Garrett Wilson Injury Update: Jets Depth Chart is A-Changing - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaHV2M0ZaSVVqdXZaLWk1czl2aEVMaEE0ejF1RzQxUXVpMTROZlUza2xmbVlrYWdZd1E2Rjl0MkhXTkZJc2ViMm92SkpQMWYzcVFydGZsbzBjOVVHQ2NHUHJnbUEtV1lXb2VhM3RyMlhzTURKU1hGTmRmVG56YURuVzVSYkxoclFjS2Q2NWVxV1BCazZWNTN6TmQxdGRnYWxnSU5xVEtpbDJWYUk4TjVV?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-28T16:39:09Z",
+   "summary": "An update on Garrett Wilson's injury brought relief to fantasy managers, with the Jets' depth chart shifting behind him.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Garrett Wilson",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 14.9,
+      "suggestedEdit": "Return boost (injury scare cleared) · +14.9 pts · move up ~2 rounds"
+     }
+    ],
+    "note": "Grounded: SI 9/28 — Wilson (NYJ WR, 14.9 ppg per board) appears to have avoided a serious injury; +14.9 = board per-game value restored (est.)."
+   }
+  },
+  {
+   "id": "fantasy-football-free-agent-pickups-gord",
+   "title": "Fantasy football free agent pickups: Gordon leads options to replace Achane for Week 4 and beyond - ESPN",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNOHE1dTloNnBQNVpPdHF5dTE2emswckh6Q2ViakU3VUNOLWEzblVDb3RpSFVzMTA4Wm5fWjBfVnVndVhPOEJ5WjdFSEJFOTI3TFpfTzVGZm96WmVQb1prLWxuU09TekNEUENsX08tWnNTbkVraFZQLTdPbFp2TzNOT0pIZU0xc203Wk5oU1BoVUNxSXRRb2haRkN4T3lILXpZTzRVa2Itd2JMUGpWd3dUa1dCbDA2Y2VhOWhEanBzUXZNV3l6X3kyV1Z1N1NEWWpac2Fz?oc=5",
+   "source": "ESPN",
+   "published": "2026-09-28T16:05:00Z",
+   "summary": "ESPN names Ollie Gordon II as the top waiver-wire option to replace the injured De'Von Achane in Miami for Week 4 and beyond.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Ollie Gordon II",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 6.0,
+      "suggestedEdit": "Role boost (lead Miami option with Achane out) · +6.0 pts · move up ~2 rounds"
+     }
+    ],
+    "note": "Grounded: ESPN 9/28 — Gordon (MIA RB, 2.3 ppg per board) is the lead handcuff now that Achane is out for the season; +6.0 is an estimated lead-role bump (est.), building on the earlier +4.0 volume tag."
+   }
+  },
+  {
+   "id": "fantasy-football-stock-watch-risers-and",
+   "title": "Fantasy Football Stock Watch: Risers and Fallers with Michael Wilson Flying Up and David Montgomery Heading Down - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQY0VBWDBZZWJmVjFFMlZoNkltZU9FYTNjelRjeWJPaEhGOF9KQXRpeXJ4NDJMbWZKMF84YnV0N2dOU2gtVFR6VEx3ckYxeHQxYmhZTk5oN2Z0UTJuTVZJX3IzZkh3ZDNiSUlyTW9Fck5SQmtMR2NXaVpxcmh1R1Y2V0dRYjFxQmlxcnFkQWZsRVoxeWpXRnQ0NkNPSTNwMXpGbld4MHd0MDZ1UFBJVThUMVRlYzh5NmdmYXpYOWdlaHdtenJ5NmRqM3B5VHBmWGt2TElRejVNbm9CYUZRVUJySA?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-28T16:00:10Z",
+   "summary": "SI's stock watch has Cardinals WR Michael Wilson rising sharply while Texans RB David Montgomery trends down.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Michael Wilson",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 4.0,
+      "suggestedEdit": "Role boost (stock rising, usage up) · +4.0 pts · move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/28 — Wilson (ARI WR, 10.8 ppg per board) is a top riser; +4.0 is an estimated opportunity bump (est.). David Montgomery (HOU RB, 11.4 ppg) is trending down but has no supported action, so he is noted only."
+   }
+  },
+  {
+   "id": "jalen-coker-s-quad-injury-not-serious",
+   "title": "Jalen Coker's Quad Injury Not Serious - Draft Sharks",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVEJCVm8zY25JTUJnYjZXcjJpMW1uRzVuU1h6QVhDc2phNGlCVVEtakcxS2RlM1FlZjV4SEJqcWFYRVB5S3pxTEpGeXgwZGRCV0ZNZVpXcXlXRHpWdVBkd3pScjYyUVo2bzZwSVdTMGhJOURPZUtwa3ZidjhCVzVEVzhCZjRNc1RhUzFYQzd2eExSNTM0YlU4?oc=5",
+   "source": "Draft Sharks",
+   "published": "2026-09-28T15:42:44Z",
+   "summary": "Draft Sharks reports Panthers WR Jalen Coker's quad injury is not serious after he left Sunday's game.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Draft Sharks 9/28 — Coker (CAR WR, 9.3 ppg per board) avoided a serious quad injury; this confirms the earlier +3.0 clean-health bump, so no additional edit."
+   }
+  },
+  {
+   "id": "breece-hall-injury-update-coming-wednesd",
+   "title": "Breece Hall Injury Update Coming Wednesday - NFL News | Fantasy Football - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVkszLURzRmw5ODBqR3lSaDYwMklPb1VKaTNRblpPSmYyc09GN1duR1ppbVdJRGJwZGh1M05nMVZMb0dQclhDRVc0VXhBNXBfTHU3dmwyekZHQVMtQ2xlb2JZMFZpcFZsV3NQT1dpRWJvMWZuTzZCVTJKSHp2TVE0Z05LU3dPZUthTlFnSmVKNWVwYlE?oc=5",
+   "source": "RotoBaller",
+   "published": "2026-09-28T15:28:12Z",
+   "summary": "RotoBaller reports the Jets will provide a Breece Hall thigh-injury update on Wednesday, leaving his Week 4 status unresolved.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: RotoBaller 9/28 — Hall (NYJ RB, 13.5 ppg per board) has no new designation; team update due Wednesday, so no stat edit beyond the existing −13.5 (1-game) tag."
+   }
+  },
+  {
+   "id": "latest-fantasy-football-news-de-von-ac",
+   "title": "Latest fantasy football news: De’Von Achane’s season is over - The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRmROVzRVOUlrSEM1dGUzemZCaFVCR0ZoY241bXVuMHZOWkhJMWxuRU1JWXcxODlpbXRSaVJlcW1JV19MMXQzcThTVTU0alZSQjN5SmtHUzFNVVlMNFo4Nmd5Y0l5TDhBR2hrZW4xRnNBQmdwQWhlT3hhSUdadXBSalVrTGNjcGtMOGJGbEhhbWNGQzVCay1YX0JTbERqWWZFTG5yU1dxUVgwdTRoM3lF?oc=5",
+   "source": "nytimes.com",
+   "published": "2026-09-28T15:25:27Z",
+   "summary": "A season-ending knee injury has been confirmed for Dolphins RB De'Von Achane after the Week 3 MRI, ending his 2026 campaign.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "De'Von Achane",
+      "action": "injured",
+      "games": 14,
+      "deltaPts": -232.4,
+      "suggestedEdit": "Tag injured (knee, out for season) · −232.4 pts (14 games) · drops out of draftable range"
+     }
+    ],
+    "note": "Grounded: NYT 9/28 — Achane (MIA RB, 16.6 ppg per board) is out for the season; −232.4 = 16.6 × ~14 remaining games (est.). Supersedes the earlier 1- and 2-game Achane tags."
+   }
+  },
+  {
+   "id": "fantasy-football-injury-impact-bears-off",
+   "title": "Fantasy Football Injury Impact: Bears’ Offense Takes Massive Hit with Case Keenum Starting - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTk1vZlJGZHQ0a1lqbnljRl9GWjFWU1kxTlU3dkNpNVVrY1M1V0txUy0za0xLbU1TNTRqMW9oaUtuZ0c1LVYxS1NUQllEQUt6N0ZfTG4yX2FTQWtuYV9hR2lXR3Z5b05EcjNWNlVUem5qaXJxRTFBOUR0amxIdy1iWFVkRXFLR09DamRtcHczSXlIX3lzNndRR2EzNUdZTl9KcGo5czNYMERCTjZmRk1DdldBZ3BNU01VM3R1UzBWaEItV0ZJTFduZw?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-28T15:12:38Z",
+   "summary": "With Case Keenum starting in place of the injured Caleb Williams, the Bears' offense takes a significant fantasy hit.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Caleb Williams",
+      "action": "injured",
+      "games": 3,
+      "deltaPts": -55.8,
+      "suggestedEdit": "Tag injured (hamstring, out; Keenum starting) · −55.8 pts (3 games) · drops ~4 rounds"
+     }
+    ],
+    "note": "Grounded: SI 9/28 — Keenum (not in board) starting confirms Williams' (CHI QB, 18.6 ppg per board) multi-week absence; −55.8 = 18.6 × 3 games on the earlier 3-4 week timeline (est.)."
+   }
+  },
   {
    "id": "week-3-top-fantasy-football-performers-i",
    "title": "Week 3 Top Fantasy Football Performers & Injury Updates - FantasyLife",
@@ -446,166 +598,6 @@
      }
     ],
     "note": "Grounded: Fantasy Footballers 9/27 — Hall (NYJ RB, 13.5 ppg per board) left Week 3 with a thigh injury and did not return; −13.5 = board per-game value × 1 game, with the severity still unresolved (est.)."
-   }
-  },
-  {
-   "id": "de-von-achane-injury-update-as-dolphins-",
-   "title": "De'Von Achane injury update as Dolphins RB hobbles off field - USA Today",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPd2kwSXJHazU0bHdrNC1MYS1SSzZrWWdSMjN3UG1NX0hIbjhGenpydjA3NVBtR0JsYU9rUGdvVUNuLVZjemRhNlBqRUNQSjR3X2lNb3pYVHhtOW5NWFlxeS02NjhFTVQtV1ozeG9WbzU4S2RiZGpVeVZXMlhSck90ZkJEZmFnbXNyd2kxUTJJNHBtM18xMWI0b3UzNW8zcGlDNExBVjl5RQ?oc=5",
-   "source": "USA Today",
-   "published": "2026-09-27T17:19:00Z",
-   "summary": "De'Von Achane's Week 3 status is in question after the Dolphins running back was seen hobbling off the field during Sunday's game.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "De'Von Achane",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -17.9,
-      "suggestedEdit": "Tag injured (Week 3, hobbled off) · −17.9 pts (1 game) · drops ~2 rounds"
-     }
-    ],
-    "note": "Grounded: USA Today/Yahoo 9/27 — Achane (MIA RB, 17.9 ppg per board) hobbled off in Week 3; −17.9 = board per-game value × 1 game, with the severity still unknown (est.)."
-   }
-  },
-  {
-   "id": "is-zay-flowers-playing-week-3-fantasy-fo",
-   "title": "Is Zay Flowers Playing Week 3? Fantasy Football Injury Update - FantasyPros",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPM3V2OGNTSzdOZHJXMkRJVC1SX09vaGJFS1FfXzhtaEtXTXNpZXRZQy1TeldlTmNoRWtwQldDSEpDUllERFJNZkZHUUM0Yy1OWTZudzVWNDJGUHNuX2hIY2owemZSM0RkdVh6dFY3czlpRzJwOGk5NHg3MHVkVVdzYy1uRndNN2xuS1I5ZllMWm9iQXhPTnZSYlRsbVplQdIBowFBVV95cUxNVWM0RzBfWEdiV2QyNW5xQzFweEdIZFg4NmNWVGVPQVh6LWRxRGt6TUhXcmhhWGV3SDBnMTlLNElrQmluRGg2UVE5VGtrdWp0Q3pISXdNOHR6TzJJX1VQWDMtWmFXcHk0SkRLa3F5a1VETHVkNmdVaUlobXNSU1JrTmRPaVMxVTJQQ016d0NLRzdaY0s5OFBGZkhWZVM0M0FuSEQw?oc=5",
-   "source": "FantasyPros",
-   "published": "2026-09-27T15:56:51Z",
-   "summary": "Ravens WR Zay Flowers was a Week 3 game-time decision, and reports leaned toward a likely absence.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Zay Flowers",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -14.4,
-      "suggestedEdit": "Tag injured (game-time decision Week 3) · −14.4 pts (1 game) · drops ~2 rounds"
-     }
-    ],
-    "note": "Grounded: FantasyPros 9/27 + CBS 9/27 — Flowers (BAL WR, 14.4 ppg per board) was a game-time decision with the team hinting at a likely absence; −14.4 = board per-game value × 1 game (est.)."
-   }
-  },
-  {
-   "id": "brock-bowers-injury-update-raiders-tight",
-   "title": "Brock Bowers injury update: Raiders tight end reportedly expected to make season debut in Week 3 against Saints - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPbFV0cEptSjBrdFBOQ3pQM1BpaHhYMS0tQ0JGQ29ZM1lNOXM0bko0T0ZZdnN1OXZETmJfNEZqRW84RE9ndktqQXZGeTV4dGFPcTNqY1hfZTVndGc5d3RZY0JtTGdHaVdpOC1sVmxwbW9vQ1EwX1ZtLUJQV0swR0tVMU82eEw5SmJTTEliY2lKSE5CU3pYWDQ1ZEtwdWVLYTFxLWRKMU1rX1hIdkdHSXhGVGN0eFVWN3dibDhWeVA5cDNzdFF1b2w2YmxsOVFEMFVVM1NwMm5wbVRvLVhZQ1pJbGlnZmtHalpncDNqVDh5M0NLSjh0bWp3QXVPZ1VaTkZBMEFzWGcwcw?oc=5",
-   "source": "Yahoo Sports",
-   "published": "2026-09-27T14:13:14Z",
-   "summary": "Reports indicate Raiders TE Brock Bowers is expected to make his season debut in Week 3 against the Saints.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Brock Bowers",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 15.3,
-      "suggestedEdit": "Return boost (expected season debut Week 3) · +15.3 pts · move up ~2 rounds"
-     }
-    ],
-    "note": "Grounded: Yahoo/Bleacher Report 9/27 — Bowers (LV TE, 15.3 ppg per board) is expected to make his season debut, reversing the earlier −15.3 (1-game) tag."
-   }
-  },
-  {
-   "id": "jonah-coleman-fantasy-week-3-start-or-si",
-   "title": "Jonah Coleman Fantasy Week 3 Start or Sit: Hold Tight Through the Ankle Injury - sports.yahoo.com",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNYzlrWDQwaVJrbE5Vb2JmR2tiWng3aTkwUGJrN0RseGxIVjNNWEtHU3NnanUxdFVmZGNvdmlnOUlLN2E2cGo3bGt5c0N5QVQtY05KQnZmclBDZl80elB3Q004Q0pFTVFRM0xQcTdfTGRFdEl0MHQxZDJjR3lmSkxJM0J4TQ?oc=5",
-   "source": "sports.yahoo.com",
-   "published": "2026-09-27T12:40:00Z",
-   "summary": "Yahoo's start/sit advice suggests holding through Broncos RB Jonah Coleman's ankle injury in Week 3.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jonah Coleman",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -6.1,
-      "suggestedEdit": "Tag injured (ankle) · −6.1 pts (1 game) · drops ~1 round"
-     }
-    ],
-    "note": "Grounded: Yahoo 9/27 — Coleman (DEN RB, 6.1 ppg per board) is managing an ankle injury; −6.1 = board per-game value × 1 game (est.)."
-   }
-  },
-  {
-   "id": "sources-caleb-williams-injury-considered",
-   "title": "Sources: Caleb Williams injury considered to have 3-4 week timeline - ESPN",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSk1aLWJXTlo2M0tZS0RsODB2SUF0cm5NNUlPbXBybndkYk9lMGswSXdzZlFwSHY5dXhlMjYtcjdhOHoyMkJfVl9JZHhBakZoR05xM1VpcDBMZUJLMEpTdHphZ0xWYmNUNHVHblQtZmZmQTdJSGpNSHl2aTRwaEJjVEJMUENRTDA2TDNlY0NaTlJRWE16WTdkWVlFMERZZ2hl?oc=5",
-   "source": "ESPN",
-   "published": "2026-09-27T12:00:00Z",
-   "summary": "ESPN reports league sources believe Caleb Williams' hamstring injury carries a 3-4 week timeline, extending the Bears QB's absence beyond Week 3.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Caleb Williams",
-      "action": "injured",
-      "games": 3,
-      "deltaPts": -55.8,
-      "suggestedEdit": "Tag injured (hamstring, 3-4 week timeline) · −55.8 pts (3 games) · drops ~4 rounds"
-     }
-    ],
-    "note": "Grounded: ESPN 9/27 — Williams (CHI QB, 18.6 ppg per board) now carries a 3-4 week timeline, extending the earlier 1-game −18.6 tag; −55.8 = board per-game value × 3 games (est., low end of the range)."
-   }
-  },
-  {
-   "id": "injury-update-jayden-daniels-could-be-ba",
-   "title": "Injury Update: Jayden Daniels Could Be Back In Fantasy Football Lineups Much Sooner Than Expected - sports.yahoo.com",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObmlsX1dMSXR0dXJXczU5WHlGbmhlbU5vN0l3YURteVROdC1QbFhCMFNGVEVweUY2UVFfU2dabXIyWGpsdjkxTnhfdDJja2xiUG1YdG9uUHF5Vmdub3h4Y1NfNUlDV3lDazFlUk4yTDVqRlVfSmk0QmFtMnQ2VjZWU1lBdTYwdEFC?oc=5",
-   "source": "sports.yahoo.com",
-   "published": "2026-09-26T15:55:02Z",
-   "summary": "Yahoo reports Commanders QB Jayden Daniels could return to fantasy lineups much sooner than expected based on his latest injury update.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jayden Daniels",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 19.1,
-      "suggestedEdit": "Return boost (back sooner than expected) · +19.1 pts · move up ~2 rounds"
-     }
-    ],
-    "note": "Grounded: Yahoo 9/26 — Daniels (WAS QB, ~19.1 ppg per board) is reportedly on track to return much sooner than expected; +19.1 = board per-game value restored (est. timeline)."
-   }
-  },
-  {
-   "id": "saquon-barkley-kyle-monangai-and-more-in",
-   "title": "Saquon Barkley, Kyle Monangai and more injury updates for fantasy-relevant RBs in NFL Week 3 - The Big Lead",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNS1Z3S1ZzczI2WWxEMnF3ZXdfVzFmM2o0TWZUeUMxUUZHNnlXSjhHVVN4MTJQZWdNOTllYnJ3RV9NLXk2RWNtc3p6WkphZVRMWFZHNTZKeHFkcDRBZzdUZWJRY3FFV3lxRlZtOTVHQkJHQk54SlVPbEN2VFV3X3BvZ3RkU2liT19mVXFLX1JKa1dTQkVfdXFqWEt1V0xQYTNiTmNHWlVB?oc=5",
-   "source": "The Big Lead",
-   "published": "2026-09-26T11:46:54Z",
-   "summary": "The Big Lead rounds up Week 3 injury updates for fantasy-relevant running backs, including Saquon Barkley and Kyle Monangai.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: The Big Lead 9/26 — an RB injury roundup naming Saquon Barkley (PHI, 14.4 ppg) and Kyle Monangai (CHI, 9.2 ppg); the headline states no direction, so no standalone stat edit."
-   }
-  },
-  {
-   "id": "fantasy-football-owners-get-a-promising",
-   "title": "Fantasy Football Owners Get a Promising Adonai Mitchell Finger Injury Update - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPRmJUWE9MYmM4WURnU0c2eUpwTUYwZ1U3VnBRMjJQNTYzelpmUzl5ZHc3el8xMkVyNWpxX3hfcUdmeDk1OGhab2EwTG1iNkhkbE91RDAzNFYyODhwenZsU0dUYUozY0ZoNHhrRmt0RHVBMkVJMjMydTludFJvWlJfMDVRME12R29SRllpcDdrWnR6Mm54cVRCNTZGQkxtTWVYYkl5dE1tVHlDM195UXQycA?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-25T18:51:59Z",
-   "summary": "Sports Illustrated relays a promising finger injury update for Jets WR Adonai Mitchell.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Adonai Mitchell",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 6.6,
-      "suggestedEdit": "Return boost (promising finger update) · +6.6 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: Sports Illustrated 9/25 — Mitchell (NYJ WR, 6.6 ppg per board) received a promising finger injury update; +6.6 = board per-game value restored (est.)."
    }
   }
  ]
