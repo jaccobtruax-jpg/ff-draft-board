@@ -3,6 +3,19 @@
  "sample": false,
  "items": [
   {
+   "id": "week-3-top-fantasy-football-performers-i",
+   "title": "Week 3 Top Fantasy Football Performers & Injury Updates - FantasyLife",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUDZFUnFHX21hZkxOeExGY19seXU3OWJJSEJJRlkxdWVncTFhVGdDbmRITVRjaHljY0Q5WGNVMXRTMFdFa1RBS2xrcnJJTE1Fand1dWxYNjhkTVE5V29ZaktUMWktNnhnYkVYb3RJdkFLX1VlNjIwaUhGdE00YjZ4WTExb08tTWQ1eGowX3lCOU5xMGpCOVVtZzFBX2dFV2c?oc=5",
+   "source": "FantasyLife",
+   "published": "2026-09-28T10:00:00Z",
+   "summary": "FantasyLife recaps the top Week 3 fantasy performers alongside the latest injury updates across the league.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: FantasyLife 9/28 — a Week 3 performers/injury roundup covering multiple players already itemized individually, so no standalone stat edit."
+   }
+  },
+  {
    "id": "buccaneers-qb-baker-mayfield-dislocates",
    "title": "Buccaneers QB Baker Mayfield dislocates thumb in Vikings loss, will undergo MRI - nytimes.com",
    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObjNxUlAtc21YZ0hRU21jbW1DbW85VUdRZElJNXM2S2xOSTQwd3REMS1ETlhrdDJzNUZCY2tSUmVkaUZRaF9STTNGOFp1S2h5ckRLUVc4UVhxRExtOUMxTjQzam12OE9ka0NrdUV6WGNpekhVNjg5MnN3S3B0SnlSdkRhMzVZaklxTldLY3IwRDJQRVZuTFFiUQ?oc=5",
@@ -24,6 +37,19 @@
    }
   },
   {
+   "id": "rj-harvey-injury-update-latest-news-on-b",
+   "title": "RJ Harvey injury update: Latest news on Broncos RB's status in Week 3 game - sports.yahoo.com",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxONTBiV3o5WGRGZnB3Uk5qSFdTSlo0dHVhcEpWWk9RaEUyY1RTeVMtTHZFZXJOb2NweHRRRFRDNWJWYXdtNnBEdmhIOGE1VFVVZTdHbmZWdlN6aUprN3NpVzYyUTQ5Y1JUT0ZJSEIzWDZFdlN6QWNaTnpKelZUZmF1YW05bw?oc=5",
+   "source": "sports.yahoo.com",
+   "published": "2026-09-28T02:30:00Z",
+   "summary": "Yahoo rounds up the latest news on Broncos RB RJ Harvey's status for the Week 3 game.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 9/28 — Harvey's (DEN RB, 8.6 ppg per board) Week 3 status is reported but the headline states no direction, so no stat edit until the designation is clear."
+   }
+  },
+  {
    "id": "jalon-daniels-steps-in-late-for-an-injur",
    "title": "Jalon Daniels Steps in late for an injured Mayfield - Fantasy Footballers Podcast",
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNT01HNXpkZ3ZTczVYTlhLbWx6OEdXcVR1LU9YakZ3WENhdFZXM0FabHI5SjYtQVlJWGpiU1oyb0lVOUR4VlE5N3BueUpfYTNTVWNUSTlncGVWTk9oTzVqTHB2SUtwbC1JcUpsUXc2Y2hoOC1iSDFuUDZMWXNWQnhOSHhJRmpUc1dLUGpXQm5nM2JWTG9uVE5wSUsyLXJsUHhsWGRVcg?oc=5",
@@ -42,19 +68,6 @@
      }
     ],
     "note": "Grounded: Fantasy Footballers 9/28 — Daniels stepped in late for the injured Mayfield. Not in board.json, so +6.0 is a conservative est. spot-start bump, capped by Mayfield's unknown absence length (est.)."
-   }
-  },
-  {
-   "id": "rams-te-terrance-ferguson-exits-broncos",
-   "title": "Rams TE Terrance Ferguson Exits Broncos Game With Apparent Injury - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYVlOQm15a1JWWkZKY1FmUXdHRk9EX2Y5Y056cnRKNDNzUmkzUEdTVVJSYjhEdHRiaHAyRnc4VDk3MkNmNTBOOU9fVVNTdHdZazZFWmVCLWFiYkdqUFdjckNpaXJIZ1Zua3ZncktMTUo3SzFuWFh2X2F4Ul9UczlySUppTkw3NHc?oc=5",
-   "source": "Yahoo Sports",
-   "published": "2026-09-28T00:52:00Z",
-   "summary": "Rams TE Terrance Ferguson left Sunday's game against the Broncos with an apparent injury but returned after the scare.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 9/27 + RotoBaller 9/28 — Ferguson (LAR TE, 5.0 ppg per board) exited with an apparent injury but returned; no missed time, so no stat edit."
    }
   },
   {
@@ -202,19 +215,6 @@
      }
     ],
     "note": "Grounded: CBS Sports 9/27 — Sadiq (NYJ TE, 7.4 ppg per board) broke out and is tabbed a must-add; +5.0 is an estimated opportunity bump (est.)."
-   }
-  },
-  {
-   "id": "fantasy-football-week-4-early-trade-targ",
-   "title": "Fantasy Football Week 4 Early Trade Targets (2026) - FantasyPros",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdWtQb3ZSVXl3ZVotU0IxQ3BYb0pnNTFhNkd2NWJwQXZBcEx0OHE5UEZZeDVQTzRDaVl0VGFmNm51ZTNMUjdwc3BFc0xTTnd5VWpDc3ZubnpxclNUY00xTWYzeVp1TGdWZkQ4ZmJkbEl4U2k4WF9lMnVBbzg0azRzZ3JHc29jbVl3eEtPRGtR0gGTAUFVX3lxTE5ENldJWDFBWV9KVTgxRktQUkNmMkRmUDlBcUpUOVM3S25La25qZXQyMWgxU0dNVHNDSTRRX0M4Zm9hOWtZanVuT293RE0yT0dXRml2blNCbW5kX0plak1nSlg5SzR5N3MxUXVCZlBRUTJoOFVEbDdoMF9rdlZBVWs1bHhuWXRLUm1Fb29KT25xdUNpTQ?oc=5",
-   "source": "FantasyPros",
-   "published": "2026-09-27T22:42:03Z",
-   "summary": "FantasyPros' early Week 4 trade-targets column highlights buy-low and sell-high names after the Week 3 injury wave.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: FantasyPros 9/27 — a Week 4 trade-targets column rather than a single-player ruling; the specific names are covered by their own items, so no standalone stat edit."
    }
   },
   {
@@ -386,19 +386,6 @@
    }
   },
   {
-   "id": "early-fantasy-fallout-de-von-achane-bree",
-   "title": "Early fantasy fallout: De’Von Achane. Breece Hall. Name someone, they’re probably injured - The New York Times",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUkE4ZVdpYWVBdC00VGtyOFlEZWVLMG5HenFBaEM4azBSQUdFVm10Si1OWjNJLWRlTVJfa2RJbU5MbkZENUdlQ2ZQY0liQV8taExrbVRQeF9ldDRVZXNzUVZjanRfa1B2bDBENU5WQ0hRVFROR0NGT1E5NE9oRnZlZ1pkN2V3bi1WWEktU0VHaDJfNmdTTEJDZ2xyazJKZ3NOcDdCQXFOejZSVmE2THRWVVgxbzFNQ2N0c2xtM0RhNWhhSWxYQUJKUUs5ZXV5RkU0LWc?oc=5",
-   "source": "The New York Times",
-   "published": "2026-09-27T21:03:09Z",
-   "summary": "The Athletic's early Week 3 fallout piece surveys the wave of injuries, led by De'Von Achane and Breece Hall.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: The Athletic/NYT 9/27 — a league-wide injury-fallout roundup; the named players (Achane, Hall) are itemized separately, so no duplicate stat edit."
-   }
-  },
-  {
    "id": "de-von-achane-coach-lacks-optimism-regar",
    "title": "De'Von Achane Coach lacks optimism regarding knee injury - Fantasy Footballers Podcast",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUE5lOG1GX19xYmQwX0ZQX25Wc2hobHF1MUthWUlsUC1kQzVXaDVsNnB3am9kR1ZveURJcHFpZlg2dDlULWlXMWhIS3hycEU0LWVPY1RqdlhyWlQtOUVSaS1MczdzcllFWW4za3hEbjZDTzYtYVFmcWUwc2tRdzJtSzdjZzRzdFlOb205N3loUGhhcFFrWncwbndoU19iTlhaNS1uRnVxc2hUQQ?oc=5",
@@ -417,19 +404,6 @@
      }
     ],
     "note": "Grounded: Fantasy Footballers 9/27 — Achane (MIA RB, 16.6 ppg per board) has a knee injury and the coach lacks optimism; −33.2 = per-game value × 2 games (est., upgraded from the earlier 1-game tag)."
-   }
-  },
-  {
-   "id": "fantasy-football-week-4-early-waiver-wir",
-   "title": "Fantasy Football Week 4 Early Waiver Wire Pickups: Ollie Gordon II, Braelon Allen top adds after De'Von Achane, Breece Hall injuries - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOWmdOY3RrbWhUZ29FTnFSb1dEdDc3Y3ZVdHNaUGFPbUJfQW1IWlJObHFIQWMzX2FRQnV3V2hwX192d0RhYzFsYW1hMmZEVmMyckV4cWN6YjMtTkI4V2dTN0ZVQ1dJSlBPb3RjcmUzd0w1QlBLbmR1YTU4UlduVFNIdE9kLXpuVjFzcU5tSmF5VU9CTWJ4cHplMmlMSzFnVzlBdFk2dnNiRWpZcm0wU3hPVlNyaXJ2aEt1X2lBQVZYMVNJU25VaGQ0ck5HMDFrQlNPWmtPM3hNeUcxMEdlN1ZYT2k1blhESkRUTXhwTTJreDJXNW9FclBsbWdNZERGYVZ3Nmxxb2FUTGt4ZUpTeU9RcG53?oc=5",
-   "source": "Yahoo Sports",
-   "published": "2026-09-27T20:18:53Z",
-   "summary": "Yahoo's Week 4 waiver-wire lookahead tabs Ollie Gordon II and Braelon Allen as top adds after the Achane and Hall injuries.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 9/27 — a Week 4 waiver-wire roundup; the individual adds (Gordon II, Braelon Allen) are already itemized, so no standalone stat edit."
    }
   },
   {
@@ -538,29 +512,24 @@
    }
   },
   {
-   "id": "michael-pittman-jr-injury-update-reveals",
-   "title": "Michael Pittman Jr. injury update reveals Steelers receiver’s Week 3 status vs. Bengals - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQNGVVN3YydnpxWEZ1MkNHaW5wN1JlYWpQSWVVUE9DQzlYWEItQy1TZnQ5SDBNcjJyMmJYSUN2NmFFY2FHWlBaRXRmVUNoZnBNb0pvaHdGajFZczhnS2I2UFhqcGZNemhDbHFXNUdiZUY2R0Q4WXFGeVIzbVhNS3d0MUN1M0tLczZEMWc?oc=5",
-   "source": "Yahoo Sports",
-   "published": "2026-09-27T13:04:59Z",
-   "summary": "Yahoo's update reveals Steelers WR Michael Pittman Jr.'s Week 3 status for the matchup against the Bengals.",
+   "id": "jonah-coleman-fantasy-week-3-start-or-si",
+   "title": "Jonah Coleman Fantasy Week 3 Start or Sit: Hold Tight Through the Ankle Injury - sports.yahoo.com",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNYzlrWDQwaVJrbE5Vb2JmR2tiWng3aTkwUGJrN0RseGxIVjNNWEtHU3NnanUxdFVmZGNvdmlnOUlLN2E2cGo3bGt5c0N5QVQtY05KQnZmclBDZl80elB3Q004Q0pFTVFRM0xQcTdfTGRFdEl0MHQxZDJjR3lmSkxJM0J4TQ?oc=5",
+   "source": "sports.yahoo.com",
+   "published": "2026-09-27T12:40:00Z",
+   "summary": "Yahoo's start/sit advice suggests holding through Broncos RB Jonah Coleman's ankle injury in Week 3.",
    "sample": false,
    "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 9/27 — Pittman (PIT WR, 11.3 ppg per board) Week 3 status is reported, but the headline states no direction, so no stat edit until the designation is clear."
-   }
-  },
-  {
-   "id": "puka-nacua-surgery-decision-revealed-lat",
-   "title": "Puka Nacua Surgery Decision Revealed, Latest NFL Rumors on Rams Star's Injury Timeline to Return - Bleacher Report",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOMDd4S1NnY3VUV0xGSjNuZGExR2xqTjRCRkZnVG12aWZldF9tajF3NFRYT055cGFjRmZxVUl5ZG8tQlBGOUZST05rNUNURTZOSmVreTd5ZVpXTWoySVFuMlVrTmMyNmJ5QmdRT2hNX3BUdmRLNG4tQkd1UEVPeWNyZndHekttbVpwVmtSVFBHeGhrTldtaGhmQUlsZ2ZGNnFCYlhMTi1tdDY0UE43Q2dQSGRXM2VZc0ZoM1dhQUJVSGlUcUkxUG52Y3BZZzhhQQ?oc=5",
-   "source": "Bleacher Report",
-   "published": "2026-09-27T12:58:41Z",
-   "summary": "Bleacher Report relays that Puka Nacua's surgery decision and injury return timeline have been revealed as the Rams star works back.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Bleacher Report 9/27 — Nacua's (LAR WR) surgery decision and return timeline are reported as 'revealed,' but the headline states no direction, so no stat edit; the existing −19.1 tag stands pending specifics."
+    "players": [
+     {
+      "name": "Jonah Coleman",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -6.1,
+      "suggestedEdit": "Tag injured (ankle) · −6.1 pts (1 game) · drops ~1 round"
+     }
+    ],
+    "note": "Grounded: Yahoo 9/27 — Coleman (DEN RB, 6.1 ppg per board) is managing an ankle injury; −6.1 = board per-game value × 1 game (est.)."
    }
   },
   {
@@ -582,6 +551,61 @@
      }
     ],
     "note": "Grounded: ESPN 9/27 — Williams (CHI QB, 18.6 ppg per board) now carries a 3-4 week timeline, extending the earlier 1-game −18.6 tag; −55.8 = board per-game value × 3 games (est., low end of the range)."
+   }
+  },
+  {
+   "id": "injury-update-jayden-daniels-could-be-ba",
+   "title": "Injury Update: Jayden Daniels Could Be Back In Fantasy Football Lineups Much Sooner Than Expected - sports.yahoo.com",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObmlsX1dMSXR0dXJXczU5WHlGbmhlbU5vN0l3YURteVROdC1QbFhCMFNGVEVweUY2UVFfU2dabXIyWGpsdjkxTnhfdDJja2xiUG1YdG9uUHF5Vmdub3h4Y1NfNUlDV3lDazFlUk4yTDVqRlVfSmk0QmFtMnQ2VjZWU1lBdTYwdEFC?oc=5",
+   "source": "sports.yahoo.com",
+   "published": "2026-09-26T15:55:02Z",
+   "summary": "Yahoo reports Commanders QB Jayden Daniels could return to fantasy lineups much sooner than expected based on his latest injury update.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jayden Daniels",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 19.1,
+      "suggestedEdit": "Return boost (back sooner than expected) · +19.1 pts · move up ~2 rounds"
+     }
+    ],
+    "note": "Grounded: Yahoo 9/26 — Daniels (WAS QB, ~19.1 ppg per board) is reportedly on track to return much sooner than expected; +19.1 = board per-game value restored (est. timeline)."
+   }
+  },
+  {
+   "id": "saquon-barkley-kyle-monangai-and-more-in",
+   "title": "Saquon Barkley, Kyle Monangai and more injury updates for fantasy-relevant RBs in NFL Week 3 - The Big Lead",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNS1Z3S1ZzczI2WWxEMnF3ZXdfVzFmM2o0TWZUeUMxUUZHNnlXSjhHVVN4MTJQZWdNOTllYnJ3RV9NLXk2RWNtc3p6WkphZVRMWFZHNTZKeHFkcDRBZzdUZWJRY3FFV3lxRlZtOTVHQkJHQk54SlVPbEN2VFV3X3BvZ3RkU2liT19mVXFLX1JKa1dTQkVfdXFqWEt1V0xQYTNiTmNHWlVB?oc=5",
+   "source": "The Big Lead",
+   "published": "2026-09-26T11:46:54Z",
+   "summary": "The Big Lead rounds up Week 3 injury updates for fantasy-relevant running backs, including Saquon Barkley and Kyle Monangai.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: The Big Lead 9/26 — an RB injury roundup naming Saquon Barkley (PHI, 14.4 ppg) and Kyle Monangai (CHI, 9.2 ppg); the headline states no direction, so no standalone stat edit."
+   }
+  },
+  {
+   "id": "fantasy-football-owners-get-a-promising",
+   "title": "Fantasy Football Owners Get a Promising Adonai Mitchell Finger Injury Update - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPRmJUWE9MYmM4WURnU0c2eUpwTUYwZ1U3VnBRMjJQNTYzelpmUzl5ZHc3el8xMkVyNWpxX3hfcUdmeDk1OGhab2EwTG1iNkhkbE91RDAzNFYyODhwenZsU0dUYUozY0ZoNHhrRmt0RHVBMkVJMjMydTludFJvWlJfMDVRME12R29SRllpcDdrWnR6Mm54cVRCNTZGQkxtTWVYYkl5dE1tVHlDM195UXQycA?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-25T18:51:59Z",
+   "summary": "Sports Illustrated relays a promising finger injury update for Jets WR Adonai Mitchell.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Adonai Mitchell",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 6.6,
+      "suggestedEdit": "Return boost (promising finger update) · +6.6 pts · move up ~1 round"
+     }
+    ],
+    "note": "Grounded: Sports Illustrated 9/25 — Mitchell (NYJ WR, 6.6 ppg per board) received a promising finger injury update; +6.6 = board per-game value restored (est.)."
    }
   }
  ]
