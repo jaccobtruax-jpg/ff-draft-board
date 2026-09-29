@@ -3,6 +3,40 @@
  "sample": false,
  "items": [
   {
+   "id": "jalen-mcmillan-injury-is-aggravation-of-prev",
+   "title": "Jalen McMillan Injury is aggravation of previous issue - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbDJWcVltM3pvZ2tMX1E1SWxRUS1NZlZHTHhTc1dpLVRTZXhWNDVjX0RNelhLZklkNWJmeW1kT0xYOFgxSWlDTlBKb3NsQjYwa0FrbHJVZDVNbDEyRExOd1dOdGo5ckliMWc3N3c4MUtqc2xQU1plYXA4OWQ1ajlEamZ3M2lfQ3BkeU16RmRTOUdvQi12MlR3alVHVXFDa2FtU29SR1pWMUo?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "2026-09-28T23:29:49Z",
+   "summary": "The Fantasy Footballers report Jalen McMillan's latest injury is an aggravation of a previous issue, clouding his Week 4 availability.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jalen McMillan",
+      "action": "injured",
+      "games": 2,
+      "deltaPts": -10.4,
+      "suggestedEdit": "Tag injured (aggravation, expected to miss time) \u00b7 \u221210.4 pts (2 games) \u00b7 drops ~2 rounds"
+     }
+    ],
+    "note": "Grounded: FFB Podcast 9/28 \u2014 McMillan's injury is an aggravation of a prior issue (est. 2 games missed). TB WR \u22485.2 ppg per board (full PPR/17)."
+   }
+  },
+  {
+   "id": "49ers-don-t-expect-wr-mike-evans-to-be-out-l",
+   "title": "49ers don\u2019t expect WR Mike Evans to be out \u2018long term\u2019 with rib injury - The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWjltcnQ2ZDc3UW0zV1YwQlFBakdqMVQ0Vmc5T041T1k0aWpld0RJWUhxR0ZlMFFCMkhYbUh1NGJiTVlOTFdLc0k0eG1RaHFwR1ViQ0F3RjU0N041MzZ4M3dVbG9qd0RxUThpLXo0TGZBQS15UVhqdGRnMzJxOXJMQ2UyY25rZ1lM?oc=5",
+   "source": "The New York Times",
+   "published": "2026-09-28T22:02:50Z",
+   "summary": "The 49ers do not expect wide receiver Mike Evans to be sidelined long term with his rib injury.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: NYT 9/28 \u2014 49ers don't expect Mike Evans out long term (rib); SF WR \u224812.8 ppg per board, no stat edit."
+   }
+  },
+  {
    "id": "nfl-injury-report-week-4-latest-news-upd",
    "title": "NFL Injury Report, Week 4: Latest news, updates on Justin Jefferson, De'Von Achane more for fantasy football - Yahoo Sports",
    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQSTFvWjJ3TWJobVZEYU41QzFoSkhRT2xiNm1yeDRmRFQtamFxeFhabXgtdkxidnNHZTN5aTZydE84TFVuZGxPaFJLTjgzOW50cnN2eG9BSUdCWXF5UUJtR2tiWTNBanpVbHFjMEdTMUctYXNNd0p4bHRoczE1OW51LWhzcXQyLUx6MTAzeHQ0QkxMM1NBZlNKZ25pR0ljSHFiai12cmdWck0xZUtTckh4eFo5VDJWTGhwRnVJX2lOT0FwaHhDT3czWEdNcE9qZDdMb0J4SVY3NThHclRQZkhybXNpQU93UklUNGVkWkdhTUg?oc=5",
@@ -12,7 +46,46 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: Yahoo 9/28 — Week 4 injury roundup covering Jefferson (15.3 ppg), Achane (16.6 ppg) and others already itemized individually, so no standalone stat edit."
+    "note": "Grounded: Yahoo 9/28 \u2014 Week 4 injury roundup covering Jefferson (15.3 ppg), Achane (16.6 ppg) and others already itemized individually, so no standalone stat edit."
+   }
+  },
+  {
+   "id": "eagles-make-final-devonta-smith-decision-for",
+   "title": "Eagles Make Final DeVonta Smith Decision for Monday Night Football vs. Bears - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUVhibjE1cFlGbXFKSmpmVVYtZG1OWkFVUVVQaHFmMEFpZlBtU2NTUDBhZVBNcmFFU2lrY2Q3ZC1rNi1OcUZ1QWlvMkdXMG9wV0plNjVoY2lMZnZZZTE0UzFnNTg2Mi0xa0Ridkg1Y0dJaFhXYlZBeHZNUzRTdkNxaXZ4U1ZmX1lKTmRuVQ?oc=5",
+   "source": "Yahoo Sports",
+   "published": "2026-09-28T21:30:59Z",
+   "summary": "The Eagles made their final DeVonta Smith call for Monday Night Football against the Bears.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 9/28 \u2014 Eagles' final DeVonta Smith decision for MNF vs. Chicago; no lasting fantasy stat change, so no edit."
+   }
+  },
+  {
+   "id": "de-von-achane-injured-j-j-mccarthy-traded-to",
+   "title": "De'Von Achane INJURED & J.J. McCarthy TRADED to Giants | 2026 Injuries, News & Notes | Fantasy Football Today - CBS Sports",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOYzhRNkRuNjNxYTZ0TlU2cXNkSDhFeGxGb1JKbElBUWNLUk96ekRqQWpDQ3BrSzdwM0xlSDVYWDBiUkEyMHVWV0ZnNU1hdjlQTGEzMmN2UGNIMUtBM1dQdzI5QWJkMjk0UE0zamZjazBaTmV0V3Z2Z2tmMmJfcWk3bEgxeERkVVo5aUsxQ2hXOHBHTFY2Sy1zeEd5aGtWMVhmOEdCNi1oSTRaLUtNMDRaWkJ1dTFwSWE2RG0zNlowSnV3MG52UllmZjVUcXdwdC1BUjQzVXdrRQ?oc=5",
+   "source": "CBS Sports",
+   "published": "2026-09-28T21:18:14Z",
+   "summary": "CBS Sports' fantasy news roundup covers De'Von Achane's season-ending injury and J.J. McCarthy being traded to the Giants.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: CBS 9/29 \u2014 J.J. McCarthy traded to the Giants (2026) plus the Achane injury already itemized; McCarthy not in board.json, no standalone stat edit."
+   }
+  },
+  {
+   "id": "jaylen-wright-remains-day-to-day-fantasy-foo",
+   "title": "Jaylen Wright Remains 'day-to-day' - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWGJ6Tjl3UFFpSVVMZWpjZERLckluSzY5NDFQY21TVXZlLXZRYjlvQy1VNVhGVDVBNkhOanRkVy0zRktpMWROMGxkYjZHQXdVejlZY0xTUnBCRm01VGhMbThoOS0wUExYY3phN2l2RFVzc3Zta1VEcG5LampHS1c2ZFBQdExSaHhSOWJr?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "2026-09-28T20:53:57Z",
+   "summary": "The Fantasy Footballers note Jaylen Wright remains day-to-day, muting his value as Miami's backfield replacement for the injured De'Von Achane.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: FFB Podcast 9/28 \u2014 Jaylen Wright remains 'day-to-day' (MIA RB, \u22482.9 ppg); uncertainty caps his Achane-replacement value, no edit."
    }
   },
   {
@@ -30,10 +103,10 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 6.0,
-      "suggestedEdit": "Role boost (Hall banged up, MRI update) · +6.0 pts · move up ~2 rounds"
+      "suggestedEdit": "Role boost (Hall banged up, MRI update) \u00b7 +6.0 pts \u00b7 move up ~2 rounds"
      }
     ],
-    "note": "Grounded: SI 9/28 — Hall's (NYJ RB, 13.5 ppg per board) MRI update keeps his Week 4 status unsettled; Allen (NYJ RB, 3.8 ppg) gets +6.0 as an est. handcuff/committee bump, no new edit on Hall beyond the existing −13.5 tag (est.)."
+    "note": "Grounded: SI 9/28 \u2014 Hall's (NYJ RB, 13.5 ppg per board) MRI update keeps his Week 4 status unsettled; Allen (NYJ RB, 3.8 ppg) gets +6.0 as an est. handcuff/committee bump, no new edit on Hall beyond the existing \u221213.5 tag (est.)."
    }
   },
   {
@@ -51,17 +124,17 @@
       "action": "injured",
       "games": 2,
       "deltaPts": -25.6,
-      "suggestedEdit": "Tag injured (hamstring, will miss time) · −25.6 pts (2 games) · drops ~2 rounds"
+      "suggestedEdit": "Tag injured (hamstring, will miss time) \u00b7 \u221225.6 pts (2 games) \u00b7 drops ~2 rounds"
      },
      {
       "name": "Alvin Kamara",
       "action": "boost",
       "games": 0,
       "deltaPts": 6.0,
-      "suggestedEdit": "Role boost (Etienne out) · +6.0 pts · move up ~2 rounds"
+      "suggestedEdit": "Role boost (Etienne out) \u00b7 +6.0 pts \u00b7 move up ~2 rounds"
      }
     ],
-    "note": "Grounded: SI 9/28 — Etienne (NO RB, 12.8 ppg per board) will miss time; −25.6 = 12.8 × 2 games, extending the earlier 2-game tag. Kamara (NO RB, 5.8 ppg) gets +6.0 as an est. expanded-role bump (est.)."
+    "note": "Grounded: SI 9/28 \u2014 Etienne (NO RB, 12.8 ppg per board) will miss time; \u221225.6 = 12.8 \u00d7 2 games, extending the earlier 2-game tag. Kamara (NO RB, 5.8 ppg) gets +6.0 as an est. expanded-role bump (est.)."
    }
   },
   {
@@ -74,7 +147,28 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: SI 9/28 — headline names no specific players, and the sleeper candidates (Miami backs) are already covered by the Wright/Gordon boosts, so no duplicate edit."
+    "note": "Grounded: SI 9/28 \u2014 headline names no specific players, and the sleeper candidates (Miami backs) are already covered by the Wright/Gordon boosts, so no duplicate edit."
+   }
+  },
+  {
+   "id": "fantasy-football-impact-of-puka-nacua-s-even",
+   "title": "Fantasy Football Impact of Puka Nacua's Eventual Return From Injury - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMUM2c1VKbk00dm5TV3JMN2IzMUVDeU9hZ0l4UnluMDlrWlpVcmlOaXI0X0dyaUhwWlNMaVUxMGtsc21sejZSSmRDQTl1dHpkdmE3UTdEYXI0TGxpNW1SU1pTOExaMF9Mc2FxV29aVXdTTDZtN2xMejM3RWh6QWUwTU1Ibm5mRENTcU9nU3hxNW9tVjBsRkhBUHUyR2NBbVJCQmhxcTJDZw?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-28T18:10:56Z",
+   "summary": "Sports Illustrated breaks down what Puka Nacua's eventual return from injury means for his rest-of-season fantasy value.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Puka Nacua",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 6.0,
+      "suggestedEdit": "Role boost (returning from injury) \u00b7 +6.0 pts \u00b7 move up ~2 rounds"
+     }
+    ],
+    "note": "Grounded: SI 9/28 \u2014 Puka Nacua's eventual return from injury restores his \u224819 ppg (LAR WR per board, full PPR/17); +6.0 as an est. recency bump."
    }
   },
   {
@@ -92,10 +186,10 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 15.3,
-      "suggestedEdit": "Return boost (avoids setback ahead of Week 4) · +15.3 pts · move up ~2 rounds"
+      "suggestedEdit": "Return boost (avoids setback ahead of Week 4) \u00b7 +15.3 pts \u00b7 move up ~2 rounds"
      }
     ],
-    "note": "Grounded: SI 9/28 — Jefferson (MIN WR, 15.3 ppg per board) avoided a setback; +15.3 reverses the earlier −15.3 (1-game) ankle tag (est.)."
+    "note": "Grounded: SI 9/28 \u2014 Jefferson (MIN WR, 15.3 ppg per board) avoided a setback; +15.3 reverses the earlier \u221215.3 (1-game) ankle tag (est.)."
    }
   },
   {
@@ -113,10 +207,10 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 6.0,
-      "suggestedEdit": "Role boost (Achane out, top Miami add) · +6.0 pts · move up ~2 rounds"
+      "suggestedEdit": "Role boost (Achane out, top Miami add) \u00b7 +6.0 pts \u00b7 move up ~2 rounds"
      }
     ],
-    "note": "Grounded: Yahoo 9/28 — Wright (MIA RB, 2.8 ppg per board) is favored over Gordon for the vacated Achane role; +6.0 is an est. lead-role bump (est.)."
+    "note": "Grounded: Yahoo 9/28 \u2014 Wright (MIA RB, 2.8 ppg per board) is favored over Gordon for the vacated Achane role; +6.0 is an est. lead-role bump (est.)."
    }
   },
   {
@@ -129,7 +223,7 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: NBC Sports 9/28 — multi-story aftermath column; the Week 3 injuries are already itemized and the J.J. McCarthy trade is not board-relevant (not in board.json), so no stat edit."
+    "note": "Grounded: NBC Sports 9/28 \u2014 multi-story aftermath column; the Week 3 injuries are already itemized and the J.J. McCarthy trade is not board-relevant (not in board.json), so no stat edit."
    }
   },
   {
@@ -147,10 +241,10 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 14.9,
-      "suggestedEdit": "Return boost (injury scare cleared) · +14.9 pts · move up ~2 rounds"
+      "suggestedEdit": "Return boost (injury scare cleared) \u00b7 +14.9 pts \u00b7 move up ~2 rounds"
      }
     ],
-    "note": "Grounded: SI 9/28 — Wilson (NYJ WR, 14.9 ppg per board) appears to have avoided a serious injury; +14.9 = board per-game value restored (est.)."
+    "note": "Grounded: SI 9/28 \u2014 Wilson (NYJ WR, 14.9 ppg per board) appears to have avoided a serious injury; +14.9 = board per-game value restored (est.)."
    }
   },
   {
@@ -163,7 +257,28 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: FTN 9/28 — Week 4 injury preview with no new single-player designation beyond items already logged, so no stat edit."
+    "note": "Grounded: FTN 9/28 \u2014 Week 4 injury preview with no new single-player designation beyond items already logged, so no stat edit."
+   }
+  },
+  {
+   "id": "2026-nfl-fantasy-football-waiver-wire-week-4",
+   "title": "2026 NFL fantasy football waiver wire, Week 4: TE Juwan Johnson, RB Braelon Allen headline targets - NFL.com",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNamg4c3B2ZmRveHJRTUhLM04tRHN2SHkyc1dILUw4dXJ0RFJBbW9yLVphdkRWZ3l0RUFzZlBJSnF1ZGUzLTJ6RnBkRUMyZjlYclBqbjZheDdwSlNBbl9HN2FPaHlpOXFHTTNZNXBmMzJFLXkwZk5pTHE0c0dvZFk3YnhpZmRUb19XUXNmRTNPY2JMdmZBQlcwUjFadDdlMVZCMmIxWG81dWd6RXBzNXNaSTYyQXRuUV91R1dWUA?oc=5",
+   "source": "NFL.com",
+   "published": "2026-09-28T16:26:20Z",
+   "summary": "NFL.com's Week 4 waiver wire column headlines tight end Juwan Johnson and running back Braelon Allen as top targets.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Juwan Johnson",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 4.0,
+      "suggestedEdit": "Role boost (Week 4 TE waiver target) \u00b7 +4.0 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: NFL.com 9/28 \u2014 Juwan Johnson headlines Week 4 waiver TE targets; NO TE \u224810.0 ppg per board (full PPR/17); +4.0 est. role bump (Braelon Allen already boosted in an existing item)."
    }
   },
   {
@@ -181,10 +296,10 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 6.0,
-      "suggestedEdit": "Role boost (lead Miami option with Achane out) · +6.0 pts · move up ~2 rounds"
+      "suggestedEdit": "Role boost (lead Miami option with Achane out) \u00b7 +6.0 pts \u00b7 move up ~2 rounds"
      }
     ],
-    "note": "Grounded: ESPN 9/28 — Gordon (MIA RB, 2.3 ppg per board) is the lead handcuff now that Achane is out for the season; +6.0 is an estimated lead-role bump (est.), building on the earlier +4.0 volume tag."
+    "note": "Grounded: ESPN 9/28 \u2014 Gordon (MIA RB, 2.3 ppg per board) is the lead handcuff now that Achane is out for the season; +6.0 is an estimated lead-role bump (est.), building on the earlier +4.0 volume tag."
    }
   },
   {
@@ -202,10 +317,31 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 4.0,
-      "suggestedEdit": "Role boost (stock rising, usage up) · +4.0 pts · move up ~1 round"
+      "suggestedEdit": "Role boost (stock rising, usage up) \u00b7 +4.0 pts \u00b7 move up ~1 round"
      }
     ],
-    "note": "Grounded: SI 9/28 — Wilson (ARI WR, 10.8 ppg per board) is a top riser; +4.0 is an estimated opportunity bump (est.). David Montgomery (HOU RB, 11.4 ppg) is trending down but has no supported action, so he is noted only."
+    "note": "Grounded: SI 9/28 \u2014 Wilson (ARI WR, 10.8 ppg per board) is a top riser; +4.0 is an estimated opportunity bump (est.). David Montgomery (HOU RB, 11.4 ppg) is trending down but has no supported action, so he is noted only."
+   }
+  },
+  {
+   "id": "fantasy-football-headlines-de-von-achane-is",
+   "title": "Fantasy Football Headlines: De'Von Achane Is Lost For The Season, And Brock Bowers Is Back In A Big Way - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT1gwMUlMcUdFelJKVWxLQ2gtbWJjT0hGT0VGTi12bEpBZkhwTkJBSEdCRjM0SFQzTDk2TW9hWkE3dHRPZVJnTERCblZ2ZzU0QmxHNTNNRHE0SmFjYS1mUDZpOFNqN2xFN1ZlWFhLWjFpdDk4MUp5VEhvYjNvWC1KSkNGNXkxQ01JS1FPbVdtbnlZcWt0ZDloVWNCVFRONWtJa2dlSHpLN3p0bWxWVWdqcWN5SXAzUmduaWxTeERpTzM3dkNCenh1OWdFb3QwRHNkRjlV?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-28T15:51:15Z",
+   "summary": "SI's fantasy headlines cover De'Von Achane being lost for the season and Brock Bowers returning in a big way.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Brock Bowers",
+      "action": "boost",
+      "games": 0,
+      "deltaPts": 5.0,
+      "suggestedEdit": "Role boost (back in a big way) \u00b7 +5.0 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/28 \u2014 Brock Bowers 'Back In A Big Way'; LV TE \u224815.3 ppg per board (full PPR/17); +5.0 recency bump."
    }
   },
   {
@@ -218,7 +354,7 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: Draft Sharks 9/28 — Coker (CAR WR, 9.3 ppg per board) avoided a serious quad injury; this confirms the earlier +3.0 clean-health bump, so no additional edit."
+    "note": "Grounded: Draft Sharks 9/28 \u2014 Coker (CAR WR, 9.3 ppg per board) avoided a serious quad injury; this confirms the earlier +3.0 clean-health bump, so no additional edit."
    }
   },
   {
@@ -231,7 +367,7 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: FantasyLife 9/28 — Achane replacement advice; Gordon's (MIA RB, 2.3 ppg per board) lead-role value is already captured by the existing +6.0 Gordon boost, so no second edit."
+    "note": "Grounded: FantasyLife 9/28 \u2014 Achane replacement advice; Gordon's (MIA RB, 2.3 ppg per board) lead-role value is already captured by the existing +6.0 Gordon boost, so no second edit."
    }
   },
   {
@@ -244,12 +380,12 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: RotoBaller 9/28 — Hall (NYJ RB, 13.5 ppg per board) has no new designation; team update due Wednesday, so no stat edit beyond the existing −13.5 (1-game) tag."
+    "note": "Grounded: RotoBaller 9/28 \u2014 Hall (NYJ RB, 13.5 ppg per board) has no new designation; team update due Wednesday, so no stat edit beyond the existing \u221213.5 (1-game) tag."
    }
   },
   {
    "id": "latest-fantasy-football-news-de-von-ac",
-   "title": "Latest fantasy football news: De’Von Achane’s season is over - The New York Times",
+   "title": "Latest fantasy football news: De\u2019Von Achane\u2019s season is over - The New York Times",
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRmROVzRVOUlrSEM1dGUzemZCaFVCR0ZoY241bXVuMHZOWkhJMWxuRU1JWXcxODlpbXRSaVJlcW1JV19MMXQzcThTVTU0alZSQjN5SmtHUzFNVVlMNFo4Nmd5Y0l5TDhBR2hrZW4xRnNBQmdwQWhlT3hhSUdadXBSalVrTGNjcGtMOGJGbEhhbWNGQzVCay1YX0JTbERqWWZFTG5yU1dxUVgwdTRoM3lF?oc=5",
    "source": "nytimes.com",
    "published": "2026-09-28T15:25:27Z",
@@ -262,15 +398,15 @@
       "action": "injured",
       "games": 14,
       "deltaPts": -232.4,
-      "suggestedEdit": "Tag injured (knee, out for season) · −232.4 pts (14 games) · drops out of draftable range"
+      "suggestedEdit": "Tag injured (knee, out for season) \u00b7 \u2212232.4 pts (14 games) \u00b7 drops out of draftable range"
      }
     ],
-    "note": "Grounded: NYT 9/28 — Achane (MIA RB, 16.6 ppg per board) is out for the season; −232.4 = 16.6 × ~14 remaining games (est.). Supersedes the earlier 1- and 2-game Achane tags."
+    "note": "Grounded: NYT 9/28 \u2014 Achane (MIA RB, 16.6 ppg per board) is out for the season; \u2212232.4 = 16.6 \u00d7 ~14 remaining games (est.). Supersedes the earlier 1- and 2-game Achane tags."
    }
   },
   {
    "id": "fantasy-football-injury-impact-bears-off",
-   "title": "Fantasy Football Injury Impact: Bears’ Offense Takes Massive Hit with Case Keenum Starting - Sports Illustrated",
+   "title": "Fantasy Football Injury Impact: Bears\u2019 Offense Takes Massive Hit with Case Keenum Starting - Sports Illustrated",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTk1vZlJGZHQ0a1lqbnljRl9GWjFWU1kxTlU3dkNpNVVrY1M1V0txUy0za0xLbU1TNTRqMW9oaUtuZ0c1LVYxS1NUQllEQUt6N0ZfTG4yX2FTQWtuYV9hR2lXR3Z5b05EcjNWNlVUem5qaXJxRTFBOUR0amxIdy1iWFVkRXFLR09DamRtcHczSXlIX3lzNndRR2EzNUdZTl9KcGo5czNYMERCTjZmRk1DdldBZ3BNU01VM3R1UzBWaEItV0ZJTFduZw?oc=5",
    "source": "Sports Illustrated",
    "published": "2026-09-28T15:12:38Z",
@@ -283,10 +419,10 @@
       "action": "injured",
       "games": 3,
       "deltaPts": -55.8,
-      "suggestedEdit": "Tag injured (hamstring, out; Keenum starting) · −55.8 pts (3 games) · drops ~4 rounds"
+      "suggestedEdit": "Tag injured (hamstring, out; Keenum starting) \u00b7 \u221255.8 pts (3 games) \u00b7 drops ~4 rounds"
      }
     ],
-    "note": "Grounded: SI 9/28 — Keenum (not in board) starting confirms Williams' (CHI QB, 18.6 ppg per board) multi-week absence; −55.8 = 18.6 × 3 games on the earlier 3-4 week timeline (est.)."
+    "note": "Grounded: SI 9/28 \u2014 Keenum (not in board) starting confirms Williams' (CHI QB, 18.6 ppg per board) multi-week absence; \u221255.8 = 18.6 \u00d7 3 games on the earlier 3-4 week timeline (est.)."
    }
   },
   {
@@ -299,7 +435,7 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: PhillyVoice 9/28 — multi-player injury roundup (Jefferson, Mayfield, Achane) that restates already-itemized situations, so no new stat edit."
+    "note": "Grounded: PhillyVoice 9/28 \u2014 multi-player injury roundup (Jefferson, Mayfield, Achane) that restates already-itemized situations, so no new stat edit."
    }
   },
   {
@@ -312,7 +448,7 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: Fantasy Points 9/28 — league-wide Week 4 injury report; no designations beyond those already itemized individually, so no stat edit."
+    "note": "Grounded: Fantasy Points 9/28 \u2014 league-wide Week 4 injury report; no designations beyond those already itemized individually, so no stat edit."
    }
   },
   {
@@ -325,7 +461,7 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: FantasyLife 9/28 — a Week 3 performers/injury roundup covering multiple players already itemized individually, so no standalone stat edit."
+    "note": "Grounded: FantasyLife 9/28 \u2014 a Week 3 performers/injury roundup covering multiple players already itemized individually, so no standalone stat edit."
    }
   },
   {
@@ -343,10 +479,10 @@
       "action": "injured",
       "games": 2,
       "deltaPts": -34.8,
-      "suggestedEdit": "Tag injured (dislocated thumb, MRI) · −34.8 pts (2 games) · drops ~3 rounds"
+      "suggestedEdit": "Tag injured (dislocated thumb, MRI) \u00b7 \u221234.8 pts (2 games) \u00b7 drops ~3 rounds"
      }
     ],
-    "note": "Grounded: The Athletic/NYT 9/28 — Mayfield (TB QB, 17.4 ppg per board) dislocated his thumb and will undergo an MRI; −34.8 = per-game value × 2 games, upgrading the earlier 1-game −17.4 tag (est., timetable pending MRI)."
+    "note": "Grounded: The Athletic/NYT 9/28 \u2014 Mayfield (TB QB, 17.4 ppg per board) dislocated his thumb and will undergo an MRI; \u221234.8 = per-game value \u00d7 2 games, upgrading the earlier 1-game \u221217.4 tag (est., timetable pending MRI)."
    }
   },
   {
@@ -359,7 +495,7 @@
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: Yahoo 9/28 — Harvey's (DEN RB, 8.6 ppg per board) Week 3 status is reported but the headline states no direction, so no stat edit until the designation is clear."
+    "note": "Grounded: Yahoo 9/28 \u2014 Harvey's (DEN RB, 8.6 ppg per board) Week 3 status is reported but the headline states no direction, so no stat edit until the designation is clear."
    }
   },
   {
@@ -377,178 +513,10 @@
       "action": "boost",
       "games": 0,
       "deltaPts": 6.0,
-      "suggestedEdit": "Role boost (stepped in for injured Mayfield) · +6.0 pts · move up ~1 round"
+      "suggestedEdit": "Role boost (stepped in for injured Mayfield) \u00b7 +6.0 pts \u00b7 move up ~1 round"
      }
     ],
-    "note": "Grounded: Fantasy Footballers 9/28 — Daniels stepped in late for the injured Mayfield. Not in board.json, so +6.0 is a conservative est. spot-start bump, capped by Mayfield's unknown absence length (est.)."
-   }
-  },
-  {
-   "id": "travis-etienne-jr-aggravates-hamstring-i",
-   "title": "Travis Etienne Jr. Aggravates hamstring injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOLUNWX01XdUp1QlMzZEVDNzlFWGJDM0l4cHVkblNQa2FaRXNTUzZ3enh1NzFwYkpibVVxX3ozcWdiZnhPMDQ2TnBrQkJud3UtNkJBbWRpaHJ0NUdkMjViR3d2TklMd2pVT1o0ZHZlUFNwaUVyeFZvQ1U1NnlNUFNVSXpvT29oMmc2d3hEMjdrQ2dOMjRWY1FPTA?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-28T00:33:45Z",
-   "summary": "Saints RB Travis Etienne Jr. aggravated his hamstring injury and headed to the locker room in Week 3.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Travis Etienne Jr.",
-      "action": "injured",
-      "games": 2,
-      "deltaPts": -25.6,
-      "suggestedEdit": "Tag injured (hamstring aggravated) · −25.6 pts (2 games) · drops ~2 rounds"
-     }
-    ],
-    "note": "Grounded: Fantasy Footballers 9/28 — Etienne (NO RB, 12.8 ppg per board) aggravated his hamstring and left for the locker room; −25.6 = per-game value × 2 games, extending the earlier 1-game −12.8 tag (est.)."
-   }
-  },
-  {
-   "id": "mike-evans-dealing-with-rib-oblique-inju",
-   "title": "Mike Evans Dealing with rib/oblique injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQXzRLdkNtRWU0RlNPQzZJMEpORkJGcjA0RW50VmFDMWxjblFOT29kcm1Rek9FS3ZJQnE1cXA1UDVyZUtVcXRBdGpQVnVFVGNUelNhUW92dkVwUnR1NmplcFNqZWtzVEJYSjA0cElCTU9WbG5ZbzZkMFJVSk91ak93RVBzd1pTUlpvNFY0azk2OEtkbWJDWDJTOA?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-27T23:59:51Z",
-   "summary": "49ers WR Mike Evans is now listed with a rib/oblique injury after being ruled out of Sunday's game.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Mike Evans",
-      "action": "injured",
-      "games": 2,
-      "deltaPts": -25.4,
-      "suggestedEdit": "Tag injured (rib/oblique, ruled out) · −25.4 pts (2 games) · drops ~2 rounds"
-     }
-    ],
-    "note": "Grounded: Fantasy Footballers 9/27 — Evans (SF WR, 12.7 ppg per board) is dealing with a rib/oblique injury after being ruled out; −25.4 = per-game value × 2 games, extending the earlier 1-game −12.7 tag (est.)."
-   }
-  },
-  {
-   "id": "vikings-wr-justin-jefferson-ruled-out-af",
-   "title": "Vikings WR Justin Jefferson ruled out after suffering ankle injury vs. Buccaneers - nytimes.com",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaVhhbnZITUpjaGtSbERBYWR2eWNrc0owdnpoelM3WnBpeXRsLXNaSERKS3FsVndvcURPVGZHLS1wbWNuTk83REVFUDRNVjh1QkUwYXJMUk95elpvZlV3VWdHRHJXb2NoRjZnaWZQeFc3Y2hLa21wMURaVGNTUWFKUF9CN0pMeG5vNlhPZkh1a2RfQWltYXRZaC1uQQ?oc=5",
-   "source": "nytimes.com",
-   "published": "2026-09-27T23:51:06Z",
-   "summary": "The Vikings ruled WR Justin Jefferson out after he suffered an ankle injury against the Buccaneers in Week 3.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Justin Jefferson",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -15.3,
-      "suggestedEdit": "Tag injured (ankle, ruled out vs. Buccaneers) · −15.3 pts (1 game) · drops ~2 rounds"
-     }
-    ],
-    "note": "Grounded: The Athletic/NYT 9/27 — Jefferson (MIN WR, 15.3 ppg per board) was officially ruled out after an ankle injury; −15.3 = board per-game value × 1 game. Monitor for a multi-week designation."
-   }
-  },
-  {
-   "id": "fantasy-football-week-3-inactives-puka-n",
-   "title": "Fantasy football Week 3 inactives: Puka Nacua out for Sunday Night Football - ESPN",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNU2ZuUWkwejhMcnp2RG5RbTlhNjVfclFuNm9MQjhQbHBIcmdyNHBrb0tYNFc5a25sU3d0eWNVUVFsY2NzeW5ta1Eyb0RJVG5JdFZOcEd4czJYeHNhc09sdTBnVk9oSmpnaFZsaVFnc1gtZWFWX2Rqam5zZmtjZl9zSHEtbDNOc3ZkZTN5Z0NGT1JjbFE1Ry1nNnpOakdaSWJPZE5RMEJ0RlRrb0FyWGgw?oc=5",
-   "source": "ESPN",
-   "published": "2026-09-27T23:35:00Z",
-   "summary": "ESPN's Week 3 inactives report lists Rams WR Puka Nacua as out for Sunday Night Football.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Puka Nacua",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -19.1,
-      "suggestedEdit": "Tag injured (out Week 3 SNF) · −19.1 pts (1 game) · drops ~2 rounds"
-     }
-    ],
-    "note": "Grounded: ESPN 9/27 — Nacua (LAR WR, 19.1 ppg per board) is out for Sunday Night Football; −19.1 = board per-game value × 1 game (est., Week 3 only until the team gives a longer timeline)."
-   }
-  },
-  {
-   "id": "buccaneers-qb-baker-mayfield-leaves-late",
-   "title": "Buccaneers QB Baker Mayfield leaves late vs. Vikings with apparent hand injury - The New York Times",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObjNxUlAtc21YZ0hRU21jbW1DbW85VUdRZElJNXM2S2xOSTQwd3REMS1ETlhrdDJzNUZCY2tSUmVkaUZRaF9STTNGOFp1S2h5ckRLUVc4UVhxRExtOUMxTjQzam12OE9ka0NrdUV6WGNpekhVNjg5MnN3S3B0SnlSdkRhMzVZaklxTldLY3IwRDJQRVZuTFFiUQ?oc=5",
-   "source": "The New York Times",
-   "published": "2026-09-27T23:27:45Z",
-   "summary": "Buccaneers QB Baker Mayfield left Sunday's game against the Vikings late with an apparent hand injury.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Baker Mayfield",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -17.4,
-      "suggestedEdit": "Tag injured (hand, apparent) · −17.4 pts (1 game) · drops ~2 rounds"
-     }
-    ],
-    "note": "Grounded: The Athletic/NYT 9/27 — Mayfield (TB QB, 17.4 ppg per board) left late with an apparent hand injury; −17.4 = board per-game value × 1 game (est., severity unknown)."
-   }
-  },
-  {
-   "id": "travis-etienne-jr-has-hamstring-injury-f",
-   "title": "Travis Etienne Jr. Has hamstring injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNnVucDM4dTRaSWtsdWxkaGt1b0JkYm52UTI5UVJqaEJBNXZJSmkwcFktUzhhUEFzRlQ4S3NraWFPWENyVjlJR25GZTJadXpqSHBvZUJpSmRBSE5EbU9ldGlSQWFraWdIaEZQcGZqd3N6VFFudHlwOXhYWHZhcklwcHBGVTUtcTVMdjJBb09FSQ?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-27T23:09:27Z",
-   "summary": "Saints RB Travis Etienne Jr. has been diagnosed with a hamstring injury after leaving Sunday's game.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Travis Etienne Jr.",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -12.8,
-      "suggestedEdit": "Tag injured (hamstring) · −12.8 pts (1 game) · drops ~2 rounds"
-     }
-    ],
-    "note": "Grounded: Fantasy Footballers 9/27 — Etienne (NO RB, 12.8 ppg per board) has a hamstring injury; −12.8 = board per-game value × 1 game (est., severity unconfirmed)."
-   }
-  },
-  {
-   "id": "week-3-fantasy-football-panic-meter-earl",
-   "title": "Week 3 Fantasy Football panic meter: Early Week 4 waiver wire adds, Kenyon Sadiq breaks out as must add - CBS Sports",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQdGExUDlTQVZGZUNjV0xrTEhEYVFCWGp6a3lXd3Z6QjdZOEpMekpjY3drZVNCNnJ5N2VMa2J1cVpRZ2hqVEdsSFR5NXFSclZFSzR0Z0hFM3U2MG1UZTR4RGxxWnI3ZG5OcUZOYzk0RG80LTBmbnh5UG0zRXk3UVBjYXQwSEpWMEF0dE5lT3p1X2lzeGFDTS1pd3ZPLS1fSGwwSXpkVzZyR2xwdkhBNGFncDZGanVMU2xmUTR0aVJ1NV81S0tHQVZJb09iZUlvTC1pYkRDcGFOWHJYZ2pPSnNzaHpZTlQ?oc=5",
-   "source": "CBS Sports",
-   "published": "2026-09-27T22:59:00Z",
-   "summary": "CBS Sports' Week 3 panic-meter column flags Jets TE Kenyon Sadiq as a breakout must-add for Week 4.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Kenyon Sadiq",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 5.0,
-      "suggestedEdit": "Role boost (breakout, must-add TE) · +5.0 pts · move up ~1 round"
-     }
-    ],
-    "note": "Grounded: CBS Sports 9/27 — Sadiq (NYJ TE, 7.4 ppg per board) broke out and is tabbed a must-add; +5.0 is an estimated opportunity bump (est.)."
-   }
-  },
-  {
-   "id": "mike-evans-won-t-return-sunday-due-to-ri",
-   "title": "Mike Evans Won't return Sunday due to rib injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOODhwY0RXUUhVUHp5OGJaVFFCdWR4YnZKZy1oQkJ4d2QtQWJJQW83OVdrZ25taXhTdi1jZXRxeU42RjdmSkc4WUZfWTAzRWlMR2Y1SWQ3RVdKeDhtVE1rck1OQnE3VElsSlpudUxwZEpOZGlKYVJaODdoN0hwNldyOTk5SXJWajhRaEpEN3hrLXJ1d1BpZXdNWVR6bUsyMWM?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-27T22:24:36Z",
-   "summary": "49ers WR Mike Evans will not return to Sunday's game after suffering a rib injury.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Mike Evans",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -12.7,
-      "suggestedEdit": "Tag injured (rib, ruled out Week 3) · −12.7 pts (1 game) · drops ~2 rounds"
-     }
-    ],
-    "note": "Grounded: Fantasy Footballers 9/27 — Evans (SF WR, 12.7 ppg per board) was ruled out with a rib injury; −12.7 = board per-game value × 1 game (est.)."
+    "note": "Grounded: Fantasy Footballers 9/28 \u2014 Daniels stepped in late for the injured Mayfield. Not in board.json, so +6.0 is a conservative est. spot-start bump, capped by Mayfield's unknown absence length (est.)."
    }
   }
  ]
