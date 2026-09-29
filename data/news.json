@@ -3,6 +3,201 @@
  "sample": false,
  "items": [
   {
+   "id": "should-i-start-juwan-johnson-for-fantasy",
+   "title": "Should I Start Juwan Johnson for Fantasy Football Week 4 (2026)? - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOVI1YXY0dHJVWE9hT0J2QW81ZkVuUDVtYWRFN1NaQTFUVHhzRHp5RVFQLXgzQkExU2NQakFZUTJ2WGIxTkxGT1JKcm5PMnFaNkFtam9JbEQtRlQ5Tm5uVEFvVHFNYVY1ejR2eTBPbmZmWmhlODZ0OGp0T3hVSnpfWXV1WnZSXzFQaHA2WURvUHZzcHl5cXJiOHRqWFE?oc=5",
+   "source": "RotoBaller",
+   "published": "2026-09-29T22:30:14Z",
+   "summary": "RotoBaller weighs whether Juwan Johnson is worth starting in Week 4.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: RotoBaller 9/29 — start/sit debate; no confirmed role change."
+   }
+  },
+  {
+   "id": "jalen-mcmillan-s-injury-could-spell-a-hi",
+   "title": "Jalen McMillan's injury could spell a higher usage rate for Ted Hurst III and a spike in his fantasy production. - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdnVYYk5RZWl1TTV3UGg3QVo1UGZvUHJjcmROTkpwYnVYd2xTTzRvbERrWko3enk1N1IxZ0pXTjlDR3huN1ljRnFxNFdqWnMtVFc2Z18zRk1TSUpXeUFOMEdUVWFNME00LWhQSFVVUU1Bd3BIajZBTUFUd0RVel8tVi05S1dJMnpCanI0M3hnVWNwUTI2dnRfZGdmdmVNRHY5NlJTaE1ubXVhRHJxQU9VQ1dfYXN6SzJHMmtISkhhTWFqTV91TG9HeQ?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-29T22:15:31Z",
+   "summary": "Sports Illustrated suggests Jalen McMillan's injury could raise Ted Hurst III's usage and fantasy production.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Ted Hurst III",
+      "action": "boost",
+      "games": 14,
+      "deltaPts": 14,
+      "suggestedEdit": "Role boost · +14 pts · move up ~3 rounds"
+     },
+     {
+      "name": "Jalen McMillan",
+      "action": "injured",
+      "games": 2,
+      "deltaPts": -10,
+      "suggestedEdit": "Tag injured · −10 pts (2 games) · drops ~2 rounds"
+     }
+    ],
+    "note": "Grounded: SI 9/29 — McMillan (TB WR) injury opens snaps for Hurst III (board 2.8 ppg); deltas est."
+   }
+  },
+  {
+   "id": "2026-fantasy-football-week-3-usage-repor",
+   "title": "2026 Fantasy Football Week 3 Usage Report Breakdown - Fantasy Six Pack",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOaTctejExd2FfOFNpNTFoNmFXdm9lQ3d2M3k2UlRsb045c0p5RnBINW1IdzdvWDJqRHROS0p1UHYwcE1FbmZOQlZTcUZPczRHX0hSWTA4S1kxMEFDVFl5VEpraGt1MjFoNDVFc2swWVRYYmxad1AxUzU0N2ZITVJqMl92dw?oc=5",
+   "source": "Fantasy Six Pack",
+   "published": "2026-09-29T22:05:54Z",
+   "summary": "Fantasy Six Pack breaks down Week 3 usage data to inform Week 4 decisions.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Fantasy Six Pack 9/29 — usage report; no single headline player impact."
+   }
+  },
+  {
+   "id": "recent-rico-dowdle-news-raises-jaylen-wa",
+   "title": "Recent Rico Dowdle News Raises Jaylen Warren's Fantasy Value For Week 4 - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeGVsa1FKUFIzMEh3bTMyYU80TnRYNlpTcWx3N0ExWVRTbmh4TWp4dDR0V0l1SENhTk1BcDFLakJnQWhhbF9WYnYxa0ZyRjJpUmNZd2hySWVtTnNJMC12Y3lhTGY1OVV6d3U4NkpTbk1OeF82eFlILUtoRTNTaW9tZVF3Z3EyS2ZJaUVmSzVDZ0h2bVVDcFpJVzE0UnRUMFFhbVY2cFdqWHVlM0txd1RSeVhn?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-29T21:47:59Z",
+   "summary": "Sports Illustrated notes that recent Rico Dowdle news lifts Jaylen Warren's fantasy value entering Week 4.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jaylen Warren",
+      "action": "boost",
+      "games": 14,
+      "deltaPts": 15,
+      "suggestedEdit": "Role boost · +15 pts · move up ~2 rounds"
+     }
+    ],
+    "note": "Grounded: SI 9/29 — PIT RB (board 10.2 ppg) gets a backfield-value bump; est."
+   }
+  },
+  {
+   "id": "fantasy-football-breakouts-rb-snap-count",
+   "title": "Fantasy Football Breakouts: RB Snap Count Risers and Fallers (Week 4, 2026) - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWDlTc19VMXpINUpyZDBUZkJENHBDcDg0OUN3SzlxcF9VaEw4aXZQaHhYSnZTLTlicjFXb3RmU3pwREh3cEdwSjA5TGRUd0tMVkYtY1FYZ28yZWtjaWR3T3ZUSWRwa0JaMGtuY3RIVl9XWWc2MVRybGxvOGkzcXpQNWtJakVzd3kxUXdaQlF1dG5DMnpkME1BOTVmX1hkdEZOWGxpNERLLUxjUQ?oc=5",
+   "source": "RotoBaller",
+   "published": "2026-09-29T21:30:10Z",
+   "summary": "RotoBaller charts running-back snap-count risers and fallers for Week 4.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: RotoBaller 9/29 — snap-count risers/fallers; no single headline player impact."
+   }
+  },
+  {
+   "id": "fantasy-football-injury-update-jayden-da",
+   "title": "Fantasy Football Injury Update: Jayden Daniels May Return Sooner Than Expected After Foregoing Surgery - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPM2tVQjJWZGt1MjEyeTNTZ1c2V2k4MVROX1M4WWNyS29yVlVfNHFFdTIwdEdCYmRUd2JwZUltbTV0OTRGbmh5U0k2czVJYjE2T0xpazhxZThKWjNHaUlESy1lXzZkbjYwb3dsSGtCUDB5OHJucXpMM294VktZUE52UHF3UTZBUEx0dVcxaHk5aWd4d0d0cnVXWVBxWnBKTDdqRWlnU0lobkx6ZFg0QVhOMWRYOTNzTWxjODRUR25WbW0wS1U1MGliZm1TU0dhV0JvY0dLcg?oc=5",
+   "source": "Sports Illustrated",
+   "published": "2026-09-29T19:57:05Z",
+   "summary": "Sports Illustrated reports Jayden Daniels may return sooner than expected after forgoing surgery, improving his Week 4 outlook.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jayden Daniels",
+      "action": "boost",
+      "games": 14,
+      "deltaPts": 19,
+      "suggestedEdit": "Role boost · +19 pts · move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/29 — WAS QB (board 19.1 ppg) trending toward a faster return; boost est."
+   }
+  },
+  {
+   "id": "braelon-allen-alvin-kamara-and-all-our-m",
+   "title": "Braelon Allen, Alvin Kamara, And All Our Must-Start Fantasy Football Running Backs For Week 4 - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWmhKWkRlbWFKRWRkWUVIVGJ0TGlKblAxYUx2RFdVZUN2bUNiX2x0QVpNa3FVSEpNQV9JRllSNDF5dWZSSkxFRV9ONGVxcjBDSkZVY0NrVEFJWHlVc0k5QlhWWTlySnlkUi11cTJISVQwdnVzd3pIMU5xcC00em56MVVYTG9XWDg?oc=5",
+   "source": "Yahoo Sports",
+   "published": "2026-09-29T19:31:34Z",
+   "summary": "Yahoo lists Braelon Allen and Alvin Kamara among its must-start running backs for Week 4.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 9/29 — must-start list; no single headline player impact."
+   }
+  },
+  {
+   "id": "week-4-waiver-wire-must-add-players-at-e",
+   "title": "Week 4 Waiver Wire: MUST-ADD Players at Every Position! Injury Replacements! FIX YOUR TEAM! | Fantasy Football Today Stream of National Football League - CBS Sports",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNMzl3STh5bUVfdEw0YWkxN2Y4LVJvOVJMYW1yY25WaUV5b2pQbUlueEdvWnk1VVFJMFl4cXFTalJQeWZ4d3RHMF83T2lGVFVIX3lqTFl6TzlTOHdNWTE2YXkwLUNJeTc1NlBYZVJTVHJDMXFyMWVLd1plNHA5eFl5Vkx4VXB6V3hrQmNuZlRZTDU5TmNON0VlbHk0S0k3WkdWT0d3QndCYThFTVM1a0tWVFFaY3djV0pOV2RiZ2F6aVNsQjRycGtaWlJnektCY0Z5VUcwMDJ5TFplWnl6bUNTSVczeWd0ejQ?oc=5",
+   "source": "CBS Sports",
+   "published": "2026-09-29T18:41:47Z",
+   "summary": "CBS Sports lists must-add waiver players and injury replacements at every position for Week 4.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: CBS 9/29 — position-by-position waiver roundup; no single headline player impact."
+   }
+  },
+  {
+   "id": "when-is-nico-collins-coming-back-week-4-",
+   "title": "When Is Nico Collins Coming Back - Week 4 Fantasy Football Injury Return Update (2026) - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeEZJODVmd1d6LVVESmVlN1Nnd3J0VHJyWnJFRmc1cTFISThqbkNsa19sS0hId0JFWVd0NHNOdXZHNTBldWZiY2RaYWVDSG9WU1VrVjJnblRrZWR6clhBNzNWT2FtOW1VbURfQXBLM1M4Z3A0VkcweUg1b1ZiLTNrT0NQTW4zUThXY191clpqaWQtM19Vc1VCWk5JOVNEaWFxR0JBQUlCd0tCWVg3dXB4ejFzVG4wU21n?oc=5",
+   "source": "RotoBaller",
+   "published": "2026-09-29T18:30:52Z",
+   "summary": "RotoBaller updates Nico Collins' return timeline ahead of Week 4 as managers await his return from injury.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Nico Collins",
+      "action": "injured",
+      "games": 2,
+      "deltaPts": -30,
+      "suggestedEdit": "Tag injured · −30 pts (2 games) · drops ~2 rounds"
+     }
+    ],
+    "note": "Grounded: RotoBaller 9/29 — HOU WR (board 14.9 ppg) still sidelined; 2-game absence est."
+   }
+  },
+  {
+   "id": "fantasy-football-target-trends-for-week-",
+   "title": "Fantasy Football Target Trends for Week 4 (Fantasy Football) - thefantasyfootballers.com",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVkFKdmhGTkNwVTlmZEFNb1EzNkFGU1R4QmNlbF9uTFRZZ2h3V1BwLXI5bmNRODE5cnQtZUNheVpLWjdveVJEaUdpYlBYX0Y3RnVGTjlZOTZfdmNQZWZMSWRDWUU2OE1qSlJLUkh0c3JFeUhjYl9OdkowN0xneFQzV2xQb0F2bW5jTE11SzFhQTQ3c0h3S1BQcUJUTXMwRlN2c09KTHgxOTRSQQ?oc=5",
+   "source": "thefantasyfootballers.com",
+   "published": "2026-09-29T15:39:50Z",
+   "summary": "The Fantasy Footballers break down Week 4 target trends across the league.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: FFB 9/29 — target-share trend piece; no single headline player impact."
+   }
+  },
+  {
+   "id": "nfl-injury-report-2026-fantasy-football-",
+   "title": "NFL Injury Report 2026 - Fantasy Football Week 4: De'Von Achane, Justin Jefferson - Fantasy Alarm",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPXzJpMGRYRVZ3ZGJRWmJubXJBRTZzSE5na196Q1pGb1dFMk5YekxEbkRjMUIxMVNxb0VFbldzT3Q4VnRsNHczbkEwTF9Xa1Jxa3ZyYkIyaTVoT2EzT01vbXdFRTNwSHFhdXBkWW5nbGpxV0REWU1vYlJrY05iUjhUY0hqNlhJSjBzVjBST2RaOVZOdHJROXNURzFEc3UzTjBBTDZZM29fOExxS1lYbkE?oc=5",
+   "source": "Fantasy Alarm",
+   "published": "2026-09-29T13:12:25Z",
+   "summary": "Fantasy Alarm's Week 4 injury report tracks De'Von Achane and Justin Jefferson among the key names to watch.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Fantasy Alarm 9/29 — Week 4 injury roundup; no single headline player impact."
+   }
+  },
+  {
+   "id": "fantasy-football-week-4-injury-report-de",
+   "title": "Fantasy Football Week 4 Injury Report: De'Von Achane, Breece Hall, Justin Jefferson And More - Forbes",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQdDlOaTJpaHJ0dWFrRVd0aDFITndHenVIVjJ1Y09EaFFuRlhQeVliaE5DY2xHcUVLT1VBZVZoSlQ4cV9lRFVvT3BkRlltc3NyeS14UGV3cHdOSmVwd3gzcC1Dc1V2LV93RnRBcjM3d3FHVGswNWxxSEFNRzlmLUhmUUJSWDZqajhFLVFSQlE1eFJpN09aaDdlbWlxUnJCdGVkb3hLejV3YjBDdVUzUm9HV2I3RGE4anctQVIwUHE3YVMwV3A0U3lvUXFHU05iOFhuOWhnQllrbG1xUQ?oc=5",
+   "source": "Forbes",
+   "published": "2026-09-29T03:09:31Z",
+   "summary": "Forbes rounds up the Week 4 injury report, headlined by De'Von Achane, Breece Hall and Justin Jefferson.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Forbes 9/29 — injury-report roundup; no single headline player impact."
+   }
+  },
+  {
    "id": "fantasy-football-backup-rb-rankings-inju",
    "title": "Fantasy Football Backup RB Rankings: Injuries are thrusting second options into prominent roles for Week 4 - Yahoo Sports",
    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPVUItTGVXZF9jVnlIWXdSVVZwSjgwT192NldJZVNfVkxtYmUxV3MwLVdJaURhdGZSTmdkREdVUkFqakdkWEs5NVJ0YlZ2ay02UGQycmxwak5aYTEwU3NYWlQzYzlKOU9sQ1piQV9yUFBIRE9pLXFoN21sbkNNdW5DT21UV2ZzODZjeUpKZUlLZ1lMTVNBNW5vTFU1XzFpYTEydUwwMHNLWDVZVnIyM1Ryc0ktVG9jckdOOEpQaEFCOUk3eHJXZUx1YmhqNGwyeVBmM2JRc1owRUVhZVJseDZxdHlOLTByWXBlN2R3UVJzcXl0YVk?oc=5",
@@ -312,217 +507,6 @@
    "impact": {
     "players": [],
     "note": "Grounded: Yahoo 9/28 — Eagles' final DeVonta Smith decision for MNF vs. Chicago; no lasting fantasy stat change, so no edit."
-   }
-  },
-  {
-   "id": "de-von-achane-injured-j-j-mccarthy-traded-to",
-   "title": "De'Von Achane INJURED & J.J. McCarthy TRADED to Giants | 2026 Injuries, News & Notes | Fantasy Football Today - CBS Sports",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOYzhRNkRuNjNxYTZ0TlU2cXNkSDhFeGxGb1JKbElBUWNLUk96ekRqQWpDQ3BrSzdwM0xlSDVYWDBiUkEyMHVWV0ZnNU1hdjlQTGEzMmN2UGNIMUtBM1dQdzI5QWJkMjk0UE0zamZjazBaTmV0V3Z2Z2tmMmJfcWk3bEgxeERkVVo5aUsxQ2hXOHBHTFY2Sy1zeEd5aGtWMVhmOEdCNi1oSTRaLUtNMDRaWkJ1dTFwSWE2RG0zNlowSnV3MG52UllmZjVUcXdwdC1BUjQzVXdrRQ?oc=5",
-   "source": "CBS Sports",
-   "published": "2026-09-28T21:18:14Z",
-   "summary": "CBS Sports' fantasy news roundup covers De'Von Achane's season-ending injury and J.J. McCarthy being traded to the Giants.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: CBS 9/29 — J.J. McCarthy traded to the Giants (2026) plus the Achane injury already itemized; McCarthy not in board.json, no standalone stat edit."
-   }
-  },
-  {
-   "id": "jaylen-wright-remains-day-to-day-fantasy-foo",
-   "title": "Jaylen Wright Remains 'day-to-day' - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWGJ6Tjl3UFFpSVVMZWpjZERLckluSzY5NDFQY21TVXZlLXZRYjlvQy1VNVhGVDVBNkhOanRkVy0zRktpMWROMGxkYjZHQXdVejlZY0xTUnBCRm01VGhMbThoOS0wUExYY3phN2l2RFVzc3Zta1VEcG5LampHS1c2ZFBQdExSaHhSOWJr?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-28T20:53:57Z",
-   "summary": "The Fantasy Footballers note Jaylen Wright remains day-to-day, muting his value as Miami's backfield replacement for the injured De'Von Achane.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: FFB Podcast 9/28 — Jaylen Wright remains 'day-to-day' (MIA RB, ≈2.9 ppg); uncertainty caps his Achane-replacement value, no edit."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-breece-ha",
-   "title": "Fantasy Football Injury Impact: Breece Hall's MRI Update Clarifies Braelon Allen's Future Value - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZ090WFJ4aExsSFNaYTYtLXFSWVlKN1RBQjlFN0hxbWFUeC1iY1Z4eTk5aXJvMjNIeWtSdlpfVG11UGQtc2R4Y1lkT3ZOSTBfOEwyRXFQbmNfdEpCNER1NWdGX0FPXzFEeUphZFNaY3RMTXZDWC1TZ2k3NkMycmdWMG0tTEJMVldRN21oQ1d6clVoaDV5VFh6NURBYXJyZTFOZW5ITDZDeTJDXzBsY3RaMlVUVUt2QUlCTW1ERA?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-28T20:11:10Z",
-   "summary": "An MRI update on Breece Hall clarifies the fantasy value of Jets backup running back Braelon Allen going forward.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Braelon Allen",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 6.0,
-      "suggestedEdit": "Role boost (Hall banged up, MRI update) · +6.0 pts · move up ~2 rounds"
-     }
-    ],
-    "note": "Grounded: SI 9/28 — Hall's (NYJ RB, 13.5 ppg per board) MRI update keeps his Week 4 status unsettled; Allen (NYJ RB, 3.8 ppg) gets +6.0 as an est. handcuff/committee bump, no new edit on Hall beyond the existing −13.5 tag (est.)."
-   }
-  },
-  {
-   "id": "travis-etienne-jr-will-miss-time-with-ha",
-   "title": "Travis Etienne Jr. Will miss time with hamstring injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNa0VWVUd6b1pOQWx5Yk9wSmZCTlNCZWw0WV81S1R5dlc1U3NFRHBQSkh4MmxCZHhiMW9VeHp0eWlPVTdqVmJPbHlCdTBuQVIzUnpiMktWS2VNS3lSUHpLdVNMQjJMLTFxcjcybkJKc2p2UGJSMHNaRUsxYTNEVmlkR3pIUl9WNkZHOEJYZ0Y5WldMdEF1b0xWRXRtZmZWUDNJX2RNbA?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "2026-09-28T19:49:38Z",
-   "summary": "The Fantasy Footballers report Travis Etienne Jr. will miss time with a hamstring injury.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Travis Etienne Jr.",
-      "action": "injured",
-      "games": 2,
-      "deltaPts": -25.6,
-      "suggestedEdit": "Tag injured (hamstring) · −25.6 pts (2 games) · drops ~4 rounds"
-     }
-    ],
-    "note": "Grounded: FFB Podcast 9/28 — Etienne will miss time (hamstring). NO RB board ≈12.8 ppg; est. 2 games missed."
-   }
-  },
-  {
-   "id": "fantasy-football-waiver-wire-austin-ekel",
-   "title": "Fantasy Football Waiver Wire: Austin Ekeler Could Be a Steal After Potential Commanders Reunion - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdEdpeVVQV0gtMEVMNHJrUDY1Z2JfUFZidzdkdWJ0bXpkVjNMclV2SXRqeV9tbFpLd2dpb0RPcUlKcUFIX3hHX1ZwUkRWRmxXV213TmVSZGstcXVrZ1BzMmduUXhfVUVtZk02cHFBTW1La0RQZE1IWkJpV08yTnRiNWtjcGpHU1dsWmhnVQ?oc=5",
-   "source": "Yahoo Sports",
-   "published": "2026-09-28T19:14:24Z",
-   "summary": "Yahoo says Austin Ekeler could be a waiver steal if a Commanders reunion materializes.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 9/28 — Ekeler reunion is speculative and not in board.json; no stat edit."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-travis-et",
-   "title": "Fantasy Football Injury Impact: Travis Etienne Will Miss Time, Opening The Door For Alvin Kamara And A Sleeper - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMnNKLWU5czJqOTdEazRGMnVlSVRwR1dmZjBPUlJrbkhwWEgyOVlVcHJFV3RjRHVNMks4WjVGSzFZeXBfOW1EUkZVM1RHT3R6QjZFRF83bktXWVR3ay1hYXhCWGVaWkFxbXdJbWw3WmF3aU9lWGdLVWxjNEs5X2Fyc1dPajhMbllTeHFscmJTbjFvQ0RUdGoxVERTS09sLUNENXBaN1VaejlvWWpiMDA5RGJZSm5aenV2c2piczUySnNCdEg0ZE9uUElndzN0NDJ6emhGdXluRXlzZ1EzSmJXaHVGLU0?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-28T19:00:54Z",
-   "summary": "SI reports Travis Etienne will miss time with his hamstring injury, opening a bigger role for Alvin Kamara in the Saints' backfield.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Travis Etienne Jr.",
-      "action": "injured",
-      "games": 2,
-      "deltaPts": -25.6,
-      "suggestedEdit": "Tag injured (hamstring, will miss time) · −25.6 pts (2 games) · drops ~2 rounds"
-     },
-     {
-      "name": "Alvin Kamara",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 6.0,
-      "suggestedEdit": "Role boost (Etienne out) · +6.0 pts · move up ~2 rounds"
-     }
-    ],
-    "note": "Grounded: SI 9/28 — Etienne (NO RB, 12.8 ppg per board) will miss time; −25.6 = 12.8 × 2 games, extending the earlier 2-game tag. Kamara (NO RB, 5.8 ppg) gets +6.0 as an est. expanded-role bump (est.)."
-   }
-  },
-  {
-   "id": "2-fantasy-football-sleepers-emerge-in-th",
-   "title": "2 Fantasy Football Sleepers Emerge in the Wake of De'Von Achane's Season-Ending Injury - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQb3N6TWpPMkhNeU9jcjJOSHZ5YlNGSThwR2FIRDB6NWtrMllYdXRrbUpnUWhaWl8zYS1qc3VmSm1EZkV2TTVWWnRza002M1VUdm9mOER6SmNjX2ZfbC01aU5RdlVYcXRuWG0tay03QXJXY1pWNFNBVXk5SUNnbHdqRzI2T0lIYlRieGxneC1xT1pSd1JzR2hJVHNmalgtSVljbDZ5MlJyNTJpZC1XRGJhSU9VU1I3VEl6U0xCU3BKdXFZb2wzSjBPSDhacUVOUQ?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-28T18:32:09Z",
-   "summary": "SI highlights two fantasy sleepers whose value rises after De'Von Achane's season-ending knee injury in Miami.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: SI 9/28 — headline names no specific players, and the sleeper candidates (Miami backs) are already covered by the Wright/Gordon boosts, so no duplicate edit."
-   }
-  },
-  {
-   "id": "fantasy-football-impact-of-puka-nacua-s-even",
-   "title": "Fantasy Football Impact of Puka Nacua's Eventual Return From Injury - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMUM2c1VKbk00dm5TV3JMN2IzMUVDeU9hZ0l4UnluMDlrWlpVcmlOaXI0X0dyaUhwWlNMaVUxMGtsc21sejZSSmRDQTl1dHpkdmE3UTdEYXI0TGxpNW1SU1pTOExaMF9Mc2FxV29aVXdTTDZtN2xMejM3RWh6QWUwTU1Ibm5mRENTcU9nU3hxNW9tVjBsRkhBUHUyR2NBbVJCQmhxcTJDZw?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-28T18:10:56Z",
-   "summary": "Sports Illustrated breaks down what Puka Nacua's eventual return from injury means for his rest-of-season fantasy value.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Puka Nacua",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 6.0,
-      "suggestedEdit": "Role boost (returning from injury) · +6.0 pts · move up ~2 rounds"
-     }
-    ],
-    "note": "Grounded: SI 9/28 — Puka Nacua's eventual return from injury restores his ≈19 ppg (LAR WR per board, full PPR/17); +6.0 as an est. recency bump."
-   }
-  },
-  {
-   "id": "fantasy-football-impact-of-jalen-coker-s",
-   "title": "Fantasy Football Impact of Jalen Coker's Quad Injury - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUlNfbnFGYVRMd0pwd0pYTEtpS3FENGFTYkJzMjJldk5pWHZVcG9qUlhUQzgxUDk2bFBiY2RBYlNlOC01YndLcU1qcUFiOHN1WmphVU1yYlRud0pISmNoWjRUYml3a2NnUm5vbUdaR2ZZcVl0dXo3eU1UUDNVSUtndTVjcWp4RGc5LXBoRk4tZEFoZXVyOExEaXFFYTRtVWJrVHVhek9qM3FLaUhBYk92dHd1dw?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-28T18:07:39Z",
-   "summary": "Sports Illustrated examines the fantasy impact of Panthers WR Jalen Coker's quad injury.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: SI 9/28 — Coker quad injury (CAR WR, board ≈9.3 ppg); severity unclear, no games-missed line."
-   }
-  },
-  {
-   "id": "justin-jefferson-injury-update-wr-avoid",
-   "title": "Justin Jefferson Injury Update: WR Avoids Fantasy Football Setback Ahead Of Week 4 - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPV0FJaHl6ZU9SaXdTVzhzNDc3QlJMYmFtLXoxZTBRcE14OUhnbEV5N1dJYkJkWEVTNkZDTHVtb2k0SW5Pdnp1ZjVobHBGOWItc1VnZ1puVjU1eV82Rms1d0FZV0JqTzhmYnV1Zl9YNHJjZ3N0bmZ5d01CTFVTUVpRUDFKSU5JN2tfbl9Zenc1QTBqV1ZaeDBNNU1xTlhBX3pEb1IxYXMza0Y2MWRFMHd6aHM0RGg3OEVBNW84?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-28T17:25:37Z",
-   "summary": "Justin Jefferson reportedly avoided any setback in his ankle recovery, putting the Vikings WR on track for Week 4.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Justin Jefferson",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 15.3,
-      "suggestedEdit": "Return boost (avoids setback ahead of Week 4) · +15.3 pts · move up ~2 rounds"
-     }
-    ],
-    "note": "Grounded: SI 9/28 — Jefferson (MIN WR, 15.3 ppg per board) avoided a setback; +15.3 reverses the earlier −15.3 (1-game) ankle tag (est.)."
-   }
-  },
-  {
-   "id": "fantasy-football-waiver-wire-debate-jayl",
-   "title": "Fantasy Football Waiver Wire Debate: Jaylen Wright Is The Running Back To Add In Miami, Not Ollie Gordon - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNbzAxTDJlb1c2MFozY3pvTVdNVmtsSHhYOVozOGV0aTBtS0dvM3MxSWRZY3VacENxX0x6WXNFS0pIOXVpTHBFWU8wV3A0LTdMUk5FSEZBLXVEMG5abjlPemg3cmR2R25Hc1ZicDZudlNrSWxnaDF6eU9fLWxlNEZIVTlXUnl0LXNVSzZGXw?oc=5",
-   "source": "Yahoo Sports",
-   "published": "2026-09-28T16:54:39Z",
-   "summary": "Yahoo argues Jaylen Wright, not Ollie Gordon, is the Dolphins running back to add off the waiver wire with Achane out.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jaylen Wright",
-      "action": "boost",
-      "games": 0,
-      "deltaPts": 6.0,
-      "suggestedEdit": "Role boost (Achane out, top Miami add) · +6.0 pts · move up ~2 rounds"
-     }
-    ],
-    "note": "Grounded: Yahoo 9/28 — Wright (MIA RB, 2.8 ppg per board) is favored over Gordon for the vacated Achane role; +6.0 is an est. lead-role bump (est.)."
-   }
-  },
-  {
-   "id": "sunday-aftermath-week-3-injury-apocalyps",
-   "title": "Sunday Aftermath: Week 3 injury apocalypse, J.J. McCarthy trade, and much more - nbcsports.com",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUE91QTd1UUVGeF9QN0xEaEwzbVFja2hlSGVlb3FXTGF4NVoxM0x4RGZHc2N6cDdVOHFXUzZWR3VFQ1NUTFNFazh4bEMxMGVfVDE2QWZ1ZVlpaWo5SktXSkJBWF8yVTFHc2dLOHZNTS1YdVRkRjl3ZFE0RzcydVFvS0lXWi15Q1hla3pmM2NOc2ZOVGtYR0pwRXpMX045LVMtSEFubS1Ld1dtQmFfVnVyMmdVcDcxQU1iQXNPWkJkdEU?oc=5",
-   "source": "NBC Sports",
-   "published": "2026-09-28T16:50:01Z",
-   "summary": "NBC's Sunday Aftermath recaps a brutal Week 3 slate of injuries plus the J.J. McCarthy trade and other league news.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: NBC Sports 9/28 — multi-story aftermath column; the Week 3 injuries are already itemized and the J.J. McCarthy trade is not board-relevant (not in board.json), so no stat edit."
    }
   }
  ]
