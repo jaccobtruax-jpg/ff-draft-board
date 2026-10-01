@@ -45,6 +45,19 @@
    }
   },
   {
+   "id": "jets-four-offensive-players-week-to-week",
+   "title": "Jets get same week-to-week injury update on four key offensive players - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTGVPdVhMWlJVZllJYWJrTU0tQ1ZTaWpIdDQyZU1Sb0QxQzgxZkVWRHRacUctQ01uaUdjZlB2V283Vlc4NEowZE9XY1hCQ1RYSElvN0E2Q29HNk5iM2hsX3phbnVIM3FiOG5nZFpfeUNZNjhaX1dUaUJ6MUhmOURXNw?oc=5",
+   "source": "Yahoo Sports",
+   "published": "2026-09-30T16:32:15Z",
+   "summary": "Yahoo reports the Jets' four key offensive playmakers all received the same week-to-week injury designation.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 9/30 \u2014 four NYJ offensive players week-to-week; Hall (board 13.5 ppg) & Mitchell already tagged, no confirmed out games."
+   }
+  },
+  {
    "id": "breece-hall-hoping-to-avoid-injured-rese",
    "title": "Breece Hall Hoping to Avoid Injured Reserve - NFL News | Fantasy Football - RotoBaller",
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNYUx4T0dMa2dnYXhyRy1mVlFseHpvdHB2Sl8xYlp2Tk1QNmlaOENtREJ1UmdFd2lXU3ZNQzhIVFpraFJqUmdXdUwxQjd4eGZ4WjFYSk9SRkRWLXlaeDNObGZhSnVfMGpRdkpySW9DNWxkWEMxU2NvUTQ4b1g3bEw5dnAtTFBtNGM0TWJJMzc4bENGaG5J?oc=5",
@@ -76,6 +89,19 @@
      }
     ],
     "note": "Grounded: CBS 9/30 \u2014 GB WR (board 10.3 ppg) headed to IR; 4-game IR minimum assumed."
+   }
+  },
+  {
+   "id": "kewan-lacy-injury-update",
+   "title": "Kewan Lacy Injury Update - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1xTGNRYVY2R0N4Rl9sUEpvTHljX2oydU5VS21VVWxNZDhVT0ZmMTVGcGwwY3k5Nlcwamg4WXhaVWpwUEd3c1pkR3g0eUtOLVRNTEhSQXltdDJFUG1oWWd3dDJoLU5LR2FkMnpSNWJOTmRfNmJT?oc=5",
+   "source": "Yahoo Sports",
+   "published": "2026-09-30T15:51:33Z",
+   "summary": "Yahoo posts an injury update on RB Kewan Lacy; the headline gives no team or severity detail.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 9/30 \u2014 Lacy not on board; injury status/severity not stated in headline."
    }
   },
   {
@@ -478,73 +504,24 @@
    }
   },
   {
-   "id": "fantasy-football-injury-impact-breece-ha",
-   "title": "Fantasy Football Injury Impact: Breece Hall's MRI Update Clarifies Braelon Allen's Future Value - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZ090WFJ4aExsSFNaYTYtLXFSWVlKN1RBQjlFN0hxbWFUeC1iY1Z4eTk5aXJvMjNIeWtSdlpfVG11UGQtc2R4Y1lkT3ZOSTBfOEwyRXFQbmNfdEpCNER1NWdGX0FPXzFEeUphZFNaY3RMTXZDWC1TZ2k3NkMycmdWMG0tTEJMVldRN21oQ1d6clVoaDV5VFh6NURBYXJyZTFOZW5ITDZDeTJDXzBsY3RaMlVUVUt2QUlCTW1ERA?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-28T20:11:10Z",
-   "summary": "Breece Hall's MRI update clarifies how much Braelon Allen's value rises while Hall is out.",
+   "id": "cbs-week-4-waiver-rb-replacements-allen-wright",
+   "title": "Fantasy football Week 4 waiver wire: Braelon Allen, Jaylen Wright headline rush for RB replacements - CBS Sports",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1USTA0cVVNNl9idkFFM3Z0Qlg0bF9CRXZyUm13OFpTVF9nMkIyOWZTQ3d6dE9nSGVnQmJ6Z2pOZ3QwcVpKVHlkVGlhM21xVzA2SmUxUEhJdW1oUTRiSWluVWpEUzl5VmVuWTNKSThnVjBYME9NVXh5Z1pLZHc?oc=5",
+   "source": "CBS Sports",
+   "published": "2026-09-29T16:59:00Z",
+   "summary": "CBS Sports says Braelon Allen and Jaylen Wright headline the Week 4 rush for RB replacements after the injury wave.",
    "sample": false,
    "impact": {
     "players": [
      {
-      "name": "Braelon Allen",
+      "name": "Jaylen Wright",
       "action": "boost",
       "games": null,
-      "deltaPts": 15,
-      "suggestedEdit": "Role boost \u00b7 +15 pts \u00b7 move up ~2 rounds"
-     },
-     {
-      "name": "Breece Hall",
-      "action": "injured",
-      "games": 3,
-      "deltaPts": -40,
-      "suggestedEdit": "Tag injured \u00b7 \u221240 pts (3 games) \u00b7 drops ~3 rounds"
+      "deltaPts": 30,
+      "suggestedEdit": "Role boost \u00b7 +30 pts \u00b7 move up ~3 rounds"
      }
     ],
-    "note": "Grounded: SI 9/28 \u2014 Allen (NYJ, board 3.8 ppg as backup) inherits lead role; Hall (13.5 ppg) MRI pending; deltas est."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-travis-et",
-   "title": "Fantasy Football Injury Impact: Travis Etienne Will Miss Time, Opening The Door For Alvin Kamara And A Sleeper - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMnNKLWU5czJqOTdEazRGMnVlSVRwR1dmZjBPUlJrbkhwWEgyOVlVcHJFV3RjRHVNMks4WjVGSzFZeXBfOW1EUkZVM1RHT3R6QjZFRF83bktXWVR3ay1hYXhCWGVaWkFxbXdJbWw3WmF3aU9lWGdLVWxjNEs5X2Fyc1dPajhMbllTeHFscmJTbjFvQ0RUdGoxVERTS09sLUNENXBaN1VaejlvWWpiMDA5RGJZSm5aenV2c2piczUySnNCdEg0ZE9uUElndzN0NDJ6emhGdXluRXlzZ1EzSmJXaHVGLU0?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-28T19:00:54Z",
-   "summary": "Sports Illustrated: Travis Etienne will miss time, opening the door for Alvin Kamara and a sleeper in New Orleans.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Alvin Kamara",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 15,
-      "suggestedEdit": "Role boost \u00b7 +15 pts \u00b7 move up ~2 rounds"
-     }
-    ],
-    "note": "Grounded: SI 9/28 \u2014 ETN (NO) out; Kamara (board 5.8 ppg, MCL-depressed) lead-back upside; delta est."
-   }
-  },
-  {
-   "id": "fantasy-football-managers-breathe-sigh-o",
-   "title": "Fantasy Football Managers Breathe Sigh of Relief After Encouraging Justin Jefferson Injury Update - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPV0FJaHl6ZU9SaXdTVzhzNDc3QlJMYmFtLXoxZTBRcE14OUhnbEV5N1dJYkJkWEVTNkZDTHVtb2k0SW5Pdnp1ZjVobHBGOWItc1VnZ1puVjU1eV82Rms1d0FZV0JqTzhmYnV1Zl9YNHJjZ3N0bmZ5d01CTFVTUVpRUDFKSU5JN2tfbl9Zenc1QTBqV1ZaeDBNNU1xTlhBX3pEb1IxYXMza0Y2MWRFMHd6aHM0RGg3OEVBNW84?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-28T18:11:30Z",
-   "summary": "An encouraging injury update on Vikings WR Justin Jefferson has fantasy managers relieved.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Justin Jefferson",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 8,
-      "suggestedEdit": "Role boost \u00b7 +8 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 9/28 \u2014 MIN WR (board 15.3 ppg) gets encouraging update; modest boost."
+    "note": "Grounded: CBS 9/29 \u2014 MIA RB (board 2.8 ppg) inherits lead role with Achane (ACL) out; Allen (NYJ) already boosted 9/28; +30 est."
    }
   }
  ]
