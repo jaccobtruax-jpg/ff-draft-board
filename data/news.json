@@ -3,6 +3,223 @@
  "sample": false,
  "items": [
   {
+   "id": "devonta-smith-no-practice-wednesday",
+   "title": "No practice for DeVonta Smith Wednesday - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNjBORjJBZExFWWwwXzdpUU40ZlZMeEhVOVhiRmFTVXFrQVA1ZGFZQ0ltUXJBZW9CcWlIN09wLWlqQ29LSHV3d1ZLSzFtYkpVeE13NEMyZGhFVldCb1ZBNmtEeXVvM3A0YzZYWVVSNkgtR0FoRjdRaDFSVmRXWUEtbnNxWW5GeVpqY1ZSLQ?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Thu, 01 Oct 2026 00:49:00 GMT",
+   "summary": "Yahoo reports DeVonta Smith did not practice Wednesday.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "DeVonta Smith",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -8,
+      "suggestedEdit": "Tag injured \u00b7 \u22128 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: Yahoo 10/1 \u2014 PHI WR (board 7.6 ppg) DNP Wednesday; 1 game est."
+   }
+  },
+  {
+   "id": "ladd-mcconkey-foot-injury",
+   "title": "Ladd McConkey Dealing with foot injury - thefantasyfootballers.com",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNcmQtWEpqaE5hZHNqdzJ2U0NpWEZreUE5cG5wZUs2T0djWUw1ZjBNM1k4UWpPT256WWxkQktiUUJZeWFkX0pSc0ZzdTBPT0RoUnJWZWRTS1NRM18yT3hoYmJ4WEhmLUVERHQ3aGhpMWRQcTl0LUFZeWxiTnJUQnhVNS01RklabE1mOTV6cDlQS19rLVU?oc=5",
+   "source": "The Fantasy Footballers",
+   "published": "Thu, 01 Oct 2026 00:01:06 GMT",
+   "summary": "The Fantasy Footballers report Chargers WR Ladd McConkey is dealing with a foot injury.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Ladd McConkey",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -8,
+      "suggestedEdit": "Tag injured \u00b7 \u22128 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: FFB 10/1 \u2014 LAC WR (board 7.9 ppg) foot injury; 1 game est."
+   }
+  },
+  {
+   "id": "josh-allen-not-on-injury-report",
+   "title": "Josh Allen Not listed on Wednesday injury report - thefantasyfootballers.com",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPR0pWalh3N01faEs2eUozc1R1R2hxMDJGMEd2LTBLTFN0R1NxeGktTTdNSFF0bU5vRkh5bG9NR1JPQXhjaVY0YkluVXQwOERpbGFXS0lyZ21CU25xYWJMb0E1QS1sd3hNc1h4LWVUR3lUWFYxM0hvclZ0ZXFkaDEzeHVzTjJhN0NMamdldGZWTUc3TDJ5Y2l5c2FLb0pianBx?oc=5",
+   "source": "The Fantasy Footballers",
+   "published": "Wed, 30 Sep 2026 21:53:12 GMT",
+   "summary": "The Fantasy Footballers report Josh Allen was not listed on Wednesday's injury report.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Josh Allen",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 22,
+      "suggestedEdit": "Role boost \u00b7 +22 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: FFB 9/30 \u2014 BUF QB (board 22.3 ppg) off the injury report; cleared for Week 4."
+   }
+  },
+  {
+   "id": "bucky-irving-glute-injury",
+   "title": "Bucky Irving Dealing with glute injury - thefantasyfootballers.com",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSm5hS1lZOGVSSUgwSW1Sdkd5YXhWc0g4elBfWFNCTmNnU3I2RzZuYVNkNjlCcDVscng3QmE2el9vLVZZN2dCeGFuSzFKWFc5T0xNN2hPT3BDZ0VHdUpsSEJ6LWtwMzBIWE1vcEpJcWttekdlWVFxWkFqbERQa1doYkdYYWFXRUxJNVZmMlZqSVhfVWM?oc=5",
+   "source": "The Fantasy Footballers",
+   "published": "Wed, 30 Sep 2026 21:26:58 GMT",
+   "summary": "The Fantasy Footballers report Buccaneers RB Bucky Irving is dealing with a glute injury.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Bucky Irving",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -11,
+      "suggestedEdit": "Tag injured \u00b7 \u221211 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: FFB 9/30 \u2014 TB RB (board 10.9 ppg) glute injury; 1 game est."
+   }
+  },
+  {
+   "id": "puka-nacua-returns-to-practice-expected-w4",
+   "title": "Fantasy Football Injury Update: Puka Nacua Returns To Practice And Is Expected To Play In Week 4 - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQY18xcGl1anYxbDU2Tm5HNVp3MFAwekswWEJUdlVfR1RNemR3ajl2VmE0UXdzMmthSHBqQVJKem5MRS14SXVOd3VZeHFnS3ZrVjBMdjUxRUpESUtIeDBSSXJWX2NRdEtuX2xKVmpYU1pLOHk0YzFnNW93ZVFRUHNFX2dqXzY0X0JKSkJxRnFWR3Y2Mzg5YUZQYV9LeHZqRVY4QTY4ZzYwZnF2UmxqTWlycXk0UVNLNXpHVXJJaEREcS1pd2ZNT0UzNWo4RUtJcEhTZWc?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Wed, 30 Sep 2026 21:24:04 GMT",
+   "summary": "Sports Illustrated reports Puka Nacua returned to practice and is expected to play in Week 4.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Puka Nacua",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 10,
+      "suggestedEdit": "Role boost \u00b7 +10 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/30 \u2014 LAR WR (board 10.2 ppg) back at practice, expected to play Week 4."
+   }
+  },
+  {
+   "id": "rico-dowdle-out-tnf-jaylen-warren-boost",
+   "title": "Jaylen Warren Set for Big Fantasy Football Value Boost as Rico Dowdle is Declared OUT for Thursday Night Football - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZktGcGZvd3FJODd4SC1ZMkx5QWFfcjROR054RGlubHdrcTI0ZzdlSGhzVmhoal94WlFsSEYyN1VyQkpUdnhWbzlmSU5NbGk0dUh6MlhYeTZYMVp4c0M4aElaa0doblpLc1o2WU5waXE5Q2hNbEI2T2hUYjc2NkF5RnlLRGxmcF8wcVMyY2dKcmVwektZalBWLW1HYTR2ZFFxRll0ZmJfS3hxeUNEVmI2aTBfLTRIRkVYN1NQbWdjZU96ZFM1aFFGYTdsbVJzRmM3UDV2ZG13UzFIRi15eGowZXJ1WQ?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Wed, 30 Sep 2026 20:45:00 GMT",
+   "summary": "Sports Illustrated: Rico Dowdle is declared OUT for Thursday Night Football, boosting Jaylen Warren's Week 4 value.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Rico Dowdle",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -10,
+      "suggestedEdit": "Tag injured \u00b7 \u221210 pts (1 game) \u00b7 drops ~1 round"
+     },
+     {
+      "name": "Jaylen Warren",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 9,
+      "suggestedEdit": "Role boost \u00b7 +9 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/30 \u2014 Dowdle (PIT, board 9.6 ppg) OUT for TNF; Warren (PIT, board 8.6 ppg) gets lead backfield role."
+   }
+  },
+  {
+   "id": "rachaad-white-shoulder-injury",
+   "title": "Rachaad White dealing with shoulder injury - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQODhNRmRINmxNTnQyTkwyVzlOWHlGUHJkRExVZ3Q0TkY4NjdpTGx0QjAzRGZHYjZwX2sxeDZ6YzNKV3hWM0hiQnpXVi1qNEljNm5CS0p3UGlFczYtSmNLM1prQnpIOVd2Nk8yYXpKVS1DQlpoUVJUOUdpV1pPTTNBd0xaRVpnLWVfT0JnQmlhTQ?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Wed, 30 Sep 2026 19:25:26 GMT",
+   "summary": "Yahoo reports Rachaad White is dealing with a shoulder injury.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Rachaad White",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -7,
+      "suggestedEdit": "Tag injured \u00b7 \u22127 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: Yahoo 9/30 \u2014 WAS RB (board 7.2 ppg) shoulder injury; 1 game est."
+   }
+  },
+  {
+   "id": "jaylen-wright-returns-to-practice-dolphins",
+   "title": "Jaylen Wright Returns To Practice, Causing Fantasy Football Chaos For Ollie Gordon In The Dolphins Backfield - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOUVuRW95SHB4T2NheWttZzEyOU5QLWhGbTF6RE1aZUpDdERTVWw2VGE0eDEzS2h4ZDFFenVKMkhobUJEVEV3dlJKM3FoaWxyYm1DTGhXMW1icHN6d0hTOUdKcEpNeEtlcVc5bzZySzNnXzdMTXBIeUJGczA1d3hydUtpbXRGdjByXzhTX0RMV0J6ZWlleGN4LTlqTlcyR3JqUHhhUmptT0FTeFo2U1hLbkJMUWZaNUllYlJnR3VCSWN4alRDcGZKZU03MjdnSWxCYnp5dkVOTkpneU9DSm1rX2Vn?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Wed, 30 Sep 2026 19:25:08 GMT",
+   "summary": "Jaylen Wright returned to practice, clouding Ollie Gordon II's role in the Dolphins backfield.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jaylen Wright",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 25,
+      "suggestedEdit": "Role boost \u00b7 +25 pts \u00b7 move up ~2 rounds"
+     }
+    ],
+    "note": "Grounded: SI 9/30 \u2014 Wright (MIA, board 2.5 ppg) back at practice, lead-role value with Achane (ACL) out; Gordon II (2.1 ppg) role in doubt; +25 est."
+   }
+  },
+  {
+   "id": "nico-collins-could-return-week-4-after-practice",
+   "title": "Fantasy Football Injury Update: Nico Collins Could Be Back In Lineups In Week 4 After Returning To Practice - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOaXpGM0Rkb2xVWU9FQVd1bWdrQ0JMRXg0UUU2aFpVSERySjNNSkNSRXlLZ0RmVEV0WWN0a3NFazgtbmZJN3RCcVlmYWFfVEk3akNoNGw5YTU3TGVWWWppYTRyNVo0WjNNV1oyeDBMeWx0Uk9WcU5JZ05oZVIxVmE5Rmt3X1EyZ2tEQzFjYXh2UUlQZ3VzWWdHZTBaU1dHRjZmNnhZeXRWV1VCSUo4am9IbGo5enNvMEFRWXR1SjZBTnZPTnRYTG91U0dyN3RPeFFyNGRfcFl2czU4b2RTVlZyZg?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Wed, 30 Sep 2026 18:59:23 GMT",
+   "summary": "Sports Illustrated says Nico Collins could be back in lineups in Week 4 after returning to practice.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Nico Collins",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 8,
+      "suggestedEdit": "Role boost \u00b7 +8 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/30 \u2014 HOU WR (board 7.7 ppg) returning to practice; Week 4 return likely."
+   }
+  },
+  {
+   "id": "jayden-reed-season-ending-ir-packers-boost",
+   "title": "Three Packers Pass Catchers See Massive Fantasy Football Value Bump with Jayden Reed Placed on Season-Ending IR - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQRVhKNmppMVhROG85VjZQejc3OGwyUFVUTm85YzNobXVzdDloU0Y5eV83bVRTaG9XWjRVaHpjVHNpM2h3ZDIyUGE3WGtHYjQ2NmtSWFYxcXlBeGdCZlFSZzJWQWVoSU41V3hzT21oamtvWVVHRVhDcjR0U3JwT3ZNUmdfQTJ0a2lDX2RKZ180SklyTzNXMnpBdnZ1SGkwZkhYQzNuVU5wZ3p4V3ZTZ1J2U0pUMG9INndHMEFqeUlLdGVIZnJHaFl2NnpBMExEVjRrbkdLS2t4Ujg3MHl5LWFrMw?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Wed, 30 Sep 2026 18:39:04 GMT",
+   "summary": "Jayden Reed was placed on season-ending injured reserve, giving three Packers pass catchers a fantasy value bump.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jayden Reed",
+      "action": "injured",
+      "games": 14,
+      "deltaPts": -83,
+      "suggestedEdit": "Tag injured \u00b7 \u221283 pts (season) \u00b7 drops ~4 rounds"
+     }
+    ],
+    "note": "Grounded: SI 9/30 \u2014 GB WR (board 5.9 ppg) placed on season-ending IR; three unnamed GB pass catchers get a usage bump."
+   }
+  },
+  {
    "id": "adonai-mitchell-week-to-week-with-finger",
    "title": "Adonai Mitchell Week-to-week with finger injury - Fantasy Footballers Podcast",
    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZmIyZ19qMHVUeDZYWlRPTXRUeGNoT3V3WVlBeXZ3VVRhQVUtbUVRbC1kWkVDWV9ibXlvbDNJYzBjOHpkR3p6MjdXaXVjY3VEZ0dCX05kbGZ0SUNJQVhWRFgwVlpaX19LV21GVEowdFNyYTNsNWZJb3J0U2xNU1hTNWlva29VcFFiLWhJMUN3UkgtT2czSm9tUm1nNlFDVXM?oc=5",
@@ -307,221 +524,6 @@
      }
     ],
     "note": "Grounded: Yahoo 9/30 \u2014 ETN (NO, board 13.0 ppg) out; Miller off-board, 10 ppg est."
-   }
-  },
-  {
-   "id": "waiver-wired-week-4-the-huddle",
-   "title": "Waiver Wired - Week 4 - The Huddle",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQakdhbV8wYXpLUFNlcUM5UVJTNWczMlBwUWRoWEgwc1laREZUaXNad0JVd09wYTlkTV9IUkpzVkZVLVpVQTlMQXUyUXdnY21Dak15V0lLakFNTUZsVVRXUENUQWt2MnEyajFpWlg3WV9jcWFxUFBvZ1E3dEpjMXp2dHJTM3FPdUFtTEZrNTdNU2llZ0NWN1g1LXBSbFgxNWtUak5QeTRjM0MtVDVvc1RMck0xNUhNbUFhZzBr?oc=5",
-   "source": "The Huddle",
-   "published": "2026-09-30T00:52:00Z",
-   "summary": "The Huddle's Week 4 waiver-wire column.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: The Huddle 9/30 \u2014 waiver column; no single player action."
-   }
-  },
-  {
-   "id": "week-4-fantasy-football-receiver-score-b",
-   "title": "Week 4 Fantasy Football Receiver Score Buys & Fades: Buy Drake London, Sell Rashee Rice - FantasyLife",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbDZOMDd2VDJiR3pNdDQwQ0Fjak5lLTRhUlpSamoxb2ZLSE56Uk40U0REb1p6LUhjMVFfeG9fbUYtRWN4VEh5am5PYW5CQUVsLTRJeWJLa3JWYl9yeWxabXZGMEJIRFdYU3FOSUxkOTFFN1lBR3B1X3ZVZkROdWJnWUp2YnVUMzZ0aVNsY2RKZ19YWFU5WEJxcnV3?oc=5",
-   "source": "FantasyLife",
-   "published": "2026-09-30T00:00:00Z",
-   "summary": "FantasyLife's Week 4 WR score model says buy Drake London and sell Rashee Rice.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Drake London",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 15,
-      "suggestedEdit": "Role boost \u00b7 +15 pts \u00b7 move up ~1 rounds"
-     }
-    ],
-    "note": "Grounded: FantasyLife 9/30 \u2014 London (ATL, board 23.8 ppg) buy; Rice sell-lean, no injury."
-   }
-  },
-  {
-   "id": "should-i-start-juwan-johnson-for-fantasy",
-   "title": "Should I Start Juwan Johnson for Fantasy Football Week 4 (2026)? - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOVI1YXY0dHJVWE9hT0J2QW81ZkVuUDVtYWRFN1NaQTFUVHhzRHp5RVFQLXgzQkExU2NQakFZUTJ2WGIxTkxGT1JKcm5PMnFaNkFtam9JbEQtRlQ5Tm5uVEFvVHFNYVY1ejR2eTBPbmZmWmhlODZ0OGp0T3hVSnpfWXV1WnZSXzFQaHA2WURvUHZzcHl5cXJiOHRqWFE?oc=5",
-   "source": "RotoBaller",
-   "published": "2026-09-29T22:30:14Z",
-   "summary": "RotoBaller weighs whether Juwan Johnson is worth starting in Week 4.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: RotoBaller 9/29 \u2014 start/sit debate; no confirmed role change."
-   }
-  },
-  {
-   "id": "jalen-mcmillan-s-injury-could-spell-a-hi",
-   "title": "Jalen McMillan's injury could spell a higher usage rate for Ted Hurst III and a spike in his fantasy production. - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdnVYYk5RZWl1TTV3UGg3QVo1UGZvUHJjcmROTkpwYnVYd2xTTzRvbERrWko3enk1N1IxZ0pXTjlDR3huN1ljRnFxNFdqWnMtVFc2Z18zRk1TSUpXeUFOMEdUVWFNME00LWhQSFVVUU1Bd3BIajZBTUFUd0RVel8tVi05S1dJMnpCanI0M3hnVWNwUTI2dnRfZGdmdmVNRHY5NlJTaE1ubXVhRHJxQU9VQ1dfYXN6SzJHMmtISkhhTWFqTV91TG9HeQ?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-29T22:15:31Z",
-   "summary": "Sports Illustrated suggests Jalen McMillan's injury could raise Ted Hurst III's usage and fantasy production.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Ted Hurst III",
-      "action": "boost",
-      "games": 14,
-      "deltaPts": 14,
-      "suggestedEdit": "Role boost \u00b7 +14 pts \u00b7 move up ~3 rounds"
-     },
-     {
-      "name": "Jalen McMillan",
-      "action": "injured",
-      "games": 2,
-      "deltaPts": -10,
-      "suggestedEdit": "Tag injured \u00b7 \u221210 pts (2 games) \u00b7 drops ~2 rounds"
-     }
-    ],
-    "note": "Grounded: SI 9/29 \u2014 McMillan (TB WR) injury opens snaps for Hurst III (board 2.8 ppg); deltas est."
-   }
-  },
-  {
-   "id": "recent-rico-dowdle-news-raises-jaylen-wa",
-   "title": "Recent Rico Dowdle News Raises Jaylen Warren's Fantasy Value For Week 4 - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeGVsa1FKUFIzMEh3bTMyYU80TnRYNlpTcWx3N0ExWVRTbmh4TWp4dDR0V0l1SENhTk1BcDFLakJnQWhhbF9WYnYxa0ZyRjJpUmNZd2hySWVtTnNJMC12Y3lhTGY1OVV6d3U4NkpTbk1OeF82eFlILUtoRTNTaW9tZVF3Z3EyS2ZJaUVmSzVDZ0h2bVVDcFpJVzE0UnRUMFFhbVY2cFdqWHVlM0txd1RSeVhn?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-29T21:47:59Z",
-   "summary": "Sports Illustrated notes that recent Rico Dowdle news lifts Jaylen Warren's fantasy value entering Week 4.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jaylen Warren",
-      "action": "boost",
-      "games": 14,
-      "deltaPts": 15,
-      "suggestedEdit": "Role boost \u00b7 +15 pts \u00b7 move up ~2 rounds"
-     }
-    ],
-    "note": "Grounded: SI 9/29 \u2014 PIT RB (board 10.2 ppg) gets a backfield-value bump; est."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-update-jayden-da",
-   "title": "Fantasy Football Injury Update: Jayden Daniels May Return Sooner Than Expected After Foregoing Surgery - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPM2tVQjJWZGt1MjEyeTNTZ1c2V2k4MVROX1M4WWNyS29yVlVfNHFFdTIwdEdCYmRUd2JwZUltbTV0OTRGbmh5U0k2czVJYjE2T0xpazhxZThKWjNHaUlESy1lXzZkbjYwb3dsSGtCUDB5OHJucXpMM294VktZUE52UHF3UTZBUEx0dVcxaHk5aWd4d0d0cnVXWVBxWnBKTDdqRWlnU0lobkx6ZFg0QVhOMWRYOTNzTWxjODRUR25WbW0wS1U1MGliZm1TU0dhV0JvY0dLcg?oc=5",
-   "source": "Sports Illustrated",
-   "published": "2026-09-29T19:57:05Z",
-   "summary": "Sports Illustrated reports Jayden Daniels may return sooner than expected after forgoing surgery, improving his Week 4 outlook.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jayden Daniels",
-      "action": "boost",
-      "games": 14,
-      "deltaPts": 19,
-      "suggestedEdit": "Role boost \u00b7 +19 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 9/29 \u2014 WAS QB (board 19.1 ppg) trending toward a faster return; boost est."
-   }
-  },
-  {
-   "id": "fantasy-football-week-4-rb-preview-aaron",
-   "title": "Fantasy football Week 4 RB preview: Aaron Jones and Jaylen Warren surging at just the right time - CBS Sports",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBlREg4QUpJTlpWN25IWjVCUWRkcGZ6cGNxVDE1c1pMakNMcWp0MXdsTURnWkxMTUpackxHbHFuTDRjdHlteHViVmpVblBjb1FDQWFCYWd3eTd6OG12QTl6YjlObnAzaGFNUm1EdFRYb29xaGxBckhkSGp4dw?oc=5",
-   "source": "CBS Sports",
-   "published": "2026-09-29T19:43:00Z",
-   "summary": "CBS Sports' Week 4 RB preview says Aaron Jones and Jaylen Warren are surging at just the right time.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Aaron Jones Sr.",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 10,
-      "suggestedEdit": "Role boost \u00b7 +10 pts \u00b7 move up ~1 round"
-     },
-     {
-      "name": "Jaylen Warren",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 12,
-      "suggestedEdit": "Role boost \u00b7 +12 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: CBS 9/29 \u2014 Jones (MIN, board 8.1 ppg) & Warren (PIT, board 10.2 ppg) framed as surging; deltas est."
-   }
-  },
-  {
-   "id": "2026-nfl-week-4-injury-report-achane-s-a",
-   "title": "2026 NFL Week 4 Injury Report: Achane's ACL, updates on Baker Mayfield, Justin Jefferson, Breece Hall, more - NBC Sports",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPdUEzSFBxNERRQm1vVzU3TFlBRjJ0bzFPQXNhSGNDMTNpVGtUX2FrTFo0OW83eXk3M0lOVFFxUWhKOHJCLUhWSjBXbzRUbVhMdndSbU9FdlBJQllob1ZOTDhyV3c0TWZiT1hfR1ZfYWF2clZHNDJHUGc2SGtGVUpTV05lNThXanNHT3NVcUZEVWhtMFE4akVtUkJpbWpIVmN3Z1ZCY2F0dmZ5SUVIS2lYRXk2QzJSd0M5M0EzTUJfOVk3RWFSY3BpWFVKOEpWelVkQzlfOHFZQUs4UQ?oc=5",
-   "source": "NBC Sports",
-   "published": "2026-09-29T19:22:03Z",
-   "summary": "NBC Sports' Week 4 injury report leads with De'Von Achane's ACL and updates on Baker Mayfield, Justin Jefferson and Breece Hall.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "De'Von Achane",
-      "action": "injured",
-      "games": 14,
-      "deltaPts": -232,
-      "suggestedEdit": "Tag injured \u00b7 \u2212232 pts (14 games) \u00b7 drops ~8 rounds"
-     },
-     {
-      "name": "Breece Hall",
-      "action": "injured",
-      "games": 3,
-      "deltaPts": -40,
-      "suggestedEdit": "Tag injured \u00b7 \u221240 pts (3 games) \u00b7 drops ~3 rounds"
-     }
-    ],
-    "note": "Grounded: NBC 9/29 \u2014 Achane (MIA, board 16.6 ppg) ACL, season-ending; Hall (NYJ, 13.5 ppg) severity unclear; games/deltas est."
-   }
-  },
-  {
-   "id": "when-is-nico-collins-coming-back-week-4-",
-   "title": "When Is Nico Collins Coming Back - Week 4 Fantasy Football Injury Return Update (2026) - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeEZJODVmd1d6LVVESmVlN1Nnd3J0VHJyWnJFRmc1cTFISThqbkNsa19sS0hId0JFWVd0NHNOdXZHNTBldWZiY2RaYWVDSG9WU1VrVjJnblRrZWR6clhBNzNWT2FtOW1VbURfQXBLM1M4Z3A0VkcweUg1b1ZiLTNrT0NQTW4zUThXY191clpqaWQtM19Vc1VCWk5JOVNEaWFxR0JBQUlCd0tCWVg3dXB4ejFzVG4wU21n?oc=5",
-   "source": "RotoBaller",
-   "published": "2026-09-29T18:30:52Z",
-   "summary": "RotoBaller updates Nico Collins' return timeline ahead of Week 4 as managers await his return from injury.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Nico Collins",
-      "action": "injured",
-      "games": 2,
-      "deltaPts": -30,
-      "suggestedEdit": "Tag injured \u00b7 \u221230 pts (2 games) \u00b7 drops ~2 rounds"
-     }
-    ],
-    "note": "Grounded: RotoBaller 9/29 \u2014 HOU WR (board 14.9 ppg) still sidelined; 2-game absence est."
-   }
-  },
-  {
-   "id": "cbs-week-4-waiver-rb-replacements-allen-wright",
-   "title": "Fantasy football Week 4 waiver wire: Braelon Allen, Jaylen Wright headline rush for RB replacements - CBS Sports",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1USTA0cVVNNl9idkFFM3Z0Qlg0bF9CRXZyUm13OFpTVF9nMkIyOWZTQ3d6dE9nSGVnQmJ6Z2pOZ3QwcVpKVHlkVGlhM21xVzA2SmUxUEhJdW1oUTRiSWluVWpEUzl5VmVuWTNKSThnVjBYME9NVXh5Z1pLZHc?oc=5",
-   "source": "CBS Sports",
-   "published": "2026-09-29T16:59:00Z",
-   "summary": "CBS Sports says Braelon Allen and Jaylen Wright headline the Week 4 rush for RB replacements after the injury wave.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jaylen Wright",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 30,
-      "suggestedEdit": "Role boost \u00b7 +30 pts \u00b7 move up ~3 rounds"
-     }
-    ],
-    "note": "Grounded: CBS 9/29 \u2014 MIA RB (board 2.8 ppg) inherits lead role with Achane (ACL) out; Allen (NYJ) already boosted 9/28; +30 est."
    }
   }
  ]
