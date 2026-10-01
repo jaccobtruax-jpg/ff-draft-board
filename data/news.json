@@ -3,6 +3,48 @@
  "sample": false,
  "items": [
   {
+   "id": "keaton-mitchell-dealing-with-ankle-injury-fantasy-footballers-podcast",
+   "title": "Keaton Mitchell Dealing with ankle injury - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVnluVGtMYjR6NFV3MVdZQmRHbklxNU9KZEpwV2xTSTZiWmNSNkEzMlA1czh1TmREclpCQTRrLW11UkdTZzhFckMtMUg1d21NQjNzQmpubXF3Z2xPWnE3N1MtckV5MExJUmN2ckFlSGZmT0ZmWEZPeVJZQXg3UWNMVjFVMHFucWVweldhWUV6Ny00TS1kRWRr?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Thu, 01 Oct 2026 05:04:05 GMT",
+   "summary": "The Fantasy Footballers report Chargers RB Keaton Mitchell is dealing with an ankle injury.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Keaton Mitchell",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -6,
+      "suggestedEdit": "Tag injured \u00b7 -6 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: FFB 10/1 \u2014 LAC RB (board 6.4 ppg) ankle injury; 1 game est."
+   }
+  },
+  {
+   "id": "kenyon-sadiq-limited-with-back-injury-on-wednesday-nfl-news-fantasy-fo",
+   "title": "Kenyon Sadiq Limited With Back Injury on Wednesday - NFL News | Fantasy Football - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdW83NW41OFk5Ny0wa0Y5OVg0em5Tak9xTFRvb0xTaHdmMTcxM0lwTzg1RmEyV3pBUTZyd19yRDdjb3JPTW5KM0R5MkNZZ2ZMNlNSOXA0dHRZUmNOaFZTVlBua0ZXa0ZnWTFWWHRwckJQNERmSHJwS1F3bUVocHZrS3JpencxMHlMb3phRGRFemRWWlhlLThfQ1hqWVZpUQ?oc=5",
+   "source": "RotoBaller",
+   "published": "Thu, 01 Oct 2026 01:16:14 GMT",
+   "summary": "RotoBaller reports Jets TE Kenyon Sadiq was limited with a back injury Wednesday.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Kenyon Sadiq",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -7,
+      "suggestedEdit": "Tag injured \u00b7 -7 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: RotoBaller 10/1 \u2014 NYJ TE (board 7.4 ppg) back, limited; 1 game est."
+   }
+  },
+  {
    "id": "devonta-smith-no-practice-wednesday",
    "title": "No practice for DeVonta Smith Wednesday - Yahoo Sports",
    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNjBORjJBZExFWWwwXzdpUU40ZlZMeEhVOVhiRmFTVXFrQVA1ZGFZQ0ltUXJBZW9CcWlIN09wLWlqQ29LSHV3d1ZLSzFtYkpVeE13NEMyZGhFVldCb1ZBNmtEeXVvM3A0YzZYWVVSNkgtR0FoRjdRaDFSVmRXWUEtbnNxWW5GeVpqY1ZSLQ?oc=5",
@@ -42,6 +84,69 @@
      }
     ],
     "note": "Grounded: FFB 10/1 \u2014 LAC WR (board 7.9 ppg) foot injury; 1 game est."
+   }
+  },
+  {
+   "id": "when-is-jonah-coleman-coming-back-week-4-fantasy-football-injury-retur",
+   "title": "When Is Jonah Coleman Coming Back - Week 4 Fantasy Football Injury Return Update (2026) - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUEtFVmxvVXhsTWZUU2ExSWdQSmFKYWh6bUZFbWc4bW9hYXVNaUlGSGRpMHVuNUxFQzhoNmZJNy15UmFvbWpaa3dwdVVoUTBINFd0Q0U4WElqb0xlcjhNUHRrcmo3QzRwV1ZsRV9jelR2eXBDQUloeFJyaVRmT0hGYVg2RktzMzhHVVlXZmJiczliODJTTFY5RjlwYnF0LVVaVVFFejV1aHpzTlYwelBXdk5rdmhJcEhIX2NXdw?oc=5",
+   "source": "RotoBaller",
+   "published": "Thu, 01 Oct 2026 00:00:23 GMT",
+   "summary": "RotoBaller projects when Broncos RB Jonah Coleman might return in Week 4.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jonah Coleman",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 6,
+      "suggestedEdit": "Role boost \u00b7 +6 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: RotoBaller 10/1 \u2014 DEN RB (board 6.1 ppg) Week 4 return update; likely back."
+   }
+  },
+  {
+   "id": "dj-moore-remains-limited-by-shoulder-injury-fantasy-footballers-podcas",
+   "title": "DJ Moore Remains limited by shoulder injury - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWFdOdERFSnJwWjc4STdteHRWbTNGZGpGdG94ZFBvT0V1UWp3Q3JmeTJrS0hzdDNYMnQyNnV6Rzl5Q2oxZmR1TE5oQkNfMVdPWkVrczBPdU96NlNTUkRCelRHWUYwMWxJendLVlNEUmVOWVhxYmdTMzNER0hxb2I1Zjh4a2NhZ2hkbTgtRWJfUFFmQzNPZGVKbGt3?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Wed, 30 Sep 2026 23:32:48 GMT",
+   "summary": "The Fantasy Footballers report DJ Moore remains limited by a shoulder injury.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "DJ Moore",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -13,
+      "suggestedEdit": "Tag injured \u00b7 -13 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: FFB 9/30 \u2014 BUF WR (board 13.0 ppg) shoulder, limited; 1 game est."
+   }
+  },
+  {
+   "id": "when-is-a-j-brown-coming-back-week-4-fantasy-football-injury-return-up",
+   "title": "When Is A.J. Brown Coming Back - Week 4 Fantasy Football Injury Return Update (2026) - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcDlJUUVaX0FRMEdPb1FqallZdUlSLWlVUFdFUWRueWZ6TUR1OWNCeDFhNERPN25MVkR2SUt2R2pjbWhjOWxtLVR1NlBhM3Nfa1lxczYweVFCVE52Mk1nR0ZoVFJ4V2JIYVFkN25MZWpMOTB1NmVJdV9EV1NweHlGYXlOc3pXd3BtWkhHY2hhY09yWThKVk1LLXJGX0ZLa29lMG9wc0kxY1JQQ3ZwaU1SdkM2ZTA?oc=5",
+   "source": "RotoBaller",
+   "published": "Wed, 30 Sep 2026 22:00:19 GMT",
+   "summary": "RotoBaller projects when Patriots WR A.J. Brown might return in Week 4.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "A.J. Brown",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 15,
+      "suggestedEdit": "Role boost \u00b7 +15 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: RotoBaller 9/30 \u2014 NE WR (board 15.2 ppg) Week 4 return update; trending toward playing."
    }
   },
   {
@@ -87,6 +192,48 @@
    }
   },
   {
+   "id": "chris-godwin-jr-not-practicing-due-to-ankle-injury-fantasy-footballers",
+   "title": "Chris Godwin Jr. Not practicing due to ankle injury - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZUFZbThiUnVubG5odGtPRDF0dkxiXzU5T011SG91YUgxR0JHUmlCamkwWGJsVW5HeV8zWVNQbjdyTk1fWk82dFRlMWYwMVNpOVM3Z0pVNnMyZDFFcnI0NWhkQkhCOU5icldjY3B5WDAzcTdKRGxxNndtUzhwZHYxTElzSHdKM2d6eGRETTgxNWpwcHRJcWdrdnVvc2dwUDA?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Wed, 30 Sep 2026 21:26:58 GMT",
+   "summary": "The Fantasy Footballers report Chris Godwin Jr. is not practicing due to an ankle injury.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Chris Godwin Jr.",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -12,
+      "suggestedEdit": "Tag injured \u00b7 -12 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: FFB 9/30 \u2014 TB WR (board 11.8 ppg) ankle, DNP; 1 game est."
+   }
+  },
+  {
+   "id": "drake-maye-on-injury-report-but-practices-fully-fantasy-footballers-po",
+   "title": "Drake Maye On injury report, but practices fully - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWkNnNl9McVF2aDhhUjJ5OUp0MEI1V2pzd1BZYXNfSm5DUzZHd0JiNGsybG1rdUJsNElCdkV0ZFJmOEloVGpCRVBES29ZWURDWXZKcC1RVzlTZ2RrSHBGWDlWUzdKUldGVDhwMGhCRDhRUlJUdGVQV1dfX25lMTJDTVRHUnhYZjhjLU9rUUZNNl9PaVU1azd2Xy1scG9wc1k?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Wed, 30 Sep 2026 21:26:51 GMT",
+   "summary": "The Fantasy Footballers report Drake Maye is on the injury report but practiced fully.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Drake Maye",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 19,
+      "suggestedEdit": "Role boost \u00b7 +19 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: FFB 9/30 \u2014 NE QB (board 18.9 ppg) on injury report but practiced fully; expected to play Week 4."
+   }
+  },
+  {
    "id": "puka-nacua-returns-to-practice-expected-w4",
    "title": "Fantasy Football Injury Update: Puka Nacua Returns To Practice And Is Expected To Play In Week 4 - Sports Illustrated",
    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQY18xcGl1anYxbDU2Tm5HNVp3MFAwekswWEJUdlVfR1RNemR3ajl2VmE0UXdzMmthSHBqQVJKem5MRS14SXVOd3VZeHFnS3ZrVjBMdjUxRUpESUtIeDBSSXJWX2NRdEtuX2xKVmpYU1pLOHk0YzFnNW93ZVFRUHNFX2dqXzY0X0JKSkJxRnFWR3Y2Mzg5YUZQYV9LeHZqRVY4QTY4ZzYwZnF2UmxqTWlycXk0UVNLNXpHVXJJaEREcS1pd2ZNT0UzNWo4RUtJcEhTZWc?oc=5",
@@ -105,6 +252,48 @@
      }
     ],
     "note": "Grounded: SI 9/30 \u2014 LAR WR (board 10.2 ppg) back at practice, expected to play Week 4."
+   }
+  },
+  {
+   "id": "panthers-young-injury-update-is-encouraging-for-carolina-fantasy-footb",
+   "title": "Panthers: Young injury update is encouraging for Carolina, fantasy football managers - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNEhCeWdKaGRXcUZSRjVNYkZaN3dpLVhYM2w4eGpBM1drdmlRN3Q5b2tXbDVpUzl5c2F6aDU5Q2RMM0haUkt0UWpKcHAtMUtSUTBQaGJFSXV6eUxlcGprQkc5Mm51d2dLTUxVMGlUMVcwYU5XRHgtbUY1c2wyX2JmLXZ6amx6SHgwN0h0R2Vld0FXVmV1c3c?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Wed, 30 Sep 2026 20:59:16 GMT",
+   "summary": "Yahoo reports Bryce Young's injury update is encouraging for Carolina and fantasy managers.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Bryce Young",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 14,
+      "suggestedEdit": "Role boost \u00b7 +14 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: Yahoo 9/30 \u2014 CAR QB (board 13.8 ppg) encouraging injury update; Week 4 outlook positive."
+   }
+  },
+  {
+   "id": "lamar-jackson-limited-due-to-back-injury-fantasy-footballers-podcast",
+   "title": "Lamar Jackson Limited due to back injury - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQbEozckl3ZlVacFNpYzhMNVVPc0w1T0tJVzlmOGV1M3ZTZlVpV2M5TmVxdkg1Y0JmUFZrSFRVZHJybFJxcFk0OEtaWjNfbmF5MjF4QUprRlhwVGwtNHFDRk5ka1J0bDZLdk5MSUoyV2lLY2YycEFzZnVrYWtOTzV6M05LSThHSlMyQUQ4dGVBanZnTmpKTHc?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Wed, 30 Sep 2026 20:50:35 GMT",
+   "summary": "The Fantasy Footballers report Lamar Jackson is limited due to a back injury.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Lamar Jackson",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -20,
+      "suggestedEdit": "Tag injured \u00b7 -20 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: FFB 9/30 \u2014 BAL QB (board 19.6 ppg) limited, back injury; 1 game est."
    }
   },
   {
@@ -392,138 +581,6 @@
    "impact": {
     "players": [],
     "note": "Grounded: FFB 9/30 \u2014 over/underperformers analysis; no single headline player."
-   }
-  },
-  {
-   "id": "nfl-week-4-latest-intel-buzz-questions-n",
-   "title": "NFL Week 4 latest intel, buzz questions, news, fantasy tips - ESPN",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQWjlNTFhIMkFkVWxmUlBrSFUtbThWV1pGZDZhMGFHSUxpX25ld1BZZVhIQzVDZWdJZUlMMEM5TDhpMWttX21iSlhYNHBzOTZQU1BTNWF5VGlwTklHNG5DSmRqcVNrMzRyM2ZKRDJtXzlLR0NiS2ZnZmoxUWdXLV94d29PemxmNm5PYmxzMjFqQXNGMmNXYms3b3lhQ2o4UQ?oc=5",
-   "source": "ESPN",
-   "published": "2026-09-30T10:20:00Z",
-   "summary": "ESPN's Week 4 notebook with the latest intel, buzz questions and fantasy tips.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: ESPN 9/30 \u2014 Week 4 notebook; no standalone player action."
-   }
-  },
-  {
-   "id": "fantasy-football-cheat-sheet-week-4-don-",
-   "title": "Fantasy football cheat sheet Week 4: Don't waste resources after RB injuries - USA Today",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNU1VBQXRteGxzRlMzV25XYWo5NDBGR3VYY0RMMjI2NWNGZndFNkpvUEVnMWd0SldEVEhRNjh5eUd6MHI3QXdwcmo1ZWF6czBOdXFDc0Q2dWdJX1pNQ3g0ZnAzOW9Ha2tOOXBhMzg5WVhqaE5oUEFPc25BczlYUEg0WHBnVU9oeHc0QXdrWkd2TW9wZlA2b0tNWW9ERk16S3FQU2JvZFlLT0p3bWFVWlZQUklUdzNfWUhUSWE3eDZWOE9KWTFUazdnWXBkalZhVXU0MTZnbTk0elZ1WHhjdGc?oc=5",
-   "source": "USA Today",
-   "published": "2026-09-30T10:07:00Z",
-   "summary": "USA Today's Week 4 cheat sheet urges managers not to overspend waiver resources after a wave of RB injuries.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: USA Today 9/30 \u2014 RB-injury wave context; no single new player action."
-   }
-  },
-  {
-   "id": "trending-or-ending-updated-dynasty-ranki",
-   "title": "Trending or Ending? + Updated Dynasty Rankings - Dynasty Fantasy Football",
-   "url": "https://www.thefantasyfootballers.com/dynasty-podcast/trending-or-ending-updated-dynasty-rankings-dynasty-fantasy-football/",
-   "source": "The Fantasy Footballers",
-   "published": "2026-09-30T09:00:09Z",
-   "summary": "The Fantasy Footballers' dynasty pod debates which early-season performances are trending up or ending, plus new dynasty rankings.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: FFB 9/30 \u2014 dynasty podcast/rankings; no single headline player."
-   }
-  },
-  {
-   "id": "fantasy-football-buzz-case-keenum-to-the",
-   "title": "Fantasy football buzz: Case Keenum to the rescue as Bears dominate Eagles on 'Monday Night Football' - africa.espn.com",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQUZBdHZ1UExRUkgxYV9kLWZld1NwU3RrX3RJODhRNzF4aGczQUp3RzA0NEtIRnphMnd3SHVuVzB5S3FrMjhFX1I3dGs4MzZjd3FrMTNTOGJzeTRmRzNJeDMwSkh6dURyMTI1OHBVU1hCTy1JSnNJSjZDQkFfWUg4djRZWVNjMmEtVE55dXFEbUxDQXZhR0ZsM2xsblhMNE5hSFN3d25GampQcjNfUTk2Uy1URExtSE1v?oc=5",
-   "source": "africa.espn.com",
-   "published": "2026-09-30T05:45:36Z",
-   "summary": "ESPN: Case Keenum stepped in as the Bears dominated the Eagles on Monday Night Football.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: ESPN 9/30 \u2014 backup QB Keenum saw MNF action (not on board); starter status unclear from headline."
-   }
-  },
-  {
-   "id": "fantasy-football-start-em-sit-em-16-play",
-   "title": "Fantasy football Start 'Em, Sit 'Em: 16 players to start or sit in Week 4 - USA Today",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOa0t6QngyVnF2S3dNd3JwTmlWc3Q2MldpRU5POGl5SkZlNzdTb29ySjFJMUMzQm9aRDdwcXBZUVRfY2RhQnFST0FnZ044RDY1VU4xMVd0S21Vak1tZG4tSldMRXJLZ3dmc1F6WTd3MGZyUFpIUkZYQmM4VC1VdkRsakpEQ1phMGZ6TmtCSm14LXdhdmJPdDJpTDdNRjZFOGtsOTIycVRrOTVjU2hWc3Mwem1R?oc=5",
-   "source": "USA Today",
-   "published": "2026-09-30T02:08:00Z",
-   "summary": "USA Today runs its Week 4 start/sit calls on 16 players.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: USA Today 9/30 \u2014 start/sit column; no confirmed role change."
-   }
-  },
-  {
-   "id": "faab-waiver-wire-advice-week-4-fantasy-p",
-   "title": "FAAB Waiver Wire Advice: Week 4 Fantasy Pickups (2026) - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPc2xQUFhBUVVHV2x1R2tFNHJJZERGRUxkLTV1YVp3WEFIVG9kNFNvTVpfb3dtRmxLMGRBLWRRRmxkSENZNUtPMVZ2bV9pd0prd1pYeHpTTzB5Q1FPUDY3ck04X0s1STgzdjJkQnNpc2FhUjctY3U1Z0xDWjlVQmR3b0s0cnB3WElhVjI1VUNSYw?oc=5",
-   "source": "RotoBaller",
-   "published": "2026-09-30T01:31:00Z",
-   "summary": "RotoBaller gives Week 4 FAAB bid advice for waiver pickups.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: RotoBaller 9/30 \u2014 FAAB advice; no single player action."
-   }
-  },
-  {
-   "id": "who-to-drop-for-fantasy-football-week-4",
-   "title": "Who to Drop for Fantasy Football Week 4? (2026) - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVWM5RGNzbDViVEhMUGpid3B3dG9wN3h5N3NfcnlER1VMd0FweUtiRllGRTdlckNQdnVSOWF3c1Q3M2pkVno2R0Jod0hQOTROSlBLQlh0R0ZveDdMWi1wTzlnTWpQZmdxQ25uMGVkZWZYQ2M1MWpiTGRTeUFqNFBGanF5M3Fvdw?oc=5",
-   "source": "RotoBaller",
-   "published": "2026-09-30T01:30:00Z",
-   "summary": "RotoBaller lists Week 4 drop candidates.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: RotoBaller 9/30 \u2014 drop advice; no single player action."
-   }
-  },
-  {
-   "id": "running-back-waiver-wire-pickups-fantasy",
-   "title": "Running Back Waiver Wire Pickups - Fantasy Football Week 4 (2026) - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSWtKQVhmS2psUHByS3drTXRfUUU4SzQ4M05WQVlqQk5PM1Q4czN5ZHh2bng1TkRTLVlCYlBSWWFxMlFIZWdOZk5VMjFObG82MWUyZE5BTjZNbTl5TUJObzM1VWNNNFJzLXVGWVp0ZWxMalhuNlRCQ0MtcmZ6eHdKSmg0amxubjQ5RXBzWHNQejY0OTBFOWtrSUNOc2M?oc=5",
-   "source": "RotoBaller",
-   "published": "2026-09-30T01:24:00Z",
-   "summary": "RotoBaller's Week 4 running back waiver-wire pickups amid the recent run of RB injuries.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: RotoBaller 9/30 \u2014 RB waiver roundup; no single headline player."
-   }
-  },
-  {
-   "id": "travis-etienne-injury-gives-kendre-mille",
-   "title": "Travis Etienne Injury Gives Kendre Miller a Difficult Opportunity Against the Falcons - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObGtKLXo3elJXaWhBT3lBbTNOSFhSLThCNkZ6Wk5SU1NoclAxLVJIOTFQWlpTNERjSHZndFZ1aXJCSWo2dUxMcV9lbnpNckFqejRkM2xLZGhqeHY3ZENmeFFQOWNyZk93QjBNR2FkLS00cTYzcHNWbkpFWFNFc1RWQWtrX0UwVG1DZ2RV?oc=5",
-   "source": "Yahoo Sports",
-   "published": "2026-09-30T01:10:10Z",
-   "summary": "Travis Etienne's injury opens the Saints backfield for Kendre Miller against Atlanta.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Travis Etienne Jr.",
-      "action": "injured",
-      "games": 3,
-      "deltaPts": -39,
-      "suggestedEdit": "Tag injured \u00b7 \u221239 pts (3 games) \u00b7 drops ~3 rounds"
-     },
-     {
-      "name": "Kendre Miller",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 30,
-      "suggestedEdit": "Role boost \u00b7 +30 pts \u00b7 move up ~3 rounds"
-     }
-    ],
-    "note": "Grounded: Yahoo 9/30 \u2014 ETN (NO, board 13.0 ppg) out; Miller off-board, 10 ppg est."
    }
   }
  ]
