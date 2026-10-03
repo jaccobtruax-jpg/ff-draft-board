@@ -1,7 +1,166 @@
 {
- "updated": "2026-10-03",
+ "updated": "2026-10-04",
  "sample": false,
  "items": [
+  {
+   "title": "Jonathon Brooks Fantasy Football Injury Update: When Will Panthers RB Return? - Complex",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQR0V2MkJweDVlMk1PTldYWHFkaEltZFpuVkxDRWJnQ3U5R2t5X1JVcDVDZnhJNEF5RUtybGZuZ01Sb0tJZE1TQTJNdG1obWxlTGJlWGw3dzFRaXJzMXVuSHBYSGZyLUZTUHlQSUhiS0N6aW5TUElQZmpiOUdLS2paLTk2MFFsUUNGV0NBbEVZN1pMUQ?oc=5",
+   "source": "Complex",
+   "published": "Sat, 03 Oct 2026 15:13:56 GMT",
+   "summary": "Complex looks at when Panthers RB Jonathon Brooks might return from injury.",
+   "impact": {
+    "players": [
+     {
+      "name": "Jonathon Brooks",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -10,
+      "suggestedEdit": "Tag injured \u00b7 -10 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: Complex 10/3 \u2014 Brooks (CAR RB, board 9.7 ppg) out, return TBD; 1 game est."
+   },
+   "id": "jonathon-brooks-fantasy-football-injury-update-when-will-panthers-rb-return",
+   "sample": false
+  },
+  {
+   "title": "Is Mike Evans Playing Week 4? Fantasy Football Injury Update - FantasyPros",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRjZUcy0zZHEwYjdGb19nVFRwNTcwbFhwWnRyU05uWHpZODNNYnpkWTA2TGRUVkVURTlFSE8zVzViYlU4WWJQMHZmcDh2TTJncFhXQVlfQUtZZ09xbWwtOFBEZzJhTVhLM1Vic284emduM09HdkpvdEhhNC1OTGhXWS1iZkFWU1BsaTd5dDJobGU1RF91VWtfelBnRzE3SkRmbmtv0gGoAUFVX3lxTE9FeGdjQVJNYzZmMXB3MVdtaGtFMHVuVzJxSHhpNUZwalFRbTB4bTQzTmRVWks1QU56S1ZLc3JZZ3llWER4aTJxclNDYlZCaXlWS09OREtLbElwRGo1S3pqSksxUjQ2aWtjZ2p1V3RkaGtIbkd4VFdSNkFCRmhOeXN1XzhwZEZzU25WR04wTlBNUjdWSmNWd0F2VTlacWZxWk1laXpSNE1Ocw?oc=5",
+   "source": "FantasyPros",
+   "published": "Sat, 03 Oct 2026 12:43:12 GMT",
+   "summary": "FantasyPros checks whether Mike Evans will play in Week 4 amid his injury.",
+   "impact": {
+    "players": [],
+    "note": "Grounded: FantasyPros 10/3 \u2014 Evans (SF WR, board 12.8 ppg) latest status; 10/1 SI injured tag (-13) stands pending final status."
+   },
+   "id": "is-mike-evans-playing-week-4-fantasy-football-injury-update",
+   "sample": false
+  },
+  {
+   "title": "Fantasy Football Impact: Mike Evans Injury Update; Deebo Samuel\u2019s Fantasy Value Rises - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcXFlTGlHWWlHMDgyMzh4MzhuNnZmU0IxM3gyX1Etc1hRLTdJd1prTlkxSHZydXQ1eHlHLWxVenQxME90aFllODVPTTJtTkFGM0otWkpsZzlZM2JVVW5vYmpKRE14NExsUnVjdWtMMmRtRE5ETlZ3elJuZDhUMTZBZldtc25HWnBkUjFoVTdyTVJ2THdwTldCcEVUSDQwODNRRzZmM2UyM3o5Y1VMVFZUSE1LQWg2UUt5eXZ3dWxEVUJaUQ?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Thu, 01 Oct 2026 20:52:52 GMT",
+   "summary": "SI reports on Mike Evans' injury and says Deebo Samuel's fantasy value rises as a result.",
+   "impact": {
+    "players": [
+     {
+      "name": "Mike Evans",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -13,
+      "suggestedEdit": "Tag injured \u00b7 -13 pts (1 game) \u00b7 drops ~1 round"
+     },
+     {
+      "name": "Deebo Samuel Sr.",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 8,
+      "suggestedEdit": "Role boost \u00b7 +8 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 10/1 \u2014 Evans (SF WR, board 12.8 ppg) injury update, sidelined implied by Deebo rise; Deebo (SF WR, board 7.9 ppg) value rises. est."
+   },
+   "id": "fantasy-football-impact-mike-evans-injury-update-deebo-samuel-s-fantasy-value-rises",
+   "sample": false
+  },
+  {
+   "title": "Zach Charbonnet injury update creates possible fantasy football league winner - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNamVSRHlIYlRWd19CYlM0b0hwVW1wdzlfVDVubGJEMEZxc0owanlQaDd0QTlmVlFPS2tTelNJOXBIWkd1OGdMTFRNVV95UVhmZjhLV0ZLcWtHUTFlV0d0SjZQZEtGZ1VfX3h3SW8tRDQzb1FHSnhJZDlnY01KU0ZXRjZQSGNPdmdvYlBMYXk0SmRLQQ?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Thu, 01 Oct 2026 17:10:06 GMT",
+   "summary": "Yahoo says Zach Charbonnet's injury update could create a fantasy league winner in the Seahawks backfield.",
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 10/1 \u2014 Charbonnet (SEA RB, board ~6.5 ppg) injury update; SEA backups Wilson/Holani already boosted by 10/2 SI item \u2014 the potential league winner. est."
+   },
+   "id": "zach-charbonnet-injury-update-creates-possible-fantasy-football-league-winner",
+   "sample": false
+  },
+  {
+   "title": "Fantasy Football Fallout as Chargers Reveal Ladd McConkey, Keaton Mitchell Injuries - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPX1F6VERyYk9zVmRoTF9MX3NfQ01TOGREbkh0eFV3YWV3Vk1MdnBoNkxYOHhSN2NXZHQwY0Qxb0ItbER2Zi1pckdJZm5OQXBzOFJTYUxYUW9XcEhHRVRPSzh4OVN0QkFOcEU1aXg3WVlNMlh5eXM4bUlmVU9FbmRzcU1aZzBXUHJfenNtaGlybjRabVk?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Thu, 01 Oct 2026 16:00:06 GMT",
+   "summary": "Yahoo examines the fallout after the Chargers revealed injuries to Ladd McConkey and Keaton Mitchell.",
+   "impact": {
+    "players": [
+     {
+      "name": "Keaton Mitchell",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -7,
+      "suggestedEdit": "Tag injured \u00b7 -7 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: Yahoo 10/1 \u2014 Mitchell (LAC RB, board 6.5 ppg) injured; McConkey (LAC WR, board 14.2 ppg) questionable per ESPN 10/2 \u2014 monitor. est."
+   },
+   "id": "fantasy-football-fallout-as-chargers-reveal-ladd-mcconkey-keaton-mitchell-injuries",
+   "sample": false
+  },
+  {
+   "title": "Fantasy Football Injury Update: Nico Collins Could Be Back In Lineups In Week 4 After Returning To Practice - si.com",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOaXpGM0Rkb2xVWU9FQVd1bWdrQ0JMRXg0UUU2aFpVSERySjNNSkNSRXlLZ0RmVEV0WWN0a3NFazgtbmZJN3RCcVlmYWFfVEk3akNoNGw5YTU3TGVWWWppYTRyNVo0WjNNV1oyeDBMeWx0Uk9WcU5JZ05oZVIxVmE5Rmt3X1EyZ2tEQzFjYXh2UUlQZ3VzWWdHZTBaU1dHRjZmNnhZeXRWV1VCSUo4am9IbGo5enNvMEFRWXR1SjZBTnZPTnRYTG91U0dyN3RPeFFyNGRfcFl2czU4b2RTVlZyZg?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Wed, 30 Sep 2026 18:59:23 GMT",
+   "summary": "SI says Nico Collins returned to practice and could be back in lineups for Week 4.",
+   "impact": {
+    "players": [
+     {
+      "name": "Nico Collins",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 15,
+      "suggestedEdit": "Role boost \u00b7 +15 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 9/30 \u2014 Collins (HOU WR, board 15.0 ppg) returned to practice, expected Week 4 return."
+   },
+   "id": "fantasy-football-injury-update-nico-collins-could-be-back-in-lineups-in-week-4-after-retur",
+   "sample": false
+  },
+  {
+   "title": "Jordan Mason Fantasy Football Injury Update: When Will Vikings RB Return? - Complex",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZ2JFZGVSY0M3eTBuVkJlMTZ5Z1c4SEVRX3lEQnFfYnFLYTFLdXVDV2dHUEN6THNqT011ZEZSQ3FoSDdPRENaZDVtbXJwN0ZTTjNyRDdRZkR5X0p5UVhMaEt6MkVJQ0J3Mzc5QlYwU09NQ0Y5U3IxRVZ4U1JTSVZiVXpTRGlaWllEVFhud2FR?oc=5",
+   "source": "Complex",
+   "published": "Wed, 30 Sep 2026 16:35:34 GMT",
+   "summary": "Complex asks when Vikings RB Jordan Mason will return from his injury.",
+   "impact": {
+    "players": [
+     {
+      "name": "Jordan Mason",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -9,
+      "suggestedEdit": "Tag injured \u00b7 -9 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: Complex 9/30 \u2014 Mason (MIN RB, board 9.2 ppg) out, return TBD; Aaron Jones Sr. handles more early-down work. est."
+   },
+   "id": "jordan-mason-fantasy-football-injury-update-when-will-vikings-rb-return",
+   "sample": false
+  },
+  {
+   "title": "Fantasy Football Week 4 Injury Report: De\u2019Von Achane, Puka Nacua, Justin Jefferson And More - Forbes",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSnhTSk5Uc3NXc2l4OEZQLXZlTTEwVF9TN0Y2X1VRRG9FNVRYRmMyZ1A2SFcySjNTSXBrUjhEREJIU0tEZU1idGRzbUpqdDJwWmYzSmtIWWl2YUJlUV9sb3REUlFNU2NuczVPby1NVHNwaG9xX0V5dGszamhURGZVNnJXdlpZcnppak51QTJ4cTlVMkN2R1BWQTFRc3U4ZzU2UjV2MGs1cXExLXhHdURha1RyRzRnclBTVzN0LUpn?oc=5",
+   "source": "Forbes",
+   "published": "Wed, 30 Sep 2026 12:15:04 GMT",
+   "summary": "Forbes rounds up Week 4 injuries to De'Von Achane, Puka Nacua, Justin Jefferson and others.",
+   "impact": {
+    "players": [
+     {
+      "name": "De'Von Achane",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -17,
+      "suggestedEdit": "Tag injured \u00b7 -17 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: Forbes 9/30 \u2014 Achane (MIA RB, board 16.8 ppg) on Week 4 injury report; Nacua/Jefferson covered in separate items. est."
+   },
+   "id": "fantasy-football-week-4-injury-report-de-von-achane-puka-nacua-justin-jefferson-and-more",
+   "sample": false
+  },
   {
    "title": "Caleb Williams, Jayden Daniels and more QB injury updates for fantasy football Week 4 - The Big Lead",
    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQ1RhMHdJaXdKc0MzY3J0UG5NUy1fVnlNdTloV2NOQnJsNS1",
@@ -500,150 +659,6 @@
      }
     ],
     "note": "Grounded: SI 10/2 \u2014 Daniels (WAS QB, board 19.1 ppg) ruled OUT vs IND; Mariota (not on board, QB ~18 ppg est.) sleeper."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-report-week-4-lamar-jackson-puka-nacua-justin-jefferson-more-yahoo-spor",
-   "title": "Fantasy Football injury report Week 4: Lamar Jackson, Puka Nacua, Justin Jefferson & more - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOVHRWME5FZV9rOEJPVHFWbHVZbWhoS1c3Zkdrdmsxdkh0SThMdnZZbXptR091Y3pKdE9RbTJqLVFlaDBWcFplbW94cHozUXFYYjdPTDBTTlJLSFFjYlAyMUt1QnVaOTF3UWxzVjN6M1ZsQ0g4MkRhSTFvME9OQnllbEN2b2NHb0gwbXFQMw?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Fri, 02 Oct 2026 14:17:44 GMT",
-   "summary": "Yahoo's Week 4 injury report rounds up Lamar Jackson, Puka Nacua, Justin Jefferson and other key fantasy players.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 10/2 \u2014 Week 4 injury roundup; Lamar Jackson (BAL QB, board 19.6 ppg) new name on report, Nacua/Jefferson covered in separate items."
-   }
-  },
-  {
-   "id": "puka-nacua-injury-update-rams-wr-lied-about-practice-yahoo-sports",
-   "title": "Puka Nacua Injury Update: Rams WR \u201cLied\u201d About Practice - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MMFpfRHBwcU53bV9HRkVENzFXSlhoYmpfeTlWMU0tYWNNVXVoUFVqVFFRbzlFS1FsdlYzMWVXZ2ZWNllra2diOUxaNGIwbmxGSnB5LXFIXzJrRTJWeUtlY2NGTFExbnlFSVllaS0yMGJBSndhSWNoVWlWanZWanM?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Fri, 02 Oct 2026 10:26:40 GMT",
-   "summary": "Yahoo reports Puka Nacua misled about his practice status as the Rams manage his Week 4 return.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 10/2 \u2014 Nacua (LAR WR) practice-report gamesmanship; expected Week 4 return unchanged (prior boost stands)."
-   }
-  },
-  {
-   "id": "eagles-delivered-brutal-devonta-smith-update-before-rams-game-yahoo-sports",
-   "title": "Eagles Delivered Brutal DeVonta Smith Update Before Rams Game - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNejFlMl95dVBxNjhINFFIMHdiSV9vVXpudjNvaVBEdV9LQnNzeDV0UXRWcEUxa0NES0RRem9JQ2pibTZXdVpSTEpHcUJyaEpObUdUVEVfeklCcEFpY3hGeDhXYkRQN2gxcEdCWVVHeWpBZF9ELWg2WDdxVFJ5aFdERU1zbGxjUjlrZzJId1ZRUQ?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Fri, 02 Oct 2026 02:46:40 GMT",
-   "summary": "Yahoo reports a brutal DeVonta Smith injury update ahead of the Eagles' Week 4 game vs. the Rams.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "DeVonta Smith",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -14,
-      "suggestedEdit": "Tag injured \u00b7 -14 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: Yahoo 10/2 \u2014 Smith (PHI WR, board 14.3 ppg) hamstring; out vs LAR, builds on Wed DNP tag; Eagles WR2/WR3 gain start value."
-   }
-  },
-  {
-   "id": "puka-nacua-opens-up-about-sharp-pains-from-injury-aaron-donald-concern-grows-yahoo-sports",
-   "title": "Puka Nacua opens up about \u2018sharp pains\u2019 from injury; Aaron Donald concern grows - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMFIwQktOaUV0bzVRZnRRZVR5ZC1XUzhpU2VRRzRpM2pOZGVWSGtsMmtRV285ZW5Ua3pTY0tvclNlUHFJYWlsTm9SOHhpVmMyUVJaMllNbk9ieTB3ZzA5cTNVNDZxQnJIRGZYaDAwbkpEVks3bGFxb25leldvZG1IdXRYOA?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Fri, 02 Oct 2026 00:07:00 GMT",
-   "summary": "Yahoo: Puka Nacua opened up about sharp pains from his injury as Aaron Donald's concern grows.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 10/2 \u2014 Nacua (LAR WR) still expected Week 4 but reported sharp pains; monitor. Donald not on board (DL)."
-   }
-  },
-  {
-   "id": "what-happened-to-dylan-sampson-latest-update-on-the-browns-rb-s-injury-and-why-he-s-out-for-wee",
-   "title": "What Happened to Dylan Sampson? Latest Update on the Browns RB\u2019s Injury and Why He\u2019s Out for Week 4 vs. Steelers - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPN3JKclJidENIalRWTTVkbEp6cVpDR0JWOWY2cDE0dWRZdXlKNklqQ0FMazVrdFVkcnBJUDl2YnFzbUZCaGFSVDBtMmEyWVJzc0F4QXVQUkwwN0JtY1BVanJxem9feld1WHNQQzhKVkpiRXhybTg2RXljU01yNnp3RnlEVW1EWHFVT3RheTZR?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Thu, 01 Oct 2026 23:15:05 GMT",
-   "summary": "Yahoo details Browns RB Dylan Sampson's injury and why he is out for Week 4 vs. Pittsburgh.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Dylan Sampson",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -6,
-      "suggestedEdit": "Tag injured \u00b7 -6 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: Yahoo 10/1 \u2014 Sampson (CLE RB, board 6.2 ppg) ruled OUT for Week 4 vs PIT."
-   }
-  },
-  {
-   "id": "travis-etienne-jr-s-hamstring-injury-leads-to-saints-ir-decision-yahoo-sports",
-   "title": "Travis Etienne Jr.\u2019s hamstring injury leads to Saints IR decision - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcGt6NkhWVGc3bDA1Z2hCTV9zYkg4cDgwLTIxelZ0WkRmUjlOeng3NWxMS0l0Q2d6Y2VZdFU3dExaUEU0ZVJTZEI4MTVVNUtUbWl6UEVYdDFOa0IwTW44TWFjQm5lcnYxdlpCXzROR3cwZmZtNVpnT05YOVVBTDB3c3pXZFNPVURDVGJn?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Thu, 01 Oct 2026 22:08:00 GMT",
-   "summary": "Travis Etienne Jr.'s hamstring injury has landed him on the Saints' injured reserve.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Travis Etienne Jr.",
-      "action": "injured",
-      "games": 4,
-      "deltaPts": -52,
-      "suggestedEdit": "Tag injured \u00b7 -52 pts (4 games) \u00b7 drops ~3 rounds"
-     }
-    ],
-    "note": "Grounded: Yahoo 10/1 \u2014 Etienne (NO RB, board 12.8 ppg) hamstring \u2192 IR; out minimum 4 games."
-   }
-  },
-  {
-   "id": "keenan-allen-limited-by-groin-injury-fantasy-footballers-podcast",
-   "title": "Keenan Allen Limited by groin injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOU5DTk9RWDVWejJ2MWZNYU9tTGUxc0RQTVJBQ3p4YllySy1LN3JkT0lRTUlfLUNwdG9acnA3RHNCV1YtaWlpa1FuMWRpUHNnaUVFLXNBRWpLSkxQWWM1Ui1VZFNNbVd5Y3g0QUFHdzUtdjNaQ2Q4OE1zVjBpdWFVZDNPQ1l3TlcwSzVfVm5IcUY?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Thu, 01 Oct 2026 21:47:54 GMT",
-   "summary": "The Fantasy Footballers report Keenan Allen was limited by a groin injury.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Keenan Allen",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -9,
-      "suggestedEdit": "Tag injured \u00b7 -9 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: FFB 10/1 \u2014 Allen (IND WR, board 9.0 ppg) groin, limited; 1 game est."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-update-does-alvin-kamara-or-kendre-miller-see-a-bigger-boost-with-travi",
-   "title": "Fantasy Football Injury Update: Does Alvin Kamara or Kendre Miller See a Bigger Boost with Travis Etienne Jr on IR? - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYzBrMnFkZi0tcldveEl6cHhOV2RKOG1PdElDUWN4T2VSeGJFNVJheG56eUUxQnNGVDMyWmZRa1dBVzlZREZJSExPR2U3Nl9BMDdhR01TQlU2UDFFdDhiWDlLVUlMVjd4N1FrRXYyVVpQb293RHEwZUZ6WHpkNnJ5U25YVkN0THhVYnRr?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Thu, 01 Oct 2026 21:28:30 GMT",
-   "summary": "Yahoo weighs whether Alvin Kamara or Kendre Miller benefits more after Travis Etienne Jr. landed on IR.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Alvin Kamara",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 6,
-      "suggestedEdit": "Role boost \u00b7 +6 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: Yahoo 10/1 \u2014 Etienne (NO RB) to IR; Kamara (NO RB, board 5.8 ppg) lead role, Kendre Miller also in mix."
    }
   }
  ]
