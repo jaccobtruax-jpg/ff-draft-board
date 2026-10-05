@@ -1,7 +1,153 @@
 {
- "updated": "2026-10-05",
+ "updated": "2026-10-06",
  "sample": false,
  "items": [
+  {
+   "id": "pat-bryant-fantasy-football-update-ankle-injury-could-double-troy-franklin",
+   "title": "Pat Bryant Fantasy Football Update: Ankle Injury Could Double Troy Franklin's Week 5 Role - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNblVobTY1XzhFXzAzRjdVZG5yaDdhenhQOElUcTFJeUJmOWhaODk2X042Z19YZjQxemsxOVdveDIxaUx0Nk5ZT210dUxMcW5sOFVzekVHTWtFT2F3RFZNS0JOa1djSXlsSll3NlYtSXdxNngzZjA0b2lUSmZ6UUpBSVV1MTMyaDcydlBQZzZMTEp4NDk1TVVuMEFpUnMzXzQ?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Mon, 05 Oct 2026 20:37:06 GMT",
+   "summary": "SI reports Broncos WR Pat Bryant's ankle injury could double Troy Franklin's Week 5 role.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Pat Bryant",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -7,
+      "suggestedEdit": "Tag injured \u00b7 -7 pts (1 game) \u00b7 drops ~1 round"
+     },
+     {
+      "name": "Troy Franklin",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 5,
+      "suggestedEdit": "Role boost \u00b7 +5 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 10/5 \u2014 Bryant (DEN WR, board 7.4 ppg) ankle injury, severity TBD, 1 game est.; Franklin (DEN WR, board 5.1 ppg) role could double."
+   }
+  },
+  {
+   "id": "fantasy-football-injury-impact-jayden-daniels-set-to-return-as-a-qb1-injured-marcus-mariota-now-droppable",
+   "title": "Fantasy Football Injury Impact: Jayden Daniels Set to Return as a QB1; Injured Marcus Mariota Now Droppable - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOdmRzSWpOT09xczNoc3J0Y0hxX05ncFdTZlY0QURkSDVZdXpwNUN2OHNDV0VCMi1tQ09SXzVTUDhwYmUzOE1JSXpZSG14WVBPOFZSak1wbFo2bkI5ODlQbG5UU1NucFlJbkREWTE2R1RkVTM4ZFoySmZLTlkxYWhmREYwNXBfOXVYd0JXUzFuU3pVTTBlQUs2X3ZENGg3T0FQZ2cxendRbDdObGNSM3dSUUhGc3JIUktsdWNBM1NEQWV6dlZKWmh5RW1VY21hTGR4STR5RzFUQ1FwQQ?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Mon, 05 Oct 2026 20:15:38 GMT",
+   "summary": "SI reports Jayden Daniels is set to return as a QB1 while injured Marcus Mariota is now droppable.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jayden Daniels",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 19,
+      "suggestedEdit": "Role boost \u00b7 +19 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 10/5 \u2014 Daniels (WAS QB, board 19.1 ppg) set to return as QB1; Mariota (WAS QB, not on board \u2014 est. 18 ppg) droppable, existing 10/4 injured tag stands."
+   }
+  },
+  {
+   "id": "tee-higgins-considered-day-to-day",
+   "title": "Tee Higgins considered day-to-day - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPX1pPa0VMVlJmVkNqNFk3aF9jalkzYWtfVUJFZGRoSVEyVVJTVXRzU3p4LUQzT0Vvc2sxenVnTFh4WWVHcktGX2JBQlNiZGZ2VC1xb2ZzRGw1MzhyVFktOGQ1cS1mRVJreHpyUlpSV1doYVJyM1ZTR3Mza0ZfQXRwdTBtZWZaZw?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Mon, 05 Oct 2026 19:52:25 GMT",
+   "summary": "Yahoo reports Bengals WR Tee Higgins is considered day-to-day with his adductor injury.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 10/5 \u2014 Higgins (CIN WR, board 13.8 ppg) day-to-day; existing 10/4 injured tag (-14, 1 game est.) stands."
+   }
+  },
+  {
+   "id": "fantasy-football-injury-impact-zach-charbonnet-nearing-return-spoiling-emanuel-wilson",
+   "title": "Fantasy Football Injury Impact: Zach Charbonnet Nearing Return, Spoiling Emanuel Wilson's Long-Term Outlook - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNTDBndmpESHozRTRNNzNlLXh4RjMyU0M3dTVyMWQ1SGZua3lrbjdPWDY0VEhZbjZNcExDY1pNelMyODlIa09XOEJPb3Y2R2dUckxqejlOdy1fVV9JX1NFQTJWU3dmR0dxX09QZGhrWjV2d0JOYWc3ck1lR2lXSkl1RzRtM0dBMV91djdOZXY5bDJTVUFBZHVUZ1k0a1NWSG5rLVNWdkRZMDMyU2hOZVlKZXV4REs0THFreFJhYmVBSmNEdDBocUFHSjVSaklGZTVFWkpPUWRSQ19wNkFzdkd3?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Mon, 05 Oct 2026 18:36:35 GMT",
+   "summary": "SI reports Zach Charbonnet is nearing return, which spoils Emanuel Wilson's long-term outlook.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Zach Charbonnet",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 6,
+      "suggestedEdit": "Role boost \u00b7 +6 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 10/5 \u2014 Charbonnet (SEA RB, board 6.3 ppg) nearing return; Wilson (SEA RB, board 2.8 ppg) stash value down."
+   }
+  },
+  {
+   "id": "week-5-fantasy-football-waiver-wire-replacements-for-injured-tyquan-thornton",
+   "title": "Week 5 Fantasy Football Waiver Wire Replacements for Injured Tyquan Thornton, Including Xavier Worthy, Tyreek Hill - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQLUZoWjY3ZUJCNW1vbXdwVWZyUlhfOGIxQWk0V2NBdkNFZGEtMXktWFptLVV0c0ZjVkxuaUxzdVlKWG1waGVYcS1kTnV0SXBTanFOdWpzZ21BRmlaMzlRbkFhc3dPQlFVUXptQUl3alFmdFU2YmV1dElqeTBVMmZTTmNIWUkxb053NnBCei03czNGdGY2dlFwRVM4alNNRTFCanNWTnNLZ1JlOWplRmkybHVQWkhkdUNtYVZXeHZtWnRZR18zNlZaTUxzVXBfZWNJLTE0TGpmMkFfQmdYMzNELW1FNA?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Mon, 05 Oct 2026 17:47:27 GMT",
+   "summary": "SI lists Xavier Worthy and Tyreek Hill as Week 5 waiver wire replacements for injured Chiefs WR Tyquan Thornton.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Xavier Worthy",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 9,
+      "suggestedEdit": "Role boost \u00b7 +9 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 10/5 \u2014 Worthy (KC WR, board 9.4 ppg) primary replacement with Thornton (KC WR) out; Hill also in mix (not on board \u2014 est.)."
+   }
+  },
+  {
+   "id": "week-5-waiver-wire-watch-tyreek-hill-becomes-a-priority-add",
+   "title": "Week 5 Waiver Wire Watch: Tyreek Hill Becomes a Priority Add with Chiefs Injuries to Rashee Rice & Tyquan Thornton - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBQZVBEZ3VKTWRNd3c0cS1PZ0tjdVdUcGVQZTRfOGp6WGo0aTVvS2JnRnNoUktlVW5vNEw3Wk8yUmdfNGFhcFJuNVRNS1pSXzZBdjRyQ0xjZ2gyUjF0ckJ1ZmtUMHNqdjBnN3ItYXBybTlFSkgwdU12TUN2SmZ1QQ?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Mon, 05 Oct 2026 16:35:00 GMT",
+   "summary": "Yahoo makes Tyreek Hill a priority Week 5 add after injuries to Chiefs WRs Rashee Rice and Tyquan Thornton.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Tyreek Hill",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 12,
+      "suggestedEdit": "Role boost \u00b7 +12 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: Yahoo 10/5 \u2014 Hill (KC WR) priority add with Rice (KC WR, board 14.8) & Thornton (KC WR, board 4.7) hurt; not on board \u2014 est. 12 ppg (WR)."
+   }
+  },
+  {
+   "id": "fantasy-football-managers-should-hold-travis-kelce",
+   "title": "Fantasy Football Managers Should Hold Travis Kelce with Injuries to Chiefs Wide Receivers - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZU9GNTdMRWZMR2QwY2g2elZab3JKLXNZenhKZVhYNVE0anBoRTZmQU5CM1RYTkx4WDl4aF9raElyNGREZDdOQVBJaE9BdUpBSjVYQ21ubFA5NUpYZFkwNDQ3Z3JhR1QtSEx4WUJqYTloWEZNdEx3TnRDRDEyV19kdHljdnROMkx0N3ktWWJINV9lc1JmeDVrMmpOS2pnM2ludXh4eFBHem5yYkNobU55N3h3QlFtWF9xYXoyWWVPNUs0WDl5bml2a0JrWGx2VkJWOGc?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Mon, 05 Oct 2026 16:18:07 GMT",
+   "summary": "SI advises holding Travis Kelce as Chiefs WRs Rashee Rice and Tyquan Thornton deal with injuries.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Travis Kelce",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 10,
+      "suggestedEdit": "Role boost \u00b7 +10 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 10/5 \u2014 Kelce (KC TE, board 9.7 ppg) hold with Rice/Thornton (KC WRs) out; target share up."
+   }
+  },
   {
    "id": "pat-surtain-ii-likely-to-miss-time-with-ankle-injury",
    "title": "Pat Surtain II Likely to miss time with ankle injury - Fantasy Footballers Podcast",
@@ -419,145 +565,6 @@
      }
     ],
     "note": "Grounded: SI 10/4 \u2014 Chase (CIN WR, board 19.9 ppg) injured in Week 4, severity unclear; sleeper unnamed in headline \u2014 monitor."
-   }
-  },
-  {
-   "id": "fantasy-football-week-4-injuries-late-waiver-pickups-after-justin-jefferson-devonta-smith",
-   "title": "Fantasy football Week 4 injuries: Late waiver pickups after Justin Jefferson, DeVonta Smith, Breece Hall out - The Big Lead",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSzZrUlZYYzk5dkhWRlZ0bkdyWHJzLUpfQUF6aGhsX1FCT19vcEpxOGRwcGZOaGx2OHNlT1FjbkhacU9uUC1ISlVPblBUMEUwR0xLM05MRmhNWDlsbU5LRXJOcG1RU2l5cUZTWGJBLVp6enNZMmg5VTRXNWIwN29BZVVYTVRkcGJqeXZRdHVKTVFTSzdRN3lLUzFHb25IR3NTWFNoaG1mcTRlZTB5MFF2ZFljRE9NOUJQbWhVQVJCSjhnaHNP?oc=5",
-   "source": "The Big Lead",
-   "published": "Sat, 03 Oct 2026 23:03:45 GMT",
-   "summary": "The Big Lead lists late waiver pickups after Justin Jefferson, DeVonta Smith and Breece Hall were ruled out in Week 4.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Breece Hall",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -14,
-      "suggestedEdit": "Tag injured \u00b7 -14 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: Big Lead 10/3 \u2014 Hall (NYJ RB, board 13.5 ppg) out W4; severity TBD, 1 game est.; Jefferson & Smith tags stand."
-   }
-  },
-  {
-   "id": "jadarian-price-injury-update-seahawks-lose-rookie-to-ir-stint-yahoo-sports",
-   "title": "Jadarian Price injury update: Seahawks lose rookie to IR stint - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPR0lTWHZKaXpJOTRjWmNwUHhDRWN1X2dEN0NKblhTT1B6cmRNcWN0Y09BaWg3WTNWNFEwdzJuQjZUNy1YOENIc3ExN09RNHE0dmFjYktUNkhteHMxaXJfZlJLQkx3c01IQjRNN055U3lEeDRjNVBXRnFlNEw1YzZnb1FxcGpEUG1QUTdOcA?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Sat, 03 Oct 2026 20:41:00 GMT",
-   "summary": "Yahoo reports the Seahawks placed rookie running back Jadarian Price on injured reserve.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jadarian Price",
-      "action": "injured",
-      "games": 4,
-      "deltaPts": -46,
-      "suggestedEdit": "Tag injured \u00b7 -46 pts (4 games) \u00b7 drops ~3 rounds"
-     }
-    ],
-    "note": "Grounded: Yahoo 10/3 \u2014 Price (SEA RB, board 11.5 ppg) to IR, out min 4 games; Wilson/Holani lead SEA backfield (SI 10/2 boosts stand)."
-   }
-  },
-  {
-   "id": "xavier-legette-placed-on-injured-reserve-nfl-news-fantasy-football-rotoballer",
-   "title": "Xavier Legette Placed on Injured Reserve - NFL News | Fantasy Football - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUVB2MURCOWoyZmNhSE1mZHoya1p6MU5sbDZfQnRuSWVyc2l2MGtsVGlLYlZkSlJsM0pnbnVpMWVEM250Vl9SVk03SmZScndfX19tUEI0SlduNlhDbkI5UGVyU3dvQjRWUGh1TlJqRTBKWl9tdkR2Wi1FSVI1T3gtY2JHaUdyMEVuMTBnSmNBQ3Q?oc=5",
-   "source": "RotoBaller",
-   "published": "Sat, 03 Oct 2026 20:19:09 GMT",
-   "summary": "RotoBaller reports Panthers wide receiver Xavier Legette has been placed on injured reserve.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Xavier Legette",
-      "action": "injured",
-      "games": 4,
-      "deltaPts": -12,
-      "suggestedEdit": "Tag injured \u00b7 -12 pts (4 games) \u00b7 drops ~2 rounds"
-     }
-    ],
-    "note": "Grounded: RotoBaller 10/3 \u2014 Legette (CAR WR, board 3.0 ppg) placed on IR, out min 4 games; Coker (CAR WR, board 9.3 ppg) sees added target opportunity."
-   }
-  },
-  {
-   "title": "Jonathon Brooks Fantasy Football Injury Update: When Will Panthers RB Return? - Complex",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQR0V2MkJweDVlMk1PTldYWHFkaEltZFpuVkxDRWJnQ3U5R2t5X1JVcDVDZnhJNEF5RUtybGZuZ01Sb0tJZE1TQTJNdG1obWxlTGJlWGw3dzFRaXJzMXVuSHBYSGZyLUZTUHlQSUhiS0N6aW5TUElQZmpiOUdLS2paLTk2MFFsUUNGV0NBbEVZN1pMUQ?oc=5",
-   "source": "Complex",
-   "published": "Sat, 03 Oct 2026 15:13:56 GMT",
-   "summary": "Complex looks at when Panthers RB Jonathon Brooks might return from injury.",
-   "impact": {
-    "players": [
-     {
-      "name": "Jonathon Brooks",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -10,
-      "suggestedEdit": "Tag injured \u00b7 -10 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: Complex 10/3 \u2014 Brooks (CAR RB, board 9.7 ppg) out, return TBD; 1 game est."
-   },
-   "id": "jonathon-brooks-fantasy-football-injury-update-when-will-panthers-rb-return",
-   "sample": false
-  },
-  {
-   "title": "Is Terry McLaurin Playing Week 4? Fantasy Football Injury Update - FantasyPros",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNU0szdEVVN2FiamRHc3g4RGNGN2k3ak55MWZjYWFnR1BiR0d",
-   "source": "FantasyPros",
-   "published": "Sat, 03 Oct 2026 12:45:00 GMT",
-   "summary": "FantasyPros checks Terry McLaurin's Week 4 status after he was added to the injury report with a hamstring concern.",
-   "impact": {
-    "players": [],
-    "note": "Grounded: FantasyPros 10/3 \u2014 McLaurin (WAS WR, board 13.0 ppg) hamstring, questionable; existing 10/2 SI tag (-13 pts) stands pending final status."
-   },
-   "id": "is-terry-mclaurin-playing-week-4-fantasy-football-injury-update-fantasypros",
-   "sample": false
-  },
-  {
-   "id": "fantasy-football-injuries-devonta-smith-justin-jefferson-sidelined-but-two-star-wrs-set-to",
-   "title": "Week 4 Fantasy football injuries: DeVonta Smith, Justin Jefferson sidelined but two star WRs set to return - CBS Sports",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQ09wOXVoZkdkTkxtNUctQ3lybER1SDQyakNzN1dpaWF4Z2V2UmZpdjd1d0cxTXN3WU5TNVc4a1E0MW9zQjNzUE1XX1ZVT1VmVnhKTkk5Q2hLdkZ0cDEzaE1RV1FOV1c0bHl4WnlzaXB4S25udGl0LVlHYVR4WWZVSjBSR0JLZEdub3BGenpIRUh3ekRqdDFz?oc=5",
-   "source": "CBS Sports",
-   "published": "Fri, 02 Oct 2026 21:22:00 GMT",
-   "summary": "CBS reports DeVonta Smith and Justin Jefferson were sidelined in Week 4, while two star wide receivers are set to return.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "DeVonta Smith",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -14,
-      "suggestedEdit": "Tag injured \u00b7 -14 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: CBS 10/2 \u2014 Smith (PHI WR, board 14.3 ppg) sidelined W4 (hamstring per Yahoo/SI 10/1); severity TBD, 1 game est.; Jefferson tag stands."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-justin-jefferson-ruled-out-for-week-4-giving-jordan-addison",
-   "title": "Fantasy Football Injury Impact: Justin Jefferson Ruled Out For Week 4, Giving Jordan Addison WR1 Upside - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQeFNFelJEZnluR2QzZWNnOFFfSXhrUmJ1R0VDS1BFWW1TOWZ6dm9Dd2lKSm1iT0duTWZCZzItRnBHdnQtQjlDS0ZPOFBBanJFWDRPdEU1RGc2YVZEZUFhMWtPdjdJald3eVMxUHA4WEZqRnFuOXdhZ3Bnd1hPR0Z1S0o5eDF0Y0Q1UngwZEJCSDBfSjROTlFuTUJPMml6T1VLWTFyQWt1VVRDc3pMOWd2ZU5vOXozeEhpUWxjZW5tRk1tTmFXWnRCRmEtY0dGZklzSkFRdXN0c3duZ2hjOFZBbVlFMkdZWDhCb3RN?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Fri, 02 Oct 2026 18:33:29 GMT",
-   "summary": "SI reports Justin Jefferson was ruled out for Week 4, giving Jordan Addison WR1 upside for Minnesota.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jordan Addison",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 8,
-      "suggestedEdit": "Role boost \u00b7 +8 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 10/2 \u2014 Addison (MIN WR, board 10.6 ppg) WR1 upside with Jefferson (MIN WR) out W4; Hockenson boost stands."
    }
   }
  ]
