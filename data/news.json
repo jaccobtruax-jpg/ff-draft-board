@@ -1,7 +1,327 @@
 {
- "updated": "2026-10-04",
+ "updated": "2026-10-05",
  "sample": false,
  "items": [
+  {
+   "id": "nfl-week-4-big-takeaways-questions-and-fantasy-spin-from-sunday-s-games",
+   "title": "NFL Week 4: Big takeaways, questions and fantasy spin from Sunday's games - ESPN",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPM1E0RnNFTDJWNzlyc3pTZFFUUWRMVnV0ZXZ4S2lGSTFNMTBPV2lLc3FaV29oS01yWUF5U29jdzREd04wMEdEWTNyM1ZWYkdYSnhvS3ZranlhOWNVUEotMm1vdzVWNXd1WWZxQWdZbDA1UnhCZ0RqTGYxTkJzRy0xbHduQ3FwN2FUSzQ1TWRiMnpfWVk?oc=5",
+   "source": "ESPN",
+   "published": "Mon, 05 Oct 2026 05:31:00 GMT",
+   "summary": "ESPN recaps Week 4's biggest takeaways, questions and fantasy storylines from Sunday's games.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: ESPN 10/5 \u2014 Week 4 recap; Lamb (DAL WR) & McMillan (TB WR) dominate per ESPN winners piece; no new player-specific tags."
+   }
+  },
+  {
+   "id": "mike-evans-productive-despite-injury-sunday",
+   "title": "Mike Evans Productive despite injury Sunday - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPY0FVNW1JRkg1Zzh5bkx2TWFhTXZvMFZ2M0RUc0tOVmFEV1hLMnFXRkxmWGZWWUxSTFQxTFA4MFdadUlELUNkNU96M1cxYjd6T0kyWGNIbHFRYnRZdlk2b0dURU40aF9hR1JlV2NlWHVIQU5seGxZM1dwOXJxRHVCLU1WT0NjbXlyM0ZMQ0lKdnY5NXhEYzR6YndR?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Mon, 05 Oct 2026 05:17:08 GMT",
+   "summary": "The Fantasy Footballers note Mike Evans was productive in Week 4 despite playing through injury.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Mike Evans",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 13,
+      "suggestedEdit": "Role boost \u00b7 +13 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: FFB 10/5 \u2014 Evans (SF WR, board 12.8 ppg) productive through rib injury; clears 10/1 injured tag."
+   }
+  },
+  {
+   "id": "t-j-hockenson-jefferson-injury-opens-opportunity",
+   "title": "T.J. Hockenson Jefferson injury opens opportunity - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQS01IUTdQY2JmalVOSjkwMnl1V19DREtOcWhFS0RvMDNLTXBGYnN3UVFZNTFTeU9xNUlZRHZ0bHd4SUp0TE9FLTNTd3R5dXd0aGhUQ0JMRlV4aVE1NVBGcDd1MkNLTEtiRFNlVUdyZzlfSkRHSmhiei1TSEVoc0NaV044NW02UHh6UW5CLUdlZlRpaUppSDhGYi1xQ0tqTlE?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Mon, 05 Oct 2026 05:17:08 GMT",
+   "summary": "The Fantasy Footballers say T.J. Hockenson's opportunity grows with Justin Jefferson injured.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "T.J. Hockenson",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 8,
+      "suggestedEdit": "Role boost \u00b7 +8 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: FFB 10/5 \u2014 Hockenson (MIN TE, board 7.5 ppg) target share up with Jefferson (MIN WR) out; also on Yahoo Week 5 adds."
+   }
+  },
+  {
+   "id": "tank-bigsby-s-fantasy-value-waiver-wire-pickup-amid-saquon-barkley-injury-news",
+   "title": "Tank Bigsby's Fantasy Value: Waiver Wire Pickup Amid Saquon Barkley Injury News? - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWVpGbDJJRGFVLTlBdEtPbEt6cXdrQVFYazN5cFdtRzBaNE5YN21mMkwzZFBfMkMtN3NFQWp5UjFFVU9BS1FYUWd0S2c1Ylo2YW1aSnM5b1E4UHZWNndmS2pQOEVOazR0NHJEZDJVY0VTVVJYRFRLM3pPbHVjSHJ3a05fa3l0QXlO?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Mon, 05 Oct 2026 05:12:58 GMT",
+   "summary": "Yahoo weighs Tank Bigsby as a waiver wire pickup after Saquon Barkley's injury.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Tank Bigsby",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 6,
+      "suggestedEdit": "Role boost \u00b7 +6 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: Yahoo 10/5 \u2014 Bigsby (PHI RB, board 5.8 ppg) top Week 5 add with Barkley (PHI RB) hurt; Shipley also in mix."
+   }
+  },
+  {
+   "id": "fantasy-waiver-wire-targets-week-5-zach-charbonnet-will-shipley-michael-mayer-and-more",
+   "title": "Fantasy Waiver Wire Targets Week 5: Zach Charbonnet, Will Shipley, Michael Mayer, and More - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcDVvQlJ3ZkctajM2ekk5LXVfdmxmRTE4ODVkZTVxeld6aXdRMlJ5REpYZVoyc2FsdXpqa3lHMjdScVJqekNzWTVaLWJCbmJKeXpwaXNVTkhMSlpwa1RyOEtPQkZVWGJPVjhzRjRXOW1OWlQ1SU1kQzFxV0pRd2tLY2toNmc2LXN5?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Mon, 05 Oct 2026 04:06:00 GMT",
+   "summary": "Yahoo lists Zach Charbonnet, Will Shipley and Michael Mayer among Week 5 waiver wire targets.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 10/5 \u2014 Week 5 adds: Charbonnet (SEA RB, board 5.7), Shipley (PHI RB, board 1.7 \u2014 gains with Barkley out), Mayer (LV TE, board 3.7)."
+   }
+  },
+  {
+   "id": "dj-moore-injury-not-considered-long-term",
+   "title": "DJ Moore Injury not considered long-term - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQW84TWtwUU4tWDJPNWRUVG5VSTRIQjZfZG5GRk1takVEWkJiTlRadjNKSkVyLUltQVRSUmVFUWdsY1pWcV9DNVM0bXJwaG5haEdkUnJNX2F2MExoaTVGZGtxdDRnSjFGYjlQZTdRbU1EOXJsUnVYeGdOOE5ONWV2RC1rekhSd1BHWW1MR2pSQ04yOEF2blE?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Mon, 05 Oct 2026 00:54:53 GMT",
+   "summary": "The Fantasy Footballers report Bills WR DJ Moore's shoulder injury is not considered long-term.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "DJ Moore",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -13,
+      "suggestedEdit": "Tag injured \u00b7 -13 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: FFB 10/5 \u2014 Moore (BUF WR, board 13.0 ppg) shoulder, not considered long-term; 1 game est."
+   }
+  },
+  {
+   "id": "fantasy-football-injury-impact-ladd-mcconkey-foot-injury-gives-rise-to-fantasy-football-sleeper",
+   "title": "Fantasy Football Injury Impact: Ladd McConkey Foot Injury Gives Rise To Fantasy Football Sleeper - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNXzd2OWRfVzY5NmU2NTE0X1BfNmlvQkNxdklxZ05qdzNqb3RzOHc0OTMxOUFoeGdKNXlackJSRXFvbFpISmVvYlFRazVoSDZQcnloOVVCZDYtenNHdzVyaDBxM1puZXlxWTE2S0NhTHB2czdTWjNJN0FXQVZaWHY5TV9tOGRmY0l2YkNDNDFHcXBOeXpKcmpDeThOZTBpeFprOFZ0SGc3NTZCNy1Zb0ZUQnRkZHc3TXIzdXdNbUpycGVqdw?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Sun, 04 Oct 2026 23:29:47 GMT",
+   "summary": "SI reports Chargers WR Ladd McConkey suffered a foot injury, giving rise to a fantasy sleeper.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Ladd McConkey",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -14,
+      "suggestedEdit": "Tag injured \u00b7 -14 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 10/4 \u2014 McConkey (LAC WR, board 14.1 ppg) foot injury in Week 4; severity TBD, 1 game est."
+   }
+  },
+  {
+   "id": "fantasy-football-injury-impact-jalen-nailor-concussion-opens-door-for-two-fantasy-sleepers",
+   "title": "Fantasy Football Injury Impact: Jalen Nailor Concussion Opens Door For Two Fantasy Sleepers - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVpuNnVUbFpVRElYV2QzWmUyV2xhUmRNOXpqV3poTFl3YTFQcXpJd0xfZkZubFpCVE03NDZLLWZTOEhwbHJDUzJUQjJJZU85Mmp0NFZIZUVZWGp2QTRmOWlyX2Q4N0VrMjVMaTZIR2NoLWxHQXhYajl5Y1l2MzBRZ2JUNnYtYmw5c3NsY1JHc1ZLVW9Dby1wbm9ENThhaVBMeGxkZVlWX1hTOWJBNnNHckJIRUFULWNXbEZR?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Sun, 04 Oct 2026 22:43:47 GMT",
+   "summary": "SI reports Raiders WR Jalen Nailor suffered a concussion, opening the door for two fantasy sleepers.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jalen Nailor",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -7,
+      "suggestedEdit": "Tag injured \u00b7 -7 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 10/4 \u2014 Nailor (LV WR, board 7.3 ppg) in concussion protocol; two LV sleepers unnamed in headline."
+   }
+  },
+  {
+   "id": "chiefs-wr-thornton-has-dislocated-ankle-sources-say",
+   "title": "Chiefs WR Thornton has dislocated ankle, sources say - ESPN",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSG0wc0xaSzBsRFRZYkZ5M1I0UGRSc0NfaGZXVnhYRXpvSUVYdzZNZHl0VGllcnV6TjVvX1plNWZWNmxzeFYtSnZrNFp0NEtQUkFleDlZNlpaZmFibzQxVmVPbC1nbExaeTdsR05qekpPWXJyblNwcmt4VXJYV1BadEJfRVZHVnZ6NjVmUTFRLVBpWWdrWXc?oc=5",
+   "source": "ESPN",
+   "published": "Sun, 04 Oct 2026 22:23:00 GMT",
+   "summary": "ESPN reports Chiefs WR Tyquan Thornton suffered a dislocated ankle on his 55-yard catch vs. the Raiders.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Tyquan Thornton",
+      "action": "injured",
+      "games": 4,
+      "deltaPts": -19,
+      "suggestedEdit": "Tag injured \u00b7 -19 pts (4 games) \u00b7 drops ~3 rounds"
+     }
+    ],
+    "note": "Grounded: ESPN 10/4 \u2014 Thornton (KC WR, board 4.7 ppg) dislocated ankle, carted off (FFB 10/5); 4 games est., IR likely."
+   }
+  },
+  {
+   "id": "rashee-rice-downgraded-to-doubtful-with-hamstring-injury",
+   "title": "Rashee Rice Downgraded to Doubtful with Hamstring Injury - NFL News | Fantasy Football - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORk1BUGI3Qjk2cXN3alVQckNTd3NZM1pGcnJZWW1vRWFHWkVOYlZMcWNsRlljNDRsY0M0Tm9oX2E3V0J4SXdOMmd0Ym5TX2diS05BZkRrN1VWUHRLM1p6QUFzUHFjX01UbjFxaU5wMVIyQU45UGsxTTc0c0xzeGV3UE4xLWpVWlE2bWNta3I1dFlKT3AxOUoxOVJpaS0wUXFtTDdxRHlR?oc=5",
+   "source": "RotoBaller",
+   "published": "Sun, 04 Oct 2026 22:09:09 GMT",
+   "summary": "RotoBaller reports Chiefs WR Rashee Rice was downgraded to doubtful with a hamstring injury from Week 4.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Rashee Rice",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -15,
+      "suggestedEdit": "Tag injured \u00b7 -15 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: RotoBaller 10/4 \u2014 Rice (KC WR, board 14.8 ppg) doubtful with hamstring; Chiefs sleeper stock rises (SI 10/4)."
+   }
+  },
+  {
+   "id": "eagles-saquon-barkley-exits-vs-rams-ruled-out-with-hamstring-injury",
+   "title": "Eagles' Saquon Barkley exits vs. Rams, ruled out with hamstring injury - The Athletic - The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZFhGSVVoZWZBWnExTWFBZFdybFh5OUlFQ2RJc1YwWUt3UHJoRlNOcFJQTjZLdzVOZlRHZEhjNU8wR01yNlJSZG1qalQ5SlV2eWtkLU5hMkd0X3YwZlp0cWZzVk9aWnB2Ym1DSmx0d19Rc0pidUtwX25lZkVYZ3V1c2pMS3F3YlR0TWlIX1BRSQ?oc=5",
+   "source": "The New York Times",
+   "published": "Sun, 04 Oct 2026 21:23:30 GMT",
+   "summary": "The Athletic reports Eagles RB Saquon Barkley exited the Rams game and is ruled out with a hamstring injury.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Saquon Barkley",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -14,
+      "suggestedEdit": "Tag injured \u00b7 -14 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: NYT 10/4 \u2014 Barkley (PHI RB, board 14.4 ppg) ruled out vs LAR with hamstring; severity TBD, 1 game est.; Bigsby/Shipley see PHI backfield upside."
+   }
+  },
+  {
+   "id": "marcus-mariota-aggravates-mcl-injury-in-week-4",
+   "title": "Marcus Mariota Aggravates MCL injury in Week 4 - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMTRmbC1MQURPc1hYSzh2VnhQSUtCZ1VZT1c2d0Z5U1RtdXNrdWlhRkFiZVk1aGJxb3RNVDc4MGFnSDRna2xxOUQzS09tWkotNl9FZktadXNDZlVzZVlaWk5CMXFfQ0RRLXNlOXNiR1hRS0RBZUpiTm14S1BrQUNoWjl4RWlvSnRtNnlBbDN3ZkRsUWNsalJOTkNjb3ZhUQ?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Sun, 04 Oct 2026 21:15:39 GMT",
+   "summary": "The Fantasy Footballers report Commanders QB Marcus Mariota aggravated his MCL injury in Week 4.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Marcus Mariota",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -18,
+      "suggestedEdit": "Tag injured \u00b7 -18 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: FFB 10/4 \u2014 Mariota (WAS QB) aggravated MCL; not on board \u2014 est. 18 ppg; WAS pass-catcher value dampened (SI 10/4)."
+   }
+  },
+  {
+   "id": "tee-higgins-suffers-adductor-injury-in-week-4",
+   "title": "Tee Higgins Suffers adductor injury in Week 4 - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNeDM0QWJJRjVmaVBZdS1IbnFnRWVLUnpUUG5CU0dTWm1ncTJ0T0RHaVB6TmNMZWJRbkhIMm5jYUpCNWVneUtyckdNbldWX2RjZUZXcTZ6NlJ6MU1qZUIzMjlFX2J1N2g0LXZxTTBIVEYyMGdWeHJTQW9pQURfdXpySFJIX1VUOUdkM0lzbFZsc3NpZ3Z6d1JkZFc3b2g?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Sun, 04 Oct 2026 20:50:40 GMT",
+   "summary": "The Fantasy Footballers report Bengals WR Tee Higgins suffered an adductor injury in Week 4.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Tee Higgins",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -14,
+      "suggestedEdit": "Tag injured \u00b7 -14 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: FFB 10/4 \u2014 Higgins (CIN WR, board 13.8 ppg) adductor injury; severity TBD, 1 game est."
+   }
+  },
+  {
+   "id": "lamar-jackson-suffers-ankle-injury-in-week-4",
+   "title": "Lamar Jackson Suffers ankle injury in Week 4 - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYnZiSjRybHF6WHBqYWN4RW1aY1BpN2RLUjYzN05tRzNaeW0zR1AxRzlGN1VSdE96a20tbGRrY1Z3RWp0OERmVk9TSzRRTUFHbUVJakVhZnIwdXJGYkJ0ZTl1RXFEbll4S1NDR1VISUJhQlU4ZzEyaTY4MFhPMjBLUkpweWV3OHNnclVvbmgyUGpES2NERldMZTVfTQ?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Sun, 04 Oct 2026 19:06:15 GMT",
+   "summary": "The Fantasy Footballers report Ravens QB Lamar Jackson suffered an ankle injury in Week 4.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Lamar Jackson",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -20,
+      "suggestedEdit": "Tag injured \u00b7 -20 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: FFB 10/4 \u2014 Jackson (BAL QB, board 19.6 ppg) ankle injury vs DEN; Minter optimistic (FFB 10/4), 1 game est."
+   }
+  },
+  {
+   "id": "fantasy-football-injury-impact-ja-marr-chase-injury-increases-fantasy-stock-of-bengals-sleeper",
+   "title": "Fantasy Football Injury Impact: Ja'Marr Chase Injury Increases Fantasy Stock Of Bengals Sleeper - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNc2lybGZSQ21wV1dlWENoNndIZXJxVjFZSG5IU3BhLVM0QzlhY0xuenVTNmtBazJ0TXNST0xHQjJ0R201NUYtZjMxMFVwTU5IbGZ0OFUycjlwU0NweFR3QmljMWEwOFBFb1BfRzFUa2duU0RtZy1aemozeDhwcmEzNlhQZ1M0eHF4dy1UdXRPUnNqdFZDUDU0Ukh4NV9pblAxVFc5VURfbjZMSmNPV0ktT2JVSnlKYkZSajljT3NjZ0otM3B1QlY4?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Sun, 04 Oct 2026 18:41:42 GMT",
+   "summary": "SI reports Ja'Marr Chase suffered an injury in Week 4, increasing the fantasy stock of a Bengals sleeper.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Ja'Marr Chase",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -20,
+      "suggestedEdit": "Tag injured \u00b7 -20 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 10/4 \u2014 Chase (CIN WR, board 19.9 ppg) injured in Week 4, severity unclear; sleeper unnamed in headline \u2014 monitor."
+   }
+  },
+  {
+   "id": "why-zay-flowers-fantasy-managers-will-be-excited-with-ravens-final-week-4-injury-update",
+   "title": "Why Zay Flowers fantasy managers will be excited with Ravens' final Week 4 injury update - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPckdVMXpZUld5T3JqRDhkbF9CY1ZKMFFrU0o5Ukh3WXdrOUtab1VXQ2VhblRvYldDeEZjSnBGdTB5RWl3MVc3a0U1OVE3NjNLcnhsaVpHaGVnWVA2cE1vckpQcFhpZW1mc0labUdXNWdraFR6TXI0RWg0MUF0UnI5RE81ZDdndmRm?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Sun, 04 Oct 2026 14:33:45 GMT",
+   "summary": "Yahoo says the Ravens' final Week 4 injury update is good news for Zay Flowers fantasy managers.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Zay Flowers",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 14,
+      "suggestedEdit": "Role boost \u00b7 +14 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: Yahoo 10/4 \u2014 Flowers (BAL WR, board 14.4 ppg) cleared for Week 4; resolves 10/3 status monitor."
+   }
+  },
   {
    "id": "fantasy-football-week-4-the-injuries-lineup-changes-and-roster-moves-that-could-save-your-sunday-the-new-york-times",
    "title": "Fantasy football Week 4: The injuries, lineup changes and roster moves that could save your Sunday - The New York Times",
@@ -253,359 +573,6 @@
    },
    "id": "is-terry-mclaurin-playing-week-4-fantasy-football-injury-update-fantasypros",
    "sample": false
-  },
-  {
-   "title": "Is Mike Evans Playing Week 4? Fantasy Football Injury Update - FantasyPros",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRjZUcy0zZHEwYjdGb19nVFRwNTcwbFhwWnRyU05uWHpZODNNYnpkWTA2TGRUVkVURTlFSE8zVzViYlU4WWJQMHZmcDh2TTJncFhXQVlfQUtZZ09xbWwtOFBEZzJhTVhLM1Vic284emduM09HdkpvdEhhNC1OTGhXWS1iZkFWU1BsaTd5dDJobGU1RF91VWtfelBnRzE3SkRmbmtv0gGoAUFVX3lxTE9FeGdjQVJNYzZmMXB3MVdtaGtFMHVuVzJxSHhpNUZwalFRbTB4bTQzTmRVWks1QU56S1ZLc3JZZ3llWER4aTJxclNDYlZCaXlWS09OREtLbElwRGo1S3pqSksxUjQ2aWtjZ2p1V3RkaGtIbkd4VFdSNkFCRmhOeXN1XzhwZEZzU25WR04wTlBNUjdWSmNWd0F2VTlacWZxWk1laXpSNE1Ocw?oc=5",
-   "source": "FantasyPros",
-   "published": "Sat, 03 Oct 2026 12:43:12 GMT",
-   "summary": "FantasyPros checks whether Mike Evans will play in Week 4 amid his injury.",
-   "impact": {
-    "players": [],
-    "note": "Grounded: FantasyPros 10/3 \u2014 Evans (SF WR, board 12.8 ppg) latest status; 10/1 SI injured tag (-13) stands pending final status."
-   },
-   "id": "is-mike-evans-playing-week-4-fantasy-football-injury-update",
-   "sample": false
-  },
-  {
-   "title": "Terrance Ferguson Lands on injured reserve - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUG9XMzVBbXBwajVodFBmMVpMeWJDcGJwUzBBRmIzTzlLMnk",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Sat, 03 Oct 2026 00:26:34 GMT",
-   "summary": "The Fantasy Footballers report Rams TE Terrance Ferguson has been placed on injured reserve.",
-   "impact": {
-    "players": [
-     {
-      "name": "Terrance Ferguson",
-      "action": "injured",
-      "games": 4,
-      "deltaPts": -20,
-      "suggestedEdit": "Tag injured \u00b7 -20 pts (4 games) \u00b7 drops ~3 rounds"
-     }
-    ],
-    "note": "Grounded: FFB 10/3 \u2014 Ferguson (LAR TE, board 5.0 ppg) placed on IR; out minimum 4 games."
-   },
-   "id": "terrance-ferguson-lands-on-injured-reserve-fantasy-footballers-podcast",
-   "sample": false
-  },
-  {
-   "title": "Fantasy football Week 4 inactives: Daniels, DeVonta to sit; McConkey questionable - espn.com",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQMms2dUt5QlVQNWg5T1pOUlpjbnlLWGYzMUw3QU9qVXN6N1h",
-   "source": "ESPN",
-   "published": "Fri, 02 Oct 2026 22:39:24 GMT",
-   "summary": "ESPN's Week 4 inactives: Jayden Daniels and DeVonta Smith are out, while Ladd McConkey is listed as questionable.",
-   "impact": {
-    "players": [],
-    "note": "Grounded: ESPN 10/2 \u2014 Daniels (WAS QB) & Smith (PHI WR) OUT confirmed (tags already applied); McConkey (LAC WR, board 14.2 ppg) questionable \u2014 monitor before kickoff."
-   },
-   "id": "fantasy-football-week-4-inactives-daniels-devonta-to-sit-mcconkey-questionable-espn-com",
-   "sample": false
-  },
-  {
-   "id": "week-4-fantasy-football-injury-report-the-final-updates-on-ladd-mcconkey-mike-evans-and-al",
-   "title": "Week 4 Fantasy Football Injury Report: The Final Updates On Ladd McConkey, Mike Evans, And All The Top Stars - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQNDRfRFFEaTFfdDJudXBnN2FvN2NqazRvSWFkWThpVC0xNHJLdFdrLWNSa2lkNlRGMDdTNWlUN3NhQnV4TlRvTU1IRy1IVm9UYkwxT0Q0SUZtRjZ0U1ZaZ042T0RPeVRpVUFTRk5BX1QzamZLWjdzbGVmOUdWXzBLbGFVYy04YjU2T18xTWhjeVpuLWdkbkE0dm5vNTVBb0pQdUJ4LTF2Tmt4SXJ6ZXZkdl9MSDRPdDJ0LWhaaEpGTC1iakNUc2xaQi11R1FjSEpYSmowbWdjQzZuY0RZY2hz?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Fri, 02 Oct 2026 21:53:40 GMT",
-   "summary": "SI delivers final Week 4 injury updates on Ladd McConkey, Mike Evans and other top stars before Sunday's slate.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: SI 10/2 \u2014 final Week 4 updates: McConkey (LAC WR, board 14.1 ppg) questionable; Evans (SF WR, board 12.8 ppg) tag from 10/1 stands \u2014 final status TBD before kickoff."
-   }
-  },
-  {
-   "title": "Week 4 Fantasy football injuries: DeVonta Smith, Justin Jefferson sidelined but two star WRs set to return - CBS Sports",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQ09wOXVoZkdkTkxtNUctQ3lybER1SDQyakNzN1dpaWF4Z2V",
-   "source": "CBS Sports",
-   "published": "Fri, 02 Oct 2026 21:22:00 GMT",
-   "summary": "CBS confirms DeVonta Smith and Justin Jefferson are sidelined for Week 4, while two star wide receivers are expected to return.",
-   "impact": {
-    "players": [
-     {
-      "name": "DeVonta Smith",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -14,
-      "suggestedEdit": "Tag injured \u00b7 -14 pts (1 game) \u00b7 drops ~1 round"
-     },
-     {
-      "name": "Justin Jefferson",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -15,
-      "suggestedEdit": "Tag injured \u00b7 -15 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: CBS 10/2 \u2014 Smith (PHI WR, board 14.3 ppg) & Jefferson (MIN WR, board 15.3 ppg) OUT Week 4; returning WRs are Nacua (LAR) & Collins (HOU) per CBS."
-   },
-   "id": "week-4-fantasy-football-injuries-devonta-smith-justin-jefferson-sidelined-but-two-star-wrs-set-to-return-cbs-s",
-   "sample": false
-  },
-  {
-   "title": "Fantasy Football Injury Impact: Jadarian Price Goes Inactive, Emanuel Wilson and George Holani Rise - si.com",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORFl3XzAyXzAzbzh3N2F0Z0ZxWGZJY1JtR1VnRVVUYnpYVHY",
-   "source": "Sports Illustrated",
-   "published": "Fri, 02 Oct 2026 21:11:19 GMT",
-   "summary": "SI reports Jadarian Price is inactive for Week 4, boosting Emanuel Wilson and George Holani in the Seahawks backfield.",
-   "impact": {
-    "players": [
-     {
-      "name": "Jadarian Price",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -12,
-      "suggestedEdit": "Tag injured \u00b7 -12 pts (1 game) \u00b7 drops ~1 round"
-     },
-     {
-      "name": "Emanuel Wilson",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 3,
-      "suggestedEdit": "Role boost \u00b7 +3 pts \u00b7 move up ~1 round"
-     },
-     {
-      "name": "George Holani",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 3,
-      "suggestedEdit": "Role boost \u00b7 +3 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 10/2 \u2014 Price (SEA RB, board 11.6 ppg) inactive Week 4; Wilson (board 2.8) & Holani (board 2.6) share lead role."
-   },
-   "id": "fantasy-football-injury-impact-jadarian-price-goes-inactive-emanuel-wilson-and-george-holani-rise-si-com",
-   "sample": false
-  },
-  {
-   "title": "Tony Pollard off the injury report - sports.yahoo.com",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMGRhSnBqXzZTMWRzTlNSMnBUbGlVanRaTXRUYjlhdEU3ekh",
-   "source": "Yahoo Sports",
-   "published": "Fri, 02 Oct 2026 20:43:37 GMT",
-   "summary": "Yahoo reports Titans RB Tony Pollard is off the injury report and clear for Week 4.",
-   "impact": {
-    "players": [
-     {
-      "name": "Tony Pollard",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 10,
-      "suggestedEdit": "Role boost \u00b7 +10 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: Yahoo 10/2 \u2014 Pollard (TEN RB, board 9.9 ppg) cleared for Week 4; Spears trending OUT (tagged) leaves lead role to Pollard."
-   },
-   "id": "tony-pollard-off-the-injury-report-sports-yahoo-com",
-   "sample": false
-  },
-  {
-   "title": "Bucky Irving Off Injury Report for Week 4 - NFL News | Fantasy Football - rotoballer.com",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOWURjYzlReDlfaU9WRXdfd2ZTalBDUzdiNTFwd0ZQcm1nVVV",
-   "source": "RotoBaller",
-   "published": "Fri, 02 Oct 2026 20:16:12 GMT",
-   "summary": "RotoBaller reports Buccaneers RB Bucky Irving is off the injury report and expected to play Week 4 against the Packers.",
-   "impact": {
-    "players": [
-     {
-      "name": "Bucky Irving",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 13,
-      "suggestedEdit": "Role boost \u00b7 +13 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: RotoBaller 10/2 \u2014 Irving (TB RB, board 12.8 ppg) cleared for Week 4 vs GB; resolves earlier Complex status question."
-   },
-   "id": "bucky-irving-off-injury-report-for-week-4-nfl-news-fantasy-football-rotoballer-com",
-   "sample": false
-  },
-  {
-   "title": "Justin Jefferson out for Vikings' game vs. Dolphins with ankle injury - The New York Times",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNamNJbGxMS3dxMU1KVUJPWE9xeTVRRVZQbi1vbDNETlZ5MkV",
-   "source": "The New York Times",
-   "published": "Fri, 02 Oct 2026 19:58:12 GMT",
-   "summary": "The New York Times reports Justin Jefferson is officially out for the Vikings' Week 4 game against the Dolphins with an ankle injury.",
-   "impact": {
-    "players": [
-     {
-      "name": "Justin Jefferson",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -15,
-      "suggestedEdit": "Tag injured \u00b7 -15 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: NYT 10/2 \u2014 Jefferson (MIN WR, board 15.3 ppg) out vs MIA, ankle; Addison (board 10.5 ppg) WR1 upside per SI."
-   },
-   "id": "justin-jefferson-out-for-vikings-game-vs-dolphins-with-ankle-injury-the-new-york-times",
-   "sample": false
-  },
-  {
-   "title": "Fantasy Football Injury Impact: Caleb Douglas Is Ruled Out, Meaning Chris Bell Might Be Ready For His Breakout - si.com",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOYy1IR1cwSkxHeGdBc3h1TnZ5UldFVlVwRjBLSFlnY2t5SEE",
-   "source": "Sports Illustrated",
-   "published": "Fri, 02 Oct 2026 19:07:38 GMT",
-   "summary": "SI reports Dolphins WR Caleb Douglas is ruled out for Week 4, potentially setting up Chris Bell for a breakout.",
-   "impact": {
-    "players": [
-     {
-      "name": "Caleb Douglas",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -6,
-      "suggestedEdit": "Tag injured \u00b7 -6 pts (1 game) \u00b7 drops ~1 round"
-     },
-     {
-      "name": "Chris Bell",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 5,
-      "suggestedEdit": "Role boost \u00b7 +5 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 10/2 \u2014 Douglas (MIA WR, board 5.9 ppg) ruled OUT; Bell (MIA WR, board 4.9 ppg) breakout candidate in Dolphins WR corps."
-   },
-   "id": "fantasy-football-injury-impact-caleb-douglas-is-ruled-out-meaning-chris-bell-might-be-ready-for-his-breakout-s",
-   "sample": false
-  },
-  {
-   "id": "puka-nacua-is-set-to-return-to-fantasy-football-lineups-in-week-4-driving-down-davante-adam-s-v",
-   "title": "Puka Nacua Is Set To Return To Fantasy Football Lineups In Week 4, Driving Down Davante Adam's Value - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQejdWWFBXdlNPOUhWRmdUcktEMFpJYzFOME5FcTQtbTZHMWhGbEZYSl9iQ2w5Q0FkRktiY21HZTBiaXR2R3pfMm1COV84MFU5UGJnV3ViRFA5YThNX3J0cEJOVUNIVzZuMUktQjFGM3loaUI0UVFrcDFYSUxlRno0NnZfdUVPSGVPQlQtRGlRTjNkSzU1Z1NJWDRRUl8ySFk3eXpCNUZJQWNwVnFVblhaclBFQVc4aHhvVDNqakNWZXY0MjFQZThQemFpTl8zRGI2V1AwS1BwUQ?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Fri, 02 Oct 2026 18:52:57 GMT",
-   "summary": "SI says Puka Nacua is set to return to lineups in Week 4, driving down Davante Adams' value.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Puka Nacua",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 19,
-      "suggestedEdit": "Role boost \u00b7 +19 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 10/2 \u2014 Nacua (LAR WR, board 19.1 ppg) set to return Week 4; Adams (LAR WR, board 12.9 ppg) value down."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-terry-mclaurin-hamstring-concern-ignites-two-week-4-risers-sport",
-   "title": "Fantasy Football Injury Impact: Terry McLaurin Hamstring Concern Ignites Two Week 4 Risers - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdXVHU2lVOG02LXlzZjg2RXhmd2ZONlhzMGVWbGEyRElGdFpRbVQ1REJOY2pmN3Bfd0NKVFFmU29rZXZfZ3lPdGt5WkhaUVZjQTdxSWZHbVZSelh0R3NNYjRHVVVvVks3VEtaU3JQb1BTMzB6aHZFMmpZM0piWTZVTjNrVWhzZUdIYlEtYXZhMkdzTUJrNEdNNDRUemVUdUlRMnVuTF9n?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Fri, 02 Oct 2026 18:51:15 GMT",
-   "summary": "SI reports Terry McLaurin is dealing with a hamstring concern that has ignited two Week 4 risers.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Terry McLaurin",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -13,
-      "suggestedEdit": "Tag injured \u00b7 -13 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 10/2 \u2014 McLaurin (WAS WR, board 13.0 ppg) hamstring concern, questionable; two Week 4 risers flagged but not named in headline. est."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-tyjae-spears-trending-toward-out-improving-the-outlook-for-tony",
-   "title": "Fantasy Football Injury Impact: Tyjae Spears Trending Toward Out, Improving the Outlook for Tony Pollard - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOYWxxeXpVSldROTAxa3l6RnVkSzBoU2V1OG5Qd21BZTZHeTRSTUpZSzByYzR6REkwdjZpVmxwT2laNy1odXlhSTlxeWlZWGt2Z21YdHIzeXQ2a0NQVC1DV3JNQnJYdFRVRE5zUjRZUG1TLWNjMFdFTEZQaTZsb3NpeW1wOUpiY2t5cFFuZmIybVE5aXdYU0MybHdrdC1ybERDYVF2RC1OUkxpTmxJeFlfS041Z2M5YVB3WmI5TlRSX3FSOVQ2SFljaVdxeFIySGZLZnVueV8waUJ4cXM?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Fri, 02 Oct 2026 18:26:52 GMT",
-   "summary": "SI reports Tyjae Spears is trending toward out for Week 4, improving the outlook for Tony Pollard.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Tyjae Spears",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -8,
-      "suggestedEdit": "Tag injured \u00b7 -8 pts (1 game) \u00b7 drops ~1 round"
-     },
-     {
-      "name": "Tony Pollard",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 10,
-      "suggestedEdit": "Role boost \u00b7 +10 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 10/2 \u2014 Spears (TEN RB, board 7.9 ppg) trending toward OUT; Pollard (board 9.6 ppg) outlook improved."
-   }
-  },
-  {
-   "id": "with-justin-jefferson-likely-out-of-fantasy-football-lineups-due-to-injury-in-week-4-jordan-add",
-   "title": "With Justin Jefferson Likely Out Of Fantasy Football Lineups Due To Injury In Week 4, Jordan Addison Has WR1 Upside - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQeFNFelJEZnluR2QzZWNnOFFfSXhrUmJ1R0VDS1BFWW1TOWZ6dm9Dd2lKSm1iT0duTWZCZzItRnBHdnQtQjlDS0ZPOFBBanJFWDRPdEU1RGc2YVZEZUFhMWtPdjdJald3eVMxUHA4WEZqRnFuOXdhZ3Bnd1hPR0Z1S0o5eDF0Y0Q1UngwZEJCSDBfSjROTlFuTUJPMml6T1VLWTFyQWt1VVRDc3pMOWd2ZU5vOXozeEhpUWxjZW5tRk1tTmFXWnRCRmEtY0dGZklzSkFRdXN0c3duZ2hjOFZBbVlFMkdZWDhCb3RN?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Fri, 02 Oct 2026 18:02:10 GMT",
-   "summary": "SI says Justin Jefferson is likely out of Week 4 lineups due to injury, giving Jordan Addison WR1 upside.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Justin Jefferson",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -15,
-      "suggestedEdit": "Tag injured \u00b7 -15 pts (1 game) \u00b7 drops ~1 round"
-     },
-     {
-      "name": "Jordan Addison",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 11,
-      "suggestedEdit": "Role boost \u00b7 +11 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 10/2 \u2014 Jefferson (MIN WR, board 15.3 ppg) likely OUT Week 4; Addison (board 10.5 ppg) WR1 upside."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-rachaad-white-ruled-out-clearing-the-way-for-jacory-croskey-merr",
-   "title": "Fantasy Football Injury Impact: Rachaad White Ruled Out, Clearing the Way for Jacory Croskey-Merritt - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdTZIaE44bHhUMnlWUXRWWHFGM3pESUx2YVk2aF8xNU5KLWFIZndJbGdJODJEb1B2OU5Ib0VUZkNGOHRrbzR3SGRsalNGREdQaDNxRlBHOGt3ZXdxNU1OVUdEdWgxVHA2RFFzaXptRzh4S1VXdDJzM3o1S2JKOHEzOUlqdV9OR1hIVTZCbEMzTUNSVDc5TW4yRW5wbldyTm5CdTlVbG5aNTRLcVFSUnlLaXFlY3loNnEwTktIVnZwYjJ4UFNZNld6aFg2WkxGUHcxYi0yNVVR?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Fri, 02 Oct 2026 17:50:54 GMT",
-   "summary": "SI reports Rachaad White has been ruled out, clearing the way for Jacory Croskey-Merritt to lead the Washington backfield.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Rachaad White",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -9,
-      "suggestedEdit": "Tag injured \u00b7 -9 pts (1 game) \u00b7 drops ~1 round"
-     },
-     {
-      "name": "Jacory Croskey-Merritt",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 10,
-      "suggestedEdit": "Role boost \u00b7 +10 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 10/2 \u2014 White (WAS RB, board 8.8 ppg) ruled OUT vs IND; Croskey-Merritt (board 10.0 ppg) lead role."
-   }
-  },
-  {
-   "id": "week-4-fantasy-football-impact-d-andre-swift-latest-injury-update-sports-illustrated",
-   "title": "Week 4 Fantasy Football Impact: D\u2019Andre Swift Latest Injury Update - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaFJOUTc2d0Z1V0tsSTBzdW82d1lMSTVaeUxwekNaekl4bGRCR0QtTklqaVpQblBpM0RhTzFRb0dFS3ZhLWdObEpzalVhSzZrd0Zlak5xR0JNUEp2YWE1UnJlazFJZzZ4amRMa19xdm5ieHJzaV96S0U1N3VJVFhRVmNOUTN2blRsa1gtd3RWVzBIc3pEbjl6ZzRTbHBhZEZXb2x2aFRidGxSUQ?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Fri, 02 Oct 2026 17:22:06 GMT",
-   "summary": "SI provides the latest injury update on Bears running back D'Andre Swift ahead of Week 4.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: SI 10/2 \u2014 Swift (CHI RB, board 13.4 ppg) latest update; prior knee DNP 1-game tag stands, final status TBD."
-   }
   }
  ]
 }
