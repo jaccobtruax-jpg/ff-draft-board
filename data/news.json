@@ -3,6 +3,87 @@
  "sample": false,
  "items": [
   {
+   "id": "fantasy-football-biggest-injuries-entering-week-5-lamar-jackson-saquon-barkley",
+   "title": "Fantasy Football biggest injuries entering Week 5: Lamar Jackson, Saquon Barkley & more - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNS1kwd253R0xmd3BEblY1UklNelpuMnI4TTgzUzBQTlVrbHB5SEZGOTFpeFNGenh6d1RuWjBlcXhYV0RpQ3loYmNQNDJxdExMQTVFYjF0VFA3ZlF5UExxWmhteGJmY1B0aWloUk96VzEwQkZuQlh2NHVGdmVJNFZpSFkwS2Q2cm5uamwyckZtRVJsTmZnemc?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Tue, 06 Oct 2026 14:53:02 GMT",
+   "summary": "Yahoo rounds up the biggest fantasy football injuries entering Week 5, led by Lamar Jackson and Saquon Barkley.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 10/6 \u2014 W5 injury roundup: Jackson (BAL QB, board 19.6 ppg) ankle, Barkley (PHI RB, board 14.4 ppg) hamstring; existing 10/4-10/5 tags stand, no new severity facts in headline."
+   }
+  },
+  {
+   "id": "lamar-jackson-injury-update-raises-major-concern-for-baltimore-ravens",
+   "title": "Lamar Jackson injury update raises major concern for Baltimore Ravens - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTGU5RlZVQjIzQjhYd25pYlA1RWd0UE83YmFhMUxNeDA3ZUI5NGJuVDlQTWpyZElRSHRSMGhTLUk5SjNuR1ozemRvT1U4b2Itbk1kRGVGWHhRQkJUOHUwRmt6RkpPNEVfNWFvRnl0LTdOTTMza05aRkdrbDdBN3Z2Xy1NcHV6WU14U1E?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Tue, 06 Oct 2026 13:53:02 GMT",
+   "summary": "Yahoo reports Lamar Jackson's injury update raises major concern for the Ravens heading into Week 5.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 10/6 \u2014 Jackson (BAL QB, board 19.6 ppg) ankle update \u2018raises major concern\u2019 for W5; existing 10/5 injured tag (-20, 1 game est.) stands pending practice reports."
+   }
+  },
+  {
+   "id": "is-dohnte-meyers-worth-a-high-fantasy-football-waiver-wire-pickup-for-week-5",
+   "title": "Is Dohnte Meyers worth a high fantasy football waiver wire pickup for Week 5? - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVk1jUFVLSDJvYlJhX1FEZlZIbVBSbzZGcUNPZE5VNktlaTZiank2Wk1UZkhWcWpydkotM3pXVnJXTlA2aDhBQW5VejJLSnhCVkR4Z3hjWFJXdDMzT3lqQTBVYXQyZmFSS3o4RlVqWFZPSVZ5SW5XNllpcWFWTnNSYWVJSlYxVUtq?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Tue, 06 Oct 2026 13:30:47 GMT",
+   "summary": "Yahoo examines whether Dohnte Meyers is worth a high waiver wire priority pickup for Week 5.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Dohnte Meyers",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 4,
+      "suggestedEdit": "Role boost \u00b7 +4 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: Yahoo 10/6 \u2014 Meyers (WR) waiver priority pickup debate; not on board \u2014 est. 10 ppg (WR); named among Yahoo 10/5 top adds alongside Shipley."
+   }
+  },
+  {
+   "id": "week-4-fantasy-football-injury-recap",
+   "title": "Week 4 Fantasy Football Injury Recap - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNOERMUXJGQzY3X1RQLUJVOXAzZHZCRHExNDExWGx4NWdrRjg5Vlh5Q3Y3OEwyVUszOUpneGlXaTR5NnN2ZW56elpnSUxTT3ZvTUotYVlwa05BemdmYkFJTHBJaE1GNTNuY2lFV2EtcHExdTFTeklBNGhHVVdaampjWDRLamZpUnFzQVRYRUhBbw?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Tue, 06 Oct 2026 13:23:55 GMT",
+   "summary": "The Fantasy Footballers recap Week 4 fantasy football injuries as managers prep for Week 5.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: FFB 10/6 \u2014 W4 injury recap podcast; statuses for Barkley (PHI RB, board 14.4 ppg), Jackson (BAL QB, board 19.6 ppg), Chase (CIN WR, board 19.9 ppg) unchanged \u2014 existing tags stand."
+   }
+  },
+  {
+   "id": "chiefs-tyquan-thornton-suffers-gruesome-ankle-injury-on-55-yard-catch",
+   "title": "Chiefs\u2019 Tyquan Thornton suffers gruesome ankle injury on 55-yard catch vs. Raiders - The Athletic - The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQlNabkFqQzBGUGJoUHF2QjU5ZVg5ZVdYNnpVSWdGdGpXRzFLMDFsYVEwb2R6OWh2a2E1SjQtODhkYzU0NF9rSVNCcWdaM3ppRXhFaUlyV3o0c21yUzVFdk5fdjhmdi15b2RlaHNuN2U5d0dYbUF1VzRNcC1VMnNzWUhPMDBHZVRUMW9RcDRWdm9YVHZSYlNVejEzNTg?oc=5",
+   "source": "The New York Times",
+   "published": "Tue, 06 Oct 2026 11:59:00 GMT",
+   "summary": "The Athletic reports Chiefs WR Tyquan Thornton suffered a gruesome ankle injury on a 55-yard catch against the Raiders.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Tyquan Thornton",
+      "action": "injured",
+      "games": 4,
+      "deltaPts": -19,
+      "suggestedEdit": "Tag injured \u00b7 -19 pts (4 games) \u00b7 drops ~2 rounds"
+     }
+    ],
+    "note": "Grounded: Athletic 10/6 \u2014 Thornton (KC WR, board 4.7 ppg) gruesome ankle injury on W4 55-yard catch; multi-week est. 4 games \u2014 supersedes 10/4-10/5 injury notes; Worthy/Hill boosts stand."
+   }
+  },
+  {
    "id": "fantasy-football-week-5-injury-report-barkley-jackson-chase",
    "title": "Fantasy Football Week 5 Injury Report: Saquon Barkley, Lamar Jackson, Ja'Marr Chase And More - Forbes",
    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQTjRzUlhtSms3UnY5ZTJJM2hVdXYzWWwxbzE4Vlh3ZF9HRWtRZ0prQWxuQmNvdG1wU2VVZmJRUl9iU1FvM3VkZ2dOZ283Wjd2Ni1NYWdjUFlnR0J5V09nU3lfdTQ4dmx5WGwwUjA4bGN2ckY4ZnJiZFc3RWNKOWtjQXNrS04xbm1MUV9LMklETXRmTHBOcFBJbmpaU1VsWDBmS1k4NDdmSTZKeDJ3N09qcjRBVEpCMVhTYV9oTzBnTUlZaFpsbng4Nl8zX2p4UnJRdWNYOVdpWEtYdw?oc=5",
@@ -89,6 +170,19 @@
    "impact": {
     "players": [],
     "note": "Grounded: FFB 10/5 \u2014 Barkley (PHI RB, board 14.6 ppg) Week 5 status uncertain with hamstring; existing 10/4 injured tag (-14, 1 game est.) stands; Bigsby IR leaves PHI RB room thin."
+   }
+  },
+  {
+   "id": "nfl-injury-report-week-5-latest-news-updates-on-jamarr-chase-saquon-barkley",
+   "title": "NFL Injury Report, Week 5: Latest news, updates on Ja'Marr Chase, Saquon Barkley for fantasy football - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQalR2S2FJaUlKcm1NUE9hd1pfX1dDd1k2QzZMUTl2TzBIRkVMNXhVbzQwWDBUa1V5enByOUZTLVlUTFZNUEVGazBKbTh1M01raGFObDVzc3pCWlhmSHlSMUpISWVzTVE0LTBkNTBpX3VTOUNONVV4UUdKbGhoOWFBUkFaQWpNakFZZktZSFMxSDE5WlFJSDRDY3pKQmlwQjVxSENJT2poU04zY3ZlV0JhVFFBdVpMN1IyQ29ZdjROa2N3eXZFdlQ3WnNCbGQxS3NiOHRzcWIxUWZUb1poaWlLZ2NabGhPalk?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Mon, 05 Oct 2026 21:33:20 GMT",
+   "summary": "Yahoo's Week 5 NFL injury report has the latest fantasy-relevant updates on Ja'Marr Chase and Saquon Barkley.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 10/5 \u2014 W5 injury report: Chase (CIN WR, board 19.9 ppg) & Barkley (PHI RB, board 14.4 ppg) latest updates; existing 10/4-10/5 tags stand."
    }
   },
   {
@@ -387,160 +481,66 @@
    }
   },
   {
-   "id": "fantasy-football-injury-report-heading-into-week-5",
-   "title": "Fantasy Football Injury Report Heading into Week 5 - FTN (For the Numbers)",
-   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE52TmdYNl9MbVhEYkVsRG9oR1JzWTJjaFFBM1VXdUtkZkt1TkRQc1dWeXQ5dEp0V29QSXpHMzc1c0JWNFNtVkgwLTdiaWNFYnFXVEprbk5sWEh5OUpSVWVtZUd5QUdzcC0wVFgxU1hnT01XcnpLVkJCQzl4bkptZw?oc=5",
-   "source": "FTN (For the Numbers)",
-   "published": "Mon, 05 Oct 2026 13:10:25 GMT",
-   "summary": "FTN publishes its fantasy football injury report heading into Week 5.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: FTN 10/5 \u2014 W5 injury report; monitor Jackson/Chase/Barkley \u2014 existing tags stand."
-   }
-  },
-  {
-   "id": "2026-week-5-nfl-fantasy-football-injury-report",
-   "title": "2026 Week 5 NFL Fantasy Football Injury Report - Fantasy Points",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTXIzNUt6aFZncElFOFBfUklZWGhnaFhnWVlaMWhDRk4wS1QwQTQwMm41WjdiY0pqSkNGMUNyMEptUFp3MkxxaWo1ZHpQT2t1MGNJZEZWbG9peHB5TnVOLVZBMzlEOTYzQzgzVHB6NUJVMnVRVWF0eHg3am9nUnNaTUI2T2RRQmwwVzgwLWVmZFNaQ0E?oc=5",
-   "source": "Fantasy Points",
-   "published": "Mon, 05 Oct 2026 12:08:00 GMT",
-   "summary": "Fantasy Points publishes its Week 5 NFL fantasy football injury report.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Fantasy Points 10/5 \u2014 W5 injury roundup; no new facts beyond already-tagged statuses (Jackson, Chase, Barkley, Rice)."
-   }
-  },
-  {
-   "id": "mike-evans-productive-despite-injury-sunday",
-   "title": "Mike Evans Productive despite injury Sunday - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPY0FVNW1JRkg1Zzh5bkx2TWFhTXZvMFZ2M0RUc0tOVmFEV1hLMnFXRkxmWGZWWUxSTFQxTFA4MFdadUlELUNkNU96M1cxYjd6T0kyWGNIbHFRYnRZdlk2b0dURU40aF9hR1JlV2NlWHVIQU5seGxZM1dwOXJxRHVCLU1WT0NjbXlyM0ZMQ0lKdnY5NXhEYzR6YndR?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Mon, 05 Oct 2026 05:17:08 GMT",
-   "summary": "The Fantasy Footballers note Mike Evans was productive in Week 4 despite playing through injury.",
+   "id": "fantasy-football-injury-impact-ladd-mcconkey-foot-injury-gives-rise-to-fantasy-football-sleeper",
+   "title": "Fantasy Football Injury Impact: Ladd McConkey Foot Injury Gives Rise To Fantasy Football Sleeper - si.com",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNXzd2OWRfVzY5NmU2NTE0X1BfNmlvQkNxdklxZ05qdzNqb3RzOHc0OTMxOUFoeGdKNXlackJSRXFvbFpISmVvYlFRazVoSDZQcnloOVVCZDYtenNHdzVyaDBxM1puZXlxWTE2S0NhTHB2czdTWjNJN0FXQVZaWHY5TV9tOGRmY0l2YkNDNDFHcXBOeXpKcmpDeThOZTBpeFprOFZ0SGc3NTZCNy1Zb0ZUQnRkZHc3TXIzdXdNbUpycGVqdw?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Sun, 04 Oct 2026 23:29:47 GMT",
+   "summary": "SI reports Chargers WR Ladd McConkey's foot injury gives rise to a fantasy football sleeper.",
    "sample": false,
    "impact": {
     "players": [
      {
-      "name": "Mike Evans",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 13,
-      "suggestedEdit": "Role boost \u00b7 +13 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: FFB 10/5 \u2014 Evans (SF WR, board 12.8 ppg) productive through rib injury; clears 10/1 injured tag."
-   }
-  },
-  {
-   "id": "t-j-hockenson-jefferson-injury-opens-opportunity",
-   "title": "T.J. Hockenson Jefferson injury opens opportunity - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQS01IUTdQY2JmalVOSjkwMnl1V19DREtOcWhFS0RvMDNLTXBGYnN3UVFZNTFTeU9xNUlZRHZ0bHd4SUp0TE9FLTNTd3R5dXd0aGhUQ0JMRlV4aVE1NVBGcDd1MkNLTEtiRFNlVUdyZzlfSkRHSmhiei1TSEVoc0NaV044NW02UHh6UW5CLUdlZlRpaUppSDhGYi1xQ0tqTlE?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Mon, 05 Oct 2026 05:17:08 GMT",
-   "summary": "The Fantasy Footballers say T.J. Hockenson's opportunity grows with Justin Jefferson injured.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "T.J. Hockenson",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 8,
-      "suggestedEdit": "Role boost \u00b7 +8 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: FFB 10/5 \u2014 Hockenson (MIN TE, board 7.5 ppg) target share up with Jefferson (MIN WR) out; also on Yahoo Week 5 adds."
-   }
-  },
-  {
-   "id": "mack-hollins-exits-game-with-calf-injury",
-   "title": "Mack Hollins Exits game with calf injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNakVxNXZmcEd6OWJ0dGlPalhHZXFaN1czdmNNdDY0bklaZUFaNnhxaHhoV3A5T1dZOUtCSUNQbDQza1pyMlVKVWRHODVudGFmUTVacTM3WWRyQi1wLW51UHFxb1A3NHNaeTNmeWdZWVNiRHdIa09XZE0tQ3JFV3ZRbHNrUEJZWXQ2SHlFZ3hWLTRQTXFKVnc?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Mon, 05 Oct 2026 05:17:08 GMT",
-   "summary": "The Fantasy Footballers report Patriots WR Mack Hollins exited Week 4 with a calf injury.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Mack Hollins",
+      "name": "Ladd McConkey",
       "action": "injured",
       "games": 1,
-      "deltaPts": -3,
-      "suggestedEdit": "Tag injured \u00b7 -3 pts (1 game) \u00b7 drops ~1 round"
+      "deltaPts": -14,
+      "suggestedEdit": "Tag injured \u00b7 -14 pts (1 game) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Grounded: FFB 10/5 \u2014 Hollins (NE WR, board 3.4 ppg) exited W4 with calf; severity TBD, 1 game est."
+    "note": "Grounded: SI 10/4 \u2014 McConkey (LAC WR, board 14.1 ppg) foot injury, severity TBD, 1 game est.; unnamed sleeper gains (not in headline)."
    }
   },
   {
-   "id": "tank-bigsby-s-fantasy-value-waiver-wire-pickup-amid-saquon-barkley-injury-news",
-   "title": "Tank Bigsby's Fantasy Value: Waiver Wire Pickup Amid Saquon Barkley Injury News? - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWVpGbDJJRGFVLTlBdEtPbEt6cXdrQVFYazN5cFdtRzBaNE5YN21mMkwzZFBfMkMtN3NFQWp5UjFFVU9BS1FYUWd0S2c1Ylo2YW1aSnM5b1E4UHZWNndmS2pQOEVOazR0NHJEZDJVY0VTVVJYRFRLM3pPbHVjSHJ3a05fa3l0QXlO?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Mon, 05 Oct 2026 05:12:58 GMT",
-   "summary": "Yahoo weighs Tank Bigsby as a waiver wire pickup after Saquon Barkley's injury.",
+   "id": "fantasy-football-injury-impact-jalen-nailor-concussion-opens-door-for-two-fantasy-sleepers",
+   "title": "Fantasy Football Injury Impact: Jalen Nailor Concussion Opens Door For Two Fantasy Sleepers - si.com",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVpuNnVUbFpVRElYV2QzWmUyV2xhUmRNOXpqV3poTFl3YTFQcXpJd0xfZkZubFpCVE03NDZLLWZTOEhwbHJDUzJUQjJJZU85Mmp0NFZIZUVZWGp2QTRmOWlyX2Q4N0VrMjVMaTZIR2NoLWxHQXhYajl5Y1l2MzBRZ2JUNnYtYmw5c3NsY1JHc1ZLVW9Dby1wbm9ENThhaVBMeGxkZVlWX1hTOWJBNnNHckJIRUFULWNXbEZR?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Sun, 04 Oct 2026 22:43:47 GMT",
+   "summary": "SI reports Jalen Nailor's concussion opens the door for two fantasy football sleepers.",
    "sample": false,
    "impact": {
     "players": [
      {
-      "name": "Tank Bigsby",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 6,
-      "suggestedEdit": "Role boost \u00b7 +6 pts \u00b7 move up ~1 round"
+      "name": "Jalen Nailor",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -7,
+      "suggestedEdit": "Tag injured \u00b7 -7 pts (1 game) \u00b7 drops ~1 round"
      }
     ],
-    "note": "Grounded: Yahoo 10/5 \u2014 Bigsby (PHI RB, board 5.8 ppg) top Week 5 add with Barkley (PHI RB) hurt; Shipley also in mix."
+    "note": "Grounded: SI 10/4 \u2014 Nailor (LV WR, board 7.3 ppg) concussion, 1 game est. (protocol); two sleepers gain (unnamed in headline)."
    }
   },
   {
-   "id": "early-fantasy-football-waiver-wire-for-week-5-keon-coleman-priority-pickup",
-   "title": "Early Fantasy Football Waiver Wire For Week 5: Keon Coleman Priority Pickup - FantasyLife",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWjFtekljUjJqcXh2dTRPeGg4UTk3VDNqcC1SMTJncmlUemFRRXBwVi13ZFd5ajJ6Q3JOSU9lSWZlazNfMWFubHp1Yjk3M0ctcHpKQVdoOEhjUDJvandOdTVvMmxhaDVUMnhFUUl5OW15U2FTNkZhdHlLbWZMd0YtR0pqQUk5N1M4MEptRFktQ1VGZHEw?oc=5",
-   "source": "FantasyLife",
-   "published": "Mon, 05 Oct 2026 04:30:35 GMT",
-   "summary": "FantasyLife names Bills WR Keon Coleman a priority waiver wire pickup for Week 5.",
+   "id": "jonathon-brooks-fantasy-football-injury-update-when-will-panthers-rb-return",
+   "title": "Jonathon Brooks Fantasy Football Injury Update: When Will Panthers RB Return? - Complex",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQR0V2MkJweDVlMk1PTldYWHFkaEltZFpuVkxDRWJnQ3U5R2t5X1JVcDVDZnhJNEF5RUtybGZuZ01Sb0tJZE1TQTJNdG1obWxlTGJlWGw3dzFRaXJzMXVuSHBYSGZyLUZTUHlQSUhiS0N6aW5TUElQZmpiOUdLS2paLTk2MFFsUUNGV0NBbEVZN1pMUQ?oc=5",
+   "source": "Complex",
+   "published": "Sat, 03 Oct 2026 15:13:56 GMT",
+   "summary": "Complex examines when Panthers RB Jonathon Brooks will return from injury.",
    "sample": false,
    "impact": {
     "players": [
      {
-      "name": "Keon Coleman",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 5,
-      "suggestedEdit": "Role boost \u00b7 +5 pts \u00b7 move up ~1 round"
+      "name": "Jonathon Brooks",
+      "action": "injured",
+      "games": 2,
+      "deltaPts": -19,
+      "suggestedEdit": "Tag injured \u00b7 -19 pts (2 games) \u00b7 drops ~2 rounds"
      }
     ],
-    "note": "Grounded: FantasyLife 10/5 \u2014 Coleman (BUF WR, board 6.3 ppg) priority W5 pickup; also CBS 10/5 post-hype sleeper."
-   }
-  },
-  {
-   "id": "fantasy-waiver-wire-targets-week-5-zach-charbonnet-will-shipley-michael-mayer-and-more",
-   "title": "Fantasy Waiver Wire Targets Week 5: Zach Charbonnet, Will Shipley, Michael Mayer, and More - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcDVvQlJ3ZkctajM2ekk5LXVfdmxmRTE4ODVkZTVxeld6aXdRMlJ5REpYZVoyc2FsdXpqa3lHMjdScVJqekNzWTVaLWJCbmJKeXpwaXNVTkhMSlpwa1RyOEtPQkZVWGJPVjhzRjRXOW1OWlQ1SU1kQzFxV0pRd2tLY2toNmc2LXN5?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Mon, 05 Oct 2026 04:06:00 GMT",
-   "summary": "Yahoo lists Zach Charbonnet, Will Shipley and Michael Mayer among Week 5 waiver wire targets.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 10/5 \u2014 Week 5 adds: Charbonnet (SEA RB, board 5.7), Shipley (PHI RB, board 1.7 \u2014 gains with Barkley out), Mayer (LV TE, board 3.7)."
-   }
-  },
-  {
-   "id": "winners-and-losers-mcmillan-lamb-dominate-smith-njigba-struggles",
-   "title": "Week 4 winners and losers: McMillan, Lamb dominate, Smith-Njigba struggles - espn.com",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQaHU5eUFVUXRndmd6RmtRUExPNFdhQ2RtbmJsa2R0U2FDdi1RUnNNeFFhN1RzdjU4QjlhZlZHdW1RLXNzOENRVXdQVjBOZWJFSlhvQXBSZzdRbndPSEJOdEExSUloYlpYcTMxZTNRMm9JWlh5b1Z5bFB0bDNfTTR3bkFIdV9DaFR6TXN1VjJmSVZpUU1QU2x5RFVjeEpvc2hwSEF0anBOZ2pKdmJzWC1OV25tZ2tvSm1aYVlHU1p6WWI3eFpNQXA1ZEFlY19QSnpqVDZ4d2tGZTlWZw?oc=5",
-   "source": "ESPN",
-   "published": "Mon, 05 Oct 2026 03:59:00 GMT",
-   "summary": "ESPN's Week 4 winners and losers: Jalen McMillan and CeeDee Lamb dominate while Jaxon Smith-Njigba struggles.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: ESPN 10/5 \u2014 W4 recap: McMillan (TB WR) & Lamb (DAL WR) dominate, Smith-Njigba (SEA WR) struggles; performance recap, no tag changes."
+    "note": "Grounded: Complex 10/3 \u2014 Brooks (CAR RB, board 9.6 ppg) still sidelined, return timeline TBD, 2 games est.; severity not in headline."
    }
   }
  ]
