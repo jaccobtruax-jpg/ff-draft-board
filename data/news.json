@@ -3,6 +3,82 @@
  "sample": false,
  "items": [
   {
+   "id": "seahawks-signing-joe-mixon-amidst-backfield-injury",
+   "title": "Seahawks Signing Joe Mixon Amidst Backfield Injury - NFL News | Fantasy Football - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMG9MWjVjSkJfUWg2RTY5ZWtaRFdHWnh1aGhQVlljRWJTLVQ4NVp2RnlaVE1kMU94UG9VNjdnek5kSS1qNTY3NWZpTGh1akZBdklfeE5xcnRTUzRJNFB3SVhDcHJpMDVhMW5hWW81c2daeUVpaHZkQWFhcGtvU1BGQl94TVJqV3F0d3BIcmZQVW1ONmNLN2lIYlBqVnFaZw?oc=5",
+   "source": "RotoBaller",
+   "published": "Mon, 05 Oct 2026 22:36:15 GMT",
+   "summary": "RotoBaller reports the Seahawks are signing veteran RB Joe Mixon amid an injury-depleted backfield.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Joe Mixon",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 13,
+      "suggestedEdit": "Role boost \u00b7 +13 pts \u00b7 move up ~2 rounds"
+     }
+    ],
+    "note": "Grounded: RotoBaller 10/5 \u2014 Mixon (RB) signing with SEA amid backfield injury; not on board \u2014 est. 13 ppg (RB)."
+   }
+  },
+  {
+   "id": "tank-bigsby-injury-eagles-running-back-to-injured-reserve",
+   "title": "Tank Bigsby injury: Eagles running back to injured reserve - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORkg1X1BYY2djdzUxa2N4ZnFob2JvYmNwNWlXV25jMWVhQXlCdEFzS3pxNkhaOFNjSjJ1Y3hCaE9fS1RLZC1FaFpydnFDZ1EzY2gxTkxvcEVsa2VCa1lHTkRNRV9BM1drbm1FaGY2NENXRDVFR0hOdjNYSFVjQ0ZMYkFsTkFMQlQtTVE?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Mon, 05 Oct 2026 22:09:55 GMT",
+   "summary": "Yahoo reports Eagles RB Tank Bigsby is headed to injured reserve with a core muscle injury requiring surgery.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Tank Bigsby",
+      "action": "injured",
+      "games": 4,
+      "deltaPts": -24,
+      "suggestedEdit": "Tag injured \u00b7 -24 pts (4 games) \u00b7 drops ~2 rounds"
+     }
+    ],
+    "note": "Grounded: Yahoo 10/5 \u2014 Bigsby (PHI RB, board 5.9 ppg) to IR with core muscle injury, surgery upcoming; supersedes 10/5 boost; Shipley gains with Barkley also banged up."
+   }
+  },
+  {
+   "id": "saquon-barkley-status-uncertain-with-injured-hamstring",
+   "title": "Saquon Barkley Status uncertain with injured hamstring - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSEVYX045dlRtc1FvRHdWZ1gxN2VXOUpBR3VEWG5KcDVjRVgxRExub0NBWV9UOFZFb3daQVBfSHNNa204YXZhNjllQUZrb0szcmxRTWVrVzNiVjFFQWVwVTF3ZTBiUF9MMFZQTUtUTldMdUVCMWRVOUJ4aWxOd0RJRHJ2am1XaDFseWhSUUtvd0tiWXllVHNVRHljZHpLMWdXc2daYnhMWWk?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Mon, 05 Oct 2026 21:40:24 GMT",
+   "summary": "The Fantasy Footballers report Saquon Barkley's Week 5 status is uncertain as he nurses a hamstring injury.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: FFB 10/5 \u2014 Barkley (PHI RB, board 14.6 ppg) Week 5 status uncertain with hamstring; existing 10/4 injured tag (-14, 1 game est.) stands; Bigsby IR leaves PHI RB room thin."
+   }
+  },
+  {
+   "id": "fantasy-football-waiver-wire-week-5-will-shipley-dohnte-meyers-among-top-pickups",
+   "title": "Fantasy Football Waiver Wire, Week 5: Will Shipley, Dohnte Meyers among top pickups - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZUpzck9DbnhIODRabDkzdnhCRG4ydlJwVHNfT0FJRkpYOFgxM2NQdFBIdVl4NWIyNUxDeHZNODBCU01KQ3FjOWhwaHVNNksyRk5tNnJ1XzNuQk9BZk9FWXhBLWNxMUoza19vYnpOQl81ZkZfN3ptUS1iLXRrM0V4Y0diNkN4T1hrQ3R1TUs5bHZQQ0xSQmVPNlFnNl9hSUU5ZV84OVk2aGVlWW9uaXF4TURKdnRYRkRkOW4xRDVmQzBhd0FnVTZQUnB3NXNIQVRzeXc?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Mon, 05 Oct 2026 21:22:59 GMT",
+   "summary": "Yahoo lists Will Shipley among top Week 5 waiver pickups with the Eagles' backfield depleted by injuries.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Will Shipley",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 5,
+      "suggestedEdit": "Role boost \u00b7 +5 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: Yahoo 10/5 \u2014 Shipley (PHI RB, board 2.0 ppg) top Week 5 add with Barkley (hamstring) and Bigsby (IR) out; Dohnte Meyers also among Yahoo top pickups."
+   }
+  },
+  {
    "id": "pat-bryant-fantasy-football-update-ankle-injury-could-double-troy-franklin",
    "title": "Pat Bryant Fantasy Football Update: Ankle Injury Could Double Troy Franklin's Week 5 Role - Sports Illustrated",
    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNblVobTY1XzhFXzAzRjdVZG5yaDdhenhQOElUcTFJeUJmOWhaODk2X042Z19YZjQxemsxOVdveDIxaUx0Nk5ZT210dUxMcW5sOFVzekVHTWtFT2F3RFZNS0JOa1djSXlsSll3NlYtSXdxNngzZjA0b2lUSmZ6UUpBSVV1MTMyaDcydlBQZzZMTEp4NDk1TVVuMEFpUnMzXzQ?oc=5",
@@ -104,6 +180,32 @@
      }
     ],
     "note": "Grounded: SI 10/5 \u2014 Worthy (KC WR, board 9.4 ppg) primary replacement with Thornton (KC WR) out; Hill also in mix (not on board \u2014 est.)."
+   }
+  },
+  {
+   "id": "fantasy-football-injury-impact-dj-moore-shoulder-status-could-unlock-two-bills-breakouts",
+   "title": "Fantasy Football Injury Impact: DJ Moore's Shoulder Status Could Unlock Two Bills Breakout Receivers - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOa2ZucnVaWmhmMkZBdzJTWmJ0NW1weVhnakN0X1Bqb0JuX3hNMzdLdk55ZnNhVDRVeUYzZUlweklZWWtTWGRBTml1SWtWeWZvQkliTUNqLUlZa2g3OXE2WHUxdnZOal9rWlhMT0Y0Zzl0czZJcTJGSzh6SXBCWWdHbjdkU3hzYUxaTVE?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Mon, 05 Oct 2026 17:27:53 GMT",
+   "summary": "Yahoo says DJ Moore's shoulder status could unlock two Bills breakout receivers in Week 5.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 10/5 \u2014 Moore (BUF WR, board 13.0 ppg) shoulder status could unlock two Bills breakouts (unnamed in headline); existing 10/5 injured tag (-13, 1 game est.) stands."
+   }
+  },
+  {
+   "id": "justin-jefferson-fantasy-football-injury-update-when-will-wr-return",
+   "title": "Justin Jefferson Fantasy Football Injury Update: When Will WR Return? - complex.com",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTXdXZy1XRlA4Tk1reERMYXVQN1RmZkdtckFNbEx2dXFqdWVVbzdKbkIzLWpvMjZpNlEzY3FOUm4xY3V6NlpYenFNZnJRY0JfVWVEVUM5eERwaE13RkZvYXpvNng2bmJ4d1VyVWxYVWU0cm83VlM1WEMxWFZ5a1VXcWhqSTdRYTFFcWFLYVBrbmZXT2c?oc=5",
+   "source": "complex.com",
+   "published": "Mon, 05 Oct 2026 16:39:45 GMT",
+   "summary": "Complex examines when Vikings WR Justin Jefferson will return after missing Week 4 with injury.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: complex 10/5 \u2014 Jefferson (MIN WR, board 15.3 ppg) return timeline after missing W4; existing Hockenson boost stands while he's out."
    }
   },
   {
@@ -447,124 +549,6 @@
      }
     ],
     "note": "Grounded: RotoBaller 10/4 \u2014 Rice (KC WR, board 14.8 ppg) doubtful with hamstring; Chiefs sleeper stock rises (SI 10/4)."
-   }
-  },
-  {
-   "id": "eagles-saquon-barkley-exits-vs-rams-ruled-out-with-hamstring-injury",
-   "title": "Eagles' Saquon Barkley exits vs. Rams, ruled out with hamstring injury - The Athletic - The New York Times",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZFhGSVVoZWZBWnExTWFBZFdybFh5OUlFQ2RJc1YwWUt3UHJoRlNOcFJQTjZLdzVOZlRHZEhjNU8wR01yNlJSZG1qalQ5SlV2eWtkLU5hMkd0X3YwZlp0cWZzVk9aWnB2Ym1DSmx0d19Rc0pidUtwX25lZkVYZ3V1c2pMS3F3YlR0TWlIX1BRSQ?oc=5",
-   "source": "The New York Times",
-   "published": "Sun, 04 Oct 2026 21:23:30 GMT",
-   "summary": "The Athletic reports Eagles RB Saquon Barkley exited the Rams game and is ruled out with a hamstring injury.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Saquon Barkley",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -14,
-      "suggestedEdit": "Tag injured \u00b7 -14 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: NYT 10/4 \u2014 Barkley (PHI RB, board 14.4 ppg) ruled out vs LAR with hamstring; severity TBD, 1 game est.; Bigsby/Shipley see PHI backfield upside."
-   }
-  },
-  {
-   "id": "marcus-mariota-aggravates-mcl-injury-in-week-4",
-   "title": "Marcus Mariota Aggravates MCL injury in Week 4 - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMTRmbC1MQURPc1hYSzh2VnhQSUtCZ1VZT1c2d0Z5U1RtdXNrdWlhRkFiZVk1aGJxb3RNVDc4MGFnSDRna2xxOUQzS09tWkotNl9FZktadXNDZlVzZVlaWk5CMXFfQ0RRLXNlOXNiR1hRS0RBZUpiTm14S1BrQUNoWjl4RWlvSnRtNnlBbDN3ZkRsUWNsalJOTkNjb3ZhUQ?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Sun, 04 Oct 2026 21:15:39 GMT",
-   "summary": "The Fantasy Footballers report Commanders QB Marcus Mariota aggravated his MCL injury in Week 4.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Marcus Mariota",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -18,
-      "suggestedEdit": "Tag injured \u00b7 -18 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: FFB 10/4 \u2014 Mariota (WAS QB) aggravated MCL; not on board \u2014 est. 18 ppg; WAS pass-catcher value dampened (SI 10/4)."
-   }
-  },
-  {
-   "id": "tee-higgins-suffers-adductor-injury-in-week-4",
-   "title": "Tee Higgins Suffers adductor injury in Week 4 - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNeDM0QWJJRjVmaVBZdS1IbnFnRWVLUnpUUG5CU0dTWm1ncTJ0T0RHaVB6TmNMZWJRbkhIMm5jYUpCNWVneUtyckdNbldWX2RjZUZXcTZ6NlJ6MU1qZUIzMjlFX2J1N2g0LXZxTTBIVEYyMGdWeHJTQW9pQURfdXpySFJIX1VUOUdkM0lzbFZsc3NpZ3Z6d1JkZFc3b2g?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Sun, 04 Oct 2026 20:50:40 GMT",
-   "summary": "The Fantasy Footballers report Bengals WR Tee Higgins suffered an adductor injury in Week 4.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Tee Higgins",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -14,
-      "suggestedEdit": "Tag injured \u00b7 -14 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: FFB 10/4 \u2014 Higgins (CIN WR, board 13.8 ppg) adductor injury; severity TBD, 1 game est."
-   }
-  },
-  {
-   "id": "fantasy-football-early-week-5-waiver-wire-eagles-backfield-depth-bills-wr-duo-worth-adding",
-   "title": "Fantasy Football Early Week 5 Waiver Wire: Eagles' backfield depth, Bills' WR duo worth adding after more injuries - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQU2dxZEZVaFJVNkI4d2ptanRNRWlFX3dLclVMWGktX3FfSy13TU5LaEdrMUdGVXpJLXVBbWtmSUxXYkk1U1ZOMDJWdHdZdVVoVnJpMmZHZjJuVWNlcmdJUDhWMG9kZFVVaTN2ZEphenpwcUREWGNONVhpbGRBLXZsQWN6MHYxdTloV0pnb0JBQnJxT0N5QmtOZFY1MmFBR3c4WHV4Wm1wZDQ0bEV6eEFHUlRDem82X0FvanZoanJablA3Q2M0aUlhMk9rS1BQNVJLT2g5RHJnN25iR0V4VlpfYzhleFlGNjVnLTNyTGEwajFqb2twYzBoREtn?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Sun, 04 Oct 2026 20:25:44 GMT",
-   "summary": "Yahoo's early Week 5 waiver wire highlights Eagles backfield depth and the Bills' WR duo after more injuries.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 10/4 \u2014 Eagles backfield depth (Bigsby 5.8/Shipley 2.0 boosts stand) & Bills WR duo (Moore tagged 10/5) worth adding for W5."
-   }
-  },
-  {
-   "id": "lamar-jackson-suffers-ankle-injury-in-week-4",
-   "title": "Lamar Jackson Suffers ankle injury in Week 4 - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYnZiSjRybHF6WHBqYWN4RW1aY1BpN2RLUjYzN05tRzNaeW0zR1AxRzlGN1VSdE96a20tbGRrY1Z3RWp0OERmVk9TSzRRTUFHbUVJakVhZnIwdXJGYkJ0ZTl1RXFEbll4S1NDR1VISUJhQlU4ZzEyaTY4MFhPMjBLUkpweWV3OHNnclVvbmgyUGpES2NERldMZTVfTQ?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Sun, 04 Oct 2026 19:06:15 GMT",
-   "summary": "The Fantasy Footballers report Ravens QB Lamar Jackson suffered an ankle injury in Week 4.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Lamar Jackson",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -20,
-      "suggestedEdit": "Tag injured \u00b7 -20 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: FFB 10/4 \u2014 Jackson (BAL QB, board 19.6 ppg) ankle injury vs DEN; Minter optimistic (FFB 10/4), 1 game est."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-ja-marr-chase-injury-increases-fantasy-stock-of-bengals-sleeper",
-   "title": "Fantasy Football Injury Impact: Ja'Marr Chase Injury Increases Fantasy Stock Of Bengals Sleeper - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNc2lybGZSQ21wV1dlWENoNndIZXJxVjFZSG5IU3BhLVM0QzlhY0xuenVTNmtBazJ0TXNST0xHQjJ0R201NUYtZjMxMFVwTU5IbGZ0OFUycjlwU0NweFR3QmljMWEwOFBFb1BfRzFUa2duU0RtZy1aemozeDhwcmEzNlhQZ1M0eHF4dy1UdXRPUnNqdFZDUDU0Ukh4NV9pblAxVFc5VURfbjZMSmNPV0ktT2JVSnlKYkZSajljT3NjZ0otM3B1QlY4?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Sun, 04 Oct 2026 18:41:42 GMT",
-   "summary": "SI reports Ja'Marr Chase suffered an injury in Week 4, increasing the fantasy stock of a Bengals sleeper.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Ja'Marr Chase",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -20,
-      "suggestedEdit": "Tag injured \u00b7 -20 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 10/4 \u2014 Chase (CIN WR, board 19.9 ppg) injured in Week 4, severity unclear; sleeper unnamed in headline \u2014 monitor."
    }
   }
  ]
