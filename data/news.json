@@ -3,6 +3,40 @@
  "sample": false,
  "items": [
   {
+   "id": "fantasy-football-week-5-injury-report-barkley-jackson-chase",
+   "title": "Fantasy Football Week 5 Injury Report: Saquon Barkley, Lamar Jackson, Ja'Marr Chase And More - Forbes",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQTjRzUlhtSms3UnY5ZTJJM2hVdXYzWWwxbzE4Vlh3ZF9HRWtRZ0prQWxuQmNvdG1wU2VVZmJRUl9iU1FvM3VkZ2dOZ283Wjd2Ni1NYWdjUFlnR0J5V09nU3lfdTQ4dmx5WGwwUjA4bGN2ckY4ZnJiZFc3RWNKOWtjQXNrS04xbm1MUV9LMklETXRmTHBOcFBJbmpaU1VsWDBmS1k4NDdmSTZKeDJ3N09qcjRBVEpCMVhTYV9oTzBnTUlZaFpsbng4Nl8zX2p4UnJRdWNYOVdpWEtYdw?oc=5",
+   "source": "Forbes",
+   "published": "Tue, 06 Oct 2026 03:34:35 GMT",
+   "summary": "Forbes' Week 5 injury report covers Saquon Barkley (hamstring), Lamar Jackson (ankle) and Ja'Marr Chase after a banged-up Week 4.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Forbes 10/6 \u2014 W5 injury roundup: Barkley (PHI RB, board 14.4 ppg) hamstring tests, Jackson (BAL QB, board 19.6 ppg) ankle, Chase (CIN WR, board 19.9 ppg); per-player tags handled in dedicated 10/5 items."
+   }
+  },
+  {
+   "id": "jeremiyah-love-tending-to-new-ankle-injury",
+   "title": "Jeremiyah Love Tending to new ankle injury - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNmpuZ0VOdlA5bVNsVTl0Z0MybzZfZWFtNW90NWVlb2VxbVpnUTZ0ZGNTMnVRZG5qdF84LXdIVGRweG5pMnpTVTZ2dUZnUDl3b01YV2FNVENmYUEyc3ZmZV80YmpEQmdWRHFpRG1xRzBlWVU0emxINE0yMDBUN2V0dE5CYTZYX2M4cHhiaXp6TWx1ZTNQSkJ6WQ?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Mon, 05 Oct 2026 23:00:34 GMT",
+   "summary": "The Fantasy Footballers report Cardinals RB Jeremiyah Love is tending to a new ankle injury.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jeremiyah Love",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -14,
+      "suggestedEdit": "Tag injured \u00b7 -14 pts (1 game) \u00b7 drops ~1 round"
+     }
+    ],
+    "note": "Grounded: FFB 10/5 \u2014 Love (ARI RB, board 13.7 ppg) new ankle injury, severity TBD, 1 game est.; DraftSharks 10/5: Cardinals managing a banged-up Love; Allgeier (ARI RB) gains."
+   }
+  },
+  {
    "id": "seahawks-signing-joe-mixon-amidst-backfield-injury",
    "title": "Seahawks Signing Joe Mixon Amidst Backfield Injury - NFL News | Fantasy Football - RotoBaller",
    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMG9MWjVjSkJfUWg2RTY5ZWtaRFdHWnh1aGhQVlljRWJTLVQ4NVp2RnlaVE1kMU94UG9VNjdnek5kSS1qNTY3NWZpTGh1akZBdklfeE5xcnRTUzRJNFB3SVhDcHJpMDVhMW5hWW81c2daeUVpaHZkQWFhcGtvU1BGQl94TVJqV3F0d3BIcmZQVW1ONmNLN2lIYlBqVnFaZw?oc=5",
@@ -141,6 +175,27 @@
    }
   },
   {
+   "id": "jordyn-tysons-fantasy-outlook-takes-a-hit-as-return-is-pushed-back",
+   "title": "Jordyn Tyson's Fantasy Outlook Takes a Hit as Return Is Pushed Back - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYzVibW1vaG5RdjBMMUptdTItZnREUDJBTU5oOU0wV2lodHJsRUpldkRNd2ZycTNWLXJJdkxnMkgwTDZITzVveFB1T29TcUNROXR3OTd1dHVaQ1pyLVpocldnN21oekxMa2V3UHlXRk9uREd6MEZoM1VKd3FuSGVmU0ZzM2ZMbi1fNjJxMg?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Mon, 05 Oct 2026 19:33:41 GMT",
+   "summary": "Yahoo reports Saints WR Jordyn Tyson's return is pushed back, hurting his fantasy outlook.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Jordyn Tyson",
+      "action": "injured",
+      "games": 2,
+      "deltaPts": -17,
+      "suggestedEdit": "Tag injured \u00b7 -17 pts (2 games) \u00b7 drops ~2 rounds"
+     }
+    ],
+    "note": "Grounded: Yahoo 10/5 \u2014 Tyson (NO WR, board 8.5 ppg) return pushed back; already on IR with hamstring (board); 2 games est.; Olave remains NO WR1."
+   }
+  },
+  {
    "id": "fantasy-football-injury-impact-zach-charbonnet-nearing-return-spoiling-emanuel-wilson",
    "title": "Fantasy Football Injury Impact: Zach Charbonnet Nearing Return, Spoiling Emanuel Wilson's Long-Term Outlook - Sports Illustrated",
    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNTDBndmpESHozRTRNNzNlLXh4RjMyU0M3dTVyMWQ1SGZua3lrbjdPWDY0VEhZbjZNcExDY1pNelMyODlIa09XOEJPb3Y2R2dUckxqejlOdy1fVV9JX1NFQTJWU3dmR0dxX09QZGhrWjV2d0JOYWc3ck1lR2lXSkl1RzRtM0dBMV91djdOZXY5bDJTVUFBZHVUZ1k0a1NWSG5rLVNWdkRZMDMyU2hOZVlKZXV4REs0THFreFJhYmVBSmNEdDBocUFHSjVSaklGZTVFWkpPUWRSQ19wNkFzdkd3?oc=5",
@@ -196,6 +251,27 @@
    }
   },
   {
+   "id": "fantasy-football-injury-update-lamar-jacksons-ankle-injury-widespread-impact",
+   "title": "Fantasy Football Injury Update: Lamar Jackson's Ankle Injury Could Have A Widespread Impact - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMVA0UWo0TXpka1FvcGpVa2tnSnNBOHlxQ2ZDQlJTWXliQTdjODRXZU1xWDhTNDJZbU5wdkwzM0VDNjIxcV82YTJrMG9oeURFLXU5T09sU3FZX19iVkJEbVdSaGFkalNEQmpHUG1FbkpjalBWXzA1QllxVUxXWGtuQVBoVmlWVUxDYUlWLUZQLTVyUTNiTWZVbmFDbEwxLWw1UmxxUHRKXzJzNFhEV0tJMXp1angwdXFQYzhjWTUtTTd0ZzBycWp4RVp3NA?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Mon, 05 Oct 2026 17:18:23 GMT",
+   "summary": "SI reports Lamar Jackson's ankle injury from Week 4 could have widespread fantasy football impact.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Lamar Jackson",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -20,
+      "suggestedEdit": "Tag injured \u00b7 -20 pts (1 game) \u00b7 drops ~2 rounds"
+     }
+    ],
+    "note": "Grounded: SI 10/5 \u2014 Jackson (BAL QB, board 19.6 ppg) ankle injury with widespread impact per SI; severity TBD, 1 game est.; BAL backup/streamer QBs gain (unnamed in headline)."
+   }
+  },
+  {
    "id": "justin-jefferson-fantasy-football-injury-update-when-will-wr-return",
    "title": "Justin Jefferson Fantasy Football Injury Update: When Will WR Return? - complex.com",
    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTXdXZy1XRlA4Tk1reERMYXVQN1RmZkdtckFNbEx2dXFqdWVVbzdKbkIzLWpvMjZpNlEzY3FOUm4xY3V6NlpYenFNZnJRY0JfVWVEVUM5eERwaE13RkZvYXpvNng2bmJ4d1VyVWxYVWU0cm83VlM1WEMxWFZ5a1VXcWhqSTdRYTFFcWFLYVBrbmZXT2c?oc=5",
@@ -248,6 +324,27 @@
      }
     ],
     "note": "Grounded: SI 10/5 \u2014 Kelce (KC TE, board 9.7 ppg) hold with Rice/Thornton (KC WRs) out; target share up."
+   }
+  },
+  {
+   "id": "fantasy-football-injury-impact-jamarr-chase-and-tee-higgins-both-go-down",
+   "title": "Fantasy Football Injury Impact: Ja'Marr Chase And Tee Higgins Both Go Down, Opening The Door For A Sleeper - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZUNJUmpKUFFnMjJYNkhWZnRGZWdWajdjdXM4MzlhNUktdldHSzZaSnlLSklNYUFBU2FQSjJRQ0FjZk14aThyMWQwTWlscERIMS1rdkVPa21uSkJYTU45Z3FTNlo2MEhlRUN2REdQc0RzRmVDS01RWHRjUGpBdVJacHBjcmgwa2RRRHFrUl9OT19QNG5PV2FCNktJWG92c3dYVlc2cFdMWnRTemJsNUIyY2FtcWE0WGhhQWsxWkd3elQ1MVF5eDRFSWdfX0gyYjQ3eWgzTnJtZng2U3MwX0E?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Mon, 05 Oct 2026 15:39:08 GMT",
+   "summary": "SI reports both Ja'Marr Chase and Tee Higgins went down in Week 4, opening the door for a Bengals sleeper.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Ja'Marr Chase",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -20,
+      "suggestedEdit": "Tag injured \u00b7 -20 pts (1 game) \u00b7 drops ~2 rounds"
+     }
+    ],
+    "note": "Grounded: SI 10/5 \u2014 Chase (CIN WR, board 19.9 ppg) down in W4, severity TBD, 1 game est.; Higgins (CIN WR, board 13.8 ppg) day-to-day (Yahoo 10/5, existing tag stands); unnamed CIN sleeper gains."
    }
   },
   {
@@ -444,111 +541,6 @@
    "impact": {
     "players": [],
     "note": "Grounded: ESPN 10/5 \u2014 W4 recap: McMillan (TB WR) & Lamb (DAL WR) dominate, Smith-Njigba (SEA WR) struggles; performance recap, no tag changes."
-   }
-  },
-  {
-   "id": "dj-moore-injury-not-considered-long-term",
-   "title": "DJ Moore Injury not considered long-term - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQW84TWtwUU4tWDJPNWRUVG5VSTRIQjZfZG5GRk1takVEWkJiTlRadjNKSkVyLUltQVRSUmVFUWdsY1pWcV9DNVM0bXJwaG5haEdkUnJNX2F2MExoaTVGZGtxdDRnSjFGYjlQZTdRbU1EOXJsUnVYeGdOOE5ONWV2RC1rekhSd1BHWW1MR2pSQ04yOEF2blE?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Mon, 05 Oct 2026 00:54:53 GMT",
-   "summary": "The Fantasy Footballers report Bills WR DJ Moore's shoulder injury is not considered long-term.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "DJ Moore",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -13,
-      "suggestedEdit": "Tag injured \u00b7 -13 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: FFB 10/5 \u2014 Moore (BUF WR, board 13.0 ppg) shoulder, not considered long-term; 1 game est."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-ladd-mcconkey-foot-injury-gives-rise-to-fantasy-football-sleeper",
-   "title": "Fantasy Football Injury Impact: Ladd McConkey Foot Injury Gives Rise To Fantasy Football Sleeper - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNXzd2OWRfVzY5NmU2NTE0X1BfNmlvQkNxdklxZ05qdzNqb3RzOHc0OTMxOUFoeGdKNXlackJSRXFvbFpISmVvYlFRazVoSDZQcnloOVVCZDYtenNHdzVyaDBxM1puZXlxWTE2S0NhTHB2czdTWjNJN0FXQVZaWHY5TV9tOGRmY0l2YkNDNDFHcXBOeXpKcmpDeThOZTBpeFprOFZ0SGc3NTZCNy1Zb0ZUQnRkZHc3TXIzdXdNbUpycGVqdw?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Sun, 04 Oct 2026 23:29:47 GMT",
-   "summary": "SI reports Chargers WR Ladd McConkey suffered a foot injury, giving rise to a fantasy sleeper.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Ladd McConkey",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -14,
-      "suggestedEdit": "Tag injured \u00b7 -14 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 10/4 \u2014 McConkey (LAC WR, board 14.1 ppg) foot injury in Week 4; severity TBD, 1 game est."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-jalen-nailor-concussion-opens-door-for-two-fantasy-sleepers",
-   "title": "Fantasy Football Injury Impact: Jalen Nailor Concussion Opens Door For Two Fantasy Sleepers - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVpuNnVUbFpVRElYV2QzWmUyV2xhUmRNOXpqV3poTFl3YTFQcXpJd0xfZkZubFpCVE03NDZLLWZTOEhwbHJDUzJUQjJJZU85Mmp0NFZIZUVZWGp2QTRmOWlyX2Q4N0VrMjVMaTZIR2NoLWxHQXhYajl5Y1l2MzBRZ2JUNnYtYmw5c3NsY1JHc1ZLVW9Dby1wbm9ENThhaVBMeGxkZVlWX1hTOWJBNnNHckJIRUFULWNXbEZR?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Sun, 04 Oct 2026 22:43:47 GMT",
-   "summary": "SI reports Raiders WR Jalen Nailor suffered a concussion, opening the door for two fantasy sleepers.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jalen Nailor",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -7,
-      "suggestedEdit": "Tag injured \u00b7 -7 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 10/4 \u2014 Nailor (LV WR, board 7.3 ppg) in concussion protocol; two LV sleepers unnamed in headline."
-   }
-  },
-  {
-   "id": "chiefs-wr-thornton-has-dislocated-ankle-sources-say",
-   "title": "Chiefs WR Thornton has dislocated ankle, sources say - ESPN",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSG0wc0xaSzBsRFRZYkZ5M1I0UGRSc0NfaGZXVnhYRXpvSUVYdzZNZHl0VGllcnV6TjVvX1plNWZWNmxzeFYtSnZrNFp0NEtQUkFleDlZNlpaZmFibzQxVmVPbC1nbExaeTdsR05qekpPWXJyblNwcmt4VXJYV1BadEJfRVZHVnZ6NjVmUTFRLVBpWWdrWXc?oc=5",
-   "source": "ESPN",
-   "published": "Sun, 04 Oct 2026 22:23:00 GMT",
-   "summary": "ESPN reports Chiefs WR Tyquan Thornton suffered a dislocated ankle on his 55-yard catch vs. the Raiders.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Tyquan Thornton",
-      "action": "injured",
-      "games": 4,
-      "deltaPts": -19,
-      "suggestedEdit": "Tag injured \u00b7 -19 pts (4 games) \u00b7 drops ~3 rounds"
-     }
-    ],
-    "note": "Grounded: ESPN 10/4 \u2014 Thornton (KC WR, board 4.7 ppg) dislocated ankle, carted off (FFB 10/5); 4 games est., IR likely."
-   }
-  },
-  {
-   "id": "rashee-rice-downgraded-to-doubtful-with-hamstring-injury",
-   "title": "Rashee Rice Downgraded to Doubtful with Hamstring Injury - NFL News | Fantasy Football - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORk1BUGI3Qjk2cXN3alVQckNTd3NZM1pGcnJZWW1vRWFHWkVOYlZMcWNsRlljNDRsY0M0Tm9oX2E3V0J4SXdOMmd0Ym5TX2diS05BZkRrN1VWUHRLM1p6QUFzUHFjX01UbjFxaU5wMVIyQU45UGsxTTc0c0xzeGV3UE4xLWpVWlE2bWNta3I1dFlKT3AxOUoxOVJpaS0wUXFtTDdxRHlR?oc=5",
-   "source": "RotoBaller",
-   "published": "Sun, 04 Oct 2026 22:09:09 GMT",
-   "summary": "RotoBaller reports Chiefs WR Rashee Rice was downgraded to doubtful with a hamstring injury from Week 4.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Rashee Rice",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -15,
-      "suggestedEdit": "Tag injured \u00b7 -15 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: RotoBaller 10/4 \u2014 Rice (KC WR, board 14.8 ppg) doubtful with hamstring; Chiefs sleeper stock rises (SI 10/4)."
    }
   }
  ]
