@@ -1,7 +1,33 @@
 {
- "updated": "2026-10-08",
+ "updated": "2026-10-09",
  "sample": false,
  "items": [
+  {
+   "id": "michael-pittman-jr-aggravates-foot-injury-fantasy-footballers-podcast",
+   "title": "Michael Pittman Jr. Aggravates foot injury - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdjZtMEJjVVFJeTRLV1p0bnpjaFc2VFQ5dm9mZXVYVTQtVEZMcHhqZE5zMXhjWEwtckpwa3hLOUVsakJRZmhDZkZ5S08yeEVfUnBBbzJUSXk2aThGNnBmcW11M1JlQlo5N0E0RjdEb0NrOTRRem9qaWxYNkg4elZaOXk2RVRNd1JzT3hNVVZOUWI2clFsT1Aw?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Thu, 08 Oct 2026 15:59:38 GMT",
+   "summary": "The Fantasy Footballers report Colts WR Michael Pittman Jr. aggravated his foot injury.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: FFB 10/8 \u2014 Pittman (IND WR, ~11 ppg est., not in board) aggravated foot injury; severity/games out TBD \u2014 no tag."
+   }
+  },
+  {
+   "id": "the-5-nfl-teams-most-impacted-by-injuries-in-2026-with-the-new-york-giants",
+   "title": "The 5 NFL teams most impacted by injuries in 2026, with the New York Giants at the top - The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZFJ4Z2ZxMnVuQUNnbHFSUXJMSmZaX1RnVmNFMGg5TVpLUFNfcDNLZ0tCNEVubjBqQmx3dldYOHJHa3pCZVFaamVybzhvQnZyUFBva2ZtQUs0dzVQbW12RUxibkpiTjdhb3ZINU9RYzVidlFlYzA4a3RET3dPd2tmRTBaUndBWF9wVnV6YjVsMGN0cE5vMkVwMXdHR3ZVZ2c1TndiNDZ0VQ?oc=5",
+   "source": "The New York Times",
+   "published": "Thu, 08 Oct 2026 09:30:57 GMT",
+   "summary": "NYT ranks the five NFL teams hardest hit by injuries in 2026, with the Giants at the top.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: NYT 10/8 \u2014 team-level injury-impact analysis (NYG worst); no single-player games-out fact in headline \u2014 no tag."
+   }
+  },
   {
    "id": "injury-carnage-saquon-barkley-and-lamar-jackson-headline-devastating-nfl",
    "title": "INJURY CARNAGE: Saquon Barkley and Lamar Jackson Headline Devastating NFL Week 5 Updates BREAKDOWN - WZZM13.com",
@@ -372,40 +398,6 @@
    "impact": {
     "players": [],
     "note": "Grounded: RotoBaller 10/7 \u2014 Price (SEA RB, board 9.9 ppg) W5 return timeline update; status not confirmed in headline \u2014 no tag."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-rachaad-white-returning-to-practice-jacory-croske",
-   "title": "Fantasy Football Injury Impact: Rachaad White Returning to Practice, Jacory Croskey-Merritt\u2019s Role Takes Hit - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNM04yY2s0OGQydVVmd1A4RFRDTmp0SjNEM09QOHRXLURrd2xIV1YzRk5UZFFLY0VHQjVOLXFTbVRKT3pFdm1ZVGdqOUluWmNDRk1uQzF1MUM2T3I5TE52Q1RBSkhLOVVsZlIydlRSZ0tfWl9nY1BOLUhLcWJHNUNfbGQxNm5lNUhMVy1TS0dSNUc?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Wed, 07 Oct 2026 14:57:56 GMT",
-   "summary": "Yahoo reports Rachaad White is returning to practice, while Jacory Croskey-Merritt's role takes a hit.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Rachaad White",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 6,
-      "suggestedEdit": "Role boost \u00b7 +6 pts \u00b7 move up ~1 round"
-     }
-    ],
-    "note": "Grounded: Yahoo 10/7 \u2014 White (WAS RB, board 6.2 ppg) returning to practice, W5 activation likely; Croskey-Merritt (WAS RB, board 8.8 ppg) role takes hit."
-   }
-  },
-  {
-   "id": "when-is-a-j-brown-coming-back-week-5-fantasy-football-injury-return-update-2026",
-   "title": "When Is A.J. Brown Coming Back - Week 5 Fantasy Football Injury Return Update (2026) - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTUgzbnA0WWVKR2trVTJkeVBjcERINjA5WURsWHRDSTVDdndmSm8xR19UeElUOUhQcGp0S09GQlJvLWxzbTdoMjFvUEl5RDN4T3VxWndBVThOMFZyR3lzWFI0cUpaSEtHRWZDWWtjdWo2a2RkcU1XQ1R2R3ljM0pFMWhiNVBzRFJEQkJReUFIbVhLRldYclFOWGF3eFRRcVdnUDdPZlZfOUFsNGZLaWhRRnBvT3c?oc=5",
-   "source": "RotoBaller",
-   "published": "Wed, 07 Oct 2026 14:00:10 GMT",
-   "summary": "RotoBaller provides a Week 5 return update for Patriots WR A.J. Brown.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: RotoBaller 10/7 \u2014 Brown (NE WR, board 9.7 ppg) W5 return timeline update; active status not confirmed in headline \u2014 no tag."
    }
   }
  ]
