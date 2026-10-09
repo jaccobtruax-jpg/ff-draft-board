@@ -3,6 +3,19 @@
  "sample": false,
  "items": [
   {
+   "id": "nfl-week-5-fantasy-football-5-major-injury-concerns-and-their-fantasy",
+   "title": "NFL Week 5 Fantasy Football: 5 Major Injury Concerns and Their Fantasy Impact - Sports Injury Central",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWGRQQ2wzOXo4R1RaS2Zyd3E5LUUtRjdRcVNJM0VjS1FYV1lrWWNTNmhyZndOZU1NSDBscW5XMU1KYWRTLVBYcWpISEloNEpmeVk3SE1WVlZlN0RBcEpYMDdKa0p5d1AwM1Ryc1VCTUdIYXZIVlhaME5BUVpncWEzOUt0Zm8yekVvVjBNMTR0OGliWnA4d3JJVEU0U1JTOVgwUnlCNg?oc=5",
+   "source": "Sports Injury Central",
+   "published": "Fri, 09 Oct 2026 06:45:20 GMT",
+   "summary": "Sports Injury Central breaks down five major Week 5 injury concerns and their fantasy impact.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: SIC 10/9 \u2014 W5 roundup of 5 major injury concerns; per-player severity not in headline \u2014 no tag."
+   }
+  },
+  {
    "id": "chris-olave-foot-limited-by-new-injury-on-thurs-nbc-sports",
    "title": "Chris Olave (foot) limited by new injury on Thurs. - NBC Sports",
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNdzVaOWNCaDd5Y0RlMkxUTnJXZ1VxRkdsd3F4RnVrSTNnQ0Z5QlQ4dFIxR1RBbUxTU19wTXZHVllvdG5zM0VOWFhheWQwalJiUDZEU3F2T1FvTkFhb0ozNVRyQnRQWHRDYTNDbVZhQkd2bmZWOTRtTjNuNXR0a0xOZWxTZ0dxMURtR2JPMmFmWDd1ZWV4Ym9taW5majRweWI5b2l6cllnend4RTB5V3hEb0thUQ?oc=5",
@@ -52,6 +65,32 @@
    "impact": {
     "players": [],
     "note": "Grounded: CBS 10/9 \u2014 Chase (CIN WR, board ~16.4 ppg) & Higgins (CIN WR, board ~11.5 ppg) statuses uncertain after Thu practice; no confirmed absence \u2014 no tag."
+   }
+  },
+  {
+   "id": "dontayvion-wicks-has-hamstring-injury-draft-sharks",
+   "title": "Dontayvion Wicks Has Hamstring Injury - Draft Sharks",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSXBkMmQ0LUFWM09sNHU4WE1YZXZGUnBHck5IUV85RUozVTRBQzRNMHI0OHczNlUwQ3dUV0diemdXRUhmMjVJQUhZTUVtZDkzOFdUTWFEcjMzeTRnSWVsUmI3NDgxaWFqZmFjRWxKOHNVTHlGWjNvTXhTWmk1dkNmanpMTG8wSG9ZM1k3VEtlbklpME9JdVo4dg?oc=5",
+   "source": "Draft Sharks",
+   "published": "Fri, 09 Oct 2026 00:14:52 GMT",
+   "summary": "Draft Sharks confirms Eagles WR Dontayvion Wicks is dealing with a hamstring injury.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Draft Sharks 10/9 \u2014 Wicks (PHI WR, board ~6.0 ppg) hamstring confirmed (adds detail to the 10/9 Yahoo injury-report item); severity TBD \u2014 no tag."
+   }
+  },
+  {
+   "id": "nfl-week-5-fantasy-football-injury-report-weather-forecast-and-streami",
+   "title": "NFL Week 5 fantasy football injury report, weather forecast and streaming opportunities - The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSUdKNlhPSEJYdHhUYWIyY0RYOVU3MERhNkJiN2txaDY4NlNHZUhZSjRIOUFZS3VMV252dVVYRnpvNi1zQWxSVzBRSzFzMlNsZ0ZfdFhLbnVIUW02a2oxSlZXaTB5WTE0Tmxub0JsVDRuUkVWNnVJVEowMERVVjREQ2JJc1R2LUMteG5uMVg1NFp2VGVkOS1TRmxkaExPQWN3aUxwNmZJZms5eVo5aGttaGc2UG0zOGZOa0pBOHNn?oc=5",
+   "source": "The New York Times",
+   "published": "Thu, 08 Oct 2026 23:12:36 GMT",
+   "summary": "The New York Times' Week 5 fantasy football injury report with weather and streaming notes.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: NYT 10/8 \u2014 W5 injury report roundup; no new per-player severity \u2014 no tag."
    }
   },
   {
@@ -115,6 +154,27 @@
    }
   },
   {
+   "id": "michael-pittman-jr-aggravates-foot-injury-fantasy-footballers-podcast",
+   "title": "Michael Pittman Jr. Aggravates foot injury - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdjZtMEJjVVFJeTRLV1p0bnpjaFc2VFQ5dm9mZXVYVTQtVEZMcHhqZE5zMXhjWEwtckpwa3hLOUVsakJRZmhDZkZ5S08yeEVfUnBBbzJUSXk2aThGNnBmcW11M1JlQlo5N0E0RjdEb0NrOTRRem9qaWxYNkg4elZaOXk2RVRNd1JzT3hNVVZOUWI2clFsT1Aw?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Thu, 08 Oct 2026 21:28:47 GMT",
+   "summary": "The Fantasy Footballers report Steelers WR Michael Pittman Jr. aggravated his foot injury, raising his Week 5 status concerns.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Michael Pittman Jr.",
+      "action": "injured",
+      "games": 2,
+      "deltaPts": -18,
+      "suggestedEdit": "Tag injured \u00b7 \u221218 pts (2 games est.) \u00b7 drops ~2 rounds"
+     }
+    ],
+    "note": "Grounded: FFB 10/8 \u2014 Pittman (PIT WR, board ~9.0 ppg) aggravated foot injury, matching SI 10/8 report that he'll miss weeks; games=2 est."
+   }
+  },
+  {
    "id": "when-is-baker-mayfield-coming-back-latest-injury-update-and-expected-timeline-for-buccaneers-qb-yahoo-sports",
    "title": "When Is Baker Mayfield Coming Back? Latest Injury Update and Expected Timeline for Buccaneers QB - Yahoo Sports",
    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWndld0daa1hzenVWbkJyU01sYzhFdGZyMnFlZ2gzdWpRRjVJQ2JETzBjVmE5QXFraS01WjRHSUdDdkk5WWplQnZ5R3FZUU1sRWZDV1pKaWFFcERLa2F3RUxLRzdxZzhRVDlBZ2hRN0RNVEp5LXlYVl9PUW1TUFZsN3dCNUl3ejNDcXc?oc=5",
@@ -151,6 +211,19 @@
    "impact": {
     "players": [],
     "note": "Grounded: FFB 10/8 \u2014 Tate (TEN WR, board ~11.2 ppg) limited Thu (back); practice report \u2014 no tag."
+   }
+  },
+  {
+   "id": "is-roschon-johnson-worth-adding-in-fantasy-football-after-d-andre-swif",
+   "title": "Is Roschon Johnson worth adding in fantasy football after D\u2019Andre Swift and Kyle Monangai Bears updates? - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOXzRidk1fd2lYYVRMSk9mRWtsaEYzQlJaeThXV25CMXdnWmRHZS10TUhwTnliSjlMcXdLUXpVNzNuMG41QlVGNFI5a1gxaklfOF90TzdNY2hPY0xEZkZzQ3A1VnhqU1dmaTVzajdZWGFuMXpjOWMwS3UxYS16NjlzN3lqMXlQM1RyTlFMZXh3?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Thu, 08 Oct 2026 20:56:28 GMT",
+   "summary": "Yahoo weighs adding Bears RB Roschon Johnson after injury updates on D'Andre Swift and Kyle Monangai.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 10/8 \u2014 reinforces existing Roschon Johnson (CHI RB, est., not in board) boost from the 10/8 SI item (Swift ~12.5 ppg & Monangai ~8.6 ppg on W5 watch); no new tag to avoid double-count."
    }
   },
   {
@@ -247,172 +320,131 @@
    }
   },
   {
-   "id": "jordan-addison-injury-update-what-is-his-status-ahead-of-week-5-yahoo-sports",
-   "title": "Jordan Addison injury update: What is his status ahead of Week 5? - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSDVZRXdmRGhFcEZ3Qk1XQXBzMGc5bXRpU0RDUTdsZXBkMkFXUWoxUm0xdHRnT1NacllBVVM5ZWtXbDQ2T25mVFFYci0xX2pDbFB5YkpkekdXOXpQOFNqak9YQUJyejNQSUpmX1ZPeGIzSXRxbzlBT0hTS2hfM1YydDBtWTJaMFBUVEdv?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Thu, 08 Oct 2026 11:55:22 GMT",
-   "summary": "Yahoo provides an update on Jordan Addison's status ahead of Week 5.",
+   "id": "michael-pittman-jr-injury-update-big-fantasy-football-news-for-1-steel",
+   "title": "Michael Pittman Jr. injury update: Big fantasy football news for 1 Steelers WR - USA Today",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTjVfcXh5UndNUGtYbm41d1BLT1dPX0FpWl9jTE4teDIxVUlKWC1XUDBtdnJ0RlFsSkRwdU03aFFNanl0LVYzRDdoX21nNDJQampKQXU1QXBLR0VJbl9uRjU4N3FqckhxUGRfNXZ5Q3FEM1JlYWlQZEJ2WlU0b1R1NHJDNGpiZDBCUkpnN2FZQVJxSk1tbU4yaXlwbnM5YjRUbnJWX3lST2tuYjZZaW1FckQzNngtOVdZXzdHd053Z0RuekhadTlMeFItXzExVFVONnc?oc=5",
+   "source": "USA Today",
+   "published": "Thu, 08 Oct 2026 16:12:00 GMT",
+   "summary": "USA Today reports big fantasy news on Steelers WR Michael Pittman Jr., tied to teammate Roman Wilson's outlook.",
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: Yahoo 10/8 \u2014 Addison (MIN WR, board ~8.5 ppg) status update ahead of W5; severity not in headline \u2014 no tag."
+    "note": "Grounded: USA Today 10/8 \u2014 Pittman (PIT WR, board ~9.0 ppg) injury update flags Roman Wilson (PIT WR, board ~2.9 ppg) as the beneficiary; no new games-out detail \u2014 no tag (existing injured tag stands)."
    }
   },
   {
-   "id": "fantasy-football-injury-impact-malik-nabers-uncertainty-opens-the-door-f",
-   "title": "Fantasy Football Injury Impact: Malik Nabers Uncertainty Opens the Door for Isaiah Likely & Week 5 WR Sleeper - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPXzQwRkJwTjFiS2lqRHNpTUoxSlJZQlpQX094dUN2RC1tT2N4VzFzX1ptQWVrR04yY3FrRnlPVGNCTXpDSnBSdmVYZEJzVkV2Rnl5RFhoWU9za3loY29MYV9ySlEyTXJpY0FxTU9qTlJucVBlM1d4QTdvS2tJRER1MVVuakM1QW1hNkg5UXFsYl9ET3U0d1pyS0VtZEFaV1JsMUxHbVVXRzRLMUN3UjhhOG9WSG5GZUtpbHEyd1ZULS1NTTM0Xy0wMEtkWWoyNlhtbjdVS0R1cHJTS3dGaEVvY3FR?oc=5",
+   "id": "eagles-offense-hit-with-fresh-injury-scare-as-key-stars-miss-practice",
+   "title": "Eagles Offense Hit With Fresh Injury Scare as Key Stars Miss Practice - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaU5iOTY2Q21IQ2hWb3Q1RjdsTzFibEFFMGdrRXkyUGs1WjVvQnZseUVwWGhZZzJBbjl1dTV4SWF0Uk1iNXFjTmhBa0M5NktrUi02Ujh6ZE1iaWdOY2s1Q255QlNqTVBsd0s0NXB1WHRjalZpNllDYlUycllIODZ4c29GdGM3QVE?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Thu, 08 Oct 2026 12:25:20 GMT",
+   "summary": "Yahoo reports key Eagles stars missed practice amid a fresh injury scare.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 10/8 \u2014 Barkley (PHI RB, board ~13.5 ppg) & Smith (PHI WR, board ~11.6 ppg) among DNPs (matches 10/7 report); W5 status TBD \u2014 no tag."
+   }
+  },
+  {
+   "id": "2026-nfl-week-5-injury-report-cincy-wrs-lamar-jackson-s-ankle-updates",
+   "title": "2026 NFL Week 5 Injury Report: Cincy WRs, Lamar Jackson's ankle, updates on Jayden Daniels, Malik Nabers - NBC Sports",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNVFB1bk1PaVJXSlV0V0xZYXBjMTAyVUJxZmxWLUxZQlJHY2FfLW1iYjYxU1VSSHFZZEZkd1RoNmdxQjJjdW1MbUdaZ011VWxpWlEzYndJaHRvVE1pcTg4eTNxTlk1VkhxVGIzOXF5WkxsajctQzNZdDBrNVNHOEd4Z2VxbGtmU09uOExyQmhTclJTMGc5TzF5UkNYWm1aeUwxcmpzNUtlREFyeVNLTEE4SGtvNm1rZkk1RWswc2E5UGJKLWNjZDIteXdrbVdrZmV4bHRtaTVIVlhaNnpvZ1E?oc=5",
+   "source": "NBC Sports",
+   "published": "Thu, 08 Oct 2026 02:00:44 GMT",
+   "summary": "NBC's Week 5 injury report covers the Bengals WRs, Lamar Jackson's ankle, Jayden Daniels and Malik Nabers.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: NBC 10/8 \u2014 Chase (CIN WR, ~16.4 ppg) & Higgins (CIN WR, ~11.5 ppg) uncertain; Jackson (BAL QB, ~20.3 ppg) ankle (existing -39 tag stands); Daniels (~19.6 ppg) & Nabers (NYG WR, ~12.1 ppg) updates \u2014 no new tag."
+   }
+  },
+  {
+   "id": "fantasy-football-injury-update-breece-hall-week-to-week-boosts-braelon",
+   "title": "Fantasy Football Injury Update: Breece Hall, \"Week to Week,\" Boosts Braelon Allen's Fantasy Stock - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOd19OWjMtOUxMenBFSC1sMi1RZmVOcDd3NHdrU1k4RDRoaUh3SktwRVdMOWFDVDdwakkxYmVKd19tZmdoYkJXM2ZJOFJqSElVaEdzb2Q5MFRaN2xodVF1TXpNdzhXZzVrLVVaWmxEbVZ6X01PaHg5WFJFeHpoZGRZbGYwNDFOblo1ZVYzY0ZwYXFoaFVQNm5FX0U5SVBaM1VrZE9Kci04WXdSZy1XMkFfdGpNUnI1SjVuVFZBSEx3TFQtR0VwWVl5WQ?oc=5",
    "source": "Sports Illustrated",
-   "published": "Wed, 07 Oct 2026 23:40:50 GMT",
-   "summary": "SI says Malik Nabers' Week 5 uncertainty opens the door for Isaiah Likely and a Week 5 WR sleeper.",
+   "published": "Wed, 07 Oct 2026 18:37:36 GMT",
+   "summary": "SI reports Jets RB Breece Hall is week-to-week, boosting Braelon Allen's fantasy stock.",
    "sample": false,
    "impact": {
-    "players": [],
-    "note": "Grounded: SI 10/7 \u2014 Nabers (NYG WR, board 12.2 ppg) DNP Wed (knee) per FFB; Likely (NYG TE, board ~7.5 ppg) sleeper suggestion \u2014 analyst angle, no confirmed role change \u2014 no tag."
+    "players": [
+     {
+      "name": "Braelon Allen",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 5,
+      "suggestedEdit": "Role boost \u00b7 +5 pts \u00b7 move up ~1 round (est.)"
+     }
+    ],
+    "note": "Grounded: SI 10/7 \u2014 Hall (NYJ RB, board ~12.5 ppg) week-to-week; Allen (NYJ RB, board ~3.7 ppg) would lead the backfield if Hall misses \u2014 +5 est."
    }
   },
   {
-   "id": "quentin-johnston-dealing-with-chest-injury-fantasy-footballers-podcast",
-   "title": "Quentin Johnston Dealing with chest injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZ21vSWxPektoNG9jMFZLNWlkcjZUc3l5bnlpNHkxQmNCZGZXeERxZWk0MVN3M3dSUktGWDJMS0ViN2cxSWFqMXVIcXhxUkFyYWJoa01hcGtyWTFXdWlBX25lNzY3SWMtRDJVNnhBeFQxSGc5Uk52OXBnbm1ldWNUWnRZOENQNTZWVmFLUUpSeWV3RVpHVFhrbg?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Wed, 07 Oct 2026 23:13:42 GMT",
-   "summary": "The Fantasy Footballers report Chargers WR Quentin Johnston is dealing with a chest injury.",
+   "id": "fantasy-football-injury-impact-rachaad-white-returning-to-practice-jac",
+   "title": "Fantasy Football Injury Impact: Rachaad White Returning to Practice, Jacory Croskey-Merritt\u2019s Role Takes Hit - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQWi1JSUZFMUhYYVpIb21qSDhoTkptMXdsVDZjcFNMQUhlR3N4SEtld0xVQzNJZFR0VWpvVGdNN01oaXZ5eXV0dTNiZUVDaDBZOVNSd0pBVTZXa3luS1Rrb3RXU3BEWTg5dlFRcXZSUU44UHVLd0k1TEpZQ3Z4MFhZQ0tLVGZpeEllUFhxOTlwX1NWQkx4elZTdEF0cHlFZjlITGoyOGNRVUFxcHRkTkdHdUc3S2ZkcUxab3g4eDN1NTNTRUM0M1Q4eU1SSmNPcjNnaFNYUmNjY2p6WmF0MlVkeg?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Wed, 07 Oct 2026 14:57:56 GMT",
+   "summary": "SI reports WAS RB Rachaad White is returning to practice while Jacory Croskey-Merritt's role takes a hit.",
    "sample": false,
    "impact": {
-    "players": [],
-    "note": "Grounded: FFB 10/7 \u2014 Johnston (LAC WR, board ~9.6 ppg) dealing with chest injury; practice report, severity TBD \u2014 no tag."
+    "players": [
+     {
+      "name": "Rachaad White",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 4,
+      "suggestedEdit": "Role boost \u00b7 +4 pts \u00b7 move up ~1 round"
+     }
+    ],
+    "note": "Grounded: SI 10/7 \u2014 White (WAS RB, board ~7.7 ppg) returning to practice \u2192 role back; Croskey-Merritt (WAS RB, board ~9.7 ppg) role takes hit (also limited w/ groin 10/7) \u2014 no tag for JCM."
    }
   },
   {
-   "id": "adonai-mitchell-sits-out-practice-yahoo-sports",
-   "title": "Adonai Mitchell sits out practice - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZk1xa3dsdTVveGk0RzJXN2Vaa1l4YzRpdThfVjdGNEo0WU54ellzekV4dnRtWlBMT2VyR0JWMXFPUWphbElkVll1VjF1QkdFT1o0a2plenJVVFZHaEpEMVp6V3RGQTBtMTZ4Z1BadjBfOW5qSktvOWJmLWhLSkNDVEZBZW4?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Wed, 07 Oct 2026 22:49:37 GMT",
-   "summary": "Yahoo reports Jets WR Adonai Mitchell sat out practice.",
+   "id": "fantasy-football-injury-update-saquon-barkley-s-week-5-status-in-doubt",
+   "title": "Fantasy Football Injury Update: Saquon Barkley's Week 5 Status in Doubt Makes way for a Fantasy Sleeper - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPWW1PNTRaeFY0Y1JkRm9zVURWalVXUE9TeFUyTmR6c2dLQUxiM0tSX2JpdUNCTDc1R1pTM1d1N3ZOVFh4eWNSQzFneUhmMWRhVC1saHgtMHVxQnpxSk5xS1pycUhOdUdYb05RVjhoSjgyeVJMRGdJSDlvWnlRM0VCQmgwN09qT3dSZ18xemlrQ3NZZHFQRVBLUTBaMkVmSDVVUTRrSFVkWjFWRE1MS2h4U0RhVmdSdDJWdkI2MTVMcThTR2ZIYzlmUTFxWjBTY1lrYWJ4Z1VB?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Tue, 06 Oct 2026 20:51:32 GMT",
+   "summary": "SI says Saquon Barkley's Week 5 status is in doubt, opening the door for a fantasy sleeper.",
    "sample": false,
    "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 10/7 \u2014 Mitchell (NYJ WR, board ~5.4 ppg) sat out practice; reason/severity unspecified \u2014 no tag."
+    "players": [
+     {
+      "name": "Will Shipley",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 3,
+      "suggestedEdit": "Role boost \u00b7 +3 pts \u00b7 move up ~1 round (est.)"
+     }
+    ],
+    "note": "Grounded: SI 10/6 \u2014 Barkley (PHI RB, board ~13.5 ppg) W5 status in doubt (hamstring); Shipley (PHI RB, board ~1.7 ppg) would lead the PHI backfield if Barkley sits \u2014 +3 est."
    }
   },
   {
-   "id": "eagles-injury-report-saquon-barkley-devonta-smith-among-7-players-who-di",
-   "title": "Eagles Injury Report: Saquon Barkley, DeVonta Smith among 7 players who did not practice - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYmRqel9uNzBKUlNNLXdRTnNDa01VSlN2N3hwZ3llMWxJTDNsV0J5V2hqVndzcnBwdWlKRmY0akRLZ2hIc1hJRS1kdVVBQWhsZHZWSmtTdmtJQ01RbEs2aDEwa0x6TXlBVHFZMGtUTzRmakdBQklhRjB5OXlvc1BHQnoxME5MVDExNGpGcw?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Wed, 07 Oct 2026 22:45:46 GMT",
-   "summary": "Seven Eagles missed Wednesday's practice, including Saquon Barkley and DeVonta Smith.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 10/7 \u2014 Barkley (PHI RB, board ~13.5 ppg) DNP (hamstring) & Smith (PHI WR, board ~11.6 ppg) DNP among 7; reinforces Shipley (PHI RB) W5 boost \u2014 no new tag."
-   }
-  },
-  {
-   "id": "chris-olave-not-on-week-5-injury-report-nfl-news-fantasy-football-rotoballe",
-   "title": "Chris Olave Not on Week 5 Injury Report - NFL News | Fantasy Football - RotoBaller",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUEc0akcta09sYmV3ZG12djFoMUYyNjNsanVTbUpyLUhKaDQ3UmFGaHV4aHVEcHBqcEV2N1BkN0pjNTlGVmJCQlhFazY0YXoxRFZCeDNWSWY2cVRiV0haSTgwOWp5R2Z1clZxYmF6U1ZzckQ2RENmVmwzcWZ4Xy1jc2JBQXdLRjExck5CelI1NA?oc=5",
+   "id": "when-is-breece-hall-coming-back-week-5-fantasy-football-injury-return",
+   "title": "When Is Breece Hall Coming Back - Week 5 Fantasy Football Injury Return Update (2026) - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORVdGdkJYUlFfTFd0eFByMk9mVWxWT2RGWExsLVNoLXZ0eWVoY3Q1WWZ2MVdPZWRJZlY4SU5Td0xKRjQxV1MzeVNYWG41eklBREZRME9HWEpkeUU3YWdtZzgyeVFhNmZwRHBrVHcwN1VhaEU2WWNpQ2Nyczk5ZmVXZ3k1OFByV2hfYnRVNHdwNUZFa01KclNtbDFXbHdtZjM1MW5LZzYxSXdiMFg0T3dzcVNSSkZRRWFVLWc?oc=5",
    "source": "RotoBaller",
-   "published": "Wed, 07 Oct 2026 22:08:10 GMT",
-   "summary": "RotoBaller reports Saints WR Chris Olave is not on the Week 5 injury report, clearing him for Sunday.",
+   "published": "Tue, 06 Oct 2026 20:00:50 GMT",
+   "summary": "RotoBaller examines when Jets RB Breece Hall might return from injury.",
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: RotoBaller 10/7 \u2014 Olave (NO WR, board ~15.1 ppg est.) not on W5 injury report; cleared/healthy, no limitation \u2014 status confirmation, no role change \u2014 no tag."
+    "note": "Grounded: RotoBaller 10/6 \u2014 Hall (NYJ RB, board ~12.5 ppg) return timeline article; week-to-week per SI, no confirmed games out \u2014 no tag."
    }
   },
   {
-   "id": "nfl-fantasy-football-injury-report-justin-jefferson-jamarr-chase-and-mor",
-   "title": "NFL Fantasy Football Injury Report: Justin Jefferson, Ja\u2019Marr Chase and More Week 5 Status Revealed - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPcE51UEJia0FRTVJiQ2EzQ0dxeF83dlNDVUhLUTI2cFJ2LW9SdXhuOWlTa2RSNnNXcmt3NDEzMjNwV2czYXJHSHZEZ191VHhraGNyZWEtUFc5cnNsbzQzMTNsUHZ4WnAxbDhfZ21NS2JjbVVsbkhEWXZLU3BobVhTbFJ0Mm9CT0tCZGdJ?oc=5",
+   "id": "fantasy-football-injury-impact-jayden-daniels-set-to-return-as-a-qb1-i",
+   "title": "Fantasy Football Injury Impact: Jayden Daniels Set to Return as a QB1; Injured Marcus Mariota Can be Dropped - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUEhsUmN4emoyY1kzZjd5eVltQ3NKQ2pGaGI3WV9uR2p5TzlUQmd6R09WOGF0cWkwUWJUcnoycnZKWEczRUhfSF9mSm1aSnNUZjc1c1dsZzBncWNucmZxcVUzeTFhUFlkVHRqM0FsTlZPLUpBaDVTVkZuVFg5NVRKV3NNZFNac0tNRHl0NUMzVQ?oc=5",
    "source": "Yahoo Sports",
-   "published": "Wed, 07 Oct 2026 21:53:38 GMT",
-   "summary": "Yahoo reveals Week 5 status for Justin Jefferson, Ja'Marr Chase and more fantasy-relevant stars.",
+   "published": "Mon, 05 Oct 2026 20:15:39 GMT",
+   "summary": "Yahoo reports Jayden Daniels is set to return as a QB1 while injured Marcus Mariota can be dropped.",
    "sample": false,
    "impact": {
     "players": [],
-    "note": "Grounded: Yahoo 10/7 \u2014 statuses revealed: Jefferson (MIN WR, board 12.6 ppg), Chase (CIN WR, board ~16.4 ppg); per-player severity not in headline \u2014 no tag."
-   }
-  },
-  {
-   "id": "nfl-injury-report-week-5-latest-news-updates-on-ja-marr-chase-saquon-bar",
-   "title": "NFL Injury Report, Week 5: Latest news, updates on Ja'Marr Chase, Saquon Barkley for fantasy football - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQalR2S2FJaUlKcm1NUE9hd1pfX1dDd1k2QzZMUTl2TzBIRkVMNXhVbzQwWDBUa1V5enByOUZTLVlUTFZNUEVGazBKbTh1M01raGFObDVzc3pCWlhmSHlSMUpISWVzTVE0LTBkNTBpX3VTOUNONVV4UUdKbGhoOWFBUkFaQWpNakFZZktZSFMxSDE5WlFJSDRDY3pKQmlwQjVxSENJT2poU04zY3ZlV0JhVFFBdVpMN1IyQ29ZdjROa2N3eXZFdlQ3WnNCbGQxS3NiOHRzcWIxUWZUb1poaWlLZ2NabGhPalk?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Wed, 07 Oct 2026 21:44:48 GMT",
-   "summary": "Yahoo's Week 5 injury report covers the latest on Ja'Marr Chase and Saquon Barkley for fantasy football.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 10/7 \u2014 W5 roundup: Chase (CIN WR, board ~16.4 ppg) & Barkley (PHI RB, board ~13.5 ppg) status updates; severity not in headline \u2014 no tag."
-   }
-  },
-  {
-   "id": "nfl-injury-report-week-5-latest-news-updates-on-lamar-jackson-jayden-dan",
-   "title": "NFL Injury Report, Week 5: Latest news, updates on Lamar Jackson, Jayden Daniels for fantasy football - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNR09lMnBCekZxVHIyQ3dfUUxpaURkajlZRlVZb19tUEcwOWdoeE9iclpVVEJXa2tpWER0VUNoM0syZkZZWmROYUMzWEJIcEUzV3pJak03WEpQRWlCbWZYckk1eVBNRUloakdSUWZzNDh1SXhKN3k2YUVKbWFHSWtteDF5MUpWUS1RWmJ4cWM4ek9Nb1Zjek5XOEJSMWc2SHBrZUhaUVZ5YmFOMU9hT3VlSnl3WlhBbjc5NHpGSExsLXRrZF9zQ3pmc0Iwb2lGQWZJWWltRVJrUEJpUEhZcWE4NkFkbWVtc2JB?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Wed, 07 Oct 2026 21:44:48 GMT",
-   "summary": "Yahoo's Week 5 injury report covers Lamar Jackson's status and Jayden Daniels' return for fantasy football.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 10/7 \u2014 Jackson (BAL QB, board 19.6 ppg) ankle per multi-game report (10/7 tag -39 stands); Daniels (WAS QB, board ~20.4 ppg) set to return as QB1 \u2014 no new tag."
-   }
-  },
-  {
-   "id": "rashod-bateman-limited-by-shoulder-injury-fantasy-footballers-podcast",
-   "title": "Rashod Bateman Limited by shoulder injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQQ3YzbzZWNTRXbE5DUnQxZGhtcTNKNEZqVGktbVFZYUlEcHlPbHlldU5XVVFiQ2lnOWdPenlQbGdXeGhiZmxGVmFLUkNtSVQ5SGVmeU9DODd6aGUwcUdFNU9MNXhHeWpHZ0xVVUcxWnlhcDgzelVjNHhMbXV6cXNwNHNYeTlnWndiUUpkYzRELXEwaERvUjh3?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Wed, 07 Oct 2026 21:40:34 GMT",
-   "summary": "The Fantasy Footballers report Ravens WR Rashod Bateman was limited in Wednesday's practice with a shoulder injury.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: FFB 10/7 \u2014 Bateman (BAL WR, board 4.4 ppg) limited Wed (shoulder); minor practice report \u2014 no tag."
-   }
-  },
-  {
-   "id": "jeremiyah-love-ankle-injury-downplayed-by-lafleur-fantasy-footballers-podca",
-   "title": "Jeremiyah Love Ankle injury downplayed by LaFleur - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVndkQm1PYUxJMmN5YjhzUk9ySzFMTlBMdE5vZGZlWnZLNWt2QVcweWRvQXJaUXBZTjloOC1takJPc0JTM21rNERZMi1fVXNvbGdYR3JOdzdpeTh3Q3FMVXloOXplN2pteWdhWlItZWtDeXlNeUY1VjJTb0xWc1pqY01maXRyYzBNbEFZNGtrTVNkYlJ3Yk5hUjZnd1lyWXlEa3c?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Wed, 07 Oct 2026 21:24:05 GMT",
-   "summary": "The Fantasy Footballers report Jeremiyah Love's ankle injury was downplayed by coach LaFleur.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: FFB 10/7 \u2014 Love (ARI RB, board 12.5 ppg) ankle injury downplayed by LaFleur; no missed time implied \u2014 no tag."
-   }
-  },
-  {
-   "id": "zay-flowers-limited-with-foot-injury-wednesday-fantasy-footballers-podcast",
-   "title": "Zay Flowers Limited with foot injury Wednesday - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdndIekhTeGpTQVNILVJuMkh0ajFqeF9ibjgzLWJkX1RtbElzTUF2bWs4Y3V4bmFYakRlUlpsQk9nTkVMc2dkSzNnejFOdjh1M1hKZHJDWTIxMWxZU3ZmTmpzdkRmS0NtbU1oSVZFVnVOOHZ1a19vTEkyZk5qYldNQWo4ZmRSQlYxMWhfUnRadjRwTTdBWl9hb2M1RGVGQQ?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Wed, 07 Oct 2026 21:19:05 GMT",
-   "summary": "The Fantasy Footballers report Ravens WR Zay Flowers was limited in Wednesday's practice with a foot injury.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: FFB 10/7 \u2014 Flowers (BAL WR, board 12.1 ppg) limited Wed (foot) with Jackson (BAL QB) likely out; monitor \u2014 no tag."
-   }
-  },
-  {
-   "id": "malik-nabers-dnp-due-to-knee-injury-fantasy-footballers-podcast",
-   "title": "Malik Nabers DNP due to knee injury - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPWG5iRVEtclBKSncwZ1g0ZUNCQVo2eEZ1YUJSenJnbU4zQmtKZXNtRnRwN095VGtiUW04NVU1bF9wNDVvR3RtUTViLTZZUDRPLVJDUXBLeGpodW16YVlVS0tNSklzY2FJODFUcU4tRi1hY1E5YW8wNzQyQW1zekRhWU5ETTdQbkxOX1pUUFFsSQ?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Wed, 07 Oct 2026 20:48:45 GMT",
-   "summary": "The Fantasy Footballers report Giants WR Malik Nabers did not practice Wednesday due to a knee injury.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: FFB 10/7 \u2014 Nabers (NYG WR, board 12.2 ppg) DNP Wed (knee); first practice report, W5 status TBD \u2014 no tag."
+    "note": "Grounded: Yahoo 10/5 \u2014 Daniels (WAS QB, board ~19.6 ppg) return confirmation (matches 10/8 SI full-go report); Mariota droppable \u2014 no tag."
    }
   }
  ]
