@@ -3,6 +3,60 @@
  "sample": false,
  "items": [
   {
+   "title": "Jaylen Wright Questionable to Play With Foot Injury - NFL News | Fantasy Football - RotoBaller",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQR0l2X0JlWG9heDFkQm5JS21GcmNKV1RKTkJRWC1EeElvYUFCTkhXNFd1TnRSNlV5UmRPN2RMWWpqSHU4QTBjcGMtZ3pUQ1RLeU92N2NZOEVQYktITHpHZ09qT0hRUElrRWlfMmtjV0wwOHlkejVkbmoxa0dHU21RS05XdTlHV0xscUNEYkc3M3VqR2RDOWprdVd4REJJdHM?oc=5",
+   "source": "RotoBaller",
+   "published": "Fri, 09 Oct 2026 23:18:13 GMT",
+   "summary": "RotoBaller reports Dolphins RB Jaylen Wright is questionable for Week 5 with a foot injury.",
+   "impact": {
+    "players": [],
+    "note": "Grounded: RotoBaller 10/9 \u2014 Wright (MIA RB, board ~2.7 ppg) questionable (foot) for W5; no confirmed absence \u2014 no tag."
+   },
+   "id": "jaylen-wright-questionable-to-play-with-foot-injury-nfl-news-fantasy-football",
+   "sample": false
+  },
+  {
+   "title": "Fantasy football Week 5 inactives: Kyle Monangai, Lamar Jackson out - ESPN",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPOFpNck5JWTFDTjFxcS13ci1rcE01LVM5Z29xVXBfTGMwTlhkNmVwcFlnSVZNTDhzNVU3WTdaMnBRN2VpdVhXU0dvaC1qNHVpTkplbFZCTzlraDFyeENZY193Q0VuWFVXdDhId1BDR2V6RXhTU3U5d2xsTTFEUFBhRUJ6SnlFNXQzTTd0Rk5JMXN3NUZOZ1pWblJfeXhfSGR1VkxTcTZGSXJ1cDAyanJGRTVYazZ6dnNjR2QyWUxWMENkZ181TkFFQUJ3?oc=5",
+   "source": "ESPN",
+   "published": "Fri, 09 Oct 2026 23:09:27 GMT",
+   "summary": "ESPN reports Bears RB Kyle Monangai and Ravens QB Lamar Jackson are inactive for Week 5.",
+   "impact": {
+    "players": [
+     {
+      "name": "Kyle Monangai",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -9,
+      "suggestedEdit": "Tag injured \u00b7 \u22129 pts (1 game) \u00b7 drops ~1 round"
+     },
+     {
+      "name": "Roschon Johnson",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 5,
+      "suggestedEdit": "Role boost \u00b7 +5 pts \u00b7 move up ~1 round (est.)"
+     }
+    ],
+    "note": "Grounded: ESPN 10/9 \u2014 Monangai (CHI RB, board ~8.6 ppg) OUT W5 confirmed (escalates 10/7 toe injury); Jackson (BAL QB, ~19.6 ppg) out, already covered. Roschon Johnson (est., not in board) shares CHI backfield lead with Swift per SI 10/8."
+   },
+   "id": "fantasy-football-week-5-inactives-kyle-monangai-lamar-jackson-out",
+   "sample": false
+  },
+  {
+   "title": "Why fantasy football managers should play it safe amid mounting receiver injuries - New York Post",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRVdEcTZDakk4cjRtaURtTUJidkcwSWhsaFQ3dl9IcFhYM2VFbTljVi1vU0FxOTVlbl9qem83STZVV1oydzlfODJWdGJYX21tdVMwZU12MmROenBLOXl2NWlqdkQwejhZVkZCMEp4TVhBN1RxQTZjWlFfTUhhOHBsUTFaTkF1VTBub3hjcTlkejRFek01ei03aS12VTlUQ0hzR2VraGxXVTJXVTU2RTdyVGV1SzJHazRCRmNNTA?oc=5",
+   "source": "New York Post",
+   "published": "Fri, 09 Oct 2026 22:59:00 GMT",
+   "summary": "The New York Post advises fantasy managers to play it safe given the mounting receiver injuries in Week 5.",
+   "impact": {
+    "players": [],
+    "note": "Grounded: NY Post 10/9 \u2014 general advice amid mounting WR injuries (Lamb, Chase, Higgins, Diggs, Smith, Olave); no new per-player facts \u2014 no tag."
+   },
+   "id": "why-fantasy-football-managers-should-play-it-safe-amid-mounting-receiver-injuries",
+   "sample": false
+  },
+  {
    "id": "chig-okonkwo-fades-injury-tag-for-week-5",
    "title": "Chig Okonkwo Fades injury tag for Week 5 - Fantasy Footballers Podcast",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQOTVqQXVTcUJsWFIxSXJCMFZpQmhtT0JLWXZrZVlCbmZOOGh0LXl2cWZsYnFsb29YWENCWWZjclR4OWJtMkdaMkt6SnBfeUxtXzNHejJUdlZXb2JNMlVWVG4xTy1xUXdtcEtkczVkS1VyY1BVVkIxZFFOU256TWtGS3hwNjlhaWl2ZW5peVNGTXotdjJURVM1N1ViTkk?oc=5",
@@ -14,6 +68,19 @@
     "players": [],
     "note": "Grounded: FFB 10/9 \u2014 Okonkwo (WAS TE, board ~6.7 ppg) removed from injury report, healthy for W5 with Diggs ruled out \u2014 supports the SI 10/9 boost item; no new tag."
    }
+  },
+  {
+   "title": "Mike Evans (ribs) off injury report Sunday - FantasyPros",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSnE5VVZkeXk1dzRSRkRfM1hiUF9vUDNERDFZa1pBOHhPa1J6NjZ0MDVsU0tnOTZwd01JX2VGXzRIRHRhODNPcU9fakhiSVNzRTZaWlBHcTc5Q0Z4RmtsMk1JeFp5d25qRElxTXlJc3dzNEViTU4wdFkxSEwxVW5VbktOb0huODVVRjlYSGFNZ0ZBd9IBlwFBVV95cUxQOFRadnZreXJDaGo2cmFpR3dXdXdOMkY4THhqWFZxcExjaDc2SUdhYU5YRlFWRXlWU19oX3VpV2doUEs3U3VhNUhiNHlpQlRYbU5HV21FVFF2S2JNcEVqU1JuU2cxTm9xcEtBX3BRZnNCSjVGYkFwZ01IZ0RTOXRIRXpyWVkzaFpwWi1NQzRQYlpSVWhoN3Rz?oc=5",
+   "source": "FantasyPros",
+   "published": "Fri, 09 Oct 2026 21:51:59 GMT",
+   "summary": "FantasyPros reports 49ers WR Mike Evans is off the injury report and clear for Sunday.",
+   "impact": {
+    "players": [],
+    "note": "Grounded: FantasyPros 10/9 \u2014 Evans (SF WR, board ~10.7 ppg) off the injury report (ribs); clears concern \u2014 no tag."
+   },
+   "id": "mike-evans-ribs-off-injury-report-sunday",
+   "sample": false
   },
   {
    "id": "darius-slayton-nursing-knee-injury-iffy-for-week-5",
@@ -29,6 +96,19 @@
    }
   },
   {
+   "title": "Lamar Jackson, Ja'Marr Chase, NFL Injury Statuses and Fantasy Impact for Week 5 - Bleacher Report",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTEFkS2RQTVNqRW9zdUhBa29FWFFPQWFDU1htSTh5N1pDMU5pNzJPOWRzU0pEQkhyZHdXbjZnb2ZhX0p6SjhPQjA5MHFtQ3lVNXc4U2U3YVJpTE5pc1I4bjR6M0J4MDRBZVd2bFZPNXRZa3pVZDFidmVSZGdCNy1wSUZEQm5KSllTZFZuYlZPcHlFcE1OSlV4eV9QMk9uVnFDbnFtdjNvbElLR3d2eHJyZmNUVTcxa0hI?oc=5",
+   "source": "Bleacher Report",
+   "published": "Fri, 09 Oct 2026 21:18:40 GMT",
+   "summary": "Bleacher Report rounds up Week 5 injury statuses for Lamar Jackson and Ja'Marr Chase and their fantasy impact.",
+   "impact": {
+    "players": [],
+    "note": "Grounded: B/R 10/9 \u2014 W5 status roundup (Jackson out, Chase uncertain); no new per-player severity \u2014 no tag."
+   },
+   "id": "lamar-jackson-ja-marr-chase-nfl-injury-statuses-and-fantasy-impact-for-week-5",
+   "sample": false
+  },
+  {
    "id": "commanders-rule-6-players-out-vs-giants-in-week-5",
    "title": "Commanders rule 6 players out vs Giants in Week 5 - Yahoo Sports",
    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOU2wwT3RyQXdUZ0RGby1obkFYT3I4ZnEzYVlaZlhSYm1CQVEzbkdxZjJvZzJaRFZ1T1gxMHBPci1TbEdIV2tWc1Y2c0hoV2RWZ0k0RHdSQnRGcV9xRDZXNDY2V0pGNEF1dUV2RDB0WnppeTRMVnBSRzB5QThGbXRRUmtxSQ?oc=5",
@@ -40,6 +120,19 @@
     "players": [],
     "note": "Grounded: Yahoo 10/9 \u2014 WAS rules 6 players out vs NYG; names not in headline (context: Diggs out, White/Croskey-Merritt statuses) \u2014 no tag."
    }
+  },
+  {
+   "title": "Fantasy Football Impact: Ja'Marr Chase And Tee Higgins Are Uncertain With Injuries, Opening The Door For Sleepers - Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQSWdEbHlRVkhEWWV0R2ZGLWFtb0ROVXY1cU0wQW5QbDJvVHEyUDVqWWYwTGtMQndpTm93OEE1ZExpMHA0bDZCVjFGdjJGRkU3a1ItcC10c0pFcVJVTGl5ODNSWGpDYTB5eHIxSFZyRVBjd2hnWURiNEtXUHVFZUJVR2YzYlFFeVg0VklHXzNkeWp3aWU4aTVRMTVPWXVyMGFTcHVoMTBIaXdBQllWQnVZVWM5V003eHY3Wl9xZWk4VFpfa2oxVy1zZmxUdlJxeWlzeGtucGFTWWlVcXRFdzVVZnh5N1YwQ1U?oc=5",
+   "source": "Sports Illustrated",
+   "published": "Fri, 09 Oct 2026 20:20:13 GMT",
+   "summary": "SI says uncertainty around Ja'Marr Chase and Tee Higgins opens the door for Bengals sleepers in Week 5.",
+   "impact": {
+    "players": [],
+    "note": "Grounded: SI 10/9 \u2014 Chase (CIN WR, board ~16.3 ppg) & Higgins (CIN WR, board ~11.5 ppg) uncertain for W5; sleepers not named in headline \u2014 no tag."
+   },
+   "id": "fantasy-football-impact-ja-marr-chase-and-tee-higgins-are-uncertain-with-injuries-opening-the-door-for-sleepers",
+   "sample": false
   },
   {
    "id": "latest-week-5-nfl-injury-report-lamar-jackson-out-caleb-williams-now-questionable",
@@ -439,84 +532,6 @@
      }
     ],
     "note": "Grounded: SI 10/8 \u2014 Monangai (CHI RB, board ~8.6 ppg) injury update escalates CHI backfield concern; Roschon Johnson (est., not in board) would lead CHI backfield if Monangai/Swift miss W5."
-   }
-  },
-  {
-   "id": "ashton-jeanty-limited-by-pair-of-injuries-thursday-fantasy-footballers-podcast",
-   "title": "Ashton Jeanty Limited by pair of injuries Thursday - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNeXZ6TDhOb3BhTnlIME9kM1hKYmlEOF9VLXdKbmdVR1hPdzQ2QnpyMGhHMGg2TkZaa29TWXNMc282NkVqbXFrYkFzWUhvQmJ6ZnZqVHJUbWlYVDNiUHBFTEs4NmZ6UG13aFRGTm1DYmVWYlZhTGZNZUhqODdKWjhOc1hMSFdWSkR6bTVxbVBSSkFvc2JSRm5IeDNtUUxEaFZvU0tV?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Thu, 08 Oct 2026 21:41:47 GMT",
-   "summary": "The Fantasy Footballers report Raiders RB Ashton Jeanty was limited in Thursday's practice by a pair of injuries.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: FFB 10/8 \u2014 Jeanty (LV RB, board ~13.2 ppg) limited Thu by pair of injuries; practice report, W5 status TBD \u2014 no tag."
-   }
-  },
-  {
-   "id": "gunnar-helm-pops-up-on-injury-report-fantasy-footballers-podcast",
-   "title": "Gunnar Helm Pops up on injury report - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQm5PTC1CQm1lWnZoMnBUZVRLZDRlV3RBVHV0aExWWHVVcE5qNThac0ptQzhhclBUa2hwR0FCWmVhbzJ4QlQxUVpZbnhVa3ZDU2VtY3JLYWNHX25TN2dMSFRaaXFEa29ESmZYWk44djRFT2Y4ZVE3SUJ0Z2I2ckI1WEYzXzhIeHc2NFRxTUI1clo?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Thu, 08 Oct 2026 21:11:06 GMT",
-   "summary": "The Fantasy Footballers report Titans TE Gunnar Helm popped up on the injury report.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: FFB 10/8 \u2014 Helm (TEN TE, board ~4.4 ppg) popped up on injury report; severity TBD \u2014 no tag."
-   }
-  },
-  {
-   "id": "carnell-tate-limited-by-back-injury-thursday-fantasy-footballers-podcast",
-   "title": "Carnell Tate Limited by back injury Thursday - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTmNPQnFIU0hYbzN2Q2h6YnVRNkhpbUFoUzhmR2t6WDYyZ2Zxekk1RERkdXl3bHdGbWJsbHY2R2VXMDhQVGZWNUZiT21iZVRfdmlnei01NWJkVEY0eE52UFMyT25yVTFhbXlfTjBvclZyUno2T0Z1ZkV2MXpQNEw4Qm9qYW1BZm51dDQ4dDkxVzJVSEZWZ1BSMnBOQQ?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Thu, 08 Oct 2026 21:11:06 GMT",
-   "summary": "The Fantasy Footballers report Titans WR Carnell Tate was limited in Thursday's practice with a back injury.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: FFB 10/8 \u2014 Tate (TEN WR, board ~11.2 ppg) limited Thu (back); practice report \u2014 no tag."
-   }
-  },
-  {
-   "id": "bengals-get-major-jamarr-chase-injury-update-as-tee-higgins-works-toward-return-yahoo-sports",
-   "title": "Bengals Get Major Ja\u2019Marr Chase Injury Update as Tee Higgins Works Toward Return - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMmpfSmRLRVo1STFac0x0VUR0aWVmaHJzcG5pRjR1NXZaenc3blhXb3EwaElDU01lcjZXOWJ4a1R5aVpQR0M0SmtvR2RWV3BnTjRqVHA2R3RkT3lYSnhwMTltZ2VkWldJcDB1Yk5RUXVqRmdNZTN1NDZYdl9XOVFKNUVn?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Thu, 08 Oct 2026 20:54:57 GMT",
-   "summary": "Yahoo reports a major Ja'Marr Chase injury update while Tee Higgins works toward a return.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: Yahoo 10/8 \u2014 Chase (CIN WR, board ~16.4 ppg) major W5 status update (still uncertain per CBS); Higgins (CIN WR, board ~11.5 ppg) trending toward return \u2014 no tag."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-update-fantasy-managers-set-to-rejoice-as-justin-jefferson-expected-to-play-week-5-sports-illustrated",
-   "title": "Fantasy Football Injury Update: Fantasy Managers Set to Rejoice as Justin Jefferson Expected to Play Week 5 - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNT2hDampGSVNmNmlQU1dYUnRaWHU2VTJsc3pSZUg2b1l5OF9INTNrQlRrVDVnd2tnUF9hR1Z0RGloT3BtbTk5TWJmd1paVlFkcFRjUkxLMDk0UGtxQzUwa21PVzV4QmNvX1F5NV9hTHd5dDZHQUpvZWd1YXNhU2JSRW1jQ3pLckF2WTIxUXFUalVrVjBVX1RvVFEwRk5ubU5HZ3ZTaXBWWTJCbHRyTzF0Tm1iUGtkTFlabi1LX25OdGdUaUJqZXNBWk9PZ1JjWW93RE5BYnRvczVGdw?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Thu, 08 Oct 2026 18:30:25 GMT",
-   "summary": "SI reports Justin Jefferson is expected to play in Week 5, good news for fantasy managers.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: SI 10/8 \u2014 Jefferson (MIN WR, board ~12.6 ppg) expected to play W5; status confirmation, no role change \u2014 no tag."
-   }
-  },
-  {
-   "id": "fantasy-football-impact-tee-higgins-and-ja-marr-chase-injury-updates-sports-illustrated",
-   "title": "Fantasy Football Impact: Tee Higgins And Ja'Marr Chase Injury Updates - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTUVRdjBBSTZ1dW5RckxNeF9lekl6TUpERXlFcUozOGpQUUNFR2hLaXRhZ3lZRGlNVGk2NFRQZnJ1RTRfSkZpcjl3cnd4YjBJOGU4M05pUWs1TWJqRDhOWXdwXzdwV1NJb3lXV195NzNIX0FEWTR2dVRpUTlfOWdiN1dmOEwtUFZGZXQ0NENtZUxiSjYyVlVtT3VTcmdBWFY5TEtrcFhKaXRNVE9ONmc?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Thu, 08 Oct 2026 18:23:29 GMT",
-   "summary": "SI provides Week 5 injury updates on Bengals WRs Tee Higgins and Ja'Marr Chase.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: SI 10/8 \u2014 Chase (CIN WR, board ~12.8 ppg) & Higgins (CIN WR, board ~9.3 ppg) W5 status updates; still uncertain per CBS 10/9 \u2014 no tag."
    }
   }
  ]
