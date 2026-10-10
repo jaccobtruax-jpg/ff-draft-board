@@ -3,6 +3,136 @@
  "sample": false,
  "items": [
   {
+   "id": "bengals-week-5-fantasy-football-injury-report-vs-dolphins-which-wrs-will-step-up-with-ja-marr-chase-tee-higgins-banged-up-yahoo-sports",
+   "title": "Bengals Week 5 fantasy football injury report vs. Dolphins: Which WRs will step up with Ja'Marr Chase, Tee Higgins banged up? - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNc0lDbW50c0oyUU1xWWgtTFFQal9EcXlKTGFWQTA3RWtpY192Uzd0WEFxRThyTG50em1wdDRIQTVacGtjY051bV9DaW9KcG50Q1hNeUIzR0h5bWJ2b1pjZkZRZUhsbWo1RmhuTmVHLUF0Y0NtTzByY0g4QkpfdkppZkg1eWNiU00?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Sat, 10 Oct 2026 21:13:39 GMT",
+   "summary": "Yahoo previews the Bengals' Week 5 injury report vs Miami with Ja'Marr Chase and Tee Higgins banged up and other WRs in line to step up.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 10/10 \u2014 Chase & Higgins (CIN WRs, board ~16.4/~11.5 ppg) banged up for W5 vs MIA; replacement WRs not named in headline \u2014 no tag."
+   }
+  },
+  {
+   "id": "final-week-5-fantasy-football-projections-and-rankings-updates-for-latest-injuries-yahoo-sports",
+   "title": "Final Week 5 Fantasy Football Projections and Rankings: Updates for Latest Injuries - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcnJHSlYzZmljcWxEa3hrcTVBT3dWVnFNeVF3MEdNc0RnT0NlZ0xHSGFRbGhzeU5XUTVNcnZnSldxaG9KSzRBeXJLUDIwYzFoWG52SkotQWo3WS1GRFVqQlVUVEsySGxTQ1ZtZ1JYVGliWVptSXV4LTJieEM4YTVXc01EaG8?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Sat, 10 Oct 2026 20:26:42 GMT",
+   "summary": "Yahoo's final Week 5 projections and rankings incorporate the latest injury news.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 10/10 \u2014 final W5 projections/rankings reflecting latest injuries; no new per-player facts in headline \u2014 no tag."
+   }
+  },
+  {
+   "id": "chris-brooks-moves-to-injured-reserve-fantasy-footballers-podcast",
+   "title": "Chris Brooks Moves to injured reserve - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWndmTHNSNnQyWm9hUXcwc01td2d5LVJzTDZkWW1adzg5WlZnNUVpTWtaRkg1ZU1kcEpjbW5PTExnd2FGTk5nWVQwTVotcGd4dUNMRzYxTHhKWUQ4ZmdsMFYxVlVVWlZHaUVVV0ZSMVJJdHJwOVVTaEdQbldpRDhMSWxGbThsUXNGYWhSSEY4S25rUQ?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Sat, 10 Oct 2026 20:16:44 GMT",
+   "summary": "The Fantasy Footballers report Packers RB Chris Brooks has moved to injured reserve.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Chris Brooks",
+      "action": "injured",
+      "games": 4,
+      "deltaPts": -19,
+      "suggestedEdit": "Tag injured \u00b7 \u221219 pts (4 games) \u00b7 drops ~2 rounds (IR, est.)"
+     }
+    ],
+    "note": "Grounded: FFB 10/10 \u2014 Brooks (GB RB, board ~4.7 ppg) to IR; games=4 IR minimum est."
+   }
+  },
+  {
+   "id": "mack-hollins-lands-on-injured-reserve-fantasy-footballers-podcast",
+   "title": "Mack Hollins Lands on injured reserve - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPZkFrbllzZ2EwWnJWS0RPbjlUYjZDVWZXN3RhUEhRVWpSZHlEeVlaNkpCeklCOURIQnNWLTdzX3pTTm1KTnJBTFdWQmc2U0tBQTB5V0VFbHdVWEpyM2tMNUFwNS03RTlCbS14aXp2NFZmOHI5S0N1bHZCakhsbE9IYUNSaW5uY0VCNDBkUVpIQ3RwZw?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Sat, 10 Oct 2026 20:16:44 GMT",
+   "summary": "The Fantasy Footballers report Patriots WR Mack Hollins has landed on injured reserve.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Mack Hollins",
+      "action": "injured",
+      "games": 4,
+      "deltaPts": -11,
+      "suggestedEdit": "Tag injured \u00b7 \u221211 pts (4 games) \u00b7 drops ~1 round (IR, est.)"
+     }
+    ],
+    "note": "Grounded: FFB 10/10 \u2014 Hollins (NE WR, board ~2.7 ppg) to IR; games=4 IR minimum est."
+   }
+  },
+  {
+   "id": "michael-pittman-jr-bound-for-injured-reserve-fantasy-footballers-podcast",
+   "title": "Michael Pittman Jr. Bound for injured reserve - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNamtINDRBS3cyckJtY1dOTHBFZGRzc0hjemtuVzBlU3IwT3Q4YWVwR0l3dVBKeWFIaVFsVUJPMXZubjhQS28ya0swOXRQVzVtSFVpZkZObTZQcTdxUkJNUmVTcEM2S19ENURDRjNFZS1CR1B3eW9qZjlla2ZUbUU5RmRPWFVoVWpBc3p4dlFEdGlCZFNEQ3RxbkZvVQ?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Sat, 10 Oct 2026 19:22:30 GMT",
+   "summary": "The Fantasy Footballers report Steelers WR Michael Pittman Jr. is bound for injured reserve.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Michael Pittman Jr.",
+      "action": "injured",
+      "games": 4,
+      "deltaPts": -36,
+      "suggestedEdit": "Tag injured \u00b7 \u221236 pts (4 games) \u00b7 drops ~4 rounds (IR)"
+     }
+    ],
+    "note": "Grounded: FFB 10/10 \u2014 Pittman (PIT WR, board ~9.0 ppg) bound for IR; games=4 IR minimum est.; aligns with Yahoo 10/8 'big news for 1 Steelers WR'."
+   }
+  },
+  {
+   "id": "broncos-week-5-fantasy-football-injury-report-vs-chargers-courtland-sutton-jaylen-waddle-impact-with-pat-bryant-out-yahoo-sports",
+   "title": "Broncos Week 5 fantasy football injury report vs. Chargers: Courtland Sutton, Jaylen Waddle impact with Pat Bryant out - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQ2VJejZQNEtxdG9JaTdNUWlTLTZCWkdPLW9xcDN2U2I2V2tMZ0dob01TSWdEQWE5RnRGNERQX1J0TERvTDBOU0pWN2hJcDJjSmtFY3NOa2YwbkRpTFoxTm1DckJ3V2dPdUhEVkVBUWNTem1LSE1uSkhLWkswN3hLQTJlcWhVTms?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Sat, 10 Oct 2026 18:08:32 GMT",
+   "summary": "Yahoo's Broncos Week 5 injury report vs the Chargers covers the impact on Courtland Sutton and Jaylen Waddle with Pat Bryant out.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Courtland Sutton",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 3,
+      "suggestedEdit": "Role boost \u00b7 +3 pts \u00b7 move up ~1 round (est.)"
+     },
+     {
+      "name": "Jaylen Waddle",
+      "action": "boost",
+      "games": null,
+      "deltaPts": 3,
+      "suggestedEdit": "Role boost \u00b7 +3 pts \u00b7 move up ~1 round (est.)"
+     }
+    ],
+    "note": "Grounded: Yahoo 10/10 \u2014 Broncos W5 report vs LAC: Pat Bryant (not in board) out; headline flags Sutton (DEN WR, ~8.8 ppg) & Waddle (DEN WR, ~11.7 ppg) target-share impact \u2014 +3 est. each."
+   }
+  },
+  {
+   "id": "ja-marr-chase-fantasy-football-injury-update-when-will-bengals-wr-return-complex",
+   "title": "Ja'Marr Chase Fantasy Football Injury Update: When Will Bengals WR Return? - Complex",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbnd2QVozX01hcTJEQm5ZRlRsS1VJTmVGZFMwRG5yUWt1Qlo0TWQ5MC1QWjBMc2lBNml2YnlTbzV6c1Z5WlNFMDFXaUlCdnh0bmtZVEFUSjBXQktHeE9TcHprRXJESkU1MFJRWGpOUi1Rb2d0eGx1clFWMW9xN2ViSDdQOG5nUld0Y0dfU253?oc=5",
+   "source": "Complex",
+   "published": "Sat, 10 Oct 2026 16:13:26 GMT",
+   "summary": "Complex breaks down when Bengals WR Ja'Marr Chase might return from his injury.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Complex 10/10 \u2014 Chase (CIN WR, board ~16.4 ppg) return timeline unknown; still uncertain for W5 per headline \u2014 no tag."
+   }
+  },
+  {
    "id": "caleb-williams-dallas-goedert-and-more-qb-te-injury-updates-for-week-5",
    "title": "Caleb Williams, Dallas Goedert and more QB, TE injury updates for Week 5 - Yahoo Sports",
    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUThFSURDNnpQQkdJQl92SjJSODFTeXBYTVgyblVHT0tXOUl5S3FkakY3UWd6R3FielQ3VFFZZ0JzczU5SzRQNTZrTEpwRUZUeU9qaktzMWVabnFOWjZCSHZ5TFJlXzNwYWJnM1JFSm90WVpfdWpsbVk4cFhES0xuVmQ4NWZMZk1XbTE0?oc=5",
@@ -13,6 +143,32 @@
    "impact": {
     "players": [],
     "note": "Grounded: Yahoo 10/10 \u2014 Williams (CHI QB, board ~18.6 ppg) questionable (groin); Goedert (PHI TE, board ~9.2 ppg) status update; no confirmed absences in headline \u2014 no tag."
+   }
+  },
+  {
+   "id": "is-zay-flowers-playing-week-5-fantasy-football-injury-update-fantasypros",
+   "title": "Is Zay Flowers Playing Week 5? Fantasy Football Injury Update - FantasyPros",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdGREMWFVZzhkMDY3ZkdlaG00YlU3cnlLdVFqSm0xVVllekZoam9CN3FNc2JZeTU1RWxQQUcxcFlDbkVrc1lxb0FSby1GQi1nVF80TzBWUFg0WUY1V0JEVDFfZ1k5bjJMMG5KWlBsamNJU2dHQlFhSnljeW9uWlotZW9jSG0tTXdVUWdqa0tiY2dSYVpjSEZYUTdlUkxEbm1OZWs4UtIBqgFBVV95cUxNY29wM1dRZnlobVYzRHFQRzBTSWJ5RmxQRnF5VFFueWxoLVRXLUgwRlBIQ0NJSkl6OXBNMjk0emZyekl0WG13c1FQZTRSd3duUzdTQjNpbzdWTURQX0V5QkczdWFuV3JjaFVoY3V6R0pTRnU4ajdlRjNlTFRmRzNOQ2FsNWpSSzV2REN3a2l6WUw0YUVVZTlhdTZHcHR4aWQ4bDVrNVlwVzBOUQ?oc=5",
+   "source": "FantasyPros",
+   "published": "Sat, 10 Oct 2026 12:40:36 GMT",
+   "summary": "FantasyPros checks whether Ravens WR Zay Flowers will play in Week 5.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: FantasyPros 10/10 \u2014 Flowers (BAL WR, board ~11.8 ppg) W5 status check with Jackson already out; no confirmed absence \u2014 no tag."
+   }
+  },
+  {
+   "id": "is-ashton-jeanty-playing-week-5-fantasy-football-injury-update-fantasypros",
+   "title": "Is Ashton Jeanty Playing Week 5? Fantasy Football Injury Update - FantasyPros",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSkpOMFJMNjUxVi1qbll1ME5nZU5lNndlX1VFU083YnpCQTZ0cXlhZW81bmhNanRWS3ZNRzdyOXVra2tJeE5FQS1zVURPa1lLbmVUOVlvRDJPQlo0NExldjYzS1h1dFpieGdOMGc0RENxOURTV0EzTy1tREtQUnpMUU1GbW9fZUFWUmFlNHZNc1Jrc1ZGb3dfREhfVHlBU1JnM3ZGQVMwRl8tMW140gGsAUFVX3lxTE5KSk4wUkw2NTFWLWpuWXUwTmdlTmU2d2VfVUVTTzdiekJBNnRxeWFlbzVuaE1qdFZLdk1HN3I5dWtra0l4TkVBLXNVRE9rWUtuZVQ5WW9EMk9CWjQ0TGV2NjNLWHV0WmJ4Z04wZzREQ3E5RFNXQTNPLW1ES1BSekxRTUZtb19lQVZSYWU0dk1zUmtzVkZvd19ESF9UeUFTUmczdkZBUzBGXy0xbXg?oc=5",
+   "source": "FantasyPros",
+   "published": "Sat, 10 Oct 2026 12:38:00 GMT",
+   "summary": "FantasyPros checks whether Raiders RB Ashton Jeanty will play in Week 5 amid his injury watch.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: FantasyPros 10/10 \u2014 Jeanty (LV RB, board ~12.9 ppg) W5 status check; injury watch on, no confirmed absence \u2014 no tag."
    }
   },
   {
@@ -73,6 +229,19 @@
    "impact": {
     "players": [],
     "note": "Grounded: Dynasty Nerds 10/10 \u2014 W5 injury news + dynasty watchlist roundup; no per-player facts in headline \u2014 no tag."
+   }
+  },
+  {
+   "id": "terry-mclaurin-injury-update-commanders-wr-remains-for-week-5-game-vs-giants-yahoo-sports",
+   "title": "Terry McLaurin Injury Update: Commanders WR Remains For Week 5 Game vs. Giants - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNLVN3ME45aEJkOXM5VkZuVWFZZnk0VnpWbWY4WmVvbGtJT2pfZnNkY1B2WDdYMFJCdkJaUERXLUhrSXoyeTBVNktFXzdtYm9ydVNMUTdiVTZoV3ZTcWpGdVZzSXZLd1lFMzNudWotcEVoUFg3dDh4cUdXSVFxWU5fWVdRSkk3ZkE4M250WA?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Sat, 10 Oct 2026 06:04:00 GMT",
+   "summary": "Yahoo confirms Commanders WR Terry McLaurin remains available for Week 5 vs the Giants.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 10/10 \u2014 McLaurin (WAS WR, board ~10.8 ppg) active for W5 vs NYG; confirms the existing Diggs-out boost \u2014 no new tag."
    }
   },
   {
@@ -327,227 +496,6 @@
      }
     ],
     "note": "Grounded: SI 10/9 \u2014 Jackson (BAL QB, board ~19.6 ppg) ruled OUT W5; existing injured tag stands \u2014 no re-tag. Henry (BAL RB, ~13.6 ppg), Flowers (BAL WR, ~11.8 ppg), Andrews (BAL TE, ~7.2 ppg) see usage bumps per SI."
-   }
-  },
-  {
-   "id": "fantasy-football-impact-ashton-jeanty-injury-update-brings-forth-rookie-fantasy-sleeper",
-   "title": "Fantasy Football Impact: Ashton Jeanty Injury Update Brings Forth Rookie Fantasy Sleeper - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNa3lJQklFZV90Y3F4Q2xoYW1walZMWEc4c0hielhqN3h2Z3dTTUxURDFmdmc0TWJyZ3lDY3E0SzF4RnczWGNBQkNldUcxSExBaTBCalF4Z1F4TFhDYlZMSUdkZzZScGF1N21zS0tIOUViMU5lYnZYdkdTa0FweDBiV2VDeVNjbzVsU0hYM09xS3ZXNWFKVmdqMENzUWE2czhoT18ycjBEQU5vNDF6dlZSZk5EZUpxcWVfcUhxVnVYQTMyR2Z0WFNB?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Fri, 09 Oct 2026 18:01:23 GMT",
-   "summary": "SI reports an Ashton Jeanty injury update brings forth a rookie fantasy sleeper for Week 5.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: SI 10/9 \u2014 Jeanty (LV RB, board ~12.9 ppg) injury update (was limited Thu w/ pair of injuries); rookie sleeper not named in headline; severity TBD \u2014 no tag."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-terry-mclaurin-and-chig-okonkwo-set-for-a-big-week-5-with-stefon-digg",
-   "title": "Fantasy Football Injury Impact: Terry McLaurin and Chig Okonkwo Set for a Big Week 5 with Stefon Diggs Ruled Out - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPdkxuTUozMm9ueFFLaUR2UW5TbExTdmFVZXNIWGVicmM5MlVEQzJra2Y1TVVhMG9QSGdIVFN2U0F2RG9lNG1mRFJ4ZHdlTDhOcUd6S1c5LVk1dGtyZmJkdDJaQWZzWFJFdk9YbEdaNEN3YTNtc1JwMjZabGN6bm15dEwzbVFKQmdRZFU0Y0pSeU00YlVDNGxZNldjVXpfdFEzZ1hYaU5YRDJDNHJiOTY0dE9va0x1bE9xXzl2Wk1Wc2RGLWFKM0tROS0yNE0tbTZ5OHNnTWd1N1VMbzg?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Fri, 09 Oct 2026 17:51:14 GMT",
-   "summary": "SI says Stefon Diggs is ruled OUT for Week 5, setting Terry McLaurin and Chig Okonkwo up for a big game vs the Giants.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Stefon Diggs",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -9,
-      "suggestedEdit": "Tag injured \u00b7 \u22129 pts (1 game) \u00b7 drops ~1 round"
-     },
-     {
-      "name": "Terry McLaurin",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 4,
-      "suggestedEdit": "Role boost \u00b7 +4 pts \u00b7 move up ~1 round"
-     },
-     {
-      "name": "Chig Okonkwo",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 3,
-      "suggestedEdit": "Role boost \u00b7 +3 pts \u00b7 move up ~1 round (est.)"
-     }
-    ],
-    "note": "Grounded: SI 10/9 \u2014 Diggs (WAS WR, board ~8.6 ppg) ruled OUT W5; McLaurin (WAS WR, board ~10.8 ppg) and Okonkwo (WAS TE, board ~6.7 ppg) are the named beneficiaries vs NYG."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-adonai-mitchell-s-week-5-absence-molds-isaiah-williams-big-break",
-   "title": "Fantasy Football Injury Impact: Adonai Mitchell's Week 5 Absence Molds Isaiah Williams' Big Break - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcVlxd2Y0V1RicVVVU2ZoZVVJV2JIQ3E3aDdhODI1SkJoWTFCRHFMald0UEw0Wkk1VmowNVVmWDNKWXZMSF9UaW55eWppWWVkLWFoOGJPUXFBblc2T3R5R2FvTXJ3MGgzMDJNQXVVbkhlUWNoNmhka3dEMkEyOWdwWjZCdHNLUmV3dm52YVpkeWpYa19feFJHLW4wcDVRNm1YaTVsOWYtZXVaZ0x2Snc?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Fri, 09 Oct 2026 16:53:39 GMT",
-   "summary": "SI says Adonai Mitchell's Week 5 absence opens the door for Jets WR Isaiah Williams to get a big break.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Adonai Mitchell",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -5,
-      "suggestedEdit": "Tag injured \u00b7 \u22125 pts (1 game) \u00b7 drops ~1 round (est.)"
-     },
-     {
-      "name": "Isaiah Williams",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 3,
-      "suggestedEdit": "Role boost \u00b7 +3 pts \u00b7 move up ~1 round (est.)"
-     }
-    ],
-    "note": "Grounded: SI 10/9 \u2014 Mitchell (NYJ WR, board ~5.4 ppg) OUT W5 (per the 10/9 Hall OUT item; now tagged); Isaiah Williams (NYJ WR, est. ~4 ppg, not in board) gets the WR3 break \u2014 +3 est."
-   }
-  },
-  {
-   "id": "breece-hall-adonai-mitchell-ruled-out-for-week-5-braelon-allen-garrett-wilson-get-a-fantasy-football",
-   "title": "Breece Hall & Adonai Mitchell ruled OUT for Week 5; Braelon Allen & Garrett Wilson Get a Fantasy Football Boost - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQdlMybmpYc1ZTUU02SzU0ODYwWDE1eFpVWGJpTU80RVlyNV9fNHVxRExyaU5wVm5VTWllcE9VbUExdnVadS00SXA0WXpnMW53M01HSnhaZ0J2REFaNHk5X1F2TFdaOEkyQ1JlazBFVHlRSmRwb3M4VzBJNmRiUjR3eUUyRTBEYmt5cEZWUVpQSkladzNrYzBhUF96bG0ycWpWU1ExcnFtOGZBWXh0dHRTZGtvYXhkMGE1UG4wdTVDRUN1b3UwOC1WNzd5WkgxYlB3c2tsanlDUDRwemtqbmdINWt3?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Fri, 09 Oct 2026 16:07:44 GMT",
-   "summary": "SI reports Jets RB Breece Hall and WR Adonai Mitchell are ruled OUT for Week 5, boosting Braelon Allen and Garrett Wilson.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Breece Hall",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -11,
-      "suggestedEdit": "Tag injured \u00b7 \u221211 pts (1 game) \u00b7 drops ~1 round"
-     },
-     {
-      "name": "Braelon Allen",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 6,
-      "suggestedEdit": "Role boost \u00b7 +6 pts \u00b7 move up ~1 round (est.)"
-     },
-     {
-      "name": "Garrett Wilson",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 3,
-      "suggestedEdit": "Role boost \u00b7 +3 pts \u00b7 move up ~1 round (est.)"
-     }
-    ],
-    "note": "Grounded: SI 10/9 \u2014 Hall (NYJ RB, board ~10.9 ppg) ruled OUT W5 (was week-to-week per 10/7); games=1 confirmed, more possible. Allen (NYJ RB, board ~3.4 ppg) would lead the backfield; Wilson (NYJ WR, board ~9.1 ppg) boost per SI."
-   }
-  },
-  {
-   "id": "week-5-fantasy-football-injuries-lamar-jackson-ruled-out-tyler-huntley-to-start-against-falcons",
-   "title": "Week 5 Fantasy football Injuries: Lamar Jackson ruled out, Tyler Huntley to start against Falcons - CBS Sports",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTGdERkxGN29LbHhMa29qVzdlWmpmcDRnZ0lUb1B3akpwNnZKdUUyWHg1aUhPRDVLNnJ3dWJxa2kzMWM3UE5uYXpuQ0g3Q2dHazU1Y2dMdXlBTnpxSEhTRzdwWXc3WWlYWW1NdWZvb08tVUhtZXNESGZPWjJ2NTJsZTZZNFpWVzJOVmNuamVvbzc2Q3l3WVpPZmRIYXJoM0hmN0JaMFNEVlY?oc=5",
-   "source": "CBS Sports",
-   "published": "Fri, 09 Oct 2026 00:23:00 GMT",
-   "summary": "CBS reports Lamar Jackson is ruled out for Week 5 with Tyler Huntley starting against the Falcons.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: CBS 10/9 \u2014 Jackson (BAL QB) ruled OUT W5, tag already in place (ESPN 10/9) \u2014 no re-tag; Huntley (not in board) gets the start vs ATL."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-update-fantasy-managers-set-to-rejoice-as-justin-jefferson-expected-to-play-week-5",
-   "title": "Fantasy Football Injury Update: Fantasy Managers Set to Rejoice as Justin Jefferson Expected to Play Week 5 - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNT2hDampGSVNmNmlQU1dYUnRaWHU2VTJsc3pSZUg2b1l5OF9INTNrQlRrVDVnd2tnUF9hR1Z0RGloT3BtbTk5TWJmd1paVlFkcFRjUkxLMDk0UGtxQzUwa21PVzV4QmNvX1F5NV9hTHd5dDZHQUpvZWd1YXNhU2JSRW1jQ3pLckF2WTIxUXFUalVrVjBVX1RvVFEwRk5ubU5HZ3ZTaXBWWTJCbHRyTzF0Tm1iUGtkTFlabi1LX25OdGdUaUJqZXNBWk9PZ1JjWW93RE5BYnRvczVGdw?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Thu, 08 Oct 2026 18:30:25 GMT",
-   "summary": "SI reports Vikings WR Justin Jefferson is expected to play in Week 5, clearing his injury concern.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Justin Jefferson",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 4,
-      "suggestedEdit": "Role boost \u00b7 +4 pts \u00b7 move up ~1 round (est.)"
-     }
-    ],
-    "note": "Grounded: SI 10/8 \u2014 Jefferson (MIN WR, board ~15.3 ppg) expected to play W5, clearing earlier concern; top-tier WR return \u2014 +4 est."
-   }
-  },
-  {
-   "id": "rhamondre-stevenson-fantasy-football-injury-update-when-will-patriots-rb-return",
-   "title": "Rhamondre Stevenson Fantasy Football Injury Update: When Will Patriots RB Return? - Complex",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYl9QYmlaQS1zQ3Q2b2I4VUs2RElQNmlJM3EyNzZKTWcxakZfTng4SVRVNUN3OVdjZnA0LWI3YTdvQ1hlVUItVVc5NC04ZkNnN0VOd3NEYWp1UFh6Vi1SVW5XUVZQaVJudkt5Tm1Zb2xqZ0tkZjRtUElmZ1RuTWs4UDBEWktiaUQ0VlhYQmNHMDE4b0x5cEk4?oc=5",
-   "source": "Complex",
-   "published": "Thu, 08 Oct 2026 16:30:49 GMT",
-   "summary": "Complex breaks down when Patriots RB Rhamondre Stevenson might return from his injury.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Rhamondre Stevenson",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -11,
-      "suggestedEdit": "Tag injured \u00b7 \u221211 pts (1 game) \u00b7 drops ~1 round (est.)"
-     }
-    ],
-    "note": "Grounded: Complex 10/8 \u2014 Stevenson (NE RB, board ~11.1 ppg) out with injury ('when will he return'); games=1 est.; NE worked out Jamaal Williams (SI 10/7)."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-malik-nabers-uncertainty-opens-the-door-for-isaiah-likely-week-5-wr-sleeper",
-   "title": "Fantasy Football Injury Impact: Malik Nabers Uncertainty Opens the Door for Isaiah Likely & Week 5 WR Sleeper - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPXzQwRkJwTjFiS2lqRHNpTUoxSlJZQlpQX094dUN2RC1tT2N4VzFzX1ptQWVrR04yY3FrRnlPVGNCTXpDSnBSdmVYZEJzVkV2Rnl5RFhoWU9za3loY29MYV9ySlEyTXJpY0FxTU9qTlJucVBlM1d4QTdvS2tJRER1MVVuakM1QW1hNkg5UXFsYl9ET3U0d1pyS0VtZEFaV1JsMUxHbVVXRzRLMUN3UjhhOG9WSG5GZUtpbHEyd1ZULS1NTTM0Xy0wMEtkWWoyNlhtbjdVS0R1cHJTS3dGaEVvY3FR?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Wed, 07 Oct 2026 23:40:50 GMT",
-   "summary": "SI says Malik Nabers' Week 5 uncertainty opens the door for Isaiah Likely and a WR sleeper.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: SI 10/7 \u2014 Nabers (NYG WR, board ~14.6 ppg) uncertain for W5; no confirmed absence \u2014 no tag."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-rachaad-white-returning-to-practice-jacory-croskey-merritt-s-role-takes-hit",
-   "title": "Fantasy Football Injury Impact: Rachaad White Returning to Practice, Jacory Croskey-Merritt\u2019s Role Takes Hit - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQWi1JSUZFMUhYYVpIb21qSDhoTkptMXdsVDZjcFNMQUhlR3N4SEtld0xVQzNJZFR0VWpvVGdNN01oaXZ5eXV0dTNiZUVDaDBZOVNSd0pBVTZXa3luS1Rrb3RXU3BEWTg5dlFRcXZSUU44UHVLd0k1TEpZQ3Z4MFhZQ0tLVGZpeEllUFhxOTlwX1NWQkx4elZTdEF0cHlFZjlITGoyOGNRVUFxcHRkTkdHdUc3S2ZkcUxab3g4eDN1NTNTRUM0M1Q4eU1SSmNPcjNnaFNYUmNjY2p6WmF0MlVkeg?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Wed, 07 Oct 2026 14:57:56 GMT",
-   "summary": "SI reports Rachaad White returned to practice, while Jacory Croskey-Merritt's role takes a hit.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Rachaad White",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 3,
-      "suggestedEdit": "Role boost \u00b7 +3 pts \u00b7 move up ~1 round (est.)"
-     }
-    ],
-    "note": "Grounded: SI 10/7 \u2014 White (WAS RB, board ~8.9 ppg) back at practice for W5; Croskey-Merritt (WAS RB, not in board) role takes hit \u2014 +3 est."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-jayden-daniels-set-to-return-as-a-qb1-injured-marcus-mariota-can-be-dropped",
-   "title": "Fantasy Football Injury Impact: Jayden Daniels Set to Return as a QB1; Injured Marcus Mariota Can be Dropped - Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUEhsUmN4emoyY1kzZjd5eVltQ3NKQ2pGaGI3WV9uR2p5TzlUQmd6R09WOGF0cWkwUWJUcnoycnZKWEczRUhfSF9mSm1aSnNUZjc1c1dsZzBncWNucmZxcVUzeTFhUFlkVHRqM0FsTlZPLUpBaDVTVkZuVFg5NVRKV3NNZFNac0tNRHl0NUMzVQ?oc=5",
-   "source": "Yahoo Sports",
-   "published": "Mon, 05 Oct 2026 20:15:39 GMT",
-   "summary": "Yahoo says Jayden Daniels is set to return as a QB1 after his elbow injury, making Marcus Mariota droppable.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Jayden Daniels",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 5,
-      "suggestedEdit": "Role boost \u00b7 +5 pts \u00b7 move up ~1 round (est.)"
-     }
-    ],
-    "note": "Grounded: Yahoo 10/5 \u2014 Daniels (WAS QB, board ~19.1 ppg) full-go post-elbow injury, QB1 per Yahoo; Mariota (injured) droppable \u2014 +5 est."
    }
   }
  ]
