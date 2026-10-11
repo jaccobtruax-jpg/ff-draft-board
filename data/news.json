@@ -1,7 +1,93 @@
 {
- "updated": "2026-10-11",
+ "updated": "2026-10-12",
  "sample": false,
  "items": [
+  {
+   "id": "will-shipley-will-not-return-to-week-5-game",
+   "title": "Will Shipley will not return to Week 5 game - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9SYWJCNWc0clIxbDhCME1rMVV4RnBUTWdKZGlPVFZqeVZheV8zUHcwalkwalNjakNKOE41SkRLV0JsZlJTNmV0SjVEdXpGbU5SWExOWktDMmVxWlNEajJsZExjcXppNzFjbTM5X3ZTOE5BRlBvSEVjUDlvajJ1cDg?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Sun, 11 Oct 2026 16:44:24 GMT",
+   "summary": "Yahoo reports Eagles RB Will Shipley will not return to the Week 5 game against the Jaguars after leaving with a foot injury.",
+   "sample": false,
+   "impact": {
+    "players": [
+     {
+      "name": "Will Shipley",
+      "action": "injured",
+      "games": 1,
+      "deltaPts": -2,
+      "suggestedEdit": "Tag injured \u00b7 \u22122 pts (1 game) \u00b7 drops ~1 round (est.)"
+     }
+    ],
+    "note": "Grounded: Yahoo 10/11 \u2014 Shipley (PHI RB, board ~1.9 ppg) left W5 vs JAX with foot injury, ruled out for the rest of the game; with Barkley already out W5, the Eagles backfield thins further \u2014 \u22122 (1 game) est."
+   }
+  },
+  {
+   "id": "ja-marr-chase-to-play-in-week-5",
+   "title": "Ja'Marr Chase to play in Week 5 - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9JSC1pcmlqTVJiTEFxX2ltbXhjRGxLVUNVOU4yamVrd1BxVlhuZUxBX3lXeW1WbEoxZ0QzUmpRXzktaVpSZm4xVko4Y04wUHBPOUduMEVDaGtDQllYRk8yQ2NhenE1ZC01Sy1GT1NyT19fVjhlMkhBcjZ2ejJydw?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Sun, 11 Oct 2026 15:19:12 GMT",
+   "summary": "Yahoo confirms Bengals WR Ja'Marr Chase will play in Week 5 against the Dolphins, ending days of uncertainty.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 10/11 \u2014 Chase (CIN WR, board ~19.9 ppg) confirmed to play W5 vs MIA; clears the injury uncertainty that had cooled his value \u2014 no tag."
+   }
+  },
+  {
+   "id": "is-dj-moore-playing-week-5-bills-injury-update",
+   "title": "Is DJ Moore playing Week 5? Bills injury update - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5XXzVGWE1vQklFSVdnM0JPUTRranBybGJ6NlRsR3ZmZFVaWjhGYXRfTU8yTkF1LXloYTFCcFJmbV85QmVPZkxHRWsyVE9nWjZPUVctSmxUTHZhMktlU3QteUR1RFpOX0JxMm41NUtJazF1MDhXYkdia2REd3Y?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Sun, 11 Oct 2026 15:17:24 GMT",
+   "summary": "Yahoo provides a Week 5 injury update on Bills WR DJ Moore ahead of Monday Night Football against the Rams.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 10/11 \u2014 Moore (BUF WR, board ~13.0 ppg) W5 status in question for MNF vs LAR; no confirmed absence \u2014 no tag."
+   }
+  },
+  {
+   "id": "jayden-daniels-elbow-will-be-a-problem-again-but-when",
+   "title": "Jayden Daniels' Elbow Will be a Problem Again -- But When? - Draft Sharks",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUzVuaW1xS3RoLWwzcEN4cWNld3hGcmFlYXk3TVFBSFBpSHA2TEQ4TW9sQThpNENXOTdxbnNvUW5NbVZjMkQ2QnNPZ1FYWlVfaXhsR1BxTEVkaTdvbkZ4QUlPM3k0RXJ5aXNZdWpaWUhZSWVJZmo0NnE2VjhHTnlId3FiY1B1bFJta0xvZGN0VExJd3hkVThwWElkd0xZNlpNUGtKU1B3OTBxS3hhS3c?oc=5",
+   "source": "Draft Sharks",
+   "published": "Sun, 11 Oct 2026 11:53:33 GMT",
+   "summary": "Draft Sharks examines Commanders QB Jayden Daniels' lingering elbow issue and when it could flare up again.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Draft Sharks 10/11 \u2014 Daniels (WAS QB, board ~19.1 ppg) elbow flagged as a recurring concern; no current absence \u2014 no tag."
+   }
+  },
+  {
+   "id": "rhamondre-stevenson-slated-to-play-sunday",
+   "title": "Rhamondre Stevenson Slated to play Sunday - Fantasy Footballers Podcast",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQU04Q21KYjBrNk00N2wyOXR2M3dmZDNCNmpHTTdFTzd3QmEtZzBFT29sZHU4M0s0UF9CbVRrWE9hVFJTWGVld2c2TXY5LXhJLXB5NXQ3aUVkWnJjOGtMR1VWMko2bUw4U0JVZmV1NjBfVmdubjk3azMtWGJUUEgzRFlodGFndDI1S2dMOHhIYXdYUjlzQ0JZ?oc=5",
+   "source": "Fantasy Footballers Podcast",
+   "published": "Sun, 11 Oct 2026 11:47:22 GMT",
+   "summary": "The Fantasy Footballers report Patriots RB Rhamondre Stevenson is slated to play Sunday in Week 5.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: FFB 10/11 \u2014 Stevenson (NE RB, board ~11.1 ppg) slated to play W5 vs LV; clears availability concern \u2014 no tag."
+   }
+  },
+  {
+   "id": "latest-ladd-mcconkey-injury-update-is-bad-news-for-chargers",
+   "title": "Latest Ladd McConkey injury update is bad news for Chargers - Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNTVwcmxGWkVaTTB0VGdwT3B2N0JPdk1KU1ZvME1sTlN0Y05PR0dFbFRSNTBqQXROOHk1LU1KbmNfem5ZQlpvcm53d0xOODl1SlJGbEhLeHFVUTRCbHB3OFluWmVtUkpEekh0MGxEVFZhbzI5LUNBclpmSDdSZnBxclZ5MGZMX0U?oc=5",
+   "source": "Yahoo Sports",
+   "published": "Sun, 11 Oct 2026 11:36:21 GMT",
+   "summary": "Yahoo reports the latest injury update on Chargers WR Ladd McConkey is bad news for Week 5 against the Broncos.",
+   "sample": false,
+   "impact": {
+    "players": [],
+    "note": "Grounded: Yahoo 10/11 \u2014 McConkey (LAC WR, board ~14.1 ppg) injury update is 'bad news' for W5 vs DEN; specifics not in headline \u2014 no tag."
+   }
+  },
   {
    "id": "matthew-berry-s-week-5-fantasy-football-rankings-michael-wilson-rises-in-top-75-flex-plays",
    "title": "Matthew Berry's Week 5 Fantasy Football Rankings: Michael Wilson Rises In Top 75 Flex Plays - FantasyLife",
@@ -384,129 +470,6 @@
    },
    "id": "jaylen-wright-questionable-to-play-with-foot-injury-nfl-news-fantasy-football",
    "sample": false
-  },
-  {
-   "title": "Fantasy football Week 5 inactives: Kyle Monangai, Lamar Jackson out - ESPN",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPOFpNck5JWTFDTjFxcS13ci1rcE01LVM5Z29xVXBfTGMwTlhkNmVwcFlnSVZNTDhzNVU3WTdaMnBRN2VpdVhXU0dvaC1qNHVpTkplbFZCTzlraDFyeENZY193Q0VuWFVXdDhId1BDR2V6RXhTU3U5d2xsTTFEUFBhRUJ6SnlFNXQzTTd0Rk5JMXN3NUZOZ1pWblJfeXhfSGR1VkxTcTZGSXJ1cDAyanJGRTVYazZ6dnNjR2QyWUxWMENkZ181TkFFQUJ3?oc=5",
-   "source": "ESPN",
-   "published": "Fri, 09 Oct 2026 23:09:27 GMT",
-   "summary": "ESPN reports Bears RB Kyle Monangai and Ravens QB Lamar Jackson are inactive for Week 5.",
-   "impact": {
-    "players": [
-     {
-      "name": "Kyle Monangai",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -9,
-      "suggestedEdit": "Tag injured \u00b7 \u22129 pts (1 game) \u00b7 drops ~1 round"
-     },
-     {
-      "name": "Roschon Johnson",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 5,
-      "suggestedEdit": "Role boost \u00b7 +5 pts \u00b7 move up ~1 round (est.)"
-     }
-    ],
-    "note": "Grounded: ESPN 10/9 \u2014 Monangai (CHI RB, board ~8.6 ppg) OUT W5 confirmed (escalates 10/7 toe injury); Jackson (BAL QB, ~19.6 ppg) out, already covered. Roschon Johnson (est., not in board) shares CHI backfield lead with Swift per SI 10/8."
-   },
-   "id": "fantasy-football-week-5-inactives-kyle-monangai-lamar-jackson-out",
-   "sample": false
-  },
-  {
-   "title": "Why fantasy football managers should play it safe amid mounting receiver injuries - New York Post",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRVdEcTZDakk4cjRtaURtTUJidkcwSWhsaFQ3dl9IcFhYM2VFbTljVi1vU0FxOTVlbl9qem83STZVV1oydzlfODJWdGJYX21tdVMwZU12MmROenBLOXl2NWlqdkQwejhZVkZCMEp4TVhBN1RxQTZjWlFfTUhhOHBsUTFaTkF1VTBub3hjcTlkejRFek01ei03aS12VTlUQ0hzR2VraGxXVTJXVTU2RTdyVGV1SzJHazRCRmNNTA?oc=5",
-   "source": "New York Post",
-   "published": "Fri, 09 Oct 2026 22:59:00 GMT",
-   "summary": "The New York Post advises fantasy managers to play it safe given the mounting receiver injuries in Week 5.",
-   "impact": {
-    "players": [],
-    "note": "Grounded: NY Post 10/9 \u2014 general advice amid mounting WR injuries (Lamb, Chase, Higgins, Diggs, Smith, Olave); no new per-player facts \u2014 no tag."
-   },
-   "id": "why-fantasy-football-managers-should-play-it-safe-amid-mounting-receiver-injuries",
-   "sample": false
-  },
-  {
-   "id": "chig-okonkwo-fades-injury-tag-for-week-5",
-   "title": "Chig Okonkwo Fades injury tag for Week 5 - Fantasy Footballers Podcast",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQOTVqQXVTcUJsWFIxSXJCMFZpQmhtT0JLWXZrZVlCbmZOOGh0LXl2cWZsYnFsb29YWENCWWZjclR4OWJtMkdaMkt6SnBfeUxtXzNHejJUdlZXb2JNMlVWVG4xTy1xUXdtcEtkczVkS1VyY1BVVkIxZFFOU256TWtGS3hwNjlhaWl2ZW5peVNGTXotdjJURVM1N1ViTkk?oc=5",
-   "source": "Fantasy Footballers Podcast",
-   "published": "Fri, 09 Oct 2026 21:56:15 GMT",
-   "summary": "The Fantasy Footballers report Commanders TE Chig Okonkwo has faded his injury tag for Week 5.",
-   "sample": false,
-   "impact": {
-    "players": [],
-    "note": "Grounded: FFB 10/9 \u2014 Okonkwo (WAS TE, board ~6.7 ppg) removed from injury report, healthy for W5 with Diggs ruled out \u2014 supports the SI 10/9 boost item; no new tag."
-   }
-  },
-  {
-   "title": "Mike Evans (ribs) off injury report Sunday - FantasyPros",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSnE5VVZkeXk1dzRSRkRfM1hiUF9vUDNERDFZa1pBOHhPa1J6NjZ0MDVsU0tnOTZwd01JX2VGXzRIRHRhODNPcU9fakhiSVNzRTZaWlBHcTc5Q0Z4RmtsMk1JeFp5d25qRElxTXlJc3dzNEViTU4wdFkxSEwxVW5VbktOb0huODVVRjlYSGFNZ0ZBd9IBlwFBVV95cUxQOFRadnZreXJDaGo2cmFpR3dXdXdOMkY4THhqWFZxcExjaDc2SUdhYU5YRlFWRXlWU19oX3VpV2doUEs3U3VhNUhiNHlpQlRYbU5HV21FVFF2S2JNcEVqU1JuU2cxTm9xcEtBX3BRZnNCSjVGYkFwZ01IZ0RTOXRIRXpyWVkzaFpwWi1NQzRQYlpSVWhoN3Rz?oc=5",
-   "source": "FantasyPros",
-   "published": "Fri, 09 Oct 2026 21:51:59 GMT",
-   "summary": "FantasyPros reports 49ers WR Mike Evans is off the injury report and clear for Sunday.",
-   "impact": {
-    "players": [],
-    "note": "Grounded: FantasyPros 10/9 \u2014 Evans (SF WR, board ~10.7 ppg) off the injury report (ribs); clears concern \u2014 no tag."
-   },
-   "id": "mike-evans-ribs-off-injury-report-sunday",
-   "sample": false
-  },
-  {
-   "id": "fantasy-football-impact-saquon-barkley-and-devonta-smith-ruled-out-for-week-5",
-   "title": "Fantasy Football Impact: Saquon Barkley and DeVonta Smith Ruled Out For Week 5 - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdV8xYUJnTVpBODBZTFktUi03TXZyRUdDWWZkNXZmaktab3JIT3pWUnFPZlNnaldjRzBjaVdWSFd0VGRxeEtoOXNzQ2JLNl9ZUFNGSUJIUFE1RS1nakFzYWNGbWwtWkMyVDRQSWZybG55WXU2UFQ3amJFNVZvWWttWlNiTlNYZkY2aXktaHR3cldkczRSdU5JeXkxVGt6RkhPR1M2Sm1VVnk1em1uVUx3Vkl2LVNKWHVGbEE?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Fri, 09 Oct 2026 18:48:32 GMT",
-   "summary": "SI reports Eagles RB Saquon Barkley and WR DeVonta Smith have been ruled out for Week 5.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Saquon Barkley",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -14,
-      "suggestedEdit": "Tag injured \u00b7 \u221214 pts (1 game) \u00b7 drops ~1 round"
-     },
-     {
-      "name": "DeVonta Smith",
-      "action": "injured",
-      "games": 1,
-      "deltaPts": -14,
-      "suggestedEdit": "Tag injured \u00b7 \u221214 pts (1 game) \u00b7 drops ~1 round"
-     }
-    ],
-    "note": "Grounded: SI 10/9 \u2014 Barkley (PHI RB, board ~14.4 ppg) & Smith (PHI WR, ~14.3 ppg) ruled OUT for W5; 1-game tags."
-   }
-  },
-  {
-   "id": "fantasy-football-injury-impact-terry-mclaurin-and-chig-okonkwo-set-for-a-big-week-5-with-stefon-diggs-ruled-out",
-   "title": "Fantasy Football Injury Impact: Terry McLaurin and Chig Okonkwo Set for a Big Week 5 with Stefon Diggs Ruled Out - Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPdkxuTUozMm9ueFFLaUR2UW5TbExTdmFVZXNIWGVicmM5MlVEQzJra2Y1TVVhMG9QSGdIVFN2U0F2RG9lNG1mRFJ4ZHdlTDhOcUd6S1c5LVk1dGtyZmJkdDJaQWZzWFJFdk9YbEdaNEN3YTNtc1JwMjZabGN6bm15dEwzbVFKQmdRZFU0Y0pSeU00YlVDNGxZNldjVXpfdFEzZ1hYaU5YRDJDNHJiOTY0dE9va0x1bE9xXzl2Wk1Wc2RGLWFKM0tROS0yNE0tbTZ5OHNnTWd1N1VMbzg?oc=5",
-   "source": "Sports Illustrated",
-   "published": "Fri, 09 Oct 2026 17:51:14 GMT",
-   "summary": "SI says Terry McLaurin and Chig Okonkwo are set for a big Week 5 with Stefon Diggs ruled out.",
-   "sample": false,
-   "impact": {
-    "players": [
-     {
-      "name": "Terry McLaurin",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 4,
-      "suggestedEdit": "Role boost \u00b7 +4 pts \u00b7 move up ~1 round (est.)"
-     },
-     {
-      "name": "Chig Okonkwo",
-      "action": "boost",
-      "games": null,
-      "deltaPts": 3,
-      "suggestedEdit": "Role boost \u00b7 +3 pts \u00b7 move up ~1 round (est.)"
-     }
-    ],
-    "note": "Grounded: SI 10/9 \u2014 with Diggs (WAS WR) ruled out, McLaurin (WAS WR, board ~13.0 ppg) & Okonkwo (WAS TE, ~8.4 ppg) set for big W5 target shares \u2014 +4/+3 est."
-   }
   }
  ]
 }
